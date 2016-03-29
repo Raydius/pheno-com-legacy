@@ -2,7 +2,13 @@
 
 ### Stack Summary ###
 
+Environment: Docker - node:latest
+
 Back-end: NodeJS
+Back-end Framework: Express
+
+Front-end Core Framework: ReactJS
+
 
 
 This README would normally document whatever steps are necessary to get your application up and running.
