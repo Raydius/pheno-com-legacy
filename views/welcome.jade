@@ -1,0 +1,27 @@
+block variables
+	- intialUrl = "/case-studies/#/" + copy.navigation[0].uiSref
+	- pageTitle = "PHENOMENON - Select Case Studies"
+	- bodyClass = "welcome"
+
+doctype html
+html
+	head
+		title= pageTitle
+		link(rel='stylesheet', href='/stylesheets/welcome.css')
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		meta(name="theme-color", content="#D0021B")
+
+		include ./favicon
+
+	body(class=bodyClass)
+
+		main.welcome-wrapper
+			img(src=copy.logo.src, alt=src = copy.logo.alt).logo
+
+			.centered-content
+				.centered-content-wrapper
+					a(href=intialUrl, onclick="ga('send', 'event', 'internal_link', 'click', 'case_studies_view_now')")
+						h2 Select Case Studies
+						span
+							span.icon-right-arrow
+							| View Now
