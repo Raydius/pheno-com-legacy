@@ -5,7 +5,11 @@
  */
 
 var app = require('../app');
+<<<<<<< HEAD
 var debug = require('debug')('pheno-com:server');
+=======
+var debug = require('debug')('pheno-vcu:server');
+>>>>>>> master
 var http = require('http');
 
 /**

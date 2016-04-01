@@ -1,0 +1,22 @@
+// dynamically populate content from copy.json data
+
+// hero video always appears on top
+video-component(thumb=pageData.heroThumb, alt=pageData.heroThumbAlt, title=pageData.heroThumbTitle, vimeo=pageData.heroVimeo)
+
+// title and body copy
+section.row.no-padding.details.section
+	article.col-xs-12.col-md-10.no-padding
+		h2= pageData.title
+		each par in pageData.details
+			p= par
+
+// other content modules
+each contentItem in pageData.subcontent
+	if contentItem.carousel
+		include ./carousel-component
+	//if contentItem.scrollable
+		include ./scrollable-component
+	if contentItem.image
+		include ./image-component
+	if contentItem.video
+		video-component(thumb=contentItem.thumb, alt=contentItem.thumbAlt, title=contentItem.thumbTitle, vimeo=contentItem.vimeo)

@@ -1,0 +1,299 @@
+// custom responsive styles
+
+/**
+ * NOTE: The non-phone devices will get the tab menu
+ */
+@media (max-width: 1024px) {
+  .topnav .tabs li {
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+@media (max-width: 768px) {   
+  .topnav .tabs li {
+    padding: 0 25px; 
+  }
+  .owl-theme .owl-prev {
+    margin-left: 20%;
+  }
+  .owl-theme .owl-next {
+    margin-right: 20%;
+  }
+}
+
+// all non-phone devices
+@media (min-width: 737px) {
+
+  h2{
+    font-size: 60px;
+  }
+
+  //styleguide
+  input, label{
+    font-size: $p_size;
+  }
+
+  input[type="text"], input[type="email"]{
+    height: 50px;
+    line-height: 50px;
+    border-color: 2px solid $gray_font;
+    padding: 0 10px;
+  }
+
+
+  button, input[type="submit"], input[type="reset"]{
+    height: 60px;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 18px;
+    color: $gray_font;
+    max-width: 227px;
+  }
+
+  ::-webkit-input-placeholder {
+     color: $gray_font;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+     color: $gray_font;  
+  }
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: $gray_font;  
+  }
+  :-ms-input-placeholder {
+     color: $gray_font;  
+  }
+
+  // hide burger nav
+  #hamburger {
+    display:none;
+  }
+
+  // hide drawer menu
+  snap-drawers, .snap-drawers{
+    display: none;
+  }
+
+  .topnav {
+    position: static;
+    min-height: auto;
+
+    h1{
+      text-align: left;
+    }
+    img.logo{
+      margin: 0 34px;
+      padding: 0;
+    }
+
+    .nav-wrapper{
+      padding: 30px $base_spacing 0 $base_spacing;
+    }
+
+    .tabs li.contact a{
+      color: $primary_color;
+    }
+  }
+
+  snap-content, .snap-content{
+    position: static;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tabs {
+    display: block;
+  }
+
+  //footer
+  footer, .footer{
+    border: none;
+
+    h1{
+      font-size: 28.65px;
+    }
+
+    address, a, h4{
+      font-size: 12px;
+    }
+
+    .footer-wrapper{
+      margin: 0;
+    }
+
+    .social{
+      li{
+        width: 35px;
+        height: 35px;
+        margin: 0 10px;
+
+        &:first-child{
+          margin-left: 0;
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+
+      a{
+        font-size: 15px;
+        line-height: 35px;
+      }
+    }
+  }
+
+  //content
+  main, .maincontent {
+    padding: $base_spacing;
+    padding-bottom: 0;
+
+    .section{
+        padding: ($base_spacing/2) $base_spacing;
+
+    &.image-component{
+      padding-bottom: ($base_spacing+($base_spacing/2));
+    }
+      }
+
+      .details{
+          padding-left: ($base_spacing*2);
+          padding-right: ($base_spacing*2);
+      }
+  }
+
+  //contact form
+  .input-file{
+     h4, input, label{
+      padding: 0 8px;
+    }
+  }
+
+  .contact{
+    padding-bottom: $base_spacing;
+
+    &.thank-you{
+      padding: 0 ($base_spacing) ($base_spacing/2);
+
+      // add extra whitespace to push footer down on desktop
+      margin-bottom: 310px;
+    }
+
+    .button-wrapper{
+      text-align: left;
+    }
+
+    h4{
+      font-size: 18px;
+    }
+
+    form{
+      padding-bottom: 0;
+    }
+
+    h2{
+      margin-top: 0;
+    }
+  }
+
+  .help-block{
+    margin-top: -20px;
+  }
+
+
+}
+
+
+/**
+ * NOTE: all styles below apply to devices where they will get the hamburger menu
+**/
+
+// landscape iPhone5 to landscape iPhone6 Plus
+@media (min-width: 568px) and (max-width: 736px){
+
+  // shrink drawer menu height to fit shorter landscape height
+  .drawer-menu nav ul li, .drawer-menu .nav ul li{
+    margin: 2.5% 0px;
+  }
+  .topnav{
+    .tabs{
+      li{
+        width: 25%;
+
+        &.contact{
+          bottom: initial;
+          top: $base_spacing;
+          right: $base_spacing + ($base_spacing/2);
+          width: auto;
+          &:before{
+            border-width: 0;
+          }
+        }
+
+        a{
+          padding: 12px 0;
+        }
+      }
+    } 
+  } 
+}
+
+
+// all mobile devices
+@media (max-width: 736px) {
+  .topnav{
+    $sm-logo-padding: 32px;
+  }
+
+  .filterbutton {
+    font-size: 16px;
+    color: #FFF;
+    top: 4px;
+    cursor: pointer;
+  }
+
+  snap-content, .snap-content{
+    @include box-shadow(-1px, 10px, 26px, -5px, rgba(48,48,48,0.5));
+  }
+
+
+  main .section, .maincontent .section{
+
+    &.details{
+      padding-left: ($base_spacing/2);
+      padding-right: ($base_spacing/2);
+
+      p, h2{
+        margin: 0 0 ($base_spacing/4);
+      }
+    }
+
+    &.image-component{
+      padding-bottom: $base_spacing * 1.75;
+    }
+  }
+
+  .contact {
+    padding: 0 ($base_spacing/4) ($base_spacing/4);
+
+    input[type="text"], input[type="email"], .input-file{
+      margin: ($base_spacing/4) 0;
+    }
+
+    input[type="file"] + label {
+      margin-bottom: ($base_spacing/4);
+    }
+
+    input, h4, label{
+      font-size: 18px;
+    }
+
+    button{
+      font-size: 20px;
+      height: 76px;
+    }
+
+    form{
+      padding-bottom: ($base_spacing/2)
+    }
+  }
+}

@@ -1,0 +1,102 @@
+// Contact Page custom styles
+
+.contact{
+  padding: 0 ($base_spacing - 5);
+
+  &.thank-you{
+    padding: 0 ($base_spacing/4);
+  }
+
+  h2{
+    margin: ($base_spacing/2) 0;
+  }
+
+  input[type="text"], input[type="email"], .input-file{
+    margin: ($base_spacing/2) 0 ;
+  }
+
+  .button-wrapper{
+    text-align: center;
+  }
+
+  h4{
+    color: $primary_color;
+  }
+
+  .form-group .help-block.with-errors {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #e1523d;
+  }
+
+  .form-group .help-block {
+    margin-bottom: 0;
+  }
+
+  .has-error input.form-control, .contact .has-error textarea.form-control, .contact .has-error select.form-control, .contact .has-error .btn-default.form-control {
+    border: 1px solid #eb8d7f;
+    outline: 1px solid #eb8d7f;
+  }
+
+  /* .btn-default.focus, .contact .btn-default:focus {
+    background: white;*/
+
+  input[type="file"]{
+    + label{
+      margin-bottom: ($base_spacing/2);
+    }
+  }
+
+  .input-file{
+    label{
+      padding-top: 30px;
+      min-width: 214px;
+    }
+    h4{
+      margin-bottom: -20px;
+    }
+  }
+
+  form{
+    padding-bottom: ($base_spacing/2);
+  }
+}
+
+.help-block{
+  position: absolute;
+  top: 100%;
+  left: 15px;
+  right: 15px;
+  margin-top: -5px;
+  padding: 0;
+  line-height: 1;
+  color: transparent;
+  @include transition(color .15s ease-in-out);
+
+  @extend .extend-icon;
+  @extend .icon-error;
+  &:before{
+    display: inline;
+    float: left;
+    padding-right: 5px;
+  }
+}
+
+.has-error .help-block, .ng-invalid .button-wrapper .help-block{
+  color: $primary_color;
+}
+
+
+.form-group{
+  position: relative;
+
+  &.button-wrapper{
+    .help-block{
+      margin: 0;
+      left: 0;
+      right: 0;
+      padding: 10px 0;
+      text-align: left;
+    }
+  }
+}
