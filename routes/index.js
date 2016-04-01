@@ -34,16 +34,9 @@ var copy = require('./../data/copy.json');
 router.get('/', function(req, res, next) {
 
 	// if user has been here within the last 15 days, they will have the visited cookie set
-	if(req.cookies.visited) {
+	
+	res.render('welcome', {title: 'Index', copy: copy});
 
-		// skip the welcome screen and go straight to case studies
-		res.redirect('/case-studies/#/wilson-anthem');
-	}
-	else {
-
-		// show welcome page
-		res.render('welcome', {title: 'Index', copy: copy});
-	}
 });
 
 
