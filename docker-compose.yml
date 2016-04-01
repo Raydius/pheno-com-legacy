@@ -1,8 +1,8 @@
 web:
   image: node:argon
   ports:
-   - "3500:3000"
+   - "3900:3000"
   volumes:
    - .:/usr/src
   working_dir: /usr/src
-  command: npm start
+  command: npm start 

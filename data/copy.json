@@ -1,38 +1,53 @@
 {
 	"logo": {
-		"src": "/images/pheno_new_logo.svg",
+		"src": "/images/pheno_new_logo.svg",   
 		"alt": "Phenomenon Logo"
 	},
 	"navigation": [
 		{
-			"navTitle": "Wilson X",
-			"title": "View Wilson X Page",
+			"navTitle": "About",
+			"title": "View Wilson X Page", 
 			"uiSref": "wilson-x",
 			"className": "wilson-x"
 		},
 		{
-			"navTitle": "Wilson Anthem",
+			"navTitle": "Work",
 			"title": "View Wilson Anthem Page",
 			"uiSref": "wilson-anthem",
 			"className": "wilson-anthem"
 		},
 		{
-			"navTitle": "thinkThin",
+			"navTitle": "Entertainment",
 			"title": "View thinkThin Page",
 			"uiSref": "think-thin",
 			"className": "think-thin"
 		},
 		{
-			"navTitle": "Xome",
+			"navTitle": "Culture",
 			"title": "View Xome Page",
 			"uiSref": "xome",
 			"className": "xome"
 		},
 		{
+			"navTitle": "Jobs",
+			"title": "View Contact Form",
+			"uiSref": "contact"
+		},
+		{
 			"navTitle": "Contact",
+			"title": "View Contact Form",
+			"uiSref": "contact"
+		},
+		{
+			"navTitle": "Social",
 			"title": "View Contact Form",
 			"uiSref": "contact",
 			"className": "contact"
+		},
+		{
+			"navTitle": "Blogs",
+			"title": "View Contact Form",
+			"uiSref": "contact"
 		}
 	],
 	"footer": {
