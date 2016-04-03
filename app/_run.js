@@ -2,7 +2,7 @@
  * Created by rdollete on 4/1/16.
  */
 
-
+require('angular-snap');
 
 angular.module('phenoCom').run(function($rootScope, $window, $location, snapRemote) {
     var $main = $('main');

@@ -2,10 +2,18 @@
  * Created by rdollete on 4/1/16.
  */
 
-require('angular-snap');
-var indexTemplate = require('views/index.jade');
+
+import 'npm/owlcarousel/owl-carousel/owl.carousel';
+import 'angular-snap';
+
+var copy = require('app/copy.json');
+
+var templateWilsonX = require('views/wilson-x.jade');
+var templateContact = require('components/contact-form.jade');
+
 
 angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $sceDelegateProvider, snapRemoteProvider) {
+
 
     $sceDelegateProvider.resourceUrlWhitelist([
         'self',
@@ -27,7 +35,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
     $stateProvider
         .state('home', {
             url: '/',
-            template: indexTemplate,
+            template: '',
             data: {
                 pageTitle: 'PHENOMENON - Select Case Studies'
             }
@@ -35,7 +43,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 
         .state('wilson-x', {
             url: '/wilson-x',
-            template: '/views/wilson-x',
+            template: templateWilsonX,
             data: {
                 pageTitle: 'PHENOMENON - Wilson X case study'
             }
@@ -67,7 +75,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 
         .state('contact', {
             url: '/contact',
-            templateUrl: '/views/components/contact-form',
+            template: templateContact,
             controller: 'contactController',
             data: {
                 pageTitle: 'PHENOMENON - Contact Us'

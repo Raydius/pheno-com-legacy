@@ -29,13 +29,15 @@ angular.module('phenoCom').directive('carouselComponent', function() {
 
 });
 
+var videoComponentTemplate = require('components/video-component.jade');
+
 // embedded vimeo player
 angular.module('phenoCom').directive('videoComponent', function() {
     return {
         scope: {
             thumb: '@', alt: '@', title: '@', vimeo: '@'
         },
-        templateUrl: '/views/components/video-component',
+        template: videoComponentTemplate,
         link: function (scope, element, attrs) {
             scope.vimeoUrl = 'https://player.vimeo.com/video/' + scope.vimeo;
         }

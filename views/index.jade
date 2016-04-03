@@ -2,12 +2,9 @@ extends layout
 
 block content
 
-	h1= title
-		p Welcome to #{title}
-		main.maincontent
-			.main-wrapper(data-snap-ignore="true")
-				.component(ui-view)
-					.loading-box
+	main.maincontent
+		.main-wrapper(data-snap-ignore="true")
+			.component(ui-view)
+				.loading-box
 
-				include ./components/footer
-
+			include ./components/footer

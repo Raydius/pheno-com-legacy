@@ -2,28 +2,30 @@
  * Created by rdollete on 4/1/16.
  */
 
-var angular = require('angular');
+import 'bootstrap';
 
-require('angular-ui-router');
-require('angular-animate');
+import angular from 'angular';
+import uirouter from 'angular-ui-router';
+import ngAnimate from 'angular-animate';
+
+import Snap from 'snapjs';
+window.Snap = Snap;
+
+import 'angular-snap';
+
+
 require('angular-cookies');
 require('angular-messages');
 require('angular-snap');
 
-//var Snap = require('legacy-loader?exports=Snap!Snap.svg');
-//window.Snap = Snap; // transform REQUIRES Snap on the window because it uses eval
-
 angular.module('phenoCom',[
-    'ui.router',
+    uirouter,
     'snap',
-    'ngAnimate',
+    ngAnimate,
     'ngCookies',
     'ngMessages'
 ]);
 
-angular.module('phenoCom').config(function(SnapConstructorProvider) {
-    SnapConstructorProvider.use(window.Snap);
-});
 
 require('./_config');
 require('./_run');

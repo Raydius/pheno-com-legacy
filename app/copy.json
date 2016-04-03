@@ -7,20 +7,20 @@
 		{
 			"navTitle": "About",
 			"title": "View Wilson X Page", 
-			"uiSref": "wilson-x",
-			"className": "wilson-x"
+			"uiSref": "about",
+			"className": "about"
 		},
 		{
 			"navTitle": "Work",
 			"title": "View Wilson Anthem Page",
-			"uiSref": "wilson-anthem",
-			"className": "wilson-anthem"
+			"uiSref": "work",
+			"className": "work"
 		},
 		{
 			"navTitle": "Entertainment",
 			"title": "View thinkThin Page",
-			"uiSref": "think-thin",
-			"className": "think-thin"
+			"uiSref": "entertainment",
+			"className": "entertainment"
 		},
 		{
 			"navTitle": "Culture",

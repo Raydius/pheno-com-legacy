@@ -17,25 +17,14 @@ module.exports = {
             app: path.resolve(__dirname, 'app'),
             assets: path.resolve(__dirname, 'assets'),
             npm: node_modules_dir,
-            views: path.resolve(__dirname, 'views')
+            views: path.resolve(__dirname, 'views'),
+            components: path.resolve(__dirname, 'views/components')
         }
     },
     entry: {
         app: './app/phenomenon.js',
-        style: './stylesheets/style.scss'
-        /*vendors: [
-            'angular', 'angular-cookies', 'angular-ui-router', 'angular-messages', 'angular-animate'
-        ]*/
-
-        //style: './src/stylesheets/style.scss',
-        //index: './views/index.jade'
-        //index: ['webpack/hot/dev-server', './index.js'],
-        //page2: ['webpack/hot/dev-server', './page2.js'],
-        //vendors: ['react', 'jquery'],
-    },
-    ProvidePlugin: {
-        angular: 'angular',
-        $: 'jquery'
+        style: './stylesheets/style.scss',
+        vendors: [ 'angular', 'jquery', 'angular-ui-router', 'bootstrap' ]
     },
     output: {
         filename: '[name]-bundle.min.js',
@@ -44,6 +33,12 @@ module.exports = {
         libraryTarget: "umd"
     },
     plugins: [
+        new webpack.ProvidePlugin({
+            //angular: 'angular-wrapper',
+            $: 'jquery',
+            jQuery: 'jquery',
+            "window.jQuery": 'jquery'
+        }),
         new webpack.NoErrorsPlugin(),
         new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
         new webpack.dependencies.LabeledModulesPlugin(),
@@ -67,10 +62,27 @@ module.exports = {
             new RegExp('^react$'),
             new RegExp('^jquery$'),
         ],
+        preloaders: [
+            {test: /\.js$/, loader: "jshint-loader", exclude: /node_modules/}
+        ],
         loaders: [
-            { test: /\.js$/,    loader: "babel-loader" }, //, query: {optional: ["es7.classProperties"]}},
+            {
+                test: /\.js$/,
+                loader: "babel-loader",
+                query: {
+                    presets: ["es2015"]
+                },
+                exclude: /node_modules/
+            },
+            { test: /[\/]angular\.js$/, loader: "exports?angular" },
+            { loader: 'exports?window.angular', test: require.resolve('angular') },
+
+            { test: /\.json$/, loader: "json-loader" },
             //{ test: /\.html$/,  loader: "html" },
-            { test: /\.jade$/, loader: 'jade'},
+            {
+                test: /\.jade$/,
+                loader: 'jade'
+            },
             { test: /\.scss$/, loaders: ["style", "css", "sass"] },
             { test: /\.css$/,   loader: "style-loader!css-loader!postcss-loader" },
             { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/, loader: 'file-loader' },
@@ -78,23 +90,6 @@ module.exports = {
             { test: /\.jpg$/,   loader: "url-loader?prefix=img/&mimetype=image/jpg"},
             { test: /\.gif$/,   loader: "url-loader?prefix=img/&mimetype=image/gif"}
         ],
-    },
-    postcss: function() {
-        return {
-            defaults: [
-                require('autoprefixer')
-            ]
-        }
     }
 };
 
-/*
- Object.keys(module.exports.entry).forEach(function(page){
-
- if(page!=='vendors'){
- module.exports.plugins.push( new HtmlWebpackPlugin({
- filename: page+'.html',
- chunks: [page]
- }) );
- }
- });*/
