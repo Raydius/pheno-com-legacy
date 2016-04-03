@@ -1,5 +1,2 @@
 nav.nav
 	ul
-		each navItem in copy.navigation  
-			li(ng-class="{ selected: isSelected('#{navItem.uiSref}') }", class=navItem.className)
-				a(ui-sref=navItem.uiSref, href="#", title=navItem.title, ng-click="closeDrawer()")= navItem.navTitle

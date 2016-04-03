@@ -1,0 +1,59 @@
+// footer custom styles
+
+footer, .footer{
+	border-bottom: 8px solid $primary_color;
+	width: 100%;
+	max-width: $body_size;
+	margin: 0 auto;
+	background-color: #FFF;
+
+	.footer-wrapper{
+		//margin: 0 ($base_spacing/2);
+        margin: 0 ($base_spacing/4);
+		padding: ($base_spacing/2) 0;
+		border-top: 1px solid $gray_border_color;
+	}
+
+	h1{
+		font-size: 26px;
+		margin: 0 0 ($base_spacing/2);
+
+		 sub{
+	        font-size: 10px;
+	      }
+	}
+
+	img.logo{
+      margin: 10px 0 20px;
+      max-width: 130px;
+      padding-right: 10px;
+
+    }
+
+	h4{
+		margin: 10px 0;
+		font-family: $monospace_font;
+		font-size: 16px;
+	}
+
+	address, a{
+		margin: 0;
+		color: $gray_font;
+		font-size: 16px;
+	}
+
+	.social a{
+		color: $gray_color;
+		font-size: $h4_size;
+	}
+
+	a:hover{
+		color: $primary_color;
+		border-color: $primary_color;
+	}
+
+	.office{
+		margin-bottom: ($base_spacing/2);
+	}
+
+}

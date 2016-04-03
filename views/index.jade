@@ -1,15 +1,13 @@
 extends layout
 
 block content
-<<<<<<< HEAD
-  h1= title
-  p Welcome to #{title}
-=======
 
-	main.maincontent
-		.main-wrapper(data-snap-ignore="true")
-			.component(ui-view)
-				.loading-box
+	h1= title
+		p Welcome to #{title}
+		main.maincontent
+			.main-wrapper(data-snap-ignore="true")
+				.component(ui-view)
+					.loading-box
 
-			include ./components/footer
->>>>>>> master
+				include ./components/footer
+
