@@ -1,6 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
+<<<<<<< HEAD
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
+
+module.exports = router;
+=======
 // cookie parsing
 var cookieParser = require('cookie-parser');
 
@@ -174,3 +182,4 @@ router.post('/sendMail', upload.fields([
 
 module.exports = router;
 
+>>>>>>> master
