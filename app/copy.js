@@ -38,9 +38,9 @@ var copy =
       "uiSref": "contact"
     },
     {
-      "navTitle": "Social",
-      "title": "View Contact Form",
-      "uiSref": "contact",
+      "navTitle": "Entertainment",
+      "title": "Phenomenon Entertainment",
+      "uiSref": "entertainment",
       "className": "contact"
     },
     {
