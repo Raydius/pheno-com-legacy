@@ -22,12 +22,6 @@ var copy =
       "className": "work"
     },
     {
-      "navTitle": "Entertainment",
-      "title": "View Entertainment Page",
-      "uiSref": "entertainment",
-      "className": "entertainment"
-    },
-    {
       "navTitle": "Culture",
       "title": "View Culture Page",
       "uiSref": "culture",

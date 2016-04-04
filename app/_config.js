@@ -2,7 +2,7 @@
  * Created by rdollete on 4/1/16.
  */
 
-
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'npm/owlcarousel/owl-carousel/owl.carousel';
 import 'snapjs/snap.css';
 import 'angular-snap';
