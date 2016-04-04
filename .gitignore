@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 node_modules/
 .idea/
-=======
-.idea
 views/*.html
->>>>>>> master
+public/

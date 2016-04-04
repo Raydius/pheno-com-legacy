@@ -1,14 +1,13 @@
 var express = require('express');
 var router = express.Router();
 
-<<<<<<< HEAD
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
 module.exports = router;
-=======
+
 // cookie parsing
 var cookieParser = require('cookie-parser');
 
@@ -35,7 +34,7 @@ var corsOptions = {
 };
 
 // store copy as JSON
-var copy = require('./../data/copy.json');
+var copy = require('./../app/copy.json');
 
 
 // welcome page
@@ -82,7 +81,6 @@ router.get('/views/components/:component', function(req, res) {
 
 // route to render page content
 router.get('/views/:page', function(req, res, next) {
-
 
 	// get URL var for page
 	var jadefile = req.params.page;
@@ -189,4 +187,4 @@ router.post('/sendMail', upload.fields([
 
 module.exports = router;
 
->>>>>>> master
+
