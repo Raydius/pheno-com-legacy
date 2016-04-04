@@ -1,6 +1,13 @@
 var express = require('express');
 var router = express.Router();
 
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
+
+module.exports = router;
+
 // cookie parsing
 var cookieParser = require('cookie-parser');
 
@@ -27,23 +34,16 @@ var corsOptions = {
 };
 
 // store copy as JSON
-var copy = require('./../data/copy.json');
+var copy = require('./../app/copy.json');
 
 
 // welcome page
 router.get('/', function(req, res, next) {
 
 	// if user has been here within the last 15 days, they will have the visited cookie set
-	if(req.cookies.visited) {
+	
+	res.render('welcome', {title: 'Index', copy: copy});
 
-		// skip the welcome screen and go straight to case studies
-		res.redirect('/case-studies/#/wilson-anthem');
-	}
-	else {
-
-		// show welcome page
-		res.render('welcome', {title: 'Index', copy: copy});
-	}
 });
 
 
@@ -74,7 +74,6 @@ router.get('/views/components/:component', function(req, res) {
 
 // route to render page content
 router.get('/views/:page', function(req, res, next) {
-
 
 	// get URL var for page
 	var jadefile = req.params.page;
@@ -180,4 +179,5 @@ router.post('/sendMail', upload.fields([
 });
 
 module.exports = router;
+
 
