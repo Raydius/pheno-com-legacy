@@ -34,7 +34,6 @@ module.exports = {
     },
     plugins: [
         new webpack.ProvidePlugin({
-            //angular: 'angular-wrapper',
             $: 'jquery',
             jQuery: 'jquery',
             "window.jQuery": 'jquery'
@@ -46,11 +45,11 @@ module.exports = {
             template: 'views/index.jade',
             filename: 'index.html',
             title: 'Phenomenon'
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            mangle: false,
+            sourceMap: false
         })
-        /*new webpack.optimize.UglifyJsPlugin({
-         sourceMap: false,
-         mangle: false
-         })*/
     ],
     module: {
         noParse: [
