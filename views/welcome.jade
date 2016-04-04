@@ -1,5 +1,5 @@
 block variables
-	- copy = require('app/copy.json')
+	- copy = require('app/copy.js')
 	- intialUrl = "/case-studies/#/" + copy.navigation[0].uiSref
 	- pageTitle = "PHENOMENON - Select Case Studies"
 	- bodyClass = "welcome"
@@ -8,7 +8,7 @@ doctype html
 html
 	head
 		title= pageTitle
-		//link(rel='stylesheet', href='/stylesheets/welcome.css')
+		link(rel='stylesheet', href='/stylesheets/welcome.css')
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 		meta(name="theme-color", content="#D0021B")
 
@@ -17,7 +17,7 @@ html
 	body(class=bodyClass)
 
 		main.welcome-wrapper
-
+			img(src=copy.logo.src, alt=src = copy.logo.alt).logo
 
 			.centered-content
 				.centered-content-wrapper

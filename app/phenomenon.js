@@ -13,7 +13,6 @@ window.Snap = Snap;
 
 import 'angular-snap';
 
-
 require('angular-cookies');
 require('angular-messages');
 require('angular-snap');

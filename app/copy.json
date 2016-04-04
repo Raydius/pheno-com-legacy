@@ -1,6 +1,6 @@
 {
 	"logo": {
-		"src": "/images/pheno_new_logo.svg",   
+		"src": require("assets/images/pheno_new_logo.svg"),
 		"alt": "Phenomenon Logo"
 	},
 	"navigation": [

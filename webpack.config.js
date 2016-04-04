@@ -43,14 +43,9 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
         new webpack.dependencies.LabeledModulesPlugin(),
         new HtmlWebpackPlugin({
-            template: 'views/welcome.jade',
+            template: 'views/index.jade',
             filename: 'index.html',
             title: 'Phenomenon'
-        }),
-        new HtmlWebpackPlugin({
-            template: 'views/index.jade',
-            filename: 'case-studies/index.html',
-            title: 'Phenomenon Case Studies'
         })
         /*new webpack.optimize.UglifyJsPlugin({
          sourceMap: false,

@@ -4,11 +4,16 @@
 
 
 import 'npm/owlcarousel/owl-carousel/owl.carousel';
+import 'snapjs/snap.css';
 import 'angular-snap';
 
-var copy = require('app/copy.json');
 
-var templateWilsonX = require('views/wilson-x.jade');
+var copy = require('app/copy.js');
+
+var templateAbout = require('views/about.jade');
+var templateWork = require('views/work.jade');
+var templateEntertainment = require('views/entertainment.jade');
+var templateCulture = require('views/culture.jade');
 var templateContact = require('components/contact-form.jade');
 
 
@@ -33,33 +38,33 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-        .state('home', {
+        .state('about', {
             url: '/',
-            template: '',
+            template: templateAbout,
             data: {
-                pageTitle: 'PHENOMENON - Select Case Studies'
+                pageTitle: 'PHENOMENON'
             }
         })
 
-        .state('wilson-x', {
-            url: '/wilson-x',
-            template: templateWilsonX,
+        .state('work', {
+            url: '/work',
+            template: templateWork,
             data: {
                 pageTitle: 'PHENOMENON - Wilson X case study'
             }
         })
 
-        .state('wilson-anthem', {
-            url: '/wilson-anthem',
-            templateUrl: '/views/wilson-anthem',
+        .state('entertainment', {
+            url: '/entertainment',
+            template: templateEntertainment,
             data: {
                 pageTitle: 'PHENOMENON - Wilson Anthem case study'
             }
         })
 
-        .state('xome', {
-            url: '/xome',
-            templateUrl: '/views/xome',
+        .state('culture', {
+            url: '/culture',
+            template: templateCulture,
             data: {
                 pageTitle: 'PHENOMENON - Xome case study'
             }
