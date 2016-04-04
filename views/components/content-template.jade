@@ -1,4 +1,7 @@
 // dynamically populate content from copy.json data
+block variables
+- copy = require('app/copy.js')
+- pageData = copy.content[page]
 
 // hero video always appears on top
 video-component(thumb=pageData.heroThumb, alt=pageData.heroThumbAlt, title=pageData.heroThumbTitle, vimeo=pageData.heroVimeo)
@@ -13,10 +16,12 @@ section.row.no-padding.details.section
 // other content modules
 each contentItem in pageData.subcontent
 	if contentItem.carousel
-		include ./carousel-component
-	//if contentItem.scrollable
-		include ./scrollable-component
+		carousel-component.carousel-component.component.section.no-padding(data-snap-ignore="true")
+			each carouselItem in contentItem.images
+				img(src=carouselItem.url, alt=carouselItem.alt)
 	if contentItem.image
-		include ./image-component
+		section.image-component.component.section.row.no-padding
+			.col-xs-12.no-padding
+				img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
 	if contentItem.video
 		video-component(thumb=contentItem.thumb, alt=contentItem.thumbAlt, title=contentItem.thumbTitle, vimeo=contentItem.vimeo)
