@@ -4,6 +4,8 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'npm/owlcarousel/owl-carousel/owl.carousel';
+import 'npm/owlcarousel/owl-carousel/owl.carousel.css';
+
 import 'snapjs/snap.css';
 import 'angular-snap'; 
 
