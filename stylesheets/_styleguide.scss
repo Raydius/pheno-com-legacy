@@ -8,7 +8,7 @@ h1, .h1{
 h2, .h2{
 	font-size: $h2_size;
 	color: $black_font;
-	font-family: $secondary_font!important;
+	font-family: $secondary_font;
 }
 
 h3, .h3{
@@ -26,7 +26,7 @@ p, .p{
 }
 
 a, .a, .link{
-	color: $gray_font;
+	color: $gray_color; 
 	cursor: pointer;
 	text-decoration: none;
 	@include transition(color .1s ease-in-out);

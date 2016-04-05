@@ -1,35 +1,5 @@
 .culture {
-	h2 blockquote {
-		font-size: 40px;
-		font-weight: 600;
-		letter-spacing: -1px;
-		&:before {
-			content: "";
-			display: block;
-			content: "\201C";
-			font-size: 80px;
-			position: absolute;
-			left: -20px;
-			top: -20px;
-			color: #7a7a7a;
-		}
-	}
-	cite {
-			color: #999999;
-			font-size: 14px;
-			display: block;
-			margin-top: 5px;
-			&:before {
-				content: "\2014 \2009";
-			}
-		
-		> span {
-			&:last-of-type {
-				opacity: 0.5;
-				display: block;
-			}
-		}
-	}
+
 	article {
 		margin-top: $base_spacing;
 	}

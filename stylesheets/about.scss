@@ -1,6 +1,29 @@
 .about {
+	.top-main {
+		h2 {
+			font-size: 76px;
+			letter-spacing: -1px;
+			word-spacing: -2px;
+		}
+		p {
+			color: $primary_color;
+			font-size: 28px;
+			font-family: $secondary_font;
+			width: 40%;
+			min-width: 430px;
+		}
+	}
 	article {
 		margin-top: 20px;
+		border-bottom: 1px solid $gray_border_color;
+		p {
+			margin-top: 40px;
+			span {
+				font-weight: normal;
+				display: block;
+				font-size: 18px;
+			}
+		}
 	}
 	figure {
 		background: #F2F2F2;

@@ -65,7 +65,8 @@
 
     ul{
       margin: 0;
-      margin-left: -40px
+      margin-left: -40px;
+      position: relative;
     }
 
     li {
@@ -89,6 +90,7 @@
       
       &:first-child{
         margin-left: 0;
+        padding-left: 30px;
         &.selected:before{
           left: 0;
           margin-left: 0;

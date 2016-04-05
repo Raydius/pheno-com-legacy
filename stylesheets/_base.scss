@@ -11,6 +11,7 @@ html, body {
 .body-wrapper{
     border-bottom: 8px solid $primary_color;
     background-color: #FFF;
+    font-family: $primary_font;
   }
 h1 {
   margin: 0;
@@ -29,12 +30,59 @@ h1 {
     vertical-align: baseline;
   }
 }
-
+article p {
+	font-weight: bold;
+	font-size: 22px;
+}
+.clear {
+	clear: both;
+}
 .loading-box {
   display:block;
   height:400px;
 }
-
+.top-main {
+	border-bottom: 1px solid $gray_border_color;
+	padding-bottom: $base_spacing;
+	h2 blockquote {
+		font-size: 40px;
+		font-weight: 600;
+		letter-spacing: -1px;
+		border-left: 0;
+		&:before {
+			content: "";
+			display: block;
+			content: "\201C";
+			font-size: 80px;
+			position: absolute;
+			left: -20px;
+			top: -20px;
+			color: $black_font;
+		}
+	}
+	cite {
+			color: #999999;
+			font-size: 14px;
+			display: block;
+			margin-top: 5px;
+			&:before {
+				content: "\2014 \2009";
+			}
+		
+		> span {
+			&:last-of-type {
+				opacity: 0.5;
+				display: block;
+			}
+		}
+	}
+	h2 {
+		font-weight: bold;
+	}
+}
+cite span {
+	display: block;
+}
 .social{
 
 	ul{

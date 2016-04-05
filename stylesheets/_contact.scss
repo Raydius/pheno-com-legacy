@@ -6,10 +6,48 @@
     text-align: center;
     padding-bottom: 60px;
     h3 {
-      font-size: 30px;
+      font-size: 40px;
+      font-family: $secondary_font;
+      margin-bottom: 30px;
+      font-weight: bold;
+      color: $gray_font;
     }
   }
-  padding: 0 ($base_spacing - 5);
+  ul {
+    padding: 0;
+    li {
+      font-size: 20px;
+      display: block;
+      line-height: 28px;
+      font-family: $primary_font;
+    }
+  }
+  .contactbiz {
+    
+    text-align: center;
+    margin-top: $base_spacing;
+    
+    h4 {
+      color: $black_font;
+      font-family: $secondary_font;
+      font-size: 30px;
+    }
+    hr {
+      width: 15%;
+      height: 5px;
+      border-top: 3px solid $black_font;
+      margin: 40px auto;
+    }
+    span {
+      display: block;
+      font-family: $primary_font;
+      font-size: 17px;
+    }
+    a {
+      color: $primary_color;
+    }
+  
+  }
 
   &.thank-you{
     padding: 0 ($base_spacing/4);
