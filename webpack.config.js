@@ -28,6 +28,7 @@ module.exports = {
     },
     output: {
         filename: '[name]-bundle.min.js',
+        sourceMapFilename: "[file].map",
         path: path.resolve(__dirname, 'public'),
         publicPath: path.resolve(__dirname, '/'),
         libraryTarget: "umd"
