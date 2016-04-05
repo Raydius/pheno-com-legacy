@@ -4,9 +4,11 @@
   "version": "0.2.1",
   "private": true,
   "scripts": {
-    "build": "./node_modules/.bin/webpack || true",
+    "build": "./node_modules/.bin/webpack --progress -p || true",
+    "build-production": "./node_modules/.bin/webpack --output-path /usr/share/nginx/html -p || true",
     "prestart": "npm install",
-    "start": "./node_modules/.bin/webpack-dev-server --content-base ./ --port 9000 --hot"
+    "start": "./node_modules/.bin/webpack-dev-server --content-base ./ --port 9000 --hot",
+    "start-production": "npm install && npm rebuild node-sass && npm run build-production && nginx -g \"daemon off;\""
   },
   "dependencies": {
     "angular": "^1.5.3",
@@ -43,6 +45,7 @@
     "jshint": "^2.9.1",
     "jshint-loader": "^0.8.3",
     "json-loader": "^0.5.4",
+    "jsxhint": "^0.15.1",
     "legacy-loader": "0.0.2",
     "morgan": "~1.6.1",
     "multer": "^1.1.0",
