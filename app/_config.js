@@ -5,17 +5,18 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'npm/owlcarousel/owl-carousel/owl.carousel';
 import 'snapjs/snap.css';
-import 'angular-snap';
+import 'angular-snap'; 
 
 
 var copy = require('app/copy.js');
 
 var templateAbout = require('views/about.jade');
 var templateWork = require('views/work.jade');
+var templateWorkCase = require('views/work-case.jade');
 var templateEntertainment = require('views/entertainment.jade');
 var templateCulture = require('views/culture.jade');
-var templateContact = require('components/contact-form.jade');
-
+var templateContact = require('views/contact.jade');
+var templateJobs = require('views/jobs.jade'); 
 
 angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $sceDelegateProvider, snapRemoteProvider) {
 
@@ -54,6 +55,14 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             }
         })
 
+        .state('work/wilson-x', {
+            url: '/work/wilson-x',
+            template: templateWorkCase,
+            data: {
+                pageTitle: 'PHENOMENON - Wilson X case study'
+            }
+        })
+
         .state('entertainment', {
             url: '/entertainment',
             template: templateEntertainment,
@@ -77,7 +86,13 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                 pageTitle: 'PHENOMENON - thinkThin case study'
             }
         })
-
+        .state('jobs', { 
+            url: '/jobs',
+            template: templateJobs,
+            data: {
+                pageTitle: 'PHENOMENON - Jobs'
+            }
+        })
         .state('contact', {
             url: '/contact',
             template: templateContact,

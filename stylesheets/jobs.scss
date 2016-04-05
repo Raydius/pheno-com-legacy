@@ -1,0 +1,10 @@
+.jobs {
+	ul li {
+		padding: 20px 100px;
+		font-size: 30px;
+		border-top: 1px solid #ddd;
+		&:last-child {
+			border-bottom: 1px solid #ddd;
+		}
+	} 
+}

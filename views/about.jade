@@ -1,4 +1,39 @@
 block variables
-  - page = "about"
+- copy = require('app/copy.js')
+- page = "about"
+- pageData = copy.content[page]
 
-include ./components/content-template.jade
+
+// title and body copy
+section.row.no-padding.about
+	div.col-xs-12.col-md-10.no-padding
+		h2 
+			| Something like <br> a Phenomenon.
+		span
+			| A behind the scenes look at the most appropriately-named agency I know.
+		cite
+			span
+				| By Kevin Dahlstrom
+			span
+				| Chief Marketing Office, Mr. Cooper Home Loans
+	div.col-xs-12.col-md-12.no-padding
+		.col-xs-12.col-md-5.no-padding
+			figure
+				img(src="assets/images/about/about1.png")
+				figcaption
+					h3 Phenotype
+					ol 
+						span nonu
+						li
+							| a person adept at solving problems.
+						span verb
+						li
+							| to carry out a solution in any direction that is correct for the problem.
+		section.col-xs-12.col-md-7.no-padding
+			article.col-md-12.no-padding
+				p
+					| I first met Phenomenon in 2010 when I was looking for an agency to help launch a Payday Loan Company. Pheno was a small shop and I was sure that we would be one of their biggest clients, so I was excited to talk to them. But when I got them on the phone and explained the brief to them, they weren't interested.
+	div.col-xs-12.col-md-12.no-padding
+		img(src="assets/images/about/about2.png")
+//include ./components/content-template.jade
+

@@ -1,0 +1,13 @@
+.about {
+	article {
+		margin-top: 20px;
+	}
+	figure {
+		background: #F2F2F2;
+		padding: $base-spacing;
+		margin-top: 100px;
+		img {
+			margin-top: -100px;
+		}
+	}
+}

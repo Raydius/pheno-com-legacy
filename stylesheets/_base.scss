@@ -3,7 +3,6 @@ html, body {
   width: 100%;
   margin: 0;
   background-color: $primary_color;
-  font-family: sans-serif;
   overflow: initial;
   font-family: $primary_font;
   border-bottom: 8px solid $primary_color;
@@ -13,7 +12,6 @@ html, body {
     border-bottom: 8px solid $primary_color;
     background-color: #FFF;
   }
-
 h1 {
   margin: 0;
   line-height: 50px;

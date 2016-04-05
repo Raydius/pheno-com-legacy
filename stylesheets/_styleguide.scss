@@ -8,7 +8,7 @@ h1, .h1{
 h2, .h2{
 	font-size: $h2_size;
 	color: $black_font;
-	font-family: $secondary_font;
+	font-family: $secondary_font!important;
 }
 
 h3, .h3{
@@ -139,6 +139,9 @@ input[type="file"]{
 	}
 }
 
+ul li {
+	list-style: none;
+}
 ::-webkit-input-placeholder {
    color: $black_font;
    font-weight: bold;

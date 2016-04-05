@@ -1,6 +1,14 @@
 // Contact Page custom styles
 
 .contact{
+  figure {
+    background: #f2f2f2;
+    text-align: center;
+    padding-bottom: 60px;
+    h3 {
+      font-size: 30px;
+    }
+  }
   padding: 0 ($base_spacing - 5);
 
   &.thank-you{

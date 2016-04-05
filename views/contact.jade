@@ -1,1 +1,27 @@
+block variables
+- copy = require('app/copy.js')
+- page = "contact"
+- pageData = copy.content[page]
+
+section.row.no-padding.contact
+	.col-xs-12.col-sm-6.col-md-6.no-padding
+		figure
+			img(src="assets/images/contact/contact1.png")
+			figcaption
+				h3 Los Angeles
+				ul
+					li
+						| +313-800-800
+					li
+						| 5900 Wilshire Blvd, Floor 28, Los Angeles, CA 90036
+	.col-xs-12.col-sm-6.col-md-6.no-padding
+		figure
+			img(src="assets/images/contact/contact2.png")
+			figcaption
+				h3 Chicogo
+				ul 
+					li
+						| +313-800-800
+					li
+						| to carry out a solution in any direction that is correct for the problem.
 include components/contact-form

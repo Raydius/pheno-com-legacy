@@ -94,7 +94,7 @@ var copy =
       "title": "About Phenomenon",
       "className": "about",
       "description": "Phenomenon - About",
-      "heroThumb": "/images/xome_thumb_01-opt.jpg",
+      "heroThumb": "/assets/images/xome_thumb_01-opt.jpg",
       "heroThumbAlt": "Xome - TV Spot",
       "heroThumbTitle": "Click to play video",
       "heroVimeo": "155071130",
@@ -150,7 +150,7 @@ var copy =
         {
           "type": "video",
           "video": true,
-          "thumb": "/images/wilsonx_thumb_04-opt.jpg",
+          "thumb": "/assets/images/wilsonx_thumb_04-opt.jpg",
           "thumbAlt": "Wilson X - TV Spot - Tech Story",
           "thumbTitle": "Click to play video",
           "vimeo": "155010835"
@@ -160,27 +160,27 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": "/images/wilson_x_1_01-opt.jpg",
+              "url": "/assets/images/wilson_x_1_01-opt.jpg",
               "alt": "Wilson X Packaging Photo 1"
             },
             {
-              "url": "/images/wilson_x_1_02-opt.jpg",
+              "url": "/assets/images/wilson_x_1_02-opt.jpg",
               "alt": "Wilson X Packaging Photo 2"
             },
             {
-              "url": "/images/wilson_x_1_03-opt.jpg",
+              "url": "/assets/images/wilson_x_1_03-opt.jpg",
               "alt": "Wilson X Packaging Photo 3"
             },
             {
-              "url": "/images/wilson_x_1_04-opt.jpg",
+              "url": "/assets/images/wilson_x_1_04-opt.jpg",
               "alt": "Wilson X Packaging Photo 4"
             },
             {
-              "url": "/images/wilson_x_1_05-opt.jpg",
+              "url": "/assets/images/wilson_x_1_05-opt.jpg",
               "alt": "Wilson X Packaging Photo 5"
             },
             {
-              "url": "/images/wilson_x_1_06-opt.jpg",
+              "url": "/assets/images/wilson_x_1_06-opt.jpg",
               "alt": "Wilson X Packaging Photo 6"
             }
           ]
@@ -190,35 +190,35 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": "/images/wilson_x_2_02-opt.jpg",
+              "url": "/assets/images/wilson_x_2_02-opt.jpg",
               "alt": "Wilson X Microsite and App Screens 2"
             },
             {
-              "url": "/images/wilson_x_2_03-opt.jpg",
+              "url": "/assets/images/wilson_x_2_03-opt.jpg",
               "alt": "Wilson X Microsite and App Screens 3"
             },
             {
-              "url": "/images/wilson_x_2_04-opt.jpg",
+              "url": "/assets/images/wilson_x_2_04-opt.jpg",
               "alt": "Wilson X Microsite and App Screens 4"
             },
             {
-              "url": "/images/wilson_x_2_05-opt.jpg",
+              "url": "/assets/images/wilson_x_2_05-opt.jpg",
               "alt": "Wilson X Microsite and App Screens 5"
             },
             {
-              "url": "/images/wilson_x_2_06-opt.jpg",
+              "url": "/assets/images/wilson_x_2_06-opt.jpg",
               "alt": "Wilson X Microsite and App Screens 6"
             },
             {
-              "url": "/images/wilson_x_2_07-opt.jpg",
+              "url": "/assets/images/wilson_x_2_07-opt.jpg",
               "alt": "Wilson X Microsite and App Screens 7"
             },
             {
-              "url": "/images/wilson_x_2_08-opt.jpg",
+              "url": "/assets/images/wilson_x_2_08-opt.jpg",
               "alt": "Wilson X Microsite and App Screens 8"
             },
             {
-              "url": "/images/wilson_x_2_09-opt.jpg",
+              "url": "/assets/images/wilson_x_2_09-opt.jpg",
               "alt": "Wilson X Microsite and App Screens 9"
             }
           ]
@@ -229,7 +229,7 @@ var copy =
       "title": "Wilson Anthem",
       "className": "wilson-anthem",
       "description": "CVU - Phenomenon - Wilson Anthem",
-      "heroThumb": "/images/wilson_anthem_thumb-opt.jpg",
+      "heroThumb": "/assets/images/wilson_anthem_thumb-opt.jpg",
       "heroThumbAlt": "Wilson Anthem - TV Spot",
       "heroThumbTitle": "Click to play video",
       "heroVimeo": "155010840",
@@ -244,35 +244,35 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": "/images/wilson_anthem_1_01-opt.jpg",
+              "url": "/assets/images/wilson_anthem_1_01-opt.jpg",
               "alt": "Wilson Anthem Brand Ethos Book Image 1"
             },
             {
-              "url": "/images/wilson_anthem_1_02-opt.jpg",
+              "url": "/assets/images/wilson_anthem_1_02-opt.jpg",
               "alt": "Wilson Anthem Brand Ethos Book Image 2"
             },
             {
-              "url": "/images/wilson_anthem_1_03-opt.jpg",
+              "url": "/assets/images/wilson_anthem_1_03-opt.jpg",
               "alt": "Wilson Anthem Brand Ethos Book Image 3"
             },
             {
-              "url": "/images/wilson_anthem_1_04-opt.jpg",
+              "url": "/assets/images/wilson_anthem_1_04-opt.jpg",
               "alt": "Wilson Anthem Brand Ethos Book Image 4"
             },
             {
-              "url": "/images/wilson_anthem_1_05-opt.jpg",
+              "url": "/assets/images/wilson_anthem_1_05-opt.jpg",
               "alt": "Wilson Anthem Brand Ethos Book Image 5"
             },
             {
-              "url": "/images/wilson_anthem_1_06-opt.jpg",
+              "url": "/assets/images/wilson_anthem_1_06-opt.jpg",
               "alt": "Wilson Anthem Brand Ethos Book Image 6"
             },
             {
-              "url": "/images/wilson_anthem_1_07-opt.jpg",
+              "url": "/assets/images/wilson_anthem_1_07-opt.jpg",
               "alt": "Wilson Anthem Brand Ethos Book Image 7"
             },
             {
-              "url": "/images/wilson_anthem_1_08-opt.jpg",
+              "url": "/assets/images/wilson_anthem_1_08-opt.jpg",
               "alt": "Wilson Anthem Brand Ethos Book Image 8"
             }
           ]
@@ -280,7 +280,7 @@ var copy =
         {
           "type": "scrollable",
           "scrollable": true,
-          "imageUrl": "/images/wilson-anthem-landingpage-opt.jpg",
+          "imageUrl": "/assets/images/wilson-anthem-landingpage-opt.jpg",
           "imageAlt": "Wilson Anthem Landing Page"
         },
         {
@@ -288,42 +288,36 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": "/images/wilson_anthem_2_01-opt.jpg",
+              "url": "/assets/images/wilson_anthem_2_01-opt.jpg",
               "alt": "Wilson Anthem Banner 1"
             },
             {
-              "url": "/images/wilson_anthem_2_02-opt.jpg",
+              "url": "/assets/images/wilson_anthem_2_02-opt.jpg",
               "alt": "Wilson Anthem Banner 2"
             }
           ]
         }
       ]
     },
-    "culture": {
-      "title": "Xome",
-      "className": "xome",
-      "description": "CVU - Phenomenon - Xome",
-      "heroThumb": "/images/xome_thumb_01-opt.jpg",
-      "heroThumbAlt": "Xome - TV Spot",
-      "heroThumbTitle": "Click to play video",
-      "heroVimeo": "155071130",
+    "culture": { 
+      "title": "Culture", 
+      "className": "culture",
+      "description": "CVU - Phenomenon - Xome Culture",     
       "details": [
         "Buying or selling a home is often a complex, fragmented and darned unfriendly process. Xome is a radically better way to do it because it lets you complete everything from the convenience of an app. In just six weeks we built Xome: the first truly integrated way to buy and sell a home. The app lets you list your home, search for a home, make and receive offers, move into escrow and close the deal.",
         "When it came to the TV spot, we created something that spoke to the core of what Xome does, it makes the entire home buying/selling process more transparent. This teaser spot led people to our site where a demo video explained in better detail everything Xome does for the home buyer."
       ],
       "subcontent": [
         {
-          "type": "video",
-          "video": true,
-          "thumb": "/images/xome_thumb_02-opt.jpg",
-          "thumbAlt": "Xome - TV Spot - Transparent House",
-          "thumbTitle": "Click to play video",
-          "vimeo": "159123265"
+          "type": "image",
+          "image": true,
+          "imageUrl": "assets/images/xome-comp-01-opt.jpg",
+          "imageAlt": "Xome Image 1"
         },
         {
           "type": "image",
           "image": true,
-          "imageUrl": "/images/xome-comp-01-opt.jpg",
+          "imageUrl": "/assets/images/xome-comp-01-opt.jpg",
           "imageAlt": "Xome Image 1"
         }
       ]
@@ -332,7 +326,7 @@ var copy =
       "title": "Xome",
       "className": "xome",
       "description": "CVU - Phenomenon - Xome",
-      "heroThumb": "/images/xome_thumb_01-opt.jpg",
+      "heroThumb": "/assets/images/xome_thumb_01-opt.jpg",
       "heroThumbAlt": "Xome - TV Spot",
       "heroThumbTitle": "Click to play video",
       "heroVimeo": "155071130",
@@ -344,7 +338,7 @@ var copy =
         {
           "type": "video",
           "video": true,
-          "thumb": "/images/xome_thumb_02-opt.jpg",
+          "thumb": "/assets/images/xome_thumb_02-opt.jpg",
           "thumbAlt": "Xome - TV Spot - Transparent House",
           "thumbTitle": "Click to play video",
           "vimeo": "159123265"
@@ -352,7 +346,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": "/images/xome-comp-01-opt.jpg",
+          "imageUrl": "/assets/images/xome-comp-01-opt.jpg",
           "imageAlt": "Xome Image 1"
         }
       ]
@@ -361,7 +355,7 @@ var copy =
       "title": "thinkThin",
       "className": "think-thin",
       "description": "CVU - Phenomenon - thinkThin",
-      "heroThumb": "/images/thinkThin_thumb-opt.jpg",
+      "heroThumb": "/assets/images/thinkThin_thumb-opt.jpg",
       "heroThumbAlt": "thinkThin - TV Spot - Pool",
       "heroThumbTitle": "Click to play video",
       "heroVimeo": "158975908",
@@ -373,7 +367,7 @@ var copy =
         {
           "type": "video",
           "video": true,
-          "thumb": "/images/thinkThin_thumb_02-opt.jpg",
+          "thumb": "/assets/images/thinkThin_thumb_02-opt.jpg",
           "thumbAlt": "Wilson X - TV Spot - Run",
           "thumbTitle": "Click to play video",
           "vimeo": "159447308"
@@ -381,7 +375,7 @@ var copy =
         {
           "type": "video",
           "video": true,
-          "thumb": "/images/thinkThin_thumb_03-opt.jpg",
+          "thumb": "/assets/images/thinkThin_thumb_03-opt.jpg",
           "thumbAlt": "Wilson X - TV Spot - Text",
           "thumbTitle": "Click to play video",
           "vimeo": "159448353"
@@ -391,11 +385,11 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": "/images/thinkthin-1-01-opt.jpg",
+              "url": "/assets/images/thinkthin-1-01-opt.jpg",
               "alt": "thinkThin Print Ad 1"
             },
             {
-              "url": "/images/thinkthin-1-02-opt.jpg",
+              "url": "/assets/images/thinkthin-1-02-opt.jpg",
               "alt": "thinkThin Print Ad 2"
             }
           ]
@@ -405,11 +399,11 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": "/images/thinkthin-2-01-opt.jpg",
+              "url": "/assets/images/thinkthin-2-01-opt.jpg",
               "alt": "thinkThin Mobile Shaker Banner Ad 1"
             },
             {
-              "url": "/images/thinkthin-2-02-opt.jpg",
+              "url": "/assets/images/thinkthin-2-02-opt.jpg",
               "alt": "thinkThin Mobile Shaker Banner Ad 2"
             }
           ]
