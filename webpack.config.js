@@ -9,9 +9,11 @@ var path = require('path'),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
     node_modules_dir = path.resolve(__dirname, 'node_modules');
 
+console.log(debug);
+
 module.exports = {
     context: __dirname,
-    devtool: debug ? "inline-sourcemap" : null,
+    devtool: debug ? "cheap-module-eval-source-map" : "eval",
     resolve: {
         alias: {
             app: path.resolve(__dirname, 'app'),
@@ -24,7 +26,7 @@ module.exports = {
     entry: {
         app: './app/phenomenon.js',
         style: './stylesheets/style.scss',
-        vendors: [ 'angular', 'jquery', 'angular-ui-router', 'bootstrap' ]
+        vendors: [ 'angular', 'jquery', 'angular-ui-router', 'bootstrap', 'angular-snap', 'angular-cookies', 'angular-messages' ]
     },
     output: {
         filename: '[name]-bundle.min.js',
@@ -45,10 +47,6 @@ module.exports = {
             template: 'views/index.jade',
             filename: 'index.html',
             title: 'Phenomenon'
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            mangle: false,
-            sourceMap: false
         })
     ],
     module: {
@@ -77,7 +75,7 @@ module.exports = {
                 test: /\.jade$/,
                 loader: 'jade'
             },
-            { test: /\.scss$/, loaders: ["style", "css", "sass"] },
+            { test: /\.scss$/, loaders: ["style", "css?sourceMap", "sass?sourceMap"] },
             { test: /\.css$/,   loader: "style-loader!css-loader!postcss-loader" },
             { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/, loader: 'file-loader' },
             { test: /\.png$/,   loader: "url-loader?prefix=img/&mimetype=image/png"},
