@@ -11,7 +11,7 @@ var path = require('path'),
 
 module.exports = {
     context: __dirname,
-    devtool: debug ? "inline-sourcemap" : null,
+    devtool: debug ? "inline-source-map" : null,
     resolve: {
         alias: {
             app: path.resolve(__dirname, 'app'),
@@ -77,7 +77,7 @@ module.exports = {
                 test: /\.jade$/,
                 loader: 'jade'
             },
-            { test: /\.scss$/, loaders: ["style", "css", "sass"] },
+            { test: /\.scss$/, loaders: ["style", "css?sourceMap", "sass?sourceMap"] },
             { test: /\.css$/,   loader: "style-loader!css-loader!postcss-loader" },
             { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/, loader: 'file-loader' },
             { test: /\.png$/,   loader: "url-loader?prefix=img/&mimetype=image/png"},
