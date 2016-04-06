@@ -1,6 +1,4 @@
-version: '2'
-services:
-  web:
-    build: .
-    ports:
-     - "2070:80"
+web:
+  build: .
+  ports:
+   - "2070:80"
