@@ -33,6 +33,11 @@ h1 {
 article p {
 	font-weight: bold;
 	font-size: 22px;
+	span {
+		font-weight: normal;
+	    display: block;
+	    font-size: 18px;
+	}
 }
 .clear {
 	clear: both;
@@ -40,6 +45,14 @@ article p {
 .loading-box {
   display:block;
   height:400px;
+}
+figcaption {
+	h3 {
+		font-family: $secondary_font;
+		font-weight: bold;
+		font-size: 32px;
+	}
+
 }
 .top-main {
 	border-bottom: 1px solid $gray_border_color;
@@ -61,10 +74,13 @@ article p {
 		}
 	}
 	cite {
-			color: #999999;
+			color: $black_font;
 			font-size: 14px;
 			display: block;
 			margin-top: 5px;
+			font-weight: bold;
+			font-family: $primary_font;
+			font-style: normal;
 			&:before {
 				content: "\2014 \2009";
 			}
