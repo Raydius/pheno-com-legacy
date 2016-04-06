@@ -65,15 +65,14 @@
 	}
 
 	.ac-container label {
-	    height: 30px !important;
-	    padding: 5px 20px;
 	    position: relative;
 	    z-index: 20;
 	    display: block;
-	    height: 30px;
 	    cursor: pointer;
-	    color: #777;
-	    height: 30px;
+	    font-family: $secondary_font;
+	    font-size: 26px;
+	    padding: 20px 0;
+	    color: $black_font;
 	}
 
 	.ac-container {
@@ -87,10 +86,7 @@
 	}
 
 	.ac-container input:checked + label,.ac-container input:checked + label:hover {
-	    color: #666;
-	    height: 30px;
-	    line-height: 21px;
-	    font-size: 13px;
+
 	}
 
 	.ac-container label:hover:after,.ac-container input:checked + label:hover:after {
@@ -126,13 +122,10 @@
 	}
 
 	.ac-container article p {
-	    font-style: normal;
-	    color: #777;
-	    line-height: 23px;
-	    font-size: 10px;
-	    padding: 20px;
-	    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
-	    font: normal normal 12px 'Open Sans';
+		font-size: 17px;
+		font-weight: normal;
+		font-family: $monospace_font;
+		margin-top: 10px;
 	}
 
 	.ac-container input:checked ~ article {
