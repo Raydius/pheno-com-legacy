@@ -1,22 +1,53 @@
-// hero video always appears on top
-video-component(thumb=pageData.heroThumb, alt=pageData.heroThumbAlt, title=pageData.heroThumbTitle, vimeo=pageData.heroVimeo)
+// dynamically populate content from copy.json data
+block variables
+- copy = require('app/copy.js')
+- pageData = copy.content[page]
 
-// title and body copy
-section.row.no-padding.details.section
-	article.col-xs-12.col-md-10.no-padding
-		h2= pageData.title
-		each par in pageData.details
-			p= par
+section.row.no-padding.work
+	article.col-md-12.no-padding.top-main
+		h2 
+			blockquote= pageData.blockquote
 
-// other content modules
-each contentItem in pageData.subcontent
-	if contentItem.carousel
-		carousel-component.carousel-component.component.section.no-padding(data-snap-ignore="true")
-			each carouselItem in contentItem.images
-				img(src=carouselItem.url, alt=carouselItem.alt)
-	if contentItem.image
-		section.image-component.component.section.row.no-padding
-			.col-xs-12.no-padding
-				img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
-	if contentItem.video
-		video-component(thumb=contentItem.thumb, alt=contentItem.thumbAlt, title=contentItem.thumbTitle, vimeo=contentItem.vimeo)
+		cite
+			img(src="assets/images/about/about-avatar.png")
+
+			span
+				| Mike Dowse
+			span
+				| CEO, Wilson
+	article.col-md-12.no-padding
+		.col-md-8.top-description
+			if pageData.topDescription
+				each par in pageData.topDescription
+					p= par
+		.col-md-4
+			aside
+				img.clientlogo(src= pageData.clientLogo)
+				fieldset 
+					legend Client
+					span= pageData.client
+				fieldset 
+					legend Project
+					span= pageData.project
+				fieldset 
+					legend Media
+					span= pageData.media
+				fieldset
+					legend.share Share
+
+each contentItem in pageData.detailcontent
+	article.col-md-12.no-padding
+		if contentItem.video
+			video-component(thumb=contentItem.thumb, alt=contentItem.thumbAlt, title=contentItem.thumbTitle, vimeo=contentItem.vimeo)
+
+		if contentItem.carousel
+			carousel-component.carousel-component.component.section.no-padding(data-snap-ignore="true")
+				each carouselItem in contentItem.images
+					img(src=carouselItem.url, alt=carouselItem.alt)
+		if contentItem.image
+			section.image-component.component.row.no-padding
+				.col-xs-12.no-padding
+					img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
+		if contentItem.mainDescription
+			each par in contentItem.mainDescription
+				p= par

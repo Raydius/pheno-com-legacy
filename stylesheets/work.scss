@@ -1,5 +1,43 @@
 .work {
+	.top-main {
+		margin-bottom: $base_spacing;
+	}
+	.top-description {
+		p {
+			line-height: 35px;
+			font-size: 18px;
+			&:first-child:first-letter {
+				float: left;
+				font-size: 76px;
+				line-height: 60px;
+			}
+		}
+	}
+	article {
+		margin-top: $base_spacing;
+		&:first-of-type {
+			margin: 0;
+		}
+		&:nth-of-type(odd) {
+			.col-md-8 {
+				float: right;
+			}
+		}
+	}
 	h2 blockquote  {
 		font-size: 52px;
+	}
+	img.clientlogo {
+		width: 50px;
+		margin-bottom: $base_spacing - 20;
+	}
+	legend.share {
+		background: url('../assets/images/works/share-icon.svg') no-repeat left top;  
+	}
+	fieldset {
+		span {
+			font-weight: bold;
+			font-size: 17px;
+		}
 	}
 }

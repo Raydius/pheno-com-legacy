@@ -30,9 +30,22 @@ h1 {
     vertical-align: baseline;
   }
 }
+legend {
+	display: block;
+	border: 0;
+	font-size: 14px;
+}
 article p {
 	font-weight: bold;
 	font-size: 22px;
+
+	&:last-of-type {
+		margin-bottom: $base_spacing;
+	}
+
+	&.red {
+		color: $primary_color;
+	}
 	span {
 		font-weight: normal;
 	    display: block;

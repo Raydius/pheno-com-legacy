@@ -10,7 +10,10 @@ var copy = require('app/copy.js');
 
 var templateAbout = require('views/about.jade');
 var templateWork = require('views/work.jade');
-var templateWorkCase = require('views/work-case.jade');
+var templateWorkWilsonX = require('views/wilson-x.jade');
+var templateWorkSLS = require('views/sls.jade'); 
+var templateWorkSunny = require('views/sunny.jade');
+var templateWorkCooper = require('views/cooper.jade');  
 var templateEntertainment = require('views/entertainment.jade');
 var templateCulture = require('views/culture.jade');
 var templateContact = require('views/contact.jade');
@@ -55,9 +58,33 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 
         .state('work/wilson-x', {
             url: '/work/wilson-x',
-            template: templateWorkCase,
+            template: templateWorkWilsonX, 
             data: {
                 pageTitle: 'PHENOMENON - Wilson X case study'
+            }
+        })
+
+        .state('work/sls', {
+            url: '/work/sls',
+            template: templateWorkSLS, 
+            data: {
+                pageTitle: 'PHENOMENON - SLS case study'
+            }
+        })
+        
+        .state('work/sunny', {
+            url: '/work/sunny',
+            template: templateWorkSunny, 
+            data: {
+                pageTitle: 'PHENOMENON - Sunny case study'
+            }
+        })
+        
+        .state('work/cooper', {
+            url: '/work/cooper',
+            template: templateWorkCooper, 
+            data: {
+                pageTitle: 'PHENOMENON - Mr.Cooper case study'
             }
         })
 

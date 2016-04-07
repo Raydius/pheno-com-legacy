@@ -16,3 +16,20 @@ section.row.no-padding.work
 			span
 				| CEO, Wilson
 
+	each contentItem in pageData.subcontent
+		article.col-md-12.no-padding
+			.col-sm-12.col-md-8
+				if contentItem.image
+					img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
+			.col-sm-12.col-md-4
+				fieldset
+					legend= contentItem.legend
+
+					cite
+						span
+							| By Amy Weisenbach
+						span
+							| VP Marketing, Wilson
+					p= contentItem.description
+					
+					a.red(href="#/work/wilson-x") Read More
