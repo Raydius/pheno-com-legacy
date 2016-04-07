@@ -7,7 +7,7 @@
     "build": "./node_modules/.bin/webpack --progress -p || true",
     "prestart": "npm install",
     "start": "./node_modules/.bin/webpack-dev-server --content-base ./ --port 9000 --hot",
-    "start-production": "cp -R ./public /usr/share/nginx/html && nginx -g \"daemon off;\""
+    "start-production": "cp -R ./public/. /usr/share/nginx/html/ && nginx -g \"daemon off;\""
   },
   "dependencies": {
     "angular": "^1.5.3",
