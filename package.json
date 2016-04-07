@@ -5,10 +5,9 @@
   "private": true,
   "scripts": {
     "build": "./node_modules/.bin/webpack --progress -p || true",
-    "build-production": "./node_modules/.bin/webpack --output-path /usr/share/nginx/html -p || true",
     "prestart": "npm install",
     "start": "./node_modules/.bin/webpack-dev-server --content-base ./ --port 9000 --hot",
-    "start-production": "npm install && npm rebuild node-sass && npm run build-production && nginx -g \"daemon off;\""
+    "start-production": "cp ./public /usr/share/nginx/html && nginx -g \"daemon off;\""
   },
   "dependencies": {
     "angular": "^1.5.3",
