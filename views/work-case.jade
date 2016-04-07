@@ -1,6 +1,7 @@
-
 block variables
-  - page = "wilson-x"
+- copy = require('app/copy.js')
+- page = "wilsonX"
+- pageData = copy.content[page] 
 
 include ./components/content-template.jade
 

@@ -16,6 +16,9 @@
 			
 		}
 	}
+	.col-md-7 {
+		padding-left: $base-spacing;
+	}
 	figcaption ul {
 		padding-left: 0;
 		font-size: 16px;
@@ -50,6 +53,18 @@
 		/*Acco*/
 	.ac-container {
 	    max-width: 400px;
+	    .test {
+	    	position: relative;
+	    }
+	    input:checked {
+	    	+ label {
+	    		
+	    		&:after {
+	    			content: "-";
+	    		}
+
+	    	}
+	    }
 	}
 
 	.ac-container label {
@@ -61,6 +76,12 @@
 	    font-size: 26px;
 	    padding: 20px 0;
 	    color: $black_font;
+	    width: 100%;
+	    &:after {
+	    	content: "+";
+	    	position: absolute;
+	    	right: 0;
+	    }
 	}
 
 	.ac-container {
@@ -71,20 +92,6 @@
 
 	.ac-container label:hover {
 	    background: #fff;
-	}
-
-	.ac-container input:checked + label,.ac-container input:checked + label:hover {
-
-	}
-
-	.ac-container label:hover:after,.ac-container input:checked + label:hover:after {
-	    content: '';
-	    position: absolute;
-	    width: 24px;
-	    height: 24px;
-	    right: 13px;
-	    top: 7px;
-	    //background: transparent url(../images/arrow_down.png) no-repeat center center;
 	}
 
 	.ac-container input:checked + label:hover:after {

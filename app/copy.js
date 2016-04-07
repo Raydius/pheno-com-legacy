@@ -119,10 +119,10 @@ var copy =
         }
       ]
     },
-    "work": {
+    "wilsonX": { 
       "title": "Wilson X",
       "className": "wilson-x",
-      "description": "CVU - Phenomenon - Wilson X",
+      "description": "CVU - Phenomenon - Wilson X", 
       "heroThumb": require('assets/images/wilsonx_thumb_01-opt.jpg'),
       "heroThumbAlt": "Wilson X - Case Study Video",
       "heroThumbTitle": "Click to play video",

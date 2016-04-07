@@ -1,5 +1,9 @@
 .jobs {
+	.col-md-7 {
+		padding-left: 100px;
+	}
 	.top-main {
+
 		h2 {
 			font-size: 34px;
 		}
@@ -15,7 +19,7 @@
 			display: block;
 		}
 		li {
-			padding: 20px 100px;
+			padding: 20px 0;
 			font-size: 30px;
 			border-top: 1px solid #ddd;
 			&:last-child {

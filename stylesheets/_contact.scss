@@ -1,6 +1,11 @@
 // Contact Page custom styles
 
 .contact{
+  .top-main {
+    h2 blockquote {
+      font-size: 52px;
+    }
+  }
   figure {
     background: #f2f2f2;
     text-align: center;
@@ -26,7 +31,7 @@
     
     text-align: center;
     margin-top: $base_spacing;
-    
+    padding-bottom: $base_spacing*2;
     h4 {
       color: $black_font;
       font-family: $secondary_font;

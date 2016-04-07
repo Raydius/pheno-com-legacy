@@ -1,8 +1,3 @@
-// dynamically populate content from copy.json data
-block variables
-- copy = require('app/copy.js')
-- pageData = copy.content[page]
-
 // hero video always appears on top
 video-component(thumb=pageData.heroThumb, alt=pageData.heroThumbAlt, title=pageData.heroThumbTitle, vimeo=pageData.heroVimeo)
 

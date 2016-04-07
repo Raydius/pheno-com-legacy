@@ -1,6 +1,18 @@
-
 block variables
-  - page = "work"
+- copy = require('app/copy.js')
+- page = "work"
+- pageData = copy.content[page]
 
-include ./components/content-template.jade
+section.row.no-padding.work
+	article.col-md-12.no-padding.top-main
+		h2 
+			blockquote  
+				| A lot of the work they do is confidential. <br>Here's some that isn't.
+		cite
+			img(src="assets/images/about/about-avatar.png")
+
+			span
+				| Mike Dowse
+			span
+				| CEO, Wilson
 

@@ -55,60 +55,73 @@ figcaption {
 
 }
 .top-main {
+	position: relative;
 	border-bottom: 1px solid $gray_border_color;
 	padding-bottom: $base_spacing;
-	h2 blockquote {
-		font-size: 40px;
-		font-weight: 600;
-		letter-spacing: -1px;
-		border-left: 0;
-		&:before {
-			content: "";
-			display: block;
-			content: "\201C";
-			font-size: 80px;
-			position: absolute;
-			left: -20px;
-			top: -20px;
-			color: $black_font;
-		}
-	}
-	cite {
-		color: $black_font;
-		font-size: 14px;
-		display: block;
-		margin-top: 5px;
-		font-weight: bold;
-		font-family: $primary_font;
-		font-style: normal;
-		&:before {
-			content: "\2014 \2009";
-			content: none;
-		}
-		
-		img {
-			width: 50px;
-			float: left;
-			margin-right: 10px;
-		}
-		
-		span:first-of-type {
-			display: block;
-			padding-top: 8px;
-		}
-		> span {
-			&:last-of-type {
-				opacity: 0.5;
-				display: block;
-			}
-		}
-	}
+	
 	h2 {
 		font-weight: bold;
 	}
 }
-cite span {
+cite {
+	color: $black_font;
+	font-size: 14px;
 	display: block;
+	margin-top: 5px;
+	font-weight: bold;
+	font-family: $primary_font;
+	font-style: normal;
+	&:before {
+		content: "\2014 \2009";
+		content: none;
+	}
+	
+	img {
+		width: 50px;
+		float: left;
+		margin-right: 10px;
+	}
+	
+	span {
+		display: block;
+		:first-of-type {
+			padding-top: 8px;
+		}
+
+	}
+	> span {
+		&:last-of-type {
+			opacity: 0.5;
+			display: block;
+		}
+	}
+}
+h2 blockquote, h3 blockquote  {
+	font-size: 40px;
+	font-weight: 600;
+	letter-spacing: -1px;
+	border-left: 0;
+	position: relative;
+	font-family: $secondary_font;
+	&:before {
+		content: "";
+		display: block;
+		content: "\201C";
+		font-size: inherit;
+		position: absolute;
+		left: 0;
+		top: 10px; 
+		color: $black_font;
+	}
+}
+h3 blockquote {
+	font-size: 22px;
+	line-height: 28px;
+	width: 400px;
+	color: #333;
+	&:before {
+		color: inherit;
+	}
 }
 .social{
 
