@@ -1,2 +1,2 @@
-FROM raydollete/npm-nginx:latest
-COPY . /usr/src/app
+FROM nginx:stable
+COPY ./public/. /usr/share/nginx/html

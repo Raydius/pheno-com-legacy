@@ -29,7 +29,7 @@ module.exports = {
     output: {
         filename: '[name]-bundle.min.js',
         path: path.resolve(__dirname, 'public'),
-        publicPath: path.resolve(__dirname, '/'),
+        publicPath: debug ? path.resolve(__dirname, '/') : 'http://127.0.0.1:2070/',
         libraryTarget: "umd"
     },
     plugins: [
