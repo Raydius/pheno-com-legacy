@@ -9,8 +9,6 @@ var path = require('path'),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
     node_modules_dir = path.resolve(__dirname, 'node_modules');
 
-console.log(debug);
-
 module.exports = {
     context: __dirname,
     devtool: debug ? "cheap-module-eval-source-map" : "eval",
