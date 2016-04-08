@@ -35,19 +35,22 @@ section.row.no-padding.work
 				fieldset
 					legend.share Share
 
-each contentItem in pageData.detailcontent
-	article.col-md-12.no-padding
-		if contentItem.video
-			video-component(thumb=contentItem.thumb, alt=contentItem.thumbAlt, title=contentItem.thumbTitle, vimeo=contentItem.vimeo)
+	each contentItem in pageData.detailcontent
+		article.col-md-12.no-padding
+			if contentItem.video
+				video-component(thumb=contentItem.thumb, alt=contentItem.thumbAlt, title=contentItem.thumbTitle, vimeo=contentItem.vimeo)
 
-		if contentItem.carousel
-			carousel-component.carousel-component.component.section.no-padding(data-snap-ignore="true")
-				each carouselItem in contentItem.images
-					img(src=carouselItem.url, alt=carouselItem.alt)
-		if contentItem.image
-			section.image-component.component.row.no-padding
-				.col-xs-12.no-padding
-					img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
-		if contentItem.mainDescription
-			each par in contentItem.mainDescription
-				p= par
+			if contentItem.carousel
+				carousel-component.carousel-component.component.section.no-padding(data-snap-ignore="true")
+					each carouselItem in contentItem.images
+						img(src=carouselItem.url, alt=carouselItem.alt)
+			if contentItem.image
+				section.image-component.component.row.no-padding
+					.col-xs-12.no-padding
+						img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
+			if contentItem.mainDescription
+				each par in contentItem.mainDescription
+					p= par
+	
+	include more-cases
+	
