@@ -1,0 +1,36 @@
+.jobs {
+	.col-md-7 {
+		padding-left: 100px;
+	}
+	.top-main {
+
+		h2 {
+			font-size: 34px;
+		}
+		border-bottom: 0;
+	}
+	ul {
+		> span {
+			color: $primary_color;
+			font-family: $primary_font;
+			font-size: 17px;
+			font-weight: bold;
+			padding: 20px 0;
+			display: block;
+		}
+		li {
+			padding: 20px 0;
+			font-size: 30px;
+			border-top: 1px solid #ddd;
+			&:last-child {
+				border-bottom: 1px solid #ddd;
+			}
+		} 
+	}
+	a, .a, .link {
+		color: $black_font;
+		font-family: $secondary_font;
+		font-family: 28px;
+		font-weight: bold;
+	}
+}

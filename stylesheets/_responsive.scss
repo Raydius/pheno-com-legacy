@@ -20,7 +20,15 @@
   .owl-theme .owl-next {
     margin-right: 20%;
   }
+  .topnav .tabs li {
+    font-size: 14px;
+    padding: 0 25px;
+  }
+  .about .top-main p {
+    min-width: 100%;
+  }
 }
+
 
 // all non-phone devices
 @media (min-width: 737px) {
@@ -295,5 +303,14 @@
     form{
       padding-bottom: ($base_spacing/2)
     }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  .topnav .nav-wrapper {
+    padding: 30px 0;
+  }
+  .topnav .tabs ul li {
+    padding: 0 25px;
   }
 }

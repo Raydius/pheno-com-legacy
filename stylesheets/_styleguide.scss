@@ -26,7 +26,7 @@ p, .p{
 }
 
 a, .a, .link{
-	color: $gray_font;
+	color: $gray_color; 
 	cursor: pointer;
 	text-decoration: none;
 	@include transition(color .1s ease-in-out);
@@ -139,6 +139,9 @@ input[type="file"]{
 	}
 }
 
+ul li {
+	list-style: none;
+}
 ::-webkit-input-placeholder {
    color: $black_font;
    font-weight: bold;

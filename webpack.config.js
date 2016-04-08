@@ -11,7 +11,8 @@ var path = require('path'),
 
 module.exports = {
     context: __dirname,
-    devtool: debug ? "cheap-module-eval-source-map" : "eval",
+    devtool: debug ? "inline-source-map" : null,
+    debug: true,
     resolve: {
         alias: {
             app: path.resolve(__dirname, 'app'),
@@ -24,12 +25,12 @@ module.exports = {
     entry: {
         app: './app/phenomenon.js',
         style: './stylesheets/style.scss',
-        vendors: [ 'angular', 'jquery', 'angular-ui-router', 'bootstrap', 'angular-snap', 'angular-cookies', 'angular-messages' ]
+        vendors: [ 'angular', 'jquery', 'angular-ui-router', 'bootstrap' ]
     },
     output: {
         filename: '[name]-bundle.min.js',
         path: path.resolve(__dirname, 'public'),
-        publicPath: debug ? path.resolve(__dirname, '/') : 'http://127.0.0.1:2070/',
+        publicPath: debug ? 'http://127.0.0.1:9000/' : path.resolve(__dirname, '/'),
         libraryTarget: "umd"
     },
     plugins: [
@@ -46,6 +47,10 @@ module.exports = {
             filename: 'index.html',
             title: 'Phenomenon'
         })
+        /*new webpack.optimize.UglifyJsPlugin({
+            mangle: false,
+            sourceMap: false
+        })*/
     ],
     module: {
         noParse: [
