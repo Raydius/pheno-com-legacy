@@ -18,13 +18,13 @@ section.row.no-padding.work
 
 	each contentItem in pageData.subcontent
 		article.col-md-12.no-padding
-			.col-sm-12.col-md-8
+			.col-xs-12.col-sm-12.col-md-8
 				if contentItem.image
 					img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
-			.col-sm-12.col-md-4
+			.col-xs-12.col-sm-12.col-md-4
 				fieldset
 					legend= contentItem.legend
-
+					h3= contentItem.headline 
 					cite
 						span
 							| By Amy Weisenbach
@@ -32,4 +32,4 @@ section.row.no-padding.work
 							| VP Marketing, Wilson
 					p= contentItem.description
 					
-					a.red(href="#/work/wilson-x") Read More
+					a.red(href=contentItem.readmoreUrl) Read More

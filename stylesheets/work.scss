@@ -35,6 +35,12 @@
 		background: url('../assets/images/works/share-icon.svg') no-repeat left top;  
 	}
 	fieldset {
+		h3 {
+			font-family: $secondary_font;
+			font-weight: bold;
+			color: $gray_font;
+			font-size: 34px;
+		}
 		span {
 			font-weight: bold;
 			font-size: 17px;

@@ -10,8 +10,11 @@ var copy = require('app/copy.js');
 
 var templateAbout = require('views/about.jade');
 var templateWork = require('views/work.jade');
+var templateWorkAnthem = require('views/wilson-anthem.jade');
 var templateWorkWilsonX = require('views/wilson-x.jade');
 var templateWorkSLS = require('views/sls.jade'); 
+var templateWorkXome = require('views/xome.jade'); 
+var templateWorkThinkThin = require('views/think-thin.jade'); 
 var templateWorkSunny = require('views/sunny.jade');
 var templateWorkCooper = require('views/cooper.jade');  
 var templateEntertainment = require('views/entertainment.jade');
@@ -55,12 +58,35 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                 pageTitle: 'PHENOMENON - Wilson X case study'
             }
         })
+        .state('work/wilson-anthem', {
+            url: '/work/wilson-anthem',
+            template: templateWorkAnthem, 
+            data: {
+                pageTitle: 'PHENOMENON - Wilson Anthem case study'
+            }
+        })
 
         .state('work/wilson-x', {
             url: '/work/wilson-x',
             template: templateWorkWilsonX, 
             data: {
                 pageTitle: 'PHENOMENON - Wilson X case study'
+            }
+        })
+
+        .state('work/xome', {
+            url: '/work/xome',
+            template: templateWorkXome, 
+            data: {
+                pageTitle: 'PHENOMENON - Xome case study'
+            }
+        })
+
+        .state('work/think-thin', {
+            url: '/work/think-thin',
+            template: templateWorkThinkThin, 
+            data: {
+                pageTitle: 'PHENOMENON - Think Thin case study'
             }
         })
 

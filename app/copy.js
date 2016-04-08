@@ -137,8 +137,10 @@ var copy =
           "imageUrl": require('assets/images/work-1.jpg'),
           "imageAlt": "Wilson Image 1",
           "legend": "Home / Real Estate",
+          "headline": "Wilson Is Now Fully Equipped.",
           "cite": "",
-          "description": "New company looks to make buying and selling a home not only more mobile, but more transparent."
+          "description": "New company looks to make buying and selling a home not only more mobile, but more transparent.",
+          "readmoreUrl": "#/work/wilson-anthem"
         },
         {
           "type": "image",
@@ -146,8 +148,11 @@ var copy =
           "imageUrl": require('assets/images/work-2.jpg'),
           "imageAlt": "Wilson Image 2",
           "legend": "Sports/ Lifestyle",
+          "headline": "When Buying a House, There's no place like Xome",
           "cite": "",
-          "description": "360 degree global campaign is the first in the company's 50 year history."
+          "description": "360 degree global campaign is the first in the company's 50 year history.",
+          "readmoreUrl": "#/work/xome"
+
         },
         {
           "type": "image",
@@ -155,8 +160,11 @@ var copy =
           "imageUrl": require('assets/images/work-3.jpg'),
           "imageAlt": "Wilson Image 3",
           "legend": "Fashion / Retail",
+          "headline": "Men",
           "cite": "",
-          "description": "After the departure of longtime owner and face of brand, company looks to modernize all the way down to the cufflinks."
+          "description": "After the departure of longtime owner and face of brand, company looks to modernize all the way down to the cufflinks.",
+          "readmoreUrl": "#/work/mens-warehouse"
+
         },
         {
           "type": "image",
@@ -164,8 +172,10 @@ var copy =
           "imageUrl": require('assets/images/work-4.png'),
           "imageAlt": "Wilson Image 4",
           "legend": "Sport / Lifestyle",
+          "headline": "Wilson Launches Futuristic Ball",
           "cite": "",
-          "description": "For the first time a basketball is connected to your smartphone to track makes, misses and enhance performance."
+          "description": "For the first time a basketball is connected to your smartphone to track makes, misses and enhance performance.",
+          "readmoreUrl": "#/work/wilson-x"
         },
         {
           "type": "image",
@@ -173,8 +183,10 @@ var copy =
           "imageUrl": require('assets/images/work-5.jpg'),
           "imageAlt": "Wilson Image 5",
           "legend": "Finance / Loans",
+          "headline": 'It\'s A "Sunny" Day for Payday Loans.',
           "cite": "",
-          "description": "British company creates a whole new business model for payday loans that gives borrowers a better chance at getting out of debt."
+          "description": "British company creates a whole new business model for payday loans that gives borrowers a better chance at getting out of debt.",
+          "readmoreUrl": "#/work/sunny"          
         },
         {
           "type": "image",
@@ -182,8 +194,11 @@ var copy =
           "imageUrl": require('assets/images/work-6.jpg'),
           "imageAlt": "Wilson Image 6",
           "legend": "Food / Drink",
+          "headline": "thinkThin Helps Women to Shed Guilt",
           "cite": "",
-          "description": "Nutritional bar targeted to women launches its campaign using humor to rave reviews online."
+          "description": "Nutritional bar targeted to women launches its campaign using humor to rave reviews online.",
+          "readmoreUrl": "#/work/think-thin"
+
         },
         {
           "type": "image",
@@ -191,9 +206,109 @@ var copy =
           "imageUrl": require('assets/images/work-7.png'),
           "imageAlt": "Wilson Image 7",
           "legend": "Travel / Leisure",
+          "headline": "SLS Vegas Gives the Strip a Whole New Look.",
           "cite": "",
-          "description": "Growing LA Entertainment group decides to make a splash in Sin City with launch of bold hotel and casino."
+          "description": "Growing LA Entertainment group decides to make a splash in Sin City with launch of bold hotel and casino.",
+          "readmoreUrl": "#/work/sls"
         }
+      ]
+    },
+    "wilson-anthem": { 
+      "title": "Wilson Anthem",
+      "className": "wilson-anthem",
+      "client": "Wilson",
+      "clientLogo": require('assets/images/works/clients_logo/wilson_logo.svg'),
+      "project": "Wilson Anthem",
+      "media": "Branding, Video, Digital",
+      "blockquote": "Wilson Is Now Fully Equipped.",
+      "description": "CVU - Phenomenon - Wilson X", 
+      "topDescription": [
+        "Wilson has been around for over 100 years but we've never had a global brand campaign. Since this was our first campaign, we needed to identify what Wilson is all about. We make quality, trusted equipment, but what do we stand for? What is our role in the world of sports? We worked with the strategic team at Phenomenon to land on a pretty powerful yet simple idea; Wilson is every athletes faithful weapon.",
+        "We worked with the strategic team at Phenomenon to land on a pretty powerful yet simple idea; Wilson is every athletes faithful weapon.",
+        "Before we did any consumer-facing branding, we asked Pheno to create something that could rally the Wilson team from within. What did this new face of Wilson mean? How could we as employees live this? So we produced a beautifully bound brand book containing words and images that boldly and loudly defined who we are and handed them out to each of our employees."
+      ],
+      "heroThumb": require('assets/images/wilsonx_thumb_01-opt.jpg'),
+      "heroThumbAlt": "Wilson X - Case Study Video",
+      "heroThumbTitle": "Click to play video",
+      "heroVimeo": "155010841",
+      "details": [
+        "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
+      ],
+      "detailcontent": [
+        {
+          "carousel": true,
+          "images": [
+            {
+              "url": "/assets/images/wilson_x_1_01-opt.jpg",
+              "alt": "Wilson X Packaging Photo 1"
+            },
+            {
+              "url": "/assets/images/wilson_x_1_02-opt.jpg",
+              "alt": "Wilson X Packaging Photo 2"
+            },
+            {
+              "url": "/assets/images/wilson_x_1_03-opt.jpg",
+              "alt": "Wilson X Packaging Photo 3"
+            },
+            {
+              "url": "/assets/images/wilson_x_1_04-opt.jpg",
+              "alt": "Wilson X Packaging Photo 4"
+            },
+            {
+              "url": "/assets/images/wilson_x_1_05-opt.jpg",
+              "alt": "Wilson X Packaging Photo 5"
+            },
+            {
+              "url": "/assets/images/wilson_x_1_06-opt.jpg",
+              "alt": "Wilson X Packaging Photo 6"
+            }
+          ],
+          "mainDescription": [
+            "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
+          ]
+        },
+        {
+          "carousel": true,
+          "images": [
+            {
+              "url": "/assets/images/wilson_x_1_01-opt.jpg",
+              "alt": "Wilson X Packaging Photo 1"
+            },
+            {
+              "url": "/assets/images/wilson_x_1_02-opt.jpg",
+              "alt": "Wilson X Packaging Photo 2"
+            },
+            {
+              "url": "/assets/images/wilson_x_1_03-opt.jpg",
+              "alt": "Wilson X Packaging Photo 3"
+            },
+            {
+              "url": "/assets/images/wilson_x_1_04-opt.jpg",
+              "alt": "Wilson X Packaging Photo 4"
+            },
+            {
+              "url": "/assets/images/wilson_x_1_05-opt.jpg",
+              "alt": "Wilson X Packaging Photo 5"
+            },
+            {
+              "url": "/assets/images/wilson_x_1_06-opt.jpg",
+              "alt": "Wilson X Packaging Photo 6"
+            }
+          ],
+          "mainDescription": [
+            "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
+          ]
+        },
+        {
+          "video": true,
+          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
+          "thumbAlt": "Wilson X - TV Spot - All Day",
+          "thumbTitle": "Click to play video",
+          "vimeo": "155010839",
+          "mainDescription": [
+            "The results: We sold out on Amazon in just two weeks and Wilson X will be in retail stores all over the country this Spring."
+          ]
+        },
       ]
     },
     "wilsonX": { 
@@ -363,12 +478,138 @@ var copy =
         }
       ]
     },
+    "xome": { 
+      "title": "Xome",
+      "className": "Xome",
+      "client": "Xome",
+      "clientLogo": require('assets/images/works/clients_logo/xome.svg'),
+      "project": "Xome",
+      "media": "Branding",
+      "blockquote": 'It\'s A "Sunny" Day for Payday Loans',
+      "description": "CVU - Phenomenon - Wilson X",
+      "topDescription": [
+        "In the UK, the short-term loans business is not dissimilar to the US in that we have a huge problem with perception. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
+        "We went to Phenomenon to help us create a differentiating short-term loan product",
+        "We went to Phenomenon, not to create a brand campaign or an app or some other piece of communication. We went to Phenomenon to help us create a differentiating short-term loan product. And they came back to us with an interesting idea they aptly called Sunny."
+      ],
+      "detailcontent": [
+        {
+          "type": "image",
+          "image": true,
+          "imageUrl": "assets/images/sunny-1.jpg",
+          "imageAlt": "Sunny",
+          "mainDescription": [
+            'Strategically, Pheno recognized that there was no loyalty in our industry. People took out their first loan and then had to pay so much back that they took out another loan to pay for that, and so on and so on. Often working with multiple companies in the process, or as they deemed it, "a circle of debt."',
+            "They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq.",
+            "Phenomenon helped us with all of this. They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq."            
+          ]      
+        },
+        {
+          "type": "image",
+          "image": true,
+          "imageUrl": "assets/images/sunny-2.jpg",
+          "imageAlt": "Sunny",
+        },
+        {
+          "type": "video",
+          "video": true,
+          "thumb": "/assets/images/xome_thumb_02-opt.jpg",
+          "thumbAlt": "Xome - TV Spot - Transparent House",
+          "thumbTitle": "Click to play video",
+          "vimeo": "159123265"
+        }
+      ]
+    },
     "sunny": { 
       "title": "Sunny",
       "className": "sunny",
       "client": "Sunny",
       "clientLogo": require('assets/images/works/clients_logo/sunny.svg'),
       "project": "SLS",
+      "media": "Branding",
+      "blockquote": 'It\'s A "Sunny" Day for Payday Loans',
+      "description": "CVU - Phenomenon - Wilson X",
+      "topDescription": [
+        "In the UK, the short-term loans business is not dissimilar to the US in that we have a huge problem with perception. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
+        "We went to Phenomenon to help us create a differentiating short-term loan product",
+        "We went to Phenomenon, not to create a brand campaign or an app or some other piece of communication. We went to Phenomenon to help us create a differentiating short-term loan product. And they came back to us with an interesting idea they aptly called Sunny."
+      ],
+      "detailcontent": [
+        {
+          "type": "image",
+          "image": true,
+          "imageUrl": "assets/images/sunny-1.jpg",
+          "imageAlt": "Sunny",
+          "mainDescription": [
+            'Strategically, Pheno recognized that there was no loyalty in our industry. People took out their first loan and then had to pay so much back that they took out another loan to pay for that, and so on and so on. Often working with multiple companies in the process, or as they deemed it, "a circle of debt."',
+            "They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq.",
+            "Phenomenon helped us with all of this. They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq."            
+          ]      
+        },
+        {
+          "type": "image",
+          "image": true,
+          "imageUrl": "assets/images/sunny-2.jpg",
+          "imageAlt": "Sunny",
+        },
+        {
+          "type": "video",
+          "video": true,
+          "thumb": "/assets/images/xome_thumb_02-opt.jpg",
+          "thumbAlt": "Xome - TV Spot - Transparent House",
+          "thumbTitle": "Click to play video",
+          "vimeo": "159123265"
+        }
+      ]
+    },
+    "mens-warehouse": { 
+      "title": "Think Thin",
+      "className": "think-thin",
+      "client": "Think Thin", 
+      "clientLogo": require('assets/images/works/clients_logo/think-thin.svg'),
+      "project": "Think Thin",
+      "media": "Branding",
+      "blockquote": 'It\'s A "Sunny" Day for Payday Loans',
+      "description": "CVU - Phenomenon - Wilson X",
+      "topDescription": [
+        "In the UK, the short-term loans business is not dissimilar to the US in that we have a huge problem with perception. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
+        "We went to Phenomenon to help us create a differentiating short-term loan product",
+        "We went to Phenomenon, not to create a brand campaign or an app or some other piece of communication. We went to Phenomenon to help us create a differentiating short-term loan product. And they came back to us with an interesting idea they aptly called Sunny."
+      ],
+      "detailcontent": [
+        {
+          "type": "image",
+          "image": true,
+          "imageUrl": "assets/images/sunny-1.jpg",
+          "imageAlt": "Sunny",
+          "mainDescription": [
+            'Strategically, Pheno recognized that there was no loyalty in our industry. People took out their first loan and then had to pay so much back that they took out another loan to pay for that, and so on and so on. Often working with multiple companies in the process, or as they deemed it, "a circle of debt."',
+            "They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq.",
+            "Phenomenon helped us with all of this. They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq."            
+          ]      
+        },
+        {
+          "type": "image",
+          "image": true,
+          "imageUrl": "assets/images/sunny-2.jpg",
+          "imageAlt": "Sunny",
+        },
+        {
+          "type": "video",
+          "video": true,
+          "thumb": "/assets/images/xome_thumb_02-opt.jpg",
+          "thumbAlt": "Xome - TV Spot - Transparent House",
+          "thumbTitle": "Click to play video",
+          "vimeo": "159123265"
+        }
+      ]
+    },
+    "think-thin": { 
+      "title": "Think Thin",
+      "className": "think-thin",
+      "client": "Think Thin", 
+      "clientLogo": require('assets/images/works/clients_logo/think-thin.svg'),
+      "project": "Think Thin",
       "media": "Branding",
       "blockquote": 'It\'s A "Sunny" Day for Payday Loans',
       "description": "CVU - Phenomenon - Wilson X",
