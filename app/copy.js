@@ -82,10 +82,20 @@ var copy =
         "className": "icon-instagram",
         "title": "View Phenomenon's Instagram"
       },
+      "twitter": {
+        "url": "https://www.twitter.com/phenomenon/",
+        "className": "icon-twitter",
+        "title": "View Phenomenon's Tweets"
+      },
+      "facebook": {
+        "url": "https://www.facebook.com/phenomenon/",
+        "className": "icon-facebook",
+        "title": "View Phenomenon's Facebook Page"
+      },
       "linkedin": {
         "url": "https://www.linkedin.com/company/phenomenon",
         "className": "icon-linkedin",
-        "title": "View Phenomenon's Instagram"
+        "title": "View Phenomenon's Facebook Page"
       }
     }
   },
@@ -902,4 +912,4 @@ var copy =
   }
 };
 
-module.exports = copy;
+module.exports = copy; 
