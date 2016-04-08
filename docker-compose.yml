@@ -1,4 +1,6 @@
 web:
-  build: .
+  image: nginx:stable
   ports:
    - "2070:80"
+  volumes:
+   - ./public/:/usr/share/nginx/html
