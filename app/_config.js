@@ -15,6 +15,7 @@ var templateWorkWilsonX = require('views/wilson-x.jade');
 var templateWorkSLS = require('views/sls.jade'); 
 var templateWorkXome = require('views/xome.jade'); 
 var templateWorkThinkThin = require('views/think-thin.jade'); 
+var templateWorkMens = require('views/mens-wearhouse.jade');  
 var templateWorkSunny = require('views/sunny.jade');
 var templateWorkCooper = require('views/cooper.jade');  
 var templateEntertainment = require('views/entertainment.jade');
@@ -79,6 +80,14 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             template: templateWorkXome, 
             data: {
                 pageTitle: 'PHENOMENON - Xome case study'
+            }
+        })
+
+        .state('work/mens-wearhouse', {
+            url: '/work/mens-wearhouse',
+            template: templateWorkMens, 
+            data: {
+                pageTitle: 'PHENOMENON - Wilson Anthem case study'
             }
         })
 

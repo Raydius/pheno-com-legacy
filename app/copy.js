@@ -82,10 +82,20 @@ var copy =
         "className": "icon-instagram",
         "title": "View Phenomenon's Instagram"
       },
+      "twitter": {
+        "url": "https://www.twitter.com/phenomenon/",
+        "className": "icon-twitter",
+        "title": "View Phenomenon's Tweets"
+      },
+      "facebook": {
+        "url": "https://www.facebook.com/phenomenon/",
+        "className": "icon-facebook",
+        "title": "View Phenomenon's Facebook Page"
+      },
       "linkedin": {
         "url": "https://www.linkedin.com/company/phenomenon",
         "className": "icon-linkedin",
-        "title": "View Phenomenon's Instagram"
+        "title": "View Phenomenon's Facebook Page"
       }
     }
   },
@@ -163,7 +173,7 @@ var copy =
           "headline": "Men",
           "cite": "",
           "description": "After the departure of longtime owner and face of brand, company looks to modernize all the way down to the cufflinks.",
-          "readmoreUrl": "#/work/mens-warehouse"
+          "readmoreUrl": "#/work/mens-wearhouse"
 
         },
         {
@@ -562,37 +572,56 @@ var copy =
         }
       ]
     },
-    "mens-warehouse": { 
-      "title": "Think Thin",
-      "className": "think-thin",
-      "client": "Think Thin", 
-      "clientLogo": require('assets/images/works/clients_logo/think-thin.svg'),
-      "project": "Think Thin",
+    "mens-wearhouse": { 
+      "title": "Men's Wearhouse",
+      "className": "mens-wearhouse",
+      "client": "Men's Wearhouse", 
+      "clientLogo": require('assets/images/works/clients_logo/mens-wearhouse.svg'),
+      "project": "Men's Wearhouse",
       "media": "Branding",
-      "blockquote": 'It\'s A "Sunny" Day for Payday Loans',
+      "blockquote": "Men's Wearhouse Updates Its Wardrobe.", 
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
-        "In the UK, the short-term loans business is not dissimilar to the US in that we have a huge problem with perception. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
-        "We went to Phenomenon to help us create a differentiating short-term loan product",
-        "We went to Phenomenon, not to create a brand campaign or an app or some other piece of communication. We went to Phenomenon to help us create a differentiating short-term loan product. And they came back to us with an interesting idea they aptly called Sunny."
+        "For over 20 years, Men's Wearhouse advertising centered around one line delivered by one man. But in 2013, when our founder and longtime CEO left the company, we had to make some pretty significant changes. After an extensive agency review we selected Phenomenon to take both strategic and creative lead on the future of Men's Wearhouse as our Agency of Record.",
+        "The new tone and feel for us started early in 2014 when we acquired the men's fashion brand Joseph Abboud. We used that acquisition as a launching point to redefine our image. To kick things off, we developed a television spot that announced the partnership with Abboud and positioned the American Designer as our new Creative Director."
       ],
       "detailcontent": [
         {
-          "type": "image",
-          "image": true,
-          "imageUrl": "assets/images/sunny-1.jpg",
-          "imageAlt": "Sunny",
-          "mainDescription": [
-            'Strategically, Pheno recognized that there was no loyalty in our industry. People took out their first loan and then had to pay so much back that they took out another loan to pay for that, and so on and so on. Often working with multiple companies in the process, or as they deemed it, "a circle of debt."',
-            "They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq.",
-            "Phenomenon helped us with all of this. They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq."            
-          ]      
+          "type": "video",
+          "video": true,
+          "thumb": "/assets/images/xome_thumb_02-opt.jpg",
+          "thumbAlt": "Xome - TV Spot - Transparent House",
+          "thumbTitle": "Click to play video",
+          "vimeo": "159123265"
         },
         {
-          "type": "image",
-          "image": true,
-          "imageUrl": "assets/images/sunny-2.jpg",
-          "imageAlt": "Sunny",
+          "carousel": true,
+          "images": [
+            {
+              "url": "/assets/images/mens-wearhouse-carasoul-1.jpg",
+              "alt": "Men's Wearhouse Photo 1"
+            },
+            {
+              "url": "/assets/images/wilson_x_1_02-opt.jpg",
+              "alt": "Wilson X Packaging Photo 2"
+            },
+            {
+              "url": "/assets/images/wilson_x_1_03-opt.jpg",
+              "alt": "Wilson X Packaging Photo 3"
+            },
+            {
+              "url": "/assets/images/wilson_x_1_04-opt.jpg",
+              "alt": "Wilson X Packaging Photo 4"
+            },
+            {
+              "url": "/assets/images/wilson_x_1_05-opt.jpg",
+              "alt": "Wilson X Packaging Photo 5"
+            },
+            {
+              "url": "/assets/images/wilson_x_1_06-opt.jpg",
+              "alt": "Wilson X Packaging Photo 6"
+            }
+          ]
         },
         {
           "type": "video",
@@ -611,7 +640,7 @@ var copy =
       "clientLogo": require('assets/images/works/clients_logo/think-thin.svg'),
       "project": "Think Thin",
       "media": "Branding",
-      "blockquote": 'It\'s A "Sunny" Day for Payday Loans',
+      "blockquote": 'thinkThin Helps Womens Shed the Guilty',
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "In the UK, the short-term loans business is not dissimilar to the US in that we have a huge problem with perception. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
@@ -619,23 +648,6 @@ var copy =
         "We went to Phenomenon, not to create a brand campaign or an app or some other piece of communication. We went to Phenomenon to help us create a differentiating short-term loan product. And they came back to us with an interesting idea they aptly called Sunny."
       ],
       "detailcontent": [
-        {
-          "type": "image",
-          "image": true,
-          "imageUrl": "assets/images/sunny-1.jpg",
-          "imageAlt": "Sunny",
-          "mainDescription": [
-            'Strategically, Pheno recognized that there was no loyalty in our industry. People took out their first loan and then had to pay so much back that they took out another loan to pay for that, and so on and so on. Often working with multiple companies in the process, or as they deemed it, "a circle of debt."',
-            "They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq.",
-            "Phenomenon helped us with all of this. They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq."            
-          ]      
-        },
-        {
-          "type": "image",
-          "image": true,
-          "imageUrl": "assets/images/sunny-2.jpg",
-          "imageAlt": "Sunny",
-        },
         {
           "type": "video",
           "video": true,
@@ -900,4 +912,4 @@ var copy =
   }
 };
 
-module.exports = copy;
+module.exports = copy; 
