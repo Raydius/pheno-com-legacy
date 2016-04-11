@@ -30,7 +30,7 @@ module.exports = {
     output: {
         filename: '[name]-bundle.min.js',
         path: path.resolve(__dirname, 'public'),
-        publicPath: debug ? 'http://127.0.0.1:9000/' : path.resolve(__dirname, '/'),
+        publicPath: path.resolve(__dirname, '/'),
         libraryTarget: "umd"
     },
     plugins: [
@@ -47,10 +47,6 @@ module.exports = {
             filename: 'index.html',
             title: 'Phenomenon'
         })
-        /*new webpack.optimize.UglifyJsPlugin({
-            mangle: false,
-            sourceMap: false
-        })*/
     ],
     module: {
         noParse: [

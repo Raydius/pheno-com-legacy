@@ -4,9 +4,9 @@
   "version": "0.2.1",
   "private": true,
   "scripts": {
-    "build": "./node_modules/.bin/webpack --progress -p || true",
+    "build": "./node_modules/.bin/webpack --progress || true",
     "prestart": "npm install",
-    "start": "./node_modules/.bin/webpack-dev-server --content-base ./ --port 9000 --hot",
+    "start": "./node_modules/.bin/webpack-dev-server --content-base ./ --port 9000 --host 0.0.0.0 --hot",
     "start-production": "cp -R ./public/. /usr/share/nginx/html/ && nginx -g \"daemon off;\""
   },
   "dependencies": {
