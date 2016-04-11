@@ -8,6 +8,7 @@ import 'angular-snap';
 
 var copy = require('app/copy.js');
 
+var templateHome = require('views/welcome.jade');
 var templateAbout = require('views/about.jade');
 var templateWork = require('views/work.jade');
 var templateWorkAnthem = require('views/wilson-anthem.jade');
@@ -44,8 +45,16 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-        .state('about', {
+        .state('home', {
             url: '/',
+            template: templateHome,
+            data: {
+                pageTitle: 'PHENOMENON'
+            }
+        })
+
+        .state('about', {
+            url: '/about',
             template: templateAbout,
             data: {
                 pageTitle: 'PHENOMENON'

@@ -1,0 +1,27 @@
+.home {
+	.featured-contributors {
+		box-sizing: border-box;
+		text-align: center;
+		background: #F2F2F2;
+		padding: 0 $base_spacing;
+		h6 {
+			font-size: 18px;
+			border-bottom: 1px solid #ccc;
+			width: 30%;
+			padding-bottom: $base_spacing;
+			margin: $base_spacing auto;
+			font-family: $monospace_font;
+		}
+		img {
+			width: 100px;
+			display: inline-block;
+		}
+		li {
+			margin-bottom: $base_spacing*2;
+			p {
+				border-bottom: 1px solid #ccc;
+				padding: $base_spacing - 40;
+			}
+		}
+	}
+}
