@@ -133,6 +133,9 @@ h2 blockquote, h3 blockquote  {
 		top: 10px; 
 		color: $black_font;
 	}
+	&:last-letter {
+		color: red;
+	}
 }
 h3 blockquote {
 	font-size: 22px;
