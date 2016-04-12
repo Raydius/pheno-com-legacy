@@ -13,6 +13,9 @@ html, body {
     background-color: #FFF;
     font-family: $primary_font;
 }
+.red {
+	color: $primary_color;
+}
 a, .a, .link{
 	
 	&.red {
@@ -199,4 +202,9 @@ h3 blockquote {
 .fix-images {
 	position: fixed;
     top: 0;
+}
+.backtotop { 
+	.icon-right-arrow {
+		display: block;
+	}
 }
