@@ -9,6 +9,18 @@ var path = require('path'),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
     node_modules_dir = path.resolve(__dirname, 'node_modules');
 
+
+var host = 'http://0.0.0.0',
+    port = 9000;
+
+if(process.env.OUTPUT_HOST) {
+    host = process.env.OUTPUT_HOST;
+}
+if(process.env.OUTPUT_PORT) {
+    port = process.env.OUTPUT_PORT;
+}
+
+
 module.exports = {
     context: __dirname,
     devtool: debug ? "inline-source-map" : null,
@@ -30,7 +42,7 @@ module.exports = {
     output: {
         filename: '[name]-bundle.min.js',
         path: path.resolve(__dirname, 'public'),
-        publicPath: path.resolve(__dirname, '/'),
+        publicPath: debug ? host+':'+port+'/' : path.resolve(__dirname, '/'),
         libraryTarget: "umd"
     },
     plugins: [
