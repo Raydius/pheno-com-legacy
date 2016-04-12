@@ -2,17 +2,20 @@
  * Created by raydollete on 3/30/16.
  */
 
-var debug = process.env.NODE_ENV !== 'production';
-var webpack = require('webpack');
-
-var path = require('path'),
+// base dependencies
+var webpack = require('webpack'),
+    path = require('path'),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
     node_modules_dir = path.resolve(__dirname, 'node_modules');
 
+// set debug variable based on whether or not this is a prod environment
+var debug = process.env.NODE_ENV !== 'production';
 
-var host = 'http://0.0.0.0',
+// default host/port configuration
+var host = 'http://127.0.0.1',
     port = 9000;
 
+// allow environment variables to override default host/port
 if(process.env.OUTPUT_HOST) {
     host = process.env.OUTPUT_HOST;
 }
@@ -20,7 +23,7 @@ if(process.env.OUTPUT_PORT) {
     port = process.env.OUTPUT_PORT;
 }
 
-
+// main webpack module
 module.exports = {
     context: __dirname,
     devtool: debug ? "inline-source-map" : null,
@@ -35,8 +38,13 @@ module.exports = {
         }
     },
     entry: {
+        // entry point for main application
         app: './app/phenomenon.js',
+
+        // entry point for stylesheets
         style: './stylesheets/style.scss',
+
+        // vendor JS files to be separated into vendors.js
         vendors: [ 'angular', 'jquery', 'angular-ui-router', 'bootstrap' ]
     },
     output: {
@@ -46,14 +54,21 @@ module.exports = {
         libraryTarget: "umd"
     },
     plugins: [
+
+        // allow jquery to be accessible globally without 'require'
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
             "window.jQuery": 'jquery'
         }),
-        new webpack.NoErrorsPlugin(),
+        //new webpack.NoErrorsPlugin(),
+
+        // optimize vendors.js
         new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
+
         new webpack.dependencies.LabeledModulesPlugin(),
+
+        // generate index.html as public entry point
         new HtmlWebpackPlugin({
             template: 'views/index.jade',
             filename: 'index.html',

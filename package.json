@@ -5,8 +5,7 @@
   "private": true,
   "scripts": {
     "build": "bash ./deploy/build",
-    "server": "bash ./deploy/server",
-    "start": "npm run build & npm run server",
+    "start": "bash ./deploy/server",
     "start-production": "cp -R ./public/. /usr/share/nginx/html/ && nginx -g \"daemon off;\""
   },
   "dependencies": {
