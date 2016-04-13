@@ -106,7 +106,7 @@ var copy =
           "name": "By Kevin Dahlstrom",
           "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
           "project": "Wilson Is Now Fully Equipped.",
-          "contributorAvatar": require("assets/images/home/avatar-1.png")
+          "contributorAvatar": require("assets/images/home/avatar-2.png")
         },
         {
           "name": "By Kevin Dahlstrom",
