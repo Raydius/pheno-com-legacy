@@ -3,4 +3,5 @@ web:
   ports:
    - "2070:80"
   volumes:
-   - ./public:/usr/share/nginx/html
+   - ./public-staging:/usr/share/nginx/html
+  restart: always

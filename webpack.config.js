@@ -13,7 +13,8 @@ var debug = process.env.NODE_ENV !== 'production';
 
 // default host/port configuration
 var host = 'http://127.0.0.1',
-    port = 9000;
+    port = 9000,
+    output_dir = 'public';
 
 // allow environment variables to override default host/port
 if(process.env.OUTPUT_HOST) {
@@ -22,6 +23,10 @@ if(process.env.OUTPUT_HOST) {
 if(process.env.OUTPUT_PORT) {
     port = process.env.OUTPUT_PORT;
 }
+if(process.env.OUTPUT_DIR) {
+    output_dir = process.env.OUTPUT_DIR;
+}
+
 
 // main webpack module
 module.exports = {
@@ -49,7 +54,7 @@ module.exports = {
     },
     output: {
         filename: '[name]-bundle.min.js',
-        path: path.resolve(__dirname, 'public'),
+        path: path.resolve(__dirname, output_dir),
         publicPath: debug ? host+':'+port+'/' : path.resolve(__dirname, '/'),
         libraryTarget: "umd"
     },
