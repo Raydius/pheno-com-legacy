@@ -205,14 +205,58 @@ h3 blockquote {
 }
 .backtotop { 
 	text-align: center;
-	margin-bottom: $base_spacing;
+	margin: $base_spacing 0;
 	cursor: pointer;
+
 	.icon-right-arrow {
 		display: inline-block;
 		transform: rotate(-90deg); 
 	}
 	span {
 		&:last-child {
+			display: block;
+		}
+	}
+}
+.see-more {
+	position: relative;
+	label {
+		width: 200px; margin: 0 auto;
+		display: block;
+		margin-bottom: $base_spacing;
+		top: -$base_spacing;
+		position: absolute;
+		left: 50%;
+		margin-left: -100px;
+		&:after {
+			content: "View More Contributors"
+		}
+	}
+	#toggle {
+	  position:absolute;
+	  appearance:none;
+	  cursor:pointer;
+	  opacity: 0;
+	}
+	.col-md-4 {
+		display: none;
+	}
+	#toggle ~ .see-more-container {
+		height: 0;
+		opacity: 0;
+		transition: all 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+
+	}
+	#toggle:checked ~ label {
+		&:after {
+			content: "View Less Contributors";
+		}
+		top: calc(100% + 40px);
+	}
+	#toggle:checked ~ .see-more-container {
+		height: 600px;
+		opacity: 1;
+		.col-md-4 {
 			display: block;
 		}
 	}
