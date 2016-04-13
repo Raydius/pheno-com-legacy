@@ -106,55 +106,55 @@ var copy =
           "name": "By Kevin Dahlstrom",
           "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
           "project": "Wilson Is Now Fully Equipped.",
-          "contributorAvatar": "/assets/images/home/avatar-1.png"
+          "contributorAvatar": require("assets/images/home/avatar-1.png")
         },
         {
           "name": "By Kevin Dahlstrom",
           "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
           "project": "Wilson Is Now Fully Equipped.",
-          "contributorAvatar": "/assets/images/home/avatar-2.png"
+          "contributorAvatar": require("assets/images/home/avatar-2.png")
         },
         {
           "name": "By Kevin Dahlstrom",
           "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
           "project": "Wilson Is Now Fully Equipped.",
-          "contributorAvatar": "/assets/images/home/avatar-3.png"
+          "contributorAvatar": require("assets/images/home/avatar-3.png")
         },
         {
           "name": "By Kevin Dahlstrom",
           "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
           "project": "Wilson Is Now Fully Equipped.",
-          "contributorAvatar": "/assets/images/home/avatar-4.png"
+          "contributorAvatar": require("assets/images/home/avatar-4.png")
         },
         {
           "name": "By Kevin Dahlstrom",
           "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
           "project": "Wilson Is Now Fully Equipped.",
-          "contributorAvatar": "/assets/images/home/avatar-5.png"
+          "contributorAvatar": require("assets/images/home/avatar-5.png")
         },
         {
           "name": "By Kevin Dahlstrom",
           "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
           "project": "Wilson Is Now Fully Equipped.",
-          "contributorAvatar": "/assets/images/home/avatar-6.png"
+          "contributorAvatar": require("assets/images/home/avatar-6.png")
         },
         {
           "name": "By Kevin Dahlstrom",
           "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
           "project": "Wilson Is Now Fully Equipped.",
-          "contributorAvatar": "/assets/images/home/avatar-7.png"
+          "contributorAvatar": require("assets/images/home/avatar-7.png")
         },
         {
           "name": "By Kevin Dahlstrom",
           "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
           "project": "Wilson Is Now Fully Equipped.",
-          "contributorAvatar": "/assets/images/home/avatar-8.png"
+          "contributorAvatar": require("assets/images/home/avatar-8.png")
         },
         {
           "name": "By Kevin Dahlstrom",
           "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
           "project": "Wilson Is Now Fully Equipped.",
-          "contributorAvatar": "/assets/images/home/avatar-9.png"
+          "contributorAvatar": require("assets/images/home/avatar-9.png")
         },
       ]
     },
@@ -162,7 +162,7 @@ var copy =
       "title": "About Phenomenon",
       "className": "about",
       "description": "Phenomenon - About",
-      "heroThumb": "/assets/images/xome_thumb_01-opt.jpg",
+      "heroThumb": require("assets/images/xome_thumb_01-opt.jpg"),
       "heroThumbAlt": "Xome - TV Spot",
       "heroThumbTitle": "Click to play video",
       "heroVimeo": "155071130",
@@ -307,27 +307,27 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": "/assets/images/wilson_x_1_01-opt.jpg",
+              "url": require("assets/images/wilson_x_1_01-opt.jpg"),
               "alt": "Wilson X Packaging Photo 1"
             },
             {
-              "url": "/assets/images/wilson_x_1_02-opt.jpg",
+              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
               "alt": "Wilson X Packaging Photo 2"
             },
             {
-              "url": "/assets/images/wilson_x_1_03-opt.jpg",
+              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
               "alt": "Wilson X Packaging Photo 3"
             },
             {
-              "url": "/assets/images/wilson_x_1_04-opt.jpg",
+              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
               "alt": "Wilson X Packaging Photo 4"
             },
             {
-              "url": "/assets/images/wilson_x_1_05-opt.jpg",
+              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
               "alt": "Wilson X Packaging Photo 5"
             },
             {
-              "url": "/assets/images/wilson_x_1_06-opt.jpg",
+              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
               "alt": "Wilson X Packaging Photo 6"
             }
           ],
@@ -339,27 +339,27 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": "/assets/images/wilson_x_1_01-opt.jpg",
+              "url": require("assets/images/wilson_x_1_01-opt.jpg"),
               "alt": "Wilson X Packaging Photo 1"
             },
             {
-              "url": "/assets/images/wilson_x_1_02-opt.jpg",
+              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
               "alt": "Wilson X Packaging Photo 2"
             },
             {
-              "url": "/assets/images/wilson_x_1_03-opt.jpg",
+              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
               "alt": "Wilson X Packaging Photo 3"
             },
             {
-              "url": "/assets/images/wilson_x_1_04-opt.jpg",
+              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
               "alt": "Wilson X Packaging Photo 4"
             },
             {
-              "url": "/assets/images/wilson_x_1_05-opt.jpg",
+              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
               "alt": "Wilson X Packaging Photo 5"
             },
             {
-              "url": "/assets/images/wilson_x_1_06-opt.jpg",
+              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
               "alt": "Wilson X Packaging Photo 6"
             }
           ],
@@ -405,27 +405,27 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": "/assets/images/wilson_x_1_01-opt.jpg",
+              "url": require("assets/images/wilson_x_1_01-opt.jpg"),
               "alt": "Wilson X Packaging Photo 1"
             },
             {
-              "url": "/assets/images/wilson_x_1_02-opt.jpg",
+              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
               "alt": "Wilson X Packaging Photo 2"
             },
             {
-              "url": "/assets/images/wilson_x_1_03-opt.jpg",
+              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
               "alt": "Wilson X Packaging Photo 3"
             },
             {
-              "url": "/assets/images/wilson_x_1_04-opt.jpg",
+              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
               "alt": "Wilson X Packaging Photo 4"
             },
             {
-              "url": "/assets/images/wilson_x_1_05-opt.jpg",
+              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
               "alt": "Wilson X Packaging Photo 5"
             },
             {
-              "url": "/assets/images/wilson_x_1_06-opt.jpg",
+              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
               "alt": "Wilson X Packaging Photo 6"
             }
           ],
@@ -437,27 +437,27 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": "/assets/images/wilson_x_1_01-opt.jpg",
+              "url": require("assets/images/wilson_x_1_01-opt.jpg"),
               "alt": "Wilson X Packaging Photo 1"
             },
             {
-              "url": "/assets/images/wilson_x_1_02-opt.jpg",
+              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
               "alt": "Wilson X Packaging Photo 2"
             },
             {
-              "url": "/assets/images/wilson_x_1_03-opt.jpg",
+              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
               "alt": "Wilson X Packaging Photo 3"
             },
             {
-              "url": "/assets/images/wilson_x_1_04-opt.jpg",
+              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
               "alt": "Wilson X Packaging Photo 4"
             },
             {
-              "url": "/assets/images/wilson_x_1_05-opt.jpg",
+              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
               "alt": "Wilson X Packaging Photo 5"
             },
             {
-              "url": "/assets/images/wilson_x_1_06-opt.jpg",
+              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
               "alt": "Wilson X Packaging Photo 6"
             }
           ],
@@ -498,7 +498,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": "assets/images/sls-1.jpg",
+          "imageUrl": require("assets/images/sls-1.jpg"),
           "imageAlt": "SLS",
           "mainDescription": [
             "Most people don't know, but in LA - where the SLS is iconic- we actually own numerous restaurants and clubs in addition to the hotels. But the challenge with our new Vegas location, was that all of these entities are housed under the same roof. So from a visual standpoint, we wanted some kind of harmony, some kind of tone that unified everything from a club to a little coffee shop.",
@@ -509,7 +509,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": "assets/images/sls-2.jpg",
+          "imageUrl": require("assets/images/sls-2.jpg"),
           "imageAlt": "SLS",
           "mainDescription": [
             "Most people consider the lobby to be where hotels make their first impression. That's wrong. It's the website. When most people first heard about the SLS Vegas they couldn't even visit it, because it wasn't open yet. So the website was not only the first interaction, it was the only one. We wanted the site to be easily browsable so you could see all that you could do while staying here. Tonally we never said all inclusive but visually we wanted people to feel like leaving would be a bad idea. Creating a perfect experience online also meant simplifying, all the way down to the event calendar. This was people's first experience with the SLS Vegas, it needed to feel as effortless as staying there."
@@ -519,27 +519,27 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": "/assets/images/sls-carasoul-1.jpg",
+              "url": require("assets/images/sls-carasoul-1.jpg"),
               "alt": "Wilson X Packaging Photo 1"
             },
             {
-              "url": "/assets/images/wilson_x_1_02-opt.jpg",
+              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
               "alt": "Wilson X Packaging Photo 2"
             },
             {
-              "url": "/assets/images/wilson_x_1_03-opt.jpg",
+              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
               "alt": "Wilson X Packaging Photo 3"
             },
             {
-              "url": "/assets/images/wilson_x_1_04-opt.jpg",
+              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
               "alt": "Wilson X Packaging Photo 4"
             },
             {
-              "url": "/assets/images/wilson_x_1_05-opt.jpg",
+              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
               "alt": "Wilson X Packaging Photo 5"
             },
             {
-              "url": "/assets/images/wilson_x_1_06-opt.jpg",
+              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
               "alt": "Wilson X Packaging Photo 6"
             }
           ]
@@ -564,7 +564,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": "assets/images/sunny-1.jpg",
+          "imageUrl": require("assets/images/sunny-1.jpg"),
           "imageAlt": "Sunny",
           "mainDescription": [
             'Strategically, Pheno recognized that there was no loyalty in our industry. People took out their first loan and then had to pay so much back that they took out another loan to pay for that, and so on and so on. Often working with multiple companies in the process, or as they deemed it, "a circle of debt."',
@@ -575,13 +575,13 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": "assets/images/sunny-2.jpg",
+          "imageUrl": require("assets/images/sunny-2.jpg"),
           "imageAlt": "Sunny",
         },
         {
           "type": "video",
           "video": true,
-          "thumb": "/assets/images/xome_thumb_02-opt.jpg",
+          "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
           "thumbAlt": "Xome - TV Spot - Transparent House",
           "thumbTitle": "Click to play video",
           "vimeo": "159123265"
@@ -606,7 +606,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": "assets/images/sunny-1.jpg",
+          "imageUrl": require("assets/images/sunny-1.jpg"),
           "imageAlt": "Sunny",
           "mainDescription": [
             'Strategically, Pheno recognized that there was no loyalty in our industry. People took out their first loan and then had to pay so much back that they took out another loan to pay for that, and so on and so on. Often working with multiple companies in the process, or as they deemed it, "a circle of debt."',
@@ -617,13 +617,13 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": "assets/images/sunny-2.jpg",
+          "imageUrl": require("assets/images/sunny-2.jpg"),
           "imageAlt": "Sunny",
         },
         {
           "type": "video",
           "video": true,
-          "thumb": "/assets/images/xome_thumb_02-opt.jpg",
+          "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
           "thumbAlt": "Xome - TV Spot - Transparent House",
           "thumbTitle": "Click to play video",
           "vimeo": "159123265"
@@ -647,7 +647,7 @@ var copy =
         {
           "type": "video",
           "video": true,
-          "thumb": "/assets/images/xome_thumb_02-opt.jpg",
+          "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
           "thumbAlt": "Xome - TV Spot - Transparent House",
           "thumbTitle": "Click to play video",
           "vimeo": "159123265"
@@ -656,27 +656,27 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": "/assets/images/mens-wearhouse-carasoul-1.jpg",
+              "url": require("assets/images/mens-wearhouse-carasoul-1.jpg"),
               "alt": "Men's Wearhouse Photo 1"
             },
             {
-              "url": "/assets/images/wilson_x_1_02-opt.jpg",
+              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
               "alt": "Wilson X Packaging Photo 2"
             },
             {
-              "url": "/assets/images/wilson_x_1_03-opt.jpg",
+              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
               "alt": "Wilson X Packaging Photo 3"
             },
             {
-              "url": "/assets/images/wilson_x_1_04-opt.jpg",
+              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
               "alt": "Wilson X Packaging Photo 4"
             },
             {
-              "url": "/assets/images/wilson_x_1_05-opt.jpg",
+              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
               "alt": "Wilson X Packaging Photo 5"
             },
             {
-              "url": "/assets/images/wilson_x_1_06-opt.jpg",
+              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
               "alt": "Wilson X Packaging Photo 6"
             }
           ]
@@ -684,7 +684,7 @@ var copy =
         {
           "type": "video",
           "video": true,
-          "thumb": "/assets/images/xome_thumb_02-opt.jpg",
+          "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
           "thumbAlt": "Xome - TV Spot - Transparent House",
           "thumbTitle": "Click to play video",
           "vimeo": "159123265"
@@ -709,7 +709,7 @@ var copy =
         {
           "type": "video",
           "video": true,
-          "thumb": "/assets/images/xome_thumb_02-opt.jpg",
+          "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
           "thumbAlt": "Xome - TV Spot - Transparent House",
           "thumbTitle": "Click to play video",
           "vimeo": "159123265"
@@ -734,7 +734,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": "assets/images/cooper-1.jpg",
+          "imageUrl": require("assets/images/cooper-1.jpg"),
           "imageAlt": "Cooper",
           "mainDescription": [
             "Most people don't know, but in LA - where the SLS is iconic- we actually own numerous restaurants and clubs in addition to the hotels. But the challenge with our new Vegas location, was that all of these entities are housed under the same roof. So from a visual standpoint, we wanted some kind of harmony, some kind of tone that unified everything from a club to a little coffee shop.",
@@ -745,7 +745,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": "assets/images/cooper-2.jpg",
+          "imageUrl": require("assets/images/cooper-2.jpg"),
           "imageAlt": "SLS",
           "mainDescription": [
             "Most people consider the lobby to be where hotels make their first impression. That's wrong. It's the website. When most people first heard about the SLS Vegas they couldn't even visit it, because it wasn't open yet. So the website was not only the first interaction, it was the only one. We wanted the site to be easily browsable so you could see all that you could do while staying here. Tonally we never said all inclusive but visually we wanted people to feel like leaving would be a bad idea. Creating a perfect experience online also meant simplifying, all the way down to the event calendar. This was people's first experience with the SLS Vegas, it needed to feel as effortless as staying there."
@@ -755,27 +755,27 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": "/assets/images/cooper-carasoul-1.jpg",
+              "url": require("assets/images/cooper-carasoul-1.jpg"),
               "alt": "Wilson X Packaging Photo 1"
             },
             {
-              "url": "/assets/images/wilson_x_1_02-opt.jpg",
+              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
               "alt": "Wilson X Packaging Photo 2"
             },
             {
-              "url": "/assets/images/wilson_x_1_03-opt.jpg",
+              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
               "alt": "Wilson X Packaging Photo 3"
             },
             {
-              "url": "/assets/images/wilson_x_1_04-opt.jpg",
+              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
               "alt": "Wilson X Packaging Photo 4"
             },
             {
-              "url": "/assets/images/wilson_x_1_05-opt.jpg",
+              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
               "alt": "Wilson X Packaging Photo 5"
             },
             {
-              "url": "/assets/images/wilson_x_1_06-opt.jpg",
+              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
               "alt": "Wilson X Packaging Photo 6"
             }
           ]
@@ -786,7 +786,7 @@ var copy =
       "title": "Wilson Anthem",
       "className": "wilson-anthem",
       "description": "CVU - Phenomenon - Wilson Anthem",
-      "heroThumb": "/assets/images/wilson_anthem_thumb-opt.jpg",
+      "heroThumb": require("assets/images/wilson_anthem_thumb-opt.jpg"),
       "heroThumbAlt": "Wilson Anthem - TV Spot",
       "heroThumbTitle": "Click to play video",
       "heroVimeo": "155010840",
@@ -801,35 +801,35 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": "/assets/images/wilson_anthem_1_01-opt.jpg",
+              "url": require("assets/images/wilson_anthem_1_01-opt.jpg"),
               "alt": "Wilson Anthem Brand Ethos Book Image 1"
             },
             {
-              "url": "/assets/images/wilson_anthem_1_02-opt.jpg",
+              "url": require("assets/images/wilson_anthem_1_02-opt.jpg"),
               "alt": "Wilson Anthem Brand Ethos Book Image 2"
             },
             {
-              "url": "/assets/images/wilson_anthem_1_03-opt.jpg",
+              "url": require("assets/images/wilson_anthem_1_03-opt.jpg"),
               "alt": "Wilson Anthem Brand Ethos Book Image 3"
             },
             {
-              "url": "/assets/images/wilson_anthem_1_04-opt.jpg",
+              "url": require("assets/images/wilson_anthem_1_04-opt.jpg"),
               "alt": "Wilson Anthem Brand Ethos Book Image 4"
             },
             {
-              "url": "/assets/images/wilson_anthem_1_05-opt.jpg",
+              "url": require("assets/images/wilson_anthem_1_05-opt.jpg"),
               "alt": "Wilson Anthem Brand Ethos Book Image 5"
             },
             {
-              "url": "/assets/images/wilson_anthem_1_06-opt.jpg",
+              "url": require("assets/images/wilson_anthem_1_06-opt.jpg"),
               "alt": "Wilson Anthem Brand Ethos Book Image 6"
             },
             {
-              "url": "/assets/images/wilson_anthem_1_07-opt.jpg",
+              "url": require("assets/images/wilson_anthem_1_07-opt.jpg"),
               "alt": "Wilson Anthem Brand Ethos Book Image 7"
             },
             {
-              "url": "/assets/images/wilson_anthem_1_08-opt.jpg",
+              "url": require("assets/images/wilson_anthem_1_08-opt.jpg"),
               "alt": "Wilson Anthem Brand Ethos Book Image 8"
             }
           ]
@@ -837,7 +837,7 @@ var copy =
         {
           "type": "scrollable",
           "scrollable": true,
-          "imageUrl": "/assets/images/wilson-anthem-landingpage-opt.jpg",
+          "imageUrl": require("assets/images/wilson-anthem-landingpage-opt.jpg"),
           "imageAlt": "Wilson Anthem Landing Page"
         },
         {
@@ -845,11 +845,11 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": "/assets/images/wilson_anthem_2_01-opt.jpg",
+              "url": require("assets/images/wilson_anthem_2_01-opt.jpg"),
               "alt": "Wilson Anthem Banner 1"
             },
             {
-              "url": "/assets/images/wilson_anthem_2_02-opt.jpg",
+              "url": require("assets/images/wilson_anthem_2_02-opt.jpg"),
               "alt": "Wilson Anthem Banner 2"
             }
           ]
@@ -868,13 +868,13 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": "assets/images/xome-comp-01-opt.jpg",
+          "imageUrl": require("assets/images/xome-comp-01-opt.jpg"),
           "imageAlt": "Xome Image 1"
         },
         {
           "type": "image",
           "image": true,
-          "imageUrl": "/assets/images/xome-comp-01-opt.jpg",
+          "imageUrl": require("assets/images/xome-comp-01-opt.jpg"),
           "imageAlt": "Xome Image 1"
         }
       ]
@@ -883,7 +883,7 @@ var copy =
       "title": "Xome",
       "className": "xome",
       "description": "CVU - Phenomenon - Xome",
-      "heroThumb": "/assets/images/xome_thumb_01-opt.jpg",
+      "heroThumb": require("assets/images/xome_thumb_01-opt.jpg"),
       "heroThumbAlt": "Xome - TV Spot",
       "heroThumbTitle": "Click to play video",
       "heroVimeo": "155071130",
@@ -895,7 +895,7 @@ var copy =
         {
           "type": "video",
           "video": true,
-          "thumb": "/assets/images/xome_thumb_02-opt.jpg",
+          "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
           "thumbAlt": "Xome - TV Spot - Transparent House",
           "thumbTitle": "Click to play video",
           "vimeo": "159123265"
@@ -903,7 +903,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": "/assets/images/xome-comp-01-opt.jpg",
+          "imageUrl": require("assets/images/xome-comp-01-opt.jpg"),
           "imageAlt": "Xome Image 1"
         }
       ]
@@ -912,7 +912,7 @@ var copy =
       "title": "thinkThin",
       "className": "think-thin",
       "description": "CVU - Phenomenon - thinkThin",
-      "heroThumb": "/assets/images/thinkThin_thumb-opt.jpg",
+      "heroThumb": require("assets/images/thinkThin_thumb-opt.jpg"),
       "heroThumbAlt": "thinkThin - TV Spot - Pool",
       "heroThumbTitle": "Click to play video",
       "heroVimeo": "158975908",
@@ -924,7 +924,7 @@ var copy =
         {
           "type": "video",
           "video": true,
-          "thumb": "/assets/images/thinkThin_thumb_02-opt.jpg",
+          "thumb": require("assets/images/thinkThin_thumb_02-opt.jpg"),
           "thumbAlt": "Wilson X - TV Spot - Run",
           "thumbTitle": "Click to play video",
           "vimeo": "159447308"
@@ -932,7 +932,7 @@ var copy =
         {
           "type": "video",
           "video": true,
-          "thumb": "/assets/images/thinkThin_thumb_03-opt.jpg",
+          "thumb": require("assets/images/thinkThin_thumb_03-opt.jpg"),
           "thumbAlt": "Wilson X - TV Spot - Text",
           "thumbTitle": "Click to play video",
           "vimeo": "159448353"
@@ -942,11 +942,11 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": "/assets/images/thinkthin-1-01-opt.jpg",
+              "url": require("assets/images/thinkthin-1-01-opt.jpg"),
               "alt": "thinkThin Print Ad 1"
             },
             {
-              "url": "/assets/images/thinkthin-1-02-opt.jpg",
+              "url": require("assets/images/thinkthin-1-02-opt.jpg"),
               "alt": "thinkThin Print Ad 2"
             }
           ]
@@ -956,11 +956,11 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": "/assets/images/thinkthin-2-01-opt.jpg",
+              "url": require("assets/images/thinkthin-2-01-opt.jpg"),
               "alt": "thinkThin Mobile Shaker Banner Ad 1"
             },
             {
-              "url": "/assets/images/thinkthin-2-02-opt.jpg",
+              "url": require("assets/images/thinkthin-2-02-opt.jpg"),
               "alt": "thinkThin Mobile Shaker Banner Ad 2"
             }
           ]

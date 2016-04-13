@@ -204,7 +204,15 @@ h3 blockquote {
     top: 0;
 }
 .backtotop { 
+	text-align: center;
+	margin-bottom: $base_spacing;
 	.icon-right-arrow {
-		display: block;
+		display: inline-block;
+		transform: rotate(-90deg); 
+	}
+	span {
+		&:last-child {
+			display: block;
+		}
 	}
 }
