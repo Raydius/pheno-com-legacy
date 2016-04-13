@@ -6,4 +6,4 @@ if [ -z "$OUTPUT_PORT" ]; then
     export OUTPUT_PORT=80
 fi
 
-./node_modules/.bin/webpack --progress -p
+./node_modules/.bin/webpack --progress
