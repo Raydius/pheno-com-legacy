@@ -294,7 +294,7 @@ var copy =
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
         "Wilson has been around for over 100 years but we've never had a global brand campaign. Since this was our first campaign, we needed to identify what Wilson is all about. We make quality, trusted equipment, but what do we stand for? What is our role in the world of sports? We worked with the strategic team at Phenomenon to land on a pretty powerful yet simple idea; Wilson is every athletes faithful weapon.",
-        "We worked with the strategic team at Phenomenon to land on a pretty powerful yet simple idea; Wilson is every athletes faithful weapon.",
+        "<span class='red'>We worked with the strategic team at Phenomenon to land on a pretty powerful yet simple idea; Wilson is every athletes faithful weapon.</span>",
         "Before we did any consumer-facing branding, we asked Pheno to create something that could rally the Wilson team from within. What did this new face of Wilson mean? How could we as employees live this? So we produced a beautifully bound brand book containing words and images that boldly and loudly defined who we are and handed them out to each of our employees."
       ],
       "heroThumb": require('assets/images/wilsonx_thumb_01-opt.jpg'),

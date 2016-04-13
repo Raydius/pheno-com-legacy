@@ -19,7 +19,7 @@ section.row.no-padding.work
 		.col-md-8.top-description
 			if pageData.topDescription
 				each par in pageData.topDescription
-					p= par
+					p!= par
 		.col-md-4
 			aside
 				img.clientlogo(src= pageData.clientLogo)
