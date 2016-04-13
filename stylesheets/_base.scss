@@ -206,6 +206,7 @@ h3 blockquote {
 .backtotop { 
 	text-align: center;
 	margin-bottom: $base_spacing;
+	cursor: pointer;
 	.icon-right-arrow {
 		display: inline-block;
 		transform: rotate(-90deg); 

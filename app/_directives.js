@@ -30,6 +30,7 @@ angular.module('phenoCom').directive('carouselComponent', function() {
 });
 
 var videoComponentTemplate = require('components/video-component.jade');
+var scrolltopTemplate = require('components/scrolltop.jade');
 
 // embedded vimeo player
 angular.module('phenoCom').directive('videoComponent', function() {
@@ -44,6 +45,21 @@ angular.module('phenoCom').directive('videoComponent', function() {
     };
 
 });
+
+angular.module('phenoCom').directive('scrolltotop', function() {
+    return {
+      template: scrolltopTemplate,
+      link: function (scope, element, attrs) {
+            
+            element.bind('click', function() {
+                $('html, body').animate({
+                        scrollTop: 0
+                    }, 500, function(){
+                });
+            })
+        }
+    };
+  });
 
 // currently not in use: embedded scrollable website
 angular.module('phenoCom').directive('scrollableComponent', function($window) {

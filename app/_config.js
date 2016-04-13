@@ -2,7 +2,8 @@
  * Created by rdollete on 4/1/16.
  */
 import 'npm/owlcarousel/owl-carousel/owl.carousel';
-import 'snapjs/snap.css';
+//import 'snapjs/snap.css'; remove it so that scrolltop can work in chrome
+
 import 'angular-snap'; 
 
 
