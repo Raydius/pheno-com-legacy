@@ -1,29 +1,16 @@
 // main content custom styles
-.Site {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
 main, .maincontent {
   background-color:#FFF;
   max-width: $body_size;
   margin: 0 auto;
   padding: 0;
-  overflow: auto;
   display: block;
-  flex: 1;
 
   .main-wrapper{
     height: 100%;
     display: block;
   }
-.Site {
-   display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-  .section{
+.section{
     padding: ($base_spacing/4) 0;
     display: block;
   	&:first-child{

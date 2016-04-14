@@ -1,14 +1,17 @@
+* {
+	margin: 0;
+}
 html, body {
   height: 100%;
   width: 100%;
   margin: 0;
   overflow: initial;
   font-family: $primary_font;
-  border-bottom: 8px solid $primary_color;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 .body-wrapper{
-    border-bottom: 8px solid $primary_color;
     background-color: #FFF;
     font-family: $primary_font;
 }
@@ -257,3 +260,14 @@ h3 blockquote {
 
 	}
 }
+html, body {
+	height: 100%;
+}
+.body-wrapper {
+	min-height: 100%;
+	margin: 0 auto -177px; /* the bottom margin is the negative value of the footer's height */
+}
+footer, .push {
+	height: 177px; /* '.push' must be the same height as 'footer' */
+}
+
