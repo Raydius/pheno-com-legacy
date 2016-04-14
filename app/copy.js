@@ -290,7 +290,7 @@ var copy =
       "clientLogo": require('assets/images/works/clients_logo/wilson_logo.svg'),
       "project": "Wilson Anthem",
       "media": "Branding, Video, Digital",
-      "blockquote": "<span style='font-size: 76px'> Wilson Is Now<br> Fully Equipped.</span>",
+      "blockquote": "Wilson Is Now<br> Fully Equipped.",
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
         "Wilson has been around for over 100 years but we've never had a global brand campaign. Since this was our first campaign, we needed to identify what Wilson is all about. We make quality, trusted equipment, but what do we stand for? What is our role in the world of sports? We worked with the strategic team at Phenomenon to land on a pretty powerful yet simple idea; Wilson is every athletes faithful weapon.",
@@ -388,7 +388,7 @@ var copy =
       "clientLogo": require('assets/images/works/clients_logo/wilson_logo.svg'),
       "project": "Wilson Anthem",
       "media": "Branding, Video, Digital",
-      "blockquote": "Wilson Is Now Fully Equipped.",
+      "blockquote": "Wilson Is Now <br>Fully Equipped.",
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
         "Wilson has been around for over 100 years but we've never had a global brand campaign. Since this was our first campaign, we needed to identify what Wilson is all about. We make quality, trusted equipment, but what do we stand for? What is our role in the world of sports? We worked with the strategic team at Phenomenon to land on a pretty powerful yet simple idea; Wilson is every athletes faithful weapon.",
@@ -555,7 +555,7 @@ var copy =
       "clientLogo": require('assets/images/works/clients_logo/xome.svg'),
       "project": "Xome",
       "media": "Branding",
-      "blockquote": 'It\'s A "Sunny" Day for Payday Loans',
+      "blockquote": 'It&#8217;s A &#8220;Sunny&#8221; Day <br>for Payday Loans',
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "In the UK, the short-term loans business is not dissimilar to the US in that we have a huge problem with perception. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
@@ -639,7 +639,7 @@ var copy =
       "clientLogo": require('assets/images/works/clients_logo/mens-wearhouse.svg'),
       "project": "Men's Wearhouse",
       "media": "Branding",
-      "blockquote": "Men's Wearhouse Updates Its Wardrobe.", 
+      "blockquote": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.", 
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "For over 20 years, Men's Wearhouse advertising centered around one line delivered by one man. But in 2013, when our founder and longtime CEO left the company, we had to make some pretty significant changes. After an extensive agency review we selected Phenomenon to take both strategic and creative lead on the future of Men's Wearhouse as our Agency of Record.",

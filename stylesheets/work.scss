@@ -1,7 +1,19 @@
 .work {
+	&.work-details {
+		h2 blockquote {
+			font-size: 76px;
+		}
+		h2 blockquote, h3 blockquote {
+
+			&:before {
+				content: none;
+			}
+		}
+	}
 	.top-main {
 		margin-bottom: $base_spacing;
 	}
+
 	.top-description {
 		p {
 			line-height: 26px;

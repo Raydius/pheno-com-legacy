@@ -1,12 +1,34 @@
 .culture {
-
+	h2 blockquote {
+		line-height: 48px;
+	}
+	.top-main {
+		border-bottom: 0;
+	}
 	article {
 		margin-top: $base_spacing;
+		&.table {
+			display: table;
+			> div {
+				display: table-cell;
+				vertical-align: bottom;
+				float: none;
+				height: 100%;
+			}
+		}
 		img {
 			margin-top: $base_spacing - 20;
 			&:first-of-type {
 				margin-top: 0;
 			}
+		}
+	}
+	h3 {
+		blockquote {
+			padding: 10px;
+		}
+		~ cite {
+			padding: 0 10px;
 		}
 	}
 
