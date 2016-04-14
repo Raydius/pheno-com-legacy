@@ -65,7 +65,7 @@
 	    	+ label {
 	    		
 	    		&:after {
-	    			content: "-";
+	    			transform: rotate(90deg);
 	    		}
 
 	    	}
@@ -83,9 +83,22 @@
 	    color: $black_font;
 	    width: 100%;
 	    &:after {
-	    	content: "+";
+	    	content: "\e902";
 	    	position: absolute;
+	    	font-size: 18px;
 	    	right: 0;
+	    	top: 32px;
+	    	font-family: 'icomoon' !important;
+		    speak: none;
+		    font-style: normal;
+		    font-weight: bold;
+		    font-variant: normal;
+		    text-transform: none;
+		    line-height: 1;
+		    transform: rotate(-90deg);
+		    /* Better Font Rendering =========== */
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;
 	    }
 	}
 
