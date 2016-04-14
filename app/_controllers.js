@@ -3,6 +3,11 @@ require('angular-snap');
 var angular = require('angular');
 
 angular.module('phenoCom').controller('phenoController', function($state, $scope, $cookies, snapRemote) {
+    // temporary onload solution to hide unstyle content for now
+    // to forgot to remove display: none in layout.jade
+    window.onload = function() {
+        $('body').show(); 
+    };
 
     // manual function for closing drawer
     $scope.closeDrawer = function() {
