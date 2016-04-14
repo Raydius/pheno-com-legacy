@@ -230,7 +230,7 @@ var copy =
           "imageUrl": require('assets/images/work-3.jpg'),
           "imageAlt": "Wilson Image 3",
           "legend": "Fashion / Retail",
-          "headline": "Men",
+          "headline": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.",
           "cite": "",
           "description": "After the departure of longtime owner and face of brand, company looks to modernize all the way down to the cufflinks.",
           "readmoreUrl": "#/work/mens-wearhouse"

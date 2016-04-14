@@ -41,7 +41,7 @@ section.row.no-padding.work.work-details
 				video-component(thumb=contentItem.thumb, alt=contentItem.thumbAlt, title=contentItem.thumbTitle, vimeo=contentItem.vimeo)
 
 			if contentItem.carousel
-				carousel-component.carousel-component.component.section.no-padding
+				carousel-component.carousel-component.no-padding
 					each carouselItem in contentItem.images
 						img(src=carouselItem.url, alt=carouselItem.alt)
 			if contentItem.image
@@ -50,7 +50,8 @@ section.row.no-padding.work.work-details
 						img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
 			if contentItem.mainDescription
 				each par in contentItem.mainDescription
-					p= par
+					article.col-md-7
+						p= par
 	
 	include more-cases
 	

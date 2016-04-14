@@ -23,13 +23,13 @@ section.row.no-padding.work
 			.col-xs-12.col-sm-12.col-md-4
 				fieldset
 					legend= contentItem.legend
-					h3= contentItem.headline 
+					h3!= contentItem.headline 
 					cite
 						span
 							| By Amy Weisenbach
 						span
 							| VP Marketing, Wilson
 					div.line
-					p= contentItem.description
+					p!= contentItem.description
 					
 					a.red(href=contentItem.readmoreUrl) Read More &gt; 
