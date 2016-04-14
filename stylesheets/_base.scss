@@ -260,14 +260,3 @@ h3 blockquote {
 
 	}
 }
-html, body {
-	height: 100%;
-}
-.body-wrapper {
-	min-height: 100%;
-	margin: 0 auto -177px; /* the bottom margin is the negative value of the footer's height */
-}
-footer, .push {
-	height: 177px; /* '.push' must be the same height as 'footer' */
-}
-
