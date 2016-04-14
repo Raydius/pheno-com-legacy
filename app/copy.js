@@ -859,7 +859,6 @@ var copy =
         {
           "type": "scrollable",
           "scrollable": true,
-          "imageUrl": require("assets/images/wilson-anthem-landingpage-opt.jpg"),
           "imageAlt": "Wilson Anthem Landing Page"
         },
         {
