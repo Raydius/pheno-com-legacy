@@ -2,6 +2,8 @@
 
 .contact{
   .top-main {
+    border-bottom: 0;
+    padding-top: $base_spacing - 20;
     h2 blockquote {
       font-size: 52px;
     }
@@ -9,11 +11,11 @@
   figure {
     background: #f2f2f2;
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: $base_spacing + 40;
     h3 {
       font-size: 40px;
       font-family: $secondary_font;
-      margin-bottom: 30px;
+      margin: ($base_spacing - 10) 0 ($base_spacing - 40);
       font-weight: bold;
       color: $gray_font;
     }
@@ -30,8 +32,8 @@
   .contactbiz {
     
     text-align: center;
-    margin-top: $base_spacing;
-    padding-bottom: $base_spacing*2;
+    margin-top: $base_spacing + 40;
+    padding-bottom: $base_spacing*3;
     h4 {
       color: $black_font;
       font-family: $secondary_font;

@@ -16,6 +16,9 @@
 			
 		}
 	}
+	.border-bottom {
+		border-bottom: 1px solid $gray_border_color;
+	}
 	.col-md-7 {
 		padding-left: $base-spacing;
 	}
@@ -28,11 +31,13 @@
 			margin-top: $base-spacing - 30;
 		}
 	}
+
 	article {
 		margin-top: 20px;
-		border-bottom: 1px solid $gray_border_color;
+
 		p {
 			margin-top: $base-spacing - 20;
+			font-weight: bold;
 			&:last-of-type {
 				margin-bottom: $base-spacing*2;
 			}
