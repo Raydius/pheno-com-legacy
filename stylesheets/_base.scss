@@ -2,7 +2,6 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background-color: $primary_color;
   overflow: initial;
   font-family: $primary_font;
   border-bottom: 8px solid $primary_color;
@@ -46,8 +45,8 @@ legend {
 	font-size: 14px;
 }
 article p {
-	font-weight: bold;
-	font-size: 22px;
+	font-size: 16px; 
+	line-height: 26px;
 
 	&:last-of-type {
 		margin-bottom: $base_spacing;

@@ -17,11 +17,16 @@
 		}
 	}
 	
+	#toggle-featured-contributors:checked ~ .featured-contributors {
+		display: block;
+	}
+	
 	.featured-contributors {
 		box-sizing: border-box;
 		text-align: center;
 		background: #F2F2F2;
 		padding: 0 $base_spacing $base_spacing;
+		display: none;
 		h6 {
 			font-size: 18px;
 			border-bottom: 1px solid #ccc;

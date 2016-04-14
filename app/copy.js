@@ -392,7 +392,7 @@ var copy =
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
         "Wilson has been around for over 100 years but we've never had a global brand campaign. Since this was our first campaign, we needed to identify what Wilson is all about. We make quality, trusted equipment, but what do we stand for? What is our role in the world of sports? We worked with the strategic team at Phenomenon to land on a pretty powerful yet simple idea; Wilson is every athletes faithful weapon.",
-        "We worked with the strategic team at Phenomenon to land on a pretty powerful yet simple idea; Wilson is every athletes faithful weapon.",
+        "<span class='red'>We worked with the strategic team at Phenomenon to land on a pretty powerful yet simple idea; Wilson is every athletes faithful weapon.</span>",
         "Before we did any consumer-facing branding, we asked Pheno to create something that could rally the Wilson team from within. What did this new face of Wilson mean? How could we as employees live this? So we produced a beautifully bound brand book containing words and images that boldly and loudly defined who we are and handed them out to each of our employees."
       ],
       "heroThumb": require('assets/images/wilsonx_thumb_01-opt.jpg'),
@@ -490,7 +490,7 @@ var copy =
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
         "The SLS chain of high-end, luxury hotels has been a mainstay in Miami and Los Angeles for over a decade. Since 2007 we have been anxiously anticipating our expansion to Sin City. And 7 years later we were ready to launch. But when it comes to Vegas, it's not as simple as just opening the doors. You have to really identify and brand who you are. Every hotel in Vegas has shows. Everyone has restaurants. Everyone has gambling. But what will you get when you come to the SLS Vegas? That was the challenge ahead of us.",
-        "So when we created the branding for the SLS Vegas, we literally mixed the old Vegas with the new.",
+        "<span class='red'>So when we created the branding for the SLS Vegas, we literally mixed the old Vegas with the new.</span>",
         "The first thing Pheno loved about our new location is the same thing we loved, the history. The site was the exact location of the iconic Sahara Hotel & Casino which was the place you wanted to be in 60s Vegas. It was elegant, sophisticated, glamorous. The Sahara represented a different time for Vegas, with different values. And we wanted to bring those feelings back. A new old way to experience Vegas, so-to-speak. So when we created the branding for the SLS Vegas, we literally mixed the old Vegas with the new."
       ],
       "details": [
@@ -559,7 +559,7 @@ var copy =
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "In the UK, the short-term loans business is not dissimilar to the US in that we have a huge problem with perception. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
-        "We went to Phenomenon to help us create a differentiating short-term loan product",
+        "<span class='red'>We went to Phenomenon to help us create a differentiating short-term loan product</span>",
         "We went to Phenomenon, not to create a brand campaign or an app or some other piece of communication. We went to Phenomenon to help us create a differentiating short-term loan product. And they came back to us with an interesting idea they aptly called Sunny."
       ],
       "detailcontent": [
@@ -601,7 +601,7 @@ var copy =
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "In the UK, the short-term loans business is not dissimilar to the US in that we have a huge problem with perception. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
-        "We went to Phenomenon to help us create a differentiating short-term loan product",
+        "<span class='red'>We went to Phenomenon to help us create a differentiating short-term loan product</span>",
         "We went to Phenomenon, not to create a brand campaign or an app or some other piece of communication. We went to Phenomenon to help us create a differentiating short-term loan product. And they came back to us with an interesting idea they aptly called Sunny."
       ],
       "detailcontent": [
@@ -704,7 +704,7 @@ var copy =
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "In the UK, the short-term loans business is not dissimilar to the US in that we have a huge problem with perception. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
-        "We went to Phenomenon to help us create a differentiating short-term loan product",
+        "<span class='red'>We went to Phenomenon to help us create a differentiating short-term loan product</span>",
         "We went to Phenomenon, not to create a brand campaign or an app or some other piece of communication. We went to Phenomenon to help us create a differentiating short-term loan product. And they came back to us with an interesting idea they aptly called Sunny."
       ],
       "detailcontent": [
@@ -784,6 +784,26 @@ var copy =
         }
       ]
     },
+    "moreCases": [
+      {
+        "projectName": "Men's Wearhouse <br>Updates Its Closet.",
+        "writerName": "Mike Dowse",
+        "writerTitle": "CEO, Wilson",
+        "prjectThumbSrc": require("assets/images/wilson_x_1_06-opt.jpg")
+      },
+      {
+        "projectName": "Men's Wearhouse <br>Updates Its Closet.",
+        "writerName": "Mike Dowse",
+        "writerTitle": "CEO, Wilson",
+        "prjectThumbSrc": require("assets/images/wilson_x_1_06-opt.jpg")
+      },
+      {
+        "projectName": "Men's Wearhouse <br>Updates Its Closet.",
+        "writerName": "Mike Dowse",
+        "writerTitle": "CEO, Wilson",
+        "prjectThumbSrc": require("assets/images/wilson_x_1_06-opt.jpg")
+      }
+    ],
     "entertainment": {
       "title": "Wilson Anthem",
       "className": "wilson-anthem",

@@ -12,6 +12,7 @@ import Snap from 'snapjs';
 window.Snap = Snap;
 
 import 'angular-snap';
+//import '../js/scrolltofixed.min.js';
 
 require('angular-cookies');
 require('angular-messages');

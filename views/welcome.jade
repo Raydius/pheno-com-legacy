@@ -12,36 +12,36 @@ section.row.no-padding.home
 		p.red
 			| Except for this part. 
 		span.icon-right-arrow
-	.clear
-	ul.row.no-padding.featured-contributors
-		h6 Featured Contributors
-		each contributorItem in pageData.contributors
-			li.col-md-4 
-				if contributorItem.contributorAvatar 
-					img(src=contributorItem.contributorAvatar)
-				cite
-					if contributorItem.name
-						span!= contributorItem.name
-					if contributorItem.jobTitle
-						span!= contributorItem.jobTitle
-				if contributorItem.project
-					p= contributorItem.project
-				a.red(href="#") Read full articles
-		.clear
-		.see-more
-			input.red.view-more(type="checkbox" name="toggle" id="toggle") 
-			label(for="toggle") 
-			.see-more-container
-				each contributorItem in pageData.contributorsMore
-					li.col-md-4 
-						if contributorItem.contributorAvatar 
-							img(src=contributorItem.contributorAvatar)
-						cite
-							if contributorItem.name
-								span= contributorItem.name
-							if contributorItem.jobTitle
-								span= contributorItem.jobTitle
-						if contributorItem.project
-							p= contributorItem.project
-						a.red(href="#") Read full articles
-				
+		input.view-this-part.icon-right-arrow(type="checkbox" id="toggle-featured-contributors") 		
+		ul.row.no-padding.featured-contributors
+			h6 Featured Contributors
+			each contributorItem in pageData.contributors
+				li.col-md-4 
+					if contributorItem.contributorAvatar 
+						img(src=contributorItem.contributorAvatar)
+					cite
+						if contributorItem.name
+							span!= contributorItem.name
+						if contributorItem.jobTitle
+							span!= contributorItem.jobTitle
+					if contributorItem.project
+						p= contributorItem.project
+					a.red(href="#") Read full articles
+			.clear
+			.see-more
+				input.red.view-more(type="checkbox" name="toggle" id="toggle") 
+				label(for="toggle") 
+				.see-more-container
+					each contributorItem in pageData.contributorsMore
+						li.col-md-4 
+							if contributorItem.contributorAvatar 
+								img(src=contributorItem.contributorAvatar)
+							cite
+								if contributorItem.name
+									span= contributorItem.name
+								if contributorItem.jobTitle
+									span= contributorItem.jobTitle
+							if contributorItem.project
+								p= contributorItem.project
+							a.red(href="#") Read full articles
+					

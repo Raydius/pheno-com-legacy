@@ -16,11 +16,11 @@ section.row.no-padding.work
 			span
 				| CEO, Wilson
 	article.col-md-12.no-padding
-		.col-md-8.top-description
+		.col-md-7.top-description
 			if pageData.topDescription
 				each par in pageData.topDescription
 					p!= par
-		.col-md-4
+		.col-md-4.col-md-offset-1
 			aside
 				img.clientlogo(src= pageData.clientLogo)
 				fieldset 

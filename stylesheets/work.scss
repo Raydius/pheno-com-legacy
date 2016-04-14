@@ -4,12 +4,19 @@
 	}
 	.top-description {
 		p {
-			line-height: 35px;
-			font-size: 18px;
+			line-height: 26px;
 			&:first-child:first-letter {
 				float: left;
 				font-size: 76px;
 				line-height: 60px;
+			}
+			span.red {
+				font-family: $secondary_font;
+				font-size: 34px;
+				display: block;
+				margin: ($base_spacing - 20) 0;
+				margin-left: - ($base_spacing - 20);
+				line-height: 40px;
 			}
 		}
 	}

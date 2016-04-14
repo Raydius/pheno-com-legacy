@@ -1,32 +1,16 @@
+// dynamically populate content from copy.json data
+block variables
+- page = "moreCases"
+- pageData = copy.content[page]
+
 section.col-md-12.no-padding.more-cases 
 	.more-case-wrapper.cf
-		article.col-md-4 
-			img(src=require("assets/images/wilson_x_2_04-opt.jpg"))
-			p 
-				| Men's Wearhouse <br>Updates Its Closet.
-				cite
-					span
-						| Mike Dowse
-					span
-						| CEO, Wilson
-			a.red(href="#") read full article
-		article.col-md-4
-			img(src=require("assets/images/wilson_x_2_04-opt.jpg"))
-			p 
-				| Wilson Launches <br>Futuristic Ball.
-				cite
-					span
-						| Mike Dowse
-					span
-						| CEO, Wilson
-			a.red(href="#") read full article
-		article.col-md-4
-			img(src=require("assets/images/wilson_x_2_04-opt.jpg"))
-			p 
-				| thinkThin Helps <br>Women Shed the Guilt.
-				cite
-					span
-						| Mike Dowse
-					span
-						| CEO, Wilson
-			a.red(href="#") read full article
+		each contentItem in pageData
+			article.col-md-4 
+				img(src=require("assets/images/wilson_x_2_04-opt.jpg"))
+				p!= contentItem.projectName
+					cite
+						span= contentItem.writerName
+						span= contentItem.writerTitle
+							
+				a.red(href="#") read full article

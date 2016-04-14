@@ -95,7 +95,7 @@
     }
 
     .nav-wrapper{
-      padding: 30px $base_spacing 0 $base_spacing;
+      padding: 30px $base_spacing*2 0 $base_spacing*2;
     }
 
     .tabs li.contact a{
@@ -152,7 +152,7 @@
 
   //content
   main, .maincontent {
-    padding: $base_spacing;
+    padding: $base_spacing $base_spacing*2;
     padding-bottom: 0;
 
     .section{
