@@ -103,21 +103,21 @@ var copy =
     "home": {
       "contributors": [
         {
-          "name": "By Kevin Dahlstrom",
-          "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
-          "project": "Wilson Is Now Fully Equipped.",
+          "name": "Amy Weisenbach",
+          "jobTitle": "VP Marketing, Wilson",
+          "project": "Wilson Is Now <br>Fully Equipped.",
           "contributorAvatar": require("assets/images/home/avatar-1.png")
         },
         {
-          "name": "By Kevin Dahlstrom",
-          "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
-          "project": "Wilson Is Now Fully Equipped.",
+          "name": "Matt Stringer",
+          "jobTitle": "EVP Marketing, Men&#8217s Wearhouse",
+          "project": "Men&#8217s Wearhouse<br> Updates Its Wardrobe.",
           "contributorAvatar": require("assets/images/home/avatar-2.png")
         },
         {
-          "name": "By Kevin Dahlstrom",
-          "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
-          "project": "Wilson Is Now Fully Equipped.",
+          "name": "Megan Crossland",
+          "jobTitle": "Director of Marketing, thinkThin",
+          "project": "thinkThin Helps<br> Women Shed the Guilt.",
           "contributorAvatar": require("assets/images/home/avatar-3.png")
         },
       ],
@@ -125,37 +125,37 @@ var copy =
         {
           "name": "By Kevin Dahlstrom",
           "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
-          "project": "Wilson Is Now Fully Equipped.",
+          "project": "Wilson Is Now <br>Fully Equipped.",
           "contributorAvatar": require("assets/images/home/avatar-4.png")
         },
         {
           "name": "By Kevin Dahlstrom",
           "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
-          "project": "Wilson Is Now Fully Equipped.",
+          "project": "Wilson Is Now <br>Fully Equipped.",
           "contributorAvatar": require("assets/images/home/avatar-5.png")
         },
         {
           "name": "By Kevin Dahlstrom",
           "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
-          "project": "Wilson Is Now Fully Equipped.",
+          "project": "Wilson Is Now <br>Fully Equipped.",
           "contributorAvatar": require("assets/images/home/avatar-6.png")
         },
         {
           "name": "By Kevin Dahlstrom",
           "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
-          "project": "Wilson Is Now Fully Equipped.",
+          "project": "Wilson Is Now <br>Fully Equipped.",
           "contributorAvatar": require("assets/images/home/avatar-7.png")
         },
         {
           "name": "By Kevin Dahlstrom",
           "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
-          "project": "Wilson Is Now Fully Equipped.",
+          "project": "Wilson Is Now <br>Fully Equipped.",
           "contributorAvatar": require("assets/images/home/avatar-8.png")
         },
         {
           "name": "By Kevin Dahlstrom",
           "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
-          "project": "Wilson Is Now Fully Equipped.",
+          "project": "Wilson Is Now <br>Fully Equipped.",
           "contributorAvatar": require("assets/images/home/avatar-9.png")
         }
       ]

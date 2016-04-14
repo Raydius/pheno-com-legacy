@@ -11,7 +11,8 @@ section.row.no-padding.home
 			| The first agency site  <br>written by clients.
 		p.red
 			| Except for this part. 
-		input.view-this-part.icon-right-arrow(type="checkbox" id="toggle-featured-contributors") 		
+		input.view-this-part(type="checkbox" id="toggle-featured-contributors") 		
+		label.icon-right-arrow(for="toggle-featured-contributors") 
 		ul.row.no-padding.featured-contributors
 			h6 Featured Contributors
 			each contributorItem in pageData.contributors
@@ -24,8 +25,8 @@ section.row.no-padding.home
 						if contributorItem.jobTitle
 							span!= contributorItem.jobTitle
 					if contributorItem.project
-						p= contributorItem.project
-					a.red(href="#") Read full articles
+						p!= contributorItem.project
+					a.red(href="#") Read full articles &gt;
 			.clear
 			.see-more
 				input.red.view-more(type="checkbox" name="toggle" id="toggle") 
@@ -37,10 +38,10 @@ section.row.no-padding.home
 								img(src=contributorItem.contributorAvatar)
 							cite
 								if contributorItem.name
-									span= contributorItem.name
+									span!= contributorItem.name
 								if contributorItem.jobTitle
-									span= contributorItem.jobTitle
+									span!= contributorItem.jobTitle
 							if contributorItem.project
-								p= contributorItem.project
-							a.red(href="#") Read full articles
+								p!= contributorItem.project
+							a.red(href="#") Read full articles &gt;
 					
