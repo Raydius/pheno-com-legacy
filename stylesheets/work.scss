@@ -8,7 +8,9 @@
 			&:first-child:first-letter {
 				float: left;
 				font-size: 76px;
-				line-height: 60px;
+				line-height: 40px;
+				font-family: $secondary_font;
+				margin-right: 5px;
 			}
 			span.red {
 				font-family: $secondary_font;

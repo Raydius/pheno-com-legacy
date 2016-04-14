@@ -290,7 +290,7 @@ var copy =
       "clientLogo": require('assets/images/works/clients_logo/wilson_logo.svg'),
       "project": "Wilson Anthem",
       "media": "Branding, Video, Digital",
-      "blockquote": "Wilson Is Now Fully Equipped.",
+      "blockquote": "<span style='font-size: 76px'> Wilson Is Now<br> Fully Equipped.</span>",
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
         "Wilson has been around for over 100 years but we've never had a global brand campaign. Since this was our first campaign, we needed to identify what Wilson is all about. We make quality, trusted equipment, but what do we stand for? What is our role in the world of sports? We worked with the strategic team at Phenomenon to land on a pretty powerful yet simple idea; Wilson is every athletes faithful weapon.",
