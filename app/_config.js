@@ -2,10 +2,6 @@
  * Created by rdollete on 4/1/16.
  */
 import 'npm/owlcarousel/owl-carousel/owl.carousel';
-//import 'snapjs/snap.css'; remove it so that scrolltop can work in chrome
-
-import 'angular-snap'; 
-
 
 var copy = require('app/copy.js');
 
@@ -25,7 +21,7 @@ var templateCulture = require('views/culture.jade');
 var templateContact = require('views/contact.jade');
 var templateJobs = require('views/jobs.jade'); 
 
-angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $sceDelegateProvider, snapRemoteProvider) {
+angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $sceDelegateProvider) {
 
 
     $sceDelegateProvider.resourceUrlWhitelist([
@@ -35,12 +31,6 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         'https://vimeo.com/**'
     ]);
 
-
-    // setup Snap options
-    snapRemoteProvider.globalOptions = {
-        hyperextensible: false,
-        disable: 'right'
-    };
 
     // config routing
     $urlRouterProvider.otherwise('/');

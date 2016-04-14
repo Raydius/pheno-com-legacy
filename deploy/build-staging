@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # staging build
-export OUTPUT_HOST=http://tech.phenomenonstaging.com
+export OUTPUT_HOST="http://tech.phenomenonstaging.com"
 export OUTPUT_PORT=2070
 export OUTPUT_DIR="public-staging"
+export NODE_ENV="production"
 
 ./node_modules/.bin/webpack --progress

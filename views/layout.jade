@@ -9,14 +9,9 @@ html(xmlns:ng="http://angularjs.org/" ng-app='phenoCom')
 			
 	body(class=bodyClass, ng-controller="phenoController" style="display: none;")
 
-
-		snap-drawers
-			include ./components/side-nav
-
 		.body-wrapper
-			snap-content
-				include ./components/top-nav
+			include ./components/top-nav
 
-				block content
+			block content
 
 

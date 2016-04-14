@@ -8,11 +8,7 @@ import angular from 'angular';
 import uirouter from 'angular-ui-router';
 import ngAnimate from 'angular-animate';
 
-import Snap from 'snapjs';
-window.Snap = Snap;
-
-import 'angular-snap';
-//import '../js/scrolltofixed.min.js';
+import '../js/scrolltofixed.min.js';
 
 require('angular-cookies');
 require('angular-messages');
@@ -20,7 +16,6 @@ require('angular-snap');
 
 angular.module('phenoCom',[
     uirouter,
-    'snap',
     ngAnimate,
     'ngCookies',
     'ngMessages'
