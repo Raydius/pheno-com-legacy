@@ -5,11 +5,15 @@
 	.top-main {
 
 		h2 {
-			font-size: 34px;
+			margin-top: $base-spacing*2;
+			blockquote {
+				font-size: 34px;
+			}
 		}
 		border-bottom: 0;
 	}
 	ul {
+		margin-top: $base-spacing*2 - 40;
 		> span {
 			color: $primary_color;
 			font-family: $primary_font;
