@@ -4,7 +4,7 @@ block variables
 - pageData = copy.content[page]
 
 section.row.no-padding.work
-	article.col-md-12.no-padding.top-main
+	article.col-md-12.top-main
 		h2 
 			blockquote  
 				| A lot of the work they do is confidential. <br>Here's some that isn't.
@@ -16,7 +16,7 @@ section.row.no-padding.work
 			span
 				| CEO, Wilson
 	each contentItem in pageData.subcontent 
-		article.col-md-12.no-padding
+		article.col-md-12
 			.col-xs-12.col-sm-12.col-md-8
 				if contentItem.image
 					img(src= contentItem.imageUrl, alt=contentItem.imageAlt)

@@ -15,12 +15,18 @@
 				margin-bottom: 0;
 			}		
 		}
+		.project-detail {
+			float: right;
+			> .col-md-4 {
+				float: right;
+			}
+		}
 	}
 	.top-main {
 		margin-bottom: $base_spacing;
 	}
-
 	.top-description {
+		float: left;
 		p {
 			line-height: 26px;
 			&:first-child:first-letter {

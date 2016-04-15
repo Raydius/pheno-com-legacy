@@ -14,6 +14,7 @@ html, body {
 .body-wrapper{
     background-color: #FFF;
     font-family: $primary_font;
+    border-bottom: 8px solid $primary_color;
 }
 .red {
 	color: $primary_color;
@@ -228,9 +229,10 @@ h3 blockquote {
 .col-lg-15 {
     position: relative;
     min-height: 1px;
+    height: 100%;
 }
 .col-xs-15 {
-    width: 20%;
+   	width: calc(20% - 16px);
     float: left;
 }
 
@@ -242,7 +244,7 @@ h3 blockquote {
 }
 @media (min-width: 992px) {
     .col-md-15 {
-        width: 20%;
+        width: calc(20% - 16px);
         float: left;
     }
 }

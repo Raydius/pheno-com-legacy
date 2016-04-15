@@ -27,6 +27,24 @@
   .about .top-main p {
     min-width: 100%;
   }
+  .top-main h2, .work h2 blockquote {
+    font-size: 40px;
+  }
+  .about .top-main h2 {
+    font-size: 40px;
+  }
+  .contact {
+    .contactbiz {
+      padding-bottom: $base_spacing;
+      .col-md-4 {
+        &:first-of-type {
+          margin-top: 0
+        }
+        margin-top: $base_spacing + 20;
+      }
+    } 
+  }
+
 }
 
 

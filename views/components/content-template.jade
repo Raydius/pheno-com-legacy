@@ -15,28 +15,27 @@ section.row.no-padding.work.work-details
 				| Mike Dowse
 			span
 				| CEO, Wilson
-	article.col-md-12.no-padding
-		.col-md-7.top-description
-			if pageData.topDescription
-				each par in pageData.topDescription
-					p!= par
-		.col-md-4.col-md-offset-1
-			aside
-				img.clientlogo(src= pageData.clientLogo)
-				fieldset 
-					legend Client
-					span= pageData.client
-				fieldset 
-					legend Project
-					span= pageData.project
-				fieldset 
-					legend Media
-					span= pageData.media
-				fieldset
-					legend.share Share
-
+	article.col-xs-12.col-sm-12.col-md-4.col-md-offset-1.project-detail
+		aside
+			img.clientlogo(src= pageData.clientLogo)
+			fieldset 
+				legend Client
+				span= pageData.client
+			fieldset 
+				legend Project
+				span= pageData.project
+			fieldset 
+				legend Media
+				span= pageData.media
+			fieldset
+				legend.share Share
+	article.col-xs-12.col-sm-12.col-md-7.top-description
+		if pageData.topDescription
+			each par in pageData.topDescription
+				p!= par
+		
 	each contentItem in pageData.detailcontent
-		article.col-md-12.no-padding
+		article.col-md-12.no-padding.tet
 			if contentItem.video
 				video-component(thumb=contentItem.thumb, alt=contentItem.thumbAlt, title=contentItem.thumbTitle, vimeo=contentItem.vimeo)
 
