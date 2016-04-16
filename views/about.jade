@@ -7,16 +7,12 @@ block variables
 // title and body copy
 section.row.no-padding.about
 	div.top-main.col-md-12
-		h2 
-			| Something like <br> a Phenomenon.
-		p
-			| A behind the scenes look at the most appropriately-named agency I know.
-		cite
-			img(src=require('assets/images/about/about-avatar.png'))
-			span
-				| By Kevin Dahlstrom 
-			span 
-				| Chief Marketing Office, Mr. Cooper Home Loans
+
+		h2!= pageData.blockquote
+		p!= pageData.subquote
+
+		include components/cite-components
+	
 	div.col-xs-12.col-md-12.no-padding
 		.col-xs-12.col-md-5.no-padding
 			figure
@@ -144,7 +140,4 @@ section.row.no-padding.about
 					| Alright, to wrap this up, I thought you guys were the communications experts, so why do you have clients doing all the writing on your website?
 					span
 						| When agencies try to explain what they do and why they're good at it, they just always sound so pompous and full of themselves—even the really good ones. And that's not us.  We think what our clients have to say is much more interesting than what we have to say. Plus we thought it would be fun.
-
-
-//include ./components/content-template.jade
 

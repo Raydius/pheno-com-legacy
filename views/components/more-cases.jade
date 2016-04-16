@@ -9,8 +9,9 @@ section.col-md-12.no-padding.more-cases
 			article.col-md-4 
 				img(src=require("assets/images/wilson_x_2_04-opt.jpg"))
 				p!= contentItem.projectName
-					cite
+				cite 
+					.wrapper
 						span= contentItem.writerName
 						span= contentItem.writerTitle
 							
-				a.red(href="#") read full article
+				a.red(href="#") Read full article

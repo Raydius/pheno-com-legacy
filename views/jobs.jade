@@ -6,32 +6,16 @@ block variables
 
 // title and body copy
 section.row.no-padding.jobs
-	article.col-md-5.no-padding
+	article.col-md-offset-1.col-md-4
 		img(src=require('assets/images/jobs/jobs1.png')) 
-	article.col-xs-12.col-sm-12.col-md-6.col-md-offset-1.col-sm-offset-0.top-main
+	article.col-xs-12.col-sm-12.col-md-7.col-sm-offset-0.top-main
 		h2 
-			blockquote
-				| After a meeting, I wasn't sure who was from what department. Every person seemed to be involved in every aspect of what they were presenting.
-		cite
-			img(src=require('assets/images/about/about-avatar.png'))
-			span
-				| Lindsay Phillips
-			span
-				| Men's Wearhouse
+			blockquote!= pageData.blockquote
+			
+		include components/cite-components
+		
 		ul
-			span Open Positions
-			li 
-				a(href="#")
-					| Digital Design Director
-			li
-				a(href="#")
-					| Senior Brand Strategist
-			li
-				a(href="#")
-					| Strategy Director
-			li
-				a(href="#")
-					| Digital Brand Director
-			li
-				a(href="#")
-					| Studio Manager												
+			span= pageData.positions
+			each contentItem in pageData.listing
+				li 
+					a(href=contentItem.listingUrl)= contentItem.listingTitle

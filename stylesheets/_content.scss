@@ -5,7 +5,8 @@ main, .maincontent {
   margin: 0 auto;
   padding: 0;
   display: block;
-
+  padding: 20px $base_spacing*2;
+  
   .main-wrapper{
     height: 100%;
     display: block;

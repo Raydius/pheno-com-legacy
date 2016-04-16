@@ -2,10 +2,15 @@
 	margin-bottom: $base_spacing*2;
 	.top-main {
 		border-bottom: 0;
+		margin-bottom: $base_spacing*8;
+		padding-top: $base_spacing + 20;
 		p {
-			font-size: 38px;
-			font-family: $secondary_font;
+			font-size: 34px;
+			font-family: 'TiemposHeadline-Regular';
 			font-weight: normal;
+		}
+		h2 {
+			font-size: 52px;
 		}
 		input {
 			opacity: 0;
@@ -17,12 +22,14 @@
 		.icon-right-arrow {
 			transform: rotate(90deg);
 			display: inline-block;
-			font-size: 20px;
-			color: #999;
+			font-size: 32px;
+			color: #ccc;
 			margin-top: 20px;
 		}
 	}
-	
+	cite {
+		width: 100%;
+	}
 	#toggle-featured-contributors:checked ~ .featured-contributors {
 		display: block;
 	}
@@ -35,7 +42,7 @@
 		display: none;
 		margin-top: $base_spacing;
 		h6 {
-			font-size: 18px;
+			font-size: 15px;
 			border-bottom: 1px solid #ccc;
 			width: 30%;
 			padding-bottom: $base_spacing - 40;
@@ -54,7 +61,7 @@
 			span {
 				&:first-of-type {
 					font-size: 18px;
-					font-weight: bold;
+					font-family: "Circular-bold";
 				}
 				&:last-of-type {
 					opacity: 1;
@@ -63,7 +70,8 @@
 			}
 		}
 		p {
-			font-size: 22px;
+			font-size: 18px;
+			font-family: 'Tiempose-Semibold';
 		}
 		li {
 			margin-bottom: $base_spacing;
@@ -85,6 +93,8 @@
 				position: absolute;
 				left: 50%;
 				margin-left: -100px;
+				font-family: "Circular-bold";
+				font-weight: normal;
 				&:after {
 					content: "View More Contributors"
 				}

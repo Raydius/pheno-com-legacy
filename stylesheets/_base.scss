@@ -23,7 +23,7 @@ a, .a, .link{
 	
 	&.red {
 		color: $primary_color;
-		font-weight: bold; 
+		font-family: "Circular-bold";
 	}
 }
 h1 {
@@ -62,7 +62,6 @@ article p {
 	span {
 		font-weight: normal;
 	    display: block;
-	    font-size: 18px;
 	}
 }
 .clear {
@@ -84,7 +83,6 @@ figcaption {
 	position: relative;
 	border-bottom: 1px solid $gray_border_color;
 	padding-bottom: $base_spacing;
-	
 	h2 {
 		font-weight: bold;
 	}
@@ -94,32 +92,37 @@ cite {
 	font-size: 14px;
 	display: block;
 	margin-top: 5px;
-	font-weight: bold;
 	font-family: $primary_font;
 	font-style: normal;
+	display: table;
 	&:before {
 		content: "\2014 \2009";
 		content: none;
 	}
-	
+	.wrapper {
+		display: table-cell;
+		vertical-align: middle;
+		span {
+			display: block;
+			&:first-of-type {
+				font-family: "Circular-bold"; 
+			}
+
+		}
+		span {
+			&:last-of-type {
+				opacity: 0.5;
+				display: block;
+			}
+		}
+	}
+	span {
+		display: block;
+	}
 	img {
 		width: 50px;
 		float: left;
 		margin-right: 10px;
-	}
-	
-	span {
-		display: block;
-		:first-of-type {
-			padding-top: 8px;
-		}
-
-	}
-	> span {
-		&:last-of-type {
-			opacity: 0.5;
-			display: block;
-		}
 	}
 }
 h2 blockquote, h3 blockquote  {
@@ -213,9 +216,13 @@ h3 blockquote {
 
 	.icon-right-arrow {
 		display: inline-block;
-		transform: rotate(-90deg); 
+		transform: rotate(-90deg);
+		font-size: 24px;  
+		margin-bottom: 15px;
+		color: #ccc;
 	}
 	span {
+		font-family: $monospace_font;
 		&:last-child {
 			display: block;
 		}

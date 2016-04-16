@@ -8,13 +8,8 @@ section.row.no-padding.work.work-details
 		h2 
 			blockquote!= pageData.blockquote
 
-		cite
-			img(src="assets/images/about/about-avatar.png")
-
-			span
-				| Mike Dowse
-			span
-				| CEO, Wilson
+		include cite-components
+		
 	article.col-xs-12.col-sm-12.col-md-4.col-md-offset-1.project-detail
 		aside
 			img.clientlogo(src= pageData.clientLogo)

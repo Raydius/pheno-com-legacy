@@ -37,12 +37,13 @@
 
 		p {
 			margin-top: $base-spacing - 20;
-			font-weight: bold;
+			font-family: "Circular-Bold";
 			&:last-of-type {
 				margin-bottom: $base-spacing*2;
 			}
 			span {
 				margin-top: $base-spacing - 40;
+				font-family: "Circular-Book";
 			} 
 		}
 

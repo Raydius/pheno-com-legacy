@@ -1,9 +1,13 @@
 .culture {
 	h2 blockquote {
-		line-height: 48px;
+		line-height: 42px;
+		font-size: 36px;
 	}
 	.top-main {
 		border-bottom: 0;
+		cite {
+			margin-left: 20px;
+		}
 	}
 	article {
 		margin-top: $base_spacing;

@@ -123,39 +123,39 @@ var copy =
       ],
       "contributorsMore": [
         {
-          "name": "By Kevin Dahlstrom",
-          "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
-          "project": "Wilson Is Now <br>Fully Equipped.",
+          "name": "Pasty Hauer",
+          "jobTitle": "VP Brand Marketing, Sunny",
+          "project": "It&#8217;s A &#8220;Sunny&#8221; Day for Payday Loans.",
           "contributorAvatar": require("assets/images/home/avatar-4.png")
         },
         {
-          "name": "By Kevin Dahlstrom",
-          "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
-          "project": "Wilson Is Now <br>Fully Equipped.",
+          "name": "Veronica Smiley",
+          "jobTitle": "CMO, SBE",
+          "project": "SLS Vegas Gives the Strip<br>a Whole New Look.",
           "contributorAvatar": require("assets/images/home/avatar-5.png")
         },
         {
-          "name": "By Kevin Dahlstrom",
-          "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
-          "project": "Wilson Is Now <br>Fully Equipped.",
+          "name": "Allison Cornia",
+          "jobTitle": "SVP Marketing, Xome",
+          "project": "When Buying a House,<br>There&#8217;s No Place Like Xome",
           "contributorAvatar": require("assets/images/home/avatar-6.png")
         },
         {
-          "name": "By Kevin Dahlstrom",
-          "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
+          "name": "Amy Weisenbach",
+          "jobTitle": "VP Marketing, Wilson",
           "project": "Wilson Is Now <br>Fully Equipped.",
           "contributorAvatar": require("assets/images/home/avatar-7.png")
         },
         {
-          "name": "By Kevin Dahlstrom",
-          "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
+          "name": "Matt Stringer",
+          "jobTitle": "EVP Marketing, Men's Wearhouse",
           "project": "Wilson Is Now <br>Fully Equipped.",
           "contributorAvatar": require("assets/images/home/avatar-8.png")
         },
         {
-          "name": "By Kevin Dahlstrom",
-          "jobTitle": "Chief Marketing Office, Mr. Cooper Home Loans",
-          "project": "Wilson Is Now <br>Fully Equipped.",
+          "name": "Megan Crossland",
+          "jobTitle": "Director of Marketing, thinkThin",
+          "project": "thinkThin Helps<br>Women Shed the Guilt.",
           "contributorAvatar": require("assets/images/home/avatar-9.png")
         }
       ]
@@ -163,11 +163,12 @@ var copy =
     "about": {
       "title": "About Phenomenon",
       "className": "about",
+      "blockquote": "Something like<br> a Phenomenon",
+      "subquote": "A behind the scenes look at the mostappropriately-name agency I know.",
+      "quoterName": "Mike Dowse",
+      "quoterTitle": "CEO, Wilson",
+      "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "Phenomenon - About",
-      "heroThumb": require("assets/images/xome_thumb_01-opt.jpg"),
-      "heroThumbAlt": "Xome - TV Spot",
-      "heroThumbTitle": "Click to play video",
-      "heroVimeo": "155071130",
       "details": [
         "Buying or selling a home is often a complex, fragmented and darned unfriendly process. Xome is a radically better way to do it because it lets you complete everything from the convenience of an app. In just six weeks we built Xome: the first truly integrated way to buy and sell a home. The app lets you list your home, search for a home, make and receive offers, move into escrow and close the deal.",
         "When it came to the TV spot, we created something that spoke to the core of what Xome does, it makes the entire home buying/selling process more transparent. This teaser spot led people to our site where a demo video explained in better detail everything Xome does for the home buyer."
@@ -196,7 +197,10 @@ var copy =
       "title": "Work Cases Phenomenon",
       "className": "work",
       "description": "Phenomenon - Work",
-
+      "blockquote": "A lot of the work they do is confidential. <br>Here&#8217;s some that isn't.&#8221;",
+      "quoterName": "Mike Dowse",
+      "quoterTitle": "CEO, Wilson",
+      "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "maincontent": [
 
       ],
@@ -253,7 +257,7 @@ var copy =
           "imageUrl": require('assets/images/work-5.jpg'),
           "imageAlt": "Wilson Image 5",
           "legend": "Finance / Loans",
-          "headline": 'It\'s A "Sunny" Day for Payday Loans.',
+          "headline": 'It\'s A "Sunny" Day<br> for Payday Loans.',
           "cite": "",
           "description": "British company creates a whole new business model for payday loans that gives borrowers a better chance at getting out of debt.",
           "readmoreUrl": "#/work/sunny"          
@@ -291,6 +295,9 @@ var copy =
       "project": "Wilson Anthem",
       "media": "Branding, Video, Digital",
       "blockquote": "Wilson Is Now<br> Fully Equipped.",
+      "quoterName": "Mike Dowse",
+      "quoterTitle": "CEO, Wilson",
+      "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
         "Wilson has been around for over 100 years but we've never had a global brand campaign. Since this was our first campaign, we needed to identify what Wilson is all about. We make quality, trusted equipment, but what do we stand for? What is our role in the world of sports? We worked with the strategic team at Phenomenon to land on a pretty powerful yet simple idea; Wilson is every athletes faithful weapon.",
@@ -640,6 +647,9 @@ var copy =
       "project": "Men's Wearhouse",
       "media": "Branding",
       "blockquote": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.", 
+      "quoterName": "Mike Dowse",
+      "quoterTitle": "CEO, Wilson",
+      "quoterAvatar": require("assets/images/about/about-avatar.png"),     
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "For over 20 years, Men's Wearhouse advertising centered around one line delivered by one man. But in 2013, when our founder and longtime CEO left the company, we had to make some pretty significant changes. After an extensive agency review we selected Phenomenon to take both strategic and creative lead on the future of Men's Wearhouse as our Agency of Record.",
@@ -880,54 +890,55 @@ var copy =
     "culture": { 
       "title": "Culture", 
       "className": "culture",
-      "description": "CVU - Phenomenon - Xome Culture",     
+      "description": "Phenomenon - Culture",
+      "blockquote": "Their office on the 28th floor provides great views of all the amazing places in LA that I've wanted to see but didn't have time to sit in traffic for two hours to visit.&#8221;",
+      "quoterName": "Mike Dowse",
+      "quoterTitle": "CEO, Wilson",
       "details": [
         "Buying or selling a home is often a complex, fragmented and darned unfriendly process. Xome is a radically better way to do it because it lets you complete everything from the convenience of an app. In just six weeks we built Xome: the first truly integrated way to buy and sell a home. The app lets you list your home, search for a home, make and receive offers, move into escrow and close the deal.",
         "When it came to the TV spot, we created something that spoke to the core of what Xome does, it makes the entire home buying/selling process more transparent. This teaser spot led people to our site where a demo video explained in better detail everything Xome does for the home buyer."
-      ],
-      "subcontent": [
-        {
-          "type": "image",
-          "image": true,
-          "imageUrl": require("assets/images/xome-comp-01-opt.jpg"),
-          "imageAlt": "Xome Image 1"
-        },
-        {
-          "type": "image",
-          "image": true,
-          "imageUrl": require("assets/images/xome-comp-01-opt.jpg"),
-          "imageAlt": "Xome Image 1"
-        }
       ]
     },
     "jobs": {
-      "title": "Xome",
-      "className": "xome",
-      "description": "CVU - Phenomenon - Xome",
-      "heroThumb": require("assets/images/xome_thumb_01-opt.jpg"),
-      "heroThumbAlt": "Xome - TV Spot",
-      "heroThumbTitle": "Click to play video",
-      "heroVimeo": "155071130",
+      "title": "Jobs",
+      "className": "jobs",
+      "description": "Phenomenon - Jobs",
+      "blockquote": "After a meeting, I wasn't sure who was from what department. Every person seemed to be involved in every aspect of what they were presenting.&#8221;",
+      "quoterName": "Mike Dowse",
+      "quoterTitle": "CEO, Wilson",
+      "positions": "Open Positions",
+      "listing": [
+        {
+          "listingTitle": "Digital Design Director",
+          "listingUrl": "#"
+        },
+        {
+          "listingTitle": "Senior Brand Strategist",
+          "listingUrl": "#"
+        },
+        {
+          "listingTitle": "Strategy Director",
+          "listingUrl": "#"
+        },
+        {
+          "listingTitle": "Digital Brand Director",
+          "listingUrl": "#"
+        },
+        {
+          "listingTitle": "Studio Manager",
+          "listingUrl": "#"
+        },
+      ],
       "details": [
         "Buying or selling a home is often a complex, fragmented and darned unfriendly process. Xome is a radically better way to do it because it lets you complete everything from the convenience of an app. In just six weeks we built Xome: the first truly integrated way to buy and sell a home. The app lets you list your home, search for a home, make and receive offers, move into escrow and close the deal.",
         "When it came to the TV spot, we created something that spoke to the core of what Xome does, it makes the entire home buying/selling process more transparent. This teaser spot led people to our site where a demo video explained in better detail everything Xome does for the home buyer."
-      ],
-      "subcontent": [
-        {
-          "type": "video",
-          "video": true,
-          "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
-          "thumbAlt": "Xome - TV Spot - Transparent House",
-          "thumbTitle": "Click to play video",
-          "vimeo": "159123265"
-        },
-        {
-          "type": "image",
-          "image": true,
-          "imageUrl": require("assets/images/xome-comp-01-opt.jpg"),
-          "imageAlt": "Xome Image 1"
-        }
       ]
+    },
+    "contact": {
+      "blockquote": "Don't call them. They're my ninjas.&#8221;",
+      "quoterName": "Mike Dowse",
+      "quoterTitle": "CEO, Wilson",
+      "quoterAvatar": require("assets/images/about/about-avatar.png") 
     },
     "blogs": {
       "title": "thinkThin",

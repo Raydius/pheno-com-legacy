@@ -6,19 +6,13 @@ block variables
 
 // title and body copy
 section.row.no-padding.culture 
-	article.col-md-4.no-padding
+	article.col-md-3.col-md-offset-1.no-padding
 		img(src=require('assets/images/culture/culture.gif')) 
-	article.col-md-8.no-padding.top-main
+	article.col-md-8.top-main
 		h2 
-			blockquote  
-				| Their office on the 28th floor provides great views of all the amazing places in LA that I&#8217;ve wanted to see but didn&#8217;t have time  to sit in  traffic for two hours to visit.
-		cite
-			img(src=require('assets/images/about/about-avatar.png'))
-
-			span
-				| Lindsay Phillips 
-			span
-				| Men's Wearhouse
+			blockquote!= pageData.blockquote
+		
+		include components/cite-components
 
 	article.col-md-12.no-padding
 		img(src=require('assets/images/culture/culture1.png'))

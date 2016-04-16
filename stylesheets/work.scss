@@ -1,7 +1,8 @@
 .work {
 	&.work-details {
 		h2 blockquote {
-			font-size: 76px;
+			font-size: 60px;
+			line-height: 70px;
 		}
 		h2 blockquote, h3 blockquote {
 
@@ -13,7 +14,14 @@
 			margin-bottom: 20px;
 			legend {
 				margin-bottom: 0;
+				font-family: $monospace_font;
 			}		
+		}
+		cite img {
+			width: 80px;
+			margin-left: 16px;
+			margin-right: 20px;
+			font-size: 16px;
 		}
 		.project-detail {
 			float: right;
@@ -66,7 +74,8 @@
 		}
 	}
 	h2 blockquote  {
-		font-size: 52px;
+		font-size: 46px;
+		line-height: 56px;
 	}
 	img.clientlogo {
 		width: auto;
@@ -75,6 +84,8 @@
 	legend.share {
 		background: url('../assets/images/works/share-icon.svg') no-repeat left center;  
 		padding: 10px 30px;
+		font-size: 15px;
+		font-family: "Circular-bold"!important;
 	}
 	fieldset {
 		h3 {
@@ -84,12 +95,12 @@
 			font-size: 34px;
 		}
 		span {
-			font-weight: bold;
-			font-size: 17px;
+			font-family: "Circular-bold";
+			font-size: 15px;
 		}
 	}
 	cite {
-		margin: $base_spacing - 30 0;
+		margin: $base_spacing - 50 0;
 	}
 	.line {
 		width: 50px;
@@ -106,6 +117,7 @@
 				p {
 					font-family: $secondary_font;
 					margin-top: $base_spacing - 30;
+					font-size: 18px;
 					&:last-of-type {
 						margin-bottom: 0;
 					}
@@ -113,6 +125,13 @@
 				a {
 					display: block;
 					margin: $base_spacing - 30;
+					margin-bottom: $base_spacing;
+				}
+			}
+			cite {
+				width: 100%;
+				span:first-of-type {
+					font-size: 16px;
 				}
 			}
 		}
