@@ -257,7 +257,7 @@ var copy =
           "imageUrl": require('assets/images/work-5.jpg'),
           "imageAlt": "Wilson Image 5",
           "legend": "Finance / Loans",
-          "headline": 'It\'s A "Sunny" Day<br> for Payday Loans.',
+          "headline": 'It&#8217;s A "Sunny" Day<br> for Payday Loans.',
           "cite": "",
           "description": "British company creates a whole new business model for payday loans that gives borrowers a better chance at getting out of debt.",
           "readmoreUrl": "#/work/sunny"          
@@ -310,6 +310,33 @@ var copy =
       "heroVimeo": "155010841",
       "details": [
         "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
+      ],
+      "topcontent": [
+        {
+          "carousel": true,
+          "images": [
+            {
+              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 2"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 3"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 4"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 5"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 6"
+            }
+          ]
+        }
       ],
       "detailcontent": [
         {
@@ -396,6 +423,9 @@ var copy =
       "project": "Wilson Anthem",
       "media": "Branding, Video, Digital",
       "blockquote": "Wilson Is Now <br>Fully Equipped.",
+      "quoterName": "Mike Dowse",
+      "quoterTitle": "CEO, Wilson",
+      "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
         "Wilson has been around for over 100 years but we've never had a global brand campaign. Since this was our first campaign, we needed to identify what Wilson is all about. We make quality, trusted equipment, but what do we stand for? What is our role in the world of sports? We worked with the strategic team at Phenomenon to land on a pretty powerful yet simple idea; Wilson is every athletes faithful weapon.",
@@ -408,6 +438,33 @@ var copy =
       "heroVimeo": "155010841",
       "details": [
         "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
+      ],
+      "topcontent": [
+        {
+          "carousel": true,
+          "images": [
+            {
+              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 2"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 3"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 4"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 5"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 6"
+            }
+          ]
+        }
       ],
       "detailcontent": [
         {
@@ -493,7 +550,7 @@ var copy =
       "clientLogo": require('assets/images/works/clients_logo/sbe.svg'),
       "project": "SLS",
       "media": "Branding",
-      "blockquote": " SLS Vegas Gives the Strip a Whole New Look.",
+      "blockquote": " SLS Vegas Gives the<br> Strip a Whole New Look.",
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
         "The SLS chain of high-end, luxury hotels has been a mainstay in Miami and Los Angeles for over a decade. Since 2007 we have been anxiously anticipating our expansion to Sin City. And 7 years later we were ready to launch. But when it comes to Vegas, it's not as simple as just opening the doors. You have to really identify and brand who you are. Every hotel in Vegas has shows. Everyone has restaurants. Everyone has gambling. But what will you get when you come to the SLS Vegas? That was the challenge ahead of us.",
@@ -502,6 +559,33 @@ var copy =
       ],
       "details": [
         "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
+      ],
+      "topcontent": [
+        {
+          "carousel": true,
+          "images": [
+            {
+              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 2"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 3"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 4"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 5"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 6"
+            }
+          ]
+        }
       ],
       "detailcontent": [
         {
@@ -563,11 +647,41 @@ var copy =
       "project": "Xome",
       "media": "Branding",
       "blockquote": 'It&#8217;s A &#8220;Sunny&#8221; Day <br>for Payday Loans',
+      "quoterName": "Mike Dowse",
+      "quoterTitle": "CEO, Wilson",
+      "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "In the UK, the short-term loans business is not dissimilar to the US in that we have a huge problem with perception. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
         "<span class='red'>We went to Phenomenon to help us create a differentiating short-term loan product</span>",
         "We went to Phenomenon, not to create a brand campaign or an app or some other piece of communication. We went to Phenomenon to help us create a differentiating short-term loan product. And they came back to us with an interesting idea they aptly called Sunny."
+      ],
+      "topcontent": [
+        {
+          "carousel": true,
+          "images": [
+            {
+              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 2"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 3"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 4"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 5"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 6"
+            }
+          ]
+        }
       ],
       "detailcontent": [
         {
@@ -604,12 +718,42 @@ var copy =
       "clientLogo": require('assets/images/works/clients_logo/sunny.svg'),
       "project": "SLS",
       "media": "Branding",
-      "blockquote": 'It\'s A "Sunny" Day for Payday Loans',
+      "blockquote": 'It&#8217;s A &#8220;Sunny&#8221; Day<br>for Payday Loans',
+      "quoterName": "Mike Dowse",
+      "quoterTitle": "CEO, Wilson",
+      "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "In the UK, the short-term loans business is not dissimilar to the US in that we have a huge problem with perception. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
         "<span class='red'>We went to Phenomenon to help us create a differentiating short-term loan product</span>",
         "We went to Phenomenon, not to create a brand campaign or an app or some other piece of communication. We went to Phenomenon to help us create a differentiating short-term loan product. And they came back to us with an interesting idea they aptly called Sunny."
+      ],
+      "topcontent": [
+        {
+          "carousel": true,
+          "images": [
+            {
+              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 2"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 3"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 4"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 5"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 6"
+            }
+          ]
+        }
       ],
       "detailcontent": [
         {
@@ -654,6 +798,33 @@ var copy =
       "topDescription": [
         "For over 20 years, Men's Wearhouse advertising centered around one line delivered by one man. But in 2013, when our founder and longtime CEO left the company, we had to make some pretty significant changes. After an extensive agency review we selected Phenomenon to take both strategic and creative lead on the future of Men's Wearhouse as our Agency of Record.",
         "The new tone and feel for us started early in 2014 when we acquired the men's fashion brand Joseph Abboud. We used that acquisition as a launching point to redefine our image. To kick things off, we developed a television spot that announced the partnership with Abboud and positioned the American Designer as our new Creative Director."
+      ],
+      "topcontent": [
+        {
+          "carousel": true,
+          "images": [
+            {
+              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 2"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 3"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 4"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 5"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 6"
+            }
+          ]
+        }
       ],
       "detailcontent": [
         {
@@ -710,12 +881,39 @@ var copy =
       "clientLogo": require('assets/images/works/clients_logo/think-thin.svg'),
       "project": "Think Thin",
       "media": "Branding",
-      "blockquote": 'thinkThin Helps Womens Shed the Guilty',
+      "blockquote": 'thinkThin Helps<br> Womens Shed the Guilty',
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "In the UK, the short-term loans business is not dissimilar to the US in that we have a huge problem with perception. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
         "<span class='red'>We went to Phenomenon to help us create a differentiating short-term loan product</span>",
         "We went to Phenomenon, not to create a brand campaign or an app or some other piece of communication. We went to Phenomenon to help us create a differentiating short-term loan product. And they came back to us with an interesting idea they aptly called Sunny."
+      ],
+      "topcontent": [
+        {
+          "carousel": true,
+          "images": [
+            {
+              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 2"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 3"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 4"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 5"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 6"
+            }
+          ]
+        }
       ],
       "detailcontent": [
         {
@@ -741,6 +939,33 @@ var copy =
         "In the UK, the short-term loans business is not dissimilar to the States in that we have a huge stigma problem. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
         "We went to Phenomenon to help us create a differentiating short-term loan product",
         "We went to Phenomenon, not to create a brand campaign or an app or some other piece of communication. We went to Phenomenon to help us create a differentiating short-term loan product. And they came back to us with an interesting idea they called Sunny."
+      ],
+      "topcontent": [
+        {
+          "carousel": true,
+          "images": [
+            {
+              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 2"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 3"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 4"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 5"
+            },
+            {
+              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 6"
+            }
+          ]
+        }
       ],
       "detailcontent": [
         {
@@ -796,97 +1021,24 @@ var copy =
     },
     "moreCases": [
       {
-        "projectName": "Men's Wearhouse <br>Updates Its Closet.",
-        "writerName": "Mike Dowse",
-        "writerTitle": "CEO, Wilson",
+        "projectName": "Men&#8217s Wearhouse <br>Updates Its Closet.",
+        "writerName": "By Amy Weisenbach",
+        "writerTitle": "VP Marketing, Wilson",
         "prjectThumbSrc": require("assets/images/wilson_x_1_06-opt.jpg")
       },
       {
-        "projectName": "Men's Wearhouse <br>Updates Its Closet.",
-        "writerName": "Mike Dowse",
-        "writerTitle": "CEO, Wilson",
+        "projectName": "Wilson Launches<br>Futuristic Ball.",
+        "writerName": "By Matt Stringer",
+        "writerTitle": "EVO Marketing, Men&#8217s Wearhouse",
         "prjectThumbSrc": require("assets/images/wilson_x_1_06-opt.jpg")
       },
       {
-        "projectName": "Men's Wearhouse <br>Updates Its Closet.",
-        "writerName": "Mike Dowse",
-        "writerTitle": "CEO, Wilson",
+        "projectName": "thinkThin Helps<br>Women Shed the Guilt.",
+        "writerName": "By Megan Crossland",
+        "writerTitle": "CMO, thinkThin",
         "prjectThumbSrc": require("assets/images/wilson_x_1_06-opt.jpg")
       }
     ],
-    "entertainment": {
-      "title": "Wilson Anthem",
-      "className": "wilson-anthem",
-      "description": "CVU - Phenomenon - Wilson Anthem",
-      "heroThumb": require("assets/images/wilson_anthem_thumb-opt.jpg"),
-      "heroThumbAlt": "Wilson Anthem - TV Spot",
-      "heroThumbTitle": "Click to play video",
-      "heroVimeo": "155010840",
-      "details": [
-        "Wilson has been around for over 100 years but they've never had a global brand campaign. Since this was their first campaign, we needed to identify what Wilson is all about. What do they stand for? What is their role in the world of sports? Strategically we boiled it down to one simple insight: Wilson is every athlete's faithful weapon. This was important because even though Wilson has a star-studded lineup of professional athletes on their roster, by putting amateurs and kids on the same level we were truly celebrating all athletes.",
-        "Since we didn't have a massive media buy, we had to figure out a way to leverage social media and get our fans to participate in the idea. So we let kids upload videos of themselves playing, which we then edited into the spot and sent back out to them.",
-        "Beyond the brand spot, we created a beautiful bound brand book to handout to employees and we relaunched Wilson.com where watchable content revolved around the equipment."
-      ],
-      "subcontent": [
-        {
-          "type": "carousel",
-          "carousel": true,
-          "images": [
-            {
-              "url": require("assets/images/wilson_anthem_1_01-opt.jpg"),
-              "alt": "Wilson Anthem Brand Ethos Book Image 1"
-            },
-            {
-              "url": require("assets/images/wilson_anthem_1_02-opt.jpg"),
-              "alt": "Wilson Anthem Brand Ethos Book Image 2"
-            },
-            {
-              "url": require("assets/images/wilson_anthem_1_03-opt.jpg"),
-              "alt": "Wilson Anthem Brand Ethos Book Image 3"
-            },
-            {
-              "url": require("assets/images/wilson_anthem_1_04-opt.jpg"),
-              "alt": "Wilson Anthem Brand Ethos Book Image 4"
-            },
-            {
-              "url": require("assets/images/wilson_anthem_1_05-opt.jpg"),
-              "alt": "Wilson Anthem Brand Ethos Book Image 5"
-            },
-            {
-              "url": require("assets/images/wilson_anthem_1_06-opt.jpg"),
-              "alt": "Wilson Anthem Brand Ethos Book Image 6"
-            },
-            {
-              "url": require("assets/images/wilson_anthem_1_07-opt.jpg"),
-              "alt": "Wilson Anthem Brand Ethos Book Image 7"
-            },
-            {
-              "url": require("assets/images/wilson_anthem_1_08-opt.jpg"),
-              "alt": "Wilson Anthem Brand Ethos Book Image 8"
-            }
-          ]
-        },
-        {
-          "type": "scrollable",
-          "scrollable": true,
-          "imageAlt": "Wilson Anthem Landing Page"
-        },
-        {
-          "type": "carousel",
-          "carousel": true,
-          "images": [
-            {
-              "url": require("assets/images/wilson_anthem_2_01-opt.jpg"),
-              "alt": "Wilson Anthem Banner 1"
-            },
-            {
-              "url": require("assets/images/wilson_anthem_2_02-opt.jpg"),
-              "alt": "Wilson Anthem Banner 2"
-            }
-          ]
-        }
-      ]
-    },
     "culture": { 
       "title": "Culture", 
       "className": "culture",

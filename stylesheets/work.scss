@@ -1,5 +1,8 @@
 .work {
 	&.work-details {
+		.top-main {
+			margin-bottom: $base_spacing - 20;
+		}
 		h2 blockquote {
 			font-size: 60px;
 			line-height: 70px;
@@ -27,6 +30,28 @@
 			float: right;
 			> .col-md-4 {
 				float: right;
+			}
+			aside {
+				/* hide for desktop version*/
+				input, label {
+					display: none;
+				}
+				label {
+					color: black;
+					font-weight: normal;
+				}
+			}
+			ul.social-icons {
+				display: none;
+				li {
+					float: left;
+					margin-right: 5px;
+					a {
+						border: 1px solid #ccc;
+						border-radius: 50%;
+						padding: 10px;
+					}
+				}
 			}
 		}
 	}
@@ -81,8 +106,7 @@
 		width: auto;
 		margin-bottom: $base_spacing - 20;
 	}
-	legend.share {
-		background: url('../assets/images/works/share-icon.svg') no-repeat left center;  
+	label.share {
 		padding: 10px 30px;
 		font-size: 15px;
 		font-family: "Circular-bold"!important;
@@ -110,6 +134,9 @@
 	.more-cases {
 		background: #f2f2f2;
 		text-align: center;
+		.mono_font {
+			text-align: left;
+		}
 		.more-case-wrapper {
 			margin: 0 auto;
 			padding: $base_spacing - 20;

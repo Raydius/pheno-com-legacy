@@ -75,7 +75,12 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-dot:before {
+    content: "\e907";
+}
+.icon-share:before {
+    content: "\e908";
+}
 .icon-error:before {
     content: "\e905";
 }

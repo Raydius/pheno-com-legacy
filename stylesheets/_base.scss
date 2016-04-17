@@ -64,6 +64,11 @@ article p {
 	    display: block;
 	}
 }
+
+.mono_font {
+	font-family: $monospace_font;
+}
+
 .clear {
 	clear: both;
 }
@@ -82,9 +87,10 @@ figcaption {
 .top-main {
 	position: relative;
 	border-bottom: 1px solid $gray_border_color;
-	padding-bottom: $base_spacing;
+	padding: $base_spacing 0;
 	h2 {
 		font-weight: bold;
+		margin-top: 0;
 	}
 }
 cite {
@@ -228,7 +234,26 @@ h3 blockquote {
 		}
 	}
 }
+.social{
+  li{
+    width: 33px;
+    height: 33px;
+    margin: 0 8px;
 
+    &:first-child{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  a {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+    
 /* boostrap 5 col supports */
 .col-xs-15,
 .col-sm-15,
@@ -260,4 +285,21 @@ h3 blockquote {
         width: 20%;
         float: left;
     }
+}
+@media (max-width: 768px) {
+	.topcontent {
+		display: flex;
+		flex-direction: column;
+		> article {
+			&:first-child {
+				order: 3;
+			}
+			&:nth-child(2) {
+				order: 1;
+			}
+			&:last-child {
+				order: 2;
+			}
+		}
+	}
 }
