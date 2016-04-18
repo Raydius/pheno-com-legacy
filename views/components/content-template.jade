@@ -16,9 +16,10 @@ section.row.no-padding.work.work-details
 					p!= par
 				if pageData.topcontent
 		article.col-xs-12.col-sm-12.col-md-4.col-md-offset-1.project-detail
-			aside.col-xs-6.col-md-12
+			aside.col-xs-4.col-md-12
 				input.view-detail(type="checkbox" id="toggle-project-detail")
-				label.icon-dot Details
+				label.icon-dot 
+					span Details
 				.detail-wrapper
 					img.clientlogo(src= pageData.clientLogo)
 					fieldset 
@@ -33,7 +34,8 @@ section.row.no-padding.work.work-details
 			aside.col-xs-6.col-md-12
 				fieldset
 					input.view-detail(type="checkbox" id="toggle-share")
-					label.icon-share Share
+					label.icon-share 
+						span Share
 					
 					include social-icons 
 
@@ -54,7 +56,7 @@ section.row.no-padding.work.work-details
 					if contentItem.mainDescription
 						each par in contentItem.mainDescription
 							article.col-md-7
-								p= par
+								p!= par
 	each contentItem in pageData.detailcontent
 		article.col-md-12.no-padding.tet
 			if contentItem.video
@@ -71,7 +73,7 @@ section.row.no-padding.work.work-details
 			if contentItem.mainDescription
 				each par in contentItem.mainDescription
 					article.col-md-7
-						p= par
+						p!= par
 	
 	include more-cases
 	

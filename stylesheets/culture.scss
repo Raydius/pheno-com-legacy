@@ -7,6 +7,7 @@
 		border-bottom: 0;
 		cite {
 			margin-left: 20px;
+			padding-left: 0;
 		}
 	}
 	article {
@@ -15,7 +16,7 @@
 			display: table;
 			> div {
 				display: table-cell;
-				vertical-align: bottom;
+				vertical-align: middle;
 				float: none;
 				height: 100%;
 			}
@@ -26,7 +27,21 @@
 				margin-top: 0;
 			}
 		}
+		&.building {
+			.col-md-7 {
+				img:last-of-type {
+					width: 70%;
+					float: right;
+				}
+			}
+			.col-md-5 {
+				img {
+					margin-top: $base_spacing;
+				}
+			}
+		}
 	}
+
 	.headshots {
 		.col-md-15 {
 			margin: 0 8px;
@@ -166,11 +181,11 @@
 		blockquote {
 			padding: 10px;
 		}
-		~ cite {
-			padding: 0 10px;
-		}
+		
 	}
-
+	cite {
+		padding: 0 10px;
+	}
 } 
 @keyframes fadeout {
 	33%{

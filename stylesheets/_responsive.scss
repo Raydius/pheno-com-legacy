@@ -323,8 +323,26 @@
   .work .col-md-12, .col-md-8 {
     padding: 0;
   }
+  .work > article p span.red {
+    margin-left: 0;
+  }
+  .work.work-details .project-detail aside label.icon-share {
+    margin-top: 0;
+  }
+  .culture .headshots .col-md-15 {
+    margin: 0;
+  }
   .home .featured-contributors label {
     font-size: 16px;
+  }
+  .culture .top-main {
+    margin-top: 0;
+  }
+  .culture .col-md-3 {
+    img {
+      width: 150px;
+      margin: 0 auto;
+    }
   }
   main, .maincontent {
     padding: 0;
@@ -364,12 +382,6 @@
     display: block;
     width: 300px;
   }
-  #toggle-share:checked ~ ul {
-    display: block;
-    padding-left: 0;
-    padding-top: $base_spacing - 40;
-    margin-left: -100%;
-  }
   .culture article.table {
     display: block;
   }
@@ -377,14 +389,18 @@
   .culture article.table > div {
     display: block;
   }
+  .work.work-details .top-main {
+    margin-bottom: 0;
+  }
   .work.work-details .project-detail {
-    margin-bottom: $base_spacing;
+    .col-md-12 {
+      margin-bottom: 0;
+    }
     aside {
       float: left;
       position: relative;
-
-      &:last-child {
-        left: -28%;
+      &:first-of-type {
+        margin-left: 10px;
       }
       fieldset {
         display: inline-block;
@@ -398,7 +414,6 @@
       }
       .icon-share {
         &:before {
-          margin-right: 10px;
           font-family: icomoon!important;
         }
       }

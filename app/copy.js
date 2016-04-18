@@ -197,7 +197,7 @@ var copy =
       "title": "Work Cases Phenomenon",
       "className": "work",
       "description": "Phenomenon - Work",
-      "blockquote": "A lot of the work they do is confidential. <br>Here&#8217;s some that isn't.&#8221;",
+      "blockquote": "A lot of the work they do is confidential. <br>Here&#8217;s some that isn&#8217t.&#8221;",
       "quoterName": "Mike Dowse",
       "quoterTitle": "CEO, Wilson",
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
@@ -295,8 +295,8 @@ var copy =
       "project": "Wilson Anthem",
       "media": "Branding, Video, Digital",
       "blockquote": "Wilson Is Now<br> Fully Equipped.",
-      "quoterName": "Mike Dowse",
-      "quoterTitle": "CEO, Wilson",
+      "quoterName": "By Amy Weisenbach",
+      "quoterTitle": "VP Marketing, Wilson",
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
@@ -316,23 +316,23 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
+              "url": require("assets/images/wilson_anthem_1_02-opt.jpg"),
               "alt": "Wilson X Packaging Photo 2"
             },
             {
-              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
+              "url": require("assets/images/wilson_anthem_1_03-opt.jpg"),
               "alt": "Wilson X Packaging Photo 3"
             },
             {
-              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
+              "url": require("assets/images/wilson_anthem_1_04-opt.jpg"),
               "alt": "Wilson X Packaging Photo 4"
             },
             {
-              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
+              "url": require("assets/images/wilson_anthem_1_05-opt.jpg"),
               "alt": "Wilson X Packaging Photo 5"
             },
             {
-              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
+              "url": require("assets/images/wilson_anthem_1_06-opt.jpg"),
               "alt": "Wilson X Packaging Photo 6"
             }
           ]
@@ -340,79 +340,41 @@ var copy =
       ],
       "detailcontent": [
         {
-          "carousel": true,
-          "images": [
-            {
-              "url": require("assets/images/wilson_x_1_01-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 1"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 2"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 3"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 4"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 5"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 6"
-            }
-          ],
-          "mainDescription": [
-            "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
-          ]
-        },
-        {
-          "carousel": true,
-          "images": [
-            {
-              "url": require("assets/images/wilson_x_1_01-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 1"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 2"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 3"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 4"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 5"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 6"
-            }
-          ],
-          "mainDescription": [
-            "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
-          ]
-        },
-        {
           "video": true,
           "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
           "thumbAlt": "Wilson X - TV Spot - All Day",
           "thumbTitle": "Click to play video",
-          "vimeo": "155010839",
+          "vimeo": "155010840",
           "mainDescription": [
-            "The results: We sold out on Amazon in just two weeks and Wilson X will be in retail stores all over the country this Spring."
+            "<span class='red'>The film is not just a celebration of the biggest athletes in the world, it puts amateurs and kids on the same level.</span>",
+            "The film is not just a celebration of the biggest athletes in the world, it puts amateurs and kids on the same level. With the anthem launch, we actually didn't have a massive media buy, so we had to figure out a way to leverage social media and get our fans to participate in the idea. Wilson has never really had a huge social presence. And we wanted –actually we needed- to changed that. We took the momentum of the anthem spot to get people to interact with us on a social level and live this mantra. We asked kids and amateurs all over the world to upload videos of themselves out on the playing fields and we then edited in that footage to the actual spot. Kids all over the world now had their own personalized version of the spot that they could share over Facebook, Twitter or Instagram."
           ]
         },
+        {
+          "type": "image",
+          "image": true,
+          "imageUrl": require("assets/images/wilson_anthem_image.png"),
+          "imageAlt": "SLS",
+          "mainDescription": [
+            "When it came to Wilson.com, we had a pretty big challenge. For years the site was very product oriented. But when it came to purchasing the product, people would get the info they need and then run off to a local sporting goods store to buy. This wasn’t exactly the ideal experience for us. When discussing the relaunch of Wilson.com, Pheno actually showed us a lot of leading fashion retail websites as a model that would work for us. The idea behind this approach is building what is called “shoppable stories” where watchable content revolved around the clothing, or in our case, the equipment."
+          ]
+        },
+        {
+          "carousel": true,
+          "images": [
+            {
+              "url": require("assets/images/wilson_anthem_2_01-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 1"
+            },
+            {
+              "url": require("assets/images/wilson_anthem_2_02-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 2"
+            }
+          ],
+          "mainDescription": [
+            "With our access to some of the most iconic athletes in the world, we created dozens of short films that showcased products and our athletes relationships with them. This is content that you could only get on our site which increased views, which increased buzz which -as you can guess- has dramatically increased online sales."
+          ]
+        }
       ]
     },
     "wilsonX": { 
@@ -420,22 +382,18 @@ var copy =
       "className": "wilson-x",
       "client": "Wilson",
       "clientLogo": require('assets/images/works/clients_logo/wilson_logo.svg'),
-      "project": "Wilson Anthem",
-      "media": "Branding, Video, Digital",
-      "blockquote": "Wilson Is Now <br>Fully Equipped.",
-      "quoterName": "Mike Dowse",
-      "quoterTitle": "CEO, Wilson",
+      "project": "Wilson X",
+      "media": "Branding, Packaging, Digital",
+      "blockquote": "Wilson Launches<br>Futuristic Ball.",
+      "quoterName": "By Amy Weisenbach",
+      "quoterTitle": "VP Marketing, Wilson",
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
-        "Wilson has been around for over 100 years but we've never had a global brand campaign. Since this was our first campaign, we needed to identify what Wilson is all about. We make quality, trusted equipment, but what do we stand for? What is our role in the world of sports? We worked with the strategic team at Phenomenon to land on a pretty powerful yet simple idea; Wilson is every athletes faithful weapon.",
-        "<span class='red'>We worked with the strategic team at Phenomenon to land on a pretty powerful yet simple idea; Wilson is every athletes faithful weapon.</span>",
-        "Before we did any consumer-facing branding, we asked Pheno to create something that could rally the Wilson team from within. What did this new face of Wilson mean? How could we as employees live this? So we produced a beautifully bound brand book containing words and images that boldly and loudly defined who we are and handed them out to each of our employees."
+        "Every sport has been affected by modern technology, but when it comes to the actual ball used in each sport, it&#8217s typically generations before there is any major advancement. With Wilson X, we really pushed the boundaries of what a basketball could be. It&#8217s the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment.",
+        "<span class='red'>It&#8217s the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment.</span>",
+        "The ball also develops players skills by infusing gaming mechanics into training. There&#8217s audio with crowd noise and sports commentary. There’s a countdown mode to help create clutch shooting for those pressure-filled minutes at the end of a game. And you can even share your progress with friends, family or coaches."
       ],
-      "heroThumb": require('assets/images/wilsonx_thumb_01-opt.jpg'),
-      "heroThumbAlt": "Wilson X - Case Study Video",
-      "heroThumbTitle": "Click to play video",
-      "heroVimeo": "155010841",
       "details": [
         "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
       ],
@@ -463,6 +421,9 @@ var copy =
               "url": require("assets/images/wilson_x_1_06-opt.jpg"),
               "alt": "Wilson X Packaging Photo 6"
             }
+          ],
+          "mainDescription": [
+            "Phenomenon helped us with development of all aspects of the ball at a very early stage. Including both naming and designing it. INFORMATION ABOUT THE PRODUCT STRATEGY. We then worked with them to create a user experience that was simple and easy, but also felt cool and represented the next generation of Wilson. It’s one thing to put millennials in your spot, it’s whole different thing to give them a piece of technology that they actually use and love."
           ]
         }
       ],
@@ -471,64 +432,44 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": require("assets/images/wilson_x_1_01-opt.jpg"),
+              "url": require("assets/images/wilson_x_2_01-opt.jpg"),
               "alt": "Wilson X Packaging Photo 1"
             },
             {
-              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
+              "url": require("assets/images/wilson_x_2_02-opt.jpg"),
               "alt": "Wilson X Packaging Photo 2"
             },
             {
-              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
+              "url": require("assets/images/wilson_x_2_03-opt.jpg"),
               "alt": "Wilson X Packaging Photo 3"
             },
             {
-              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
+              "url": require("assets/images/wilson_x_2_04-opt.jpg"),
               "alt": "Wilson X Packaging Photo 4"
             },
             {
-              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
+              "url": require("assets/images/wilson_x_2_05-opt.jpg"),
               "alt": "Wilson X Packaging Photo 5"
             },
             {
-              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
+              "url": require("assets/images/wilson_x_2_06-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 6"
+            },
+            {
+              "url": require("assets/images/wilson_x_2_07-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 6"
+            },
+            {
+              "url": require("assets/images/wilson_x_2_08-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 6"
+            },
+            {
+              "url": require("assets/images/wilson_x_2_09-opt.jpg"),
               "alt": "Wilson X Packaging Photo 6"
             }
           ],
           "mainDescription": [
-            "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
-          ]
-        },
-        {
-          "carousel": true,
-          "images": [
-            {
-              "url": require("assets/images/wilson_x_1_01-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 1"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 2"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 3"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 4"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 5"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 6"
-            }
-          ],
-          "mainDescription": [
-            "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
+            "<span class='red'>This was a bold new step for us because suddenly a mobile app was an aspect of what we were selling. The app needed to be as good as the ball itself.</span>"
           ]
         },
         {
@@ -646,41 +587,25 @@ var copy =
       "clientLogo": require('assets/images/works/clients_logo/xome.svg'),
       "project": "Xome",
       "media": "Branding",
-      "blockquote": 'It&#8217;s A &#8220;Sunny&#8221; Day <br>for Payday Loans',
-      "quoterName": "Mike Dowse",
-      "quoterTitle": "CEO, Wilson",
+      "blockquote": "When Buying a House,<br> There&#8217;s No Place Like Xome.",
+      "quoterName": "By Allison Cornia",
+      "quoterTitle": "SVP Marketing, Xome",
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
-        "In the UK, the short-term loans business is not dissimilar to the US in that we have a huge problem with perception. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
-        "<span class='red'>We went to Phenomenon to help us create a differentiating short-term loan product</span>",
-        "We went to Phenomenon, not to create a brand campaign or an app or some other piece of communication. We went to Phenomenon to help us create a differentiating short-term loan product. And they came back to us with an interesting idea they aptly called Sunny."
+        "If you&#8217;ve ever bought or sold a home, you know it’s a complex, fragmented and pretty unfriendly process. With Xome, we wanted to introduce a radically better way to do it.",
+        "<span class='red'>The whole purpose of Xome is to help homebuyers and sellers from start to finish. </span>",
+        "The whole purpose of Xome is to help homebuyers and sellers from start to finish. So we worked with Pheno to build a beautifully intuitive mobile app. In just six weeks we completed the app making it the first truly integrated way to buy and sell a home. With it, you can list a home, search for a home, make and receive offers, move into escrow and close the deal, all from the palm of your hand."
       ],
       "topcontent": [
         {
-          "carousel": true,
-          "images": [
-            {
-              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 2"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 3"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 4"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 5"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 6"
-            }
-          ]
+          "type": "image",
+          "image": true,
+          "imageUrl": require("assets/images/xome-comp-01-opt.jpg"),
+          "imageAlt": "Sunny",
+          "mainDescription": [
+            "<span class='red'>We fell in love with an idea that really spoke to what Xome does, it makes the entire buying/selling process more transparent.</span>"
+          ]   
         }
       ],
       "detailcontent": [
@@ -730,43 +655,17 @@ var copy =
       ],
       "topcontent": [
         {
-          "carousel": true,
-          "images": [
-            {
-              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 2"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 3"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 4"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 5"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 6"
-            }
-          ]
-        }
-      ],
-      "detailcontent": [
-        {
           "type": "image",
           "image": true,
           "imageUrl": require("assets/images/sunny-1.jpg"),
           "imageAlt": "Sunny",
           "mainDescription": [
-            'Strategically, Pheno recognized that there was no loyalty in our industry. People took out their first loan and then had to pay so much back that they took out another loan to pay for that, and so on and so on. Often working with multiple companies in the process, or as they deemed it, "a circle of debt."',
-            "They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq.",
-            "Phenomenon helped us with all of this. They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq."            
+            "Strategically, Pheno recognized that there was no loyalty in our industry. People took out their first loan and then had to pay so much back that they took out another loan to pay for that, and so on and so on. Often working with multiple companies in the process, or as they deemed it, &#8222;a circle of debt.",
+            "They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq."
           ]      
-        },
+        }
+      ],
+      "detailcontent": [
         {
           "type": "image",
           "image": true,
@@ -779,7 +678,10 @@ var copy =
           "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
           "thumbAlt": "Xome - TV Spot - Transparent House",
           "thumbTitle": "Click to play video",
-          "vimeo": "159123265"
+          "vimeo": "159123265",
+          "mainDescription": [
+            "<span class='red'>For years, notoriously shady payday loan company Wonga hid behind endearing puppets. We decided to take them head on with a campaign that basically said don&#8217;t trust puppets, trust a better way of doing it.</span>"
+          ]
         }
       ]
     },
@@ -791,8 +693,8 @@ var copy =
       "project": "Men's Wearhouse",
       "media": "Branding",
       "blockquote": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.", 
-      "quoterName": "Mike Dowse",
-      "quoterTitle": "CEO, Wilson",
+      "quoterName": "By Matt Stringer",
+      "quoterTitle": "EVP Marketing, Men&#8217s Wearhouse",
       "quoterAvatar": require("assets/images/about/about-avatar.png"),     
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
@@ -801,40 +703,15 @@ var copy =
       ],
       "topcontent": [
         {
-          "carousel": true,
-          "images": [
-            {
-              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 2"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 3"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 4"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 5"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 6"
-            }
-          ]
-        }
-      ],
-      "detailcontent": [
-        {
           "type": "video",
           "video": true,
           "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
           "thumbAlt": "Xome - TV Spot - Transparent House",
           "thumbTitle": "Click to play video",
           "vimeo": "159123265"
-        },
+        }
+      ],
+      "detailcontent": [
         {
           "carousel": true,
           "images": [
@@ -882,6 +759,9 @@ var copy =
       "project": "Think Thin",
       "media": "Branding",
       "blockquote": 'thinkThin Helps<br> Womens Shed the Guilty',
+      "quoterName": "By Megan Crossland",
+      "quoterTitle": "Director of Marketing, thinkThin",
+      "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "In the UK, the short-term loans business is not dissimilar to the US in that we have a huge problem with perception. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
@@ -890,39 +770,17 @@ var copy =
       ],
       "topcontent": [
         {
-          "carousel": true,
-          "images": [
-            {
-              "url": require("assets/images/wilson_x_1_02-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 2"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_03-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 3"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_04-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 4"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_05-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 5"
-            },
-            {
-              "url": require("assets/images/wilson_x_1_06-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 6"
-            }
-          ]
+          "type": "video",
+            "video": true,
+            "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
+            "thumbAlt": "Xome - TV Spot - Transparent House",
+            "thumbTitle": "Click to play video",
+            "vimeo": "158975908"
         }
       ],
       "detailcontent": [
         {
-          "type": "video",
-          "video": true,
-          "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
-          "thumbAlt": "Xome - TV Spot - Transparent House",
-          "thumbTitle": "Click to play video",
-          "vimeo": "159123265"
+
         }
       ]
     },
@@ -1044,8 +902,8 @@ var copy =
       "className": "culture",
       "description": "Phenomenon - Culture",
       "blockquote": "Their office on the 28th floor provides great views of all the amazing places in LA that I've wanted to see but didn't have time to sit in traffic for two hours to visit.&#8221;",
-      "quoterName": "Mike Dowse",
-      "quoterTitle": "CEO, Wilson",
+      "quoterName": "Lindsay Phillips",
+      "quoterTitle": "Men&#8217s Wearhouse",
       "details": [
         "Buying or selling a home is often a complex, fragmented and darned unfriendly process. Xome is a radically better way to do it because it lets you complete everything from the convenience of an app. In just six weeks we built Xome: the first truly integrated way to buy and sell a home. The app lets you list your home, search for a home, make and receive offers, move into escrow and close the deal.",
         "When it came to the TV spot, we created something that spoke to the core of what Xome does, it makes the entire home buying/selling process more transparent. This teaser spot led people to our site where a demo video explained in better detail everything Xome does for the home buyer."
@@ -1088,18 +946,14 @@ var copy =
     },
     "contact": {
       "blockquote": "Don't call them. They're my ninjas.&#8221;",
-      "quoterName": "Mike Dowse",
-      "quoterTitle": "CEO, Wilson",
+      "quoterName": "Douglas Ewert",
+      "quoterTitle": "CEO Men&#8217;s Wearhouse & Joseph A. Bank",
       "quoterAvatar": require("assets/images/about/about-avatar.png") 
     },
     "blogs": {
       "title": "thinkThin",
       "className": "think-thin",
       "description": "CVU - Phenomenon - thinkThin",
-      "heroThumb": require("assets/images/thinkThin_thumb-opt.jpg"),
-      "heroThumbAlt": "thinkThin - TV Spot - Pool",
-      "heroThumbTitle": "Click to play video",
-      "heroVimeo": "158975908",
       "details": [
         "thinkThin is a nutritional bar founded by a strong, female entrepreneur to promote health and vitality for women and their often hectic lives. For years, they did little to no advertising. As they grew, they wanted to have a brand presence that showed off both their range of products as well as their personality.",
         "We netted out on a pretty fun campaign idea that laughed at all the guilty moments women have in their lives, while making the simple point that eating our bars is something you should never feel guilty about."
