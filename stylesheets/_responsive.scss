@@ -90,7 +90,6 @@
     color: $gray_font;
     max-width: 227px;
   }
-
   ::-webkit-input-placeholder {
      color: $gray_font;
   }
@@ -253,7 +252,9 @@
     top: 4px;
     cursor: pointer;
   }
-
+  #hamburger {
+    display: block;
+  }
   snap-content, .snap-content{
     @include box-shadow(-1px, 10px, 26px, -5px, rgba(48,48,48,0.5));
   }
@@ -319,14 +320,24 @@
     }
 }
 @media (max-width: 640px) {
-  .col-md-12, .col-md-8 {
+  .work .col-md-12, .col-md-8 {
     padding: 0;
   }
   main, .maincontent {
     padding: 0;
   }
+  h3 blockquote {
+    width: auto;
+  }
   .top-main {
     border-bottom: 0;
+    padding: ($base_spacing - 20) 15px;
+  }
+  .work .col-md-12.top-main {
+    padding: 40px 15px;
+  }
+  .work .col-md-12 {
+    margin-bottom: $base_spacing - 20;
   }
   .work .top-description p span.red {
     margin-left: 0;
@@ -350,17 +361,29 @@
     padding-top: $base_spacing - 40;
     margin-left: -100%;
   }
+  .culture article.table {
+    display: block;
+  }
+  
+  .culture article.table > div {
+    display: block;
+  }
   .work.work-details .project-detail {
     margin-bottom: $base_spacing;
     aside {
       float: left;
       position: relative;
 
+      &:last-child {
+        left: -28%;
+      }
       fieldset {
         display: inline-block;
       }
       .icon-dot {
         &:before {
+          font-size: 5px;
+          line-height: 5px;
           margin-right: 10px;
         }
       }

@@ -78,23 +78,48 @@
 			&:nth-of-type(2) {
 				ul {
 					li {
+						//animation: fadeout 9s infinite; 
 						&:first-of-type {
+							background: url(../assets/images/headshots/2-3.jpg);
+							background-size: 100% auto;
+							background-repeat: no-repeat;
+							animation-delay: 12s; 
+						}
+						&:nth-of-type(2) {
+							background: url(../assets/images/headshots/2-2.jpg);
+							background-size: 100% auto;
+							background-repeat: no-repeat;
+							animation-delay: 6s;
+						}
+						&:nth-of-type(3) {
 							background: url(../assets/images/headshots/2-1.jpg);
 							background-size: 100% auto;
 							background-repeat: no-repeat;
-							//animation: fadeout 3s infinite both; 
 						}
+
 					}
 				}
 			}
 			&:nth-of-type(3) {
 				ul {
 					li {
+						animation: fadeout 9s infinite; 
 						&:first-of-type {
+							background: url(../assets/images/headshots/3-3.jpg);
+							background-size: 100% auto;
+							background-repeat: no-repeat;
+							animation-delay: 10s; 
+						}
+						&:nth-of-type(2) {
+							background: url(../assets/images/headshots/3-2.jpg);
+							background-size: 100% auto;
+							background-repeat: no-repeat;
+							animation-delay: 4s;
+						}
+						&:nth-of-type(3) {
 							background: url(../assets/images/headshots/3-1.jpg);
 							background-size: 100% auto;
 							background-repeat: no-repeat;
-							//animation: fadeout 3s infinite both; 
 						}
 					}
 				}
@@ -102,11 +127,23 @@
 			&:nth-of-type(4) {
 				ul {
 					li {
+						animation: fadeout 9s infinite; 
 						&:first-of-type {
+							background: url(../assets/images/headshots/4-3.jpg);
+							background-size: 100% auto;
+							background-repeat: no-repeat;
+							animation-delay: 15s;						
+						}
+						&:nth-of-type(2) {
+							background: url(../assets/images/headshots/4-2.jpg);
+							background-size: 100% auto;
+							background-repeat: no-repeat;
+							animation-delay: 5s;
+						}
+						&:nth-of-type(3) {
 							background: url(../assets/images/headshots/4-1.jpg);
 							background-size: 100% auto;
 							background-repeat: no-repeat;
-							//animation: fadeout 3s infinite both; 
 						}
 					}
 				}
