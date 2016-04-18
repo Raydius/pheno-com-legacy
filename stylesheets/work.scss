@@ -136,7 +136,8 @@
 		text-align: center;
 		.more-case-wrapper {
 			margin: 0 auto;
-			padding: $base_spacing - 20;
+			padding: $base_spacing*2 ($base_spacing - 20) 0 ($base_spacing - 20);
+			padding-top: $base_spacing*2;
 			article {
 				p {
 					font-family: $secondary_font;

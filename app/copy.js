@@ -1024,19 +1024,19 @@ var copy =
         "projectName": "Men&#8217s Wearhouse <br>Updates Its Closet.",
         "writerName": "By Amy Weisenbach",
         "writerTitle": "VP Marketing, Wilson",
-        "prjectThumbSrc": require("assets/images/wilson_x_1_06-opt.jpg")
+        "prjectThumbSrc": require("assets/images/morecases/1.png") 
       },
       {
         "projectName": "Wilson Launches<br>Futuristic Ball.",
         "writerName": "By Matt Stringer",
         "writerTitle": "EVO Marketing, Men&#8217s Wearhouse",
-        "prjectThumbSrc": require("assets/images/wilson_x_1_06-opt.jpg")
+        "prjectThumbSrc": require("assets/images/morecases/2.png")
       },
       {
         "projectName": "thinkThin Helps<br>Women Shed the Guilt.",
         "writerName": "By Megan Crossland",
         "writerTitle": "CMO, thinkThin",
-        "prjectThumbSrc": require("assets/images/wilson_x_1_06-opt.jpg")
+        "prjectThumbSrc": require("assets/images/morecases/3.png")
       }
     ],
     "culture": { 
