@@ -17,8 +17,21 @@ body {
 	    	left: 80%;
 	    	box-shadow: 0 0 20px rgba(0,0,0,0.2);
 	    }
+	    .drawer {
+	    	animation: showDrawers;
+	    	animation-delay: 0.3s;
+	    }
 	}
 }
+@keyframes showDrawers {
+	0% {
+		z-index: -1;
+	}
+	100% {
+		z-index: 1;
+	}
+}
+
 .body-wrapper{
     background-color: #FFF;
     font-family: $primary_font;
