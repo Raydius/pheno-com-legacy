@@ -10,11 +10,22 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-
+body {
+	&.opend {
+		overflow: hidden;
+		.body-wrapper {
+	    	left: 80%;
+	    	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	    }
+	}
+}
 .body-wrapper{
     background-color: #FFF;
     font-family: $primary_font;
     border-bottom: 8px solid $primary_color;
+    position: relative;
+    left: 0;
+    transition: all 0.2s ease-in-out;
 }
 .red {
 	color: $primary_color;
@@ -306,7 +317,21 @@ h3 blockquote {
 		}
 	}
 }
-
+.drawer {
+	width: 80%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	padding: $base_spacing - 20;
+	text-align: center;
+	ul li {
+		font-size: 20px;
+		margin-top: $base_spacing - 30;
+	}
+	.social {
+	}
+}
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
