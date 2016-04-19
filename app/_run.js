@@ -10,6 +10,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
                 scrollTop: 0
             }, 300, function(){
         });
+       $('body').removeClass('opend');
     });
 
     var fixedheader = $("nav.topnav, .logo-wrapper");
