@@ -36,17 +36,6 @@ var copy =
       "navTitle": "Contact",
       "title": "View Contact Form",
       "uiSref": "contact"
-    },
-    {
-      "navTitle": "Entertainment",
-      "title": "Phenomenon Entertainment",
-      "uiSref": "entertainment",
-      "className": "contact"
-    },
-    {
-      "navTitle": "Blogs",
-      "title": "View Contact Form",
-      "uiSref": "blogs"
     }
   ],
   "footer": {
@@ -947,8 +936,7 @@ var copy =
     "contact": {
       "blockquote": "Don't call them. They're my ninjas.&#8221;",
       "quoterName": "Douglas Ewert",
-      "quoterTitle": "CEO Men&#8217;s Wearhouse & Joseph A. Bank",
-      "quoterAvatar": require("assets/images/about/about-avatar.png") 
+      "quoterTitle": "CEO Men&#8217;s Wearhouse & Joseph A. Bank"
     },
     "blogs": {
       "title": "thinkThin",

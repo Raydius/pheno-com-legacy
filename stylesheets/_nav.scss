@@ -16,9 +16,28 @@
     position: relative;
     min-height: 70px;
 
+    &.fixed {
+      position: fixed;
+      img.logo {
+        margin: 0;
+      }
+
+    }
 
     .logo-wrapper{
       height: 40px;
+      &.fixed {
+        max-width: 150px;
+        float: left;
+        ~ .tabs {
+          margin: 0;
+          border-bottom: 0;
+          padding: 0;
+          li a {
+            padding: 4px 0 18px 0;
+          }
+        }
+      }
     }
 
     .nav-wrapper{

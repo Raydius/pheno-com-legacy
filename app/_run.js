@@ -12,6 +12,17 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
         });
     });
 
+    var fixedheader = $("nav.topnav, .logo-wrapper");
+
+    $(window).scroll(function(){
+       if ($(document).scrollTop() > 0) {
+        fixedheader.addClass("fixed");
+      } else {
+        fixedheader.removeClass("fixed"); 
+      }  
+    })
+
+
     $rootScope.$on('$stateChangeSuccess', function() {
         // scroll to the top
         $main.animate({ scrollTop: 0 }, 400);

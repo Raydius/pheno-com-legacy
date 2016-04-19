@@ -161,4 +161,10 @@
 	.ac-container input:checked ~ article.ac-large {
 	    height: 230px;
 	}
+	.folders {
+		margin-top: $base-spacing;
+	}
+	.archie {
+		margin-bottom: $base-spacing;
+	}
 }
