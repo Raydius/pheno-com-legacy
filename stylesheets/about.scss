@@ -56,6 +56,16 @@
 			margin-top: -300px;
 		}
 	}
+	.ac.col-md-12{
+		// for put this part at the end part for mobile
+		.col-md-7 {
+			float: right;
+		}
+		.col-md-5 {
+			float: left;
+		}
+	} 
+
 		/*Acco*/
 	.ac-container {
 	    max-width: 400px;

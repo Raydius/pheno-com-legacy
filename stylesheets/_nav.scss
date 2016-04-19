@@ -26,15 +26,20 @@
 
     .logo-wrapper{
       height: 40px;
+      img {
+        transition: all 0.3s;
+      }
       &.fixed {
-        max-width: 150px;
+        max-width: 160px;
         float: left;
         ~ .tabs {
           margin: 0;
           border-bottom: 0;
           padding: 0;
-          li a {
-            padding: 4px 0 18px 0;
+          li {
+            a {
+              padding: 4px 0 18px 0;
+            }
           }
         }
       }
