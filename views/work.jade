@@ -10,20 +10,21 @@ section.row.no-padding.work
 		include components/cite-components
 	
 	each contentItem in pageData.subcontent 
-		article.col-md-12.cf
-			.col-xs-12.col-sm-12.col-md-8
-				if contentItem.image
-					img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
-			.col-xs-12.col-sm-12.col-md-4
-				fieldset
-					legend= contentItem.legend
-					h3!= contentItem.headline 
-					cite
-						span
-							| By Amy Weisenbach
-						span
-							| VP Marketing, Wilson
-					div.line
-					p!= contentItem.description
-					
-					a.red(href=contentItem.readmoreUrl) Read More &gt; 
+		a(href= contentItem.readmoreUrl)
+			article.col-md-12.cf
+				.col-xs-12.col-sm-12.col-md-8
+					if contentItem.image
+						img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
+				.col-xs-12.col-sm-12.col-md-4
+					fieldset
+						legend= contentItem.legend
+						h3!= contentItem.headline 
+						cite
+							span
+								| By Amy Weisenbach
+							span
+								| VP Marketing, Wilson
+						div.line
+						p!= contentItem.description
+						
+						a.red(href=contentItem.readmoreUrl) Read More &gt; 
