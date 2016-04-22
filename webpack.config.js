@@ -6,6 +6,8 @@
 var webpack = require('webpack'),
     path = require('path'),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
+    ExtractTextPlugin = require('extract-text-webpack-plugin'),
+    OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'),
     node_modules_dir = path.resolve(__dirname, 'node_modules');
 
 // set debug variable based on whether or not this is a prod environment
@@ -27,6 +29,8 @@ if(process.env.OUTPUT_DIR) {
     output_dir = process.env.OUTPUT_DIR;
 }
 
+// construct publicPath string
+var publicPath = (port == 80) ? host+'/' : host+':'+port+'/';
 
 // main webpack module
 module.exports = {
@@ -55,7 +59,8 @@ module.exports = {
     output: {
         filename: '[name]-bundle.min.js',
         path: path.resolve(__dirname, output_dir),
-        publicPath: debug ? host+':'+port+'/' : path.resolve(__dirname, '/'),
+        publicPath: publicPath,
+        //publicPath: debug ? host+':'+port+'/' : path.resolve(__dirname, '/'),
         libraryTarget: "umd"
     },
     plugins: [
@@ -72,6 +77,18 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
 
         new webpack.dependencies.LabeledModulesPlugin(),
+
+        new ExtractTextPlugin('styles.css'),
+        new OptimizeCssAssetsPlugin({
+            assetNameRegExp: debug ? /\.optimize.css$/g : /\.css$/g,
+            cssProcessor: require('cssnano'),
+            cssProcessorOptions: {
+                discardComments: {
+                    removeAll: true
+                }
+            },
+            canPrint: true
+        }),
 
         // generate index.html as public entry point
         new HtmlWebpackPlugin({
@@ -106,12 +123,13 @@ module.exports = {
                 test: /\.jade$/,
                 loader: 'jade'
             },
-            { test: /\.scss$/, loaders: ["style", "css?sourceMap", "sass?sourceMap"] },
+            {
+                test: /\.scss$/,
+                loader: ExtractTextPlugin.extract(["css?sourceMap", "sass?sourceMap"])
+                //loaders: ["style", "css?sourceMap", "sass?sourceMap"]
+            },
             { test: /\.css$/,   loader: "style-loader!css-loader!postcss-loader" },
             { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/, loader: 'file-loader' },
-            /*{ test: /\.png$/,   loader: "url-loader?prefix=img/&mimetype=image/png"},
-            { test: /\.jpg$/,   loader: "url-loader?prefix=img/&mimetype=image/jpg"},
-            { test: /\.gif$/,   loader: "url-loader?prefix=img/&mimetype=image/gif"}*/
             {
                 test: /.*\.(gif|png|jpe?g)$/i,
                 loaders: [
