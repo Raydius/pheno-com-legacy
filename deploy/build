@@ -1,9 +1,31 @@
 #!/bin/bash
 
-# production-optimized build
+for i in "$@"
+do
+case $i in
 
-if [ -z "$OUTPUT_PORT" ]; then
-    export OUTPUT_PORT=80
-fi
+    # staging build
+    staging)
+    export OUTPUT_HOST="http://tech.phenomenonstaging.com"
+    export OUTPUT_PORT=2070
+    export OUTPUT_DIR="pheno-com"
+    export NODE_ENV="production"
+    shift
+    ;;
+
+    # local build for SimpleHTTPServer
+    local)
+    export OUTPUT_HOST="http://localhost"
+    export OUTPUT_PORT=8000
+    export OUTPUT_DIR="public-staging"
+    export NODE_ENV="production"
+    shift
+    ;;
+
+esac
+shift # past argument or value
+done
+
+echo Building directory ./${OUTPUT_DIR} for ${OUTPUT_HOST}:${OUTPUT_PORT}
 
 ./node_modules/.bin/webpack --progress

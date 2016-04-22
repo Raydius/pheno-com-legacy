@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build": "bash ./deploy/build",
-    "build:staging": "bash ./deploy/build-staging",
+    "build:staging": "bash ./deploy/build staging",
     "start": "bash ./deploy/server",
     "start-production": "cp -R ./public/. /usr/share/nginx/html/ && nginx -g \"daemon off;\""
   },
