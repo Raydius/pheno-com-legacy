@@ -32,7 +32,7 @@ if(process.env.OUTPUT_DIR) {
 module.exports = {
     context: __dirname,
     devtool: debug ? "inline-source-map" : null,
-    debug: true,
+    debug: debug,
     resolve: {
         alias: {
             app: path.resolve(__dirname, 'app'),
@@ -109,9 +109,16 @@ module.exports = {
             { test: /\.scss$/, loaders: ["style", "css?sourceMap", "sass?sourceMap"] },
             { test: /\.css$/,   loader: "style-loader!css-loader!postcss-loader" },
             { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/, loader: 'file-loader' },
-            { test: /\.png$/,   loader: "url-loader?prefix=img/&mimetype=image/png"},
+            /*{ test: /\.png$/,   loader: "url-loader?prefix=img/&mimetype=image/png"},
             { test: /\.jpg$/,   loader: "url-loader?prefix=img/&mimetype=image/jpg"},
-            { test: /\.gif$/,   loader: "url-loader?prefix=img/&mimetype=image/gif"}
+            { test: /\.gif$/,   loader: "url-loader?prefix=img/&mimetype=image/gif"}*/
+            {
+                test: /.*\.(gif|png|jpe?g)$/i,
+                loaders: [
+                    'file?hash=sha512&digest=hex&name=[hash].[ext]',
+                    'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
+                ]
+            }
         ],
     }
 };
