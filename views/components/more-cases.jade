@@ -7,10 +7,11 @@ section.col-md-12.no-padding.more-cases
 	.more-case-wrapper.cf
 		each contentItem in pageData
 			article.col-md-4 
-				img(src=require("assets/images/wilson_x_2_04-opt.jpg"))
+				img(src= contentItem.prjectThumbSrc)
 				p!= contentItem.projectName
-					cite
-						span= contentItem.writerName
-						span= contentItem.writerTitle
+				cite 
+					.wrapper
+						span!= contentItem.writerName
+						span!= contentItem.writerTitle
 							
-				a.red(href="#") read full article
+				a.red(href="#") Read full article

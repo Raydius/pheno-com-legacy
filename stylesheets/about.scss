@@ -20,7 +20,7 @@
 		border-bottom: 1px solid $gray_border_color;
 	}
 	.col-md-7 {
-		padding-left: $base-spacing;
+		//padding-left: $base-spacing;
 	}
 	figcaption ul {
 		padding-left: 0;
@@ -37,12 +37,13 @@
 
 		p {
 			margin-top: $base-spacing - 20;
-			font-weight: bold;
+			font-family: "Circular-Bold";
 			&:last-of-type {
 				margin-bottom: $base-spacing*2;
 			}
 			span {
 				margin-top: $base-spacing - 40;
+				font-family: "Circular-Book";
 			} 
 		}
 
@@ -55,12 +56,19 @@
 			margin-top: -300px;
 		}
 	}
+	.ac.col-md-12{
+		// for put this part at the end part for mobile
+		.col-md-7 {
+			float: right;
+		}
+		.col-md-5 {
+			float: left;
+		}
+	} 
+
 		/*Acco*/
 	.ac-container {
 	    max-width: 400px;
-	    .test {
-	    	position: relative;
-	    }
 	    input:checked {
 	    	+ label {
 	    		
@@ -159,5 +167,11 @@
 
 	.ac-container input:checked ~ article.ac-large {
 	    height: 230px;
+	}
+	.folders {
+		margin-top: $base-spacing;
+	}
+	.archie {
+		margin-bottom: $base-spacing;
 	}
 }

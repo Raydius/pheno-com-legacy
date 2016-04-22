@@ -16,7 +16,7 @@ section.row.no-padding.home
 		ul.row.no-padding.featured-contributors
 			h6 Featured Contributors
 			each contributorItem in pageData.contributors
-				li.col-md-4 
+				li.col-sm-12.col-md-4 
 					if contributorItem.contributorAvatar 
 						img(src=contributorItem.contributorAvatar)
 					cite
@@ -26,14 +26,14 @@ section.row.no-padding.home
 							span!= contributorItem.jobTitle
 					if contributorItem.project
 						p!= contributorItem.project
-					a.red(href="#") Read full articles &gt;
+					a.red(href="#") Read full article &gt;
 			.clear
 			.see-more
 				input.red.view-more(type="checkbox" name="toggle" id="toggle") 
 				label(for="toggle") 
 				.see-more-container
 					each contributorItem in pageData.contributorsMore
-						li.col-md-4 
+						li.col-sm-12.col-md-4 
 							if contributorItem.contributorAvatar 
 								img(src=contributorItem.contributorAvatar)
 							cite
@@ -43,5 +43,5 @@ section.row.no-padding.home
 									span!= contributorItem.jobTitle
 							if contributorItem.project
 								p!= contributorItem.project
-							a.red(href="#") Read full articles &gt;
+							a.red(href="#") Read full article &gt;
 					

@@ -7,16 +7,12 @@ block variables
 // title and body copy
 section.row.no-padding.about
 	div.top-main.col-md-12
-		h2 
-			| Something like <br> a Phenomenon.
-		p
-			| A behind the scenes look at the most appropriately-named agency I know.
-		cite
-			img(src=require('assets/images/about/about-avatar.png'))
-			span
-				| By Kevin Dahlstrom 
-			span 
-				| Chief Marketing Office, Mr. Cooper Home Loans
+
+		h2!= pageData.blockquote
+		p!= pageData.subquote
+
+		include components/cite-components
+	
 	div.col-xs-12.col-md-12.no-padding
 		.col-xs-12.col-md-5.no-padding
 			figure
@@ -25,126 +21,49 @@ section.row.no-padding.about
 					h3 Phenotype
 					ul 
 						span nonu
-						li
-							| 1. a person adept at solving problems.
+						li= pageData.dictionary.nonu
 						span verb
-						li
-							| 2. to carry out a solution in any direction that is correct for the problem.
-		section.col-xs-12.col-md-7.no-padding
+						li= pageData.dictionary.verb
+		
+		section.col-xs-12.col-md-6.col-md-offset-1
 			article.col-md-12.border-bottom
-				p
-					| I first met Phenomenon in 2010 when I was looking for an agency to help launch a Payday Loan company. Pheno was a small shop and I was sure that we would be one of their biggest clients, so I was excited to talk to them. But when I got them on the phone and explained the brief to them, they weren't interested. 
-				p 	Years later, as we sat down on the 28th floor of the SBE building in Los Angeles, our conversation began with that rather inauspicious start.
+				if pageData.paragraph1
+					each par in pageData.paragraph1
+						p!= par
 			article.col-md-12
-				p So, do you say, "no" to every client at first, or was it just me?
-					span PHENO: Ha! So this is where you want to start?
-				p Absolutely
-					span 
-						| Look, we throw ourselves into everything we do. We work long hours, we scrutinize, we push. We really go all out. And to put that much effort into something, we have to believe in it. And, truthfully, the Payday Loan business had a lot of negative implications with predatory lending and all that. And it just didn't feel like the kind of thing we could feel good about.
-				p So what changed your mind?
-					span 
-						| The second you gave us the permission to help you create a new kind of company, one that actually helped people break the cycle of poverty and bad credit, we were in. 100%. We're actually not very good at working with clients who want more of the same. It's when they want to radically change their business, growth, trajectory and market share that we're the right firm to call. 
-				p 	So you kind of self-select clients that are going to appreciate the kind of work you do.
+				if pageData.paragraph2
+					each par in pageData.paragraph2
+						p!= par
 
-					span
-						| Very much so.
-
-	div.col-xs-12.col-md-12.no-padding
+	div.col-xs-12.col-md-12.no-padding.archie
 		img(src=require('assets/images/about/about2.png'))
 	div.col-md-12.no-padding
-		div.col-md-5.no-padding
-			
-		div.col-md-7.no-padding
+		div.col-md-5.no-padding.folders
+			img(src=require("assets/images/about/about-folders.png"))
+		div.col-md-6.col-sm-offset-0.col-md-offset-1
 			article.col-md-12
-				p 
-					| You guys do a lot of different things for clients. You're not an ad agency, but you make ads. You're not a strategy firm, but you do strategy... how do you explain what it is you're all about?
-					span 
-						| It's always hard to define something that's completely new and different and a departure from everything that's come before it. First and foremost we're an Innovations Agency. Sometimes that innovation is an app, tool or piece of technology. Sometimes it's a product. Sometimes it's a radical business strategy. Sometimes it's a new retail concept.  Sometimes it's inventing a whole new brand or category. Sometimes it's an ad campaign. And fairly often it's all of the above. 
-				p 
-					| Right, but playing devil's advocate for a second, that's the same stuff that everyone promises. How are you any different?
-					span 
-						| Ah, my favorite question. So historically there are 4 types of agencies: Strategic Agencies that can analyze your business, Design Agencies that can do your graphic ID, packaging and brand guidelines, Digital Agencies that can do your websites and apps and Advertising Agencies that can do your brand campaign or retail work. 
-					span 
-						| And you're right, to some degree they all claim to be able to do everything. But truthfully, they have a legacy as a specific kind of agency, and they are geared to create a certain kind of deliverable.
-				p 
-					| Right. I know if I go to an Ad Agency with my problem, I'm going to get an ad campaign as the solution…
-				p 
-					span
-						| Exactly! Which makes perfect sense because that's what they're built to make. They invest their money in people that make ads, and they need a return on that investment. They may hire a digital leader, or a proper business strategist, but that person is always going to feel a bit like a fish out of water in that kind of environment. And unfortunately, they'll feel like a second class citizen because their work isn't driving revenue anywhere near the level that the advertising is. 
-				p 	
-					span
-						| When a client talks to us, we don't have any preconceived notions about what the solution will be. We always start with strategic insights and go from there. Based on the results, we may recommend a product portfolio solution, or an app/utility solution, or a user experience solution, or an integrated ad campaign. Or something completely different that's never been done before. 
-				p
-					span
-						| To put it simply, everyone else is trying, very slowly, to move to the intersection of the 4 types of agencies, but we don't need to move an inch, because we were actually born there.
+				if pageData.paragraph3
+					each par in pageData.paragraph3
+						p!= par
 				img(src=require('assets/images/about/about3.png'))
-	div.col-md-12.no-padding
-		div.col-md-5.no-padding
-			section.ac-container
-				.test
-					input#ac-1(name="accordion-1" type="radio" checked="")
-					label(for="ac-1")
-						| Marketing Innovation
-					article.ac-small
-						p
-							| We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.
-				.test
-					input#ac-2(name="accordion-1" type="radio")
-					label(for="ac-2")
-						| UX Innovation
-					article.ac-small
-						p
-							| We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.
-				.test
-					input#ac-3(name="accordion-1" type="radio")
-					label(for="ac-3")
-						| Digital Innovation
-					article.ac-small
-						p
-							| We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.
-				.test
-					input#ac-4(name="accordion-1" type="radio")
-					label(for="ac-4")
-						| Cultural Innovation
-					article.ac-small
-						p
-							| We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.
+	div.col-md-12.ac
 		div.col-md-7.no-padding
 			article.col-md-12
-				p 
-					| OK, but can you really claim to be experts in each of those categories? How are you not a jack of all trades and master of none?
-				p 
-					span
-						| We've been giving it a lot of thought and we think there are two things that made this happen: our people and our organization. 
-				p 	
-					span
-						| Our people are strategists who love strategy, but hate the limits of working at a strategy firm. They're designers who love design, but feel handcuffed working at a pure design shop. They're digital leaders who don't want to be so disconnected from the brand thinking. And they're ad agency leaders who are sick and tired of being relegated to just TV, Print and Out of Home. They're all looking for innovation. And our organization gives them the ability to apply their skills in all kinds of new ways.
-				p
-					span
-						| We fundamentally understand each of these disciplines and how to plug them into the agency. They aren't bolted onto the framework as an added discipline. They are a part of the gears and fabric of the agency at a very core lev
-				p 
-					| It's interesting that you say that your talent is looking for innovation, because as a client, that's exactly what I'm looking for too.
-				p 
-					span
-						| Right, and when the client's ambitions mesh with the agency's ambitions and the ambitions of the individuals that work there, that's when great things happen.
-				p
-					| So how do you do it? How do you innovate? What's your process?
-					span 
-						| Well, off the bat if anyone claims to be innovative but sells you on a rigid process, they're selling snake oil. We have a framework called Phenomenology that allows us to start each process with a roadmap, but we never use it the exact same way twice. We are always re-inventing it for the task at hand. 
-
-					span 
-						| The general categories that we apply Phenomenology to are Marketing Innovation, UX Innovation, Digital Innovation and Cultural Innovation. 
-					span 
-						| But what sets us a part is that at every step of the process, we stop and question if our thinking has gone far enough. Is there a new piece of technology that can make this even better? How can it be more social and more participatory? Is there a way to simplify the user journey? Is this as big and powerful as it can be?
-				p
-					| Well, I can attest to the fact that it works. You killed it for me on both Rise and Sunny, and now Mr. Cooper. It's just amazing work and I'm always looking forward to our next conversation.
-					span 
-						| Thanks! We live for this kind of stuff. 
-				p 	
-					| Alright, to wrap this up, I thought you guys were the communications experts, so why do you have clients doing all the writing on your website?
-					span
-						| When agencies try to explain what they do and why they're good at it, they just always sound so pompous and full of themselves—even the really good ones. And that's not us.  We think what our clients have to say is much more interesting than what we have to say. Plus we thought it would be fun.
-
-
-//include ./components/content-template.jade
-
+				if pageData.paragraph4
+					each par in pageData.paragraph4
+						p!= par
+		div.col-md-5
+			section.ac-container
+				each contentItem, index in pageData.accordion
+					if index==0
+						.ac-list
+							input(id="ac-"+(index) name="accordion-1" type="radio" checked="")
+							label(for="ac-"+(index)	)= contentItem.label
+							article.ac-small
+								p= contentItem.content
+					else
+						.ac-list
+							input(id="ac-"+(index) name="accordion-1" type="radio")
+							label(for="ac-"+(index)	)= contentItem.label
+							article.ac-small
+								p= contentItem.content

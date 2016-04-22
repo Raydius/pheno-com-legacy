@@ -1,7 +1,11 @@
 .work {
 	&.work-details {
+		.top-main {
+			margin-bottom: $base_spacing - 20;
+		}
 		h2 blockquote {
-			font-size: 76px;
+			font-size: 60px;
+			line-height: 70px;
 		}
 		h2 blockquote, h3 blockquote {
 
@@ -9,12 +13,75 @@
 				content: none;
 			}
 		}
+		fieldset {
+			margin-bottom: 20px;
+			legend {
+				margin-bottom: 0;
+				font-family: $monospace_font;
+			}		
+		}
+		cite img {
+			width: 80px;
+			margin-left: 16px;
+			margin-right: 20px;
+			font-size: 16px;
+		}
+		.project-detail {
+			float: right;
+			> .col-md-4 {
+				float: right;
+			}
+			aside {
+				/* hide for desktop version*/
+				input, label {
+					display: none;
+				}
+				label {
+					color: black;
+					font-weight: normal;
+					span {
+						font-family: "Circular-bold";
+					}
+				}
+				label.icon-share {
+					display: block;
+					margin-top: 10px;
+				}
+				input#toggle-share {
+					display: block;
+			        position: absolute;
+			        left: 0;
+			        top: 0;
+			        width: 100px;
+			        height: 30px;
+			        opacity: 0;
+				}
+				#toggle-share:checked ~ ul {
+					display: block;
+					padding-left: 0;
+					padding-top: $base_spacing - 40;
+					margin-left: 0;
+				}
+			}
+			ul.social-icons {
+				display: none;
+				li {
+					float: left;
+					margin-right: 5px;
+					a {
+						border: 1px solid #ccc;
+						border-radius: 50%;
+						padding: 10px;
+					}
+				}
+			}
+		}
 	}
 	.top-main {
 		margin-bottom: $base_spacing;
 	}
-
 	.top-description {
+		float: left;
 		p {
 			line-height: 26px;
 			&:first-child:first-letter {
@@ -36,6 +103,17 @@
 	}
 	> article {
 		margin-top: $base_spacing;
+		p {
+			margin-top: 30px;
+			span.red {
+				font-family: $secondary_font;
+				font-size: 34px;
+				display: block;
+				margin: ($base_spacing - 20) 0;
+				margin-left: - ($base_spacing - 20);
+				line-height: 40px;
+			}
+		}
 		&:first-of-type {
 			margin: 0;
 		}
@@ -54,15 +132,17 @@
 		}
 	}
 	h2 blockquote  {
-		font-size: 52px;
+		font-size: 46px;
+		line-height: 56px;
 	}
 	img.clientlogo {
-		width: 50px;
+		width: auto;
 		margin-bottom: $base_spacing - 20;
 	}
-	legend.share {
-		background: url('../assets/images/works/share-icon.svg') no-repeat left center;  
-		padding: 30px;
+	label.share {
+		//padding: 10px 30px;
+		//font-size: 15px;
+		//font-family: "Circular-bold"!important;
 	}
 	fieldset {
 		h3 {
@@ -72,12 +152,12 @@
 			font-size: 34px;
 		}
 		span {
-			font-weight: bold;
-			font-size: 17px;
+			font-family: "Circular-bold";
+			font-size: 15px;
 		}
 	}
 	cite {
-		margin: $base_spacing - 30 0;
+		margin: $base_spacing - 50 0;
 	}
 	.line {
 		width: 50px;
@@ -89,11 +169,13 @@
 		text-align: center;
 		.more-case-wrapper {
 			margin: 0 auto;
-			padding: $base_spacing - 20;
+			padding: $base_spacing*2 ($base_spacing - 20) 0 ($base_spacing - 20);
+			padding-top: $base_spacing*2;
 			article {
 				p {
 					font-family: $secondary_font;
 					margin-top: $base_spacing - 30;
+					font-size: 18px;
 					&:last-of-type {
 						margin-bottom: 0;
 					}
@@ -101,6 +183,13 @@
 				a {
 					display: block;
 					margin: $base_spacing - 30;
+					margin-bottom: $base_spacing;
+				}
+			}
+			cite {
+				width: 100%;
+				span:first-of-type {
+					font-size: 16px;
 				}
 			}
 		}

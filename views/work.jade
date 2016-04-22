@@ -4,32 +4,27 @@ block variables
 - pageData = copy.content[page]
 
 section.row.no-padding.work
-	article.col-md-12.no-padding.top-main
+	article.col-md-12.top-main
 		h2 
-			blockquote  
-				| A lot of the work they do is confidential. <br>Here's some that isn't.
-		cite
-			img(src=require('assets/images/about/about-avatar.png'))
-
-			span
-				| Mike Dowse
-			span
-				| CEO, Wilson
+			blockquote!= pageData.blockquote
+		include components/cite-components
+	
 	each contentItem in pageData.subcontent 
-		article.col-md-12.no-padding
-			.col-xs-12.col-sm-12.col-md-8
-				if contentItem.image
-					img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
-			.col-xs-12.col-sm-12.col-md-4
-				fieldset
-					legend= contentItem.legend
-					h3= contentItem.headline 
-					cite
-						span
-							| By Amy Weisenbach
-						span
-							| VP Marketing, Wilson
-					div.line
-					p= contentItem.description
-					
-					a.red(href=contentItem.readmoreUrl) Read More &gt; 
+		a(href= contentItem.readmoreUrl)
+			article.col-md-12.cf
+				.col-xs-12.col-sm-12.col-md-8
+					if contentItem.image
+						img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
+				.col-xs-12.col-sm-12.col-md-4
+					fieldset
+						legend= contentItem.legend
+						h3!= contentItem.headline 
+						cite
+							span
+								| By Amy Weisenbach
+							span
+								| VP Marketing, Wilson
+						div.line
+						p!= contentItem.description
+						
+						a.red(href=contentItem.readmoreUrl) Read More &gt; 

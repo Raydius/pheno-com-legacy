@@ -29,6 +29,7 @@ angular.module('phenoCom').directive('carouselComponent', function() {
 
 });
 
+
 var videoComponentTemplate = require('components/video-component.jade');
 var scrolltopTemplate = require('components/scrolltop.jade');
 

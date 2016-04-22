@@ -16,21 +16,46 @@
     position: relative;
     min-height: 70px;
 
+    &.fixed {
+      position: fixed;
+      img.logo {
+        //margin: 0;
+      }
+
+    }
 
     .logo-wrapper{
       height: 40px;
+      img {
+        transition: all 0.3s;
+      }
+      &.fixed {
+        max-width: 160px;
+        float: left;
+        margin-right: $base_spacing - 20;
+        ~ .tabs {
+          margin: 0;
+          border-bottom: 0;
+          padding: 0;
+          li {
+            a {
+              padding: 4px 0 18px 0;
+            }
+          }
+        }
+      }
     }
 
     .nav-wrapper{
       width: 100%;
       max-width: $body_size;
-      padding: ($base_spacing/4) ($base_spacing/4);
+      padding: 30px $base_spacing*2 0 $base_spacing*2;
       margin: 0 auto;
       position: relative;
     }
 
     img.logo{
-      margin: 0 auto;
+      //margin: 0 auto;
       max-width: 200px;
       padding: 10px 0 10px (0+35px);
     }
@@ -60,8 +85,9 @@
   }
 
   .tabs {
-    margin-top: 20px;
-    border-bottom: 1px solid #000;
+    margin: 20px -20px 0;
+    padding: 0 20px;
+    border-bottom: 1px solid #ccc;
 
     ul{
       margin: 0;
@@ -76,7 +102,8 @@
       text-align: center;
       padding: 0;
       position: relative;
-      padding: 0 35px;
+      padding: 0 5px;
+      margin: 0 30px;
       //width: 135.5px;
 
       &.selected:before{
@@ -89,8 +116,7 @@
       }
       
       &:first-child{
-        margin-left: 0;
-        padding-left: 30px;
+        margin-left: 30px;
         &.selected:before{
           left: 0;
           margin-left: 0;
@@ -101,10 +127,11 @@
       }
 
       a{
-        padding: 20px 0;
+        padding: 20px 0 15px 0;
         width: 100%;
         display: block;
-        font-weight: bold;
+        font-family: "Circular-Bold";
+        color: black;
       }
 
       &.contact{

@@ -1,7 +1,6 @@
 // footer custom styles
 
 footer, .footer{
-	border-bottom: 8px solid $primary_color;
 	width: 100%;
 	max-width: $body_size;
 	margin: 0 auto;
@@ -43,7 +42,7 @@ footer, .footer{
 	}
 
 	.social a{
-		color: $gray_color;
+		color: #ccc;
 		font-size: $h4_size;
 	}
 
