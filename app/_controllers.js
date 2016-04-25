@@ -3,7 +3,7 @@ var angular = require('angular');
 
 angular.module('phenoCom').controller('phenoController', function($state, $scope, $cookies) {
     // temporary onload solution to hide unstyle content for now
-    // to forgot to remove display: none in layout.jade
+    // don't forgot to remove display: none in layout.jade
     var $main = $('main');
     window.onload = function() {
         $('body').show(); 

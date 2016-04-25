@@ -8,7 +8,7 @@ import angular from 'angular';
 import uirouter from 'angular-ui-router';
 import ngAnimate from 'angular-animate';
 
-import '../js/scrolltofixed.min.js';
+import '../js/sticky.min.js';
 
 require('angular-cookies');
 require('angular-messages');
@@ -18,7 +18,8 @@ angular.module('phenoCom',[
     uirouter,
     ngAnimate,
     'ngCookies',
-    'ngMessages'
+    'ngMessages',
+    'sticky'
 ]);
 
 
