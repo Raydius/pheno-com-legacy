@@ -26,11 +26,11 @@
 
     .logo-wrapper{
       height: 40px;
+      max-width: 160px;
       img {
         transition: all 0.3s;
       }
       &.fixed {
-        max-width: 160px;
         float: left;
         margin-right: $base_spacing - 20;
         ~ .tabs {
