@@ -18,7 +18,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
     var fixedheader = $("nav.topnav, .logo-wrapper");
 
     $(window).scroll(function(){
-       if ($(document).scrollTop() > 0) {
+       if ($(document).scrollTop() > 0 && $(window).width() > 768) {
         fixedheader.addClass("fixed");
       } else {
         fixedheader.removeClass("fixed"); 

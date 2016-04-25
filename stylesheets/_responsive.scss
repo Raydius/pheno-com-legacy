@@ -11,11 +11,27 @@
   }
 }
 @media (max-width: 768px) {   
-  main, .maincontent {
+  main, .maincontent, .topnav .nav-wrapper {
     padding: 0 $base_spacing - 30;
+  }
+  .topnav .nav-wrapper {
+    margin-top: 30px;
+  }
+  .topnav.fixed {
+    position: relative; 
+  }
+  .topnav .tabs {
+    margin-left: 0;
+    padding: 0;
+  }
+  .topnav .tabs ul {
+    margin: 0;
   }
   .topnav .tabs li {
     padding: 0 25px; 
+    &:first-child {
+      margin-left: 0;
+    }
   }
   .owl-theme .owl-prev {
     margin-left: 20%;
@@ -50,7 +66,7 @@
 
 }
 
-@media (min-width: 640px) and (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 1280px) {
     main, .maincontent {
       padding: 20px $base_spacing;
     }
@@ -104,9 +120,6 @@
   }
 
   .topnav {
-    position: static;
-    min-height: auto;
-
     h1{
       text-align: left;
     }
@@ -320,6 +333,10 @@
     }
 }
 @media (max-width: 640px) {
+  .topnav .nav-wrapper {
+    padding: 20px;
+    margin: 0;
+  }
   .work .col-md-12, .col-md-8 {
     padding: 0;
   }
@@ -352,9 +369,6 @@
   }
   .home .featured-contributors h6 {
     width: 100%;
-  }
-  .topnav .nav-wrapper {
-    padding: 15px 15px;
   }
   .top-main {
     border-bottom: 0;

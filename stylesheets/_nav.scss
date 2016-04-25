@@ -7,7 +7,6 @@
   overflow: hidden;
   position: fixed;
 }
-
 .topnav {
     display: block;
     width: 100%;
@@ -148,21 +147,6 @@
     display:none;
 }
 
-snap-drawers, .snap-drawers {
-    position: relative;
-    display: block;
-    background-color: #fff;
-    overflow: initial;
-    height: 100%;
-}
-
-snap-drawer, .snap-drawer {
-    position: relative;
-    display: block;
-    overflow: initial;
-    width: 80%;
-}
-
 .contact-drawer {
     padding-left:100px;
 }
@@ -244,9 +228,7 @@ snap-content, .snap-content{
   position: absolute;
   float:left;
   top: 50%;
-  left: 22px;
   margin-top: -15px;
-
   cursor: pointer;
   z-index:20;
 
