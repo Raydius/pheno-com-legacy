@@ -180,7 +180,7 @@
 						margin-bottom: 0;
 					}
 				}
-				a {
+				a:last-of-type {
 					display: block;
 					margin: $base_spacing - 30;
 					margin-bottom: $base_spacing;

@@ -7,7 +7,8 @@ section.col-md-12.no-padding.more-cases
 	.more-case-wrapper.cf
 		each contentItem in pageData
 			article.col-md-4 
-				img(src= contentItem.prjectThumbSrc)
+				a(href="#")
+					img(src= contentItem.prjectThumbSrc)
 				p!= contentItem.projectName
 				cite 
 					.wrapper
