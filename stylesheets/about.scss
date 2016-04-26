@@ -1,13 +1,14 @@
 .about {
 	.top-main {
 		h2 {
-			font-size: 76px;
-			letter-spacing: -1px;
-			word-spacing: -2px;
+			font-size: 46px;
+			//letter-spacing: -1px;
+			//word-spacing: -2px;
+			line-height: 56px;
 		}
 		p {
 			color: $primary_color;
-			font-size: 28px;
+			font-size: 22px;
 			font-family: $secondary_font;
 			width: 40%;
 			min-width: 430px;
