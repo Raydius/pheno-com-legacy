@@ -65,7 +65,7 @@
     "sass-loader": "^3.2.0",
     "serve-favicon": "~2.3.0",
     "snapjs": "^1.2.1",
-    "source-map": "^0.5.4",
+    "source-map": "^0.5.5",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.14",
