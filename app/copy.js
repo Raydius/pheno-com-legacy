@@ -156,7 +156,6 @@ var copy =
       "subquote": "A behind the scenes look at the mostappropriately-name agency I know.",
       "quoterName": "Mike Dowse",
       "quoterTitle": "CEO, Wilson",
-      "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "Phenomenon - About",
       "dictionary": {
         "nonu": "1. a person adept at solving problems.",

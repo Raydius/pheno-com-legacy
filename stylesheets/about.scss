@@ -18,6 +18,9 @@
 	}
 	.border-bottom {
 		border-bottom: 1px solid $gray_border_color;
+		p:last-of-type {
+			margin-bottom:$base-spacing;
+		}
 	}
 	.col-md-7 {
 		//padding-left: $base-spacing;
@@ -95,7 +98,7 @@
 	    font-family: $secondary_font;
 	    font-size: 22px;
 	    padding: 20px 0 0 0;
-	    color: $black_font;
+	    color: $gray_font;
 	    width: 100%;
 	    &:after {
 	    	content: "\e902";
