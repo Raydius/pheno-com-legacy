@@ -77,7 +77,7 @@ var copy =
         "title": "View Phenomenon's Tweets"
       },
       "facebook": {
-        "url": "https://www.facebook.com/phenomenon/",
+        "url": "https://www.facebook.com/PHENOMENONmarketing/",
         "className": "icon-facebook",
         "title": "View Phenomenon's Facebook Page"
       },
@@ -184,13 +184,14 @@ var copy =
         "OK, but can you really claim to be experts in each of those categories? How are you not a jack of all trades and master of none?",
         "<span>We've been giving it a lot of thought and we think there are two things that made this happen: our people and our organization.</span>",
         "<span>Our people are strategists who love strategy, but hate the limits of working at a strategy firm. They're designers who love design, but feel handcuffed working at a pure design shop. They're digital leaders who don't want to be so disconnected from the brand thinking. And they're ad agency leaders who are sick and tired of being relegated to just TV, Print and Out of Home. They're all looking for innovation. And our organization gives them the ability to apply their skills in all kinds of new ways.</span>",
-        "<span>We fundamentally understand each of these disciplines and how to plug them into the agency. They aren't bolted onto the framework as an added discipline. They are a part of the gears and fabric of the agency at a very core lev</span>",
+        "<span>We fundamentally understand each of these disciplines and how to plug them into the agency. They aren't bolted onto the framework as an added discipline. They are a part of the gears and fabric of the agency at a very core lev</span>"
+      ],
+      "paragraph5": [
         "It's interesting that you say that your talent is looking for innovation, because as a client, that's exactly what I'm looking for too.",
         "<span>Right, and when the client's ambitions mesh with the agency's ambitions and the ambitions of the individuals that work there, that's when great things happen.</span>",
         "So how do you do it? How do you innovate? What's your process?<span>Well, off the bat if anyone claims to be innovative but sells you on a rigid process, they're selling snake oil. We have a framework called Phenomenology that allows us to start each process with a roadmap, but we never use it the exact same way twice. We are always re-inventing it for the task at hand.</span><span>The general categories that we apply Phenomenology to are Marketing Innovation, UX Innovation, Digital Innovation and Cultural Innovation. </span><span>But what sets us a part is that at every step of the process, we stop and question if our thinking has gone far enough. Is there a new piece of technology that can make this even better? How can it be more social and more participatory? Is there a way to simplify the user journey? Is this as big and powerful as it can be?</span>",
         "Well, I can attest to the fact that it works. You killed it for me on both Rise and Sunny, and now Mr. Cooper. It's just amazing work and I'm always looking forward to our next conversation.<span>Thanks! We live for this kind of stuff.</span>",
         "Alright, to wrap this up, I thought you guys were the communications experts, so why do you have clients doing all the writing on your website?<span>When agencies try to explain what they do and why they're good at it, they just always sound so pompous and full of themselves—even the really good ones. And that's not us.  We think what our clients have to say is much more interesting than what we have to say. Plus we thought it would be fun.</span>"
-
       ],
       "accordion": [
         {

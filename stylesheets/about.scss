@@ -69,6 +69,13 @@
 		/*Acco*/
 	.ac-container {
 	    max-width: 400px;
+	    background-color: #F2F2F2;
+	    padding: $base-spacing - 20;
+
+		h4 {
+			font-family: 'Tiempose-Semibold';
+			font-size: 32px;
+		}
 	    input:checked {
 	    	+ label {
 	    		
@@ -86,8 +93,8 @@
 	    display: block;
 	    cursor: pointer;
 	    font-family: $secondary_font;
-	    font-size: 26px;
-	    padding: 20px 0;
+	    font-size: 22px;
+	    padding: 20px 0 0 0;
 	    color: $black_font;
 	    width: 100%;
 	    &:after {
@@ -116,20 +123,21 @@
 	    text-align: left;
 	}
 
-	.ac-container label:hover {
-	    background: #fff;
-	}
-
 	.ac-container input:checked + label:hover:after {
 	    //background-image: url(../images/arrow_up.png);
 	}
-
+	.ac-list {
+		border-bottom: 1px solid #ddd;
+		padding-bottom: 20px;
+		&:last-of-type {
+			border-bottom: 0;
+		}
+	}
 	.ac-container input {
 	    display: none;
 	}
 
 	.ac-container article {
-	    background: rgba(255,255,255,0.5);
 	    margin-top: -1px;
 	    overflow: hidden;
 	    height: 0;
