@@ -46,6 +46,7 @@
 				label.icon-share {
 					display: block;
 					margin-top: 10px;
+					color: $gray_font;
 				}
 				input#toggle-share {
 					display: block;
@@ -55,6 +56,7 @@
 			        width: 100px;
 			        height: 30px;
 			        opacity: 0;
+			        cursor: pointer;
 				}
 				#toggle-share:checked ~ ul {
 					display: block;

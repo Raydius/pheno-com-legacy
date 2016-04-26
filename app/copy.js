@@ -241,7 +241,6 @@ var copy =
       "blockquote": "A lot of the work they do is confidential. <br>Here&#8217;s some that isn&#8217t.&#8221;",
       "quoterName": "Mike Dowse",
       "quoterTitle": "CEO, Wilson",
-      "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "maincontent": [
 
       ],
