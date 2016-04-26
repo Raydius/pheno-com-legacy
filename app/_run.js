@@ -5,7 +5,7 @@
 angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorScroll) {
 
     var $main = $('main');
-
+    var $body = $('body');
     // detect state change
     $(window).on('hashchange', function(e){
        $('html, body').animate({
@@ -26,7 +26,8 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
     })
 
     $('#hamburger').click(function(){
-        $('body').toggleClass('opend');
+        $body.toggleClass('opend');
+        $(this).toggleClass('open');
     });
 
     $rootScope.$on('$stateChangeSuccess', function() {
