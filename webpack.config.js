@@ -2,16 +2,41 @@
  * Created by raydollete on 3/30/16.
  */
 
-var debug = process.env.NODE_ENV !== 'production';
-var webpack = require('webpack');
-
-var path = require('path'),
+// base dependencies
+var webpack = require('webpack'),
+    path = require('path'),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
+    ExtractTextPlugin = require('extract-text-webpack-plugin'),
+    OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'),
     node_modules_dir = path.resolve(__dirname, 'node_modules');
 
+// set debug variable based on whether or not this is a prod environment
+var debug = process.env.NODE_ENV !== 'production';
+
+// default host/port configuration
+var host = 'http://127.0.0.1',
+    port = 9000,
+    output_dir = 'public';
+
+// allow environment variables to override default host/port
+if(process.env.OUTPUT_HOST) {
+    host = process.env.OUTPUT_HOST;
+}
+if(process.env.OUTPUT_PORT) {
+    port = process.env.OUTPUT_PORT;
+}
+if(process.env.OUTPUT_DIR) {
+    output_dir = process.env.OUTPUT_DIR;
+}
+
+// construct publicPath string
+var publicPath = (port == 80) ? host+'/' : host+':'+port+'/';
+
+// main webpack module
 module.exports = {
     context: __dirname,
-    devtool: debug ? "inline-sourcemap" : null,
+    devtool: debug ? "inline-source-map" : null,
+    debug: debug,
     resolve: {
         alias: {
             app: path.resolve(__dirname, 'app'),
@@ -22,33 +47,54 @@ module.exports = {
         }
     },
     entry: {
+        // entry point for main application
         app: './app/phenomenon.js',
+
+        // entry point for stylesheets
         style: './stylesheets/style.scss',
+
+        // vendor JS files to be separated into vendors.js
         vendors: [ 'angular', 'jquery', 'angular-ui-router', 'bootstrap' ]
     },
     output: {
         filename: '[name]-bundle.min.js',
-        path: path.resolve(__dirname, 'public'),
-        publicPath: path.resolve(__dirname, '/'),
+        path: path.resolve(__dirname, output_dir),
+        publicPath: publicPath,
+        //publicPath: debug ? host+':'+port+'/' : path.resolve(__dirname, '/'),
         libraryTarget: "umd"
     },
     plugins: [
+
+        // allow jquery to be accessible globally without 'require'
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
             "window.jQuery": 'jquery'
         }),
-        new webpack.NoErrorsPlugin(),
+        //new webpack.NoErrorsPlugin(),
+
+        // optimize vendors.js
         new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
+
         new webpack.dependencies.LabeledModulesPlugin(),
+
+        new ExtractTextPlugin('styles.css'),
+        new OptimizeCssAssetsPlugin({
+            assetNameRegExp: debug ? /\.optimize.css$/g : /\.css$/g,
+            cssProcessor: require('cssnano'),
+            cssProcessorOptions: {
+                discardComments: {
+                    removeAll: true
+                }
+            },
+            canPrint: true
+        }),
+
+        // generate index.html as public entry point
         new HtmlWebpackPlugin({
             template: 'views/index.jade',
             filename: 'index.html',
             title: 'Phenomenon'
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            mangle: false,
-            sourceMap: false
         })
     ],
     module: {
@@ -77,12 +123,20 @@ module.exports = {
                 test: /\.jade$/,
                 loader: 'jade'
             },
-            { test: /\.scss$/, loaders: ["style", "css", "sass"] },
+            {
+                test: /\.scss$/,
+                loader: ExtractTextPlugin.extract(["css?sourceMap", "sass?sourceMap"])
+                //loaders: ["style", "css?sourceMap", "sass?sourceMap"]
+            },
             { test: /\.css$/,   loader: "style-loader!css-loader!postcss-loader" },
             { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/, loader: 'file-loader' },
-            { test: /\.png$/,   loader: "url-loader?prefix=img/&mimetype=image/png"},
-            { test: /\.jpg$/,   loader: "url-loader?prefix=img/&mimetype=image/jpg"},
-            { test: /\.gif$/,   loader: "url-loader?prefix=img/&mimetype=image/gif"}
+            {
+                test: /.*\.(gif|png|jpe?g)$/i,
+                loaders: [
+                    'file?hash=sha512&digest=hex&name=[hash].[ext]',
+                    'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
+                ]
+            }
         ],
     }
 };

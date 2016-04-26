@@ -1,0 +1,9 @@
+block variables
+cite
+	if pageData.quoterAvatar
+		img(src= pageData.quoterAvatar)
+	.wrapper
+		if pageData.quoterName
+			span!= pageData.quoterName
+		if pageData.quoterTitle
+			span!= pageData.quoterTitle

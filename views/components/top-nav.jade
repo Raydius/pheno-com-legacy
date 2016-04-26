@@ -1,12 +1,16 @@
-nav.topnav
+block variables
+- copy = require('app/copy.js')
+
+nav.topnav(role="navigation")
 	.nav-wrapper
-		#hamburger(ng-click="snapToggle()")
+		#hamburger
 			span
 			span
 			span
 
 		header.logo-wrapper
-			img(src=copy.logo.src, alt=src=copy.logo.alt).logo
+			a(href="#")
+				img(src=copy.logo.src, alt=src=copy.logo.alt).logo
 
 		.tabs
 			include menu

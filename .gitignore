@@ -1,4 +1,3 @@
-node_modules/
 .idea/
 views/*.html
-public/
+node_modules/

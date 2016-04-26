@@ -1,21 +1,17 @@
 // main content custom styles
-
-
 main, .maincontent {
   background-color:#FFF;
   max-width: $body_size;
   margin: 0 auto;
   padding: 0;
-
-  overflow: auto;
   display: block;
-
+  padding: 0 150px;
+  
   .main-wrapper{
     height: 100%;
     display: block;
   }
-
-  .section{
+.section{
     padding: ($base_spacing/4) 0;
     display: block;
   	&:first-child{

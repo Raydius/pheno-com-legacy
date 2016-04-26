@@ -1,0 +1,130 @@
+.home {
+	margin-bottom: $base_spacing*2;
+	.top-main {
+		border-bottom: 0;
+		margin-bottom: $base_spacing*8;
+		padding-top: $base_spacing + 20;
+		p {
+			font-size: 34px;
+			font-family: 'TiemposHeadline-Regular';
+			font-weight: normal;
+		}
+		h2 {
+			font-size: 52px;
+		}
+		input {
+			opacity: 0;
+			position: absolute;	
+		}
+		label {
+			cursor: pointer;
+		}
+		.icon-right-arrow {
+			transform: rotate(90deg);
+			display: inline-block;
+			font-size: 32px;
+			color: #ccc;
+			margin-top: 20px;
+		}
+	}
+	cite {
+		width: 100%;
+	}
+	#toggle-featured-contributors:checked ~ .featured-contributors {
+		display: block;
+	}
+	
+	.featured-contributors {
+		box-sizing: border-box;
+		text-align: center;
+		background: #F2F2F2;
+		padding: 0 $base_spacing $base_spacing;
+		display: none;
+		margin-top: $base_spacing;
+		h6 {
+			font-size: 15px;
+			border-bottom: 1px solid #ccc;
+			width: 30%;
+			padding-bottom: $base_spacing - 40;
+			margin: $base_spacing auto;
+			font-family: $monospace_font;
+		}
+		img {
+			width: 100px;
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+		cite {
+			border-bottom: 1px solid #ccc;
+			padding-bottom: $base_spacing - 40;
+			font-weight: normal;
+			span {
+				&:first-of-type {
+					font-size: 18px;
+					font-family: "Circular-bold";
+				}
+				&:last-of-type {
+					opacity: 1;
+					font-size: 14px;
+				}
+			}
+		}
+		p {
+			font-size: 18px;
+			font-family: 'Tiempose-Semibold';
+		}
+		li {
+			margin-bottom: $base_spacing;
+			padding: 0 $base_spacing;
+			p {
+				padding: $base_spacing - 40 0 0 0;
+			}
+		}
+		a.red, .a.red, .link.red {
+			font-weight: normal;
+		}
+		.see-more {
+			position: relative;
+			padding-bottom: $base_spacing;
+			label {
+				width: 200px; margin: 0 auto;
+				display: block;
+				margin-bottom: $base_spacing;
+				top: 0;
+				position: absolute;
+				left: 50%;
+				margin-left: -100px;
+				font-family: "Circular-bold";
+				font-weight: normal;
+				&:after {
+					content: "View More Contributors"
+				}
+			}
+			#toggle {
+			  position:absolute;
+			  appearance:none;
+			  cursor:pointer;
+			  opacity: 0;
+			}
+
+			#toggle ~ .see-more-container {
+				max-height: 0;
+				opacity: 0;
+				transition: all 800ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+				overflow: hidden;
+			}
+			#toggle:checked ~ label {
+				&:after {
+					content: "View Less Contributors";
+				}
+				top: calc(100% - 60px);
+			}
+			#toggle:checked ~ .see-more-container {
+				max-height: 700px;
+				opacity: 1;
+
+			}
+		}
+
+	}
+}

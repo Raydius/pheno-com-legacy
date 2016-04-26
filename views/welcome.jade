@@ -1,28 +1,47 @@
 block variables
-	- copy = require('app/copy.js')
-	- intialUrl = "/case-studies/#/" + copy.navigation[0].uiSref
-	- pageTitle = "PHENOMENON - Select Case Studies"
-	- bodyClass = "welcome"
+- copy = require('app/copy.js')
+- page = "home"
+- pageData = copy.content[page]
 
-doctype html
-html
-	head
-		title= pageTitle
-		link(rel='stylesheet', href='/stylesheets/welcome.css')
-		meta(name="viewport", content="width=device-width, initial-scale=1")
-		meta(name="theme-color", content="#D0021B")
 
-		include ./favicon
-
-	body(class=bodyClass)
-
-		main.welcome-wrapper
-			img(src=copy.logo.src, alt=src = copy.logo.alt).logo
-
-			.centered-content
-				.centered-content-wrapper
-					a(href=intialUrl, onclick="ga('send', 'event', 'internal_link', 'click', 'case_studies_view_now')")
-						h2 Select Case Studies
-						span
-							span.icon-right-arrow
-							| View Now
+// title and body copy
+section.row.no-padding.home
+	div.top-main.col-md-12
+		h2 
+			| The first agency site  <br>written by clients.
+		p.red
+			| Except for this part. 
+		input.view-this-part(type="checkbox" id="toggle-featured-contributors") 		
+		label.icon-right-arrow(for="toggle-featured-contributors") 
+		ul.row.no-padding.featured-contributors
+			h6 Featured Contributors
+			each contributorItem in pageData.contributors
+				li.col-sm-12.col-md-4 
+					if contributorItem.contributorAvatar 
+						img(src=contributorItem.contributorAvatar)
+					cite
+						if contributorItem.name
+							span!= contributorItem.name
+						if contributorItem.jobTitle
+							span!= contributorItem.jobTitle
+					if contributorItem.project
+						p!= contributorItem.project
+					a.red(href="#") Read full article &gt;
+			.clear
+			.see-more
+				input.red.view-more(type="checkbox" name="toggle" id="toggle") 
+				label(for="toggle") 
+				.see-more-container
+					each contributorItem in pageData.contributorsMore
+						li.col-sm-12.col-md-4 
+							if contributorItem.contributorAvatar 
+								img(src=contributorItem.contributorAvatar)
+							cite
+								if contributorItem.name
+									span!= contributorItem.name
+								if contributorItem.jobTitle
+									span!= contributorItem.jobTitle
+							if contributorItem.project
+								p!= contributorItem.project
+							a.red(href="#") Read full article &gt;
+					

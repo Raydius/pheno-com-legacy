@@ -29,7 +29,9 @@ angular.module('phenoCom').directive('carouselComponent', function() {
 
 });
 
+
 var videoComponentTemplate = require('components/video-component.jade');
+var scrolltopTemplate = require('components/scrolltop.jade');
 
 // embedded vimeo player
 angular.module('phenoCom').directive('videoComponent', function() {
@@ -44,6 +46,21 @@ angular.module('phenoCom').directive('videoComponent', function() {
     };
 
 });
+
+angular.module('phenoCom').directive('scrolltotop', function() {
+    return {
+      template: scrolltopTemplate,
+      link: function (scope, element, attrs) {
+            
+            element.bind('click', function() {
+                $('html, body').animate({
+                        scrollTop: 0
+                    }, 500, function(){
+                });
+            })
+        }
+    };
+  });
 
 // currently not in use: embedded scrollable website
 angular.module('phenoCom').directive('scrollableComponent', function($window) {
@@ -110,7 +127,7 @@ angular.module('phenoCom').directive('updateTitle', ['$rootScope', '$timeout',
         return {
             link: function(scope, element) {
 
-                var listener = function(event, toState) {
+                var listener = function(event, toState) { 
 
                     var title = 'Default Title';
                     if (toState.data && toState.data.pageTitle) title = toState.data.pageTitle;
@@ -118,6 +135,7 @@ angular.module('phenoCom').directive('updateTitle', ['$rootScope', '$timeout',
                     $timeout(function() {
                         element.text(title);
                     }, 0, false);
+
                 };
 
                 $rootScope.$on('$stateChangeSuccess', listener);

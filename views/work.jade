@@ -1,6 +1,30 @@
-
 block variables
-  - page = "work"
+- copy = require('app/copy.js')
+- page = "work"
+- pageData = copy.content[page]
 
-include ./components/content-template.jade
-
+section.row.no-padding.work
+	article.col-md-12.top-main
+		h2 
+			blockquote!= pageData.blockquote
+		include components/cite-components
+	
+	each contentItem in pageData.subcontent 
+		a(href= contentItem.readmoreUrl)
+			article.col-md-12.cf
+				.col-xs-12.col-sm-12.col-md-8
+					if contentItem.image
+						img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
+				.col-xs-12.col-sm-12.col-md-4
+					fieldset
+						legend= contentItem.legend
+						h3!= contentItem.headline 
+						cite
+							span
+								| By Amy Weisenbach
+							span
+								| VP Marketing, Wilson
+						div.line
+						p!= contentItem.description
+						
+						a.red(href=contentItem.readmoreUrl) Read More &gt; 

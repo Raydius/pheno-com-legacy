@@ -7,7 +7,6 @@
   overflow: hidden;
   position: fixed;
 }
-
 .topnav {
     display: block;
     width: 100%;
@@ -16,21 +15,46 @@
     position: relative;
     min-height: 70px;
 
+    &.fixed {
+      position: fixed;
+      img.logo {
+        //margin: 0;
+      }
+
+    }
 
     .logo-wrapper{
       height: 40px;
+      max-width: 160px;
+      img {
+        transition: all 0.3s;
+      }
+      &.fixed {
+        float: left;
+        margin-right: $base_spacing - 20;
+        ~ .tabs {
+          margin: 0;
+          border-bottom: 0;
+          padding: 0;
+          li {
+            a {
+              padding: 4px 0 18px 0;
+            }
+          }
+        }
+      }
     }
 
     .nav-wrapper{
       width: 100%;
       max-width: $body_size;
-      padding: ($base_spacing/4) ($base_spacing/4);
+      padding: 30px $base_spacing*2 0 $base_spacing*2;
       margin: 0 auto;
       position: relative;
     }
 
     img.logo{
-      margin: 0 auto;
+      //margin: 0 auto;
       max-width: 200px;
       padding: 10px 0 10px (0+35px);
     }
@@ -60,12 +84,14 @@
   }
 
   .tabs {
-    margin-top: 20px;
-    border-bottom: 1px solid #000;
+    margin: 20px -20px 0;
+    padding: 0 20px;
+    border-bottom: 1px solid #ccc;
 
     ul{
       margin: 0;
-      margin-left: -40px
+      margin-left: -40px;
+      position: relative;
     }
 
     li {
@@ -75,7 +101,8 @@
       text-align: center;
       padding: 0;
       position: relative;
-      padding: 0 35px;
+      padding: 0 5px;
+      margin: 0 30px;
       //width: 135.5px;
 
       &.selected:before{
@@ -88,7 +115,7 @@
       }
       
       &:first-child{
-        margin-left: 0;
+        margin-left: 30px;
         &.selected:before{
           left: 0;
           margin-left: 0;
@@ -99,16 +126,17 @@
       }
 
       a{
-        padding: 20px 0;
+        padding: 20px 0 15px 0;
         width: 100%;
         display: block;
-        font-weight: bold;
+        font-family: "Circular-Bold";
+        color: black;
       }
 
       &.contact{
         position: absolute;
-        right: $base_spacing;
-        bottom: 0;
+        right: 20px;
+        padding: 0;
       }
     }
   }
@@ -117,21 +145,6 @@
 
 .filterbutton {
     display:none;
-}
-
-snap-drawers, .snap-drawers {
-    position: relative;
-    display: block;
-    background-color: #fff;
-    overflow: initial;
-    height: 100%;
-}
-
-snap-drawer, .snap-drawer {
-    position: relative;
-    display: block;
-    overflow: initial;
-    width: 80%;
 }
 
 .contact-drawer {
@@ -143,7 +156,6 @@ snap-content, .snap-content{
   background-color: #fff;
   /*overflow: initial;*/
   display: block;
-  overflow-x: hidden;
 }
 
 .drawer-menu {
@@ -216,9 +228,7 @@ snap-content, .snap-content{
   position: absolute;
   float:left;
   top: 50%;
-  left: 22px;
   margin-top: -15px;
-
   cursor: pointer;
   z-index:20;
 

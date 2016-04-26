@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -z "$OUTPUT_PORT" ]; then
+    export OUTPUT_PORT=9000
+fi
+
+./node_modules/.bin/webpack --progress
+./node_modules/.bin/webpack-dev-server --content-base ./ --port $OUTPUT_PORT --host 0.0.0.0 --hot

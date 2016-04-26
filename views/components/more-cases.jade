@@ -1,0 +1,18 @@
+// dynamically populate content from copy.json data
+block variables
+- page = "moreCases"
+- pageData = copy.content[page]
+
+section.col-md-12.no-padding.more-cases 
+	.more-case-wrapper.cf
+		each contentItem in pageData
+			article.col-md-4 
+				a(href="#")
+					img(src= contentItem.prjectThumbSrc)
+				p!= contentItem.projectName
+				cite 
+					.wrapper
+						span!= contentItem.writerName
+						span!= contentItem.writerTitle
+							
+				a.red(href="#") Read full article

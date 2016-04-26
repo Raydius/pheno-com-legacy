@@ -1,11 +1,21 @@
+block variables
+	- copy = require('app/copy.js')
+div(scrolltotop)
 footer.footer
-	.footer-wrapper.row.no-padding
+	.footer-wrapper.row
 		//- h1.col-xs-12.col-sm-3.col-lg-2.no-padding Phenomenon
 		//- 	sub &reg;
-		.col-xs-12.col-sm-3.col-lg-2.no-padding
-
-		section.col-xs-12.col-sm-6.col-lg-4.no-padding.offices
-
-		section.col-xs-12.col-sm-3.col-lg-2.no-padding.social
+		.col-xs-12.col-sm-3.col-lg-2
+			img(src=copy.logo.src, alt=src=copy.logo.alt).logo
+		section.col-xs-12.col-sm-6.col-lg-4.offices
+			each officeItem in copy.footer.offices
+				.office.col-xs-12.col-sm-6.no-padding
+					h4= officeItem.title
+					address 
+						span= officeItem.address.line1
+						span <br />
+						span= officeItem.address.line2
+					a(href=officeItem.phone.href, title=officeItem.phone.title)= officeItem.phone.formatted
+		section.col-xs-12.col-sm-3.col-lg-3.social
 			h4 Social
 			include social-icons

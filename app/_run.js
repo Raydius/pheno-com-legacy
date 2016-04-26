@@ -2,14 +2,34 @@
  * Created by rdollete on 4/1/16.
  */
 
-require('angular-snap');
+angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorScroll) {
 
-angular.module('phenoCom').run(function($rootScope, $window, $location, snapRemote) {
     var $main = $('main');
 
     // detect state change
-    $rootScope.$on('$stateChangeSuccess', function() {
+    $(window).on('hashchange', function(e){
+       $('html, body').animate({
+                scrollTop: 0
+            }, 300, function(){
+        });
+       $('body').removeClass('opend');
+    });
 
+    var fixedheader = $("nav.topnav, .logo-wrapper");
+
+    $(window).scroll(function(){
+       if ($(document).scrollTop() > 0 && $(window).width() > 768) {
+        fixedheader.addClass("fixed");
+      } else {
+        fixedheader.removeClass("fixed"); 
+      }  
+    })
+
+    $('#hamburger').click(function(){
+        $('body').toggleClass('opend');
+    });
+
+    $rootScope.$on('$stateChangeSuccess', function() {
         // scroll to the top
         $main.animate({ scrollTop: 0 }, 400);
 
@@ -18,48 +38,8 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, snapRemo
 
         // fire Google Analytics tracking
         $window.ga('send', 'pageview', { page: $location.url() });
-    });
 
-    // disable/close snapper if bigger than 640
-    snapRemote.getSnapper().then(function(snapper) {
-        function onResizeCallback() {
-            if ($window.innerWidth <= 736) {
-
-                snapper.enable();
-
-                snapper.settings({
-                    maxPosition: $('snap-content').width() - 70 // leave room for 'X' interaction
-                });
-
-            } else {
-                snapper.close();
-                snapper.disable();
-            }
-        }
-
-        onResizeCallback();
-
-        $(window).resize(onResizeCallback);
-
-        snapper.on('animated', function() {
-
-            if(snapper.state().state == 'left') {
-                $('#hamburger').addClass('open');
-            }
-            else {
-                $('#hamburger').removeClass('open');
-            }
-        });
-
-        snapper.on('close', function() {
-            $('#hamburger').removeClass('open');
-        });
-
-        $main.on('routeChange', function(){
-            snapper.close();
-        })
 
     });
-
 
 });

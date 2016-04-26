@@ -1,28 +1,13 @@
 
-require('angular-snap');
 var angular = require('angular');
 
-angular.module('phenoCom').controller('phenoController', function($state, $scope, $cookies, snapRemote) {
-
-    // manual function for closing drawer
-    $scope.closeDrawer = function() {
-        snapRemote.getSnapper().then(function (snapper) {
-            snapper.close();
-        });
+angular.module('phenoCom').controller('phenoController', function($state, $scope, $cookies) {
+    // temporary onload solution to hide unstyle content for now
+    // don't forgot to remove display: none in layout.jade
+    var $main = $('main');
+    window.onload = function() {
+        $('body').show(); 
     };
-
-    // manual function for toggling drawer
-    $scope.snapToggle = function() {
-        snapRemote.getSnapper().then(function(snapper) {
-
-            if(snapper.state().state != 'left' ) {
-                $('#hamburger').addClass('open');
-                snapper.open('left');
-            }
-
-        });
-    };
-
 
     // denote that user has been here, hold data for 15 days
     var expireDate = new Date();
@@ -137,3 +122,4 @@ angular.module('phenoCom').controller('contactController', function($scope, $sta
     };
 
 });
+

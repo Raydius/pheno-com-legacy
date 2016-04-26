@@ -3,20 +3,17 @@ html(xmlns:ng="http://angularjs.org/" ng-app='phenoCom')
 	head
 		title(update-title)
 		meta(name="viewport", content="width=device-width, initial-scale=1")
-
+			
 		include ./favicon
 
 			
-	body(class=bodyClass, ng-controller="phenoController")
-
-
-		snap-drawers
-			include ./components/side-nav
+	body(class=bodyClass, ng-controller="phenoController" style="display: none;")
 
 		.body-wrapper
-			snap-content
-				include ./components/top-nav
+			include ./components/top-nav
 
-				block content
+			block content
 
+		.drawer
 
+			include ./components/side-nav

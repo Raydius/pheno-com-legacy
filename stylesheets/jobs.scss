@@ -1,0 +1,50 @@
+.jobs {
+	.top-main {
+
+		h2 {
+			margin-top: $base-spacing*2;
+			blockquote {
+				font-size: 36px;
+    			line-height: 42px;
+			}
+		}
+		cite {
+			margin-left: 20px;
+		}
+		border-bottom: 0;
+		.col-md-5 {
+			padding-left: $base-spacing;
+		}
+	}
+	img {
+		margin-top: $base-spacing;
+		margin-left: -40px;
+	}
+ul {
+		margin-top: $base-spacing*2 - 40;
+		margin-left: 0;
+		padding: 0 20px;
+
+		> span {
+		color: $primary_color;
+			font-family: "Circular-Bold";
+			font-size: 17px;
+			padding: 20px 0;
+			display: block;
+		}
+		li {
+			padding: 20px 0;
+			font-size: 30px;
+			border-top: 1px solid #ddd;
+			&:last-child {
+				border-bottom: 1px solid #ddd;
+			}
+		} 
+	}
+	a, .a, .link {
+		color: $black_font;
+		font-family: $secondary_font;
+		font-family: 28px;
+		font-weight: bold;
+	}
+}

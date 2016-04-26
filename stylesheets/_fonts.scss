@@ -11,18 +11,30 @@
 }
 
 @font-face {
-  font-family: 'Circular-Book';
-  src: url('../assets/fonts/circular/circular-book.eot'); /* IE9 Compat Modes */
-  src: url('../assets/fonts/circular/circular-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       // url('../assets/fonts/circular/circular-book.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/circular/circular-book.woff') format('woff'), /* Pretty Modern Browsers */
-       // url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       // url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-family: "Circular-Book";
+    src:url("../assets/fonts/circular/lineto-circular-book.eot");
+    src:url("../assets/fonts/circular/lineto-circular-book.eot?#iefix") format("embedded-opentype"),
+        url("../assets/fonts/circular/lineto-circular-book.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
-
-
-
+@font-face {
+    font-family: "Circular-Bold";
+    src:url("../assets/fonts/circular/lineto-circular-bold.eot");
+    src:url("../assets/fonts/circular/lineto-circular-bold.eot?#iefix") format("embedded-opentype"),
+        url("../assets/fonts/circular/lineto-circular-bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'TiemposHeadline-Regular';
+    src:url("../assets/fonts/tiempos/TiemposHeadline-Regular.eot");
+    src:url("../assets/fonts/tiempos/TiemposHeadline-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../assets/fonts/tiempos/TiemposHeadline-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
 //icon fonts
 @font-face {
     font-family: 'icomoon';
@@ -63,7 +75,12 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-dot:before {
+    content: "\e907";
+}
+.icon-share:before {
+    content: "\e908";
+}
 .icon-error:before {
     content: "\e905";
 }
@@ -81,4 +98,10 @@
 }
 .icon-instagram:before {
     content: "\e901";
+}
+.icon-facebook:before {
+    content: "\e904";
+}
+.icon-twitter:before {
+    content: "\e906"
 }
