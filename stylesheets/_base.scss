@@ -52,6 +52,9 @@ a, .a, .link{
 		font-family: "Circular-bold";
 	}
 }
+blockquote {
+	padding: 10px 0;
+}
 h1 {
   margin: 0;
   line-height: 50px;
@@ -170,7 +173,7 @@ h2 blockquote, h3 blockquote  {
 		content: "\201C";
 		font-size: inherit;
 		position: absolute;
-		left: 0;
+		left: -25px;
 		top: 10px; 
 		color: $black_font;
 	}
