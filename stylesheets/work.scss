@@ -1,4 +1,7 @@
 .work {
+	a legend {
+		opacity: 0.75;
+	}
 	&.work-details {
 		.top-main {
 			margin-bottom: $base_spacing - 20;
@@ -152,6 +155,7 @@
 			font-weight: bold;
 			color: $gray_font;
 			font-size: 34px;
+			margin-bottom: $base_spacing - 40;
 		}
 		span {
 			font-family: "Circular-bold";
@@ -160,10 +164,11 @@
 	}
 	cite {
 		margin: $base_spacing - 50 0;
+		opacity: 0.75;
 	}
 	.line {
 		width: 50px;
-		border-bottom: 2px solid #979797;
+		border-bottom: 1px solid #979797;
 		margin: $base_spacing - 30 0;
 	}
 	.more-cases {
