@@ -1,6 +1,8 @@
 .work {
 	a legend {
 		opacity: 0.75;
+		font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+		font-size: 12px;
 	}
 	&.work-details {
 		.top-main {
@@ -74,9 +76,10 @@
 					float: left;
 					margin-right: 5px;
 					a {
-						border: 1px solid #ccc;
+						//border: 1px solid #ccc;
 						border-radius: 50%;
 						padding: 10px;
+						color: #333;
 					}
 				}
 			}
@@ -154,12 +157,25 @@
 			font-family: $secondary_font;
 			font-weight: bold;
 			color: $gray_font;
-			font-size: 34px;
+			font-size: 30px;
 			margin-bottom: $base_spacing - 40;
 		}
 		span {
 			font-family: "Circular-bold";
-			font-size: 15px;
+			font-size: 13px;
+			&:last-of-type {
+				font-family: "Circular-book";
+			}
+		}
+		p {
+			font-size: 13px;
+			line-height: 20px;
+			&:first-of-type {
+				margin-top: 10px;
+			}
+		}
+		a.red {
+			font-size: 13px;
 		}
 	}
 	cite {
@@ -169,15 +185,21 @@
 	.line {
 		width: 50px;
 		border-bottom: 1px solid #979797;
-		margin: $base_spacing - 30 0;
+		margin: $base_spacing - 40 0;
 	}
 	.more-cases {
 		background: #f2f2f2;
 		text-align: center;
+		padding: $base_spacing*2 ($base_spacing - 20) 0 ($base_spacing - 20);
+		padding-top: $base_spacing*2;
+		> span {
+			float: left;
+		}
+		> a {
+			float: right;
+		}
 		.more-case-wrapper {
 			margin: 0 auto;
-			padding: $base_spacing*2 ($base_spacing - 20) 0 ($base_spacing - 20);
-			padding-top: $base_spacing*2;
 			article {
 				p {
 					font-family: $secondary_font;
@@ -202,4 +224,42 @@
 		}
 		margin-bottom: $base_spacing;
 	}
+}
+.bubble 
+{
+position: relative;
+width: 180px;
+height: 58px;
+padding: 20px 10px;
+background: #FFFFFF;
+border-radius: 3px;
+border: rgba(0,0,0,0.25) solid 2px;
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 8px 8px;
+border-color: #FFFFFF transparent;
+display: block;
+width: 0;
+z-index: 1;
+top: -8px;
+left: 41px;
+}
+
+.bubble:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 9px 9px;
+border-color: rgba(0,0,0,0.25) transparent;
+display: block;
+width: 0;
+z-index: 0;
+top: -11px;
+left: 40px;
 }

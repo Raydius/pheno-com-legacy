@@ -38,6 +38,28 @@ var copy =
       "uiSref": "contact"
     }
   ],
+  "share": {
+    "twitter": {
+      "url": "https://www.twitter.com/phenomenon/",
+      "className": "icon-twitter",
+      "title": "View Phenomenon's Tweets"
+    },
+    "facebook": { 
+      "url": "https://www.facebook.com/PHENOMENONmarketing/",
+      "className": "icon-facebook",
+      "title": "View Phenomenon's Facebook Page"
+    },
+    "linkedin": {
+      "url": "https://www.linkedin.com/company/phenomenon",
+      "className": "icon-linkedin",
+      "title": "View Phenomenon's Facebook Page"
+    },
+    "instagram": {
+      "url": "https://www.instagram.com/phenomenon/",
+      "className": "icon-mail",
+      "title": "View Phenomenon's Instagram"
+    }
+  },
   "footer": {
     "offices": {
       "la": {

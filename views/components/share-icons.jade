@@ -1,0 +1,8 @@
+block variables
+	- copy = require('app/copy.js')
+
+ul.social-icons
+	.bubble
+		each socialItem in copy.share
+			li.social-icon
+				a(href=socialItem.url, title=socialItem.title, class=socialItem.className, target="_blank")

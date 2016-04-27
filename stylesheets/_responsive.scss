@@ -315,6 +315,12 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+  main, .maincontent {
+    padding: 20px 35px;
+  }
+  .contact .contactbiz span {
+    font-size: 13px;
+  }
   footer .social li, .footer .social li {
     margin: 0 5px;
     width: 23px;
