@@ -5,7 +5,8 @@ block variables
 
 section.col-md-12.no-padding.more-cases
 	span.left More Work Stories
-	a(href="") View All
+	a.red(href="") View All &gt;
+	.clear
 	.more-case-wrapper.cf
 		each contentItem in pageData
 			article.col-md-4 
@@ -17,4 +18,4 @@ section.col-md-12.no-padding.more-cases
 						span!= contentItem.writerName
 						span!= contentItem.writerTitle
 							
-				a.red(href="#") Read full article
+				a.red(href="#") Read full article &gt;
