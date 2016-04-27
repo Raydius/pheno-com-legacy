@@ -982,23 +982,23 @@ var copy =
       "listing": [
         {
           "listingTitle": "Digital Design Director",
-          "listingUrl": "#"
+          "listingUrl": "https://www.linkedin.com/company/phenomenon/careers"
         },
         {
           "listingTitle": "Senior Brand Strategist",
-          "listingUrl": "#"
+          "listingUrl": "https://www.linkedin.com/company/phenomenon/careers"
         },
         {
           "listingTitle": "Strategy Director",
-          "listingUrl": "#"
+          "listingUrl": "https://www.linkedin.com/company/phenomenon/careers"
         },
         {
           "listingTitle": "Digital Brand Director",
-          "listingUrl": "#"
+          "listingUrl": "https://www.linkedin.com/company/phenomenon/careers"
         },
         {
           "listingTitle": "Studio Manager",
-          "listingUrl": "#"
+          "listingUrl": "https://www.linkedin.com/company/phenomenon/careers"
         },
       ],
       "details": [

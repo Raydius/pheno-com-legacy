@@ -46,13 +46,13 @@ section.row.no-padding.about
 					each par in pageData.paragraph3
 						p!= par
 				img(src=require('assets/images/about/about3.png'))
-	div.col-md-12.ac
+	div.col-md-12.ac.no-padding
 		div.col-md-7.no-padding
 			article.col-md-12
 				if pageData.paragraph4
 					each par in pageData.paragraph4
 						p!= par
-		div.col-md-5(sticky offset="80")
+		div.col-md-5(sticky offset="80").no-padding
 			section.ac-container
 				h4 We are an  Innovations Agency.
 				each contentItem, index in pageData.accordion

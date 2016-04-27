@@ -66,18 +66,23 @@
 
 }
 
+
 @media (min-width: 768px) and (max-width: 1280px) {
     main, .maincontent {
-      padding: 20px $base_spacing;
+      padding: 20px $base_spacing+30;
     }
     .topnav {
       .nav-wrapper {
-        padding: 30px $base_spacing 0 $base_spacing;
+        padding: 30px $base_spacing+30 0 $base_spacing+30;
       }
     }
 }
 
-
+@media (min-width: 1024px) and (max-width: 1280px) {
+  main, .maincontent {
+      padding: 20px $base_spacing*2;
+    }
+}
 // all non-phone devices
 @media (min-width: 737px) {
 
@@ -315,8 +320,8 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  main, .maincontent {
-    padding: 20px 35px;
+  .topnav .logo-wrapper.fixed {
+    margin-right: 0;
   }
   .contact .contactbiz span {
     font-size: 13px;
