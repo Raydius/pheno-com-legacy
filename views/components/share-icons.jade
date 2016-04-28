@@ -3,6 +3,11 @@ block variables
 
 ul.social-icons
 	.bubble
-		each socialItem in copy.share
-			li.social-icon
-				a(href=socialItem.url, title=socialItem.title, class=socialItem.className, target="_blank")
+		li.social-icon
+			a.icon-twitter(socialshare socialshare-provider="twitter" socialshare-text="Current Project Text" socialshare-hashtags="angularjs, angular-socialshare" socialshare-url="＃")
+		li.social-icon
+			a.icon-facebook(socialshare socialshare-provider="facebook" socialshare-text="Current Project Text" socialshare-hashtags="angularjs, angular-socialshare" socialshare-url="＃")
+		li.social-icon
+			a.icon-linkedin(socialshare socialshare-provider="linkedin" socialshare-text="Current Project Text" socialshare-hashtags="angularjs, angular-socialshare" socialshare-url="＃")
+		li.social-icon
+			a.icon-mail
