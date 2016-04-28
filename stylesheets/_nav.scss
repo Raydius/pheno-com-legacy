@@ -18,15 +18,11 @@
     &.fixed {
       position: fixed;
       background-color: rgba(255,255,255,.9);
-      img.logo {
-        //margin: 0;
-      }
-
     }
 
     .logo-wrapper{
       height: 40px;
-      max-width: 160px;
+      width: 160px;
       img {
         transition: all 0.3s;
       }
@@ -52,12 +48,6 @@
       padding: 30px $base_spacing*2 0 $base_spacing*2;
       margin: 0 auto;
       position: relative;
-    }
-
-    img.logo{
-      //margin: 0 auto;
-      max-width: 200px;
-      padding: 10px 0 10px (0+35px);
     }
 
     h1 {
@@ -228,8 +218,6 @@ snap-content, .snap-content{
   height: 30px;
   position: absolute;
   float:left;
-  top: 50%;
-  margin-top: -15px;
   cursor: pointer;
   z-index:20;
 
@@ -262,13 +250,13 @@ snap-content, .snap-content{
     transition: .4s;
 
     &:nth-child(1) {
-      top: 4px; //7.5px;
+      top: 0; //7.5px;
     }
     &:nth-child(2) {
-      top: 13px; //20.5px;
+      top: 9px; //20.5px;
     }
     &:nth-child(3) {
-      top: 22px; //px;
+      top: 18px; //px;
     }
   }
 
@@ -293,9 +281,4 @@ snap-content, .snap-content{
       transform: rotate(-135deg);
     }
   }
-}
-
-
-.tabs {
-    display:none;
 }

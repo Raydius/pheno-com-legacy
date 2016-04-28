@@ -142,10 +142,6 @@
     }
   }
 
-  .tabs {
-    display: block;
-  }
-
   //footer
   footer, .footer{
     border: none;
@@ -222,103 +218,6 @@
 
 }
 
-
-/**
- * NOTE: all styles below apply to devices where they will get the hamburger menu
-**/
-
-// landscape iPhone5 to landscape iPhone6 Plus
-@media (min-width: 568px) and (max-width: 736px){
-
-  // shrink drawer menu height to fit shorter landscape height
-  .drawer-menu nav ul li, .drawer-menu .nav ul li{
-    margin: 2.5% 0px;
-  }
-  .topnav{
-    .tabs{
-      li{
-        width: 25%;
-
-        &.contact{
-          bottom: initial;
-          top: $base_spacing;
-          right: $base_spacing + ($base_spacing/2);
-          width: auto;
-          &:before{
-            border-width: 0;
-          }
-        }
-
-        a{
-          padding: 12px 0;
-        }
-      }
-    } 
-  } 
-}
-
-
-// all mobile devices
-@media (max-width: 736px) {
-  .topnav{
-    $sm-logo-padding: 32px;
-  }
-
-  .filterbutton {
-    font-size: 16px;
-    color: #FFF;
-    top: 4px;
-    cursor: pointer;
-  }
-  #hamburger {
-    display: block;
-  }
-  snap-content, .snap-content{
-    @include box-shadow(-1px, 10px, 26px, -5px, rgba(48,48,48,0.5));
-  }
-
-
-  main .section, .maincontent .section{
-
-    &.details{
-      padding-left: ($base_spacing/2);
-      padding-right: ($base_spacing/2);
-
-      p, h2{
-        margin: 0 0 ($base_spacing/4);
-      }
-    }
-
-    &.image-component{
-      padding-bottom: $base_spacing * 1.75;
-    }
-  }
-
-  .contact {
-    padding: 0 ($base_spacing/4) ($base_spacing/4);
-
-    input[type="text"], input[type="email"], .input-file{
-      margin: ($base_spacing/4) 0;
-    }
-
-    input[type="file"] + label {
-      margin-bottom: ($base_spacing/4);
-    }
-
-    input, h4, label{
-      font-size: 18px;
-    }
-
-    button{
-      font-size: 20px;
-      height: 76px;
-    }
-
-    form{
-      padding-bottom: ($base_spacing/2)
-    }
-  }
-}
 @media (min-width: 768px) and (max-width: 1024px) {
   .topnav .logo-wrapper.fixed {
     margin-right: 0;
@@ -343,10 +242,26 @@
       margin: 0 15px;
     }
 }
-@media (max-width: 640px) {
+@media (max-width: 640px) { 
   .topnav .nav-wrapper {
-    padding: 20px;
+    padding-top: 20px;
     margin: 0;
+    .logo-wrapper {
+      width: 100%;
+      img {
+        width: 160px;
+        position: relative;
+        left: 50%;
+        margin-left: -80px;
+      }
+    }
+    
+  }
+  .topnav .tabs {
+    display: none;
+  }
+  #hamburger {
+    display: block;
   }
   .work .col-md-12, .col-md-8 {
     padding: 0;
