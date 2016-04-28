@@ -279,6 +279,9 @@
   .work.work-details .project-detail aside label.icon-share {
     margin-top: 0;
   }
+  .work > article:nth-of-type(even) .col-md-8 {
+    padding-right: 0;
+  }
   .culture .headshots .col-md-15 {
     margin: 0;
   }

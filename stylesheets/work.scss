@@ -132,6 +132,14 @@
 			.col-md-8 {
 				float: right;
 			}
+			.col-md-4 {
+				padding-right: 30px;
+			}
+		}
+		&:nth-of-type(even) {
+			.col-md-8 {
+				padding-right: 30px;
+			}
 		}
 		&:last-of-type {
 			margin-bottom: $base_spacing; 
