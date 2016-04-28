@@ -30,6 +30,30 @@ angular.module('phenoCom').directive('carouselComponent', function() {
 
 });
 
+angular.module('phenoCom').directive('carouselComponentCenter', function() {
+
+    return {
+        restrict: 'E',
+        link: function (scope, element, attrs) {
+            var animationSpeed = 150;
+
+            $(element).owlCarousel({
+                items: 2,
+                center: true,
+                nav:false,
+                navText: [
+                    "<button class='icon-left-arrow'></button>",
+                    "<button class='icon-right-arrow'></button>"
+                ],
+                loop: true,
+                touchDrag: true
+            });
+
+        }
+    };
+
+});
+
 
 var videoComponentTemplate = require('components/video-component.jade');
 var scrolltopTemplate = require('components/scrolltop.jade');

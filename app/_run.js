@@ -29,7 +29,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
         $body.toggleClass('opend');
         $(this).toggleClass('open');
     });
-
+    
     $rootScope.$on('$stateChangeSuccess', function() {
         // scroll to the top
         $main.animate({ scrollTop: 0 }, 400);
