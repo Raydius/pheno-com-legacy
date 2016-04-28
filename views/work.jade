@@ -11,8 +11,8 @@ section.row.no-padding.work
 	
 	each contentItem in pageData.subcontent 
 		a(href= contentItem.readmoreUrl)
-			article.col-md-12.cf
-				.col-xs-12.col-sm-12.col-md-8
+			article.col-md-12.no-padding.cf
+				.col-xs-12.col-sm-12.col-md-8.no-padding
 					if contentItem.image
 						img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
 				.col-xs-12.col-sm-12.col-md-4
