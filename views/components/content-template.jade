@@ -46,7 +46,7 @@ section.row.no-padding.work.work-details
 						video-component(thumb=contentItem.thumb, alt=contentItem.thumbAlt, title=contentItem.thumbTitle, vimeo=contentItem.vimeo)
 
 					if contentItem.carousel
-						carousel-component.carousel-component.no-padding
+						carousel-component.carousel-component.owl-carousel.no-padding
 							each carouselItem in contentItem.images
 								img(src=carouselItem.url, alt=carouselItem.alt)
 					if contentItem.image
@@ -63,7 +63,7 @@ section.row.no-padding.work.work-details
 				video-component(thumb=contentItem.thumb, alt=contentItem.thumbAlt, title=contentItem.thumbTitle, vimeo=contentItem.vimeo)
 
 			if contentItem.carousel
-				carousel-component.carousel-component.no-padding
+				carousel-component.carousel-component.owl-carousel.no-padding
 					each carouselItem in contentItem.images
 						img(src=carouselItem.url, alt=carouselItem.alt)
 			if contentItem.image

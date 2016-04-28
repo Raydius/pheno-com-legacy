@@ -1,6 +1,9 @@
 /**
  * Created by rdollete on 4/1/16.
  */
+/**
+ * Created by rdollete on 4/1/16.
+ */
 
 
 angular.module('phenoCom').directive('carouselComponent', function() {
@@ -11,17 +14,15 @@ angular.module('phenoCom').directive('carouselComponent', function() {
             var animationSpeed = 150;
 
             $(element).owlCarousel({
-                singleItem: true,
-                navigation: true,
-                navigationText: [
+                items: 1,
+                nav:true,
+                navText: [
                     "<button class='icon-left-arrow'></button>",
                     "<button class='icon-right-arrow'></button>"
                 ],
-                slideSpeed: animationSpeed,
-                paginationSpeed: animationSpeed,
-                rewindSpeed: animationSpeed,
+                loop: true,
+                dots: true,
                 touchDrag: true
-
             });
 
         }

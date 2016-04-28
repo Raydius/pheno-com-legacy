@@ -33,10 +33,10 @@
       margin-left: 0;
     }
   }
-  .owl-theme .owl-prev {
+  .owl-prev {
     margin-left: 20%;
   }
-  .owl-theme .owl-next {
+  .owl-next {
     margin-right: 20%;
   }
   .topnav .tabs li {
@@ -271,7 +271,7 @@
     padding: 0;
   }
   .work .col-md-12 .col-md-4 {
-    padding: 10px 30px;
+    padding: $base_spacing/2;
   }
   .work > article p span.red {
     margin-left: 0;
