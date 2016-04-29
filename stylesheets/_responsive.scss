@@ -76,6 +76,9 @@
         padding: 30px $base_spacing+30 0 $base_spacing+30;
       }
     }
+    .home .featured-contributors {
+      padding: 0 0 60px;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {

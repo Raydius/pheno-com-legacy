@@ -4,6 +4,16 @@
 
 angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorScroll) {
 
+    $( document ).ready(function() {
+         $('.home .icon-right-arrow').click(function() {
+            $('html, body').animate({
+                    scrollTop: 260
+                }, 200, function(){
+            });
+        })
+    });
+   
+
     var $main = $('main');
     var $body = $('body');
     // detect state change
