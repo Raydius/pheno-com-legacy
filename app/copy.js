@@ -272,10 +272,11 @@ var copy =
           "image": true,
           "imageUrl": require('assets/images/work-1.jpg'),
           "imageAlt": "Wilson Image 1",
-          "legend": "Home / Real Estate",
+          "legend": "Sport / Lifestyle",
           "headline": "Wilson Is Now Fully Equipped.",
-          "cite": "",
-          "description": "New company looks to make buying and selling a home not only more mobile, but more transparent.",
+          "citeName": "By Amy Weisenbach",
+          "citeTitle": "VP Marketing, Wilson",
+          "description": "360 degree global campaign is the first in the company#8217;s 50 year history.",
           "readmoreUrl": "#/work/wilson-anthem"
         },
         {
@@ -283,10 +284,11 @@ var copy =
           "image": true,
           "imageUrl": require('assets/images/work-2.jpg'),
           "imageAlt": "Wilson Image 2",
-          "legend": "Sports/ Lifestyle",
+          "legend": "Home/ Real Estate",
           "headline": "When Buying a House, There's no place like Xome",
-          "cite": "",
-          "description": "360 degree global campaign is the first in the company's 50 year history.",
+          "citeName": "By Amy Weisenbach",
+          "citeTitle": "VP Marketing, Wilson",
+          "description": "New company looks to make buying and selling a home not only more mobile, but more transparent.",
           "readmoreUrl": "#/work/xome"
 
         },
@@ -297,7 +299,8 @@ var copy =
           "imageAlt": "Wilson Image 3",
           "legend": "Fashion / Retail",
           "headline": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.",
-          "cite": "",
+          "citeName": "By Amy Weisenbach",
+          "citeTitle": "VP Marketing, Wilson",
           "description": "After the departure of longtime owner and face of brand, company looks to modernize all the way down to the cufflinks.",
           "readmoreUrl": "#/work/mens-wearhouse"
 
@@ -309,7 +312,8 @@ var copy =
           "imageAlt": "Wilson Image 4",
           "legend": "Sport / Lifestyle",
           "headline": "Wilson Launches Futuristic Ball",
-          "cite": "",
+          "citeName": "By Amy Weisenbach",
+          "citeTitle": "VP Marketing, Wilson",
           "description": "For the first time a basketball is connected to your smartphone to track makes, misses and enhance performance.",
           "readmoreUrl": "#/work/wilson-x"
         },
@@ -320,7 +324,8 @@ var copy =
           "imageAlt": "Wilson Image 5",
           "legend": "Finance / Loans",
           "headline": 'It&#8217;s A "Sunny" Day<br> for Payday Loans.',
-          "cite": "",
+          "citeName": "By Allison Cornia",
+          "citeTitle": "SVP Marketing, Xome",
           "description": "British company creates a whole new business model for payday loans that gives borrowers a better chance at getting out of debt.",
           "readmoreUrl": "#/work/sunny"          
         },
@@ -331,19 +336,21 @@ var copy =
           "imageAlt": "Wilson Image 6",
           "legend": "Food / Drink",
           "headline": "thinkThin Helps Women to Shed Guilt",
-          "cite": "",
+          "citeName": "By Amy Weisenbach",
+          "citeTitle": "VP Marketing, Wilson",
           "description": "Nutritional bar targeted to women launches its campaign using humor to rave reviews online.",
           "readmoreUrl": "#/work/think-thin"
 
         },
-        {
+        { 
           "type": "image",
           "image": true,
           "imageUrl": require('assets/images/work-7.png'),
           "imageAlt": "Wilson Image 7",
           "legend": "Travel / Leisure",
           "headline": "SLS Vegas Gives the Strip a Whole New Look.",
-          "cite": "",
+          "citeName": "By Matt Stringer",
+          "citeTitle": "EVP Marketing, Men&#8217;s Wearhouse",
           "description": "Growing LA Entertainment group decides to make a splash in Sin City with launch of bold hotel and casino.",
           "readmoreUrl": "#/work/sls"
         }

@@ -246,8 +246,13 @@
     }
 }
 @media (max-width: 640px) {
-  .work .more-case-wrapper.desktop {
+  .work .more-case-wrapper.desktop, .work .more-cases > a {
     display: none;
+  }
+  .work .more-cases > span {
+    float: none;
+    display: block;
+    padding: 40px 0;
   }
   .topnav .nav-wrapper {
     padding-top: 20px;

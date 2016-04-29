@@ -20,10 +20,9 @@ section.row.no-padding.work
 						legend= contentItem.legend
 						h3!= contentItem.headline 
 						cite
-							span
-								| By Amy Weisenbach
-							span
-								| VP Marketing, Wilson
+							span!= contentItem.citeName
+							span!= contentItem.citeTitle
+
 						div.line
 						p!= contentItem.description
 						
