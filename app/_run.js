@@ -20,6 +20,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
     $(window).scroll(function(){
        if ($(document).scrollTop() > 0 && $(window).width() > 768) {
         fixedheader.addClass("fixed");
+        $('.featured-contributors').addClass('show');
       } else {
         fixedheader.removeClass("fixed"); 
       }  

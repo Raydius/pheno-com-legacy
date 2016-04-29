@@ -39,8 +39,14 @@
 		text-align: center;
 		background: #F2F2F2;
 		padding: 0 $base_spacing $base_spacing;
-		display: none;
 		margin-top: $base_spacing;
+		opacity: 0;
+		transform: translateY(1000px);
+		transition: all 1s;
+		&.show {
+			opacity: 1;
+			transform: translateY(0);
+		}
 		h6 {
 			font-size: 15px;
 			border-bottom: 1px solid #ccc;

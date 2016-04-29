@@ -252,7 +252,9 @@
       background: $primary_color; 
   	}
 
-
+  	.owl-nav {
+  		cursor: pointer;
+  	}
 	.owl-nav .owl-prev {
 	  margin-left: 30%; 
 	  float: left;
