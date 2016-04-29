@@ -7,7 +7,7 @@ section.col-md-12.no-padding.more-cases
 	span.left More Work Stories
 	a.red(href="") View All &gt;
 	.clear
-	.more-case-wrapper.cf
+	.more-case-wrapper.desktop.cf
 		each contentItem in pageData
 			article.col-sm-4.col-md-4 
 				a(href= contentItem.projectUrl)
@@ -20,10 +20,10 @@ section.col-md-12.no-padding.more-cases
 							
 				a.red(href= contentItem.projectUrl) Read full article &gt;
 	
-	.more-case-wrapper.cf
+	.more-case-wrapper.mobile.cf
 		carousel-component-center.carousel-component.owl-carousel.no-padding
 			each contentItem in pageData
-				article.col-md-4 
+				article.col-md-4
 					a(href= contentItem.projectUrl)
 						img(src= contentItem.projectThumbSrc)
 					p!= contentItem.projectName

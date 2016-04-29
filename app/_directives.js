@@ -46,6 +46,7 @@ angular.module('phenoCom').directive('carouselComponentCenter', function() {
                     "<button class='icon-right-arrow'></button>"
                 ],
                 loop: true,
+                dots: false,
                 touchDrag: true
             });
 

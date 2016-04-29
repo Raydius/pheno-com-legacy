@@ -242,7 +242,10 @@
       margin: 0 15px;
     }
 }
-@media (max-width: 640px) { 
+@media (max-width: 640px) {
+  .work .more-case-wrapper.desktop {
+    display: none;
+  }
   .topnav .nav-wrapper {
     padding-top: 20px;
     margin: 0;
@@ -395,6 +398,11 @@
     }
   }
   .detail-wrapper {
+    display: none;
+  }
+}
+@media (min-width: 640px) {
+  .work .more-case-wrapper.mobile {
     display: none;
   }
 }
