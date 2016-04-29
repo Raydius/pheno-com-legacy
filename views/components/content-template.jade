@@ -44,7 +44,6 @@ section.row.no-padding.work.work-details
 				article.col-sm-12.col-md-12.no-padding.tet
 					if contentItem.video
 						video-component(thumb=contentItem.thumb, alt=contentItem.thumbAlt, title=contentItem.thumbTitle, vimeo=contentItem.vimeo)
-
 					if contentItem.carousel
 						carousel-component.carousel-component.owl-carousel.no-padding
 							each carouselItem in contentItem.images
