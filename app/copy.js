@@ -984,24 +984,24 @@ var copy =
       "positions": "Open Positions",
       "listing": [
         {
-          "listingTitle": "Digital Design Director",
-          "listingUrl": "https://www.linkedin.com/company/phenomenon/careers"
-        },
-        {
-          "listingTitle": "Senior Brand Strategist",
-          "listingUrl": "https://www.linkedin.com/company/phenomenon/careers"
-        },
-        {
-          "listingTitle": "Strategy Director",
-          "listingUrl": "https://www.linkedin.com/company/phenomenon/careers"
-        },
-        {
-          "listingTitle": "Digital Brand Director",
-          "listingUrl": "https://www.linkedin.com/company/phenomenon/careers"
+          "listingTitle": "UI Director",
+          "listingUrl": "https://www.linkedin.com/jobs2/view/125948058"
         },
         {
           "listingTitle": "Studio Manager",
-          "listingUrl": "https://www.linkedin.com/company/phenomenon/careers"
+          "listingUrl": "https://www.linkedin.com/jobs2/view/118724849"
+        },
+        {
+          "listingTitle": "Digital Design Director",
+          "listingUrl": "https://www.linkedin.com/jobs2/view/85312460"
+        },
+        {
+          "listingTitle": "Digital Brand Manager (Digital Account Executive)",
+          "listingUrl": "https://www.linkedin.com/jobs2/view/125942963"
+        },
+        {
+          "listingTitle": "Brand Manager/Account Executive",
+          "listingUrl": "https://www.linkedin.com/jobs2/view/111550639"
         },
       ],
       "details": [
