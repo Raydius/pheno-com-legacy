@@ -14,6 +14,7 @@ section.row.no-padding.home
 		.icon-right-arrow
 		ul.row.no-padding.featured-contributors
 			h6 Featured Contributors
+			// first 3 contributors
 			each contributorItem in pageData.contributors
 				li.col-sm-12.col-md-4 
 					if contributorItem.contributorAvatar 
@@ -31,6 +32,7 @@ section.row.no-padding.home
 				input.red.view-more(type="checkbox" name="toggle" id="toggle") 
 				label(for="toggle") 
 				.see-more-container
+					// six more contributors
 					each contributorItem in pageData.contributorsMore
 						li.col-sm-12.col-md-4 
 							if contributorItem.contributorAvatar 
