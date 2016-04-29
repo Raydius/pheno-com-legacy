@@ -23,6 +23,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
             }, 300, function(){
         });
        $('body').removeClass('opend');
+       $('#hamburger').removeClass('open');
     });
 
     var fixedheader = $("nav.topnav, .logo-wrapper");

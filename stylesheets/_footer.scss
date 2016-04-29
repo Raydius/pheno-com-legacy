@@ -39,7 +39,9 @@ footer, .footer{
 		color: $gray_font;
 		font-size: 16px;
 	}
-
+	.social {
+		padding-right: 0;
+	}
 	.social a{
 		color: #ccc;
 		font-size: $h4_size;

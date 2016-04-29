@@ -46,7 +46,7 @@
   .about .top-main p {
     min-width: 100%;
   }
-  .top-main h2, .work h2 blockquote {
+  .top-main h2, .home .top-main h2, .work h2 blockquote {
     font-size: 40px;
   }
   .about .top-main h2 {
@@ -69,7 +69,7 @@
 
 @media (min-width: 768px) and (max-width: 1280px) {
     main, .maincontent {
-      padding: 20px $base_spacing+30;
+      padding: 20px $base_spacing;
     }
     .topnav {
       .nav-wrapper {
@@ -402,6 +402,11 @@
   }
   .detail-wrapper {
     display: none;
+  }
+}
+@media (min-width: 768px) {
+  .contact .col-md-6 {
+    padding: 0 15px;
   }
 }
 @media (min-width: 640px) {
