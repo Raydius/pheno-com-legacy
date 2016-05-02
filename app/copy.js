@@ -205,7 +205,7 @@ var copy =
         "OK, but can you really claim to be experts in each of those categories? How are you not a jack of all trades and master of none?",
         "<span>We've been giving it a lot of thought and we think there are two things that made this happen: our people and our organization.</span>",
         "<span>Our people are strategists who love strategy, but hate the limits of working at a strategy firm. They're designers who love design, but feel handcuffed working at a pure design shop. They're digital leaders who don't want to be so disconnected from the brand thinking. And they're ad agency leaders who are sick and tired of being relegated to just TV, Print and Out of Home. They're all looking for innovation. And our organization gives them the ability to apply their skills in all kinds of new ways.</span>",
-        "<span>We fundamentally understand each of these disciplines and how to plug them into the agency. They aren't bolted onto the framework as an added discipline. They are a part of the gears and fabric of the agency at a very core lev</span>"
+        "<span>We fundamentally understand each of these disciplines and how to plug them into the agency. They aren't bolted onto the framework as an added discipline. They are a part of the gears and fabric of the agency at a very core level.</span>"
       ],
       "paragraph5": [
         "It's interesting that you say that your talent is looking for innovation, because as a client, that's exactly what I'm looking for too.",
