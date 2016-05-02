@@ -876,7 +876,46 @@ var copy =
       ],
       "detailcontent": [
         {
-
+          "type": "video",
+            "video": true,
+            "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
+            "thumbAlt": "Xome - TV Spot - Transparent House",
+            "thumbTitle": "Click to play video",
+            "vimeo": "159447308"
+        },
+        {
+          "type": "video",
+            "video": true,
+            "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
+            "thumbAlt": "Xome - TV Spot - Transparent House",
+            "thumbTitle": "Click to play video",
+            "vimeo": "159448353"
+        },
+        {
+          "carousel": true,
+          "images": [
+            {
+              "url": require("assets/images/thinkthin-1-01.jpg"),
+              "alt": "Men's Wearhouse Photo 1"
+            },
+            {
+              "url": require("assets/images/thinkthin-1-02.jpg"),
+              "alt": "Wilson X Packaging Photo 2"
+            }
+          ]
+        },
+        {
+          "carousel": true,
+          "images": [
+            {
+              "url": require("assets/images/thinkthin-2-01.jpg"),
+              "alt": "Men's Wearhouse Photo 1"
+            },
+            {
+              "url": require("assets/images/thinkthin-2-02.jpg"),
+              "alt": "Wilson X Packaging Photo 2"
+            }
+          ]
         }
       ]
     },
