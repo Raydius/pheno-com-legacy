@@ -184,7 +184,8 @@
  .owl-nav {
   margin-top: 10px;
   text-align: center;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: transparent; 
+ }
    .owl-nav [class*='owl-'] {
 	    color: #FFF;
 	    background: transparent;
@@ -201,6 +202,11 @@
 	    	color: #979797;
 	    }
 	}
+  .desktop .owl-nav [class*='owl-'] button {
+    bottom: 10px;
+    position: absolute;
+  }
+
     .owl-nav [class*='owl-']:hover {
       color: $primary_color;
       text-decoration: none; 
@@ -255,14 +261,28 @@
   	.owl-nav {
   		cursor: pointer;
   	}
-	.owl-nav .owl-prev {
+	.mobile .owl-nav .owl-prev {
 	  margin-left: 30%; 
 	  float: left;
 	}
-	.owl-nav .owl-next {
+	.mobile .owl-nav .owl-next {
 	  margin-right: 30%;  
 	  float: right;
 	}
+  .desktop .owl-nav .owl-prev {
+    position: absolute;
+    left: 0%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+  }
+  .desktop .owl-nav .owl-next {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+  }
 /* .owl-nav {
   margin-top: 30px;
 }
