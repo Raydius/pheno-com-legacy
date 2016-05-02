@@ -180,7 +180,7 @@ var copy =
       "quoterTitle": "CEO, Wilson",
       "description": "Phenomenon - About",
       "dictionary": {
-        "noun": "1. a person adept at solving problems.",
+        "noun": "1. a person adept at solving problems.", 
         "verb": "2. to carry out a solution in any direction that is correct for the problem."
       },
       "paragraph1": [
