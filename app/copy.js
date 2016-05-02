@@ -484,7 +484,7 @@ var copy =
           "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
           "thumbAlt": "Wilson X - TV Spot - All Day",
           "thumbTitle": "Click to play video",
-          "vimeo": "155010841",
+          "vimeo": "165052370",
           "mainDescription": [
           ]
         }
@@ -712,7 +712,7 @@ var copy =
           "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
           "thumbAlt": "Xome - TV Spot - Transparent House",
           "thumbTitle": "Click to play video",
-          "vimeo": "155071130"
+          "vimeo": "165039901"
         }
       ],
       "detailcontent": [
