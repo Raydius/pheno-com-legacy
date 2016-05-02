@@ -695,33 +695,15 @@ var copy =
       ],
       "topcontent": [
         {
-          "type": "image",
-          "image": true,
-          "imageUrl": require("assets/images/xome-comp-01-opt.jpg"),
-          "imageAlt": "Sunny",
-          "mainDescription": [
-            "<span class='red'>We fell in love with an idea that really spoke to what Xome does, it makes the entire buying/selling process more transparent.</span>"
-          ]   
+          "type": "video",
+          "video": true,
+          "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
+          "thumbAlt": "Xome - TV Spot - Transparent House",
+          "thumbTitle": "Click to play video",
+          "vimeo": "155071130"
         }
       ],
       "detailcontent": [
-        {
-          "type": "image",
-          "image": true,
-          "imageUrl": require("assets/images/sunny-1.jpg"),
-          "imageAlt": "Sunny",
-          "mainDescription": [
-            'Strategically, Pheno recognized that there was no loyalty in our industry. People took out their first loan and then had to pay so much back that they took out another loan to pay for that, and so on and so on. Often working with multiple companies in the process, or as they deemed it, "a circle of debt."',
-            "They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq.",
-            "Phenomenon helped us with all of this. They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq."            
-          ]      
-        },
-        {
-          "type": "image",
-          "image": true,
-          "imageUrl": require("assets/images/sunny-2.jpg"),
-          "imageAlt": "Sunny",
-        },
         {
           "type": "video",
           "video": true,
@@ -729,6 +711,15 @@ var copy =
           "thumbAlt": "Xome - TV Spot - Transparent House",
           "thumbTitle": "Click to play video",
           "vimeo": "159123265"
+        },
+        {
+          "type": "image",
+          "image": true,
+          "imageUrl": require("assets/images/xome-comp-01-opt.jpg"),
+          "imageAlt": "Sunny",
+          "mainDescription": [
+            "<span class='red'>We fell in love with an idea that really spoke to what Xome does, it makes the entire buying/selling process more transparent.</span>"
+          ]   
         }
       ]
     },
