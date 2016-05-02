@@ -1118,7 +1118,7 @@ var copy =
       "offices": [
         {
           "name": "Los Angeles",
-          "phone": "+1 313 800 800",
+          "phone": "+1 323 648 4000",
           "address": "5900 Wilshire Blvd, Floor 28, <br>Los Angeles, CA 90036",
           "imgSrc": require("assets/images/contact/contact01.png")
         },
