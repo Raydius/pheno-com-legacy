@@ -123,7 +123,7 @@ figcaption {
 	}
 }
 cite {
-	color: $black_font;
+	color: $gray_font;
 	font-size: 14px;
 	display: block;
 	margin-top: 5px;
@@ -175,7 +175,7 @@ h2 blockquote, h3 blockquote  {
 		position: absolute;
 		left: -25px;
 		top: 10px; 
-		color: $black_font;
+		color: inherit;
 	}
 	&:last-letter {
 		color: red;
