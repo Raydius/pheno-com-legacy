@@ -804,7 +804,7 @@ var copy =
           "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
           "thumbAlt": "Xome - TV Spot - Transparent House",
           "thumbTitle": "Click to play video",
-          "vimeo": "159123265"
+          "vimeo": "164752774"
         }
       ],
       "detailcontent": [
@@ -843,7 +843,7 @@ var copy =
           "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
           "thumbAlt": "Xome - TV Spot - Transparent House",
           "thumbTitle": "Click to play video",
-          "vimeo": "159123265"
+          "vimeo": "134437401"
         }
       ]
     },
