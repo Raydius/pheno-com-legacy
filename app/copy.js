@@ -382,8 +382,25 @@ var copy =
       ],
       "topcontent": [
         {
+          "video": true,
+          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
+          "thumbAlt": "Wilson X - TV Spot - All Day",
+          "thumbTitle": "Click to play video",
+          "vimeo": "155010840",
+          "mainDescription": [
+            "<span class='red'>The film is not just a celebration of the biggest athletes in the world, it puts amateurs and kids on the same level.</span>",
+            "The film is not just a celebration of the biggest athletes in the world, it puts amateurs and kids on the same level. With the anthem launch, we actually didn't have a massive media buy, so we had to figure out a way to leverage social media and get our fans to participate in the idea. Wilson has never really had a huge social presence. And we wanted –actually we needed- to changed that. We took the momentum of the anthem spot to get people to interact with us on a social level and live this mantra. We asked kids and amateurs all over the world to upload videos of themselves out on the playing fields and we then edited in that footage to the actual spot. Kids all over the world now had their own personalized version of the spot that they could share over Facebook, Twitter or Instagram."
+          ]
+        }
+      ],
+      "detailcontent": [
+        {
           "carousel": true,
           "images": [
+            {
+              "url": require("assets/images/wilson_anthem_1_01-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 2"
+            },
             {
               "url": require("assets/images/wilson_anthem_1_02-opt.jpg"),
               "alt": "Wilson X Packaging Photo 2"
@@ -403,26 +420,21 @@ var copy =
             {
               "url": require("assets/images/wilson_anthem_1_06-opt.jpg"),
               "alt": "Wilson X Packaging Photo 6"
+            },
+            {
+              "url": require("assets/images/wilson_anthem_1_07-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 6"
+            },
+            {
+              "url": require("assets/images/wilson_anthem_1_08-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 6"
             }
-          ]
-        }
-      ],
-      "detailcontent": [
-        {
-          "video": true,
-          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
-          "thumbAlt": "Wilson X - TV Spot - All Day",
-          "thumbTitle": "Click to play video",
-          "vimeo": "155010840",
-          "mainDescription": [
-            "<span class='red'>The film is not just a celebration of the biggest athletes in the world, it puts amateurs and kids on the same level.</span>",
-            "The film is not just a celebration of the biggest athletes in the world, it puts amateurs and kids on the same level. With the anthem launch, we actually didn't have a massive media buy, so we had to figure out a way to leverage social media and get our fans to participate in the idea. Wilson has never really had a huge social presence. And we wanted –actually we needed- to changed that. We took the momentum of the anthem spot to get people to interact with us on a social level and live this mantra. We asked kids and amateurs all over the world to upload videos of themselves out on the playing fields and we then edited in that footage to the actual spot. Kids all over the world now had their own personalized version of the spot that they could share over Facebook, Twitter or Instagram."
           ]
         },
         {
           "type": "image",
           "image": true,
-          "imageUrl": require("assets/images/wilson_anthem_image.png"),
+          "imageUrl": require("assets/images/Wilson-Anthem-LandingPage_02c.jpg"),
           "imageAlt": "SLS",
           "mainDescription": [
             "When it came to Wilson.com, we had a pretty big challenge. For years the site was very product oriented. But when it came to purchasing the product, people would get the info they need and then run off to a local sporting goods store to buy. This wasn’t exactly the ideal experience for us. When discussing the relaunch of Wilson.com, Pheno actually showed us a lot of leading fashion retail websites as a model that would work for us. The idea behind this approach is building what is called “shoppable stories” where watchable content revolved around the clothing, or in our case, the equipment."
@@ -720,6 +732,14 @@ var copy =
           "mainDescription": [
             "<span class='red'>We fell in love with an idea that really spoke to what Xome does, it makes the entire buying/selling process more transparent.</span>"
           ]   
+        },
+        {
+          "type": "video",
+          "video": true,
+          "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
+          "thumbAlt": "Xome - TV Spot - Transparent House",
+          "thumbTitle": "Click to play video",
+          "vimeo": "155071130"
         }
       ]
     },

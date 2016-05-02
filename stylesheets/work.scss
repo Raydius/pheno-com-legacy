@@ -116,14 +116,6 @@
 		margin-top: $base_spacing;
 		p {
 			margin-top: 30px;
-			span.red {
-				font-family: $secondary_font;
-				font-size: 34px;
-				display: block;
-				margin: ($base_spacing - 20) 0;
-				margin-left: - ($base_spacing - 20);
-				line-height: 40px;
-			}
 		}
 		&:first-of-type {
 			margin: 0;
@@ -239,6 +231,14 @@
 			}
 		}
 		margin-bottom: $base_spacing;
+	}
+	span.red {
+		font-family: $secondary_font;
+		font-size: 34px;
+		display: block;
+		margin: ($base_spacing - 20) 0;
+		margin-left: - ($base_spacing - 20);
+		line-height: 40px;
 	}
 }
 .bubble 
