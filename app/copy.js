@@ -468,8 +468,51 @@ var copy =
       ],
       "topcontent": [
         {
+          "video": true,
+          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
+          "thumbAlt": "Wilson X - TV Spot - All Day",
+          "thumbTitle": "Click to play video",
+          "vimeo": "155010841",
+          "mainDescription": [
+          ]
+        }
+      ],
+      "detailcontent": [
+        {
+          "video": true,
+          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
+          "thumbAlt": "Wilson X - TV Spot - All Day",
+          "thumbTitle": "Click to play video",
+          "vimeo": "155010839",
+          "mainDescription": [
+            "The results: We sold out on Amazon in just two weeks and Wilson X will be in retail stores all over the country this Spring."
+          ]
+        },
+        {
+          "video": true,
+          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
+          "thumbAlt": "Wilson X - TV Spot - All Day",
+          "thumbTitle": "Click to play video",
+          "vimeo": "155010836",
+          "mainDescription": [
+          ]
+        },
+        {
+          "video": true,
+          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
+          "thumbAlt": "Wilson X - TV Spot - All Day",
+          "thumbTitle": "Click to play video",
+          "vimeo": "155010835",
+          "mainDescription": [
+          ]
+        },
+        {
           "carousel": true,
           "images": [
+            {
+              "url": require("assets/images/wilson_x_1_01-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 2"
+            },
             {
               "url": require("assets/images/wilson_x_1_02-opt.jpg"),
               "alt": "Wilson X Packaging Photo 2"
@@ -494,16 +537,10 @@ var copy =
           "mainDescription": [
             "Phenomenon helped us with development of all aspects of the ball at a very early stage. Including both naming and designing it. INFORMATION ABOUT THE PRODUCT STRATEGY. We then worked with them to create a user experience that was simple and easy, but also felt cool and represented the next generation of Wilson. It’s one thing to put millennials in your spot, it’s whole different thing to give them a piece of technology that they actually use and love."
           ]
-        }
-      ],
-      "detailcontent": [
+        },
         {
           "carousel": true,
           "images": [
-            {
-              "url": require("assets/images/wilson_x_2_01-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 1"
-            },
             {
               "url": require("assets/images/wilson_x_2_02-opt.jpg"),
               "alt": "Wilson X Packaging Photo 2"
@@ -540,17 +577,7 @@ var copy =
           "mainDescription": [
             "<span class='red'>This was a bold new step for us because suddenly a mobile app was an aspect of what we were selling. The app needed to be as good as the ball itself.</span>"
           ]
-        },
-        {
-          "video": true,
-          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
-          "thumbAlt": "Wilson X - TV Spot - All Day",
-          "thumbTitle": "Click to play video",
-          "vimeo": "155010839",
-          "mainDescription": [
-            "The results: We sold out on Amazon in just two weeks and Wilson X will be in retail stores all over the country this Spring."
-          ]
-        },
+        }
       ]
     },
     "sls": { 
