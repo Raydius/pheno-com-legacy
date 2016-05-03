@@ -25,7 +25,7 @@
 }
 @media (max-width: 768px) {   
   main, .maincontent, .topnav .nav-wrapper {
-    padding: 0 $base_spacing - 45;
+    padding: 0 $base_spacing - 30;
   }
   .topnav .nav-wrapper {
     margin-top: 30px;
@@ -264,18 +264,14 @@
     margin: 0;
   }
   .top-main h2 blockquote {
-    font-size: 34px;
-    line-height: 40px;
+    //font-size: 34px;
+    //line-height: 40px;
     &:before {
       left: 0;
     }
     &:first-letter {
       padding-left: 20px;
     }
-  }
-  .top-main h2 {
-    font-size: 28px!important;
-    line-height: 34px!important;
   }
   .work.work-details {
     .top-main h2 blockquote {
@@ -361,10 +357,10 @@
   }
   .top-main {
     border-bottom: 0;
-    padding: ($base_spacing - 20) 15px;
+    padding: ($base_spacing - 20) 30px;
   }
   .work .col-md-12.top-main {
-    padding: 40px 15px;
+    padding: 40px 30px;
   }
   .work .col-md-12 {
     margin-bottom: $base_spacing - 20;

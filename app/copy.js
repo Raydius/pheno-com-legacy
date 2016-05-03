@@ -174,7 +174,7 @@ var copy =
     "about": {
       "title": "About Phenomenon",
       "className": "about",
-      "blockquote": "Something like<br> a Phenomenon",
+      "blockquote": "Something like a Phenomenon",
       "subquote": "A behind the scenes look at the most appropriately-name agency I know.",
       "quoterName": "Mike Dowse",
       "quoterTitle": "CEO, Wilson",

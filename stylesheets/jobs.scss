@@ -4,6 +4,9 @@
 		h2 {
 			margin-top: $base-spacing*2;
 			margin-left: 20px;
+			@media screen and (max-width: 640px) {
+				margin-left: 0;
+			}
 			blockquote {
 				font-size: 36px;
     			line-height: 42px;
@@ -15,6 +18,9 @@
 		}
 		cite {
 			margin-left: 20px;
+			@media screen and (max-width: 640px) {
+				margin-left: 0;
+			}
 		}
 		border-bottom: 0;
 		.col-md-5 {
@@ -29,7 +35,9 @@ ul {
 		margin-top: $base-spacing*2 - 40;
 		margin-left: 0;
 		padding: 0 20px;
-
+		@media screen and (max-width: 640px) {
+			padding: 0;
+		}
 		> span {
 		color: $primary_color;
 			font-family: "Circular-Bold";

@@ -2,6 +2,10 @@
 	h2 blockquote {
 		line-height: 42px;
 		font-size: 36px;
+		@media screen and (max-width: 640px) {
+			font-size: 28px;
+			line-height: 34px;
+		}
 	}
 	h3 blockquote {
 		letter-spacing: -0.5px;
@@ -11,6 +15,9 @@
 		}
 		&:first-letter {
 			padding-left: 10px;
+		}
+		@media screen and (max-width: 640px) {
+			margin-top: 0;
 		}
 	}
 	.top-main {
@@ -62,7 +69,23 @@
 			}
 		}
 	}
-
+	.change-order {
+		.col-md-6 {
+			float: right;
+		}
+		.col-md-6, .col-md-4 {
+			@media screen and (max-width: 640px) {
+				padding: 0;
+			}
+		}
+	}
+	.mugs {
+		.col-md-7, .col-md-5 {
+			@media screen and (max-width: 640px) {
+				padding: 0;
+			}
+		}
+	}
 	.headshots {
 		.col-md-15 {
 			margin: 0 8px;
@@ -211,6 +234,14 @@
 	}
 	cite {
 		padding: 0 10px 30px 0;
+	}
+	.margin-bottom-md {
+		margin-bottom: 40px;
+	}
+	h3 {
+		@media screen and (max-width: 640px) {
+			padding-left: 30px;
+		}
 	}
 } 
 @keyframes fadeout {
