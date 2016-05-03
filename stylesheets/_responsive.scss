@@ -25,7 +25,7 @@
 }
 @media (max-width: 768px) {   
   main, .maincontent, .topnav .nav-wrapper {
-    padding: 0 $base_spacing - 30;
+    padding: 0 $base_spacing - 45;
   }
   .topnav .nav-wrapper {
     margin-top: 30px;
@@ -82,7 +82,7 @@
 
 @media (min-width: 768px) and (max-width: 1280px) {
     main, .maincontent {
-      padding: 20px $base_spacing;
+      padding: 20px $base_spacing+30;
     }
     .topnav {
       .nav-wrapper {
@@ -427,5 +427,10 @@
 @media (min-width: 640px) {
   .work .more-case-wrapper.mobile {
     display: none;
+  }
+}
+@media (max-width: 768px) and (min-width: 640px) {
+  main, .maincontent, .topnav .nav-wrapper {
+    padding: 0 30px;
   }
 }
