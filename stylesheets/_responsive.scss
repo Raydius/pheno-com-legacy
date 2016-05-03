@@ -259,6 +259,10 @@
     }
 }
 @media (max-width: 640px) {
+  .mobile-full {
+    padding: 0;
+    margin: 0;
+  }
   .top-main h2 blockquote {
     font-size: 34px;
     line-height: 40px;

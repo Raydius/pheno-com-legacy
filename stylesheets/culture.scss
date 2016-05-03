@@ -5,6 +5,7 @@
 	}
 	h3 blockquote {
 		letter-spacing: -0.5px;
+		max-width: 340px;
 		&:before {
 			left: -5px;
 		}
@@ -41,11 +42,19 @@
 				img:last-of-type {
 					width: 70%;
 					float: right;
+					@media screen and (max-width: 640px) {
+						width: 100%;
+					}
 				}
 			}
 			.col-md-5 {
 				img {
 					margin-top: $base_spacing -30;
+				}
+			}
+			.col-md-7, .col-md-5 {
+				@media screen and (max-width: 640px) {
+					padding: 0;
 				}
 			}
 		}
