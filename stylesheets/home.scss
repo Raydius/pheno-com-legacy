@@ -44,6 +44,11 @@
 			opacity: 1;
 			transform: translateY(0);
 		}
+		.col-md-4 {
+			width: calc(33.33333% - 40px);
+			padding: 0;
+			margin: 0 20px 60px 20px;
+		}
 		h6 {
 			font-size: 15px;
 			border-bottom: 1px solid #ccc;
@@ -61,6 +66,8 @@
 			border-bottom: 1px solid #ccc;
 			padding-bottom: $base_spacing - 40;
 			font-weight: normal;
+			width: 220px;
+			margin: 0 auto;	
 			span {
 				&:first-of-type {
 					font-size: 18px;
@@ -99,6 +106,7 @@
 				margin-left: -100px;
 				font-family: "Circular-bold";
 				font-weight: normal;
+				cursor: pointer;
 				&:after {
 					content: "View More Contributors"
 				}

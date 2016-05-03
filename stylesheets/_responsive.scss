@@ -18,6 +18,9 @@
       display: none;
     }
   }
+  .home .featured-contributors .col-sm-12 {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {   
   main, .maincontent, .topnav .nav-wrapper {

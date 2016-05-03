@@ -57,19 +57,27 @@ section.row.no-padding.work.work-details
 							article.col-md-7
 								p!= par
 	each contentItem in pageData.detailcontent
-		article.col-md-12.no-padding.tet
-			if contentItem.video
+		if contentItem.video
+			article.col-md-12.no-padding.tet
 				video-component(thumb=contentItem.thumb, alt=contentItem.thumbAlt, title=contentItem.thumbTitle, vimeo=contentItem.vimeo)
 
-			if contentItem.carousel
+		if contentItem.carousel
+			article.col-md-12.no-padding.tet
 				carousel-component.carousel-component.owl-carousel.no-padding
 					each carouselItem in contentItem.images
 						img(src=carouselItem.url, alt=carouselItem.alt)
-			if contentItem.image
+		if contentItem.image
+			article.col-md-12.no-padding.tet
 				section.image-component.component.row.no-padding
 					.col-xs-12.no-padding
 						img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
-			if contentItem.mainDescription
+		if contentItem.scrollingSite
+			article.col-md-12.no-padding.tet(sticky offset="80") 
+				section.image-component.component.row.no-padding
+					.col-xs-12.no-padding
+						img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
+		if contentItem.mainDescription
+			article.col-md-12.no-padding.tet
 				each par in contentItem.mainDescription
 					article.col-md-7
 						p!= par
