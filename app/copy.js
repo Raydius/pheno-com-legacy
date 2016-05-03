@@ -784,7 +784,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": require("assets/images/sunny-1.jpg"),
+          "imageUrl": require("assets/images/sunny-1.png"),
           "imageAlt": "Sunny",
           "mainDescription": [
             "Strategically, Pheno recognized that there was no loyalty in our industry. People took out their first loan and then had to pay so much back that they took out another loan to pay for that, and so on and so on. Often working with multiple companies in the process, or as they deemed it, &#8222;a circle of debt.",

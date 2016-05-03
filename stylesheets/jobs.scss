@@ -3,9 +3,14 @@
 
 		h2 {
 			margin-top: $base-spacing*2;
+			margin-left: 20px;
 			blockquote {
 				font-size: 36px;
     			line-height: 42px;
+    			@media screen and (max-width: 640px) {
+					font-size: 28px;
+					line-height: 34px;
+				}
 			}
 		}
 		cite {
