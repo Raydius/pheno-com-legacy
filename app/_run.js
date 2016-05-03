@@ -20,7 +20,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
 
         $('.home .icon-right-arrow').click(function() {
             $('html, body').animate({
-                    scrollTop: 260
+                    scrollTop: 760
                 }, 200, function(){
             });
         })
