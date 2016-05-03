@@ -40,6 +40,8 @@
 		opacity: 0;
 		transform: translateY(1000px);
 		transition: all 1s;
+		transition-delay: 100s;
+		position: relative;
 		&.show {
 			opacity: 1;
 			transform: translateY(0);
