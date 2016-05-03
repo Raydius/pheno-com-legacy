@@ -373,6 +373,11 @@ var copy =
         "<span class='red'>We worked with the strategic team at Phenomenon to land on a pretty powerful yet simple idea; Wilson is every athletes faithful weapon.</span>",
         "Before we did any consumer-facing branding, we asked Pheno to create something that could rally the Wilson team from within. What did this new face of Wilson mean? How could we as employees live this? So we produced a beautifully bound brand book containing words and images that boldly and loudly defined who we are and handed them out to each of our employees."
       ],
+      "caseWriter": {
+        "name": "Amy Weisenbach",
+        "title": "VP Marketing, Wilson",
+        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world’s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+      },
       "heroThumb": require('assets/images/wilsonx_thumb_01-opt.jpg'),
       "heroThumbAlt": "Wilson X - Case Study Video",
       "heroThumbTitle": "Click to play video",
@@ -454,13 +459,6 @@ var copy =
           ],
           "mainDescription": [
             "With our access to some of the most iconic athletes in the world, we created dozens of short films that showcased products and our athletes relationships with them. This is content that you could only get on our site which increased views, which increased buzz which -as you can guess- has dramatically increased online sales."
-          ],
-          "caseWriter": [
-            {
-              "name": "Amy Weisenbach",
-              "title": "VP Marketing, Wilson",
-              "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world’s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
-            }
           ]
         }
       ]
@@ -618,6 +616,11 @@ var copy =
         "<span class='red'>So when we created the branding for the SLS Vegas, we literally mixed the old Vegas with the new.</span>",
         "The first thing Pheno loved about our new location is the same thing we loved, the history. The site was the exact location of the iconic Sahara Hotel & Casino which was the place you wanted to be in 60s Vegas. It was elegant, sophisticated, glamorous. The Sahara represented a different time for Vegas, with different values. And we wanted to bring those feelings back. A new old way to experience Vegas, so-to-speak. So when we created the branding for the SLS Vegas, we literally mixed the old Vegas with the new."
       ],
+      "caseWriter": {
+        "name": "Amy Weisenbach",
+        "title": "VP Marketing, Wilson",
+        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world’s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+      },
       "details": [
         "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
       ],
@@ -727,6 +730,11 @@ var copy =
           "vimeo": "165039901"
         }
       ],
+      "caseWriter": {
+        "name": "Amy Weisenbach",
+        "title": "VP Marketing, Wilson",
+        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world’s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+      },
       "detailcontent": [
         {
           "type": "video",
@@ -784,6 +792,11 @@ var copy =
           ]      
         }
       ],
+      "caseWriter": {
+        "name": "Amy Weisenbach",
+        "title": "VP Marketing, Wilson",
+        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world’s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+      },
       "detailcontent": [
         {
           "type": "image",
@@ -915,6 +928,11 @@ var copy =
             "vimeo": "158975908"
         }
       ],
+      "caseWriter": {
+        "name": "Amy Weisenbach",
+        "title": "VP Marketing, Wilson",
+        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world’s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+      },
       "detailcontent": [
         {
           "type": "video",
@@ -1001,6 +1019,11 @@ var copy =
           ]
         }
       ],
+      "caseWriter": {
+        "name": "Amy Weisenbach",
+        "title": "VP Marketing, Wilson",
+        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world’s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+      },
       "detailcontent": [
         {
           "type": "image",
