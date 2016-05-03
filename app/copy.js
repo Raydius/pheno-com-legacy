@@ -433,7 +433,7 @@ var copy =
         },
         {
           "type": "image",
-          "image": true,
+          "scrollingSite": true,
           "imageUrl": require("assets/images/Wilson-Anthem-LandingPage_02c.jpg"),
           "imageAlt": "SLS",
           "mainDescription": [
@@ -1126,7 +1126,7 @@ var copy =
           "name": "Chicago",
           "phone": "+1 323 648 4000",
           "address": "118 N Peoria Street, Suite 5N <br>Chicago, IL 60607",
-          "imgSrc": require("assets/images/contact/contact02.png")
+          "imgSrc": require("assets/images/contact/contact-chicago.jpg")
         }
       ],
       "departments": [
