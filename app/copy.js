@@ -320,7 +320,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": require('assets/images/work-5.jpg'),
+          "imageUrl": require('assets/images/work-5.png'),
           "imageAlt": "Wilson Image 5",
           "legend": "Finance / Loans",
           "headline": 'It&#8217;s A "Sunny" Day<br> for Payday Loans.',
