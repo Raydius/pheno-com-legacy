@@ -81,6 +81,12 @@ section.row.no-padding.work.work-details
 				each par in contentItem.mainDescription
 					article.col-md-7
 						p!= par
-	
+	article.col-md-6.no-padding.case-writer
+		span
+			span!= pageData.caseWriter.name
+			/ 
+			span= pageData.caseWriter.title
+		div!= pageData.caseWriter.description
+
 	include more-cases
 	

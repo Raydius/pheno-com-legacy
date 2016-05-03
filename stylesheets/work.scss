@@ -8,6 +8,13 @@
 		.top-main {
 			margin-bottom: $base_spacing - 20;
 		}
+		.case-writer {
+			border-top: 1px solid #ccc;
+			padding-top: $base_spacing/2;
+			> span > span:first-of-type {
+				font-family: "Circular-Bold";
+			}
+		}
 		h2 blockquote {
 			font-size: 60px;
 			line-height: 70px;

@@ -175,7 +175,7 @@ var copy =
       "title": "About Phenomenon",
       "className": "about",
       "blockquote": "Something like<br> a Phenomenon",
-      "subquote": "A behind the scenes look at the mostappropriately-name agency I know.",
+      "subquote": "A behind the scenes look at the most appropriately-name agency I know.",
       "quoterName": "Mike Dowse",
       "quoterTitle": "CEO, Wilson",
       "description": "Phenomenon - About",
@@ -454,6 +454,13 @@ var copy =
           ],
           "mainDescription": [
             "With our access to some of the most iconic athletes in the world, we created dozens of short films that showcased products and our athletes relationships with them. This is content that you could only get on our site which increased views, which increased buzz which -as you can guess- has dramatically increased online sales."
+          ],
+          "caseWriter": [
+            {
+              "name": "Amy Weisenbach",
+              "title": "VP Marketing, Wilson",
+              "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world’s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+            }
           ]
         }
       ]
@@ -478,6 +485,11 @@ var copy =
       "details": [
         "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
       ],
+      "caseWriter": {
+        "name": "Amy Weisenbach",
+        "title": "VP Marketing, Wilson",
+        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world’s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+      },
       "topcontent": [
         {
           "video": true,
