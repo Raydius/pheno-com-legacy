@@ -438,7 +438,7 @@ var copy =
         },
         {
           "type": "image",
-          "scrollingSite": true,
+          "image": true,
           "imageUrl": require("assets/images/Wilson-Anthem-LandingPage_02c.jpg"),
           "imageAlt": "SLS",
           "mainDescription": [

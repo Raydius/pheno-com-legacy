@@ -54,7 +54,7 @@ section.row.no-padding.work.work-details
 								img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
 					if contentItem.mainDescription
 						each par in contentItem.mainDescription
-							article.col-md-7
+							article.col-md-7.no-padding
 								p!= par
 	each contentItem in pageData.detailcontent
 		if contentItem.video
@@ -79,7 +79,7 @@ section.row.no-padding.work.work-details
 		if contentItem.mainDescription
 			article.col-md-12.no-padding.tet
 				each par in contentItem.mainDescription
-					article.col-md-7
+					article.col-md-7.no-padding
 						p!= par
 	if pageData.caseWriter
 		article.col-md-6.no-padding.case-writer
