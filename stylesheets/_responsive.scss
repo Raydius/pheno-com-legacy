@@ -259,6 +259,31 @@
     }
 }
 @media (max-width: 640px) {
+  .top-main h2 blockquote {
+    font-size: 34px;
+    line-height: 40px;
+    &:before {
+      left: 0;
+    }
+    &:first-letter {
+      padding-left: 20px;
+    }
+  }
+
+  .work.work-details {
+    .top-main h2 blockquote {
+        &:first-letter {
+          padding-left: 0;
+        }
+      }
+  }
+  .work p span.red {
+    font-size:20px;
+    line-height: 26px;
+  }
+  .work h2 blockquote {
+    width: 100%;
+  }
   .work .more-case-wrapper.desktop, .work .more-cases > a {
     display: none;
   }

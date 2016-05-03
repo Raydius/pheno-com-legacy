@@ -260,7 +260,7 @@ var copy =
       "title": "Work Cases Phenomenon",
       "className": "work",
       "description": "Phenomenon - Work",
-      "blockquote": "A lot of the work they do is confidential. <br>Here&#8217;s some that isn&#8217t.&#8221;",
+      "blockquote": "A lot of the work they do is confidential. Here&#8217;s some that isn&#8217t.&#8221;",
       "quoterName": "Mike Dowse",
       "quoterTitle": "CEO, Wilson",
       "maincontent": [

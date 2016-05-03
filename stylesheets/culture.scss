@@ -8,11 +8,14 @@
 		&:before {
 			left: -5px;
 		}
+		&:first-letter {
+			padding-left: 10px;
+		}
 	}
 	.top-main {
 		border-bottom: 0;
 		cite {
-			margin-left: 20px;
+			margin-left: 0;
 			padding-left: 0;
 		}
 	}
@@ -190,12 +193,6 @@
 				}
 			}
 		}
-	}
-	h3 {
-		blockquote {
-			padding: 10px;
-		}
-		
 	}
 	cite {
 		padding: 0 10px 30px 0;
