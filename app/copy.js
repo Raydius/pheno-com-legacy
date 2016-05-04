@@ -694,8 +694,9 @@ var copy =
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
-        "If you&#8217;ve ever bought or sold a home, you know it&#8217;s a complex, fragmented and pretty unfriendly process. With Xome, we wanted to introduce a radically better way to do it.",
-        "<span class='red'>The whole purpose of Xome is to help homebuyers and sellers from start to finish. </span>",
+        "If you’ve ever bought or sold a home, you know it’s a complex, fragmented and darned unfriendly process. Believe it or not, studies have shown that buying a house is more stressful than bankruptcy, divorce or even the death of a loved one. With Xome, we not only brought homebuying into the 21st century, we introduced a radically better way to do it.",
+        "<span class='red'>The whole purpose of Xome is to help homebuyers and sellers from start to finish.</span>",
+        "Our mission is to give people more control, provide transparency and help people when they need it the most.",
         "The whole purpose of Xome is to help homebuyers and sellers from start to finish. So we worked with Pheno to build a beautifully intuitive mobile app. In just six weeks we completed the app making it the first truly integrated way to buy and sell a home. With it, you can list a home, search for a home, make and receive offers, move into escrow and close the deal, all from the palm of your hand."
       ],
       "topcontent": [
@@ -709,9 +710,9 @@ var copy =
         }
       ],
       "caseWriter": {
-        "name": "Amy Weisenbach",
-        "title": "VP Marketing, Wilson",
-        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world&#8217;s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+        "name": "Allison Cornia",
+        "title": "SVP Marketing, Xome",
+        "description": "Allison is a seasoned Senior Marketing Executive with over 15 years experience including over 5 years as a Director of Marketing at Microsoft."
       },
       "detailcontent": [
         {
@@ -773,9 +774,9 @@ var copy =
         }
       ],
       "caseWriter": {
-        "name": "Amy Weisenbach",
-        "title": "VP Marketing, Wilson",
-        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world&#8217;s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+        "name": "Patsy Hauer",
+        "title": "SVP Brand, Elevate",
+        "description": "Patsy is a Senior Vice President of Brand at Elevate. Over her 20-year career she has worked on global brands such as RadioShack, Sunny, Think Finance and spent over 6 years overseeing corporate creative design at Wal-Mart"
       },
       "detailcontent": [
         {
