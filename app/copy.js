@@ -451,9 +451,10 @@ var copy =
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
-        "Every sport has been affected by modern technology, but when it comes to the actual ball used in each sport, it&#8217s typically generations before there is any major advancement. With Wilson X, we really pushed the boundaries of what a basketball could be. It&#8217s the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment.",
-        "<span class='red'>It&#8217s the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment.</span>",
-        "The ball also develops players skills by infusing gaming mechanics into training. There&#8217s audio with crowd noise and sports commentary. There&#8217;s a countdown mode to help create clutch shooting for those pressure-filled minutes at the end of a game. And you can even share your progress with friends, family or coaches."
+        "With over 100 years of experience making sports equipment, we’ve been at the forefront of nearly every major technology advancement in just about every sport. So it only made sense to pioneer the use of sensors and IOT technology inside our equipment with the Wilson X Connected Basketball.",
+        "Wilson X really pushes the boundaries of what a basketball can be.",
+        "<span class='red'>It’s the first basketball that connects to your smartphone and tracks makes and misses without any attachments or accessories.</span>",
+        "The ball also develops player’s skills by infusing gaming mechanics into training. There’s audio with crowd noise and sports commentary. There’s a countdown mode to help create those pressure-filled minutes at the end of a game. And you can even share your progress with friends, family or coaches. It’s a ball that has the potential to truly take training to the next level by making you a more clutch shooter."
       ],
       "details": [
         "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
@@ -464,45 +465,6 @@ var copy =
         "description": "Amy is the VP of marketing for Wilson Sporting Goods. Prior to joining Wilson she was the first VP of Marketing for Trunk Club and has also worked at both Beam and Unilever on the AXE brand team. In 2012, Amy was named a Woman to Watch by Advertising Age. She is a graduate of Harvard Business School."
       },
       "topcontent": [
-        {
-          "video": true,
-          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
-          "thumbAlt": "Wilson X - TV Spot - All Day",
-          "thumbTitle": "Click to play video",
-          "vimeo": "165052370",
-          "mainDescription": [
-          ]
-        }
-      ],
-      "detailcontent": [
-        {
-          "video": true,
-          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
-          "thumbAlt": "Wilson X - TV Spot - All Day",
-          "thumbTitle": "Click to play video",
-          "vimeo": "155010839",
-          "mainDescription": [
-            "The results: We sold out on Amazon in just two weeks and Wilson X will be in retail stores all over the country this Spring."
-          ]
-        },
-        {
-          "video": true,
-          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
-          "thumbAlt": "Wilson X - TV Spot - All Day",
-          "thumbTitle": "Click to play video",
-          "vimeo": "155010836",
-          "mainDescription": [
-          ]
-        },
-        {
-          "video": true,
-          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
-          "thumbAlt": "Wilson X - TV Spot - All Day",
-          "thumbTitle": "Click to play video",
-          "vimeo": "155010835",
-          "mainDescription": [
-          ]
-        },
         {
           "carousel": true,
           "images": [
@@ -532,9 +494,11 @@ var copy =
             }
           ],
           "mainDescription": [
-            "Phenomenon helped us with development of all aspects of the ball at a very early stage. Including both naming and designing it. INFORMATION ABOUT THE PRODUCT STRATEGY. We then worked with them to create a user experience that was simple and easy, but also felt cool and represented the next generation of Wilson. It&#8217;s one thing to put millennials in your spot, it&#8217;s whole different thing to give them a piece of technology that they actually use and love."
+            "Phenomenon was at the table as we developed the ball and brought it to market. They helped us with positioning, the UX/UI of app development, product naming and of course, the marketing of the ball at launch. They were instrumental in helping us create a user experience that was simple and intuitive, but that also felt cool and represented the next generation of Wilson. It’s one thing to show young athletes in your advertising, it’s a whole different thing to give them a piece of technology that they actually use and love."
           ]
-        },
+        }
+      ],
+      "detailcontent": [
         {
           "carousel": true,
           "images": [
@@ -572,7 +536,46 @@ var copy =
             }
           ],
           "mainDescription": [
-            "<span class='red'>This was a bold new step for us because suddenly a mobile app was an aspect of what we were selling. The app needed to be as good as the ball itself.</span>"
+            "<span class='red'>This was a bold new step for us because suddenly a mobile app was an aspect of what we were selling. The app needed to be as good as the ball itself.</span>",
+            "With the campaign, we wanted to communicate how revolutionary the Wilson X Connected Basketball is and at the same time show how it can help young athletes become better shooters from anywhere. Street to gym. Practice to playground."
+          ]
+        },
+        {
+          "video": true,
+          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
+          "thumbAlt": "Wilson X - TV Spot - All Day",
+          "thumbTitle": "Click to play video",
+          "vimeo": "165052370",
+          "mainDescription": [
+            "The results: We launched just before the holidays and sold out in a matter of weeks on Amazon as well as in our key retailers. Wilson X is available in retail stores all over the country and is beginning to rollout in other markets around the globe."
+          ]
+        },
+        {
+          "video": true,
+          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
+          "thumbAlt": "Wilson X - TV Spot - All Day",
+          "thumbTitle": "Click to play video",
+          "vimeo": "155010839",
+          "mainDescription": [
+            "The results: We sold out on Amazon in just two weeks and Wilson X will be in retail stores all over the country this Spring."
+          ]
+        },
+        {
+          "video": true,
+          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
+          "thumbAlt": "Wilson X - TV Spot - All Day",
+          "thumbTitle": "Click to play video",
+          "vimeo": "155010836",
+          "mainDescription": [
+          ]
+        },
+        {
+          "video": true,
+          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
+          "thumbAlt": "Wilson X - TV Spot - All Day",
+          "thumbTitle": "Click to play video",
+          "vimeo": "155010835",
+          "mainDescription": [
           ]
         }
       ]
