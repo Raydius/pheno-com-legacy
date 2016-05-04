@@ -341,18 +341,6 @@ var copy =
           "description": "Nutritional bar targeted to women launches its campaign using humor to rave reviews online.",
           "readmoreUrl": "#/work/think-thin"
 
-        },
-        { 
-          "type": "image",
-          "image": true,
-          "imageUrl": require('assets/images/work-7.png'),
-          "imageAlt": "Wilson Image 7",
-          "legend": "Travel / Leisure",
-          "headline": "SLS Vegas Gives the Strip a Whole New Look.",
-          "citeName": "By Matt Stringer",
-          "citeTitle": "EVP Marketing, Men&#8217;s Wearhouse",
-          "description": "Growing LA Entertainment group decides to make a splash in Sin City with launch of bold hotel and casino.",
-          "readmoreUrl": "#/work/sls"
         }
       ]
     },
