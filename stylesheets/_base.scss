@@ -83,6 +83,9 @@ article p {
 
 	&:last-of-type {
 		margin-bottom: $base_spacing;
+		@media screen and (max-width: 640px) {
+			margin: 0 0 10px; 
+		}
 	}
 
 	&.red {

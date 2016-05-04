@@ -1,13 +1,13 @@
 block variables
 	- copy = require('app/copy.js')
-
+	- page = window.location.hostname
 ul.social-icons
 	.bubble
 		li.social-icon
-			a.icon-twitter(socialshare socialshare-provider="twitter" socialshare-text="Current Project Text" socialshare-hashtags="angularjs, angular-socialshare" socialshare-url="＃")
+			a.icon-twitter(socialshare socialshare-provider="twitter" socialshare-text="Current Project Text" socialshare-hashtags="angularjs, angular-socialshare" socialshare-url!=page)
 		li.social-icon
-			a.icon-facebook(socialshare socialshare-provider="facebook" socialshare-text="Current Project Text" socialshare-hashtags="angularjs, angular-socialshare" socialshare-url="＃")
+			a.icon-facebook(socialshare socialshare-provider="facebook" socialshare-text="Current Project Text" socialshare-hashtags="angularjs, angular-socialshare" socialshare-url!=page)
+		li.social-icon 
+			a.icon-linkedin(socialshare socialshare-provider="linkedin" socialshare-text="Current Project Text" socialshare-hashtags="angularjs, angular-socialshare" socialshare-url!=page)
 		li.social-icon
-			a.icon-linkedin(socialshare socialshare-provider="linkedin" socialshare-text="Current Project Text" socialshare-hashtags="angularjs, angular-socialshare" socialshare-url="＃")
-		li.social-icon
-			a.icon-mail
+			a.icon-mail(href="mailto:") 
