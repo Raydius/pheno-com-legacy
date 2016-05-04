@@ -1,4 +1,5 @@
 .jobs {
+	margin-bottom: $base-spacing*3;
 	.top-main {
 
 		h2 {
@@ -47,7 +48,7 @@ ul {
 		}
 		li {
 			padding: 20px 0;
-			font-size: 30px;
+			font-size: 26px;
 			border-top: 1px solid #ddd;
 			&:last-child {
 				border-bottom: 1px solid #ddd;
