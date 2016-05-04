@@ -39,11 +39,13 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
         });
        $('body').removeClass('opend');
        $('#hamburger').removeClass('open');
+       $('.home .top-main').css('height', $(window).height() - 121);
     });
 
     var fixedheader = $("nav.topnav, .logo-wrapper");
 
     $(window).scroll(function(){
+        
         $('.featured-contributors').addClass('show').css('marginTop', -($('.home .top-main').height()/2 - $('.top-main .col-md-6').height()));
 
 
