@@ -804,6 +804,11 @@ var copy =
       "quoterTitle": "EVP Marketing, Men&#8217s Wearhouse",
       "quoterAvatar": require("assets/images/about/about-avatar.png"),     
       "description": "CVU - Phenomenon - Wilson X",
+      "caseWriter": {
+        "name": "Matt Stringer",
+        "title": "EVP Marketing, Men’s Wearhouse",
+        "description": "Matt is the EVP of Marketing at Men’s Wearhouse and has been with the company for over 15 years."
+      },
       "topDescription": [
         "For over 20 years, Men’s Wearhouse advertising centered around one line delivered by one man. But in 2013, when our founder and longtime CEO left the company, we had to make some pretty significant changes. After an extensive agency review we selected Phenomenon to take both strategic and creative lead on the future of Men’s Wearhouse as our Agency of Record.",
         "The new tone and feel for us started early in 2014 when we acquired the men’s fashion brand Joseph Abboud. We used that acquisition as a launching point to redefine our image. To kick things off, we developed a television spot that announced the partnership with Abboud and positioned the American Designer as our new Creative Director."
