@@ -59,12 +59,6 @@
   .about .top-main p {
     min-width: 100%;
   }
-  .top-main h2, .home .top-main h2, .work h2 blockquote {
-    font-size: 40px;
-  }
-  .about .top-main h2 {
-    font-size: 40px;
-  }
   .contact {
     .contactbiz {
       padding-bottom: $base_spacing;
@@ -263,15 +257,19 @@
     padding: 0;
     margin: 0;
   }
-  .top-main h2 blockquote {
-    //font-size: 34px;
-    //line-height: 40px;
+  .top-main h2 blockquote,  {
+    font-size: 28px;
+    line-height: 34px;
     &:before {
       left: 0;
     }
     &:first-letter {
       padding-left: 20px;
     }
+  }
+  .home .top-main h2, .about .top-main h2, .culture .top-main h2 {
+    font-size: 28px;
+    line-height: 34px;
   }
   .work.work-details {
     .top-main h2 blockquote {
@@ -357,10 +355,17 @@
   }
   .top-main {
     border-bottom: 0;
-    padding: ($base_spacing - 20) 30px;
+    padding: ($base_spacing - 40) 30px;
+  }
+  .jobs img {
+    margin-top: 0;
+    margin-left: -40px;
+  }
+  .jobs .top-main h2 {
+    margin-top: 30px;
   }
   .work .col-md-12.top-main {
-    padding: 40px 30px;
+    padding: 20px 30px;
   }
   .work .col-md-12 {
     margin-bottom: $base_spacing - 20;

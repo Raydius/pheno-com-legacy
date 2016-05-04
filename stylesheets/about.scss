@@ -12,6 +12,9 @@
 			font-family: $secondary_font;
 			width: 40%;
 			min-width: 430px;
+			@media screen and (max-width: 640px) {
+				font-size: 18px;
+			}
 		}
 		cite {
 			
