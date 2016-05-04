@@ -746,17 +746,18 @@ var copy =
       "className": "sunny",
       "client": "Sunny",
       "clientLogo": require('assets/images/works/clients_logo/sunny.svg'),
-      "project": "SLS",
+      "project": "Sunny",
       "media": "Branding",
       "blockquote": 'It&#8217;s A &#8220;Sunny&#8221; Day<br>for Payday Loans',
-      "quoterName": "Mike Dowse",
-      "quoterTitle": "CEO, Wilson",
+      "quoterName": "Patsy Hauer",
+      "quoterTitle": "SVP Brand Marketing, Elevate",
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
-        "In the UK, the short-term loans business is not dissimilar to the US in that we have a huge problem with perception. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
+        "In the UK, the short-term loans business is not dissimilar to the States in that we have a huge stigma problem. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
+        "We originally went to Phenomenon, not to create a brand campaign or a new website or some other piece of communication.",
         "<span class='red'>We went to Phenomenon to help us create a differentiating short-term loan product.</span>",
-        "We went to Phenomenon, not to create a brand campaign or an app or some other piece of communication. We went to Phenomenon to help us create a differentiating short-term loan product. And they came back to us with an interesting idea they aptly called Sunny."
+        "And they came back to us with a revolutionary idea they called Sunny."
       ],
       "topcontent": [
         {
@@ -765,8 +766,9 @@ var copy =
           "imageUrl": require("assets/images/sunny-1.png"),
           "imageAlt": "Sunny",
           "mainDescription": [
-            "Strategically, Pheno recognized that there was no loyalty in our industry. People took out their first loan and then had to pay so much back that they took out another loan to pay for that, and so on and so on. Often working with multiple companies in the process, or as they deemed it, &#8222;a circle of debt.",
-            "They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq."
+            "Strategically, Phenomenon recognized that there was no loyalty in our industry, and for good reason. People took out their first loan and then had to pay so much back that they took out another loan to pay for that, and so on and so on. Often working with multiple companies in the process, or as they deemed it, “a circle of debt.” Because of the rates and the product architecture, people didn’t have any choice, this was the way this category operated and no one was challenging the status quo of a predatory business model, until Sunny.",
+            "Sunny was a business idea that was different because it was architected to help customers; a first for this category. Things like making payments on time lowered their interest. And the more loans you take out with us, as long as you continue to pay back on time, the lower the rate goes.",
+            "After we all committed to making this change to our business model and challenging the entire category, Phenomenon then transitioned into helping us make it a reality. They designed the logo. Designed and built the website. And launched a brand campaign that ran all over the UK. This campaign included a series of ads featuring puppets. Why? Well, for years the notoriously shady payday loan company, Wonga hid behind endearing puppets. We decided to take them head on with a campaign that basically said don’t trust puppets, trust a better way of doing payday loans."
           ]      
         }
       ],
@@ -790,7 +792,7 @@ var copy =
           "thumbTitle": "Click to play video",
           "vimeo": "159123265",
           "mainDescription": [
-            "<span class='red'>For years, notoriously shady payday loan company Wonga hid behind endearing puppets. We decided to take them head on with a campaign that basically said don&#8217;t trust puppets, trust a better way of doing it.</span>"
+            "<span class='red'>For years, the notoriously shady payday loan company, Wonga hid behind endearing puppets. We decided to take them head on with a campaign that basically said don’t trust puppets, trust a better way of doing payday loans.</span>"
           ]
         }
       ]
