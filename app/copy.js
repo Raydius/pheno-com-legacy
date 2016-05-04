@@ -278,7 +278,7 @@ var copy =
           "legend": "Fashion / Retail",
           "headline": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.",
           "citeName": "By Matt Stringer",
-          "citeTitle": "EVP Marketing Men’s Wearhouse",
+          "citeTitle": "EVP Marketing Men&#8217;s Wearhouse",
           "description": "After the departure of longtime owner and face of brand, company looks to modernize all the way down to the cufflinks.",
           "readmoreUrl": "#/work/mens-wearhouse"
 
@@ -395,7 +395,7 @@ var copy =
             }
           ],
           "mainDescription": [
-            'After rallying the troops internally, it was time to tell the world through a global, brand campaign we called "My Wilson." We have a lot professional athletes on our roster including Serena Williams, Roger Federer and Dustin Pedroia. But our goal with "My Wilson" was to not just celebrate the biggest athletes in the world, we wanted to show how every athlete has a powerful relationship with their equipment. We wanted to show professional, amateur and youth athletes side-by-side. This connection and universal truth to sport is a recurring theme you’ll see in many communications going forward.'
+            'After rallying the troops internally, it was time to tell the world through a global, brand campaign we called "My Wilson." We have a lot professional athletes on our roster including Serena Williams, Roger Federer and Dustin Pedroia. But our goal with "My Wilson" was to not just celebrate the biggest athletes in the world, we wanted to show how every athlete has a powerful relationship with their equipment. We wanted to show professional, amateur and youth athletes side-by-side. This connection and universal truth to sport is a recurring theme you&#8217;ll see in many communications going forward.'
           ]
         }
       ],
@@ -806,12 +806,12 @@ var copy =
       "description": "CVU - Phenomenon - Wilson X",
       "caseWriter": {
         "name": "Matt Stringer",
-        "title": "EVP Marketing, Men’s Wearhouse",
-        "description": "Matt is the EVP of Marketing at Men’s Wearhouse and has been with the company for over 15 years."
+        "title": "EVP Marketing, Men&#8217;s Wearhouse",
+        "description": "Matt is the EVP of Marketing at Men&#8217;s Wearhouse and has been with the company for over 15 years."
       },
       "topDescription": [
-        "For over 20 years, Men’s Wearhouse advertising centered around one line delivered by one man. But in 2013, when our founder and longtime CEO left the company, we had to make some pretty significant changes. After an extensive agency review we selected Phenomenon to take both strategic and creative lead on the future of Men’s Wearhouse as our Agency of Record.",
-        "The new tone and feel for us started early in 2014 when we acquired the men’s fashion brand Joseph Abboud. We used that acquisition as a launching point to redefine our image. To kick things off, we developed a television spot that announced the partnership with Abboud and positioned the American Designer as our new Creative Director."
+        "For over 20 years, Men&#8217;s Wearhouse advertising centered around one line delivered by one man. But in 2013, when our founder and longtime CEO left the company, we had to make some pretty significant changes. After an extensive agency review we selected Phenomenon to take both strategic and creative lead on the future of Men&#8217;s Wearhouse as our Agency of Record.",
+        "The new tone and feel for us started early in 2014 when we acquired the men&#8217;s fashion brand Joseph Abboud. We used that acquisition as a launching point to redefine our image. To kick things off, we developed a television spot that announced the partnership with Abboud and positioned the American Designer as our new Creative Director."
       ],
       "topcontent": [
         {
@@ -822,8 +822,8 @@ var copy =
           "thumbTitle": "Click to play video",
           "vimeo": "164752774",
           "mainDescription": [
-            '<span class="red">The spot firmly grounded our strategic initiative to make Men’s Wearhouse a home to a collection of brands rather than a brand in and of itself.</span>',
-            "This new strategic approach also positioned the suits as the hero, rather than trying to make Men’s Wearhouse a fashion label that it isn’t.",
+            '<span class="red">The spot firmly grounded our strategic initiative to make Men&#8217;s Wearhouse a home to a collection of brands rather than a brand in and of itself.</span>',
+            "This new strategic approach also positioned the suits as the hero, rather than trying to make Men&#8217;s Wearhouse a fashion label that it isn&#8217;t.",
             "Once we established the quality of the suits we offer, we shifted the focus to the men that wear our suits. Actually, we created an idea behind the man that wears our suits. Someone that strives to be a better version of himself. Someone that walks with confidence, but not arrogance. Someone that might need a good looking suit to help them achieve that confidence."
 
           ]
@@ -877,8 +877,8 @@ var copy =
             }
           ],
           "mainDescription": [
-            '<span class="red">We landed on the line and pivotal insight: Rise to the Occasion. An idea that with a little help from a great looking suit, you can transform into the man you’ve always wanted to be.</span>',
-            "Late Spring is always an important quarter for us as it’s the time for Dads and Grads. In 2015, instead of doing our typical retail promo, Pheno helped us create something much more memorable and special."
+            '<span class="red">We landed on the line and pivotal insight: Rise to the Occasion. An idea that with a little help from a great looking suit, you can transform into the man you&#8217;ve always wanted to be.</span>',
+            "Late Spring is always an important quarter for us as it&#8217;s the time for Dads and Grads. In 2015, instead of doing our typical retail promo, Pheno helped us create something much more memorable and special."
           ]
         },
         {
@@ -889,9 +889,9 @@ var copy =
           "thumbTitle": "Click to play video",
           "vimeo": "134437401",
           "mainDescription": [
-            '<span class="red">We used Father’s Day as a way to sell the emotional side of suits by celebrating the very dads that wear them everyday</span>',
-            "Actually, the men featured in the commercial are real dads with their kids. It was the first time—that I can remember—where we didn’t pitch a specific designer, sale or promotion.",
-            "The spot was an overwhelming success. Sales weren’t just up, but there was a detectable buzz on social media and even in our offices and stores—people felt proud of what we stood for. Of course we won’t be looking to create an emotional hook every time we advertise, but when the opportunity presents itself, we realize the importance of standing for something bigger with our customers. And that’s something we can thank our partners for helping us achieve."
+            '<span class="red">We used Father&#8217;s Day as a way to sell the emotional side of suits by celebrating the very dads that wear them everyday</span>',
+            "Actually, the men featured in the commercial are real dads with their kids. It was the first time—that I can remember—where we didn&#8217;t pitch a specific designer, sale or promotion.",
+            "The spot was an overwhelming success. Sales weren&#8217;t just up, but there was a detectable buzz on social media and even in our offices and stores—people felt proud of what we stood for. Of course we won&#8217;t be looking to create an emotional hook every time we advertise, but when the opportunity presents itself, we realize the importance of standing for something bigger with our customers. And that&#8217;s something we can thank our partners for helping us achieve."
           ]
         }
       ]
@@ -909,9 +909,11 @@ var copy =
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
-        "In the UK, the short-term loans business is not dissimilar to the US in that we have a huge problem with perception. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
-        "<span class='red'>We went to Phenomenon to help us create a differentiating short-term loan product.</span>",
-        "We went to Phenomenon, not to create a brand campaign or an app or some other piece of communication. We went to Phenomenon to help us create a differentiating short-term loan product. And they came back to us with an interesting idea they aptly called Sunny."
+        "In 2014, thinkThin was on the cusp of tremendous growth. For 10 years, we had been a really successful privately owned regional brand, but with an infusion of cash from private equity, we were about to get national distribution for the first time. And it was clear that we needed to develop our brand positioning and create an integrated advertising campaign to support our efforts.",
+        "As a healthy lifestyle brand, founded by an inspirational female entrepreneur, we knew that the key was to resonate with women in a really unique way. We also knew that we couldn&#8217;t just leverage the same yoga, spin class and active lifestyle images that the rest of the category was using in nearly every piece of communication.",
+        "The creative and strategy teams quickly arrived at pivotal insight that unlocked everything for us. In short,",
+        "<span class='red'>the idea was that you can&#8217;t begin to have a conversation about health and nutrition for women without addressing the notion of guilt.</span>",
+        "But we didn&#8217;t want to get heavy or depressing about it, because we&#8217;re a positive, optimistic and upbeat brand."
       ],
       "topcontent": [
         {
@@ -924,9 +926,9 @@ var copy =
         }
       ],
       "caseWriter": {
-        "name": "Amy Weisenbach",
-        "title": "VP Marketing, Wilson",
-        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world&#8217;s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+        "name": "Megan Crossland",
+        "title": "CMO, thinkThin",
+        "description": "Before becoming the Director of Marketing for thinkThin in 2014, Megan worked as a marketing manager for over 10 years at Nestle."
       },
       "detailcontent": [
         {
@@ -943,7 +945,10 @@ var copy =
             "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
             "thumbAlt": "Xome - TV Spot - Transparent House",
             "thumbTitle": "Click to play video",
-            "vimeo": "159448353"
+            "vimeo": "159448353",
+            "mainDescription": [
+              "The line that brought it all together was, “There are lots of things to feel guilty about, thinkThin isn&#8217;t one of them.” The creative team then executed around this line in everything from Print and TV to digital, mobile and sponsorships."
+            ]
         },
         {
           "carousel": true,
@@ -956,6 +961,9 @@ var copy =
               "url": require("assets/images/thinkthin-1-02.jpg"),
               "alt": "Wilson X Packaging Photo 2"
             }
+          ],
+          "mainDescription": [
+            "The result is a campaign that&#8217;s been highly effective, helped us drive national sales growth and made a lasting connection with our audience."
           ]
         },
         {
