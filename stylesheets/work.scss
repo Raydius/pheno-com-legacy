@@ -65,6 +65,13 @@
 						font-family: "Circular-bold";
 					}
 				}
+				.icon-share-hover {
+					&:hover {
+			        	label.icon-share {
+			        		color: $primary_color;
+			        	}
+			        }
+				}
 				label.icon-share {
 					display: block;
 					margin-top: 10px;
