@@ -94,7 +94,7 @@ angular.module('phenoCom').directive('scrolltop2', function() {
             
             element.bind('click', function() {
                 $('html, body').animate({
-                        scrollTop: 760
+                        scrollTop: 560
                     }, 200, function(){
                 });
             })

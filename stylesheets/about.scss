@@ -83,7 +83,7 @@
 
 		h4 {
 			font-family: 'Tiempose-Semibold';
-			font-size: 32px;
+			font-size: 20px;
 		}
 	    input:checked {
 	    	+ label {
@@ -102,14 +102,14 @@
 	    display: block;
 	    cursor: pointer;
 	    font-family: $secondary_font;
-	    font-size: 22px;
+	    font-size: 14px;
 	    padding: 20px 0 0 0;
 	    color: $gray_font;
 	    width: 100%;
 	    &:after {
 	    	content: "\e902";
 	    	position: absolute;
-	    	font-size: 18px;
+	    	font-size: 14px;
 	    	right: 0;
 	    	top: 32px;
 	    	font-family: 'icomoon' !important;
@@ -159,10 +159,14 @@
 	}
 
 	.ac-container article p {
-		font-size: 17px;
+		font-size: 14px;
+		line-height: 18px;
 		font-weight: normal;
 		font-family: $monospace_font;
 		margin-top: 10px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
 	}
 
 	.ac-container input:checked ~ article {
@@ -174,7 +178,7 @@
 	}
 
 	.ac-container input:checked ~ article.ac-small {
-	    height: 140px;
+	    height: 90px;
 	}
 
 	.ac-container input:checked ~ article.ac-medium {
