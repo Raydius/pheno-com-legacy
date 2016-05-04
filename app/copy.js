@@ -341,7 +341,7 @@ var copy =
           "description": "Nutritional bar targeted to women launches its campaign using humor to rave reviews online.",
           "readmoreUrl": "#/work/think-thin"
 
-        }
+      }
       ]
     },
     "wilson-anthem": { 
@@ -552,6 +552,14 @@ var copy =
           "carousel": true,
           "images": [
             {
+              "url": require("assets/images/wilson_x_2_08-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 6"
+            },
+            {
+              "url": require("assets/images/wilson_x_2_09-opt.jpg"),
+              "alt": "Wilson X Packaging Photo 6"
+            },
+            {
               "url": require("assets/images/wilson_x_2_02-opt.jpg"),
               "alt": "Wilson X Packaging Photo 2"
             },
@@ -573,14 +581,6 @@ var copy =
             },
             {
               "url": require("assets/images/wilson_x_2_07-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 6"
-            },
-            {
-              "url": require("assets/images/wilson_x_2_08-opt.jpg"),
-              "alt": "Wilson X Packaging Photo 6"
-            },
-            {
-              "url": require("assets/images/wilson_x_2_09-opt.jpg"),
               "alt": "Wilson X Packaging Photo 6"
             }
           ],
