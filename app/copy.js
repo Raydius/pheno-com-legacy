@@ -335,7 +335,7 @@ var copy =
           "imageUrl": require('assets/images/work-6.jpg'),
           "imageAlt": "Wilson Image 6",
           "legend": "Food / Drink",
-          "headline": "thinkThin Helps Women to Shed Guilt",
+          "headline": "thinkThin Helps Women Shed the Guilt",
           "citeName": "By Amy Weisenbach",
           "citeTitle": "VP Marketing, Wilson",
           "description": "Nutritional bar targeted to women launches its campaign using humor to rave reviews online.",
