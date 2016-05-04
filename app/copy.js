@@ -805,8 +805,8 @@ var copy =
       "quoterAvatar": require("assets/images/about/about-avatar.png"),     
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
-        "For over 20 years, Men's Wearhouse advertising centered around one line delivered by one man. But in 2013, when our founder and longtime CEO left the company, we had to make some pretty significant changes. After an extensive agency review we selected Phenomenon to take both strategic and creative lead on the future of Men's Wearhouse as our Agency of Record.",
-        "The new tone and feel for us started early in 2014 when we acquired the men's fashion brand Joseph Abboud. We used that acquisition as a launching point to redefine our image. To kick things off, we developed a television spot that announced the partnership with Abboud and positioned the American Designer as our new Creative Director."
+        "For over 20 years, Men’s Wearhouse advertising centered around one line delivered by one man. But in 2013, when our founder and longtime CEO left the company, we had to make some pretty significant changes. After an extensive agency review we selected Phenomenon to take both strategic and creative lead on the future of Men’s Wearhouse as our Agency of Record.",
+        "The new tone and feel for us started early in 2014 when we acquired the men’s fashion brand Joseph Abboud. We used that acquisition as a launching point to redefine our image. To kick things off, we developed a television spot that announced the partnership with Abboud and positioned the American Designer as our new Creative Director."
       ],
       "topcontent": [
         {
@@ -815,7 +815,13 @@ var copy =
           "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
           "thumbAlt": "Xome - TV Spot - Transparent House",
           "thumbTitle": "Click to play video",
-          "vimeo": "164752774"
+          "vimeo": "164752774",
+          "mainDescription": [
+            '<span class="red">The spot firmly grounded our strategic initiative to make Men’s Wearhouse a home to a collection of brands rather than a brand in and of itself.</span>',
+            "This new strategic approach also positioned the suits as the hero, rather than trying to make Men’s Wearhouse a fashion label that it isn’t.",
+            "Once we established the quality of the suits we offer, we shifted the focus to the men that wear our suits. Actually, we created an idea behind the man that wears our suits. Someone that strives to be a better version of himself. Someone that walks with confidence, but not arrogance. Someone that might need a good looking suit to help them achieve that confidence."
+
+          ]
         }
       ],
       "detailcontent": [
@@ -864,6 +870,10 @@ var copy =
               "url": require("assets/images/mens-warehouse/10-magazine_thin_open_mw_styling1e.jpg"),
               "alt": "Wilson X Packaging Photo 10"
             }
+          ],
+          "mainDescription": [
+            '<span class="red">We landed on the line and pivotal insight: Rise to the Occasion. An idea that with a little help from a great looking suit, you can transform into the man you’ve always wanted to be.</span>',
+            "Late Spring is always an important quarter for us as it’s the time for Dads and Grads. In 2015, instead of doing our typical retail promo, Pheno helped us create something much more memorable and special."
           ]
         },
         {
@@ -872,7 +882,12 @@ var copy =
           "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
           "thumbAlt": "Xome - TV Spot - Transparent House",
           "thumbTitle": "Click to play video",
-          "vimeo": "134437401"
+          "vimeo": "134437401",
+          "mainDescription": [
+            '<span class="red">We used Father’s Day as a way to sell the emotional side of suits by celebrating the very dads that wear them everyday</span>',
+            "Actually, the men featured in the commercial are real dads with their kids. It was the first time—that I can remember—where we didn’t pitch a specific designer, sale or promotion.",
+            "The spot was an overwhelming success. Sales weren’t just up, but there was a detectable buzz on social media and even in our offices and stores—people felt proud of what we stood for. Of course we won’t be looking to create an emotional hook every time we advertise, but when the opportunity presents itself, we realize the importance of standing for something bigger with our customers. And that’s something we can thank our partners for helping us achieve."
+          ]
         }
       ]
     },
