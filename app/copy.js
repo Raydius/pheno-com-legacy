@@ -40,7 +40,7 @@ var copy =
     {
       "navTitle": "Blog",
       "title": "View Blog",
-      "uiSref": "blog"
+      "uiSref": "http://now.phenomenon.com/"
     }
   ],
   "share": {
