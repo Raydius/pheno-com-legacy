@@ -16,14 +16,6 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
         } else {
             $('body').addClass('desktop');
         }
-
-
-        $('.home .icon-right-arrow').click(function() {
-            $('html, body').animate({
-                    scrollTop: 760
-                }, 200, function(){
-            });
-        })
     });
    
 

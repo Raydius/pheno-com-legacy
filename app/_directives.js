@@ -88,6 +88,20 @@ angular.module('phenoCom').directive('scrolltotop', function() {
     };
   });
 
+angular.module('phenoCom').directive('scrolltop2', function() {
+    return {
+      link: function (scope, element, attrs) {
+            
+            element.bind('click', function() {
+                $('html, body').animate({
+                        scrollTop: 760
+                    }, 200, function(){
+                });
+            })
+        }
+    };
+  });
+
 // currently not in use: embedded scrollable website
 angular.module('phenoCom').directive('scrollableComponent', function($window) {
 
