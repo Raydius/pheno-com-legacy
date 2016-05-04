@@ -342,42 +342,22 @@ var copy =
       "clientLogo": require('assets/images/works/clients_logo/wilson_logo.svg'),
       "project": "Wilson Anthem",
       "media": "Branding, Video, Digital",
-      "blockquote": "Wilson Is Now<br> Fully Equipped.",
+      "blockquote": "Wilson Equips Itself With Global Campaign",
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
-        "Wilson has been around for over 100 years but we've never had a global brand campaign. Since this was our first campaign, we needed to identify what Wilson is all about. We make quality, trusted equipment, but what do we stand for? What is our role in the world of sports? We worked with the strategic team at Phenomenon to land on a pretty powerful yet simple idea; Wilson is every athletes faithful weapon.",
-        "<span class='red'>We worked with the strategic team at Phenomenon to land on a pretty powerful yet simple idea; Wilson is every athletes faithful weapon.</span>",
-        "Before we did any consumer-facing branding, we asked Pheno to create something that could rally the Wilson team from within. What did this new face of Wilson mean? How could we as employees live this? So we produced a beautifully bound brand book containing words and images that boldly and loudly defined who we are and handed them out to each of our employees."
+        "Even though Wilson makes sporting equipment for just about every sport in the world, it had been years since we had any sort of global brand campaign. Since this was our first campaign in awhile, we needed to reestablish what Wilson was all about. Yes, we make quality, trusted equipment, but what do we stand for? What is our role in the world of sports?",
+        "<span class='red'>We worked with the strategic team at Phenomenon to land on a pivotal but simple idea; between every athlete and their equipment exists a powerful relationship</span>",
+        "Before we launched any consumer-facing branding, we asked Phenomenon to create something that could unify the Wilson team from within. What did this new face of Wilson mean? How could we as employees live this new mantra? The result was a beautifully bound brand book containing words and images that boldly and loudly defined who we are. We handed out these books to each of our employees."
       ],
       "caseWriter": {
         "name": "Amy Weisenbach",
         "title": "VP Marketing, Wilson",
         "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world&#8217;s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
       },
-      "heroThumb": require('assets/images/wilsonx_thumb_01-opt.jpg'),
-      "heroThumbAlt": "Wilson X - Case Study Video",
-      "heroThumbTitle": "Click to play video",
-      "heroVimeo": "155010841",
-      "details": [
-        "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
-      ],
       "topcontent": [
-        {
-          "video": true,
-          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
-          "thumbAlt": "Wilson X - TV Spot - All Day",
-          "thumbTitle": "Click to play video",
-          "vimeo": "155010840",
-          "mainDescription": [
-            "<span class='red'>The film is not just a celebration of the biggest athletes in the world, it puts amateurs and kids on the same level.</span>",
-            "The film is not just a celebration of the biggest athletes in the world, it puts amateurs and kids on the same level. With the anthem launch, we actually didn't have a massive media buy, so we had to figure out a way to leverage social media and get our fans to participate in the idea. Wilson has never really had a huge social presence. And we wanted –actually we needed- to changed that. We took the momentum of the anthem spot to get people to interact with us on a social level and live this mantra. We asked kids and amateurs all over the world to upload videos of themselves out on the playing fields and we then edited in that footage to the actual spot. Kids all over the world now had their own personalized version of the spot that they could share over Facebook, Twitter or Instagram."
-          ]
-        }
-      ],
-      "detailcontent": [
         {
           "carousel": true,
           "images": [
@@ -413,6 +393,22 @@ var copy =
               "url": require("assets/images/wilson_anthem_1_08-opt.jpg"),
               "alt": "Wilson X Packaging Photo 6"
             }
+          ],
+          "mainDescription": [
+            'After rallying the troops internally, it was time to tell the world through a global, brand campaign we called "My Wilson." We have a lot professional athletes on our roster including Serena Williams, Roger Federer and Dustin Pedroia. But our goal with "My Wilson" was to not just celebrate the biggest athletes in the world, we wanted to show how every athlete has a powerful relationship with their equipment. We wanted to show professional, amateur and youth athletes side-by-side. This connection and universal truth to sport is a recurring theme you’ll see in many communications going forward.'
+          ]
+        }
+      ],
+      "detailcontent": [
+        {
+          "video": true,
+          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
+          "thumbAlt": "Wilson X - TV Spot - All Day",
+          "thumbTitle": "Click to play video",
+          "vimeo": "155010840",
+          "mainDescription": [
+            "<span class='red'>The launch film was not just a celebration of the biggest athletes in the world, it showed how every athlete has a powerful relationship with their equipment. It showed professional, amateur and youth athletes side-by-side.</span>",
+            "The anthem commercial didn't have a massive media buy, so we decided to leverage social media to get more views and at the same time ambitiously grow our social presence. The way we did this was by using content to create two-way conversations with our followers. We asked amateurs all over the world to upload videos of themselves out on the playing fields, and we edited that footage into the actual spot. Youth athletes everywhere now had their own personalized version that they could share over Facebook, Twitter or Instagram."
           ]
         },
         {
@@ -421,7 +417,7 @@ var copy =
           "imageUrl": require("assets/images/Wilson-Anthem-LandingPage_02c.jpg"),
           "imageAlt": "SLS",
           "mainDescription": [
-            "When it came to Wilson.com, we had a pretty big challenge. For years the site was very product oriented. But when it came to purchasing the product, people would get the info they need and then run off to a local sporting goods store to buy. This wasn&#8217;t exactly the ideal experience for us. When discussing the relaunch of Wilson.com, Pheno actually showed us a lot of leading fashion retail websites as a model that would work for us. The idea behind this approach is building what is called “shoppable stories” where watchable content revolved around the clothing, or in our case, the equipment."
+            'When it came to Wilson.com, we had a pretty big challenge. For years the site was very product oriented but yet the e-commerce side was not incredibly successful. We needed to evolve and focus our site into more of a content hub. Pheno helped us develop an editorial commerce strategy and build out a vision for the site that allowed us to tell stories that engage consumers around the brand, our products AND at the same time, sell product. As it turned out, "My Wilson" became the driving force behind a more robust and effective Wilson.com.'
           ]
         },
         {
@@ -465,7 +461,7 @@ var copy =
       "caseWriter": {
         "name": "Amy Weisenbach",
         "title": "VP Marketing, Wilson",
-        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world&#8217;s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+        "description": "Amy is the VP of marketing for Wilson Sporting Goods. Prior to joining Wilson she was the first VP of Marketing for Trunk Club and has also worked at both Beam and Unilever on the AXE brand team. In 2012, Amy was named a Woman to Watch by Advertising Age. She is a graduate of Harvard Business School."
       },
       "topcontent": [
         {
