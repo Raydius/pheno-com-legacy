@@ -6,9 +6,9 @@
 		padding-bottom: 0;
 		float: none;
 		.col-md-6 {
+			position: absolute;
 			top: 50%;
-			margin-top: -200px;
-			position: relative;
+			transform: translateY(-50%);
 		}
 		p {
 			font-size: 34px;

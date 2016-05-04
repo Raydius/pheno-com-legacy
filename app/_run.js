@@ -15,14 +15,18 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
         
         } else {
             $('body').addClass('desktop');
-        }
-
-        $('.home .top-main').css('height', $(window).height() - $('.nav-wrapper').height());
+        }        
 
     });
-   
+
+    $(window).load(function(){
+        $('.home .top-main').css('height', $(window).height() - 121);
+    }) 
+
+
     $(window).resize(function(){
-        $('.home .top-main').css('height', $(window).height() - $('.nav-wrapper').height());
+
+        $('.home .top-main').css('height', $(window).height() - 121);
     })
 
     var $main = $('main');
@@ -40,7 +44,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
     var fixedheader = $("nav.topnav, .logo-wrapper");
 
     $(window).scroll(function(){
-        $('.featured-contributors').addClass('show').css('marginTop', -$('.home .top-main').height()/2 + 100);
+        $('.featured-contributors').addClass('show').css('marginTop', -($('.home .top-main').height()/2 - $('.top-main .col-md-6').height()));
 
 
        if ($(document).scrollTop() > 0 && $(window).width() > 768) {
