@@ -138,6 +138,12 @@ var copy =
         },
       ],
       "contributorsMore": [
+        { 
+          "name": "Matt Stringer",
+          "jobTitle": "EVP Marketing, Men&#8217s Wearhouse",
+          "project": "Men&#8217s Wearhouse<br> Updates Its Wardrobe.",
+          "contributorAvatar": require("assets/images/home/avatar-2.png")
+        },
         {
           "name": "Pasty Hauer",
           "jobTitle": "VP Brand Marketing, Sunny",
@@ -145,34 +151,10 @@ var copy =
           "contributorAvatar": require("assets/images/home/avatar-4.png")
         },
         {
-          "name": "Veronica Smiley",
-          "jobTitle": "CMO, SBE",
-          "project": "SLS Vegas Gives the Strip<br>a Whole New Look.",
-          "contributorAvatar": require("assets/images/home/avatar-5.png")
-        },
-        {
-          "name": "Allison Cornia",
-          "jobTitle": "SVP Marketing, Xome",
-          "project": "When Buying a House,<br>There&#8217;s No Place Like Xome",
-          "contributorAvatar": require("assets/images/home/avatar-6.png")
-        },
-        {
           "name": "Amy Weisenbach",
           "jobTitle": "VP Marketing, Wilson",
           "project": "Wilson Is Now <br>Fully Equipped.",
           "contributorAvatar": require("assets/images/home/avatar-7.png")
-        },
-        {
-          "name": "Matt Stringer",
-          "jobTitle": "EVP Marketing, Men's Wearhouse",
-          "project": "Wilson Is Now <br>Fully Equipped.",
-          "contributorAvatar": require("assets/images/home/avatar-8.png")
-        },
-        {
-          "name": "Megan Crossland",
-          "jobTitle": "Director of Marketing, thinkThin",
-          "project": "thinkThin Helps<br>Women Shed the Guilt.",
-          "contributorAvatar": require("assets/images/home/avatar-9.png")
         }
       ]
     },
@@ -181,60 +163,64 @@ var copy =
       "className": "about",
       "blockquote": "Something like a Phenomenon",
       "subquote": "A behind the scenes look at the most appropriately-named agency I know.",
-      "quoterName": "Mike Dowse",
-      "quoterTitle": "CEO, Wilson",
+      "quoterName": "By Kevin Dahlstrom, Chief Marketing Officer",
+      "quoterTitle": "Mr. Cooper Home Loans",
       "description": "Phenomenon - About",
       "dictionary": {
         "noun": "1. a person adept at solving problems.", 
         "verb": "2. to carry out a solution in any direction that is correct for the problem."
       },
       "paragraph1": [
-        "I first met Phenomenon in 2010 when I was looking for an agency to help launch a Payday Loan company. Pheno was a small shop and I was sure that we would be one of their biggest clients, so I was excited to talk to them. But when I got them on the phone and explained the brief to them, they weren't interested.",
-        "Years later, as we sat down on the 28th floor of the SBE building in Los Angeles, our conversation began with that rather inauspicious start."
+        "I first met the Founder and CEO of Phenomenon in 2009 when I was looking for an agency to help launch a Payday Loan company. Pheno was a small shop and I was sure that we would be one of their biggest clients, so I was excited to talk to them. But when I got Krish on the phone and explained the brief to him, he wasn&#8217;t interested.",
+        "Years later, as we sat in his office on the 28th floor of the SBE building in Los Angeles, our conversation began with that rather inauspicious start."
       ],
       "paragraph2": [
-        'So, do you say, "no" to every client at first, or was it just me?<span>PHENO: Ha! So this is where you want to start?</span>',
-        "Absolutely<span>Look, we throw ourselves into everything we do. We work long hours, we scrutinize, we push. We really go all out. And to put that much effort into something, we have to believe in it. And, truthfully, the Payday Loan business had a lot of negative implications with predatory lending and all that. And it just didn't feel like the kind of thing we could feel good about.</span>",
-        "So what changed your mind?<span>The second you gave us the permission to help you create a new kind of company, one that actually helped people break the cycle of poverty and bad credit, we were in. 100%. We're actually not very good at working with clients who want more of the same. It's when they want to radically change their business, growth, trajectory and market share that we're the right firm to call.</span>",
+        'KD: So, do you say, "no" to every client at first, or was it just me?<span>PHENO: Ha! So this is where you want to start?</span>',
+        "Absolutely<span>Look, we throw ourselves into everything we do. We work long hours, we scrutinize, we push. We really go all out. And to put that much effort into something, we have to believe in it. And, truthfully, the Payday Loan business had a lot of negative implications with predatory lending and all that. And it just didn&#8217;t feel like the kind of thing we could feel good about.</span>",
+        "So what changed your mind?<span>The second you gave us the permission to help you create a new kind of company, one that actually helped people break the cycle of poverty and bad credit, we were in. 100%. We&#8217;re actually not very good at working with clients who want more of the same. It&#8217;s when they want to radically change their business, growth, trajectory and market share that we&#8217;re the right firm to call.</span>",
         "So you kind of self-select clients that are going to appreciate the kind of work you do.<span>Very much so.</span>"        
       ],
       "paragraph3": [
-        "You guys do a lot of different things for clients. You're not an ad agency, but you make ads. You're not a strategy firm, but you do strategy... how do you explain what it is you're all about?<span>It's always hard to define something that's completely new and different and a departure from everything that's come before it. First and foremost we're an Innovations Agency. Sometimes that innovation is an app, tool or piece of technology. Sometimes it's a product. Sometimes it's a radical business strategy. Sometimes it's a new retail concept.  Sometimes it's inventing a whole new brand or category. Sometimes it's an ad campaign. And fairly often it's all of the above.</span>",
+        "You guys do a lot of different things for clients. You&#8217;re not an ad agency, but you make ads. You&#8217;re not a strategy firm, but you do strategy... how do you explain what it is you&#8217;re all about?<span>It&#8217;s always hard to define something that&#8217;s completely new and different and a departure from everything that&#8217;s come before it.</span><span>First and foremost we&#8217;re an Innovations Agency. Sometimes that innovation is an app, tool or piece of technology. Sometimes it&#8217;s a product. Sometimes it&#8217;s a radical business strategy. Sometimes it&#8217;s a new retail concept. Sometimes it&#8217;s inventing a whole new brand or category. Sometimes it&#8217;s an ad campaign. And fairly often it&#8217;s all of the above.</span>", 
         "Right, but playing devil's advocate for a second, that's the same stuff that everyone promises. How are you any different?<span>Ah, my favorite question. So historically there are 4 types of agencies: Strategic Agencies that can analyze your business, Design Agencies that can do your graphic ID, packaging and brand guidelines, Digital Agencies that can do your websites and apps and Advertising Agencies that can do your brand campaign or retail work.</span><span>And you're right, to some degree they all claim to be able to do everything. But truthfully, they have a legacy as a specific kind of agency, and they are geared to create a certain kind of deliverable.</span>",
         "Right. I know if I go to an Ad Agency with my problem, I'm going to get an ad campaign as the solution...",
-        "<span>Exactly! Which makes perfect sense because that's what they're built to make. They invest their money in people that make ads, and they need a return on that investment. They may hire a digital leader, or a proper business strategist, but that person is always going to feel a bit like a fish out of water in that kind of environment. And unfortunately, they'll feel like a second class citizen because their work isn't driving revenue anywhere near the level that the advertising is.</span>",
-        "<span>When a client talks to us, we don't have any preconceived notions about what the solution will be. We always start with strategic insights and go from there. Based on the results, we may recommend a product portfolio solution, or an app/utility solution, or a user experience solution, or an integrated ad campaign. Or something completely different that's never been done before. </span>",
-        "<span>To put it simply, everyone else is trying, very slowly, to move to the intersection of the 4 types of agencies, but we don't need to move an inch, because we were actually born there.</span>"
+        "<span>Exactly! Which makes perfect sense because that&#8217;s what they&#8217;re built to make. They invest their money in people that make ads, and they need a return on that investment. They may hire a digital leader, or a proper business strategist, but that person is always going to feel a bit like a fish out of water in that kind of environment. And unfortunately, they&#8217;ll feel like a second class citizen because their work isn&#8217;t driving revenue anywhere near the level that the advertising is.</span>",
+        "<span>When a client talks to us, we don&#8217;t have any preconceived notions about what the solution will be. We always start with strategic insights and go from there. Based on the results, we may recommend a product portfolio solution, or an app/utility solution, or a user experience solution, or an integrated ad campaign. Or something completely different that&#8217;s never been done before.</span>",
+        "<span>To put it simply, everyone else is trying, very slowly, to move to the intersection of the 4 types of agencies, but we don&#8217;t need to move an inch, because we were actually born there.</span>"
       ],
       "paragraph4": [
         "OK, but can you really claim to be experts in each of those categories? How are you not a jack of all trades and master of none?",
         "<span>We've been giving it a lot of thought and we think there are two things that made this happen: our people and our organization.</span>",
         "<span>Our people are strategists who love strategy, but hate the limits of working at a strategy firm. They're designers who love design, but feel handcuffed working at a pure design shop. They're digital leaders who don't want to be so disconnected from the brand thinking. And they're ad agency leaders who are sick and tired of being relegated to just TV, Print and Out of Home. They're all looking for innovation. And our organization gives them the ability to apply their skills in all kinds of new ways.</span>",
-        "<span>We fundamentally understand each of these disciplines and how to plug them into the agency. They aren't bolted onto the framework as an added discipline. They are a part of the gears and fabric of the agency at a very core level.</span>"
+        "<span>We fundamentally understand each of these disciplines and how to plug them into the agency. They aren't bolted onto the framework as an added discipline. They are a part of the gears and fabric of the agency at a very core level.</span>",
+        "How so?",
+        "<span>Well, I founded the place, and I&#8217;m a classically trained computer engineer who loves art and design and I&#8217;ve been the president of Digitas (one of the industry&#8217;s leading digital firms) and I&#8217;ve been the Global Chief Strategy Officer at DDB (one of the world&#8217;s most successful advertising agencies.) And I grew the agency&#8217;s capabilities around my own passions. Now I&#8217;ve got world-class leaders running every discipline in the agency, and I get to have amazing conversations with them all day long.</span>",
+        "OK, but can you really claim to be experts in each of those categories? How are you not a jack of all trades and master of none",
+        "<span>Well, here&#8217;s an example. We don&#8217;t do a lot of pitches, right? But this year we did three, and we won each of them. One was a strategy assignment and we beat out Profit and McKenzie. One was an Ad Agency AOR assignment and we beat out BBDO and GSDM. And the last one was a Digital Design AOR relationship and we beat out R/GA and Blast Radius. So, clearly we must be doing something right.</span>",
+        "<span>I&#8217;ve been giving it a lot of thought and I think there are two things that made this happen: our people and our organization.</span>",
+        "<span>Our people are strategists who love strategy, but hate the limits of working at a strategy firm. They&#8217;re designers who love design, but feel handcuffed working at a design shop. They&#8217;re digital leaders who don&#8217;t want to be so disconnected from the brand thinking. And they&#8217;re ad agency leaders who are sick and tired of being relegated to just TV, Print and Out of Home. They&#8217;re all looking for innovation. And our organization gives them the ability to apply their skills in all kinds of new ways.</span>"
+        
       ],
       "paragraph5": [
-        "It's interesting that you say that your talent is looking for innovation, because as a client, that's exactly what I'm looking for too.",
-        "<span>Right, and when the client's ambitions mesh with the agency's ambitions and the ambitions of the individuals that work there, that's when great things happen.</span>",
-        "So how do you do it? How do you innovate? What's your process?<span>Well, off the bat if anyone claims to be innovative but sells you on a rigid process, they're selling snake oil. We have a framework called Phenomenology that allows us to start each process with a roadmap, but we never use it the exact same way twice. We are always re-inventing it for the task at hand.</span><span>The general categories that we apply Phenomenology to are Marketing Innovation, UX Innovation, Digital Innovation and Cultural Innovation. </span><span>But what sets us a part is that at every step of the process, we stop and question if our thinking has gone far enough. Is there a new piece of technology that can make this even better? How can it be more social and more participatory? Is there a way to simplify the user journey? Is this as big and powerful as it can be?</span>",
-        "Well, I can attest to the fact that it works. You killed it for me on both Rise and Sunny, and now Mr. Cooper. It's just amazing work and I'm always looking forward to our next conversation.<span>Thanks! We live for this kind of stuff.</span>",
-        "Alright, to wrap this up, I thought you guys were the communications experts, so why do you have clients doing all the writing on your website?<span>When agencies try to explain what they do and why they're good at it, they just always sound so pompous and full of themselves—even the really good ones. And that's not us.  We think what our clients have to say is much more interesting than what we have to say. Plus we thought it would be fun.</span>"
+        "It&#8217;s interesting that you say that your talent is looking for innovation, because as a client, that&#8217;s exactly what I&#8217;m looking for too. ",
+        "<span>Right, and when the client&#8217;s ambitions mesh with the agency&#8217;s ambitions and the ambitions of the individuals that work there, that&#8217;s when great things happen.</span>"
       ],
       "accordion": [
         {
-          "label": "Marketing Innovation",
-          "content": 'We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.'
+          "label": "Brand Innovation",
+          "content": 'We help companies refocus their marketing spend, analyze their touch points, evolve their brands and take advantage of "big idea" thinking.'
         },
         {
           "label": "UX Innovation",
-          "content": 'We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.'
+          "content": 'We help companies rethink customer experiences across all touch-points using an advanced blend of interaction design, science and art..'
         },
         {
           "label": "Digital Innovation",
-          "content": 'We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.'
+          "content": 'We use emerging digital media to create marketing efficiencies, creative positive brand conversations, and maintain meaningful dialogue with customers.'
         },
         {
           "label": "Cultural Innovation",
-          "content": 'We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.'
+          "content": 'We help companies accelerate their presence in culture using partnerships with entertainment, cultural and brand properties with similar DNA.'
         },
       ],
       "details": [
@@ -369,7 +355,7 @@ var copy =
       "caseWriter": {
         "name": "Amy Weisenbach",
         "title": "VP Marketing, Wilson",
-        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world’s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world&#8217;s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
       },
       "heroThumb": require('assets/images/wilsonx_thumb_01-opt.jpg'),
       "heroThumbAlt": "Wilson X - Case Study Video",
@@ -435,7 +421,7 @@ var copy =
           "imageUrl": require("assets/images/Wilson-Anthem-LandingPage_02c.jpg"),
           "imageAlt": "SLS",
           "mainDescription": [
-            "When it came to Wilson.com, we had a pretty big challenge. For years the site was very product oriented. But when it came to purchasing the product, people would get the info they need and then run off to a local sporting goods store to buy. This wasn’t exactly the ideal experience for us. When discussing the relaunch of Wilson.com, Pheno actually showed us a lot of leading fashion retail websites as a model that would work for us. The idea behind this approach is building what is called “shoppable stories” where watchable content revolved around the clothing, or in our case, the equipment."
+            "When it came to Wilson.com, we had a pretty big challenge. For years the site was very product oriented. But when it came to purchasing the product, people would get the info they need and then run off to a local sporting goods store to buy. This wasn&#8217;t exactly the ideal experience for us. When discussing the relaunch of Wilson.com, Pheno actually showed us a lot of leading fashion retail websites as a model that would work for us. The idea behind this approach is building what is called “shoppable stories” where watchable content revolved around the clothing, or in our case, the equipment."
           ]
         },
         {
@@ -471,7 +457,7 @@ var copy =
       "topDescription": [
         "Every sport has been affected by modern technology, but when it comes to the actual ball used in each sport, it&#8217s typically generations before there is any major advancement. With Wilson X, we really pushed the boundaries of what a basketball could be. It&#8217s the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment.",
         "<span class='red'>It&#8217s the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment.</span>",
-        "The ball also develops players skills by infusing gaming mechanics into training. There&#8217s audio with crowd noise and sports commentary. There’s a countdown mode to help create clutch shooting for those pressure-filled minutes at the end of a game. And you can even share your progress with friends, family or coaches."
+        "The ball also develops players skills by infusing gaming mechanics into training. There&#8217s audio with crowd noise and sports commentary. There&#8217;s a countdown mode to help create clutch shooting for those pressure-filled minutes at the end of a game. And you can even share your progress with friends, family or coaches."
       ],
       "details": [
         "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
@@ -479,7 +465,7 @@ var copy =
       "caseWriter": {
         "name": "Amy Weisenbach",
         "title": "VP Marketing, Wilson",
-        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world’s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world&#8217;s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
       },
       "topcontent": [
         {
@@ -550,7 +536,7 @@ var copy =
             }
           ],
           "mainDescription": [
-            "Phenomenon helped us with development of all aspects of the ball at a very early stage. Including both naming and designing it. INFORMATION ABOUT THE PRODUCT STRATEGY. We then worked with them to create a user experience that was simple and easy, but also felt cool and represented the next generation of Wilson. It’s one thing to put millennials in your spot, it’s whole different thing to give them a piece of technology that they actually use and love."
+            "Phenomenon helped us with development of all aspects of the ball at a very early stage. Including both naming and designing it. INFORMATION ABOUT THE PRODUCT STRATEGY. We then worked with them to create a user experience that was simple and easy, but also felt cool and represented the next generation of Wilson. It&#8217;s one thing to put millennials in your spot, it&#8217;s whole different thing to give them a piece of technology that they actually use and love."
           ]
         },
         {
@@ -612,7 +598,7 @@ var copy =
       "caseWriter": {
         "name": "Amy Weisenbach",
         "title": "VP Marketing, Wilson",
-        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world’s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world&#8217;s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
       },
       "details": [
         "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
@@ -709,7 +695,7 @@ var copy =
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
-        "If you&#8217;ve ever bought or sold a home, you know it’s a complex, fragmented and pretty unfriendly process. With Xome, we wanted to introduce a radically better way to do it.",
+        "If you&#8217;ve ever bought or sold a home, you know it&#8217;s a complex, fragmented and pretty unfriendly process. With Xome, we wanted to introduce a radically better way to do it.",
         "<span class='red'>The whole purpose of Xome is to help homebuyers and sellers from start to finish. </span>",
         "The whole purpose of Xome is to help homebuyers and sellers from start to finish. So we worked with Pheno to build a beautifully intuitive mobile app. In just six weeks we completed the app making it the first truly integrated way to buy and sell a home. With it, you can list a home, search for a home, make and receive offers, move into escrow and close the deal, all from the palm of your hand."
       ],
@@ -726,7 +712,7 @@ var copy =
       "caseWriter": {
         "name": "Amy Weisenbach",
         "title": "VP Marketing, Wilson",
-        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world’s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world&#8217;s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
       },
       "detailcontent": [
         {
@@ -788,7 +774,7 @@ var copy =
       "caseWriter": {
         "name": "Amy Weisenbach",
         "title": "VP Marketing, Wilson",
-        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world’s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world&#8217;s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
       },
       "detailcontent": [
         {
@@ -924,7 +910,7 @@ var copy =
       "caseWriter": {
         "name": "Amy Weisenbach",
         "title": "VP Marketing, Wilson",
-        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world’s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world&#8217;s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
       },
       "detailcontent": [
         {
@@ -1015,7 +1001,7 @@ var copy =
       "caseWriter": {
         "name": "Amy Weisenbach",
         "title": "VP Marketing, Wilson",
-        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world’s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world&#8217;s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
       },
       "detailcontent": [
         {
