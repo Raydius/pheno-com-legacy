@@ -4,6 +4,9 @@
   .contact-wrppaer {
     width: 90%;
     margin: $base_spacing auto;
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
   }
   .top-main {
     border-bottom: 0;
@@ -13,6 +16,15 @@
   }
   .col-md-6 {
     margin-top: $base_spacing - 20;
+    @media screen and (max-width: 1024px) and (min-width: 640px) {
+      padding-left: 0;
+      &:last-of-type {
+        padding-left: 15px;
+      }
+    }
+    @media screen and (max-width: 640px) {
+      padding: 0;
+    }
   }
   figure {
     background: #f2f2f2;

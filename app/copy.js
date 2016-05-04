@@ -451,10 +451,10 @@ var copy =
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
-        "With over 100 years of experience making sports equipment, we’ve been at the forefront of nearly every major technology advancement in just about every sport. So it only made sense to pioneer the use of sensors and IOT technology inside our equipment with the Wilson X Connected Basketball.",
+        "With over 100 years of experience making sports equipment, we&#8217ve been at the forefront of nearly every major technology advancement in just about every sport. So it only made sense to pioneer the use of sensors and IOT technology inside our equipment with the Wilson X Connected Basketball.",
         "Wilson X really pushes the boundaries of what a basketball can be.",
-        "<span class='red'>It’s the first basketball that connects to your smartphone and tracks makes and misses without any attachments or accessories.</span>",
-        "The ball also develops player’s skills by infusing gaming mechanics into training. There’s audio with crowd noise and sports commentary. There’s a countdown mode to help create those pressure-filled minutes at the end of a game. And you can even share your progress with friends, family or coaches. It’s a ball that has the potential to truly take training to the next level by making you a more clutch shooter."
+        "<span class='red'>It&#8217s the first basketball that connects to your smartphone and tracks makes and misses without any attachments or accessories.</span>",
+        "The ball also develops player&#8217s skills by infusing gaming mechanics into training. There&#8217s audio with crowd noise and sports commentary. There&#8217s a countdown mode to help create those pressure-filled minutes at the end of a game. And you can even share your progress with friends, family or coaches. It&#8217s a ball that has the potential to truly take training to the next level by making you a more clutch shooter."
       ],
       "details": [
         "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
@@ -494,7 +494,7 @@ var copy =
             }
           ],
           "mainDescription": [
-            "Phenomenon was at the table as we developed the ball and brought it to market. They helped us with positioning, the UX/UI of app development, product naming and of course, the marketing of the ball at launch. They were instrumental in helping us create a user experience that was simple and intuitive, but that also felt cool and represented the next generation of Wilson. It’s one thing to show young athletes in your advertising, it’s a whole different thing to give them a piece of technology that they actually use and love."
+            "Phenomenon was at the table as we developed the ball and brought it to market. They helped us with positioning, the UX/UI of app development, product naming and of course, the marketing of the ball at launch. They were instrumental in helping us create a user experience that was simple and intuitive, but that also felt cool and represented the next generation of Wilson. It&#8217s one thing to show young athletes in your advertising, it&#8217s a whole different thing to give them a piece of technology that they actually use and love."
           ]
         }
       ],
@@ -694,7 +694,7 @@ var copy =
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
-        "If you’ve ever bought or sold a home, you know it’s a complex, fragmented and darned unfriendly process. Believe it or not, studies have shown that buying a house is more stressful than bankruptcy, divorce or even the death of a loved one. With Xome, we not only brought homebuying into the 21st century, we introduced a radically better way to do it.",
+        "If you&#8217ve ever bought or sold a home, you know it&#8217s a complex, fragmented and darned unfriendly process. Believe it or not, studies have shown that buying a house is more stressful than bankruptcy, divorce or even the death of a loved one. With Xome, we not only brought homebuying into the 21st century, we introduced a radically better way to do it.",
         "<span class='red'>The whole purpose of Xome is to help homebuyers and sellers from start to finish.</span>",
         "Our mission is to give people more control, provide transparency and help people when they need it the most.",
         "The whole purpose of Xome is to help homebuyers and sellers from start to finish. So we worked with Pheno to build a beautifully intuitive mobile app. In just six weeks we completed the app making it the first truly integrated way to buy and sell a home. With it, you can list a home, search for a home, make and receive offers, move into escrow and close the deal, all from the palm of your hand."
@@ -767,9 +767,9 @@ var copy =
           "imageUrl": require("assets/images/sunny-1.png"),
           "imageAlt": "Sunny",
           "mainDescription": [
-            "Strategically, Phenomenon recognized that there was no loyalty in our industry, and for good reason. People took out their first loan and then had to pay so much back that they took out another loan to pay for that, and so on and so on. Often working with multiple companies in the process, or as they deemed it, “a circle of debt.” Because of the rates and the product architecture, people didn’t have any choice, this was the way this category operated and no one was challenging the status quo of a predatory business model, until Sunny.",
+            "Strategically, Phenomenon recognized that there was no loyalty in our industry, and for good reason. People took out their first loan and then had to pay so much back that they took out another loan to pay for that, and so on and so on. Often working with multiple companies in the process, or as they deemed it, “a circle of debt.” Because of the rates and the product architecture, people didn&#8217t have any choice, this was the way this category operated and no one was challenging the status quo of a predatory business model, until Sunny.",
             "Sunny was a business idea that was different because it was architected to help customers; a first for this category. Things like making payments on time lowered their interest. And the more loans you take out with us, as long as you continue to pay back on time, the lower the rate goes.",
-            "After we all committed to making this change to our business model and challenging the entire category, Phenomenon then transitioned into helping us make it a reality. They designed the logo. Designed and built the website. And launched a brand campaign that ran all over the UK. This campaign included a series of ads featuring puppets. Why? Well, for years the notoriously shady payday loan company, Wonga hid behind endearing puppets. We decided to take them head on with a campaign that basically said don’t trust puppets, trust a better way of doing payday loans."
+            "After we all committed to making this change to our business model and challenging the entire category, Phenomenon then transitioned into helping us make it a reality. They designed the logo. Designed and built the website. And launched a brand campaign that ran all over the UK. This campaign included a series of ads featuring puppets. Why? Well, for years the notoriously shady payday loan company, Wonga hid behind endearing puppets. We decided to take them head on with a campaign that basically said don&#8217t trust puppets, trust a better way of doing payday loans."
           ]      
         }
       ],
@@ -793,7 +793,7 @@ var copy =
           "thumbTitle": "Click to play video",
           "vimeo": "159123265",
           "mainDescription": [
-            "<span class='red'>For years, the notoriously shady payday loan company, Wonga hid behind endearing puppets. We decided to take them head on with a campaign that basically said don’t trust puppets, trust a better way of doing payday loans.</span>"
+            "<span class='red'>For years, the notoriously shady payday loan company, Wonga hid behind endearing puppets. We decided to take them head on with a campaign that basically said don&#8217t trust puppets, trust a better way of doing payday loans.</span>"
           ]
         }
       ]
@@ -1113,8 +1113,8 @@ var copy =
       "className": "culture",
       "description": "Phenomenon - Culture",
       "blockquote": "Their office on the 28th floor provides great views of all the amazing places in LA that I've wanted to see but didn't have time to sit in traffic for two hours to visit.&#8221;",
-      "quoterName": "Lindsay Phillips",
-      "quoterTitle": "Men&#8217s Wearhouse",
+      "quoterName": "Lindsay",
+      "quoterTitle": "client",
       "details": [
         "Buying or selling a home is often a complex, fragmented and darned unfriendly process. Xome is a radically better way to do it because it lets you complete everything from the convenience of an app. In just six weeks we built Xome: the first truly integrated way to buy and sell a home. The app lets you list your home, search for a home, make and receive offers, move into escrow and close the deal.",
         "When it came to the TV spot, we created something that spoke to the core of what Xome does, it makes the entire home buying/selling process more transparent. This teaser spot led people to our site where a demo video explained in better detail everything Xome does for the home buyer."
@@ -1175,19 +1175,19 @@ var copy =
       ],
       "departments": [
         {
-          "cat": "Jobs",
-          "description": "We'd love to hear from you. <br> Tell us some things LinkedIn can't.",
+          "cat": "Careers",
+          "description": "Would love to hear from you. Tell us some things LinkedIn can&#8217t.",
           "email": "jobs@phenomenon.com"
         },
         {
-          "cat": "New Business",
-          "description": "Pheno works mostly by referral. <br> Mostly. Not exclusively.",
-          "email": "newbiz@phenomenon.com"
+          "cat": "PR",
+          "description": "We&#8217re generally not ones to talk about ourselves, but you can ask",
+          "email": "pr@phenomenon.com"
         },
         {
-          "cat": "PR",
-          "description": "We're generally not the ones talk about<br> ourselves. But you can ask.",
-          "email": "pr@phenomenon.com"
+          "cat": "New Business",
+          "description": "Pheno works mostly by referral. Mostly. Not exclusively.",
+          "email": "info@phenomenon.com"
         }
       ]
     },
