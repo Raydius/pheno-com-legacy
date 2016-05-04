@@ -9,24 +9,24 @@ section.row.no-padding.contact
 			blockquote!= pageData.blockquote
 		
 		include components/cite-components
-
-	each contentItem, index in pageData.offices 
-		.col-xs-12.col-sm-6.col-md-6.no-padding
-			figure
-				img(src!=contentItem.imgSrc)
-				figcaption
-					h3= contentItem.name
-					ul
-						li!= contentItem.phone
-							
-						li!= contentItem.address 
-	.clear
-	section.contactbiz.clearfix
-		each contentItem, index in pageData.departments
-			.col-xs-12.col-sm-4.col-md-4.no-padding
-				h4!= contentItem.cat
-				span!= contentItem.description
-				hr
-				span.red!= contentItem.email
+	.contact-wrppaer
+		each contentItem, index in pageData.offices 
+			.col-xs-12.col-sm-6.col-md-6.no-padding
+				figure
+					img(src!=contentItem.imgSrc)
+					figcaption
+						h3= contentItem.name
+						ul
+							li!= contentItem.phone
+								
+							li!= contentItem.address 
+		.clear
+		section.contactbiz.clearfix
+			each contentItem, index in pageData.departments
+				.col-xs-12.col-sm-4.col-md-4.no-padding
+					h4!= contentItem.cat
+					span!= contentItem.description
+					hr
+					span.red!= contentItem.email
 
 //include components/contact-form
