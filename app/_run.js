@@ -16,8 +16,14 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
         } else {
             $('body').addClass('desktop');
         }
+
+        $('.home .top-main').css('height', $(window).height() - $('.nav-wrapper').height());
+
     });
    
+    $(window).resize(function(){
+        $('.home .top-main').css('height', $(window).height() - $('.nav-wrapper').height());
+    })
 
     var $main = $('main');
     var $body = $('body');
@@ -34,13 +40,19 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
     var fixedheader = $("nav.topnav, .logo-wrapper");
 
     $(window).scroll(function(){
-        $('.featured-contributors').addClass('show');
+        $('.featured-contributors').addClass('show').css('marginTop', -$('.home .top-main').height()/2 + 100);
+
 
        if ($(document).scrollTop() > 0 && $(window).width() > 768) {
         fixedheader.addClass("fixed");
       } else {
         fixedheader.removeClass("fixed"); 
       }  
+
+      if ($(document).scrollTop() == 0) {
+            $('.featured-contributors').removeClass('show').css('marginTop', 0);
+
+      }
     })
 
     $('#hamburger').click(function(){

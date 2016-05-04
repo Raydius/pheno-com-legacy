@@ -2,7 +2,14 @@
 	margin-bottom: $base_spacing*2;
 	.top-main {
 		border-bottom: 0;
-		padding-top: $base_spacing + 20;
+		padding-top: 0;
+		padding-bottom: 0;
+		float: none;
+		.col-md-6 {
+			top: 50%;
+			margin-top: -200px;
+			position: relative;
+		}
 		p {
 			font-size: 34px;
 			font-family: 'TiemposHeadline-Regular';
@@ -41,13 +48,11 @@
 		padding: 0 $base_spacing $base_spacing;
 		margin-top: $base_spacing;
 		opacity: 0;
-		margin-top: 1200px;
 		transition: all 1s;
 		//transition-delay: 100s;
 		position: relative;
 		&.show {
 			opacity: 1;
-			margin-top: 600px;
 		}
 		.col-md-4 {
 			width: calc(33.33333% - 40px);
