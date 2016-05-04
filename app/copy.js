@@ -777,7 +777,7 @@ var copy =
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "In the UK, the short-term loans business is not dissimilar to the US in that we have a huge problem with perception. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
-        "<span class='red'>We went to Phenomenon to help us create a differentiating short-term loan product</span>",
+        "<span class='red'>We went to Phenomenon to help us create a differentiating short-term loan product.</span>",
         "We went to Phenomenon, not to create a brand campaign or an app or some other piece of communication. We went to Phenomenon to help us create a differentiating short-term loan product. And they came back to us with an interesting idea they aptly called Sunny."
       ],
       "topcontent": [
