@@ -264,24 +264,11 @@ var copy =
           "imageUrl": require('assets/images/work-1.jpg'),
           "imageAlt": "Wilson Image 1",
           "legend": "Sport / Lifestyle",
-          "headline": "Wilson Is Now Fully Equipped.",
+          "headline": "Wilson Equips Itself With Global Campaign.",
           "citeName": "By Amy Weisenbach",
           "citeTitle": "VP Marketing, Wilson",
-          "description": "360 degree global campaign is the first in the company#8217;s 50 year history.",
+          "description": "360 degree global campaign is the first in the company#8217;s 100 year history.",
           "readmoreUrl": "#/work/wilson-anthem"
-        },
-        {
-          "type": "image",
-          "image": true,
-          "imageUrl": require('assets/images/work-2.jpg'),
-          "imageAlt": "Wilson Image 2",
-          "legend": "Home/ Real Estate",
-          "headline": "When Buying a House, There's no place like Xome",
-          "citeName": "By Amy Weisenbach",
-          "citeTitle": "VP Marketing, Wilson",
-          "description": "New company looks to make buying and selling a home not only more mobile, but more transparent.",
-          "readmoreUrl": "#/work/xome"
-
         },
         {
           "type": "image",
@@ -290,10 +277,23 @@ var copy =
           "imageAlt": "Wilson Image 3",
           "legend": "Fashion / Retail",
           "headline": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.",
-          "citeName": "By Amy Weisenbach",
-          "citeTitle": "VP Marketing, Wilson",
+          "citeName": "By Matt Stringer",
+          "citeTitle": "EVP Marketing Men’s Wearhouse",
           "description": "After the departure of longtime owner and face of brand, company looks to modernize all the way down to the cufflinks.",
           "readmoreUrl": "#/work/mens-wearhouse"
+
+        },
+        {
+          "type": "image",
+          "image": true,
+          "imageUrl": require('assets/images/work-6.jpg'),
+          "imageAlt": "Wilson Image 6",
+          "legend": "Food / Drink",
+          "headline": "thinkThin Helps Women Shed the Guilt",
+          "citeName": "By Megan Crossland",
+          "citeTitle": "Director of Marketing, thinkThin",
+          "description": "Nutritional bar targeted to women launches its first campaign using humor to rave reviews online.",
+          "readmoreUrl": "#/work/think-thin"
 
         },
         {
@@ -315,24 +315,24 @@ var copy =
           "imageAlt": "Wilson Image 5",
           "legend": "Finance / Loans",
           "headline": 'It&#8217;s A "Sunny" Day<br> for Payday Loans.',
-          "citeName": "By Allison Cornia",
-          "citeTitle": "SVP Marketing, Xome",
+          "citeName": "By Patsy Hauer",
+          "citeTitle": "VP Brand Marketing, Sunny",
           "description": "British company creates a whole new business model for payday loans that gives borrowers a better chance at getting out of debt.",
           "readmoreUrl": "#/work/sunny"          
         },
         {
           "type": "image",
           "image": true,
-          "imageUrl": require('assets/images/work-6.jpg'),
-          "imageAlt": "Wilson Image 6",
-          "legend": "Food / Drink",
-          "headline": "thinkThin Helps Women Shed the Guilt",
-          "citeName": "By Amy Weisenbach",
-          "citeTitle": "VP Marketing, Wilson",
-          "description": "Nutritional bar targeted to women launches its campaign using humor to rave reviews online.",
-          "readmoreUrl": "#/work/think-thin"
+          "imageUrl": require('assets/images/work-2.jpg'),
+          "imageAlt": "Wilson Image 2",
+          "legend": "Home/ Real Estate",
+          "headline": "When Buying a House, There's No place Like Xome",
+          "citeName": "By Allison Cornia",
+          "citeTitle": "SVP Marketing, Xome",
+          "description": "New company looks to make buying and selling a home not only more mobile, but more transparent.",
+          "readmoreUrl": "#/work/xome"
 
-      }
+        }
       ]
     },
     "wilson-anthem": { 
