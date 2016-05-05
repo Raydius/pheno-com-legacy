@@ -356,9 +356,12 @@ h3 blockquote {
 	}
 	.social {
 		li {
-			margin: 0 15px;
+			margin: 0 12px;
 			&:first-child {
 				margin-left: 0;
+			}
+			&:nth-child(3) {
+				margin: 0 10px;
 			}
 		}
 	}
