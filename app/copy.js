@@ -36,11 +36,6 @@ var copy =
       "navTitle": "Contact",
       "title": "View Contact Form",
       "uiSref": "contact"
-    },
-    {
-      "navTitle": "Blog",
-      "title": "View Blog",
-      "uiSref": "http://now.phenomenon.com/"
     }
   ],
   "share": {
