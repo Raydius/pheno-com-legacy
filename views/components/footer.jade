@@ -5,11 +5,11 @@ footer.footer
 	.footer-wrapper.row
 		//- h1.col-xs-12.col-sm-3.col-lg-2.no-padding Phenomenon
 		//- 	sub &reg;
-		.col-xs-12.col-sm-3.col-lg-2
+		.col-xs-12.col-sm-3.col-lg-2.no-padding
 			img(src=copy.logo.src, alt=src=copy.logo.alt).logo
-		section.col-xs-12.col-sm-6.col-lg-5.offices
+		section.col-xs-12.col-sm-6.col-lg-5.offices.no-padding
 			each officeItem in copy.footer.offices
-				.office.col-xs-12.col-sm-6.no-padding
+				.office.col-xs-12.col-sm-6
 					h4= officeItem.title
 					address 
 						span= officeItem.address.line1
