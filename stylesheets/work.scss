@@ -79,6 +79,13 @@
 					display: block;
 					margin-top: 10px;
 					color: $gray_font;
+					span {
+						padding-left: 20px;
+					}
+					&:before {
+						position: absolute;
+						top: 12px;
+					}
 				}
 				input#toggle-share {
 					display: block;
@@ -199,7 +206,7 @@
 			font-family: "Circular-bold";
 			font-size: 13px;
 			&:last-of-type {
-				font-family: "Circular-book";
+				//font-family: "Circular-book";
 			}
 		}
 		p {
