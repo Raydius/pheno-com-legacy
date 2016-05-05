@@ -28,6 +28,7 @@
 			padding-left: $base-spacing;
 			@media screen and (max-width: 640px) {
 				padding-left: 0;
+				padding-right: 0;
 			}
 			img {
 				@media screen and (max-width: 640px) {
