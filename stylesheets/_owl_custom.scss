@@ -263,10 +263,15 @@
   	}
 	.mobile .owl-nav .owl-prev {
 	  float: left;
+    margin-left: 10%;
 	}
 	.mobile .owl-nav .owl-next { 
 	  float: right;
+    margin-right: 10%;
 	}
+  .mobile .owl-dots {
+    margin-top: 39px;
+  }
   .desktop .owl-nav .owl-prev {
     position: absolute;
     left: 0%;
