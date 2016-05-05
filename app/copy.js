@@ -802,7 +802,7 @@ var copy =
       "media": "Branding",
       "blockquote": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.", 
       "quoterName": "By Matt Stringer",
-      "quoterTitle": "EVP Marketing, Men&#8217s Wearhouse",
+      "quoterTitle": "EVP Marketing, Men&#8217;s Wearhouse",
       "quoterAvatar": require("assets/images/about/about-avatar.png"),     
       "description": "CVU - Phenomenon - Wilson X",
       "caseWriter": {
