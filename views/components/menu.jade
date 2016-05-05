@@ -4,5 +4,5 @@ block variables
 nav.nav
 	ul
 		each navItem in copy.navigation
-			li(ng-class="{ selected: isSelected('#{navItem.uiSref}') }", class=navItem.className)
-				a.hvr-underline-from-center(ui-sref=navItem.uiSref, href=navItem.uiSref, title=navItem.title, ng-click="closeDrawer()")= navItem.navTitle
+			li(ng-class="{ selected: isSelected('#{navItem.uiSref}') }", class=navItem.className+ ' hvr-underline-from-center') 
+				a(ui-sref=navItem.uiSref, href=navItem.uiSref, title=navItem.title, ng-click="closeDrawer()")= navItem.navTitle
