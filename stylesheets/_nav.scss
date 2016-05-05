@@ -295,7 +295,7 @@ snap-content, .snap-content{
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  overflow: hidden;
+  //overflow: hidden;
 }
 .hvr-underline-from-center:before {
   content: "";

@@ -349,6 +349,7 @@ h3 blockquote {
 		li {
 			font-size: 20px;
 			margin-top: $base_spacing - 30;
+			width: 100%;
 			a {
 				color: #333;
 			}
@@ -357,6 +358,7 @@ h3 blockquote {
 	.social {
 		li {
 			margin: 0 12px;
+			width: auto;
 			&:first-child {
 				margin-left: 0;
 			}
