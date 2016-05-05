@@ -272,6 +272,13 @@
 			margin-left: 0;
 		} 
 	}
+	.detail-content {
+		p {
+			@media screen and (max-width: 640px) {
+				padding: 0 30px;
+			} 
+		}
+	}
 }
 .bubble 
 {
