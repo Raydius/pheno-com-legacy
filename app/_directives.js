@@ -102,6 +102,31 @@ angular.module('phenoCom').directive('scrolltop2', function() {
     };
   });
 
+angular.module('phenoCom').directive('close', function() {
+    return {
+      link: function (scope, element, attrs) {
+        (function($){
+            $.fn.outside = function(ename, cb){
+              return this.each(function(){
+                  var $this = $(this),
+                      self = this;
+
+                  $(document).bind(ename, function tempo(e){
+                      if(e.target !== self && !$.contains(self, e.target)){
+                          cb.apply(self, [e]);
+                          if(!self.parentNode) $(document.body).unbind(ename, tempo);
+                      }
+                  });
+              });
+            };
+            }(jQuery));
+            element.bind().outside('click', function() { 
+                $(this).prop('checked', false);
+            })
+        }
+    };
+  });
+
 // currently not in use: embedded scrollable website
 angular.module('phenoCom').directive('scrollableComponent', function($window) {
 
