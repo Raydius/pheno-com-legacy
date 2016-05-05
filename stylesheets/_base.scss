@@ -10,11 +10,13 @@ html, body {
   font-family: $primary_font;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  &.opend {
+  	overflow: hidden;
+  }
 }
 body {
 	&.opend {
 		overflow: hidden;
-		position: relative;
 		.body-wrapper {
 	    	left: 80%;
 	    	box-shadow: 0 0 20px rgba(0,0,0,0.2);

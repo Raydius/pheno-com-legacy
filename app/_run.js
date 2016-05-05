@@ -62,7 +62,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
     })
 
     $('#hamburger').click(function(){
-        $body.toggleClass('opend');
+        $('body, html').toggleClass('opend');
         $(this).toggleClass('open');
     });
     
