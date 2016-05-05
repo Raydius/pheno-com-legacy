@@ -23,6 +23,15 @@
 			padding-left: 0;
 		}
 	}
+	.table, .change-order {
+		width: 90%;
+		left: 50%;
+		transform: translateX(-50%);
+		@media screen and (max-width: 1024px) {
+			width: 100%;
+			padding: 0;
+		}
+	}
 	article {
 		margin-top: $base_spacing;
 		@media screen and (max-width: 640px) {
@@ -39,11 +48,17 @@
 		}
 		img {
 			margin-top: $base_spacing - 20;
+			@media screen and (max-width: 975px) {
+				margin-top: 20px;
+			} 
 			&:first-of-type {
 				margin-top: 0;
 			}
 		}
 		&.building {
+			@media screen and (max-width: 975px) {
+				margin: 20px 0;
+			} 
 			.col-md-7 {
 				img:last-of-type {
 					width: 70%;
@@ -233,6 +248,9 @@
 	}
 	.margin-bottom-md {
 		margin-bottom: 40px;
+		@media screen and (max-width: 975px) {
+			margin-bottom: 20px;
+		} 
 	}
 	h3 {
 		@media screen and (max-width: 640px) {

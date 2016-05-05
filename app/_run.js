@@ -49,7 +49,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
         $('.featured-contributors').addClass('show').css('marginTop', -($('.home .top-main').height()/2 - $('.top-main .col-md-6').height()));
 
 
-       if ($(document).scrollTop() > 0 && $(window).width() > 768) {
+       if ($(document).scrollTop() > 0) {
         fixedheader.addClass("fixed");
       } else {
         fixedheader.removeClass("fixed"); 

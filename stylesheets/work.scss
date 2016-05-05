@@ -224,6 +224,11 @@
 		text-align: center;
 		padding: $base_spacing*2 ($base_spacing - 20) 0 ($base_spacing - 20);
 		padding-top: $base_spacing - 40;
+		@media screen and (max-width: 640px) {
+			//temporary solution to make the active scetion wider
+			transform: scale(1.2);
+			margin-top: $base_spacing+40;
+		} 
 		> span, > a {
 			padding-bottom: 30px; 
 			padding: 15px 15px 30px 15px;
