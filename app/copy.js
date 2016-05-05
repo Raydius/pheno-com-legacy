@@ -127,7 +127,7 @@ var copy =
         },
         {
           "name": "Megan Crossland",
-          "jobTitle": "Director of Marketing, thinkThin",
+          "jobTitle": "CMO, thinkThin",
           "project": "thinkThin Helps<br> Women Shed the Guilt.",
           "contributorAvatar": require("assets/images/home/avatar-3.png")
         },
@@ -157,9 +157,9 @@ var copy =
       "title": "About Phenomenon",
       "className": "about",
       "blockquote": "Something like a Phenomenon",
-      "subquote": "A behind the scenes look at the most appropriately-named agency I know.",
-      "quoterName": "By Kevin Dahlstrom, Chief Marketing Officer",
-      "quoterTitle": "Mr. Cooper Home Loans",
+      "subquote": "A behind-the-scenes look at the most appropriately-named agency I know.",
+      "quoterName": "Kevin Dahlstrom, CMO",
+      "quoterTitle": "Mr. Cooper Home Loans", 
       "description": "Phenomenon - About",
       "dictionary": {
         "noun": "1. a person adept at solving problems.", 
@@ -247,8 +247,8 @@ var copy =
       "className": "work",
       "description": "Phenomenon - Work",
       "blockquote": "A lot of the work they do is confidential. Here&#8217;s some that isn&#8217t.&#8221;",
-      "quoterName": "Mike Dowse",
-      "quoterTitle": "CEO, Wilson",
+      "quoterName": "Kevin Dahlstrom",
+      "quoterTitle": "Mr. Cooper Home Loans",
       "maincontent": [
 
       ],
@@ -262,7 +262,7 @@ var copy =
           "headline": "Wilson Equips Itself With Global Campaign.",
           "citeName": "By Amy Weisenbach",
           "citeTitle": "VP Marketing, Wilson",
-          "description": "360 degree global campaign is the first in the company&#8217;s 100 year history.",
+          "description": "New 360-degree global campaign for 100 year old company.",
           "readmoreUrl": "#/work/wilson-anthem"
         },
         {
@@ -286,7 +286,7 @@ var copy =
           "legend": "Food / Drink",
           "headline": "thinkThin Helps Women Shed the Guilt",
           "citeName": "By Megan Crossland",
-          "citeTitle": "Director of Marketing, thinkThin",
+          "citeTitle": "CMO, thinkThin",
           "description": "Nutritional bar targeted to women launches its first campaign using humor to rave reviews online.",
           "readmoreUrl": "#/work/think-thin"
 
@@ -412,7 +412,7 @@ var copy =
           "imageUrl": require("assets/images/Wilson-Anthem-LandingPage_02c.jpg"),
           "imageAlt": "SLS",
           "mainDescription": [
-            'When it came to Wilson.com, we had a pretty big challenge. For years the site was very product oriented but yet the e-commerce side was not incredibly successful. We needed to evolve and focus our site into more of a content hub. Pheno helped us develop an editorial commerce strategy and build out a vision for the site that allowed us to tell stories that engage consumers around the brand, our products AND at the same time, sell product. As it turned out, "My Wilson" became the driving force behind a more robust and effective Wilson.com.'
+            'When it came to Wilson.com, we had a pretty big challenge. For years the site was very product oriented but yet the e-commerce side was pretty underdeveloped. We needed to evolve and focus our site into more of a content hub. Pheno helped us build an editorial commerce strategy and create a vision for the site that allowed us to tell stories that engage consumers around the brand, our products AND at the same time, sell product. "My Wilson" became the perfect campaign to show this new site to the world.'
           ]
         },
         {
@@ -906,14 +906,14 @@ var copy =
       "media": "Branding",
       "blockquote": 'thinkThin Helps<br> Womens Shed the Guilty',
       "quoterName": "By Megan Crossland",
-      "quoterTitle": "Director of Marketing, thinkThin",
+      "quoterTitle": "CMO, thinkThin",
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "In 2014, thinkThin was on the cusp of tremendous growth. For 10 years, we had been a really successful privately owned regional brand, but with an infusion of cash from private equity, we were about to get national distribution for the first time. And it was clear that we needed to develop our brand positioning and create an integrated advertising campaign to support our efforts.",
-        "As a healthy lifestyle brand, founded by an inspirational female entrepreneur, we knew that the key was to resonate with women in a really unique way. We also knew that we couldn&#8217;t just leverage the same yoga, spin class and active lifestyle images that the rest of the category was using in nearly every piece of communication.",
+        "As a healthy lifestyle brand, founded by an inspirational female entrepreneur, we knew that the key was to resonate with women in a really unique way. We also knew that we couldn&#8217;t just leverage the same yoga, spin class and active lifestyle images that the rest of the category was using in nearly every piece of communication. The creative and strategy teams quickly arrived at pivotal insight that unlocked everything for us.",
         "The creative and strategy teams quickly arrived at pivotal insight that unlocked everything for us. In short,",
-        "<span class='red'>the idea was that you can&#8217;t begin to have a conversation about health and nutrition for women without addressing the notion of guilt.</span>",
+        "<span class='red'>The idea was that you can’t begin to have a conversation about health and nutrition for women without addressing the notion of guilt.</span>",
         "But we didn&#8217;t want to get heavy or depressing about it, because we&#8217;re a positive, optimistic and upbeat brand."
       ],
       "topcontent": [
@@ -948,7 +948,7 @@ var copy =
             "thumbTitle": "Click to play video",
             "vimeo": "159448353",
             "mainDescription": [
-              'The line that brought it all together was, "There are lots of things to feel guilty about, thinkThin isn&#8217;t one of them." The creative team then executed around this line in everything from Print and TV to digital, mobile and sponsorships.'
+              'The line that brought it all together was, "There are lots of things to feel guilty about, thinkThin isn&#8217;t one of them." The creative team then executed around this line in everything from print and TV to digital, mobile and sponsorships.'
             ]
         },
         {
