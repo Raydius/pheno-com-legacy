@@ -262,7 +262,7 @@ var copy =
           "headline": "Wilson Equips Itself With Global Campaign.",
           "citeName": "By Amy Weisenbach",
           "citeTitle": "VP Marketing, Wilson",
-          "description": "360 degree global campaign is the first in the company#8217;s 100 year history.",
+          "description": "360 degree global campaign is the first in the company&#8217;s 100 year history.",
           "readmoreUrl": "#/work/wilson-anthem"
         },
         {
