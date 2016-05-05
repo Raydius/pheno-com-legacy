@@ -52,7 +52,7 @@ section.row.no-padding.about
 				if pageData.paragraph4
 					each par in pageData.paragraph4
 						p!= par
-		.col-md-5(sticky offset="80" media-query="min-width: 1024px").no-padding
+		.col-md-5(sticky offset="80" usePlaceholder="false" media-query="min-width: 1024px").no-padding
 			section.ac-container
 				h4 We are an  Innovations Agency.
 				each contentItem, index in pageData.accordion
