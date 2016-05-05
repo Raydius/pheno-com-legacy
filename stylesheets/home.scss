@@ -51,6 +51,9 @@
 		transition: all 1s;
 		//transition-delay: 100s;
 		position: relative;
+		@media screen and (max-width: 640px) {
+			padding: 0 30px;		
+		}
 		&.show {
 			opacity: 1;
 		}
@@ -78,6 +81,9 @@
 			font-weight: normal;
 			width: 220px;
 			margin: 0 auto;	
+			@media screen and (max-width: 640px) {
+				width: auto;
+			}
 			span {
 				&:first-of-type {
 					font-size: 18px;
