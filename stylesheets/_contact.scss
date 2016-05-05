@@ -17,6 +17,11 @@
   }
   .col-md-6 {
     margin-top: $base_spacing - 20;
+    &:first-of-type {
+      @media screen and (max-width: 640px) {
+        margin-top: 0;
+      }
+    }
     @media screen and (max-width: 1024px) and (min-width: 640px) {
       padding-left: 0;
       &:last-of-type {
@@ -26,6 +31,7 @@
     @media screen and (max-width: 640px) {
       padding: 0;
     }
+
   }
   figure {
     background: #f2f2f2;
