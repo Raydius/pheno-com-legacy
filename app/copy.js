@@ -309,7 +309,7 @@ var copy =
           "imageUrl": require('assets/images/work-5.png'),
           "imageAlt": "Wilson Image 5",
           "legend": "Finance / Loans",
-          "headline": 'It&#8217;s A "Sunny" Day<br> for Payday Loans.',
+          "headline": 'It&#8217;s A &#8220;Sunny&#8221; Day<br> for Payday Loans.',
           "citeName": "By Patsy Hauer",
           "citeTitle": "VP Brand Marketing, Sunny",
           "description": "British company creates a whole new business model for payday loans that gives borrowers a better chance at getting out of debt.",
@@ -1082,18 +1082,18 @@ var copy =
     },
     "moreCases": [
       {
+        "projectName": "Wilson Equips Itself With Global Campaign",
+        "writerName": "By Amy Weisenback",
+        "writerTitle": "VP Marketing, Wilson",
+        "projectUrl": "#/work/wilson-anthem",
+        "projectThumbSrc": require("assets/images/morecases/1.jpg") 
+      },
+      {
         "projectName": "Men&#8217s Wearhouse <br>Updates Its Closet.",
         "writerName": "By Matt Stringer",
         "writerTitle": "EVO Marketing, Men&#8217s Wearhouse",
         "projectUrl": "#/work/mens-wearhouse",
-        "projectThumbSrc": require("assets/images/morecases/1.png") 
-      },
-      {
-        "projectName": "Wilson Launches<br>Futuristic Ball.",
-        "writerName": "By Amy Weisenbach",
-        "writerTitle": "VP Marketing, Wilson",
-        "projectUrl": "#/work/wilson-x",
-        "projectThumbSrc": require("assets/images/morecases/2.png")
+        "projectThumbSrc": require("assets/images/morecases/2.png") 
       },
       {
         "projectName": "thinkThin Helps<br>Women Shed the Guilt.",
@@ -1101,6 +1101,27 @@ var copy =
         "writerTitle": "CMO, thinkThin",
         "projectUrl": "#/work/think-thin", 
         "projectThumbSrc": require("assets/images/morecases/3.png")
+      },
+      {
+        "projectName": "Wilson Launches<br>Futuristic Ball.",
+        "writerName": "By Amy Weisenbach",
+        "writerTitle": "VP Marketing, Wilson",
+        "projectUrl": "#/work/wilson-x",
+        "projectThumbSrc": require("assets/images/morecases/4.png")
+      },
+      {
+        "projectName": "It's a Sunny Day for Payday Loans.",
+        "writerName": "By Patsy Hauer",
+        "writerTitle": "VP Brand Marketing, Sunny",
+        "projectUrl": "#/work/sunny",  
+        "projectThumbSrc": require("assets/images/morecases/5.jpg")
+      },
+      {
+        "projectName": "When Buying a House, There's No Place Like Xome",
+        "writerName": "By Alison Cornia",
+        "writerTitle": "SVP Marketing, Xome",
+        "projectUrl": "#/work/xome", 
+        "projectThumbSrc": require("assets/images/morecases/6.jpg")
       }
     ],
     "culture": { 
