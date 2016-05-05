@@ -37,7 +37,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
                 scrollTop: 0
             }, 300, function(){
         });
-       $('body').removeClass('opend');
+       $('body, html').removeClass('opend');
        $('#hamburger').removeClass('open');
        $('.home .top-main').css('height', $(window).height() - 121);
     });

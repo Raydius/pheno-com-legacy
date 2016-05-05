@@ -953,7 +953,7 @@ var copy =
             "thumbTitle": "Click to play video",
             "vimeo": "159448353",
             "mainDescription": [
-              "The line that brought it all together was, “There are lots of things to feel guilty about, thinkThin isn&#8217;t one of them.” The creative team then executed around this line in everything from Print and TV to digital, mobile and sponsorships."
+              'The line that brought it all together was, "There are lots of things to feel guilty about, thinkThin isn&#8217;t one of them." The creative team then executed around this line in everything from Print and TV to digital, mobile and sponsorships.'
             ]
         },
         {
