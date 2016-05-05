@@ -149,6 +149,9 @@
 			#toggle:checked ~ .see-more-container {
 				max-height: 700px;
 				opacity: 1;
+				@media screen and (max-width: 1024px) {
+					max-height: 980px;
+				}
 
 			}
 		}
