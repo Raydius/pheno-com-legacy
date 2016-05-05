@@ -61,8 +61,16 @@
 		background: #F2F2F2;
 		padding: $base-spacing;
 		margin-top: 280px;
+		@media screen and (max-width: 520px) {
+			margin-top: 180px;
+
+		}
 		img {
 			margin-top: -300px;
+			@media screen and (max-width: 520px) {
+				margin-top: -200px;
+
+			}
 		}
 	}
 	.ac.col-md-12{
