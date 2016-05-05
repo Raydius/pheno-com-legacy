@@ -19,7 +19,9 @@ angular.module('phenoCom').controller('phenoController', function($state, $scope
 
     // use current state to determine which menu item is selected
     $scope.isSelected = function(sref) {
-        if(sref == $state.$current.name) {
+        var s = $state.$current.name; 
+        // make work tab selected while view work detail page
+        if(sref == s || sref == s.substring(0, s.indexOf('/'))) {
             return true;
         }
 
