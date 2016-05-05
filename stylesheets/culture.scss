@@ -45,6 +45,13 @@
 				float: none;
 				height: 100%;
 			}
+			h3 {
+				margin-left: 30px;
+				@media screen and (max-width: 640px) {
+					margin-left: 0;
+					padding: 0 30px;
+				}
+			}
 		}
 		img {
 			margin-top: $base_spacing - 20;
@@ -81,10 +88,10 @@
 		}
 	}
 	.change-order {
-		.col-md-6 {
+		.col-md-7 {
 			float: right;
 		}
-		.col-md-6, .col-md-4 {
+		.col-md-7, .col-md-4 {
 			@media screen and (max-width: 640px) {
 				padding: 0;
 			}

@@ -340,11 +340,27 @@ h3 blockquote {
 	z-index: -1;
 	padding: $base_spacing - 20;
 	text-align: center;
-	ul li {
-		font-size: 20px;
-		margin-top: $base_spacing - 30;
+	font-family: "Circular-Bold";
+	ul {
+		text-align: left;
+		margin-left: 0;
+		padding-left: 0;
+		margin-bottom: 60px;
+		li {
+			font-size: 20px;
+			margin-top: $base_spacing - 30;
+			a {
+				color: #333;
+			}
+		}
 	}
 	.social {
+		li {
+			margin: 0 15px;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
 	}
 }
 /**
