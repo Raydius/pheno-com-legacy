@@ -20,7 +20,9 @@
       background-color: rgba(255,255,255,.95);
       z-index: 99999;
     }
-
+    @media screen and (max-width: 640px) {
+      position: fixed; 
+    }
     .logo-wrapper{
       height: 40px;
       width: 160px;
