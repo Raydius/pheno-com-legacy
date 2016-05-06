@@ -5,7 +5,7 @@
 var copy =
 {
   "logo": {
-    "src": require("assets/images/pheno_new_logo.svg"),
+    "src": require("assets/images/pheno_new_logo_may.svg"),
     "alt": "Phenomenon Logo"
   },
   "navigation": [
