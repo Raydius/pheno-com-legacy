@@ -892,9 +892,9 @@ var copy =
     "think-thin": { 
       "title": "Think Thin",
       "className": "think-thin",
-      "client": "Think Thin", 
+      "client": "thinkThin", 
       "clientLogo": require('assets/images/works/clients_logo/think-thin.svg'),
-      "project": "Think Thin",
+      "project": "thinkThin",
       "media": "Branding",
       "blockquote": 'thinkThin Helps<br> Womens Shed the Guilty',
       "quoterName": "By Megan Crossland",
