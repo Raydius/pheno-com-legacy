@@ -343,7 +343,7 @@ var copy =
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
-        "Even though Wilson makes sporting equipment for just about every sport in the world, it had been years since we had any sort of global brand campaign. Since this was our first campaign in awhile, we needed to reestablish what Wilson was all about. Yes, we make quality, trusted equipment, but what do we stand for? What is our role in the world of sports?",
+        "Even though Wilson makes sporting equipment for just about every sport in the world, it had been years since we had any sort of global brand campaign. Since this was our first campaign in a while, we needed to reestablish what Wilson was all about. Yes, we make quality, trusted equipment, but what do we stand for? What is our role in the world of sports?",
         "<span class='red'>We worked with the strategic team at Phenomenon to land on a pivotal but simple idea; between every athlete and their equipment exists a powerful relationship</span>",
         "Before we launched any consumer-facing branding, we asked Phenomenon to create something that could unify the Wilson team from within. What did this new face of Wilson mean? How could we as employees live this new mantra? The result was a beautifully bound brand book containing words and images that boldly and loudly defined who we are. We handed out these books to each of our employees."
       ],
@@ -390,7 +390,7 @@ var copy =
             }
           ],
           "mainDescription": [
-            'After rallying the troops internally, it was time to tell the world through a global, brand campaign we called "My Wilson." We have a lot professional athletes on our roster including Serena Williams, Roger Federer and Dustin Pedroia. But our goal with "My Wilson" was to not just celebrate the biggest athletes in the world, we wanted to show how every athlete has a powerful relationship with their equipment. We wanted to show professional, amateur and youth athletes side-by-side. This connection and universal truth to sport is a recurring theme you&#8217;ll see in many communications going forward.'
+            'After rallying the troops internally, it was time to tell the world through a global, brand campaign we called "My Wilson." We have some of the top professional athletes on our roster including Serena Williams, Roger Federer and Dustin Pedroia. But our goal with "My Wilson" was to not just celebrate the biggest athletes in the world, we wanted to show how every athlete has a powerful relationship with their equipment. We wanted to show professional and amateur youth athletes side-by-side. This connection and universal truth to sport is a recurring theme you&#8217;ll see in many communications going forward.'
           ]
         }
       ],
@@ -402,8 +402,8 @@ var copy =
           "thumbTitle": "Click to play video",
           "vimeo": "155010840",
           "mainDescription": [
-            "<span class='red'>The launch film was not just a celebration of the biggest athletes in the world, it showed how every athlete has a powerful relationship with their equipment. It showed professional, amateur and youth athletes side-by-side.</span>",
-            "The anthem commercial didn't have a massive media buy, so we decided to leverage social media to get more views and at the same time ambitiously grow our social presence. The way we did this was by using content to create two-way conversations with our followers. We asked amateurs all over the world to upload videos of themselves out on the playing fields, and we edited that footage into the actual spot. Youth athletes everywhere now had their own personalized version that they could share over Facebook, Twitter or Instagram."
+            "<span class='red'>The launch film was not just a celebration of the biggest athletes in the world, it showed how every athlete has a powerful relationship with their equipment. It showed professional, amateur and professional and amateur youth athletes side-by-side.</span>",
+            "We didn't have a massive media buy, so we decided to leverage social media to get more views and at the same time ambitiously grow our social presence. The way we did this was by using content to create two-way conversations with our followers. We asked amateurs all over the world to upload videos of themselves out on the playing fields, and we edited that footage into the actual spot giving youth athletes a personalized version that they could share over Facebook, Twitter or Instagram."
           ]
         },
         {
@@ -412,7 +412,7 @@ var copy =
           "imageUrl": require("assets/images/Wilson-Anthem-LandingPage_02c.jpg"),
           "imageAlt": "SLS",
           "mainDescription": [
-            'When it came to Wilson.com, we had a pretty big challenge. For years the site was very product oriented but yet the e-commerce side was pretty underdeveloped. We needed to evolve and focus our site into more of a content hub. Pheno helped us build an editorial commerce strategy and create a vision for the site that allowed us to tell stories that engage consumers around the brand, our products AND at the same time, sell product. "My Wilson" became the perfect campaign to show this new site to the world.'
+            'When it came to Wilson.com, we had a pretty big challenge. For years the site was very product oriented but the storytelling was pretty underdeveloped. We needed to evolve and focus our site into more of a content hub. Pheno helped us build an editorial commerce strategy and create a vision for the site that allowed us to tell stories that engage consumers around the brand, our products AND at the same time, sell product. "My Wilson" became the perfect campaign to show this new site to the world.'
           ]
         },
         {
@@ -449,7 +449,7 @@ var copy =
         "With over 100 years of experience making sports equipment, we&#8217ve been at the forefront of nearly every major technology advancement in just about every sport. So it only made sense to pioneer the use of sensors and IOT technology inside our equipment with the Wilson X Connected Basketball.",
         "Wilson X really pushes the boundaries of what a basketball can be.",
         "<span class='red'>It&#8217s the first basketball that connects to your smartphone and tracks makes and misses without any attachments or accessories.</span>",
-        "The ball also develops player&#8217s skills by infusing gaming mechanics into training. There&#8217s audio with crowd noise and sports commentary. There&#8217s a countdown mode to help create those pressure-filled minutes at the end of a game. And you can even share your progress with friends, family or coaches. It&#8217s a ball that has the potential to truly take training to the next level by making you a more clutch shooter."
+        "The ball also develops players&#8217 skills by turning training into a game. There&#8217s audio with crowd noise and sports commentary. There&#8217s a countdown mode to help create those pressure-filled minutes at the end of a game. And a player can even share their progress with friends, family or coaches. It&#8217s a ball that has the potential to truly take training to the next level by making you a more clutch shooter."
       ],
       "details": [
         "Wilson X's idea is simple. It's the first basketball that connects to your smartphone to help you track makes and misses without any sort of rim attachment. It was Wilson's first connected product and was an opportunity for us to show not just how revolutionary the ball was, but how digitally savvy Wilson was becoming. In just a few weeks we named the product. Designed the packaging. Designed the entire app experience. And created the ad campaign around it."
