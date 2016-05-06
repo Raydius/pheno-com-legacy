@@ -726,14 +726,6 @@ var copy =
           "mainDescription": [
             "<span class='red'>We fell in love with an idea that really spoke to what Xome does, it makes the entire buying/selling process more transparent.</span>"
           ]   
-        },
-        {
-          "type": "video",
-          "video": true,
-          "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
-          "thumbAlt": "Xome - TV Spot - Transparent House",
-          "thumbTitle": "Click to play video",
-          "vimeo": "155071130"
         }
       ]
     },
