@@ -200,13 +200,19 @@
 			color: $gray_font;
 			font-size: 30px;
 			margin-bottom: $base_spacing - 40;
+			+ cite {
+				color: #090909;
+				span {
+					&:last-of-type {
+						font-family: "Circular-book";
+					}
+				}
+			}
 		}
 		span {
 			font-family: "Circular-bold";
 			font-size: 13px;
-			&:last-of-type {
-				//font-family: "Circular-book";
-			}
+			
 		}
 		p {
 			font-size: 13px;
