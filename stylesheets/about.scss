@@ -24,9 +24,6 @@
 		border-bottom: 1px solid $gray_border_color;
 		padding: 0;
 		margin: 0 15px;
-		p:last-of-type {
-			margin-bottom:$base-spacing;
-		}
 	}
 	.col-md-7 {
 		//padding-left: $base-spacing;
@@ -49,6 +46,9 @@
 			font-family: "Circular-Bold";
 			&:last-of-type {
 				margin-bottom: $base-spacing*2;
+				@media screen and (max-width: 640px) {
+					margin-bottom: 40px;
+				}
 			}
 			span {
 				margin-top: $base-spacing - 40;
@@ -198,6 +198,9 @@
 	}
 	.folders {
 		margin-top: $base-spacing;
+		@media screen and (max-width: 640px) {
+			margin-top: 0;
+		}
 	}
 	.archie {
 		margin-bottom: $base-spacing;
