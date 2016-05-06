@@ -1,5 +1,10 @@
 // navigation styles
 
+.mobile.opend .topnav {
+  @media screen and (max-width: 640px) {
+    left: 80%;
+  }
+}
 
 .snapjs-left{
   height: 100%;
@@ -19,11 +24,6 @@
       position: fixed;
       background-color: rgba(255,255,255,.95);
       z-index: 99999;
-    }
-    @media screen and (max-width: 640px) {
-      position: fixed; 
-      left: 80%;
-      top: 0;
     }
     .logo-wrapper{
       height: 40px;
