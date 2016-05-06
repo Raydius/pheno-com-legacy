@@ -896,7 +896,7 @@ var copy =
       "clientLogo": require('assets/images/works/clients_logo/think-thin.svg'),
       "project": "thinkThin",
       "media": "Branding",
-      "blockquote": 'thinkThin Helps<br> Womens Shed the Guilty',
+      "blockquote": 'thinkThin Helps <br>Women Shed the Guilt',
       "quoterName": "By Megan Crossland",
       "quoterTitle": "CMO, thinkThin",
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
