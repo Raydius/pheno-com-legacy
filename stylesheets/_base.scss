@@ -344,9 +344,11 @@ h3 blockquote {
 	padding: $base_spacing - 20;
 	text-align: center;
 	font-family: "Circular-Bold";
-	height: 320px;
-	width: 80%;
-	overflow-y: scroll; 
+	@media screen and (max-width: 640px) and (orientation : landscape){
+		height: 320px;
+		width: 80%;
+		overflow-y: scroll;
+	}
 	ul {
 		text-align: left;
 		margin-left: 0;
