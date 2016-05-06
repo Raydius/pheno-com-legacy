@@ -905,7 +905,7 @@ var copy =
         "In 2014, thinkThin was on the cusp of tremendous growth. For 10 years, we had been a really successful privately owned regional brand, but with an infusion of cash from private equity, we were about to get national distribution for the first time. And it was clear that we needed to develop our brand positioning and create an integrated advertising campaign to support our efforts.",
         "As a healthy lifestyle brand, founded by an inspirational female entrepreneur, we knew that the key was to resonate with women in a really unique way. We also knew that we couldn&#8217;t just leverage the same yoga, spin class and active lifestyle images that the rest of the category was using in nearly every piece of communication. The creative and strategy teams quickly arrived at pivotal insight that unlocked everything for us.",
         "The creative and strategy teams quickly arrived at pivotal insight that unlocked everything for us.",
-        "<span class='red'>The idea was that you can’t begin to have a conversation about health and nutrition for women without addressing the notion of guilt.</span>",
+        "<span class='red'>The idea was that you can&#8217;t begin to have a conversation about health and nutrition for women without addressing the notion of guilt.</span>",
         "But we didn&#8217;t want to get heavy or depressing about it, because we&#8217;re a positive, optimistic and upbeat brand."
       ],
       "topcontent": [
