@@ -17,7 +17,8 @@ section.row.no-padding.contact
 					figcaption
 						h3= contentItem.name
 						ul
-							li!= contentItem.phone
+							li
+								a(href!='tel:'+contentItem.href)!= contentItem.phone
 								
 							li!= contentItem.address 
 		.clear

@@ -52,6 +52,12 @@
       display: block;
       line-height: 20px;
       font-family: $primary_font;
+      a {
+        color: #333;
+        &:hover {
+          color: $primary_color;
+        }
+      }
     }
   }
   .contactbiz {

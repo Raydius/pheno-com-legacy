@@ -1171,12 +1171,14 @@ var copy =
         {
           "name": "Los Angeles",
           "phone": "+1 323 648 4000",
+          "href": "tel:13236484000",
           "address": "5900 Wilshire Blvd, Floor 28, <br>Los Angeles, CA 90036",
           "imgSrc": require("assets/images/contact/contact01.png")
         },
         {
           "name": "Chicago",
           "phone": "+1 323 648 4000",
+          "href": "tel:13236484000",
           "address": "118 N Peoria Street, Suite 5N <br>Chicago, IL 60607",
           "imgSrc": require("assets/images/contact/contact-chicago.jpg")
         }
