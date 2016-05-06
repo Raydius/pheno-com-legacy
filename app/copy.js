@@ -883,8 +883,8 @@ var copy =
           "vimeo": "134437401",
           "mainDescription": [
             '<span class="red">We used Father&#8217;s Day as a way to sell the emotional side of suits by celebrating the very dads that wear them everyday</span>',
-            "Actually, the men featured in the commercial are real dads with their kids. It was the first time—that I can remember—where we didn&#8217;t pitch a specific designer, sale or promotion.",
-            "The spot was an overwhelming success. Sales weren&#8217;t just up, but there was a detectable buzz on social media and even in our offices and stores—people felt proud of what we stood for. Of course we won&#8217;t be looking to create an emotional hook every time we advertise, but when the opportunity presents itself, we realize the importance of standing for something bigger with our customers. And that&#8217;s something we can thank our partners for helping us achieve."
+            "Actually, the men featured in the commercial are real dads with their kids. It was the first time&mdash;that I can remember&mdash;where we didn&#8217;t pitch a specific designer, sale or promotion.",
+            "The spot was an overwhelming success. Sales weren&#8217;t just up, but there was a detectable buzz on social media and even in our offices and stores&mdash;people felt proud of what we stood for. Of course we won&#8217;t be looking to create an emotional hook every time we advertise, but when the opportunity presents itself, we realize the importance of standing for something bigger with our customers. And that&#8217;s something we can thank our partners for helping us achieve."
           ]
         }
       ]
