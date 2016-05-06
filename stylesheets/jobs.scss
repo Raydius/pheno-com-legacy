@@ -59,6 +59,9 @@ ul {
 			padding: 20px 0;
 			font-size: 26px;
 			border-top: 1px solid #ddd;
+			@media screen and (max-width: 640px) {
+				font-size: 20px;
+			}
 			&:last-child {
 				border-bottom: 1px solid #ddd;
 			}

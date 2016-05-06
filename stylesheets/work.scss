@@ -4,6 +4,12 @@
 		font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 		font-size: 12px;
 	}
+	.col-md-4 {
+		max-width: 275px;
+		@media screen and (max-width: 1024px) {
+			max-width: 100%
+		}
+	}
 	&.work-details {
 		.top-main {
 			margin-bottom: $base_spacing - 20;
@@ -161,9 +167,6 @@
 		&:nth-of-type(odd) {
 			.col-md-8 {
 				float: right;
-			}
-			.col-md-4 {
-				padding-right: 30px;
 			}
 		}
 		&:nth-of-type(even) {
