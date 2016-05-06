@@ -337,7 +337,7 @@ h3 blockquote {
 }
 .drawer {
 	//width: 80%;
-	position: fixed;
+	position: relative;
 	left: 0;
 	top: 0;
 	z-index: -1;
