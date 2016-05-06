@@ -924,7 +924,7 @@ var copy =
         "description": "Before becoming the Director of Marketing for thinkThin in 2014, Megan worked as a marketing manager for over 10 years at Nestle."
       },
       "detailcontent": [
-        {
+/*        {
           "type": "video",
             "video": true,
             "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
@@ -971,7 +971,7 @@ var copy =
               "alt": "Wilson X Packaging Photo 2"
             }
           ]
-        }
+        }*/
       ]
     },
     "cooper": { 
