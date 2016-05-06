@@ -252,10 +252,7 @@
     font-size: 28px;
     line-height: 34px;
     &:before {
-      left: 0;
-    }
-    &:first-letter {
-      padding-left: 20px;
+      left: -16px;
     }
   }
   .home .top-main h2, .about .top-main h2, .culture .top-main h2 {
