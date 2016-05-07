@@ -7,8 +7,12 @@
 		float: none;
 		.col-md-6 {
 			position: absolute;
-			top: 50%;
+			top: calc(50% - 100px);
 			transform: translateY(-50%);
+			transition: all 0.3s;
+			@media screen and (max-height: 700px) {
+				top: 50%;
+			}
 		}
 		p {
 			font-size: 34px;

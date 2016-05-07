@@ -68,7 +68,7 @@
 					display: none;
 				}
 				label {
-					color: black;
+					color: #333;
 					font-weight: normal;
 					span {
 						font-family: "Circular-bold";
@@ -90,7 +90,6 @@
 					}
 					&:before {
 						position: absolute;
-						top: 12px;
 					}
 				}
 				input#toggle-share {
