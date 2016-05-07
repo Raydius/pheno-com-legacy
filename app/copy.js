@@ -117,39 +117,45 @@ var copy =
           "name": "Amy Weisenbach",
           "jobTitle": "VP Marketing, Wilson",
           "project": "Wilson Is Now <br>Fully Equipped.",
-          "contributorAvatar": require("assets/images/home/avatar-1.png")
+          "contributorAvatar": require("assets/images/home/avatar-1.png"),
+          "href": "#/work/wilson-anthem"
         },
         {
           "name": "Matt Stringer",
           "jobTitle": "EVP Marketing, Men&#8217s Wearhouse",
           "project": "Men&#8217s Wearhouse<br> Updates Its Wardrobe.",
-          "contributorAvatar": require("assets/images/home/avatar-2.png")
+          "contributorAvatar": require("assets/images/home/avatar-2.png"),
+          "href": "#/work/mens-warehouse"
         },
         {
           "name": "Megan Crossland",
           "jobTitle": "CMO, thinkThin",
           "project": "thinkThin Helps<br> Women Shed the Guilt.",
-          "contributorAvatar": require("assets/images/home/avatar-3.png")
+          "contributorAvatar": require("assets/images/home/avatar-3.png"),
+          "href": "#/work/think-thin"
         },
       ],
       "contributorsMore": [
         { 
-          "name": "Matt Stringer",
-          "jobTitle": "EVP Marketing, Men&#8217s Wearhouse",
-          "project": "Men&#8217s Wearhouse<br> Updates Its Wardrobe.",
-          "contributorAvatar": require("assets/images/home/avatar-2.png")
+          "name": "Allison Cornia",
+          "jobTitle": "SVP Marketing, Xome",
+          "project": "When Buying a House, There&#8217s No Place Like Xome.",
+          "contributorAvatar": require("assets/images/home/avatar-2.png"),
+          "href": "#/work/xome"
         },
         {
           "name": "Pasty Hauer",
           "jobTitle": "VP Brand Marketing, Sunny",
           "project": "It&#8217;s A &#8220;Sunny&#8221; Day for Payday Loans.",
-          "contributorAvatar": require("assets/images/home/avatar-4.png")
+          "contributorAvatar": require("assets/images/home/avatar-4.png"),
+          "href": "#/work/sunny"
         },
         {
           "name": "Amy Weisenbach",
           "jobTitle": "VP Marketing, Wilson",
           "project": "Wilson Is Now <br>Fully Equipped.",
-          "contributorAvatar": require("assets/images/home/avatar-7.png")
+          "contributorAvatar": require("assets/images/home/avatar-7.png"),
+          "href": "#/work/wilson-x"
         }
       ]
     },

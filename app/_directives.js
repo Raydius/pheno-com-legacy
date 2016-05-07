@@ -91,11 +91,15 @@ angular.module('phenoCom').directive('scrolltotop', function() {
 angular.module('phenoCom').directive('scrolltop2', function() {
     return {
       link: function (scope, element, attrs) {
-            
+            var $windowHeight = $(window).height();
+            var topSpace = 180;
+            $( window ).resize(function() {
+              $windowHeight = $(window).height();
+            });
             element.bind('click', function() {
                 $('html, body').animate({
-                        scrollTop: 560
-                    }, 200, function(){
+                        scrollTop: $windowHeight - topSpace
+                    }, 500, function(){
                 });
             })
         }

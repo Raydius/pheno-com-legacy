@@ -47,15 +47,11 @@
 		background: #F2F2F2;
 		padding: 0 $base_spacing $base_spacing;
 		margin-top: $base_spacing;
-		opacity: 0;
 		transition: all 1s;
 		//transition-delay: 100s;
 		position: relative;
 		@media screen and (max-width: 640px) {
 			padding: 0 30px;		
-		}
-		&.show {
-			opacity: 1;
 		}
 		.col-md-4 {
 			width: calc(33.33333% - 40px);

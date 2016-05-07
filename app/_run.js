@@ -47,19 +47,15 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
 
     $(window).scroll(function(){
         
-        $('.featured-contributors').addClass('show').css('marginTop', -($('.home .top-main').height()/2 - $('.top-main .col-md-6').height()));
+        //$('.featured-contributors').addClass('show').css('marginTop', -($('.home .top-main').height()/2 - $('.top-main .col-md-6').height()));
 
+    $('.featured-contributors').addClass('show');
 
        if ($(document).scrollTop() > 0) {
         fixedheader.addClass("fixed");
       } else {
         fixedheader.removeClass("fixed"); 
       }  
-
-      if ($(document).scrollTop() == 0) {
-            $('.featured-contributors').removeClass('show').css('marginTop', 0);
-
-      }
     })
 
     $('#hamburger').click(function(){
