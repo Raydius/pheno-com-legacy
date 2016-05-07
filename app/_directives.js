@@ -99,7 +99,7 @@ angular.module('phenoCom').directive('scrolltop2', function() {
             element.bind('click', function() {
                 $('html, body').animate({
                         scrollTop: $windowHeight - topSpace
-                    }, 500, function(){
+                    }, 400, function(){
                 });
             })
         }
