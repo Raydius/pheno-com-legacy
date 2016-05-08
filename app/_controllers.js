@@ -4,11 +4,10 @@ var angular = require('angular');
 angular.module('phenoCom').controller('phenoController', function($state, $scope, $cookies) {
     // temporary onload solution to hide unstyle content for now
     // don't forgot to remove display: none in layout.jade
-    var $main = $('main');
-    window.onload = function() {
-        $('body').show(); 
-    };
 
+    $scope.$on('$viewContentLoaded', function(){
+        $('body').addClass('loaded');
+    });
     // denote that user has been here, hold data for 15 days
     var expireDate = new Date();
     expireDate.setDate(expireDate.getDate() + 30);

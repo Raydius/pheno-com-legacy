@@ -833,46 +833,37 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": require("assets/images/mens-warehouse/01-magazine_standard_cover_pure2.jpg"), 
+              "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1a.png"), 
               "alt": "Men's Wearhouse Photo 1"
             },
             {
-              "url": require("assets/images/mens-warehouse/02-magazine_thin_open_mw_OurPriciples.jpg"),
+              "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1b.png"),
               "alt": "Wilson X Packaging Photo 2"
             },
             {
-              "url": require("assets/images/mens-warehouse/03-magazine_thin_open_mw_pocket_square1a.jpg"),
+              "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1c.png"),
               "alt": "Wilson X Packaging Photo 3"
             },
             {
-              "url": require("assets/images/mens-warehouse/04-magazine_thin_open_mw_pocket_square1c.jpg"),
+              "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1d.png"),
               "alt": "Wilson X Packaging Photo 4"
             },
             {
-              "url": require("assets/images/mens-warehouse/05-magazine_thin_open_mw_prodcut_photography1b.jpg"),
+              "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1e.png"),
               "alt": "Wilson X Packaging Photo 5"
             },
             {
-              "url": require("assets/images/mens-warehouse/06-magazine_thin_open_mw_prodcut_photography1c.jpg"),
+              "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1f.png"),
               "alt": "Wilson X Packaging Photo 6"
             }
             ,
             {
-              "url": require("assets/images/mens-warehouse/07-magazine_thin_open_mw_prodcut_photography1d.jpg"),
+              "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1g.png"),
               "alt": "Wilson X Packaging Photo 7"
-            }
-            ,
+            },
             {
-              "url": require("assets/images/mens-warehouse/08-magazine_thin_open_mw_styling1.jpg"),
+              "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1h.png"),
               "alt": "Wilson X Packaging Photo 8"
-            },
-            {
-              "url": require("assets/images/mens-warehouse/09-magazine_thin_open_mw_styling1d.jpg"),
-              "alt": "Wilson X Packaging Photo 9"
-            },
-            {
-              "url": require("assets/images/mens-warehouse/10-magazine_thin_open_mw_styling1e.jpg"),
-              "alt": "Wilson X Packaging Photo 10"
             }
           ],
           "mainDescription": [

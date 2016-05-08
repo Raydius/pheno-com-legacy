@@ -15,6 +15,7 @@ html, body {
   }
 }
 body {
+	display: none;
 	&.opend {
 		overflow: hidden;
 		.body-wrapper {
@@ -27,6 +28,9 @@ body {
 	    	z-index: -1;
 	    	display: block;
 	    }
+	}
+	&.loaded {
+		display: block;
 	}
 }
 @keyframes showDrawers {
