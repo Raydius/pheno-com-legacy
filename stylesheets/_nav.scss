@@ -35,19 +35,7 @@
       position: fixed;
       background-color: rgba(255,255,255,.95);
       z-index: 99999;
-    }
-    .mobile .topnav {
-      @media screen and (max-width: 640px) {
-        position: fixed;
-      } 
-    }
-    .logo-wrapper{
-      height: 40px;
-      width: 160px;
-      img {
-        transition: all 0.3s;
-      }
-      &.fixed {
+      .logo-wrapper {
         float: left;
         margin-right: $base_spacing - 20;
         ~ .tabs {
@@ -60,6 +48,18 @@
             }
           }
         }
+      }
+    }
+    .mobile .topnav {
+      @media screen and (max-width: 640px) {
+        position: fixed;
+      } 
+    }
+    .logo-wrapper{
+      height: 40px;
+      width: 160px;
+      img {
+        transition: all 0.3s;
       }
     }
 
