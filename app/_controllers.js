@@ -32,7 +32,7 @@ angular.module('phenoCom').controller('phenoController', function($state, $scope
     };
 
     $scope.toggleDrawer = function () {
-        if ($.browser.mobile || $(window).width() < 640 ) {
+        if ($.browser.mobile || $(window).outerwidth() < 640 ) {
             
             $('body, html').toggleClass('opend');
             $('#hamburger').toggleClass('open'); 
