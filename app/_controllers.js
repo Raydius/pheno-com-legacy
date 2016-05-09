@@ -27,7 +27,18 @@ angular.module('phenoCom').controller('phenoController', function($state, $scope
         return false;
     };
 
+    $scope.toggleDrawer = function () {
+        
+        $('body, html').toggleClass('opend');
+        $('#hamburger').toggleClass('open');
 
+    }
+
+});
+
+angular.module('phenoCom').controller('homeController', function($state, $scope) {
+
+    $('.top-main').css('height', $(window).height() - 121);
 
 });
 

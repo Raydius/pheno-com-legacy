@@ -104,7 +104,7 @@ angular.module('phenoCom').directive('scrolltop2', function() {
             })
         }
     };
-  });
+});
 
 angular.module('phenoCom').directive('close', function() {
     return {

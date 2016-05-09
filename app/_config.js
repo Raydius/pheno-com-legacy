@@ -39,6 +39,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         .state('home', {
             url: '/',
             template: templateHome,
+            controller: 'homeController',
             data: {
                 pageTitle: 'PHENOMENON'
             }

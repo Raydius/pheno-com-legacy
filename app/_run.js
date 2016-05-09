@@ -32,15 +32,19 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
 
     var $main = $('main');
     var $body = $('body');
+    
+
     // detect state change
     $(window).on('hashchange', function(e){
        $('html, body').animate({
                 scrollTop: 0
             }, 300, function(){
         });
-       $('body, html').removeClass('opend');
-       $('#hamburger').removeClass('open');
-       $('.home .top-main').css('height', $(window).height() - 121);
+       //$('body, html').removeClass('opend');
+       //$('#hamburger').removeClass('open');
+
+       // keep homepage main section 100% height 
+       
     });
 
     var fixedheader = $("nav.topnav, .logo-wrapper");
