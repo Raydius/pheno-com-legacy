@@ -1,4 +1,11 @@
 .work {
+	&.work-landing {
+		.col-md-4 {
+			fieldset {
+				max-width: 275px;
+			}
+		}
+	}
 	a legend {
 		opacity: 0.75;
 		font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
