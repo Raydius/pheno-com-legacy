@@ -1,13 +1,15 @@
 block variables
-	- copy = require('app/copy.js')
-	- page = window.location.hostname
+- copy = require('app/copy.js')
+- currentUrl = window.location.href
+
 ul.social-icons
 	.bubble
 		li.social-icon
-			a.icon-twitter(socialshare socialshare-provider="twitter" socialshare-text="Current Project Text" socialshare-hashtags="angularjs, angular-socialshare" socialshare-url!="http://tech.phenomenonstaging.com:2070/#/"+page)
+			a.icon-twitter(socialshare socialshare-provider="twitter" socialshare-text="#phenomenon" socialshare-hashtags="phno" socialshare-url!=currentUrl)
+				span=caseIndex
 		li.social-icon
-			a.icon-facebook(socialshare socialshare-provider="facebook" socialshare-text="Current Project Text" socialshare-hashtags="angularjs, angular-socialshare" socialshare-url!="http://tech.phenomenonstaging.com:2070/#/"+page)
+			a.icon-facebook(socialshare socialshare-provider="facebook" socialshare-text="#phenomenon" socialshare-hashtags="phenomenon" socialshare-url!=currentUrl) 
 		li.social-icon 
-			a.icon-linkedin(socialshare socialshare-provider="linkedin" socialshare-text="Current Project Text" socialshare-hashtags="angularjs, angular-socialshare" socialshare-url!="http://tech.phenomenonstaging.com:2070/#/"+page)
+			a.icon-linkedin(socialshare socialshare-provider="linkedin" socialshare-text="#phenomenon" socialshare-hashtags="#phenomenon" socialshare-url!=currentUrl)
 		li.social-icon
-			a.icon-mail(href="mailto:") 
+			a.icon-mail(href="mailto:"+'?subject=' +currentUrl + '&body=' + currentUrl) 
