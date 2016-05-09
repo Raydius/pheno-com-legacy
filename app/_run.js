@@ -48,7 +48,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
        
     });
 
-    var fixedheader = $("nav.topnav, .logo-wrapper");
+    var fixedheader = $(".desktop nav.topnav");
 
     $(window).scroll(function(){
         
