@@ -399,9 +399,6 @@
       }
       .icon-dot {
         &:before {
-          font-size: 5px;
-          line-height: 5px;
-          margin-right: 10px;
         }
       }
       .icon-share {
@@ -421,7 +418,6 @@
       label {
         display: inline-block;
         padding-left: 20px;
-        font-size: 14px;
         padding-left: 0;
         margin-bottom: $base_spacing - 20;
         &.share {

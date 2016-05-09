@@ -17,24 +17,23 @@ section.row.no-padding.work.work-details
 				if pageData.topcontent
 		article.col-xs-12.col-sm-12.col-md-4.col-md-offset-1.project-detail
 			aside.col-xs-4.col-md-12
-				input.view-detail(type="checkbox" id="toggle-project-detail" close)  
-				label.icon-share
-					span Details
-				.detail-wrapper
-					img.clientlogo(src= pageData.clientLogo)
-					fieldset 
-						legend Client
-						span= pageData.client
-					fieldset 
-						legend Project
-						span= pageData.project
-					fieldset 
-						legend Media
-						span= pageData.media
+				fieldset
+					label.icon-details.icon-dot(showmore close) 
+						span Details
+					.detail-wrapper
+						img.clientlogo(src= pageData.clientLogo)
+						fieldset 
+							legend Client
+							span= pageData.client
+						fieldset 
+							legend Project
+							span= pageData.project
+						fieldset 
+							legend Media
+							span= pageData.media
 			aside.col-xs-6.col-md-12
 				fieldset.icon-share-hover
-					input.view-detail(type="checkbox" id="toggle-share" close)
-					label.icon-share 
+					label.icon-share(showmore close)
 						span Share
 					
 					include share-icons

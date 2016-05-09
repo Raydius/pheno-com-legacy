@@ -125,11 +125,23 @@ angular.module('phenoCom').directive('close', function() {
             };
             }(jQuery));
             element.bind().outside('click', function() { 
-                $(this).prop('checked', false);
+                
+                $(this).next().hide();
+                
             })
         }
     };
-  });
+});
+
+angular.module('phenoCom').directive('showmore', function() {
+    return {
+        link: function (scope, element, attrs) {
+            element.bind('click', function() {
+                $(this).next().toggle();
+            })
+        }
+    };
+});
 
 // currently not in use: embedded scrollable website
 angular.module('phenoCom').directive('scrollableComponent', function($window) {
