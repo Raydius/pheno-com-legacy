@@ -125,7 +125,7 @@ var copy =
           "jobTitle": "EVP Marketing, Men&#8217s Wearhouse",
           "project": "Men&#8217s Wearhouse<br> Updates Its Wardrobe.",
           "contributorAvatar": require("assets/images/home/avatar-2.png"),
-          "href": "#/work/mens-warehouse"
+          "href": "#/work/mens-wearhouse"
         },
         {
           "name": "Megan Crossland",
