@@ -17,18 +17,29 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
         
         } else {
             $('body').addClass('desktop');
-        }        
+        }   
+        var options = {
+            'offset_top': 121
+        }
 
+        $(".ac .col-md-5").stick_in_parent(options);     
+        if ($(window).outerWidth() < 640 ) {
+            $(".ac .col-md-5").trigger("sticky_kit:detach");
+        }
     });
 
     $(window).load(function(){
         $('.home .top-main').css('height', $(window).height() - 121);
+
     }) 
 
 
     $(window).resize(function(){
 
         $('.home .top-main').css('height', $(window).height() - 121);
+        if ($(window).outerWidth() < 640 ) {
+            $(".ac .col-md-5").trigger("sticky_kit:detach");
+        }
     })
 
     var $main = $('main');
