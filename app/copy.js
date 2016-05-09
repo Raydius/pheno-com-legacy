@@ -153,7 +153,7 @@ var copy =
         {
           "name": "Amy Weisenbach",
           "jobTitle": "VP Marketing, Wilson",
-          "project": "Wilson Is Now <br>Fully Equipped.",
+          "project": "Wilson Launches<br> Futuristic Ball.",
           "contributorAvatar": require("assets/images/home/avatar-7.png"),
           "href": "#/work/wilson-x"
         }
