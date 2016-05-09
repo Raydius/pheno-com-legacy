@@ -81,7 +81,7 @@
 				color: #333;
 				font-weight: normal;
 				font-size: 16px;
-				padding-left: 20px;
+				padding-left: 15px;
 				margin-bottom: 20px;
 				&.icon-dot {
 					@media screen and (min-width: 640px) {
@@ -89,8 +89,23 @@
 					}
 					padding-left: 10px;
 				}
+				&:hover {
+					color: $primary_color;
+					cursor: pointer;
+				}
+				&.icon-share {
+					
+					@media screen and (max-width: 640px) {
+						margin-left: 40px;
+					}
+					&:before {
+						top: 2px;
+						position: relative;
+					}
+				}
 				span {
 					font-family: "Circular-bold";
+					font-size: 13px;
 				}
 			}
 
@@ -124,8 +139,7 @@
 			}
 			ul.social-icons {
 				display: none;
-				padding-left: 0;
-				margin-top: 20px;
+				padding-left: 15px;
 				@media screen and (max-width: 640px) {
 					width: 100%
 				}
@@ -349,7 +363,7 @@ z-index: 1;
 top: -10px;
 left: 36px;
 	@media screen and (max-width: 640px) {
-		left: 106px;
+		left: 110px;
 	}
 }
 
@@ -366,9 +380,15 @@ z-index: 0;
 top: -11px;
 left: 36px;
 	@media screen and (max-width: 640px) {
-		left: 106px;
+		left: 110px;
 	}
 }
 .tet .col-xs-12 {
 	float: none;
+}
+#icon-details-container {
+	width: 100%;
+	fieldset {
+		margin-bottom: 10px;	
+	}
 }
