@@ -9,6 +9,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
     
     
     $( document ).ready(function() {
+
         // check if mobile or desktop
         if ( $.browser.mobile ) {
 

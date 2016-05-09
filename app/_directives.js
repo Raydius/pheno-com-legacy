@@ -124,10 +124,10 @@ angular.module('phenoCom').directive('close', function() {
               });
             };
             }(jQuery));
-            element.bind().outside('click', function() { 
-                
-                $(this).next().hide();
-                
+                element.bind().outside('click', function() { 
+                var name = $(this).attr('childContainer');
+                $(name).hide();
+
             })
         }
     };
@@ -136,8 +136,10 @@ angular.module('phenoCom').directive('close', function() {
 angular.module('phenoCom').directive('showmore', function() {
     return {
         link: function (scope, element, attrs) {
+
             element.bind('click', function() {
-                $(this).next().toggle();
+                var name = $(this).attr('childContainer');
+                $(name).toggle();
             })
         }
     };

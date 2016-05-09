@@ -16,10 +16,12 @@ section.row.no-padding.work.work-details
 					p!= par
 				if pageData.topcontent
 		article.col-xs-12.col-sm-12.col-md-4.col-md-offset-1.project-detail
-			aside.col-xs-4.col-md-12
+			
+			label.icon-details.icon-dot(showmore close childContainer=".detail-wrapper") 
+				span Details
+			
+			aside.col-md-12#icon-details-container
 				fieldset
-					label.icon-details.icon-dot(showmore close) 
-						span Details
 					.detail-wrapper
 						img.clientlogo(src= pageData.clientLogo)
 						fieldset 
@@ -31,12 +33,12 @@ section.row.no-padding.work.work-details
 						fieldset 
 							legend Media
 							span= pageData.media
-			aside.col-xs-6.col-md-12
-				fieldset.icon-share-hover
-					label.icon-share(showmore close)
-						span Share
-					
-					include share-icons
+
+
+			label.icon-share(showmore close childContainer=".social-icons") 
+				span Share
+
+			include share-icons
 
 		article.col-xs-12.col-sm-12.no-padding
 			each contentItem in pageData.topcontent
