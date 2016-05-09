@@ -29,6 +29,7 @@ a, .a, .link{
 	color: $gray_color; 
 	cursor: pointer;
 	text-decoration: none;
+	outline: 0;
 	@include transition(color .1s ease-in-out);
 	&:link{
 		text-decoration: none;
