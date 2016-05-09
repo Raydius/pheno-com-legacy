@@ -12,6 +12,14 @@
   overflow: hidden;
   position: fixed;
 }
+.mobile.opend {
+  .topnav {
+    
+    @media screen and (max-width: 640px) {
+      position: relative;
+    }
+  }
+}
 .topnav {
     display: block;
     width: 100%;
