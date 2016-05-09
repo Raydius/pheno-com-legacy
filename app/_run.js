@@ -56,9 +56,9 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
     $('.featured-contributors').addClass('show');
 
        if ($(document).scrollTop() > 0) {
-        $(".desktop nav.topnav").addClass("fixed");
+        $(".desktop nav.topnav, .desktop .logo-wrapper").addClass("fixed");
       } else {
-        $(".desktop nav.topnav").removeClass("fixed");  
+        $(".desktop nav.topnav, .desktop .logo-wrapper").removeClass("fixed");  
       }  
     })
 
