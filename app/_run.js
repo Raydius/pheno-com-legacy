@@ -48,18 +48,17 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
        
     });
 
-    var fixedheader = $(".desktop nav.topnav");
 
-    $(window).scroll(function(){
+    $(window).scroll(function() {
         
         //$('.featured-contributors').addClass('show').css('marginTop', -($('.home .top-main').height()/2 - $('.top-main .col-md-6').height()));
 
     $('.featured-contributors').addClass('show');
 
        if ($(document).scrollTop() > 0) {
-        fixedheader.addClass("fixed");
+        $(".desktop nav.topnav").addClass("fixed");
       } else {
-        fixedheader.removeClass("fixed"); 
+        $(".desktop nav.topnav").removeClass("fixed");  
       }  
     })
 
