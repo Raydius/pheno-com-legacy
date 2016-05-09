@@ -81,6 +81,7 @@
 		}
 		.col-md-5 {
 			float: left;
+			padding-bottom: 20px;
 		}
 	} 
 
@@ -89,7 +90,6 @@
 	    max-width: 400px;
 	    background-color: #F2F2F2;
 	    padding: $base-spacing - 20;
-
 		h4 {
 			font-family: 'Tiempose-Semibold';
 			font-size: 20px;

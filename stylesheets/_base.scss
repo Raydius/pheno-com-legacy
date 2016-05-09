@@ -403,3 +403,39 @@ h3 blockquote {
 .margin-top-md {
 	margin-top: $base_spacing;
 }
+
+.black {
+	width: 100%; height: 100%;
+	position: fixed;
+	background: black; 
+	z-index: 99999;
+	left: 0;
+	top: 0;
+	animation: loading 0.5s forwards;
+	animation-delay: 2s;
+	.col-md-6 {
+		width: 1440px;
+		margin: 0 auto;
+		position: relative;
+		height: 100%;
+		float: none;
+		h1 {
+			width: 50%;
+			position: absolute;
+			color: white;
+			top: 50%;
+			transform: translateY(-50%);
+			font-family: "Tiempose-Semibold", "Times New Roman", serif;
+			font-size: 52px;
+		}
+	}
+	
+}
+@keyframes loading {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 100%;
+	}
+}
