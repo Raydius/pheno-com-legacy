@@ -813,11 +813,10 @@ var copy =
       "caseWriter": {
         "name": "Matt Stringer",
         "title": "EVP Marketing, Tailored Brands",
-        "description": "Matt is the EVP of Marketing at Men&#8217;s Wearhouse and has been with the company for over 15 years."
+        "description": "Matt is the EVP of Marketing at Tailored Brands, which is the holding company for Men’s Wearhouse. Matt has been with the company for over 17 years."
       },
       "topDescription": [
-        "For over 20 years, Men&#8217;s Wearhouse advertising centered around one line delivered by one man. But in 2013, when our founder and longtime CEO left the company, we had to make some pretty significant changes. After an extensive agency review we selected Phenomenon to take both strategic and creative lead on the future of Men&#8217;s Wearhouse as our Agency of Record.",
-        "The new tone and feel for us started early in 2014 when we acquired the men&#8217;s fashion brand Joseph Abboud. We used that acquisition as a launching point to redefine our image. To kick things off, we developed a television spot that announced the partnership with Abboud and positioned the American Designer as our new Creative Director."
+        "For over 25 years, Men&#8217;s Wearhouse advertising centered around one line delivered by one man. But in 2013, when our founder and longtime CEO left the company, we had to make some pretty significant changes. We partnered with Phenomenon to help us shape both the strategic and creative direction for Men&#8217;s Wearhouse as our Agency of Record. Our brand evolution started early in 2014 when we acquired the designer brand Joseph Abboud. We used the acquisition as a launching point to redefine our image. To kick things off, we positioned the American Designer as our new Chief Creative Director and developed a television campaign that announced the partnership with Men&#8217;s Wearhouse and Abboud."
       ],
       "topcontent": [
         {
