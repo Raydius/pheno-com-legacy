@@ -157,7 +157,7 @@ cite {
 		}
 		span {
 			&:last-of-type {
-				opacity: 0.5;
+				color: $gray_color;
 				display: block;
 			}
 		}
