@@ -70,7 +70,8 @@
       margin: 0 auto;
       position: relative;
       top: -120px;
-      animation: test 0.3s forwards; 
+      opacity: 0;
+      animation: test 0.2s forwards ease-out; 
       animation-delay: 1.7s;
     }
 
@@ -349,8 +350,10 @@ main.maincontent {
 @keyframes test {
   0% {
     top: -120px;
+    opacity: 0;
   }
   100% {
     top: 0;
+    opacity: 1;
   }
 }
