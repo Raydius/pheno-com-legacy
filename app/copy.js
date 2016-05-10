@@ -162,7 +162,7 @@ var copy =
     "about": {
       "title": "About Phenomenon",
       "className": "about",
-      "blockquote": "Something like a Phenomenon",
+      "blockquote": "Something like a Phenomenon.",
       "subquote": "A behind-the-scenes look at the most appropriately-named agency I know.",
       "quoterName": "Kevin Dahlstrom, CMO",
       "quoterTitle": "Mr. Cooper Home Loans", 
@@ -213,11 +213,11 @@ var copy =
         },
         {
           "label": "UX Innovation",
-          "content": 'We help companies rethink customer experiences across all touch-points using an advanced blend of interaction design, science and art..'
+          "content": 'We help companies rethink customer experiences across all touch-points using an advanced blend of interaction design, science and art.'
         },
         {
           "label": "Digital Innovation",
-          "content": 'We use emerging digital media to create marketing efficiencies, creative positive brand conversations, and maintain meaningful dialogue with customers.'
+          "content": 'We use emerging digital media to create marketing efficiencies and positive brand conversations, as well as maintain meaningful dialogue with customers.'
         },
         {
           "label": "Cultural Innovation",
@@ -254,7 +254,7 @@ var copy =
       "description": "Phenomenon - Work",
       "blockquote": "A lot of the work they do is confidential. Here&#8217;s some that isn&#8217t.&#8221;",
       "quoterName": "Kevin Dahlstrom",
-      "quoterTitle": "Mr. Cooper Home Loans",
+      "quoterTitle": "CMO, Mr. Cooper",
       "maincontent": [
 
       ],
@@ -268,7 +268,7 @@ var copy =
           "headline": "Wilson Equips Itself With Global Campaign.",
           "citeName": "By Amy Weisenbach",
           "citeTitle": "VP Marketing, Wilson",
-          "description": "New 360-degree global campaign for 100 year old company.",
+          "description": "New 360-degree global campaign for 100-year-old company.",
           "readmoreUrl": "#/work/wilson-anthem"
         },
         {
@@ -279,7 +279,7 @@ var copy =
           "legend": "Fashion / Retail",
           "headline": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.",
           "citeName": "By Matt Stringer",
-          "citeTitle": "EVP Marketing Men&#8217;s Wearhouse",
+          "citeTitle": "EVP Marketing, Men&#8217;s Wearhouse",
           "description": "After the departure of longtime owner and face of brand, company looks to modernize all the way down to the cufflinks.",
           "readmoreUrl": "#/work/mens-wearhouse"
 
