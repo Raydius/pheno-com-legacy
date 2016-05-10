@@ -9,7 +9,7 @@
 			position: absolute;
 			top: calc(50% - 100px);
 			transform: translateY(-50%);
-			transition: all 0.3s;
+			//transition: all 0.3s;
 			@media screen and (max-height: 700px) {
 				top: 50%;
 			}
@@ -142,7 +142,7 @@
 				font-weight: normal;
 				cursor: pointer;
 				&:after {
-					content: "View More Contributors"
+					content: "View more contributors"
 				}
 			}
 			#toggle {
@@ -160,7 +160,7 @@
 			}
 			#toggle:checked ~ label {
 				&:after {
-					content: "View Less Contributors";
+					content: "View less contributors";
 				}
 				top: calc(100% - 60px);
 			}

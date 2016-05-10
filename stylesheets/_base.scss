@@ -10,6 +10,7 @@ html, body {
   font-family: $primary_font;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  background: black;
   &.opend {
   	overflow: hidden;
   }
@@ -48,7 +49,6 @@ body {
     border-bottom: 8px solid $primary_color;
     position: relative;
     left: 0;
-    transition: all 0.2s ease-in-out;
 }
 .red {
 	color: $primary_color;
@@ -412,24 +412,25 @@ h3 blockquote {
 	left: 0;
 	top: 0;
 	animation: loading 0.5s forwards;
-	animation-delay: 2s;
-	.col-md-6 {
-		width: 1440px;
-		margin: 0 auto;
-		position: relative;
-		height: 100%;
-		float: none;
-		h1 {
-			width: 50%;
-			position: absolute;
+	animation-delay:1s;
+	main {
+		animation: loadingHide 0.2s forwards;
+		animation-delay: 1s;
+		background: black;
+		h2 {
 			color: white;
-			top: 50%;
-			transform: translateY(-50%);
-			font-family: "Tiempose-Semibold", "Times New Roman", serif;
-			font-size: 52px;
+		}
+		p {
+			color: black;
+		}
+		.icon-right-arrow {
+			color: black!important;
 		}
 	}
-	
+	.topnav {
+		height: 121px;
+		background: black;
+	}
 }
 @keyframes loading {
 	0% {
@@ -437,5 +438,13 @@ h3 blockquote {
 	}
 	100% {
 		left: 100%;
+	}
+}
+@keyframes loadingHide {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
 	}
 }

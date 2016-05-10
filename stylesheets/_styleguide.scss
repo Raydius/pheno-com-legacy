@@ -47,6 +47,9 @@ a, .a, .link{
     	color: $gray_font;
     	text-decoration: none;
     }
+    &:focus {
+    	outline: none;
+    }
 }
 
 img{
