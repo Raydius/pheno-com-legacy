@@ -357,7 +357,7 @@ var copy =
       "caseWriter": {
         "name": "Amy Weisenbach",
         "title": "VP Marketing, Wilson",
-        "description": "Amy is the global head of marketing for Wilson Sporting Goods which is the world&#8217;s leading maker of performance sports equipment. Amy is a graduate of Harvard Business School."
+        "description": "Amy is the VP of Marketing for Wilson Sporting Goods. Prior to joining Wilson she was the first VP of Marketing for Trunk Club and has also worked at both Beam and Unilever on the AXE brand team. In 2012, Amy was named a Woman to Watch by Advertising Age. She is a graduate of Harvard Business School."
       },
       "topcontent": [
         {
