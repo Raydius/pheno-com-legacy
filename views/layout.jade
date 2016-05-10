@@ -1,13 +1,14 @@
-
 doctype html
 html(xmlns:ng="http://angularjs.org/" ng-app='phenoCom')
+	block variables
 	head
 		title(update-title)
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 		meta(property="og:type" content="website")
-		meta(property="og:title" content="Phenomenon - Digital Agency")
+		meta(property="og:title" content='#{title}')
 		meta(property="og:description" content="Phenomenon - Digital Agency")
 		meta(property="og:image" content=require('assets/images/logo.png')) 
+		
 
 		include ./favicon
 
@@ -22,12 +23,12 @@ html(xmlns:ng="http://angularjs.org/" ng-app='phenoCom')
 
 			include ./components/side-nav
 
-		.black.home
-			.topnav
-			main.maincontent
-				.top-main.col-md-12
-					.col-md-6.no-padding
-						h2 The first agency site written by clients
-						p.red
-							| Except for this part. 
-						div.icon-right-arrow
+		//- .black.home
+		//- 	.topnav
+		//- 	main.maincontent
+		//- 		.top-main.col-md-12
+		//- 			.col-md-6.no-padding
+		//- 				h2 The first agency site written by clients
+		//- 				p.red
+		//- 					| Except for this part. 
+		//- 				div.icon-right-arrow

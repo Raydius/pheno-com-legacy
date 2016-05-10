@@ -1,15 +1,16 @@
 Html Webpack Plugin:
 <pre>
-  TypeError: /Users/aniwang/pheno-com/views/layout.jade:2
-      1| extends layout
-    > 2| 
+  TypeError: /Users/aniwang/pheno-com/views/layout.jade:5
       3| block content
       4| 
-      5|  main.maincontent
+    > 5|  main.maincontent
+      6|  .main-wrapper
+      7|  .component(ui-view)
+      8|  .loading-box
   Cannot read property 'location' of undefined
   
-  - index.jade:64 
-    /Users/aniwang/pheno-com/views/index.jade:64:21
+  - index.jade:69 
+    /Users/aniwang/pheno-com/views/index.jade:69:15
   
   - index.jade:732 template
     /Users/aniwang/pheno-com/views/index.jade:732:23
