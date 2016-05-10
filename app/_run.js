@@ -45,14 +45,14 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
 
     // detect state change
     $(window).on('hashchange', function(e){
+       $('html, body').hide();
+       
        $('html, body').animate({
                 scrollTop: 0
-            }, 300, function(){
-        });
-       //$('body, html').removeClass('opend');
-       //$('#hamburger').removeClass('open');
+            }, 0, function(){
 
-       // keep homepage main section 100% height 
+        });
+       $('html, body').fadeIn();
        
     });
 

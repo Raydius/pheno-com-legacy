@@ -116,7 +116,7 @@ var copy =
         {
           "name": "Amy Weisenbach",
           "jobTitle": "VP Marketing, Wilson",
-          "project": "Wilson Is Now <br>Fully Equipped.",
+          "project": "Wilson Launches<br> Futuristic Ball.",
           "contributorAvatar": require("assets/images/home/avatar-1.png"),
           "href": "#/work/wilson-anthem"
         },
@@ -129,20 +129,20 @@ var copy =
         },
         {
           "name": "Megan Crossland",
-          "jobTitle": "CMO, thinkThin",
+          "jobTitle": "Director of Marketing, thinkThin",
           "project": "thinkThin Helps<br> Women Shed the Guilt.",
           "contributorAvatar": require("assets/images/home/avatar-3.png"),
           "href": "#/work/think-thin"
         },
       ],
       "contributorsMore": [
-        { 
+       /* { 
           "name": "Allison Cornia",
           "jobTitle": "SVP Marketing, Xome",
           "project": "When Buying a House, There&#8217s No Place Like Xome.",
           "contributorAvatar": require("assets/images/home/avatar-2.png"),
           "href": "#/work/xome"
-        },
+        },*/
         /*{
           "name": "Pasty Hauer",
           "jobTitle": "VP Brand Marketing, Sunny",
@@ -150,13 +150,13 @@ var copy =
           "contributorAvatar": require("assets/images/home/avatar-4.png"),
           "href": "#/work/sunny"
         },*/
-        {
+        /*{
           "name": "Amy Weisenbach",
           "jobTitle": "VP Marketing, Wilson",
           "project": "Wilson Launches<br> Futuristic Ball.",
           "contributorAvatar": require("assets/images/home/avatar-7.png"),
           "href": "#/work/wilson-x"
-        }
+        }*/
       ]
     },
     "about": {
@@ -168,7 +168,7 @@ var copy =
       "quoterTitle": "Mr. Cooper Home Loans", 
       "description": "Phenomenon - About",
       "dictionary": {
-        "noun": "1. a person adept at solving problems.", 
+        "noun": "1. a person who can get out of their comfort zone to solve a problem.", 
         "verb": "2. to carry out a solution in any direction that is correct for the problem."
       },
       "paragraph1": [
@@ -292,7 +292,7 @@ var copy =
           "legend": "Food / Drink",
           "headline": "thinkThin Helps Women Shed the Guilt.",
           "citeName": "By Megan Crossland",
-          "citeTitle": "CMO, thinkThin",
+          "citeTitle": "Director of Marketing, thinkThin",
           "description": "Nutritional bar targeted to women launches its first campaign using humor to rave reviews online.",
           "readmoreUrl": "#/work/think-thin"
 
@@ -346,7 +346,7 @@ var copy =
       "blockquote": "Wilson Equips Itself With Global Campaign.",
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
-      "quoterAvatar": require("assets/images/about/about-avatar.png"),
+      //"quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X", 
       "shareImg": require("assets/images/wilson_anthem_1_01-opt.jpg"),
       "topDescription": [
@@ -450,7 +450,7 @@ var copy =
       "blockquote": "Wilson Launches<br>Futuristic Ball.",
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
-      "quoterAvatar": require("assets/images/about/about-avatar.png"),
+      //"quoterAvatar": require("assets/images/about/about-avatar.png"),
       "shareImg": require("assets/images/wilson_x_1_01-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
@@ -465,7 +465,7 @@ var copy =
       "caseWriter": {
         "name": "Amy Weisenbach",
         "title": "VP Marketing, Wilson",
-        "description": "Amy is the VP of marketing for Wilson Sporting Goods. Prior to joining Wilson she was the first VP of Marketing for Trunk Club and has also worked at both Beam and Unilever on the AXE brand team. In 2012, Amy was named a Woman to Watch by Advertising Age. She is a graduate of Harvard Business School."
+        "description": "Amy is the VP of Marketing for Wilson Sporting Goods. Prior to joining Wilson she was the first VP of Marketing for Trunk Club and has also worked at both Beam and Unilever on the AXE brand team. In 2012, Amy was named a Woman to Watch by Advertising Age. She is a graduate of Harvard Business School."
       },
       "topcontent": [
         {
@@ -695,7 +695,7 @@ var copy =
       "blockquote": "When Buying a House,<br> There&#8217;s No Place Like Xome.",
       "quoterName": "By Allison Cornia",
       "quoterTitle": "SVP Marketing, Xome",
-      "quoterAvatar": require("assets/images/about/about-avatar.png"),
+      //"quoterAvatar": require("assets/images/about/about-avatar.png"),
       "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
@@ -749,7 +749,7 @@ var copy =
       "blockquote": 'It&#8217;s A &#8220;Sunny&#8221; Day<br>for Payday Loans.',
       "quoterName": "Patsy Hauer",
       "quoterTitle": "SVP Brand Marketing, Elevate",
-      "quoterAvatar": require("assets/images/about/about-avatar.png"),
+      //"quoterAvatar": require("assets/images/about/about-avatar.png"),
       "shareImg": require("assets/images/sunny-1.png"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
@@ -806,7 +806,7 @@ var copy =
       "blockquote": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.", 
       "quoterName": "By Matt Stringer",
       "quoterTitle": "EVP Marketing, Men&#8217;s Wearhouse",
-      "quoterAvatar": require("assets/images/about/about-avatar.png"), 
+      //"quoterAvatar": require("assets/images/about/about-avatar.png"), 
       "shareImg": require("assets/images/mens-warehouse/mw_brandbook_carousel1a.png"),
 
       "description": "CVU - Phenomenon - Wilson X",
@@ -828,10 +828,9 @@ var copy =
           "thumbTitle": "Click to play video",
           "vimeo": "164752774",
           "mainDescription": [
-            '<span class="red">The spot firmly grounded our strategic initiative to make Men&#8217;s Wearhouse a home to a collection of brands rather than a brand in and of itself.</span>',
-            "This new strategic approach also positioned the suits as the hero, rather than trying to make Men&#8217;s Wearhouse a fashion label that it isn&#8217;t.",
-            "Once we established the quality of the suits we offer, we shifted the focus to the men that wear our suits. Actually, we created an idea behind the man that wears our suits. Someone that strives to be a better version of himself. Someone that walks with confidence, but not arrogance. Someone that might need a good looking suit to help them achieve that confidence."
-
+            '<span class="red">The spot led two strategic initiatives. 1) Show our commitment to providing quality products, including products beyond just suits. And 2) that Men&#8217;s Wearhouse is home to a collection of brands.</span>',
+            'Once we established the quality and breadth of our offering, we wanted to evolve the messaging strategy from, "You&#8217;re going to like the way you look" to the more meaningful idea of, "You&#8217;re going to like the way you feel." The way we did this was by changing the focus across our brand from the pitchman to the consumer.',
+            'We launched the new direction with a Brand Book called "Go With Confidence" that detailed our new look, tone and audience. Men that might need a great look to help them achieve that extra little bit of confidence.'
           ]
         }
       ],
@@ -870,8 +869,7 @@ var copy =
             }
           ],
           "mainDescription": [
-            '<span class="red">We landed on the line and pivotal insight: Rise to the Occasion. An idea that with a little help from a great looking suit, you can transform into the man you&#8217;ve always wanted to be.</span>',
-            "Late Spring is always an important quarter for us as it&#8217;s the time for Dads and Grads. In 2015, instead of doing our typical retail promo, Pheno helped us create something much more memorable and special."
+            "Late Spring is always an important quarter for us as it&#8217;s the time for Dads and Grads. In 2015, to supplement our typical retail promotions, Pheno helped us create something more memorable and special for Father&#8217;s Day."
           ]
         },
         {
@@ -882,9 +880,8 @@ var copy =
           "thumbTitle": "Click to play video",
           "vimeo": "134437401",
           "mainDescription": [
-            '<span class="red">We used Father&#8217;s Day as a way to sell the emotional side of suits by celebrating the very dads that wear them everyday</span>',
-            "Actually, the men featured in the commercial are real dads with their kids. It was the first time&mdash;that I can remember&mdash;where we didn&#8217;t pitch a specific designer, sale or promotion.",
-            "The spot was an overwhelming success. Sales weren&#8217;t just up, but there was a detectable buzz on social media and even in our offices and stores&mdash;people felt proud of what we stood for. Of course we won&#8217;t be looking to create an emotional hook every time we advertise, but when the opportunity presents itself, we realize the importance of standing for something bigger with our customers. And that&#8217;s something we can thank our partners for helping us achieve."
+            '<span class="red">We used Father&#8217;s Day as a way to sell the emotional side of our product by celebrating the very dads we outfit everyday.</span>',
+            "The spot was well received - there was a detectable buzz on social media and even in our offices and stores - people felt proud of what we stood for. Of course we won&#8217;t be looking to create an emotional hook every time we advertise, but when the opportunity presents itself, we realize the importance of standing for something bigger with our customers. And that&#8217;s something we can thank our partners for helping us achieve. In the end, 2015 was a very good year for the Men&#8217;s Wearhouse brand. We reported a total sales increase of 6.2% on a solid comp sales increase of 4.9%. And our brand health saw significant increases as well. Brand love is up 9%, loyalty is up 8%, and credit for quality and style is up 9%."
           ]
         }
       ]
@@ -896,10 +893,10 @@ var copy =
       "clientLogo": require('assets/images/works/clients_logo/think-thin.svg'),
       "project": "thinkThin",
       "media": "Branding",
-      "blockquote": 'thinkThin Helps <br>Women Shed the Guilt.',
+      "blockquote": 'thinkThin&reg; Helps <br>Women Shed the Guilt.',
       "quoterName": "By Megan Crossland",
-      "quoterTitle": "CMO, thinkThin",
-      "quoterAvatar": require("assets/images/about/about-avatar.png"),
+      "quoterTitle": "Director of Marketing, thinkThin",
+      //"quoterAvatar": require("assets/images/about/about-avatar.png"),
       "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
@@ -921,7 +918,7 @@ var copy =
       ],
       "caseWriter": {
         "name": "Megan Crossland",
-        "title": "CMO, thinkThin",
+        "title": "Director of Marketing, thinkThin",
         "description": "Before becoming the Director of Marketing for thinkThin in 2014, Megan worked as a marketing manager for over 10 years at Nestle."
       },
       "detailcontent": [
@@ -1092,7 +1089,7 @@ var copy =
       {
         "projectName": "thinkThin Helps<br>Women Shed the Guilt.",
         "writerName": "By Megan Crossland",
-        "writerTitle": "CMO, thinkThin",
+        "writerTitle": "Director of Marketing, thinkThin",
         "projectUrl": "#/work/think-thin", 
         "projectThumbSrc": require("assets/images/morecases/3.png")
       },
