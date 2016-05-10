@@ -143,13 +143,13 @@ var copy =
           "contributorAvatar": require("assets/images/home/avatar-2.png"),
           "href": "#/work/xome"
         },
-        {
+        /*{
           "name": "Pasty Hauer",
           "jobTitle": "VP Brand Marketing, Sunny",
           "project": "It&#8217;s A &#8220;Sunny&#8221; Day for Payday Loans.",
           "contributorAvatar": require("assets/images/home/avatar-4.png"),
           "href": "#/work/sunny"
-        },
+        },*/
         {
           "name": "Amy Weisenbach",
           "jobTitle": "VP Marketing, Wilson",
@@ -309,7 +309,7 @@ var copy =
           "description": "For the first time a basketball is connected to your smartphone to track makes, misses and enhance performance.",
           "readmoreUrl": "#/work/wilson-x"
         },
-        {
+        /*{
           "type": "image",
           "image": true,
           "imageUrl": require('assets/images/work-5.png'),
@@ -320,7 +320,7 @@ var copy =
           "citeTitle": "VP Brand Marketing, Sunny",
           "description": "British company creates a whole new business model for payday loans that gives borrowers a better chance at getting out of debt.",
           "readmoreUrl": "#/work/sunny"          
-        },
+        },*/
         {
           "type": "image",
           "image": true,

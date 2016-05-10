@@ -102,7 +102,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
 
         .state('work/sls', {
-            url: '/work/sls',
+            url: '/work/sls-hide',
             template: templateWorkSLS, 
             data: {
                 pageTitle: 'PHENOMENON - SLS case study'
@@ -110,7 +110,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
         
         .state('work/sunny', {
-            url: '/work/sunny',
+            url: '/work/sunny-hide',
             template: templateWorkSunny, 
             data: {
                 pageTitle: 'PHENOMENON - Sunny case study'
@@ -118,7 +118,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
         
         .state('work/cooper', {
-            url: '/work/cooper',
+            url: '/work/cooper-hide',
             template: templateWorkCooper, 
             data: {
                 pageTitle: 'PHENOMENON - Mr.Cooper case study'
@@ -126,7 +126,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
 
         .state('entertainment', {
-            url: '/entertainment',
+            url: '/entertainment-hide',
             template: templateEntertainment,
             data: {
                 pageTitle: 'PHENOMENON - Wilson Anthem case study'
