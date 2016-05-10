@@ -279,7 +279,7 @@ var copy =
           "legend": "Fashion / Retail",
           "headline": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.",
           "citeName": "By Matt Stringer",
-          "citeTitle": "EVP Marketing, Men&#8217;s Wearhouse",
+          "citeTitle": "EVP Marketing, Tailored Brands",
           "description": "After the departure of longtime owner and face of brand, company looks to modernize all the way down to the cufflinks.",
           "readmoreUrl": "#/work/mens-wearhouse"
 
@@ -805,14 +805,14 @@ var copy =
       "media": "Branding",
       "blockquote": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.", 
       "quoterName": "By Matt Stringer",
-      "quoterTitle": "EVP Marketing, Men&#8217;s Wearhouse",
+      "quoterTitle": "EVP Marketing, Tailored Brands",
       //"quoterAvatar": require("assets/images/about/about-avatar.png"), 
       "shareImg": require("assets/images/mens-warehouse/mw_brandbook_carousel1a.png"),
 
       "description": "CVU - Phenomenon - Wilson X",
       "caseWriter": {
         "name": "Matt Stringer",
-        "title": "EVP Marketing, Men&#8217;s Wearhouse",
+        "title": "EVP Marketing, Tailored Brands",
         "description": "Matt is the EVP of Marketing at Men&#8217;s Wearhouse and has been with the company for over 15 years."
       },
       "topDescription": [
