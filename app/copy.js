@@ -409,7 +409,7 @@ var copy =
           "thumbTitle": "Click to play video",
           "vimeo": "155010840",
           "mainDescription": [
-            "<span class='red'>The launch film was not just a celebration of the biggest athletes in the world, it showed how every athlete has a powerful relationship with their equipment. It showed professional, amateur and professional and amateur youth athletes side-by-side.</span>",
+            "<span class='red'>The launch film was not just a celebration of the biggest athletes in the world, it showed how every athlete has a powerful relationship with their equipment. It showed professional and amateur youth athletes side-by-side.</span>", 
             "We didn't have a massive media buy, so we decided to leverage social media to get more views and at the same time ambitiously grow our social presence. The way we did this was by using content to create two-way conversations with our followers. We asked amateurs all over the world to upload videos of themselves out on the playing fields, and we edited that footage into the actual spot giving youth athletes a personalized version that they could share over Facebook, Twitter or Instagram."
           ]
         },
