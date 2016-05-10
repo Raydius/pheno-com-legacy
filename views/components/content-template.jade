@@ -54,9 +54,9 @@ section.row.no-padding.work.work-details
 							.col-xs-12.no-padding
 								img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
 					if contentItem.mainDescription
-						each par in contentItem.mainDescription
-							article.col-md-7.no-padding
-								p!= par
+						article.col-md-7.no-padding
+							each par in contentItem.mainDescription
+									p!= par
 	div.detail-content
 		each contentItem in pageData.detailcontent
 			if contentItem.video

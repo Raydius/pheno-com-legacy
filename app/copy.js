@@ -543,7 +543,7 @@ var copy =
             "With the campaign, we wanted to communicate how revolutionary the Wilson X Connected Basketball is and at the same time show how it can help young athletes become better shooters from anywhere. Street to gym. Practice to playground."
           ]
         },
-        {
+        /*{
           "video": true,
           "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
           "thumbAlt": "Wilson X - TV Spot - All Day",
@@ -552,7 +552,7 @@ var copy =
           "mainDescription": [
             "The results: We launched just before the holidays and sold out in a matter of weeks on Amazon as well as in our key retailers. Wilson X is available in retail stores all over the country and is beginning to rollout in other markets around the globe."
           ]
-        },
+        },*/
         {
           "video": true,
           "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
@@ -813,7 +813,7 @@ var copy =
       "caseWriter": {
         "name": "Matt Stringer",
         "title": "EVP Marketing, Tailored Brands",
-        "description": "Matt is the EVP of Marketing at Tailored Brands, which is the holding company for Men’s Wearhouse. Matt has been with the company for over 17 years."
+        "description": "Matt is the EVP of Marketing at Tailored Brands, which is the holding company for Men&#8217;s Wearhouse. Matt has been with the company for over 17 years."
       },
       "topDescription": [
         "For over 25 years, Men&#8217;s Wearhouse advertising centered around one line delivered by one man. But in 2013, when our founder and longtime CEO left the company, we had to make some pretty significant changes. We partnered with Phenomenon to help us shape both the strategic and creative direction for Men&#8217;s Wearhouse as our Agency of Record.",
