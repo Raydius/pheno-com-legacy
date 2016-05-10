@@ -243,10 +243,10 @@
 			font-size: 30px;
 			margin-bottom: $base_spacing - 40;
 			+ cite {
-				color: #090909;
 				span {
 					&:last-of-type {
 						font-family: "Circular-book";
+						color: darken($gray_color, 15%);
 					}
 				}
 			}
