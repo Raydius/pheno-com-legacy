@@ -1,9 +1,13 @@
+
 doctype html
 html(xmlns:ng="http://angularjs.org/" ng-app='phenoCom')
 	head
 		title(update-title)
 		meta(name="viewport", content="width=device-width, initial-scale=1")
-			
+		meta(property="og:title" content="Phenomenon - Digital Agency")
+		meta(property="og:description" content="Phenomenon - Digital Agency")
+		meta(property="og:image" content=require('assets/images/pheno_new_logo_may.svg')) 
+
 		include ./favicon
 
 	body(class=bodyClass, ng-controller="phenoController")
@@ -17,6 +21,12 @@ html(xmlns:ng="http://angularjs.org/" ng-app='phenoCom')
 
 			include ./components/side-nav
 
-		//- .black
-		//- 	.col-md-6
-		//- 		h1 The first agency site written by clients
+		.black.home
+			.topnav
+			main.maincontent
+				.top-main.col-md-12
+					.col-md-6.no-padding
+						h2 The first agency site written by clients
+						p.red
+							| Except for this part. 
+						div.icon-right-arrow
