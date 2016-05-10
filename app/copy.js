@@ -844,10 +844,6 @@ var copy =
               "alt": "Men's Wearhouse Photo 1"
             },
             {
-              "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1b.png"),
-              "alt": "Wilson X Packaging Photo 2"
-            },
-            {
               "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1c.png"),
               "alt": "Wilson X Packaging Photo 3"
             },
