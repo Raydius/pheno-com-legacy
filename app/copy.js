@@ -348,6 +348,7 @@ var copy =
       "quoterTitle": "VP Marketing, Wilson",
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
       "description": "CVU - Phenomenon - Wilson X", 
+      "shareImg": require("assets/images/wilson_anthem_1_01-opt.jpg"),
       "topDescription": [
         "Even though Wilson makes sporting equipment for just about every sport in the world, it had been years since we had any sort of global brand campaign. Since this was our first campaign in a while, we needed to reestablish what Wilson was all about. Yes, we make quality, trusted equipment, but what do we stand for? What is our role in the world of sports?",
         "<span class='red'>We worked with the strategic team at Phenomenon to land on a pivotal but simple idea; between every athlete and their equipment exists a powerful relationship</span>",
@@ -450,6 +451,7 @@ var copy =
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
+      "shareImg": require("assets/images/wilson_x_1_01-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
         "With over 100 years of experience making sports equipment, we&#8217ve been at the forefront of nearly every major technology advancement in just about every sport. So it only made sense to pioneer the use of sensors and IOT technology inside our equipment with the Wilson X Connected Basketball.",
@@ -589,6 +591,7 @@ var copy =
       "project": "SLS",
       "media": "Branding",
       "blockquote": " SLS Vegas Gives the<br> Strip a Whole New Look.",
+      "shareImg": require("assets/images/wilson_x_1_01-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
         "The SLS chain of high-end, luxury hotels has been a mainstay in Miami and Los Angeles for over a decade. Since 2007 we have been anxiously anticipating our expansion to Sin City. And 7 years later we were ready to launch. But when it comes to Vegas, it's not as simple as just opening the doors. You have to really identify and brand who you are. Every hotel in Vegas has shows. Everyone has restaurants. Everyone has gambling. But what will you get when you come to the SLS Vegas? That was the challenge ahead of us.",
@@ -693,6 +696,7 @@ var copy =
       "quoterName": "By Allison Cornia",
       "quoterTitle": "SVP Marketing, Xome",
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
+      "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "If you&#8217ve ever bought or sold a home, you know it&#8217s a complex, fragmented and darned unfriendly process. Believe it or not, studies have shown that buying a house is more stressful than bankruptcy, divorce or even the death of a loved one. With Xome, we not only brought homebuying into the 21st century, we introduced a radically better way to do it.",
@@ -746,6 +750,7 @@ var copy =
       "quoterName": "Patsy Hauer",
       "quoterTitle": "SVP Brand Marketing, Elevate",
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
+      "shareImg": require("assets/images/sunny-1.png"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "In the UK, the short-term loans business is not dissimilar to the States in that we have a huge stigma problem. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
@@ -801,7 +806,9 @@ var copy =
       "blockquote": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.", 
       "quoterName": "By Matt Stringer",
       "quoterTitle": "EVP Marketing, Men&#8217;s Wearhouse",
-      "quoterAvatar": require("assets/images/about/about-avatar.png"),     
+      "quoterAvatar": require("assets/images/about/about-avatar.png"), 
+      "shareImg": require("assets/images/mens-warehouse/mw_brandbook_carousel1a.png"),
+
       "description": "CVU - Phenomenon - Wilson X",
       "caseWriter": {
         "name": "Matt Stringer",
@@ -897,6 +904,7 @@ var copy =
       "quoterName": "By Megan Crossland",
       "quoterTitle": "CMO, thinkThin",
       "quoterAvatar": require("assets/images/about/about-avatar.png"),
+      "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "In 2014, thinkThin was on the cusp of tremendous growth. For 10 years, we had been a really successful privately owned regional brand, but with an infusion of cash from private equity, we were about to get national distribution for the first time. And it was clear that we needed to develop our brand positioning and create an integrated advertising campaign to support our efforts.",
@@ -979,6 +987,7 @@ var copy =
       "project": "Mr.Cooper",
       "media": "Branding",
       "blockquote": "Home Loans Get More Human with Mr.Cooper.",
+      "shareImg": require("assets/images/wilson_x_1_02-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
         "In the UK, the short-term loans business is not dissimilar to the States in that we have a huge stigma problem. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
