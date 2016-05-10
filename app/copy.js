@@ -899,11 +899,14 @@ var copy =
       "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
-        "In 2014, thinkThin was on the cusp of tremendous growth. For 10 years, we had been a really successful privately owned regional brand, but with an infusion of cash from private equity, we were about to get national distribution for the first time. And it was clear that we needed to develop our brand positioning and create an integrated advertising campaign to support our efforts.",
-        "As a healthy lifestyle brand, founded by an inspirational female entrepreneur, we knew that the key was to resonate with women in a really unique way. We also knew that we couldn&#8217;t just leverage the same yoga, spin class and active lifestyle images that the rest of the category was using in nearly every piece of communication. The creative and strategy teams quickly arrived at pivotal insight that unlocked everything for us.",
-        "The creative and strategy teams quickly arrived at pivotal insight that unlocked everything for us.",
-        "<span class='red'>The idea was that you can&#8217;t begin to have a conversation about health and nutrition for women without addressing the notion of guilt.</span>",
-        "But we didn&#8217;t want to get heavy or depressing about it, because we&#8217;re a positive, optimistic and upbeat brand."
+        "thinkThin is a healthy lifestyle brand, founded by an inspirational female entrepreneur in Southern California. Over the last decade, we have become a major name in the energy bar category, thanks in large part to our delicious recipes and protein-rich nutritional profile. In addition to our products, our clean, elegant and iconic design aesthetic drives differentiation and trial at shelf.",
+        "In 2014, we developed a great partnership with the Chief Creative Officer during the strategy, concepting and production phases of our national launch of the thinkThin brand, so we were excited to work with Phenomenon to produce the next chapter of the campaign with our launch for thinkThin Bites and thinkThin Oatmeal.",
+        "These products play a critical role in our portfolio by expanding our lineup to be appropriate for more potential eating occasions throughout the day than our original bars had done. Oatmeal is obviously a great way to start the day. And Bites, because they are smaller than our bars, are a perfect pick-me-up anytime, anywhere.",
+        "With Bites in particular, while we needed to introduce the new form factor, we also wanted to remain true to our core insight.",
+        "<span class='red'>There are lots of things to feel guilty about. thinkThin isn&#8217;t one of them.</span>",
+        "From the casting, to the set design to the seamless integration of the product into the story, the team pulled it together beautifully. And we rounded out the media buy with digital, mobile and social ad units.",
+        "With Oatmeal, we worked with Pheno to produce a national print ad that allowed us to create awareness quickly with our target audience, while working with a more conservative budget.",
+        "Reaction from consumers and retailers has been overwhelmingly enthusiastic, and the product has seen even better performance than we anticipated."
       ],
       "topcontent": [
         {
