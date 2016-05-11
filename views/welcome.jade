@@ -16,18 +16,19 @@ section.row.no-padding.home
 		h6 Featured Contributors
 		// first 3 contributors
 		each contributorItem in pageData.contributors
-			li.col-sm-12.col-md-4 
-				if contributorItem.contributorAvatar 
-					div.client_logo-wrapper(style="background-image: url(" + contributorItem.contributorAvatar + ")")
-				cite
-					.wrapper
-						if contributorItem.name
-							span!= contributorItem.name
-						if contributorItem.jobTitle
-							span!= contributorItem.jobTitle
-				if contributorItem.project
-					p!= contributorItem.project
-				a.red(href=contributorItem.href) Read full article &gt;
+			a(href=contributorItem.href)
+				li.col-sm-12.col-md-4 
+					if contributorItem.contributorAvatar 
+						div.client_logo-wrapper(style="background-image: url(" + contributorItem.contributorAvatar + ")")
+					cite
+						.wrapper
+							if contributorItem.name
+								span!= contributorItem.name
+							if contributorItem.jobTitle
+								span!= contributorItem.jobTitle
+					if contributorItem.project
+						p!= contributorItem.project
+					a.red(href=contributorItem.href) Read full article &gt;
 		.clear
 		//- .see-more
 		//- 	input.red.view-more(type="checkbox" name="toggle" id="toggle") 
