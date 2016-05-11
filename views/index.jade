@@ -1,10 +1,14 @@
 extends layout
 
+block variables
+	- title = 'mens-wearhouse' 
+	- description = 'Phenomenon - Digital Agency' 
 block content
 
 	main.maincontent
 		.main-wrapper
 			.component(ui-view)
 				.loading-box
+			span 
 			include ./components/footer
 

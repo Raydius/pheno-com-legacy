@@ -5,6 +5,9 @@
 				max-width: 275px;
 			}
 		}
+		fieldset h3 + cite span:last-of-type {
+			opacity: 0.75;
+		}
 	}
 	a legend {
 		opacity: 0.75;
@@ -246,7 +249,7 @@
 				span {
 					&:last-of-type {
 						font-family: "Circular-book";
-						color: darken($gray_color, 15%);
+						opacity: 0.5;
 					}
 				}
 			}
@@ -269,7 +272,6 @@
 	}
 	cite {
 		margin: $base_spacing - 50 0;
-		opacity: 0.75;
 	}
 	.line {
 		width: 50px;
