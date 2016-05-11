@@ -327,7 +327,7 @@ var copy =
           "imageUrl": require('assets/images/work-2.jpg'),
           "imageAlt": "Wilson Image 2",
           "legend": "Home / Real Estate",
-          "headline": "When Buying a House, There's No place Like Xome.",
+          "headline": "When Buying a House, There's No Place Like Xome.",
           "citeName": "By Allison Cornia",
           "citeTitle": "SVP Marketing, Xome",
           "description": "New company looks to make buying and selling a home not only more mobile, but more transparent.",
