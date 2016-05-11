@@ -2,17 +2,41 @@
 block variables
 - page = "moreCases"
 - pageData = copy.content[page]
+- caseIndex = 0
+- morecaseNum = 3
 
-section.col-md-12.no-padding.more-cases 
-	.more-case-wrapper.cf
-		each contentItem in pageData
-			article.col-md-4 
-				a(href="#")
-					img(src= contentItem.prjectThumbSrc)
-				p!= contentItem.projectName
-				cite 
-					.wrapper
-						span!= contentItem.writerName
-						span!= contentItem.writerTitle
-							
-				a.red(href="#") Read full article
+section.col-md-12.no-padding.more-cases
+	span.left More Work Stories
+	a.red(href="/#/work") View All &gt;
+	.clear
+	.more-case-wrapper.desktop.cf
+		each contentItem, i in pageData
+			// hide current project and show only first 3 cases
+			- var klass = ((i === currentProjectIndex) ? 'hide' : 'show')
+			if (klass ==='show' ? (caseIndex+=1) : '')
+				
+			if caseIndex <= morecaseNum
+				article.col-sm-4.col-md-4(class=klass)
+					a(href= contentItem.projectUrl)
+						img(src= contentItem.projectThumbSrc)
+						p!= contentItem.projectName
+						cite 
+							.wrapper
+								span!= contentItem.writerName
+								span!= contentItem.writerTitle
+								
+					a.red(href= contentItem.projectUrl) Read full article &gt;
+	
+	.more-case-wrapper.mobile.cf
+		carousel-component-center.carousel-component.owl-carousel.no-padding
+			each contentItem in pageData
+				article.col-md-4
+					a(href= contentItem.projectUrl)
+						img(src= contentItem.projectThumbSrc)
+						p!= contentItem.projectName
+						cite 
+							.wrapper
+								span!= contentItem.writerName
+								span!= contentItem.writerTitle
+								
+					a.red(href= contentItem.projectUrl) Read full article &gt;

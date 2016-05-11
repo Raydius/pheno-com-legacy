@@ -7,13 +7,13 @@ h1, .h1{
 
 h2, .h2{
 	font-size: $h2_size;
-	color: $black_font;
+	color: $gray_font;
 	font-family: $secondary_font;
 }
 
 h3, .h3{
 	font-size: $h3_size;
-	color: $black_font;
+	color: $gray_font;
 }
 h4, .h4{
 	font-size: $h4_size;
@@ -21,7 +21,7 @@ h4, .h4{
 }
 
 p, .p{
-	color: $black_font;
+	color: $gray_font;
 	font-size: $p_size;
 }
 
@@ -29,6 +29,7 @@ a, .a, .link{
 	color: $gray_color; 
 	cursor: pointer;
 	text-decoration: none;
+	outline: none;
 	@include transition(color .1s ease-in-out);
 	&:link{
 		text-decoration: none;
@@ -46,6 +47,9 @@ a, .a, .link{
     	color: $gray_font;
     	text-decoration: none;
     }
+    &:focus {
+    	outline: none;
+    }
 }
 
 img{
@@ -58,6 +62,18 @@ img{
 	margin: 0;
 }
 
+.no-h-padding {
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+.no-v-padding {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
 .hidden{
 	position:absolute;
 	left:-10000px;
@@ -79,7 +95,7 @@ label{
 }
 
 input[type="text"], input[type="email"]{
-	color: $black_font;
+	color: $gray_font;
 	background-color: #FFF;
 	height: 55px;
 	width: 100%;
@@ -143,18 +159,18 @@ ul li {
 	list-style: none;
 }
 ::-webkit-input-placeholder {
-   color: $black_font;
+   color: $gray_font;
    font-weight: bold;
 }
 :-moz-placeholder { /* Firefox 18- */
-   color: $black_font; 
+   color: $gray_font; 
    font-weight: bold; 
 }
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: $black_font;  
+   color: $gray_font;  
    font-weight: bold;
 }
 :-ms-input-placeholder {  
-   color: $black_font;  
+   color: $gray_font;  
    font-weight: bold;
 }

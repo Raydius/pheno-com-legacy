@@ -1,7 +1,55 @@
 .work {
+	&.work-landing {
+		.col-md-4 {
+			fieldset {
+				max-width: 275px;
+			}
+		}
+	}
+	a legend {
+		opacity: 0.75;
+		font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+		font-size: 12px;
+	}
+	.col-md-4 {
+		//max-width: 275px;
+		@media screen and (max-width: 1024px) { 
+			max-width: 100%
+		}
+	}
 	&.work-details {
+		.detail-wrapper {
+			@media screen and (min-width: 640px) {
+				display: block!important;
+			}
+			@media screen and (max-width: 640px) {
+				margin: 10px 0 20px 0;
+			}
+		}
+
 		.top-main {
 			margin-bottom: $base_spacing - 20;
+		}
+		.case-writer {
+			border-top: 1px solid #ccc;
+			padding-top: $base_spacing/2;
+			> span > span:first-of-type {
+				font-family: "Circular-Bold";
+			}
+			@media screen and (max-width: 640px) {
+				padding: 30px 30px 0 30px;
+			}
+		}
+		/* .col-xs-12 {
+			@media screen and (max-width: 640px) {
+				padding: 0 30px;
+			}
+		} */
+		.topcontent {
+			//padding: 0 30px;
+		}
+		.vimeo {
+			height: 280px;
 		}
 		h2 blockquote {
 			font-size: 60px;
@@ -15,6 +63,7 @@
 		}
 		fieldset {
 			margin-bottom: 20px;
+
 			legend {
 				margin-bottom: 0;
 				font-family: $monospace_font;
@@ -22,7 +71,6 @@
 		}
 		cite img {
 			width: 80px;
-			margin-left: 16px;
 			margin-right: 20px;
 			font-size: 16px;
 		}
@@ -31,47 +79,89 @@
 			> .col-md-4 {
 				float: right;
 			}
+			
+			label {
+				color: #333;
+				font-weight: normal;
+				font-size: 16px;
+				padding-left: 15px;
+				margin-bottom: 20px;
+				&.icon-dot {
+					@media screen and (min-width: 640px) {
+						display: none;
+					}
+					padding-left: 10px;
+					&:before {
+						position: relative;
+						top: 2px;
+					}
+				}
+				&:hover {
+					color: $primary_color;
+					cursor: pointer;
+				}
+				&.icon-share {
+					
+					@media screen and (max-width: 640px) {
+						margin-left: 40px;
+					}
+					&:before {
+						top: 2px;
+						position: relative;
+					}
+				}
+				span {
+					font-family: "Circular-bold";
+					font-size: 13px;
+				}
+			}
+
 			aside {
 				/* hide for desktop version*/
 				input, label {
 					display: none;
 				}
+				
+				
 				label {
-					color: black;
-					font-weight: normal;
+					display: block;
+					color: $gray_font;
 					span {
-						font-family: "Circular-bold";
+						padding-left: 20px;
+						display: block;
 					}
-				}
-				label.icon-share {
-					display: block;
-					margin-top: 10px;
-				}
-				input#toggle-share {
-					display: block;
-			        position: absolute;
-			        left: 0;
-			        top: 0;
-			        width: 100px;
-			        height: 30px;
-			        opacity: 0;
-				}
-				#toggle-share:checked ~ ul {
-					display: block;
-					padding-left: 0;
-					padding-top: $base_spacing - 40;
-					margin-left: 0;
+					&:before {
+						position: absolute;
+						top: 0;
+						@media screen and (min-width: 640px) {
+							top: -2px;
+						}
+					}
+					&.icon-dot {
+						&:before {
+							top: 2px;
+						}
+					}
 				}
 			}
 			ul.social-icons {
 				display: none;
+				padding-left: 15px;
+				@media screen and (max-width: 640px) {
+					width: 100%;
+					margin: 10px 0 30px 0;
+				}
 				li {
 					float: left;
 					margin-right: 5px;
 					a {
-						border: 1px solid #ccc;
+						//border: 1px solid #ccc;
 						border-radius: 50%;
 						padding: 10px;
+						color: #333;
+						&:hover {
+							color: $primary_color;
+						}
 					}
 				}
 			}
@@ -98,6 +188,10 @@
 				margin: ($base_spacing - 20) 0;
 				margin-left: - ($base_spacing - 20);
 				line-height: 40px;
+				@media screen and (max-width: 640px) {
+					font-size: 20px;
+					line-height: 26px;
+				}
 			}
 		}
 	}
@@ -105,14 +199,6 @@
 		margin-top: $base_spacing;
 		p {
 			margin-top: 30px;
-			span.red {
-				font-family: $secondary_font;
-				font-size: 34px;
-				display: block;
-				margin: ($base_spacing - 20) 0;
-				margin-left: - ($base_spacing - 20);
-				line-height: 40px;
-			}
 		}
 		&:first-of-type {
 			margin: 0;
@@ -120,6 +206,11 @@
 		&:nth-of-type(odd) {
 			.col-md-8 {
 				float: right;
+			}
+		}
+		&:nth-of-type(even) {
+			.col-md-8 {
+				padding-right: 30px;
 			}
 		}
 		&:last-of-type {
@@ -134,6 +225,7 @@
 	h2 blockquote  {
 		font-size: 46px;
 		line-height: 56px;
+		width: 80%;
 	}
 	img.clientlogo {
 		width: auto;
@@ -147,30 +239,66 @@
 	fieldset {
 		h3 {
 			font-family: $secondary_font;
-			font-weight: bold;
 			color: $gray_font;
-			font-size: 34px;
+			font-size: 30px;
+			margin-bottom: $base_spacing - 40;
+			+ cite {
+				span {
+					&:last-of-type {
+						font-family: "Circular-book";
+						color: darken($gray_color, 15%);
+					}
+				}
+			}
 		}
 		span {
 			font-family: "Circular-bold";
-			font-size: 15px;
+			font-size: 13px;
+			display: block;			
+		}
+		p {
+			font-size: 13px;
+			line-height: 20px;
+			&:first-of-type {
+				margin-top: 10px;
+			}
+		}
+		a.red {
+			font-size: 13px;
 		}
 	}
 	cite {
 		margin: $base_spacing - 50 0;
+		opacity: 0.75;
 	}
 	.line {
 		width: 50px;
-		border-bottom: 2px solid #979797;
-		margin: $base_spacing - 30 0;
+		border-bottom: 1px solid #979797;
+		margin: $base_spacing - 40 0;
 	}
 	.more-cases {
 		background: #f2f2f2;
 		text-align: center;
+		padding: $base_spacing*2 ($base_spacing - 20) 0 ($base_spacing - 20);
+		padding-top: $base_spacing - 40;
+		/* @media screen and (max-width: 640px) {
+			//temporary solution to make the active scetion wider
+			transform: scale(1.2);
+			margin-top: $base_spacing+40;
+		}  */
+		> span, > a {
+			padding-bottom: 30px; 
+			padding: 15px 15px 30px 15px;
+		}
+		> span {
+			float: left;
+			font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+		}
+		> a {
+			float: right;
+		}
 		.more-case-wrapper {
 			margin: 0 auto;
-			padding: $base_spacing*2 ($base_spacing - 20) 0 ($base_spacing - 20);
-			padding-top: $base_spacing*2;
 			article {
 				p {
 					font-family: $secondary_font;
@@ -194,5 +322,81 @@
 			}
 		}
 		margin-bottom: $base_spacing;
+	}
+	span.red {
+		font-family: $secondary_font;
+		font-size: 34px;
+		display: block;
+		margin: ($base_spacing - 20) 0;
+		margin-left: - ($base_spacing - 20);
+		line-height: 40px;
+		@media screen and (max-width: 640px) {
+			margin-left: 0;
+		} 
+	}
+	.detail-content, .topcontent {
+		p {
+			@media screen and (max-width: 640px) {
+				padding: 0 30px;
+			} 
+		}
+	}
+}
+.bubble 
+{
+position: relative;
+width: 185px;
+height: 58px;
+padding: 20px 10px;
+background: #FFFFFF;
+border-radius: 3px;
+border: rgba(0,0,0,0.25) solid 1px;
+	@media screen and (max-width: 640px) {
+		margin-top: 30px;
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 10px 10px;
+border-color: #FFFFFF transparent;
+display: block;
+width: 0;
+z-index: 1;
+top: -10px;
+left: 36px;
+	@media screen and (max-width: 640px) {
+		left: 110px;
+	}
+}
+
+.bubble:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 10px 10px;
+border-color: rgba(0,0,0,0.25) transparent;
+display: block;
+width: 0;
+z-index: 0;
+top: -11px;
+left: 36px;
+	@media screen and (max-width: 640px) {
+		left: 110px;
+	}
+}
+.tet .col-xs-12 {
+	float: none;
+}
+#icon-details-container {
+	width: 100%;
+	fieldset {
+		margin-bottom: 10px;	
 	}
 }

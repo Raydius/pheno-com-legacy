@@ -1,6 +1,9 @@
 /**
  * Created by rdollete on 4/1/16.
  */
+/**
+ * Created by rdollete on 4/1/16.
+ */
 
 
 angular.module('phenoCom').directive('carouselComponent', function() {
@@ -11,17 +14,40 @@ angular.module('phenoCom').directive('carouselComponent', function() {
             var animationSpeed = 150;
 
             $(element).owlCarousel({
-                singleItem: true,
-                navigation: true,
-                navigationText: [
+                items: 1,
+                nav:true,
+                navText: [
                     "<button class='icon-left-arrow'></button>",
                     "<button class='icon-right-arrow'></button>"
                 ],
-                slideSpeed: animationSpeed,
-                paginationSpeed: animationSpeed,
-                rewindSpeed: animationSpeed,
+                loop: true,
+                dots: true,
                 touchDrag: true
+            });
 
+        }
+    };
+
+});
+
+angular.module('phenoCom').directive('carouselComponentCenter', function() {
+
+    return {
+        restrict: 'E',
+        link: function (scope, element, attrs) {
+            var animationSpeed = 150;
+
+            $(element).owlCarousel({
+                items: 2,
+                center: true,
+                nav:false,
+                navText: [
+                    "<button class='icon-left-arrow'></button>",
+                    "<button class='icon-right-arrow'></button>"
+                ],
+                loop: true,
+                dots: false,
+                touchDrag: true
             });
 
         }
@@ -61,6 +87,63 @@ angular.module('phenoCom').directive('scrolltotop', function() {
         }
     };
   });
+
+angular.module('phenoCom').directive('scrolltop2', function() {
+    return {
+      link: function (scope, element, attrs) {
+            var $windowHeight = $(window).height();
+            var topSpace = 180;
+            $( window ).resize(function() {
+              $windowHeight = $(window).height();
+            });
+            element.bind('click', function() {
+                $('html, body').animate({
+                        scrollTop: $windowHeight - topSpace
+                    }, 400, function(){
+                });
+            })
+        }
+    };
+});
+
+angular.module('phenoCom').directive('close', function() {
+    return {
+      link: function (scope, element, attrs) {
+        (function($){
+            $.fn.outside = function(ename, cb){
+              return this.each(function(){
+                  var $this = $(this),
+                      self = this;
+
+                  $(document).bind(ename, function tempo(e){
+                      if(e.target !== self && !$.contains(self, e.target)){
+                          cb.apply(self, [e]);
+                          if(!self.parentNode) $(document.body).unbind(ename, tempo);
+                      }
+                  });
+              });
+            };
+            }(jQuery));
+                element.bind().outside('click', function() { 
+                var name = $(this).attr('childContainer');
+                $(name).hide();
+
+            })
+        }
+    };
+});
+
+angular.module('phenoCom').directive('showmore', function() {
+    return {
+        link: function (scope, element, attrs) {
+
+            element.bind('click', function() {
+                var name = $(this).attr('childContainer');
+                $(name).toggle();
+            })
+        }
+    };
+});
 
 // currently not in use: embedded scrollable website
 angular.module('phenoCom').directive('scrollableComponent', function($window) {

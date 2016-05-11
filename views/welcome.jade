@@ -7,41 +7,42 @@ block variables
 // title and body copy
 section.row.no-padding.home
 	div.top-main.col-md-12
-		h2 
-			| The first agency site  <br>written by clients.
-		p.red
-			| Except for this part. 
-		input.view-this-part(type="checkbox" id="toggle-featured-contributors") 		
-		label.icon-right-arrow(for="toggle-featured-contributors") 
-		ul.row.no-padding.featured-contributors
-			h6 Featured Contributors
-			each contributorItem in pageData.contributors
-				li.col-sm-12.col-md-4 
-					if contributorItem.contributorAvatar 
-						img(src=contributorItem.contributorAvatar)
-					cite
-						if contributorItem.name
-							span!= contributorItem.name
-						if contributorItem.jobTitle
-							span!= contributorItem.jobTitle
-					if contributorItem.project
-						p!= contributorItem.project
-					a.red(href="#") Read full article &gt;
-			.clear
-			.see-more
-				input.red.view-more(type="checkbox" name="toggle" id="toggle") 
-				label(for="toggle") 
-				.see-more-container
-					each contributorItem in pageData.contributorsMore
-						li.col-sm-12.col-md-4 
-							if contributorItem.contributorAvatar 
-								img(src=contributorItem.contributorAvatar)
-							cite
-								if contributorItem.name
-									span!= contributorItem.name
-								if contributorItem.jobTitle
-									span!= contributorItem.jobTitle
-							if contributorItem.project
-								p!= contributorItem.project
-							a.red(href="#") Read full article &gt;
-					
+		.col-md-6.no-padding
+			h2 The first agency site  written by clients.
+			p.red
+				| Except for this part. 
+			.icon-right-arrow(scrolltop2)
+	ul.row.no-padding.featured-contributors
+		h6 Featured Contributors
+		// first 3 contributors
+		each contributorItem in pageData.contributors
+			li.col-sm-12.col-md-4 
+				if contributorItem.contributorAvatar 
+					img(src=contributorItem.contributorAvatar)
+				cite
+					if contributorItem.name
+						span!= contributorItem.name
+					if contributorItem.jobTitle
+						span!= contributorItem.jobTitle
+				if contributorItem.project
+					p!= contributorItem.project
+				a.red(href=contributorItem.href) Read full article &gt;
+		.clear
+		//- .see-more
+		//- 	input.red.view-more(type="checkbox" name="toggle" id="toggle") 
+		//- 	label(for="toggle") 
+		//- 	.see-more-container
+		//- 		// six more contributors
+		//- 		each contributorItem in pageData.contributorsMore
+		//- 			li.col-sm-12.col-md-4 
+		//- 				if contributorItem.contributorAvatar 
+		//- 					img(src=contributorItem.contributorAvatar)
+		//- 				cite
+		//- 					if contributorItem.name
+		//- 						span!= contributorItem.name
+		//- 					if contributorItem.jobTitle
+		//- 						span!= contributorItem.jobTitle
+		//- 				if contributorItem.project
+		//- 					p!= contributorItem.project
+		//- 				a.red(href=contributorItem.href) Read full article &gt;
+		//- 		

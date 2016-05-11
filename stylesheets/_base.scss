@@ -6,11 +6,16 @@ html, body {
   width: 100%;
   margin: 0;
   overflow: initial;
+  position: relative;
   font-family: $primary_font;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  &.opend {
+  	overflow: hidden;
+  }
 }
 body {
+	display: none;
 	&.opend {
 		overflow: hidden;
 		.body-wrapper {
@@ -21,15 +26,18 @@ body {
 	    	animation: showDrawers 0.3s forwards;
 	    	animation-delay: 0.1s;
 	    	z-index: -1;
+	    	display: block;
 	    }
+	}
+	&.loaded {
+		display: block;
 	}
 }
 @keyframes showDrawers {
 	0% {
-		opacity: 0;
+		opacity: 1;
 	}
 	100% {
-		opacity: 1;
 		z-index: 999;
 	}
 }
@@ -40,7 +48,6 @@ body {
     border-bottom: 8px solid $primary_color;
     position: relative;
     left: 0;
-    transition: all 0.2s ease-in-out;
 }
 .red {
 	color: $primary_color;
@@ -51,6 +58,9 @@ a, .a, .link{
 		color: $primary_color;
 		font-family: "Circular-bold";
 	}
+}
+blockquote {
+	padding: 10px 0;
 }
 h1 {
   margin: 0;
@@ -80,6 +90,9 @@ article p {
 
 	&:last-of-type {
 		margin-bottom: $base_spacing;
+		@media screen and (max-width: 640px) {
+			margin: 0 0 10px; 
+		}
 	}
 
 	&.red {
@@ -113,14 +126,14 @@ figcaption {
 .top-main {
 	position: relative;
 	border-bottom: 1px solid $gray_border_color;
-	padding: $base_spacing 0;
+	padding: ($base_spacing - 20) 0;
 	h2 {
-		font-weight: bold;
 		margin-top: 0;
+		font-weight: normal;
 	}
 }
 cite {
-	color: $black_font;
+	color: $gray_font;
 	font-size: 14px;
 	display: block;
 	margin-top: 5px;
@@ -143,7 +156,7 @@ cite {
 		}
 		span {
 			&:last-of-type {
-				opacity: 0.5;
+				color: $gray_color;
 				display: block;
 			}
 		}
@@ -159,8 +172,6 @@ cite {
 }
 h2 blockquote, h3 blockquote  {
 	font-size: 40px;
-	font-weight: 600;
-	letter-spacing: -1px;
 	border-left: 0;
 	position: relative;
 	font-family: $secondary_font;
@@ -170,9 +181,9 @@ h2 blockquote, h3 blockquote  {
 		content: "\201C";
 		font-size: inherit;
 		position: absolute;
-		left: 0;
+		left: -25px;
 		top: 10px; 
-		color: $black_font;
+		color: inherit;
 	}
 	&:last-letter {
 		color: red;
@@ -228,14 +239,6 @@ h3 blockquote {
 .owl-wrapper, .owl-item {
 	transition: all 0.3s!important;
 }
-.owl-theme{
-	.owl-prev {
-	  	margin-left: 30%;
-	}
-	.owl-next {
-	  	margin-right: 30%;
-	}
-}
 
 .fix-images {
 	position: fixed;
@@ -265,9 +268,9 @@ h3 blockquote {
 }
 .social{
   li{
-    width: 33px;
-    height: 33px;
-    margin: 0 8px;
+    width: 26px;
+    height: 26px;
+    margin: 0 25px;
 
     &:first-child{
       margin-left: 0;
@@ -332,19 +335,49 @@ h3 blockquote {
 		}
 	}
 }
+.desktop .drawer {
+	display: none;
+}
 .drawer {
-	width: 80%;
+	//width: 80%;
 	position: fixed;
 	left: 0;
 	top: 0;
 	z-index: -1;
 	padding: $base_spacing - 20;
 	text-align: center;
-	ul li {
-		font-size: 20px;
-		margin-top: $base_spacing - 30;
+	font-family: "Circular-Bold";
+	display: none;
+	@media screen and (max-width: 640px) and (orientation : landscape){
+		height: 320px;
+		width: 80%;
+		overflow-y: scroll;
+	}
+	ul {
+		text-align: left;
+		margin-left: 0;
+		padding-left: 0;
+		margin-bottom: 60px;
+		li {
+			font-size: 20px;
+			margin-top: $base_spacing - 30;
+			width: 100%;
+			a {
+				color: #333;
+			}
+		}
 	}
 	.social {
+		li {
+			margin: 0 12px;
+			width: auto;
+			&:first-child {
+				margin-left: 0;
+			}
+			&:nth-child(3) {
+				margin: 0 10px;
+			}
+		}
 	}
 }
 /**
@@ -368,4 +401,49 @@ h3 blockquote {
 
 .margin-top-md {
 	margin-top: $base_spacing;
+}
+
+.black {
+	width: 100%; height: 100%;
+	position: fixed;
+	background: black; 
+	z-index: 99999;
+	left: 0;
+	top: 0;
+	animation: loading 0.5s forwards;
+	animation-delay:1s;
+	main {
+		animation: loadingHide 0.2s forwards;
+		animation-delay: 1s;
+		background: black;
+		h2 {
+			color: white;
+		}
+		p {
+			color: black;
+		}
+		.icon-right-arrow {
+			color: black!important;
+		}
+	}
+	.topnav {
+		height: 121px;
+		background: black;
+	}
+}
+@keyframes loading {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 100%;
+	}
+}
+@keyframes loadingHide {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }

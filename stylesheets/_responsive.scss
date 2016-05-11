@@ -9,6 +9,19 @@
       padding-right: 0;
     }
   }
+  .culture .headshots .col-sm-4 {
+    width: calc(33.33333% - 16px);
+  }
+  .culture .headshots .col-xs-6 {
+    width: calc(50% - 16px);
+    &:last-of-type {
+      display: none;
+    }
+  }
+  .home .featured-contributors .col-sm-12 {
+    width: 100%;
+    margin: 0 0 60px 0;
+  }
 }
 @media (max-width: 768px) {   
   main, .maincontent, .topnav .nav-wrapper {
@@ -16,9 +29,6 @@
   }
   .topnav .nav-wrapper {
     margin-top: 30px;
-  }
-  .topnav.fixed {
-    position: relative; 
   }
   .topnav .tabs {
     margin-left: 0;
@@ -33,24 +43,12 @@
       margin-left: 0;
     }
   }
-  .owl-theme .owl-prev {
-    margin-left: 20%;
-  }
-  .owl-theme .owl-next {
-    margin-right: 20%;
-  }
   .topnav .tabs li {
     font-size: 14px;
     padding: 0;
   }
   .about .top-main p {
     min-width: 100%;
-  }
-  .top-main h2, .work h2 blockquote {
-    font-size: 40px;
-  }
-  .about .top-main h2 {
-    font-size: 40px;
   }
   .contact {
     .contactbiz {
@@ -66,18 +64,26 @@
 
 }
 
+
 @media (min-width: 768px) and (max-width: 1280px) {
     main, .maincontent {
-      padding: 20px $base_spacing;
+      padding: 0 $base_spacing+30;
     }
     .topnav {
       .nav-wrapper {
-        padding: 30px $base_spacing 0 $base_spacing;
+        padding: 30px $base_spacing+30 0 $base_spacing+30;
       }
+    }
+    .home .featured-contributors {
+      padding: 0 0 60px;
     }
 }
 
-
+@media (min-width: 1024px) and (max-width: 1280px) {
+  main, .maincontent {
+      padding: 0 $base_spacing*2;
+    }
+}
 // all non-phone devices
 @media (min-width: 737px) {
 
@@ -135,10 +141,6 @@
     .tabs li.contact a{
       color: $primary_color;
     }
-  }
-
-  .tabs {
-    display: block;
   }
 
   //footer
@@ -217,104 +219,13 @@
 
 }
 
-
-/**
- * NOTE: all styles below apply to devices where they will get the hamburger menu
-**/
-
-// landscape iPhone5 to landscape iPhone6 Plus
-@media (min-width: 568px) and (max-width: 736px){
-
-  // shrink drawer menu height to fit shorter landscape height
-  .drawer-menu nav ul li, .drawer-menu .nav ul li{
-    margin: 2.5% 0px;
-  }
-  .topnav{
-    .tabs{
-      li{
-        width: 25%;
-
-        &.contact{
-          bottom: initial;
-          top: $base_spacing;
-          right: $base_spacing + ($base_spacing/2);
-          width: auto;
-          &:before{
-            border-width: 0;
-          }
-        }
-
-        a{
-          padding: 12px 0;
-        }
-      }
-    } 
-  } 
-}
-
-
-// all mobile devices
-@media (max-width: 736px) {
-  .topnav{
-    $sm-logo-padding: 32px;
-  }
-
-  .filterbutton {
-    font-size: 16px;
-    color: #FFF;
-    top: 4px;
-    cursor: pointer;
-  }
-  #hamburger {
-    display: block;
-  }
-  snap-content, .snap-content{
-    @include box-shadow(-1px, 10px, 26px, -5px, rgba(48,48,48,0.5));
-  }
-
-
-  main .section, .maincontent .section{
-
-    &.details{
-      padding-left: ($base_spacing/2);
-      padding-right: ($base_spacing/2);
-
-      p, h2{
-        margin: 0 0 ($base_spacing/4);
-      }
-    }
-
-    &.image-component{
-      padding-bottom: $base_spacing * 1.75;
-    }
-  }
-
-  .contact {
-    padding: 0 ($base_spacing/4) ($base_spacing/4);
-
-    input[type="text"], input[type="email"], .input-file{
-      margin: ($base_spacing/4) 0;
-    }
-
-    input[type="file"] + label {
-      margin-bottom: ($base_spacing/4);
-    }
-
-    input, h4, label{
-      font-size: 18px;
-    }
-
-    button{
-      font-size: 20px;
-      height: 76px;
-    }
-
-    form{
-      padding-bottom: ($base_spacing/2)
-    }
-  }
-}
 @media (min-width: 768px) and (max-width: 1024px) {
+  .topnav .logo-wrapper.fixed {
+    margin-right: 0;
+  }
+  .contact .contactbiz span {
+    font-size: 13px;
+  }
   footer .social li, .footer .social li {
     margin: 0 5px;
     width: 23px;
@@ -333,12 +244,72 @@
     }
 }
 @media (max-width: 640px) {
-  .topnav .nav-wrapper {
-    padding: 20px;
+  .mobile-full {
+    padding: 0;
     margin: 0;
+  }
+  .top-main h2 blockquote,  {
+    font-size: 28px;
+    line-height: 34px;
+    &:before {
+      left: -16px;
+    }
+  }
+  .home .top-main h2, .about .top-main h2, .culture .top-main h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .work.work-details {
+    .top-main h2 blockquote {
+        &:first-letter {
+          padding-left: 0;
+        }
+      }
+  }
+  .work p span.red {
+    font-size:20px;
+    line-height: 26px;
+  }
+  .work h2 blockquote {
+    width: 100%;
+  }
+  .work .more-case-wrapper.desktop, .work .more-cases > a {
+    display: none;
+  }
+  .work .more-cases > span {
+    float: none;
+    display: block;
+    padding: 40px 0;
+  }
+  .topnav .nav-wrapper {
+    padding-top: 15px;
+    margin: 0;
+    .logo-wrapper {
+      width: 100%;
+      img {
+        width: 160px;
+        position: relative;
+        left: 50%;
+        margin-left: -70px;
+      }
+    }
+    
+  }
+  .about .col-md-7 img {
+    margin: 0 -30px;
+    width: calc(100% + 60px);
+  }
+  .topnav .tabs {
+    display: none;
+  }
+  #hamburger {
+    display: block;
   }
   .work .col-md-12, .col-md-8 {
     padding: 0;
+  }
+  .work .col-md-12 .col-md-4 {
+    padding: $base_spacing/2;
   }
   .work > article p span.red {
     margin-left: 0;
@@ -346,8 +317,8 @@
   .work.work-details .project-detail aside label.icon-share {
     margin-top: 0;
   }
-  .culture .headshots .col-md-15 {
-    margin: 0;
+  .work > article:nth-of-type(even) .col-md-8 {
+    padding-right: 0;
   }
   .home .featured-contributors label {
     font-size: 16px;
@@ -372,10 +343,17 @@
   }
   .top-main {
     border-bottom: 0;
-    padding: ($base_spacing - 20) 15px;
+    padding: ($base_spacing - 40) 30px;
+  }
+  .jobs img {
+    margin-top: 0;
+    margin-left: -40px;
+  }
+  .jobs .top-main h2 {
+    margin-top: 30px;
   }
   .work .col-md-12.top-main {
-    padding: 40px 15px;
+    padding: 20px 30px;
   }
   .work .col-md-12 {
     margin-bottom: $base_spacing - 20;
@@ -416,14 +394,8 @@
       &:first-of-type {
         margin-left: 10px;
       }
-      fieldset {
-        display: inline-block;
-      }
       .icon-dot {
         &:before {
-          font-size: 5px;
-          line-height: 5px;
-          margin-right: 10px;
         }
       }
       .icon-share {
@@ -443,7 +415,6 @@
       label {
         display: inline-block;
         padding-left: 20px;
-        font-size: 14px;
         padding-left: 0;
         margin-bottom: $base_spacing - 20;
         &.share {
@@ -460,5 +431,15 @@
   }
   .detail-wrapper {
     display: none;
+  }
+}
+@media (min-width: 640px) {
+  .work .more-case-wrapper.mobile {
+    display: none;
+  }
+}
+@media (max-width: 768px) and (min-width: 640px) {
+  main, .maincontent, .topnav .nav-wrapper {
+    padding: 0 30px;
   }
 }

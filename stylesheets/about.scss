@@ -1,16 +1,20 @@
 .about {
 	.top-main {
 		h2 {
-			font-size: 76px;
-			letter-spacing: -1px;
-			word-spacing: -2px;
+			font-size: 46px;
+			//letter-spacing: -1px;
+			//word-spacing: -2px;
+			line-height: 56px;
 		}
 		p {
 			color: $primary_color;
-			font-size: 28px;
+			font-size: 22px;
 			font-family: $secondary_font;
 			width: 40%;
 			min-width: 430px;
+			@media screen and (max-width: 640px) {
+				font-size: 18px;
+			}
 		}
 		cite {
 			
@@ -18,6 +22,8 @@
 	}
 	.border-bottom {
 		border-bottom: 1px solid $gray_border_color;
+		padding: 0;
+		margin: 0 15px;
 	}
 	.col-md-7 {
 		//padding-left: $base-spacing;
@@ -40,6 +46,9 @@
 			font-family: "Circular-Bold";
 			&:last-of-type {
 				margin-bottom: $base-spacing*2;
+				@media screen and (max-width: 640px) {
+					margin-bottom: 40px;
+				}
 			}
 			span {
 				margin-top: $base-spacing - 40;
@@ -52,8 +61,17 @@
 		background: #F2F2F2;
 		padding: $base-spacing;
 		margin-top: 280px;
+		@media screen and (max-width: 520px) {
+			margin-top: 180px;
+
+		}
 		img {
 			margin-top: -300px;
+			border-radius: 50%;
+			@media screen and (max-width: 520px) {
+				margin-top: -200px;
+
+			}
 		}
 	}
 	.ac.col-md-12{
@@ -63,12 +81,19 @@
 		}
 		.col-md-5 {
 			float: left;
+			padding-bottom: 20px;
 		}
 	} 
 
 		/*Acco*/
 	.ac-container {
 	    max-width: 400px;
+	    background-color: #F2F2F2;
+	    padding: $base-spacing - 20;
+		h4 {
+			font-family: 'Tiempose-Semibold';
+			font-size: 20px;
+		}
 	    input:checked {
 	    	+ label {
 	    		
@@ -86,16 +111,16 @@
 	    display: block;
 	    cursor: pointer;
 	    font-family: $secondary_font;
-	    font-size: 26px;
-	    padding: 20px 0;
-	    color: $black_font;
+	    font-size: 14px;
+	    padding: 20px 0 0 0;
+	    color: $gray_font;
 	    width: 100%;
 	    &:after {
 	    	content: "\e902";
 	    	position: absolute;
-	    	font-size: 18px;
+	    	font-size: 14px;
 	    	right: 0;
-	    	top: 32px;
+	    	top: 23px;
 	    	font-family: 'icomoon' !important;
 		    speak: none;
 		    font-style: normal;
@@ -112,24 +137,24 @@
 
 	.ac-container {
 	    width: 100%;
-	    margin: 10px auto 30px auto;
 	    text-align: left;
-	}
-
-	.ac-container label:hover {
-	    background: #fff;
 	}
 
 	.ac-container input:checked + label:hover:after {
 	    //background-image: url(../images/arrow_up.png);
 	}
-
+	.ac-list {
+		border-bottom: 1px solid #ddd;
+		padding-bottom: 20px;
+		&:last-of-type {
+			border-bottom: 0;
+		}
+	}
 	.ac-container input {
 	    display: none;
 	}
 
 	.ac-container article {
-	    background: rgba(255,255,255,0.5);
 	    margin-top: -1px;
 	    overflow: hidden;
 	    height: 0;
@@ -143,10 +168,14 @@
 	}
 
 	.ac-container article p {
-		font-size: 17px;
+		font-size: 14px;
+		line-height: 18px;
 		font-weight: normal;
 		font-family: $monospace_font;
 		margin-top: 10px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
 	}
 
 	.ac-container input:checked ~ article {
@@ -158,11 +187,11 @@
 	}
 
 	.ac-container input:checked ~ article.ac-small {
-	    height: 140px;
+	    height: 100px;
 	}
 
 	.ac-container input:checked ~ article.ac-medium {
-	    height: 180px;
+	    height: 100px;
 	}
 
 	.ac-container input:checked ~ article.ac-large {
@@ -170,6 +199,9 @@
 	}
 	.folders {
 		margin-top: $base-spacing;
+		@media screen and (max-width: 640px) {
+			margin-top: 0;
+		}
 	}
 	.archie {
 		margin-bottom: $base-spacing;

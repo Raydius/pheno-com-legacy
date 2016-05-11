@@ -2,7 +2,7 @@
 block variables
 - copy = require('app/copy.js')
 - pageData = copy.content[page]
-
+- fbShareImg = copy.content[page].shareImg
 section.row.no-padding.work.work-details
 	article.col-md-12.no-padding.top-main
 		h2 
@@ -10,70 +10,86 @@ section.row.no-padding.work.work-details
 
 		include cite-components	
 	.topcontent
-		article.col-xs-12.col-sm-12.col-md-7.top-description
+		article.col-xs-12.col-sm-12.col-md-7.top-description.no-padding
 			if pageData.topDescription
 				each par in pageData.topDescription
 					p!= par
 				if pageData.topcontent
 		article.col-xs-12.col-sm-12.col-md-4.col-md-offset-1.project-detail
-			aside.col-xs-4.col-md-12
-				input.view-detail(type="checkbox" id="toggle-project-detail")
-				label.icon-dot 
-					span Details
-				.detail-wrapper
-					img.clientlogo(src= pageData.clientLogo)
-					fieldset 
-						legend Client
-						span= pageData.client
-					fieldset 
-						legend Project
-						span= pageData.project
-					fieldset 
-						legend Media
-						span= pageData.media
-			aside.col-xs-6.col-md-12
+			
+			label.icon-details.icon-dot(showmore close childContainer=".detail-wrapper") 
+				span Details
+			
+			aside.col-md-12#icon-details-container
 				fieldset
-					input.view-detail(type="checkbox" id="toggle-share")
-					label.icon-share 
-						span Share
-					
-					include social-icons 
+					.detail-wrapper
+						img.clientlogo(src= pageData.clientLogo)
+						fieldset 
+							legend Client
+							span= pageData.client
+						fieldset 
+							legend Project
+							span= pageData.project
+						fieldset 
+							legend Media
+							span= pageData.media
+
+
+			label.icon-share(showmore close childContainer=".social-icons") 
+				span Share
+
+			include share-icons
 
 		article.col-xs-12.col-sm-12.no-padding
 			each contentItem in pageData.topcontent
 				article.col-sm-12.col-md-12.no-padding.tet
 					if contentItem.video
 						video-component(thumb=contentItem.thumb, alt=contentItem.thumbAlt, title=contentItem.thumbTitle, vimeo=contentItem.vimeo)
-
 					if contentItem.carousel
-						carousel-component.carousel-component.no-padding
+						carousel-component.carousel-component.owl-carousel.no-padding
 							each carouselItem in contentItem.images
-								img(src=carouselItem.url, alt=carouselItem.alt)
+								img(src=carouselItem.url, alt=carouselItem.alt)							
 					if contentItem.image
 						section.image-component.component.row.no-padding
 							.col-xs-12.no-padding
 								img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
 					if contentItem.mainDescription
-						each par in contentItem.mainDescription
-							article.col-md-7
-								p!= par
-	each contentItem in pageData.detailcontent
-		article.col-md-12.no-padding.tet
+						article.col-md-7.no-padding
+							each par in contentItem.mainDescription
+									p!= par
+	div.detail-content
+		each contentItem in pageData.detailcontent
 			if contentItem.video
-				video-component(thumb=contentItem.thumb, alt=contentItem.thumbAlt, title=contentItem.thumbTitle, vimeo=contentItem.vimeo)
+				article.col-md-12.no-padding.tet
+					video-component(thumb=contentItem.thumb, alt=contentItem.thumbAlt, title=contentItem.thumbTitle, vimeo=contentItem.vimeo)
 
 			if contentItem.carousel
-				carousel-component.carousel-component.no-padding
-					each carouselItem in contentItem.images
-						img(src=carouselItem.url, alt=carouselItem.alt)
+				article.col-md-12.no-padding.tet
+					carousel-component.carousel-component.owl-carousel.no-padding
+						each carouselItem in contentItem.images
+							img(src=carouselItem.url, alt=carouselItem.alt)
 			if contentItem.image
-				section.image-component.component.row.no-padding
-					.col-xs-12.no-padding
-						img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
+				article.col-md-12.no-padding.tet
+					section.image-component.component.row.no-padding
+						.col-xs-12.no-padding
+							img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
+			if contentItem.scrollingSite
+				article.col-md-12.no-padding.tet(sticky offset="80") 
+					section.image-component.component.row.no-padding
+						.col-xs-12.no-padding
+							img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
 			if contentItem.mainDescription
-				each par in contentItem.mainDescription
-					article.col-md-7
-						p!= par
-	
+				article.col-md-12.no-padding.tet
+					each par in contentItem.mainDescription
+						article.col-md-7.no-padding
+							p!= par
+	if pageData.caseWriter
+		article.col-md-6.no-padding.case-writer
+			span
+				span!= pageData.caseWriter.name
+				/ 
+				span!= pageData.caseWriter.title
+			div!= pageData.caseWriter.description
+
 	include more-cases
 	

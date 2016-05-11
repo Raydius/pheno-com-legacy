@@ -4,55 +4,30 @@ block variables
 - pageData = copy.content[page]
 
 section.row.no-padding.contact
-	article.col-md-12.no-padding.top-main
+	//article.col-md-12.no-padding.top-main
 		h2 
 			blockquote!= pageData.blockquote
 		
 		include components/cite-components
-
-	.col-xs-12.col-sm-6.col-md-6
-		figure
-			img(src=require('assets/images/contact/contact01.png'))
-			figcaption
-				h3 Los Angeles
-				ul
-					li
-						| +1 313 800 800
-					li
-						| 5900 Wilshire Blvd, Floor 28, <br>Los Angeles, CA 90036
-	.col-xs-12.col-sm-6.col-md-6
-		figure
-			img(src=require('assets/images/contact/contact02.png'))
-			figcaption
-				h3 Chicago
-				ul 
-					li
-						| +1 323 648 4000
-					li
-						| 118 N Peoria Street, Suite 5N <br>Chicago, IL 60607
-	.clear
-	section.contactbiz.clearfix
-		.col-xs-12.col-sm-4.col-md-4.no-padding
-			h4 Jobs
-			span We'd love to hear from you. <br> Tell us some things LinkedIn can't. 
-			hr
-			span 
-				a(href="#")
-					| jobs@phenomenon.com
-		.col-xs-12.col-sm-4.col-md-4.no-padding
-			h4 New Business
-			span Pheno works mostly by referral. <br> Mostly. Not exclusively.
-			hr
-			span 
-				a(href="#")
-					| newbiz@phenomenon.com
-		.col-xs-12.col-sm-4.col-md-4.no-padding
-			h4 PR
-			span  We're generally not the ones talk about<br> ourselves. But you can ask.
-			hr
-			span 
-				a(href="#")
-					| pr@phenomenon.com
-
+	.contact-wrppaer
+		each contentItem, index in pageData.offices 
+			.col-xs-12.col-sm-6.col-md-6
+				figure
+					img(src!=contentItem.imgSrc)
+					figcaption
+						h3= contentItem.name
+						ul
+							li
+								a(href!='tel:'+contentItem.href)!= contentItem.phone
+								
+							li!= contentItem.address 
+		.clear
+		section.contactbiz.clearfix
+			each contentItem, index in pageData.departments
+				.col-xs-12.col-sm-4.col-md-4
+					h4!= contentItem.cat
+					span!= contentItem.description
+					hr
+					span.red!= contentItem.email
 
 //include components/contact-form

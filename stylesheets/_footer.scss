@@ -5,7 +5,6 @@ footer, .footer{
 	max-width: $body_size;
 	margin: 0 auto;
 	background-color: #FFF;
-
 	.footer-wrapper{
 		//margin: 0 ($base_spacing/2);
         margin: 0 ($base_spacing/4);
@@ -24,7 +23,7 @@ footer, .footer{
 
 	img.logo{
       margin: 10px 0 20px;
-      max-width: 200px;
+      max-width: 160px;
       padding-right: 10px;
 
     }
@@ -38,11 +37,16 @@ footer, .footer{
 	address, a{
 		margin: 0;
 		color: $gray_font;
-		font-size: 16px;
+		font-size: 15px;
 	}
-
+	.social {
+		padding: 0;
+		li {
+			margin-right: 0;
+		}
+	}
 	.social a{
-		color: #ccc;
+		color: #333;
 		font-size: $h4_size;
 	}
 
@@ -53,6 +57,8 @@ footer, .footer{
 
 	.office{
 		margin-bottom: ($base_spacing/2);
+		@media screen and (max-width: 768px) {
+			padding-left: 0;
+		}
 	}
-
 }

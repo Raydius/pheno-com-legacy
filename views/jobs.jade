@@ -9,7 +9,7 @@ section.row.no-padding.jobs
 	.top-main
 		article.col-md-5
 			img(src=require('assets/images/jobs/jobs1.png')) 
-		article.col-xs-12.col-sm-12.col-md-7.col-sm-offset-0
+		article.col-xs-12.col-sm-12.col-md-7.col-sm-offset-0.no-padding
 			h2 
 				blockquote!= pageData.blockquote
 				
@@ -19,4 +19,4 @@ section.row.no-padding.jobs
 				span= pageData.positions
 				each contentItem in pageData.listing
 					li 
-						a(href=contentItem.listingUrl)= contentItem.listingTitle
+						a(href=contentItem.listingUrl target="blank")= contentItem.listingTitle

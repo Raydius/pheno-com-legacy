@@ -1,11 +1,24 @@
 // navigation styles
 
-
+/* .mobile.opend .topnav {
+  @media screen and (max-width: 640px) {
+    left: 80%;
+  }
+}
+ */
 .snapjs-left{
   height: 100%;
   @include viewport-height(100vh);
   overflow: hidden;
   position: fixed;
+}
+.mobile.opend {
+  .topnav {
+    
+    @media screen and (max-width: 640px) {
+      position: relative;
+    }
+  }
 }
 .topnav {
     display: block;
@@ -14,34 +27,41 @@
     background-color: #FFF;
     position: relative;
     min-height: 70px;
-
+    @media screen and (max-width: 640px) {
+      min-height: 50px;
+      position: fixed;
+    } 
     &.fixed {
       position: fixed;
-      img.logo {
-        //margin: 0;
-      }
-
-    }
-
-    .logo-wrapper{
-      height: 40px;
-      max-width: 160px;
-      img {
-        transition: all 0.3s;
-      }
-      &.fixed {
+      background-color: rgba(255,255,255,.95);
+      z-index: 99999;
+      top: -121px;
+      animation: ttt 0.5s forwards ease-in-out;
+      .logo-wrapper {
         float: left;
         margin-right: $base_spacing - 20;
         ~ .tabs {
           margin: 0;
-          border-bottom: 0;
           padding: 0;
+          padding-left: 200px;
           li {
             a {
-              padding: 4px 0 18px 0;
+              padding: 5px 0 20px 0;
             }
           }
         }
+      }
+    }
+    .mobile .topnav {
+      @media screen and (max-width: 640px) {
+        position: fixed;
+      } 
+    }
+    .logo-wrapper{
+      height: 40px;
+      width: 160px;
+      img {
+        //transition: all 0.3s;
       }
     }
 
@@ -51,12 +71,10 @@
       padding: 30px $base_spacing*2 0 $base_spacing*2;
       margin: 0 auto;
       position: relative;
-    }
-
-    img.logo{
-      //margin: 0 auto;
-      max-width: 200px;
-      padding: 10px 0 10px (0+35px);
+      /* top: -120px;
+      opacity: 0;
+      animation: test 0.2s forwards ease-out; 
+      animation-delay: 1.7s; */
     }
 
     h1 {
@@ -84,7 +102,7 @@
   }
 
   .tabs {
-    margin: 20px -20px 0;
+    margin: 0 -20px 0;
     padding: 0 20px;
     border-bottom: 1px solid #ccc;
 
@@ -96,7 +114,7 @@
 
     li {
       display: inline-block;
-      font-size: 17px;
+      font-size: 15px;
       line-height: 1;
       text-align: center;
       padding: 0;
@@ -108,10 +126,10 @@
       &.selected:before{
         content: "";
         position: absolute;
-        bottom: -1px;
+        bottom: 0;
         width: 100%;
         left: 0;
-        border-bottom: 4px solid $primary_color;
+        border-bottom: 2px solid $primary_color;
       }
       
       &:first-child{
@@ -130,7 +148,7 @@
         width: 100%;
         display: block;
         font-family: "Circular-Bold";
-        color: black;
+        color: $gray_font;
       }
 
       &.contact{
@@ -227,8 +245,6 @@ snap-content, .snap-content{
   height: 30px;
   position: absolute;
   float:left;
-  top: 50%;
-  margin-top: -15px;
   cursor: pointer;
   z-index:20;
 
@@ -261,13 +277,13 @@ snap-content, .snap-content{
     transition: .4s;
 
     &:nth-child(1) {
-      top: 4px; //7.5px;
+      top: 0; //7.5px;
     }
     &:nth-child(2) {
-      top: 13px; //20.5px;
+      top: 9px; //20.5px;
     }
     &:nth-child(3) {
-      top: 22px; //px;
+      top: 18px; //px;
     }
   }
 
@@ -294,7 +310,61 @@ snap-content, .snap-content{
   }
 }
 
+/* Underline From Center */
+.hvr-underline-from-center {  
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  //overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: $primary_color;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+main.maincontent {
+  @media screen and (max-width: 640px) {
+    padding-top: 70px;
+  }
+}
 
-.tabs {
-    display:none;
+@keyframes test {
+  0% {
+    top: -120px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes ttt {
+  0% {
+    top: -121px;
+  }
+  100% {
+    top: 0;
+  }
 }

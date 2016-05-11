@@ -7,8 +7,8 @@ import 'bootstrap';
 import angular from 'angular';
 import uirouter from 'angular-ui-router';
 import ngAnimate from 'angular-animate';
-
-import '../js/sticky.min.js';
+import 'angular-socialshare';
+import 'sticky-kit/dist/sticky-kit.min.js';
 
 require('angular-cookies');
 require('angular-messages');
@@ -19,7 +19,7 @@ angular.module('phenoCom',[
     ngAnimate,
     'ngCookies',
     'ngMessages',
-    'sticky'
+    '720kb.socialshare'
 ]);
 
 

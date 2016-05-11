@@ -1,7 +1,7 @@
 /**
  * Created by rdollete on 4/1/16.
  */
-import 'npm/owlcarousel/owl-carousel/owl.carousel';
+import 'npm/owl-carousel-2/owl.carousel';
 
 var copy = require('app/copy.js');
 
@@ -39,6 +39,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         .state('home', {
             url: '/',
             template: templateHome,
+            controller: 'homeController',
             data: {
                 pageTitle: 'PHENOMENON'
             }
@@ -47,6 +48,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         .state('about', {
             url: '/about',
             template: templateAbout,
+            controller: 'aboutController',
             data: {
                 pageTitle: 'PHENOMENON'
             }
@@ -100,7 +102,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
 
         .state('work/sls', {
-            url: '/work/sls',
+            url: '/work/sls-hide',
             template: templateWorkSLS, 
             data: {
                 pageTitle: 'PHENOMENON - SLS case study'
@@ -108,7 +110,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
         
         .state('work/sunny', {
-            url: '/work/sunny',
+            url: '/work/sunny-hide',
             template: templateWorkSunny, 
             data: {
                 pageTitle: 'PHENOMENON - Sunny case study'
@@ -116,7 +118,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
         
         .state('work/cooper', {
-            url: '/work/cooper',
+            url: '/work/cooper-hide',
             template: templateWorkCooper, 
             data: {
                 pageTitle: 'PHENOMENON - Mr.Cooper case study'
@@ -124,7 +126,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
 
         .state('entertainment', {
-            url: '/entertainment',
+            url: '/entertainment-hide',
             template: templateEntertainment,
             data: {
                 pageTitle: 'PHENOMENON - Wilson Anthem case study'
