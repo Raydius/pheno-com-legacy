@@ -52,7 +52,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
             }, 0, function(){
 
         });
-       $('html, body').fadeIn();
+       $('html, body').show();
        
     });
 
