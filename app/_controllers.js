@@ -50,7 +50,7 @@ angular.module('phenoCom').controller('homeController', function($state, $scope)
 
 angular.module('phenoCom').controller('aboutController', function($state, $scope) {
     var options = {
-        'offset_top': 121
+        'offset_top': 121,
     }
     
     $(".ac .col-md-5").stick_in_parent(options);     

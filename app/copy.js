@@ -118,7 +118,7 @@ var copy =
           "jobTitle": "VP Marketing, Wilson",
           "project": "Wilson Launches<br> Futuristic Ball.",
           "contributorAvatar": require("assets/images/client_icons/icon-wilson.png"),
-          "href": "#/work/wilson-anthem"
+          "href": "#/work/wilson-x"
         },
         {
           "name": "Matt Stringer",
@@ -813,7 +813,7 @@ var copy =
       "caseWriter": {
         "name": "Matt Stringer",
         "title": "EVP Marketing, Tailored Brands",
-        "description": "Matt is the EVP of Marketing at Tailored Brands, which is the holding company for Men’s Wearhouse. Matt has been with the company for over 17 years."
+        "description": "Matt is the EVP of Marketing at Tailored Brands, which is the holding company for Men&#8217;s Wearhouse. Matt has been with the company for over 17 years."
       },
       "topDescription": [
         "For over 25 years, Men&#8217;s Wearhouse advertising centered around one line delivered by one man. But in 2013, when our founder and longtime CEO left the company, we had to make some pretty significant changes. We partnered with Phenomenon to help us shape both the strategic and creative direction for Men&#8217;s Wearhouse as our Agency of Record.",
@@ -881,7 +881,8 @@ var copy =
           "vimeo": "134437401",
           "mainDescription": [
             '<span class="red">We used Father&#8217;s Day as a way to sell the emotional side of our product by celebrating the very dads we outfit everyday.</span>',
-            "The spot was well received - there was a detectable buzz on social media and even in our offices and stores - people felt proud of what we stood for. Of course we won&#8217;t be looking to create an emotional hook every time we advertise, but when the opportunity presents itself, we realize the importance of standing for something bigger with our customers. And that&#8217;s something we can thank our partners for helping us achieve. In the end, 2015 was a very good year for the Men&#8217;s Wearhouse brand. We reported a total sales increase of 6.2% on a solid comp sales increase of 4.9%. And our brand health saw significant increases as well. Brand love is up 9%, loyalty is up 8%, and credit for quality and style is up 9%."
+            "The spot was well received - there was a detectable buzz on social media and even in our offices and stores - people felt proud of what we stood for. Of course we won&#8217;t be looking to create an emotional hook every time we advertise, but when the opportunity presents itself, we realize the importance of standing for something bigger with our customers. And that&#8217;s something we can thank our partners for helping us achieve. ",
+            "In the end, 2015 was a very good year for the Men&#8217;s Wearhouse brand. We reported a total sales increase of 6.2% on a solid comp sales increase of 4.9%. And our brand health saw significant increases as well. Brand love is up 9%, loyalty is up 8%, and credit for quality and style is up 9%."
           ]
         }
       ]

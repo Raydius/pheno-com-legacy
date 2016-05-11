@@ -156,8 +156,10 @@ cite {
 		}
 		span {
 			&:last-of-type {
-				color: $gray_color;
+				color: #333;
+				opacity: 0.75;
 				display: block;
+				font-family: "Circular-book";
 			}
 		}
 	}
@@ -318,7 +320,7 @@ h3 blockquote {
         float: left;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
 	.topcontent {
 		display: flex;
 		flex-direction: column;
@@ -335,6 +337,18 @@ h3 blockquote {
 		}
 	}
 }
+/* @media (max-width: 991px) and (min-width: 640px) {
+	.topcontent {
+		#icon-details-container > fieldset {
+			float: left;
+		}
+		label {
+			float: left;
+			display: block;
+		}
+	}
+}
+ */
 .desktop .drawer {
 	display: none;
 }

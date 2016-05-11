@@ -5,9 +5,6 @@
 				max-width: 275px;
 			}
 		}
-		fieldset h3 + cite span:last-of-type {
-			opacity: 0.75;
-		}
 	}
 	a legend {
 		opacity: 0.75;
@@ -199,6 +196,9 @@
 				margin: ($base_spacing - 20) 0;
 				margin-left: - ($base_spacing - 20);
 				line-height: 40px;
+				@media screen and (max-width: 768px) {
+					margin-left: 0;
+				}
 				@media screen and (max-width: 640px) {
 					font-size: 20px;
 					line-height: 26px;
@@ -253,14 +253,7 @@
 			color: $gray_font;
 			font-size: 30px;
 			margin-bottom: $base_spacing - 40;
-			+ cite {
-				span {
-					&:last-of-type {
-						font-family: "Circular-book";
-						opacity: 0.5;
-					}
-				}
-			}
+			
 		}
 		span {
 			font-family: "Circular-bold";

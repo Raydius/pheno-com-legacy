@@ -20,8 +20,9 @@ section.row.no-padding.work.work-landing
 						legend= contentItem.legend
 						h3!= contentItem.headline 
 						cite
-							span!= contentItem.citeName
-							span!= contentItem.citeTitle
+							.wrapper
+								span!= contentItem.citeName
+								span!= contentItem.citeTitle
 
 						div.line
 						p!= contentItem.description

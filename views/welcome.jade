@@ -20,10 +20,11 @@ section.row.no-padding.home
 				if contributorItem.contributorAvatar 
 					img(src=contributorItem.contributorAvatar)
 				cite
-					if contributorItem.name
-						span!= contributorItem.name
-					if contributorItem.jobTitle
-						span!= contributorItem.jobTitle
+					.wrapper
+						if contributorItem.name
+							span!= contributorItem.name
+						if contributorItem.jobTitle
+							span!= contributorItem.jobTitle
 				if contributorItem.project
 					p!= contributorItem.project
 				a.red(href=contributorItem.href) Read full article &gt;

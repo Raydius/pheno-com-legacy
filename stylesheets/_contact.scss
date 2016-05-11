@@ -3,7 +3,7 @@
 .contact{
   .contact-wrppaer {
     width: 90%;
-    margin: $base_spacing auto;
+    margin: 0 auto;
     @media screen and (max-width: 1024px) {
       width: 100%;
       margin: 0 auto;
@@ -81,6 +81,8 @@
       display: block;
       font-family: $primary_font;
       font-size: 14px;
+      max-width: 220px;
+      margin: 0 auto;
     }
     a {
       color: $primary_color;
