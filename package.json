@@ -7,6 +7,7 @@
     "build": "bash ./deploy/build",
     "build:local": "bash ./deploy/build local",
     "build:staging": "bash ./deploy/build staging",
+    "build:prod": "bash ./deploy/build prod",
     "start": "bash ./deploy/server",
     "start-production": "cp -R ./public/. /usr/share/nginx/html/ && nginx -g \"daemon off;\""
   },
