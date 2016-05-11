@@ -686,11 +686,11 @@ var copy =
       ]
     },
     "xome": { 
-      "title": "Launch Campaign",
+      "title": "Xome",
       "className": "Xome",
       "client": "Xome",
       "clientLogo": require('assets/images/works/clients_logo/xome.svg'),
-      "project": "Xome",
+      "project": "Launch Campaign",
       "media": "Branding, Digital",
       "blockquote": "When Buying a House,<br> There&#8217;s No Place Like Xome.",
       "quoterName": "By Allison Cornia",
