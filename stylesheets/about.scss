@@ -45,7 +45,7 @@
 			margin-top: $base-spacing - 20;
 			font-family: "Circular-Bold";
 			&:last-of-type {
-				margin-bottom: $base-spacing*2;
+				margin-bottom: $base-spacing;
 				@media screen and (max-width: 640px) {
 					margin-bottom: 40px;
 				}
