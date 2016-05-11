@@ -351,7 +351,7 @@ var copy =
       "shareImg": require("assets/images/wilson_anthem_1_01-opt.jpg"),
       "topDescription": [
         "Even though Wilson makes sporting equipment for just about every sport in the world, it had been years since we had any sort of global brand campaign. Since this was our first campaign in a while, we needed to reestablish what Wilson was all about. Yes, we make quality, trusted equipment, but what do we stand for? What is our role in the world of sports?",
-        "<span class='red'>We worked with the strategic team at Phenomenon to land on a pivotal but simple idea; between every athlete and their equipment exists a powerful relationship</span>",
+        "<span class='red'>We worked with the strategic team at Phenomenon to land on a pivotal but simple idea; between every athlete and their equipment exists a powerful relationship.</span>",
         "Before we launched any consumer-facing branding, we asked Phenomenon to create something that could unify the Wilson team from within. What did this new face of Wilson mean? How could we as employees live this new mantra? The result was a beautifully bound brand book containing words and images that boldly and loudly defined who we are. We handed out these books to each of our employees."
       ],
       "caseWriter": {
