@@ -4,12 +4,13 @@ block variables
 
 ul.social-icons
 	.bubble
-		li.social-icon
-			a.icon-twitter(socialshare socialshare-provider="twitter" socialshare-text="" socialshare-hashtags="phno" socialshare-url!=currentUrl)
-				span=caseIndex
-		li.social-icon
-			a.icon-facebook(socialshare socialshare-provider="facebook" socialshare-text="#phenomenon" socialshare-hashtags="phenomenon" socialshare-url!=currentUrl socialshare-media!=fbShareImg)  
-		li.social-icon 
-			a.icon-linkedin(socialshare socialshare-provider="linkedin" socialshare-text="#phenomenon" socialshare-hashtags="#phenomenon" socialshare-url!=currentUrl)
-		li.social-icon
-			a.icon-mail(href="mailto:"+'?subject=' +currentUrl + '&body=' + currentUrl) 
+		.bubble-wrapper
+			li.social-icon
+				a.icon-twitter(socialshare socialshare-provider="twitter" socialshare-text="" socialshare-hashtags="phno" socialshare-url!=currentUrl)
+					span=caseIndex
+			li.social-icon
+				a.icon-facebook(socialshare socialshare-provider="facebook" socialshare-text="#phenomenon" socialshare-hashtags="phenomenon" socialshare-url!=currentUrl socialshare-media!=fbShareImg)  
+			li.social-icon 
+				a.icon-linkedin(socialshare socialshare-provider="linkedin" socialshare-text="#phenomenon" socialshare-hashtags="#phenomenon" socialshare-url!=currentUrl)
+			li.social-icon
+				a.icon-mail(href="mailto:"+'?subject=' +currentUrl + '&body=' + currentUrl) 
