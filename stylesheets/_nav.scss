@@ -30,6 +30,7 @@
     @media screen and (max-width: 640px) {
       min-height: 50px;
       position: fixed;
+      z-index: 99999;
     } 
     &.fixed {
       position: fixed;
@@ -51,12 +52,6 @@
           }
         }
       }
-    }
-    .mobile .topnav {
-      @media screen and (max-width: 640px) {
-        position: fixed;
-        z-index: 99999;
-      } 
     }
     .logo-wrapper{
       height: 40px;
@@ -349,7 +344,6 @@ main.maincontent {
     padding-top: 70px;
   }
 }
-
 @keyframes test {
   0% {
     top: -120px;
