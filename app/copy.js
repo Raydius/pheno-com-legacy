@@ -699,10 +699,10 @@ var copy =
       "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
-        "If you&#8217ve ever bought or sold a home, you know it&#8217s a complex, fragmented and darned unfriendly process. Believe it or not, studies have shown that buying a house is more stressful than bankruptcy, divorce or even the death of a loved one. With Xome, we not only brought homebuying into the 21st century, we introduced a radically better way to do it.",
-        "<span class='red'>The whole purpose of Xome is to help homebuyers and sellers from start to finish.</span>",
-        "Our mission is to give people more control, provide transparency and help people when they need it the most.",
-        "The whole purpose of Xome is to help homebuyers and sellers from start to finish. So we worked with Pheno to build a beautifully intuitive mobile app. In just six weeks we completed the app making it the first truly integrated way to buy and sell a home. With it, you can list a home, search for a home, make and receive offers, move into escrow and close the deal, all from the palm of your hand."
+        "If you&#8217;ve ever bought or sold a home, you know it&#8217;s a complex, fragmented and darned unfriendly process. With Xome, we wanted to create an experience that didn&#8217;t undermine one of life&#8217;s biggest moments.",
+        "<span class='red'>We found an idea that really spoke to what Xome does, it makes the entire buying/selling process more transparent.</span>",
+        "So we worked with Pheno to build a beautifully intuitive mobile app. In just six weeks we completed an app that integrated the offline and online processes of buying and selling a home. With it, you can list a home, search for a home, make and receive offers, move into escrow and close the deal, all from the palm of your hand.",
+        "Once we launched the app we needed to tell people about it. After exploring a few different directions, we found an idea that really spoke to what Xome does, it makes the entire buying/selling process more transparent. This teaser spot led people to our site where one could learn in better detail everything Xome does for the homebuyer & seller."
       ],
       "topcontent": [
         {
@@ -732,10 +732,7 @@ var copy =
           "type": "image",
           "image": true,
           "imageUrl": require("assets/images/xome-comp-01-opt.jpg"),
-          "imageAlt": "Sunny",
-          "mainDescription": [
-            "<span class='red'>We fell in love with an idea that really spoke to what Xome does, it makes the entire buying/selling process more transparent.</span>"
-          ]   
+          "imageAlt": "Sunny"
         }
       ]
     },
