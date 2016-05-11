@@ -18,7 +18,7 @@ section.row.no-padding.home
 		each contributorItem in pageData.contributors
 			li.col-sm-12.col-md-4 
 				if contributorItem.contributorAvatar 
-					img(src=contributorItem.contributorAvatar)
+					div.client_logo-wrapper(style="background-image: url(" + contributorItem.contributorAvatar + ")")
 				cite
 					.wrapper
 						if contributorItem.name

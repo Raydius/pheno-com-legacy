@@ -117,21 +117,21 @@ var copy =
           "name": "Amy Weisenbach",
           "jobTitle": "VP Marketing, Wilson",
           "project": "Wilson Launches<br> Futuristic Ball.",
-          "contributorAvatar": require("assets/images/client_icons/icon-wilson.png"),
+          "contributorAvatar": require("assets/images/client_icons/icon-wilson.svg"),
           "href": "#/work/wilson-x"
         },
         {
           "name": "Matt Stringer",
           "jobTitle": "EVP Marketing, Men&#8217s Wearhouse",
           "project": "Men&#8217s Wearhouse<br> Updates Its Wardrobe.",
-          "contributorAvatar": require("assets/images/client_icons/icon-mw.png"),
+          "contributorAvatar": require("assets/images/client_icons/icon-mw.svg"),
           "href": "#/work/mens-wearhouse"
         },
         {
           "name": "Megan Crossland",
           "jobTitle": "Director of Marketing, thinkThin",
           "project": "thinkThin Helps<br> Women Shed the Guilt.",
-          "contributorAvatar": require("assets/images/client_icons/icon-thinkthin.png"),
+          "contributorAvatar": require("assets/images/client_icons/icon-thinkthin.svg"),
           "href": "#/work/think-thin"
         },
       ],
@@ -337,16 +337,16 @@ var copy =
       ]
     },
     "wilson-anthem": { 
-      "title": "My Wilson",
+      "title": "My Wilson", 
       "className": "wilson-anthem",
       "client": "Wilson",
       "clientLogo": require('assets/images/works/clients_logo/wilson_logo.svg'),
-      "project": "Wilson Anthem",
+      "project": "My Wilson",
       "media": "Branding, Video, Digital",
       "blockquote": "Wilson Equips Itself With Global Campaign.",
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
-      "quoterAvatar": require("assets/images/client_icons/icon-wilson.png"),
+      "quoterAvatar": require("assets/images/client_icons/icon-wilson.svg"),
       "description": "CVU - Phenomenon - Wilson X", 
       "shareImg": require("assets/images/wilson_anthem_1_01-opt.jpg"),
       "topDescription": [
@@ -695,7 +695,7 @@ var copy =
       "blockquote": "When Buying a House,<br> There&#8217;s No Place Like Xome.",
       "quoterName": "By Allison Cornia",
       "quoterTitle": "SVP Marketing, Xome",
-      "quoterAvatar": require("assets/images/client_icons/icon-xome.png"),
+      "quoterAvatar": require("assets/images/client_icons/icon-xome.svg"),
       "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
@@ -746,7 +746,7 @@ var copy =
       "blockquote": 'It&#8217;s A &#8220;Sunny&#8221; Day<br>for Payday Loans.',
       "quoterName": "Patsy Hauer",
       "quoterTitle": "SVP Brand Marketing, Elevate",
-      "quoterAvatar": require("assets/images/client_icons/icon-sunny.png"),
+      "quoterAvatar": require("assets/images/client_icons/icon-sunny.svg"),
       "shareImg": require("assets/images/sunny-1.png"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
@@ -798,12 +798,12 @@ var copy =
       "className": "mens-wearhouse",
       "client": "Men's Wearhouse", 
       "clientLogo": require('assets/images/works/clients_logo/mens-wearhouse.svg'),
-      "project": "Men's Wearhouse",
+      "project": "Rebrand",
       "media": "Branding",
       "blockquote": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.", 
       "quoterName": "By Matt Stringer",
       "quoterTitle": "EVP Marketing, Tailored Brands",
-      "quoterAvatar": require("assets/images/client_icons/icon-mw.png"),
+      "quoterAvatar": require("assets/images/client_icons/icon-mw.svg"),
       "shareImg": require("assets/images/mens-warehouse/mw_brandbook_carousel1a.png"),
 
       "description": "CVU - Phenomenon - Wilson X",
@@ -894,7 +894,7 @@ var copy =
       "blockquote": 'thinkThin Helps <br>Women Shed the Guilt.',
       "quoterName": "By Megan Crossland",
       "quoterTitle": "Director of Marketing, thinkThin",
-      "quoterAvatar": require("assets/images/client_icons/icon-thinkthin.png"),
+      "quoterAvatar": require("assets/images/client_icons/icon-thinkthin.svg"),
       "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [

@@ -349,6 +349,18 @@ h3 blockquote {
 	}
 }
  */
+ .client_logo-wrapper {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	background: white;
+	border-radius: 50%;
+	display: table;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 60% auto;
+	margin-bottom: 15px;
+}
 .desktop .drawer {
 	display: none;
 }
