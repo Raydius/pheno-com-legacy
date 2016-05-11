@@ -1083,7 +1083,7 @@ var copy =
       {
         "projectName": "Men&#8217s Wearhouse <br>Updates Its Closet.",
         "writerName": "By Matt Stringer",
-        "writerTitle": "EVO Marketing, Men&#8217s Wearhouse",
+        "writerTitle": "EVP Marketing, Tailored Brands",
         "projectUrl": "#/work/mens-wearhouse",
         "projectThumbSrc": require("assets/images/morecases/2.png") 
       },
