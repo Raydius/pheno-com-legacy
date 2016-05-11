@@ -337,7 +337,7 @@ var copy =
       ]
     },
     "wilson-anthem": { 
-      "title": "Wilson Anthem",
+      "title": "My Wilson",
       "className": "wilson-anthem",
       "client": "Wilson",
       "clientLogo": require('assets/images/works/clients_logo/wilson_logo.svg'),
@@ -686,12 +686,12 @@ var copy =
       ]
     },
     "xome": { 
-      "title": "Xome",
+      "title": "Launch Campaign",
       "className": "Xome",
       "client": "Xome",
       "clientLogo": require('assets/images/works/clients_logo/xome.svg'),
       "project": "Xome",
-      "media": "Branding",
+      "media": "Branding, Digital",
       "blockquote": "When Buying a House,<br> There&#8217;s No Place Like Xome.",
       "quoterName": "By Allison Cornia",
       "quoterTitle": "SVP Marketing, Xome",
@@ -797,7 +797,7 @@ var copy =
       ]
     },
     "mens-wearhouse": { 
-      "title": "Men's Wearhouse",
+      "title": "Rebrand",
       "className": "mens-wearhouse",
       "client": "Men's Wearhouse", 
       "clientLogo": require('assets/images/works/clients_logo/mens-wearhouse.svg'),
