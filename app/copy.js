@@ -117,21 +117,21 @@ var copy =
           "name": "Amy Weisenbach",
           "jobTitle": "VP Marketing, Wilson",
           "project": "Wilson Launches<br> Futuristic Ball.",
-          "contributorAvatar": require("assets/images/home/avatar-1.png"),
+          "contributorAvatar": require("assets/images/client_icons/icon-wilson.png"),
           "href": "#/work/wilson-anthem"
         },
         {
           "name": "Matt Stringer",
           "jobTitle": "EVP Marketing, Men&#8217s Wearhouse",
           "project": "Men&#8217s Wearhouse<br> Updates Its Wardrobe.",
-          "contributorAvatar": require("assets/images/home/avatar-2.png"),
+          "contributorAvatar": require("assets/images/client_icons/icon-mw.png"),
           "href": "#/work/mens-wearhouse"
         },
         {
           "name": "Megan Crossland",
           "jobTitle": "Director of Marketing, thinkThin",
           "project": "thinkThin Helps<br> Women Shed the Guilt.",
-          "contributorAvatar": require("assets/images/home/avatar-3.png"),
+          "contributorAvatar": require("assets/images/client_icons/icon-thinkthin.png"),
           "href": "#/work/think-thin"
         },
       ],
@@ -346,7 +346,7 @@ var copy =
       "blockquote": "Wilson Equips Itself With Global Campaign.",
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
-      //"quoterAvatar": require("assets/images/about/about-avatar.png"),
+      "quoterAvatar": require("assets/images/client_icons/icon-wilson.png"),
       "description": "CVU - Phenomenon - Wilson X", 
       "shareImg": require("assets/images/wilson_anthem_1_01-opt.jpg"),
       "topDescription": [
@@ -695,7 +695,7 @@ var copy =
       "blockquote": "When Buying a House,<br> There&#8217;s No Place Like Xome.",
       "quoterName": "By Allison Cornia",
       "quoterTitle": "SVP Marketing, Xome",
-      //"quoterAvatar": require("assets/images/about/about-avatar.png"),
+      "quoterAvatar": require("assets/images/client_icons/icon-xome.png"),
       "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
@@ -749,7 +749,7 @@ var copy =
       "blockquote": 'It&#8217;s A &#8220;Sunny&#8221; Day<br>for Payday Loans.',
       "quoterName": "Patsy Hauer",
       "quoterTitle": "SVP Brand Marketing, Elevate",
-      //"quoterAvatar": require("assets/images/about/about-avatar.png"),
+      "quoterAvatar": require("assets/images/client_icons/icon-sunny.png"),
       "shareImg": require("assets/images/sunny-1.png"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
@@ -806,14 +806,14 @@ var copy =
       "blockquote": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.", 
       "quoterName": "By Matt Stringer",
       "quoterTitle": "EVP Marketing, Tailored Brands",
-      //"quoterAvatar": require("assets/images/about/about-avatar.png"), 
+      "quoterAvatar": require("assets/images/client_icons/icon-mw.png"),
       "shareImg": require("assets/images/mens-warehouse/mw_brandbook_carousel1a.png"),
 
       "description": "CVU - Phenomenon - Wilson X",
       "caseWriter": {
         "name": "Matt Stringer",
         "title": "EVP Marketing, Tailored Brands",
-        "description": "Matt is the EVP of Marketing at Tailored Brands, which is the holding company for Men&#8217;s Wearhouse. Matt has been with the company for over 17 years."
+        "description": "Matt is the EVP of Marketing at Tailored Brands, which is the holding company for Men’s Wearhouse. Matt has been with the company for over 17 years."
       },
       "topDescription": [
         "For over 25 years, Men&#8217;s Wearhouse advertising centered around one line delivered by one man. But in 2013, when our founder and longtime CEO left the company, we had to make some pretty significant changes. We partnered with Phenomenon to help us shape both the strategic and creative direction for Men&#8217;s Wearhouse as our Agency of Record.",
@@ -896,7 +896,7 @@ var copy =
       "blockquote": 'thinkThin&reg; Helps <br>Women Shed the Guilt.',
       "quoterName": "By Megan Crossland",
       "quoterTitle": "Director of Marketing, thinkThin",
-      //"quoterAvatar": require("assets/images/about/about-avatar.png"),
+      "quoterAvatar": require("assets/images/client_icons/icon-thinkthin.png"),
       "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [

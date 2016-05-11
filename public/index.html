@@ -1,42 +1,97 @@
-Html Webpack Plugin:
+<head><link href="http://127.0.0.1:9000/styles.css" rel="stylesheet"></head>Html Webpack Plugin:
 <pre>
-  TypeError: /Users/aniwang/pheno-com/views/layout.jade:5
-      3| block content
-      4| 
-    > 5|  main.maincontent
-      6|  .main-wrapper
-      7|  .component(ui-view)
-      8|  .loading-box
-  Cannot read property 'location' of undefined
+  Error: Child compilation failed:
+  Module not found: Error: Cannot resolve 'file' or 'directory' /Users/aniwang/pheno-com/assets/images/about/t  hinkthin.png in /Users/aniwang/pheno-com/app:
+  Error: Cannot resolve 'file' or 'directory' /Users/aniwang/pheno-com/assets/images/about/thinkthin.png in /U  sers/aniwang/pheno-com/app
   
-  - index.jade:69 
-    /Users/aniwang/pheno-com/views/index.jade:69:15
+  - compiler.js:78 
+    [pheno-com]/[html-webpack-plugin]/lib/compiler.js:78:16
   
-  - index.jade:732 template
-    /Users/aniwang/pheno-com/views/index.jade:732:23
+  - Compiler.js:214 Compiler.<anonymous>
+    [pheno-com]/[webpack]/lib/Compiler.js:214:10
   
-  - index.js:228 
-    [pheno-com]/[html-webpack-plugin]/index.js:228:16
+  - Compiler.js:403 
+    [pheno-com]/[webpack]/lib/Compiler.js:403:12
   
-  - util.js:16 tryCatcher
-    [pheno-com]/[html-webpack-plugin]/[bluebird]/js/release/util.js:16:23
+  - Tapable.js:67 Compiler.next
+    [pheno-com]/[webpack]/[tapable]/lib/Tapable.js:67:11
   
-  - promise.js:503 Promise._settlePromiseFromHandler
-    [pheno-com]/[html-webpack-plugin]/[bluebird]/js/release/promise.js:503:31
+  - CachePlugin.js:40 Compiler.<anonymous>
+    [pheno-com]/[webpack]/lib/CachePlugin.js:40:4
   
-  - promise.js:560 Promise._settlePromise
-    [pheno-com]/[html-webpack-plugin]/[bluebird]/js/release/promise.js:560:18
+  - Tapable.js:71 Compiler.applyPluginsAsync
+    [pheno-com]/[webpack]/[tapable]/lib/Tapable.js:71:13
   
-  - promise.js:597 Promise._settlePromiseCtx
-    [pheno-com]/[html-webpack-plugin]/[bluebird]/js/release/promise.js:597:10
+  - Compiler.js:400 Compiler.<anonymous>
+    [pheno-com]/[webpack]/lib/Compiler.js:400:9
   
-  - async.js:131 Async._drainQueue
-    [pheno-com]/[html-webpack-plugin]/[bluebird]/js/release/async.js:131:12
+  - Compilation.js:577 Compilation.<anonymous>
+    [pheno-com]/[webpack]/lib/Compilation.js:577:13
   
-  - async.js:136 Async._drainQueues
-    [pheno-com]/[html-webpack-plugin]/[bluebird]/js/release/async.js:136:10
+  - Tapable.js:60 Compilation.applyPluginsAsync
+    [pheno-com]/[webpack]/[tapable]/lib/Tapable.js:60:69
   
-  - async.js:16 Immediate.Async.drainQueues [as _onImmediate]
-    [pheno-com]/[html-webpack-plugin]/[bluebird]/js/release/async.js:16:14
+  - Compilation.js:572 Compilation.<anonymous>
+    [pheno-com]/[webpack]/lib/Compilation.js:572:10
   
-</pre>
+  - Tapable.js:60 Compilation.applyPluginsAsync
+    [pheno-com]/[webpack]/[tapable]/lib/Tapable.js:60:69
+  
+  - Compilation.js:567 Compilation.<anonymous>
+    [pheno-com]/[webpack]/lib/Compilation.js:567:9
+  
+  - Tapable.js:60 Compilation.applyPluginsAsync
+    [pheno-com]/[webpack]/[tapable]/lib/Tapable.js:60:69
+  
+  - Compilation.js:563 Compilation.<anonymous>
+    [pheno-com]/[webpack]/lib/Compilation.js:563:8
+  
+  - Tapable.js:60 Compilation.applyPluginsAsync
+    [pheno-com]/[webpack]/[tapable]/lib/Tapable.js:60:69
+  
+  - Compilation.js:525 Compilation.seal
+    [pheno-com]/[webpack]/lib/Compilation.js:525:7
+  
+  - Compiler.js:397 Compiler.<anonymous>
+    [pheno-com]/[webpack]/lib/Compiler.js:397:15
+  
+  - Tapable.js:103 
+    [pheno-com]/[webpack]/[tapable]/lib/Tapable.js:103:11
+  
+  - Compilation.js:445 Compilation.<anonymous>
+    [pheno-com]/[webpack]/lib/Compilation.js:445:10
+  
+  - Compilation.js:417 
+    [pheno-com]/[webpack]/lib/Compilation.js:417:12
+  
+  - Compilation.js:332 
+    [pheno-com]/[webpack]/lib/Compilation.js:332:10
+  
+  - async.js:52 
+    [pheno-com]/[webpack]/[async]/lib/async.js:52:16
+  
+  - async.js:246 done
+    [pheno-com]/[webpack]/[async]/lib/async.js:246:17
+  
+  - async.js:44 
+    [pheno-com]/[webpack]/[async]/lib/async.js:44:16
+  
+  - Compilation.js:332 
+    [pheno-com]/[webpack]/lib/Compilation.js:332:10
+  
+  - async.js:52 
+    [pheno-com]/[webpack]/[async]/lib/async.js:52:16
+  
+  - async.js:246 done
+    [pheno-com]/[webpack]/[async]/lib/async.js:246:17
+  
+  - async.js:44 
+    [pheno-com]/[webpack]/[async]/lib/async.js:44:16
+  
+  - Compilation.js:332 
+    [pheno-com]/[webpack]/lib/Compilation.js:332:10
+  
+  - async.js:52 
+    [pheno-com]/[webpack]/[async]/lib/async.js:52:16
+  
+</pre><script src="http://127.0.0.1:9000/vendors.js"></script><script src="http://127.0.0.1:9000/style-bundle.min.js"></script><script src="http://127.0.0.1:9000/app-bundle.min.js"></script>
