@@ -717,7 +717,7 @@ var copy =
       "caseWriter": {
         "name": "Allison Cornia",
         "title": "SVP Marketing, Xome",
-        "description": "Allison is a seasoned Senior Marketing Executive with over 15 years experience including over 5 years as a Director of Marketing at Microsoft."
+        "description": "Allison is a seasoned Senior Marketing Executive with over 20 years of experience including over five years as a Director of Marketing at Microsoft. A four-time homeowner, Allison is passionate about improving the experience for homebuyers and sellers."
       },
       "detailcontent": [
         {
