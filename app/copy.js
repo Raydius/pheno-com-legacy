@@ -450,7 +450,7 @@ var copy =
       "blockquote": "Wilson Launches<br>Futuristic Ball.",
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
-      //"quoterAvatar": require("assets/images/about/about-avatar.png"),
+      "quoterAvatar": require("assets/images/client_icons/icon-wilson.svg"),
       "shareImg": require("assets/images/wilson_x_1_01-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
