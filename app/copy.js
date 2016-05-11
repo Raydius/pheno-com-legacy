@@ -129,7 +129,7 @@ var copy =
         },
         {
           "name": "Megan Crossland",
-          "jobTitle": "Director of Marketing, thinkThin",
+          "jobTitle": "Sr. Director of Marketing, thinkThin",
           "project": "thinkThin Helps<br> Women Shed the Guilt.",
           "contributorAvatar": require("assets/images/client_icons/icon-thinkthin.svg"),
           "href": "#/work/think-thin"
@@ -292,7 +292,7 @@ var copy =
           "legend": "Food / Drink",
           "headline": "thinkThin Helps Women Shed the Guilt.",
           "citeName": "By Megan Crossland",
-          "citeTitle": "Director of Marketing, thinkThin",
+          "citeTitle": "Sr. Director of Marketing, thinkThin",
           "description": "Nutritional bar targeted to women launches its first campaign using humor to rave reviews online.",
           "readmoreUrl": "#/work/think-thin"
 
@@ -893,7 +893,7 @@ var copy =
       "media": "Branding",
       "blockquote": 'thinkThin Helps <br>Women Shed the Guilt.',
       "quoterName": "By Megan Crossland",
-      "quoterTitle": "Director of Marketing, thinkThin",
+      "quoterTitle": "Sr. Director of Marketing, thinkThin",
       "quoterAvatar": require("assets/images/client_icons/icon-thinkthin.svg"),
       "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
@@ -919,7 +919,7 @@ var copy =
       ],
       "caseWriter": {
         "name": "Megan Crossland",
-        "title": "Director of Marketing, thinkThin",
+        "title": "Sr. Director of Marketing, thinkThin",
         "description": "Before becoming the Director of Marketing for thinkThin in 2014, Megan worked as a marketing manager for over 10 years at Nestle."
       },
       "detailcontent": [
@@ -1090,7 +1090,7 @@ var copy =
       {
         "projectName": "thinkThin Helps<br>Women Shed the Guilt.",
         "writerName": "By Megan Crossland",
-        "writerTitle": "Director of Marketing, thinkThin",
+        "writerTitle": "Sr. Director of Marketing, thinkThin",
         "projectUrl": "#/work/think-thin", 
         "projectThumbSrc": require("assets/images/morecases/3.png")
       },
