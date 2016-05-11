@@ -55,6 +55,7 @@
     .mobile .topnav {
       @media screen and (max-width: 640px) {
         position: fixed;
+        z-index: 99999;
       } 
     }
     .logo-wrapper{
