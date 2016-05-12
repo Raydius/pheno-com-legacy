@@ -60,16 +60,21 @@
 	figure {
 		background: #F2F2F2;
 		padding: $base-spacing;
-		margin-top: 280px;
+		padding-top: 155px;
+		margin-top: 200px;
 		@media screen and (max-width: 520px) {
 			margin-top: 180px;
+
+		}
+		@media screen and (max-width: 1280px) and (min-width: 1024px) {
+			padding-top: 200px;
 
 		}
 		img {
 			margin-top: -300px;
 			border-radius: 50%;
 			@media screen and (max-width: 520px) {
-				margin-top: -200px;
+				margin-top: -300px;
 
 			}
 		}
