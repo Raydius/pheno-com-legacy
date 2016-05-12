@@ -800,7 +800,7 @@ var copy =
       "title": "Rebrand",
       "className": "mens-wearhouse",
       "client": "Men's Wearhouse", 
-      "clientLogo": require('assets/images/illustrations/phenomenon-matt-stringer-menswearhouse-grey.png'),
+      "clientLogo": require('assets/images/works/clients_logo/mens-wearhouse.svg'),
       "clientLogoWidth": "250px",
       "project": "Rebrand",
       "media": "TV, Collateral",
