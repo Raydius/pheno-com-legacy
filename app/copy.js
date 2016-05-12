@@ -122,7 +122,7 @@ var copy =
         },
         {
           "name": "Matt Stringer",
-          "jobTitle": "EVP Marketing, Men&#8217s Wearhouse",
+          "jobTitle": "EVP Marketing, Tailored Brands",
           "project": "Men&#8217s Wearhouse<br> Updates Its Wardrobe.",
           "contributorAvatar": require("assets/images/client_icons/icon-mw.svg"),
           "href": "#/work/mens-wearhouse"
