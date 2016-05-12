@@ -307,7 +307,7 @@ var copy =
           "citeTitle": "VP Marketing, Wilson",
           "description": "For the first time a basketball is connected to your smartphone to track makes, misses and enhance performance.",
           "readmoreUrl": "#/work/wilson-x"
-        },
+        }
         /*{
           "type": "image",
           "image": true,
@@ -320,7 +320,7 @@ var copy =
           "description": "British company creates a whole new business model for payday loans that gives borrowers a better chance at getting out of debt.",
           "readmoreUrl": "#/work/sunny"          
         },*/
-        {
+        /*{
           "type": "image",
           "image": true,
           "imageUrl": require('assets/images/work-2.jpg'),
@@ -332,7 +332,7 @@ var copy =
           "description": "New company looks to make buying and selling a home not only more mobile, but more transparent.",
           "readmoreUrl": "#/work/xome"
 
-        }
+        }*/
       ]
     },
     "wilson-anthem": { 

@@ -79,7 +79,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
 
         .state('work/xome', {
-            url: '/work/xome',
+            url: '/work/xome-hide',
             template: templateWorkXome, 
             data: {
                 pageTitle: 'PHENOMENON - Xome case study',
