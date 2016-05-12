@@ -36,6 +36,16 @@
 		@media screen and (max-width: 640px) {
 			margin-top: 0;
 		}
+		&.gif {
+			img {
+				max-width: 320px;
+				margin: 0 auto;
+				@media screen and (max-width: 640px) {
+					max-width: 300px;
+				}
+			}
+
+		}
 		&.table {
 			display: table;
 			> div {
