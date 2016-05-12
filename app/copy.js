@@ -1137,7 +1137,7 @@ var copy =
       "title": "Jobs",
       "className": "jobs",
       "description": "Phenomenon - Jobs",
-      "blockquote": "After a meeting, I wasn't sure who was from what department. Every person seemed to be involved in every aspect of what they were presenting.&#8221;",
+      "blockquote": "After the first meeting with them, I wasn't sure who was from what department. Every person seemed to be involved in every aspect of what they were presenting.&#8221;",
       "quoterName": "Allison Cornia",
       "quoterTitle": "SVP Marketing, Xome",
       "positions": "Open Positions",
