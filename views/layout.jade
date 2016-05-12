@@ -2,13 +2,11 @@ doctype html
 html(xmlns:ng="http://angularjs.org/" ng-app='phenoCom')
 	block variables
 	head
-		title(update-title)
+		title(update-title) 
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 		meta(property="og:type" content="website")
-		meta(property="og:title" content='#{title}')
 		meta(property="og:description" content="#{description}")
-		meta(property="og:image" content=require('assets/images/logo.png')) 
-		
+		meta(update-image)  
 
 		include ./favicon
 
