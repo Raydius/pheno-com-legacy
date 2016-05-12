@@ -116,17 +116,18 @@
       text-align: center;
       padding: 0;
       position: relative;
-      padding: 0 5px;
       margin: 0 30px;
       //width: 135.5px;
 
-      &.selected:before{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        left: 0;
-        border-bottom: 2px solid $primary_color;
+      &.selected {
+        a:before{
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          left: 0;
+          border-bottom: 2px solid $primary_color;
+        }
       }
       
       &:first-child{
@@ -141,7 +142,7 @@
       }
 
       a{
-        padding: 20px 0 15px 0;
+        padding: 20px 5px 15px 5px;
         width: 100%;
         display: block;
         font-family: "Circular-Bold";
