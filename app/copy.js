@@ -823,7 +823,7 @@ var copy =
           "thumbTitle": "Click to play video",
           "vimeo": "164752774",
           "mainDescription": [
-            '<span class="red">The spot led two strategic initiatives. First, to show our commitment to providing quality products, including products beyond just suits. And second, that Men&#8217;s Wearhouse is home to a collection of brands.</span>',
+            '<span class="red">The spot led two strategic initiatives. First, to show our commitment to providing quality and style. And second, that Men&#8217;s Wearhouse is home to a collection of brands.</span>',
             'Once we established the quality and breadth of our offering, we wanted to evolve the messaging strategy from, "You&#8217;re going to like the way you look" to the more meaningful idea of, "You&#8217;re going to like the way you feel." The way we did this was by changing the focus across our brand from the pitchman to the consumer.',
             'We launched the new direction with a Brand Book called "Go With Confidence" that detailed our new look, tone and audience; men that might need a great look to help them achieve that extra little bit of confidence.'
           ]
@@ -876,7 +876,7 @@ var copy =
           "vimeo": "134437401",
           "mainDescription": [
             '<span class="red">We used Father&#8217;s Day as a way to sell the emotional side of our product by celebrating the very dads we outfit everyday.</span>',
-            "The spot was well received. There was a detectable buzz on social media and even in our offices and stores. People felt proud of what we stood for. Of course we won&#8217;t be looking to create an emotional hook every time we advertise, but when the opportunity presents itself, we realize the importance of standing for something bigger with our customers. And that&#8217;s something we can thank our partners for helping us achieve.",
+            "The spot was well received. There was a detectable buzz on social media and even in our offices and stores. People felt proud of what we stood for. When the opportunity presents itself, we realize the importance of standing for something bigger with our customers. And that&#8217;s something we can thank our partners for helping us achieve.",
             "In the end, 2015 was a very good year for the Men&#8217;s Wearhouse brand. We reported a total sales increase of 6.2% on a solid comp sales increase of 4.9%. And our brand health saw significant increases as well. Brand love is up 9%, loyalty is up 8%, and credit for quality and style is up 9%."
           ]
         }
