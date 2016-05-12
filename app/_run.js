@@ -83,7 +83,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
         $main.trigger('routeChange');
 
         // fire Google Analytics tracking
-        //$window.ga('send', 'pageview', { page: $location.url() });
+        $window.ga('send', 'pageview', { page: $location.url() });
 
 
     });
