@@ -94,7 +94,7 @@
 	.ac-container {
 	    background-color: #F2F2F2;
 	    padding: $base-spacing - 20;
-	    margin-top: 20px;
+	    margin: 20px 0 40px 0;
 		h4 {
 			font-family: 'Tiempose-Semibold';
 			font-size: 20px;
@@ -206,6 +206,9 @@
 		margin-top: $base-spacing;
 		img {
 			width: 85%;
+			@media screen and (max-width: 993px) {
+				margin: 0 auto;
+			}
 		}
 		@media screen and (max-width: 640px) {
 			margin-top: 0;
