@@ -920,7 +920,7 @@ var copy =
       "caseWriter": {
         "name": "Megan Crossland",
         "title": "Sr. Director of Marketing, thinkThin",
-        "description": "Before becoming the Director of Marketing for thinkThin in 2014, Megan worked as a marketing manager for over 10 years at Nestle."
+        "description": "Before becoming the Sr. Director of Marketing for thinkThin in 2014, Megan worked as a marketing manager for over 10 years at Nestle."
       },
       "detailcontent": [
 /*        {
