@@ -129,6 +129,10 @@ figcaption {
 	position: relative;
 	border-bottom: 1px solid $gray_border_color;
 	padding: ($base_spacing - 20) 0;
+	margin-top: $fix_header_height;
+	@media screen and (max-width: 640px) {
+		margin-top: 0; 
+	}
 	h2 {
 		margin-top: 0;
 		font-weight: normal;
@@ -456,7 +460,7 @@ h3 blockquote {
 		}
 	}
 	.topnav {
-		height: 121px;
+		height: $fix_header_height;
 		background: black;
 	}
 }

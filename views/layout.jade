@@ -1,12 +1,10 @@
 doctype html
 html(xmlns:ng="http://angularjs.org/" ng-app='phenoCom')
-	block variables
 	head
 		title(update-title) 
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 		meta(property="og:type" content="website")
 		meta(property="og:description" content="#{description}")
-		meta(update-image)  
 
 		include ./favicon
 
@@ -16,7 +14,6 @@ html(xmlns:ng="http://angularjs.org/" ng-app='phenoCom')
 			include ./components/top-nav
 
 			block content
-
 		.drawer
 
 			include ./components/side-nav

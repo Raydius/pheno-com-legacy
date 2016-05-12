@@ -225,21 +225,3 @@ angular.module('phenoCom').directive('updateTitle', ['$rootScope', '$timeout',
         };
     }
 ]);
-
-angular.module('phenoCom').directive('updateImage', ['$rootScope', '$timeout',
-    function($rootScope, $timeout) {
-        return {
-            link: function(scope, element) {
-                var imgSrc;
-                var listener = function(event, toState) { 
-                    if (toState.data && toState.data.pageShareImg) imgSrc = toState.data.pageShareImg;
-                    element.attr('property', 'og:image');
-                        element.attr('content', imgSrc);
-
-                };
-
-                $rootScope.$on('$stateChangeSuccess', listener);
-            }
-        };
-    }
-]);

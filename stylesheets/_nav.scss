@@ -27,6 +27,7 @@
     background-color: #FFF;
     position: relative;
     min-height: 70px;
+    position: fixed;
     @media screen and (max-width: 640px) {
       min-height: 50px;
       position: fixed;
@@ -36,8 +37,8 @@
       position: fixed;
       background-color: rgba(255,255,255,.95);
       z-index: 99999;
-      top: -121px;
-      animation: ttt 0.5s forwards ease-in-out;
+      top: -$fix_header_height;
+      animation: ttt 0.4s forwards ease-in-out;
       .logo-wrapper {
         float: left;
         margin-right: $base_spacing - 20;
@@ -357,7 +358,7 @@ main.maincontent {
 
 @keyframes ttt {
   0% {
-    top: -121px;
+    top: -$fix_header_height;
   }
   100% {
     top: 0;

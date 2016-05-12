@@ -6,13 +6,16 @@ block variables
 
 // title and body copy
 section.row.no-padding.culture 
-	article.col-md-4.no-padding.gif
-		img(src=require('assets/images/culture/phno-gif.gif')) 
-	article.col-md-7.col-md-offset-1.top-main
-		h2 
-			blockquote!= pageData.blockquote
+	
+	article.col-md-12.top-main
+		article.col-md-4.no-padding.gif
+			img(src=require('assets/images/culture/phno-gif.gif')) 
 		
-		include components/cite-components
+		article.col-md-7.col-md-offset-1.no-padding
+			h2 
+				blockquote!= pageData.blockquote
+			
+			include components/cite-components
 
 	article.col-md-12.no-padding.margin-bottom-md
 		img(src=require('assets/images/culture/culture1.jpg'))

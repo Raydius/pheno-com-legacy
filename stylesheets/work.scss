@@ -8,6 +8,9 @@
 				}
 			}
 		}
+		> article:nth-of-type(2) {
+			margin-top: 0;
+		}
 	}
 	a legend {
 		opacity: 0.75;
@@ -218,12 +221,16 @@
 	}
 	> article {
 		margin-top: $base_spacing;
+		&.top-main {
+			margin-top: $fix_header_height;
+			@media screen and (max-width: 640px) {
+		        margin-top: 0;
+		    }
+		}
 		p {
 			margin-top: 30px;
 		}
-		&:first-of-type {
-			margin: 0;
-		}
+		
 		&:nth-of-type(odd) {
 			.col-md-8 {
 				float: right;
