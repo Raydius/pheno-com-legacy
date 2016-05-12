@@ -14,7 +14,7 @@ section.row.no-padding.about
 			include components/cite-components
 	
 	.col-xs-12.col-md-12.no-padding
-		.col-xs-12.col-md-5.no-padding
+		.col-xs-12.col-md-4.no-padding
 			figure
 				img(src=require('assets/images/about/about-krish-racket.png'))
 				figcaption
@@ -25,7 +25,7 @@ section.row.no-padding.about
 						span verb
 						li= pageData.dictionary.verb
 		
-		.col-md-7
+		.col-md-7.col-md-offset-1
 			article.col-md-12
 				if pageData.paragraph3
 					each par in pageData.paragraph3
@@ -43,7 +43,7 @@ section.row.no-padding.about
 					each par in pageData.paragraph4
 						p!= par
 	.col-xs-12.col-md-12.ac.no-padding
-		.col-md-5.no-padding
+		.col-md-4.no-padding
 			section.ac-container
 				h4 We are an Innovations Company.
 				each contentItem, index in pageData.accordion
