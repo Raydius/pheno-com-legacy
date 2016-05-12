@@ -23,7 +23,8 @@ section.row.no-padding.work.work-details
 			aside.col-md-12#icon-details-container
 				fieldset
 					.detail-wrapper
-						img.clientlogo(src= pageData.clientLogo)
+						if pageData.clientLogoWidth 
+							img.clientlogo(src= pageData.clientLogo style="width:" + pageData.clientLogoWidth)
 						fieldset 
 							legend Client
 							span= pageData.client
