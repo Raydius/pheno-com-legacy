@@ -171,7 +171,7 @@ var copy =
         "noun": "1. a person who can get out of their comfort zone to solve a problem.", 
         "verb": "2. to carry out a solution in any direction that is correct for the problem."
       },
-      "paragraph1": [
+      /*"paragraph1": [
         "I first met the Founder and CEO of Phenomenon in 2009 when I was looking for an agency to help launch a Payday Loan company. Pheno was a small shop and I was sure that we would be one of their biggest clients, so I was excited to talk to them. But when I got Krish on the phone and explained the brief to him, he wasn&#8217;t interested.",
         "Years later, as we sat in his office on the 28th floor of the SBE building in Los Angeles, our conversation began with that rather inauspicious start."
       ],
@@ -180,31 +180,29 @@ var copy =
         "Absolutely<span>Look, we throw ourselves into everything we do. We work long hours, we scrutinize, we push. We really go all out. And to put that much effort into something, we have to believe in it. And, truthfully, the Payday Loan business had a lot of negative implications with predatory lending and all that. And it just didn&#8217;t feel like the kind of thing we could feel good about.</span>",
         "So what changed your mind?<span>The second you gave us the permission to help you create a new kind of company, one that actually helped people break the cycle of poverty and bad credit, we were in. 100%. We&#8217;re actually not very good at working with clients who want more of the same. It&#8217;s when they want to radically change their business, growth, trajectory and market share that we&#8217;re the right firm to call.</span>",
         "So you kind of self-select clients that are going to appreciate the kind of work you do.<span>Very much so.</span>"        
-      ],
+      ],*/
       "paragraph3": [
-        "You guys do a lot of different things for clients. You&#8217;re not an ad agency, but you make ads. You&#8217;re not a strategy firm, but you do strategy... how do you explain what it is you&#8217;re all about?<span>It&#8217;s always hard to define something that&#8217;s completely new and different and a departure from everything that&#8217;s come before it.</span><span>First and foremost we&#8217;re an Innovations Agency. Sometimes that innovation is an app, tool or piece of technology. Sometimes it&#8217;s a product. Sometimes it&#8217;s a radical business strategy. Sometimes it&#8217;s a new retail concept. Sometimes it&#8217;s inventing a whole new brand or category. Sometimes it&#8217;s an ad campaign. And fairly often it&#8217;s all of the above.</span>", 
-        "Right, but playing devil's advocate for a second, that's the same stuff that everyone promises. How are you any different?<span>Ah, my favorite question. So historically there are 4 types of agencies: Strategic Agencies that can analyze your business, Design Agencies that can do your graphic ID, packaging and brand guidelines, Digital Agencies that can do your websites and apps and Advertising Agencies that can do your brand campaign or retail work.</span><span>And you're right, to some degree they all claim to be able to do everything. But truthfully, they have a legacy as a specific kind of agency, and they are geared to create a certain kind of deliverable.</span>",
-        "Right. I know if I go to an Ad Agency with my problem, I'm going to get an ad campaign as the solution...",
-        "<span>Exactly! Which makes perfect sense because that&#8217;s what they&#8217;re built to make. They invest their money in people that make ads, and they need a return on that investment. They may hire a digital leader, or a proper business strategist, but that person is always going to feel a bit like a fish out of water in that kind of environment. And unfortunately, they&#8217;ll feel like a second class citizen because their work isn&#8217;t driving revenue anywhere near the level that the advertising is.</span>",
-        "<span>When a client talks to us, we don&#8217;t have any preconceived notions about what the solution will be. We always start with strategic insights and go from there. Based on the results, we may recommend a product portfolio solution, or an app/utility solution, or a user experience solution, or an integrated ad campaign. Or something completely different that&#8217;s never been done before.</span>",
-        "<span>To put it simply, everyone else is trying, very slowly, to move to the intersection of the 4 types of agencies, but we don&#8217;t need to move an inch, because we were actually born there.</span>"
+        "Why did you start this company? What are you all about?",
+        "<span>We all know that the agency model is badly broken. Client interests don&#8217;t line up with agency interests and that's a recipe for disaster.</span>",
+        "<span>So we founded Phenomenon as a reaction to that.</span>",
+        "<span>Instead of the old agency model of pitching big ideas that require big budgets to produce, so that the agency can charge big fees on the production; we simply focus on solving our clients&#8217; problems in ways that make sense for them.</span>",
+        "<span>We're not an ad agency, we&#8217;re an Innovations Company.</span>",
+        "<span>Sometimes that innovation is an app, tool or piece of technology. Sometimes it&#8217;s a product. Sometimes it&#8217;s a radical business strategy. Sometimes it&#8217;s a new retail concept. Sometimes it&#8217;s inventing a whole new brand or category. Sometimes it&#8217;s an ad campaign. And fairly often it&#8217;s all of the above.</span>",
+        "I love that. So what's different about working with an Innovations Company?",
+        "<span>For starters, we&#8217;re focused on solving business problems, not just advertising problems. So everything we do starts with a business strategy, even before we look at a communications strategy.</span>",
+        "<span>And because we&#8217;re focused on the totality of a clients&#8217; business, we have to offer holistic thinking instead of silo-ed thinking. So our designers inform our strategy. Our strategy informs our design. Our UX informs our business strategy and so on.</span>"
       ],
       "paragraph4": [
-        "OK, but can you really claim to be experts in each of those categories? How are you not a jack of all trades and master of none?",
-        "<span>We've been giving it a lot of thought and we think there are two things that made this happen: our people and our organization.</span>",
-        "<span>Our people are strategists who love strategy, but hate the limits of working at a strategy firm. They're designers who love design, but feel handcuffed working at a pure design shop. They're digital leaders who don't want to be so disconnected from the brand thinking. And they're ad agency leaders who are sick and tired of being relegated to just TV, Print and Out of Home. They're all looking for innovation. And our organization gives them the ability to apply their skills in all kinds of new ways.</span>",
-        "<span>We fundamentally understand each of these disciplines and how to plug them into the agency. They aren't bolted onto the framework as an added discipline. They are a part of the gears and fabric of the agency at a very core level.</span>",
-        "How so?",
-        "<span>Well, I founded the place, and I&#8217;m a classically trained computer engineer who loves art and design and I&#8217;ve been the president of Digitas (one of the industry&#8217;s leading digital firms) and I&#8217;ve been the Global Chief Strategy Officer at DDB (one of the world&#8217;s most successful advertising agencies.) And I grew the agency&#8217;s capabilities around my own passions. Now I&#8217;ve got world-class leaders running every discipline in the agency, and I get to have amazing conversations with them all day long.</span>",
-        "OK, but can you really claim to be experts in each of those categories? How are you not a jack of all trades and master of none",
-        "<span>Well, here&#8217;s an example. We don&#8217;t do a lot of pitches, right? But this year we did three, and we won each of them. One was a strategy assignment and we beat out Profit and McKenzie. One was an Ad Agency AOR assignment and we beat out BBDO and GSDM. And the last one was a Digital Design AOR relationship and we beat out R/GA and Blast Radius. So, clearly we must be doing something right.</span>",
-        "<span>I&#8217;ve been giving it a lot of thought and I think there are two things that made this happen: our people and our organization.</span>",
+        "Right, my experience has been that truly great brands are embedded in the DNA of the company, and the only way to make that happen is to think about everything as part of the brand.",
+        "<span>Exactly. Which means our people have to be insanely good at collaboration. Not just with co-workers with different points of view and skill sets, but also with our clients and partner agencies. We don't care who&#8217;s “right”, we just want the end product to be stunning.</span>",
+        "<span>The last thing that really makes us different is our process. While traditional agencies follow a linear process, we believe in constant iteration. We have to be able to throw away good work to get to great work. And at every step of the journey, we are learning new things, so we have to be adaptable and nimble so we can incorporate those insights to make the final product something really special.</span>",
+        "Tell me a little bit more about your people. Who&#8217;s a good fit at Phenomenon?",
         "<span>Our people are strategists who love strategy, but hate the limits of working at a strategy firm. They&#8217;re designers who love design, but feel handcuffed working at a design shop. They&#8217;re digital leaders who don&#8217;t want to be so disconnected from the brand thinking. And they&#8217;re ad agency leaders who are sick and tired of being relegated to just TV, Print and Out of Home. They&#8217;re all looking for innovation. And our organization gives them the ability to apply their skills in all kinds of new ways.</span>"
-        
+
       ],
       "paragraph5": [
-        "It&#8217;s interesting that you say that your talent is looking for innovation, because as a client, that&#8217;s exactly what I&#8217;m looking for too. ",
-        "<span>Right, and when the client&#8217;s ambitions mesh with the agency&#8217;s ambitions and the ambitions of the individuals that work there, that&#8217;s when great things happen.</span>"
+        "It&#8217;s interesting that you say that your talent is looking for innovation, because as a client, that&#8217;s exactly what I&#8217;m looking for too.",
+        "<span>Exactly. And when the client&#8217;s ambitions mesh with the agency&#8217;s ambitions and the ambitions of the individuals that work there, that&#8217;s when great things happen.</span>"
       ],
       "accordion": [
         {
