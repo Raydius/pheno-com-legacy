@@ -164,8 +164,8 @@ var copy =
       "className": "about",
       "blockquote": "Something like a Phenomenon.",
       "subquote": "A behind-the-scenes look at the most appropriately-named company I know.",
-      "quoterName": "Kevin Dahlstrom, CMO",
-      "quoterTitle": "Mr. Cooper", 
+      "quoterName": "Kevin Dahlstrom",
+      "quoterTitle": "CMO, Mr. Cooper", 
       "description": "Phenomenon - About",
       "dictionary": {
         "noun": "1. a person who can get out of their comfort zone to solve a problem.", 
