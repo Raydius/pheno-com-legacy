@@ -801,6 +801,7 @@ var copy =
       "className": "mens-wearhouse",
       "client": "Men's Wearhouse", 
       "clientLogo": require('assets/images/works/clients_logo/mens-wearhouse.svg'),
+      "clientLogoWidth": "250px",
       "project": "Rebrand",
       "media": "Branding",
       "blockquote": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.", 
