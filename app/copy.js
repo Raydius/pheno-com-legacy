@@ -117,21 +117,21 @@ var copy =
           "name": "Amy Weisenbach",
           "jobTitle": "VP Marketing, Wilson",
           "project": "Wilson Launches<br> Futuristic Ball.",
-          "contributorAvatar": require("assets/images/client_icons/icon-wilson.svg"),
+          "contributorAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson.png"),
           "href": "#/work/wilson-x"
         },
         {
           "name": "Matt Stringer",
           "jobTitle": "EVP Marketing, Tailored Brands",
           "project": "Men&#8217s Wearhouse<br> Updates Its Wardrobe.",
-          "contributorAvatar": require("assets/images/client_icons/icon-mw.svg"),
+          "contributorAvatar": require("assets/images/illustrations/phenomenon-matt-stringer-menswearhouse.png"),
           "href": "#/work/mens-wearhouse"
         },
         {
           "name": "Megan Crossland",
           "jobTitle": "Sr. Director of Marketing, thinkThin",
           "project": "thinkThin Helps<br> Women Shed the Guilt.",
-          "contributorAvatar": require("assets/images/client_icons/icon-thinkthin.svg"),
+          "contributorAvatar": require("assets/images/illustrations/phenomenon-megan-crossland-thinkthin.png"),
           "href": "#/work/think-thin"
         },
       ],
@@ -346,7 +346,7 @@ var copy =
       "blockquote": "Wilson Equips Itself With Global Campaign.",
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
-      "quoterAvatar": require("assets/images/client_icons/icon-wilson.svg"),
+      "quoterAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson-grey.png"),
       "description": "CVU - Phenomenon - Wilson X", 
       "shareImg": require("assets/images/wilson_anthem_1_01-opt.jpg"),
       "topDescription": [
@@ -451,7 +451,7 @@ var copy =
       "blockquote": "Wilson Launches<br>Futuristic Ball.",
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
-      "quoterAvatar": require("assets/images/client_icons/icon-wilson.svg"),
+      "quoterAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson-grey.png"),
       "shareImg": require("assets/images/wilson_x_1_01-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
@@ -800,14 +800,14 @@ var copy =
       "title": "Rebrand",
       "className": "mens-wearhouse",
       "client": "Men's Wearhouse", 
-      "clientLogo": require('assets/images/works/clients_logo/mens-wearhouse.svg'),
+      "clientLogo": require('assets/images/illustrations/phenomenon-matt-stringer-menswearhouse-grey.png'),
       "clientLogoWidth": "250px",
       "project": "Rebrand",
       "media": "Branding",
       "blockquote": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.", 
       "quoterName": "By Matt Stringer",
       "quoterTitle": "EVP Marketing, Tailored Brands",
-      "quoterAvatar": require("assets/images/client_icons/icon-mw.svg"),
+      "quoterAvatar": require("assets/images/illustrations/phenomenon-matt-stringer-menswearhouse-grey.png"),
       "shareImg": require("assets/images/mens-warehouse/mw_brandbook_carousel1a.png"),
 
       "description": "CVU - Phenomenon - Wilson X",
@@ -899,7 +899,7 @@ var copy =
       "blockquote": 'thinkThin Helps <br>Women Shed the Guilt.',
       "quoterName": "By Megan Crossland",
       "quoterTitle": "Sr. Director of Marketing, thinkThin",
-      "quoterAvatar": require("assets/images/client_icons/icon-thinkthin.svg"),
+      "quoterAvatar": require("assets/images/illustrations/phenomenon-megan-crossland-thinkthin-grey.png"), 
       "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
