@@ -88,8 +88,7 @@ section.row.no-padding.work.work-details
 		article.col-md-6.no-padding.case-writer
 			span
 				span!= pageData.caseWriter.name
-				/ 
-				span!= pageData.caseWriter.title
+				span!= '/ ' + pageData.caseWriter.title
 			div!= pageData.caseWriter.description
 
 	include more-cases
