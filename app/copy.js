@@ -182,6 +182,7 @@ var copy =
         "So you kind of self-select clients that are going to appreciate the kind of work you do.<span>Very much so.</span>"        
       ],*/
       "paragraph3": [
+        "<span>I&#8217;ve worked with Phenomenon for 7 years across two companies. When I was hired to transform and re-brand the country&#8217;s largest non-bank home loan company, one of my first calls was to Phenomenon.</span>",
         "Why did you start this company? What are you all about?",
         "<span>We all know that the agency model is badly broken. Client interests don&#8217;t line up with agency interests and that's a recipe for disaster.</span>",
         "<span>So we founded Phenomenon as a reaction to that.</span>",
