@@ -48,8 +48,8 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
        $('html, body').hide();
        
        $('html, body').animate({
-                scrollTop: 0
-            }, 0, function(){
+                scrollTop: 1
+            }, 1, function(){
 
         });
        $('html, body').show();

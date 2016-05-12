@@ -395,8 +395,20 @@ h3 blockquote {
 			font-size: 20px;
 			margin-top: $base_spacing - 30;
 			width: 100%;
+			&.selected {
+		        a:before{
+		          content: "";
+		          position: absolute;
+		          bottom: 0;
+		          width: 100%;
+		          left: 0;
+		          border-bottom: 2px solid $primary_color;
+		        }
+		    }
 			a {
 				color: #333;
+				padding-bottom: 3px;
+
 			}
 		}
 	}
