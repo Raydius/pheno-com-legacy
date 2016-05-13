@@ -19,9 +19,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
             $('body').addClass('desktop');
         }   
        
-        if(window.innerHeight < window.innerWidth){
-            $('body, html').removeClass('opend');
-        }
+        
         
     });
 
@@ -39,6 +37,9 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
         /*if ($(window).outerWidth() < 640 ) {
             $(".ac .col-md-5").trigger("sticky_kit:detach");
         }*/
+        if(window.innerHeight < window.innerWidth){
+            $('body, html').removeClass('opend');
+        }
     })
 
     var $main = $('main');
