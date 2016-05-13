@@ -19,7 +19,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
             $('body').addClass('desktop');
         }   
        
-
+        
         
     });
 
@@ -34,8 +34,12 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
         $('.home .top-main').css('height', $(window).height() - 121);
         //$('.black.home .top-main').css('height', $(window).height());
 
-        if ($(window).outerWidth() < 640 ) {
+        /*if ($(window).outerWidth() < 640 ) {
             $(".ac .col-md-5").trigger("sticky_kit:detach");
+        }*/
+        if(window.innerHeight < window.innerWidth){
+            $('body, html').removeClass('opend');
+            $('#hamburger').removeClass('open');
         }
     })
 
@@ -72,9 +76,9 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
     $('.featured-contributors').addClass('show');
 
        if ($(document).scrollTop() > 0) {
-        $(".desktop nav.topnav").addClass("fixed");
+        $("nav.topnav").addClass("fixed");
       } else {
-        $(".desktop nav.topnav").removeClass("fixed");  
+        $("nav.topnav").removeClass("fixed");  
       }  
     })
 
@@ -84,6 +88,8 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
     });
     
     $rootScope.$on('$stateChangeSuccess', function() {
+        console.log('$sCS');
+
         // scroll to the top
         $main.animate({ scrollTop: 0 }, 400);
 

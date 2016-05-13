@@ -47,9 +47,8 @@ angular.module('phenoCom').directive('carouselComponentCenter', function() {
                 ],
                 loop: true,
                 dots: false,
-                touchDrag: true
-            });
-
+                touchDrag: true,
+            }); 
         }
     };
 
@@ -139,7 +138,7 @@ angular.module('phenoCom').directive('showmore', function() {
 
             element.bind('click', function() {
                 var name = $(this).attr('childContainer');
-                
+                // set a timeout so this happened after close event
                 setTimeout(function(){ 
                     $(name).toggle();
                 }, 1);
