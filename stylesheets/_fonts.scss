@@ -35,7 +35,7 @@
     font-weight: normal;
     font-style: normal;
 }
-//icon fonts
+//icon fonts 
 @font-face {
     font-family: 'icomoon';
     src:    url('../assets/fonts/icomoon/icomoon.eot?n1cqbv');
@@ -56,10 +56,15 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+    position: relative;
+
 
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    &:before {
+        content: "";
+    }
 }
 
 .extend-icon:before{
@@ -77,6 +82,7 @@
 }
 .icon-dot:before {
     content: "\e907";
+
 }
 .icon-mail:before {
     content: "\e909";

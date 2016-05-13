@@ -6,18 +6,9 @@
   }
 }
  */
-.snapjs-left{
-  height: 100%;
-  @include viewport-height(100vh);
-  overflow: hidden;
-  position: fixed;
-}
 .mobile.opend {
   .topnav {
-    
-    @media screen and (max-width: 640px) {
-      position: relative;
-    }
+    position: relative;
   }
 }
 .topnav {
