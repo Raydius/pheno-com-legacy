@@ -49,7 +49,7 @@ angular.module('phenoCom').controller('homeController', function($state, $scope)
 });
 
 angular.module('phenoCom').controller('aboutController', function($state, $scope) {
-    var options = {
+    /*var options = {
         'offset_top': 121,
     }
     
@@ -63,7 +63,7 @@ angular.module('phenoCom').controller('aboutController', function($state, $scope
         if ($(window).outerWidth() < 640 ) {
             $(".ac .col-md-5").trigger("sticky_kit:detach");
         }
-    })
+    })*/
 });
 
 

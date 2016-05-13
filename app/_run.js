@@ -34,9 +34,9 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
         $('.home .top-main').css('height', $(window).height() - 121);
         //$('.black.home .top-main').css('height', $(window).height());
 
-        if ($(window).outerWidth() < 640 ) {
+        /*if ($(window).outerWidth() < 640 ) {
             $(".ac .col-md-5").trigger("sticky_kit:detach");
-        }
+        }*/
     })
 
     var $main = $('main');

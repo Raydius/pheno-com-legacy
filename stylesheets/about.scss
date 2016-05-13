@@ -28,7 +28,7 @@
 	.col-md-7 {
 		//padding-left: $base-spacing;
 		padding-left: 40px;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 1100px) {
 			padding-left: 0;
 		}
 
@@ -104,11 +104,6 @@
 		h4 {
 			font-family: 'Tiempose-Semibold';
 			font-size: 20px;
-		}
-		article.ac-small p {
-			@media screen and (max-width: 1100px) and (min-width: 768px) {
-				font-size: 12px;
-			}
 		}
 	    input:checked {
 	    	+ label {
@@ -191,6 +186,13 @@
 		margin-top: 10px;
 		&:last-of-type {
 			margin-bottom: 0;
+			width: 90%;
+			@media screen and (max-width: 768px) {
+				width: 100%;
+			}
+			@media screen and (max-width: 1150px) and (min-width: 768px) {
+				font-size: 12px;
+			}
 		}
 	}
 
