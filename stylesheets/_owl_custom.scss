@@ -320,6 +320,9 @@
   padding: 10px 0 60px 0;
 }
  */
+.owl-carousel .owl-item img, .owl-carousel .owl-item p, .owl-carousel .owl-item span, .owl-carousel .owl-item a {
+  -webkit-backface-visibility: hidden;
+}
 .work .more-case-wrapper .owl-item .col-md-4 {
 	padding: 0 10px;
 }
