@@ -32,6 +32,12 @@ if(process.env.OUTPUT_DIR) {
 // construct publicPath string
 var publicPath = (port == 80) ? host+'/' : host+':'+port+'/';
 
+// set Google Analytics config
+var gaConfig = {
+    trackingId: 'UA-51195233-1',
+    pageViewOnLoad: true
+};
+
 // main webpack module
 module.exports = {
     context: __dirname,
@@ -94,7 +100,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'views/index.jade',
             filename: 'index.html',
-            title: 'Phenomenon'
+            title: 'PHENOMENON - Innovations Agency | Marketing, UX, Digital, Cultural Innovation',
+            googleAnalytics: gaConfig
         })
     ],
     module: {

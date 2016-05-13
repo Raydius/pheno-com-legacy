@@ -88,6 +88,8 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
     });
     
     $rootScope.$on('$stateChangeSuccess', function() {
+        console.log('$sCS');
+
         // scroll to the top
         $main.animate({ scrollTop: 0 }, 400);
 
