@@ -41,7 +41,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             template: templateHome,
             controller: 'homeController',
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Marketing, UX, Digital, Cultural Innovation'
+                pageTitle: 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation'
             }
         })
 
@@ -50,7 +50,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             template: templateAbout,
             controller: 'aboutController',
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | About Us'
+                pageTitle: 'phenomenon - Innovations Company | About Us'
             }
         })
 
@@ -58,14 +58,14 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             url: '/work',
             template: templateWork,
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Work'
+                pageTitle: 'phenomenon - Innovations Company | Work'
             }
         })
         .state('work/wilson-anthem', {
             url: '/work/wilson-anthem',
             template: templateWorkAnthem, 
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Work - Wilson',
+                pageTitle: 'phenomenon - Innovations Company | Work - Wilson',
                 pageShareImg: require('assets/images/work-1.jpg')                
             }
         })
@@ -74,7 +74,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             url: '/work/wilson-x',
             template: templateWorkWilsonX, 
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Work - Wilson X'
+                pageTitle: 'phenomenon - Innovations Company | Work - Wilson X'
             }
         })
 /*
@@ -82,7 +82,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             url: '/work/xome-hide',
             template: templateWorkXome, 
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Work - Xome',
+                pageTitle: 'phenomenon - Innovations Company | Work - Xome',
                 pageShareImg: require('assets/images/work-1.jpg')
             }
         })
@@ -91,7 +91,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             url: '/work/mens-wearhouse',
             template: templateWorkMens, 
             data: {
-                pageTitle: 'PHENOMENON - Wilson Anthem case study',
+                pageTitle: 'phenomenon - Wilson Anthem case study',
                 pageShareImg: require('assets/images/work-1.jpg')
 
             }
@@ -101,7 +101,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             url: '/work/think-thin',
             template: templateWorkThinkThin, 
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Work - thinkThin',
+                pageTitle: 'phenomenon - Innovations Company | Work - thinkThin',
                 pageShareImg: require('assets/images/work-1.jpg')
 
             }
@@ -111,7 +111,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             url: '/work/sls-hide',
             template: templateWorkSLS, 
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Work - SLS Las Vegas',
+                pageTitle: 'phenomenon - Innovations Company | Work - SLS Las Vegas',
                 pageShareImg: require('assets/images/work-1.jpg')
 
             }
@@ -121,7 +121,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             url: '/work/sunny-hide',
             template: templateWorkSunny, 
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Work - Sunny',
+                pageTitle: 'phenomenon - Innovations Company | Work - Sunny',
                 pageShareImg: require('assets/images/work-1.jpg')
 
             }
@@ -131,7 +131,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             url: '/work/cooper-hide',
             template: templateWorkCooper, 
             data: {
-                pageTitle: 'PHENOMENON - Mr.Cooper case study',
+                pageTitle: 'phenomenon - Mr.Cooper case study',
                 pageShareImg: require('assets/images/work-1.jpg')                
             }
         })
@@ -140,7 +140,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             url: '/culture',
             template: templateCulture,
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Culture'
+                pageTitle: 'phenomenon - Innovations Company | Culture'
             }
         })
 
@@ -148,7 +148,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             url: '/jobs',
             template: templateJobs,
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Jobs'
+                pageTitle: 'phenomenon - Innovations Company | Jobs'
             }
         })
         .state('contact', {
@@ -156,7 +156,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             template: templateContact,
             controller: 'contactController',
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Contact Us'
+                pageTitle: 'phenomenon - Innovations Company | Contact Us'
             }
         })
 
