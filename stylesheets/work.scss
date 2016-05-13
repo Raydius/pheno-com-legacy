@@ -327,6 +327,10 @@
 					&:last-of-type {
 						margin-bottom: 0;
 					}
+					@media screen and (max-width: 320px) {
+						font-size: 13px;
+						line-height: 16px;
+					} 
 				}
 				a:last-of-type {
 					display: block;

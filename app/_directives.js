@@ -45,11 +45,12 @@ angular.module('phenoCom').directive('carouselComponentCenter', function() {
                     "<button class='icon-left-arrow'></button>",
                     "<button class='icon-right-arrow'></button>"
                 ],
-                loop: true,
+                loop: false,
                 dots: false,
-                touchDrag: true
+                touchDrag: true,
+                URLhashListener:true,
+                startPosition: 'URLHash'
             });
-
         }
     };
 
@@ -139,7 +140,7 @@ angular.module('phenoCom').directive('showmore', function() {
 
             element.bind('click', function() {
                 var name = $(this).attr('childContainer');
-                
+                // set a timeout so this happened after close event
                 setTimeout(function(){ 
                     $(name).toggle();
                 }, 1);
