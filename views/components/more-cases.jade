@@ -29,8 +29,8 @@ section.col-md-12.no-padding.more-cases
 	
 	.more-case-wrapper.mobile.cf
 		carousel-component-center.carousel-component.owl-carousel.no-padding
-			each contentItem, index in pageData
-				article.col-md-4(data-hash=index)
+			each contentItem in pageData
+				article.col-md-4
 					a(href= contentItem.projectUrl)
 						img(src= contentItem.projectThumbSrc)
 						p!= contentItem.projectName

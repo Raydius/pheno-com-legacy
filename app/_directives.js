@@ -45,15 +45,10 @@ angular.module('phenoCom').directive('carouselComponentCenter', function() {
                     "<button class='icon-left-arrow'></button>",
                     "<button class='icon-right-arrow'></button>"
                 ],
-                loop: false,
+                loop: true,
                 dots: false,
                 touchDrag: true,
-                URLhashListener:true,
-                startPosition: 'URLHash'
             }); 
-
-            $('.owl-item .item').attr("data-hash", '1');
-
         }
     };
 
