@@ -57,8 +57,14 @@ section.row.no-padding.work.work-details
 					if contentItem.mainDescription
 						article.col-md-7.no-padding
 							each par in contentItem.mainDescription
-									p!= par
+								p!= par
 	div.detail-content
+		if pageData.fromTopContentDescription
+			article.col-md-12.no-padding
+				each par in pageData.fromTopContentDescription
+					article.col-md-7.no-padding
+						p!= par
+
 		each contentItem in pageData.detailcontent
 			if contentItem.video
 				article.col-md-12.no-padding.tet

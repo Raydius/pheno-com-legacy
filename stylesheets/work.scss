@@ -354,7 +354,7 @@
 		margin: ($base_spacing - 20) 0;
 		margin-left: - ($base_spacing - 20);
 		line-height: 40px;
-		@media screen and (max-width: 640px) {
+		@media screen and (max-width: 768px) {
 			margin-left: 0;
 		} 
 	}

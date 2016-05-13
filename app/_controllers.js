@@ -44,7 +44,7 @@ angular.module('phenoCom').controller('phenoController', function($state, $scope
 
 angular.module('phenoCom').controller('homeController', function($state, $scope) {
 
-    $('.top-main').css('height', $(window).height() - 121);
+    $('.top-main').css('height', $(window).height() - 121); 
 
 });
 

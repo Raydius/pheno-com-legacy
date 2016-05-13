@@ -10,13 +10,13 @@ var templateAbout = require('views/about.jade');
 var templateWork = require('views/work.jade');
 var templateWorkAnthem = require('views/wilson-anthem.jade');
 var templateWorkWilsonX = require('views/wilson-x.jade');
-//var templateWorkSLS = require('views/sls.jade');
-//var templateWorkXome = require('views/xome.jade');
+var templateWorkSLS = require('views/sls.jade'); 
+var templateWorkXome = require('views/xome.jade'); 
 var templateWorkThinkThin = require('views/think-thin.jade'); 
 var templateWorkMens = require('views/mens-wearhouse.jade');  
-//var templateWorkSunny = require('views/sunny.jade');
-//var templateWorkCooper = require('views/cooper.jade');
-//var templateEntertainment = require('views/entertainment.jade');
+var templateWorkSunny = require('views/sunny.jade');
+var templateWorkCooper = require('views/cooper.jade');  
+var templateEntertainment = require('views/entertainment.jade');
 var templateCulture = require('views/culture.jade');
 var templateContact = require('views/contact.jade');
 var templateJobs = require('views/jobs.jade'); 
@@ -41,7 +41,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             template: templateHome,
             controller: 'homeController',
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Marketing, UX, Digital, Cultural Innovation'
+                pageTitle: 'PHENOMENON'
             }
         })
 
@@ -50,7 +50,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             template: templateAbout,
             controller: 'aboutController',
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | About Us'
+                pageTitle: 'PHENOMENON'
             }
         })
 
@@ -58,14 +58,14 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             url: '/work',
             template: templateWork,
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Work'
+                pageTitle: 'PHENOMENON - Wilson X case study'
             }
         })
         .state('work/wilson-anthem', {
             url: '/work/wilson-anthem',
             template: templateWorkAnthem, 
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Work - Wilson',
+                pageTitle: 'PHENOMENON - Wilson Anthem case study',
                 pageShareImg: require('assets/images/work-1.jpg')                
             }
         })
@@ -74,19 +74,19 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             url: '/work/wilson-x',
             template: templateWorkWilsonX, 
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Work - Wilson X'
+                pageTitle: 'PHENOMENON - Wilson X case study'
             }
         })
-/*
+
         .state('work/xome', {
-            url: '/work/xome-hide',
+            url: '/work/xome',
             template: templateWorkXome, 
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Work - Xome',
+                pageTitle: 'PHENOMENON - Xome case study',
                 pageShareImg: require('assets/images/work-1.jpg')
             }
         })
-*/
+
         .state('work/mens-wearhouse', {
             url: '/work/mens-wearhouse',
             template: templateWorkMens, 
@@ -101,27 +101,27 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             url: '/work/think-thin',
             template: templateWorkThinkThin, 
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Work - thinkThin',
+                pageTitle: 'PHENOMENON - Think Thin case study',
                 pageShareImg: require('assets/images/work-1.jpg')
 
             }
         })
-/*
+
         .state('work/sls', {
             url: '/work/sls-hide',
             template: templateWorkSLS, 
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Work - SLS Las Vegas',
+                pageTitle: 'PHENOMENON - SLS case study',
                 pageShareImg: require('assets/images/work-1.jpg')
 
             }
         })
-
+        
         .state('work/sunny', {
             url: '/work/sunny-hide',
             template: templateWorkSunny, 
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Work - Sunny',
+                pageTitle: 'PHENOMENON - Sunny case study',
                 pageShareImg: require('assets/images/work-1.jpg')
 
             }
@@ -135,20 +135,36 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                 pageShareImg: require('assets/images/work-1.jpg')                
             }
         })
-*/
+
+        .state('entertainment', {
+            url: '/entertainment-hide',
+            template: templateEntertainment,
+            data: {
+                pageTitle: 'PHENOMENON - Wilson Anthem case study'
+            }
+        })
+
         .state('culture', {
             url: '/culture',
             template: templateCulture,
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Culture'
+                pageTitle: 'PHENOMENON - Xome case study'
             }
         })
 
+        .state('think-thin', {
+            url: '/think-thin',
+            templateUrl: '/views/think-thin',
+            data: {
+                pageTitle: 'PHENOMENON - thinkThin case study',
+                pageShareImg: require('assets/images/work-1.jpg')                
+            }
+        })
         .state('jobs', { 
             url: '/jobs',
             template: templateJobs,
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Jobs'
+                pageTitle: 'PHENOMENON - Jobs'
             }
         })
         .state('contact', {
@@ -156,9 +172,16 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             template: templateContact,
             controller: 'contactController',
             data: {
-                pageTitle: 'PHENOMENON - Innovations Agency | Contact Us'
+                pageTitle: 'PHENOMENON - Contact Us'
             }
         })
 
+        .state('thanks', {
+            url: '/thanks',
+            templateUrl: '/views/components/thanks',
+            data: {
+                pageTitle: 'PHENOMENON - Thanks'
+            }
+        })
     ;
 });

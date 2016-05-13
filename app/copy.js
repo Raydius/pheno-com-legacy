@@ -395,11 +395,11 @@ var copy =
               "url": require("assets/images/wilson_anthem_1_08-opt.jpg"),
               "alt": "Wilson X Packaging Photo 6"
             }
-          ],
-          "mainDescription": [
-            'After rallying the troops internally, it was time to tell the world through a global, brand campaign we called "My Wilson." We have some of the top professional athletes on our roster including Serena Williams, Roger Federer and Dustin Pedroia. But our goal with "My Wilson" was to not just celebrate the biggest athletes in the world, we wanted to show how every athlete has a powerful relationship with their equipment. We wanted to show professional and amateur youth athletes side-by-side. This connection and universal truth to sport is a recurring theme you&#8217;ll see in many communications going forward.'
           ]
         }
+      ],
+      "fromTopContentDescription": [
+        'After rallying the troops internally, it was time to tell the world through a global, brand campaign we called "My Wilson." We have some of the top professional athletes on our roster including Serena Williams, Roger Federer and Dustin Pedroia. But our goal with "My Wilson" was to not just celebrate the biggest athletes in the world, we wanted to show how every athlete has a powerful relationship with their equipment. We wanted to show professional and amateur youth athletes side-by-side. This connection and universal truth to sport is a recurring theme you&#8217;ll see in many communications going forward.'
       ],
       "detailcontent": [
         {
@@ -496,11 +496,11 @@ var copy =
               "url": require("assets/images/wilson_x_1_06-opt.jpg"),
               "alt": "Wilson X Packaging Photo 6"
             }
-          ],
-          "mainDescription": [
-            "Phenomenon was at the table as we developed the ball and brought it to market. They helped us with positioning, the UX/UI of app development, product naming and of course, the marketing of the ball at launch. They were instrumental in helping us create a user experience that was simple and intuitive, but that also felt cool and represented the next generation of Wilson. It&#8217s one thing to show young athletes in your advertising, it&#8217s a whole different thing to give them a piece of technology that they actually use and love."
           ]
         }
+      ],
+      "fromTopContentDescription": [
+        "Phenomenon was at the table as we developed the ball and brought it to market. They helped us with positioning, the UX/UI of app development, product naming and of course, the marketing of the ball at launch. They were instrumental in helping us create a user experience that was simple and intuitive, but that also felt cool and represented the next generation of Wilson. It&#8217s one thing to show young athletes in your advertising, it&#8217s a whole different thing to give them a piece of technology that they actually use and love."
       ],
       "detailcontent": [
         {
@@ -825,13 +825,13 @@ var copy =
           "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
           "thumbAlt": "Xome - TV Spot - Transparent House",
           "thumbTitle": "Click to play video",
-          "vimeo": "164752774",
-          "mainDescription": [
-            '<span class="red">The spot led two strategic initiatives. First, to show our commitment to providing quality and style. And second, that Men&#8217;s Wearhouse is home to a collection of brands.</span>',
-            'Once we established the quality and breadth of our offering, we wanted to evolve the messaging strategy from, "You&#8217;re going to like the way you look" to the more meaningful idea of, "You&#8217;re going to like the way you feel." The way we did this was by changing the focus across our brand from the pitchman to the consumer.',
-            'We launched the new direction with a Brand Book called "Go With Confidence" that detailed our new look, tone and audience; men that might need a great look to help them achieve that extra little bit of confidence.'
-          ]
+          "vimeo": "164752774"
         }
+      ],
+      "fromTopContentDescription": [
+        '<span class="red">The spot led two strategic initiatives. First, to show our commitment to providing quality and style. And second, that Men&#8217;s Wearhouse is home to a collection of brands.</span>',
+        'Once we established the quality and breadth of our offering, we wanted to evolve the messaging strategy from, "You&#8217;re going to like the way you look" to the more meaningful idea of, "You&#8217;re going to like the way you feel." The way we did this was by changing the focus across our brand from the pitchman to the consumer.',
+        'We launched the new direction with a Brand Book called "Go With Confidence" that detailed our new look, tone and audience; men that might need a great look to help them achieve that extra little bit of confidence.'
       ],
       "detailcontent": [
         {
