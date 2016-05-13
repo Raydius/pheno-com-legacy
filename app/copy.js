@@ -1103,7 +1103,7 @@ var copy =
         "writerTitle": "VP Marketing, Wilson",
         "projectUrl": "#/work/wilson-x",
         "projectThumbSrc": require("assets/images/morecases/4.png")
-      },
+      }/*,
       {
         "projectName": "It's a Sunny Day for Payday Loans.",
         "writerName": "By Patsy Hauer",
@@ -1117,7 +1117,7 @@ var copy =
         "writerTitle": "SVP Marketing, Xome",
         "projectUrl": "#/work/xome", 
         "projectThumbSrc": require("assets/images/morecases/6.jpg")
-      }
+      }*/
     ],
     "culture": { 
       "title": "Culture", 
