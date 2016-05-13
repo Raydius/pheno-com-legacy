@@ -26,7 +26,9 @@
 		margin: 0 15px;
 	}
 	.col-md-7 {
-		//padding-left: $base-spacing;
+		@media screen and (min-width: 1024px) {
+			padding-left: 40px;
+		}
 	}
 	figcaption ul {
 		padding-left: 0;
@@ -60,8 +62,9 @@
 	figure {
 		background: #F2F2F2;
 		padding: $base-spacing;
-		padding-top: 155px;
-		margin-top: 200px;
+		padding-top: 140px;
+		margin-top: 233px;
+		margin-bottom: $base-spacing;
 		@media screen and (max-width: 520px) {
 			margin-top: 180px;
 
@@ -71,7 +74,7 @@
 
 		}
 		img {
-			margin-top: -300px;
+			margin-top: -324px;
 			border-radius: 50%;
 			@media screen and (max-width: 520px) {
 				margin-top: -300px;
@@ -165,11 +168,11 @@
 	    height: 0;
 	    position: relative;
 	    z-index: 10;
-	    -webkit-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-	    -moz-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-	    -o-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-	    -ms-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-	    transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+	    -webkit-transition: height 0.2s ease-in; 
+	    -moz-transition: height 0.2s ease-in;
+	    -o-transition: height 0.2s ease-in;
+	    -ms-transition: height 0.2s ease-in;
+	    transition: height 0.2s ease-in;
 	}
 
 	.ac-container article p {
@@ -180,6 +183,13 @@
 		margin-top: 10px;
 		&:last-of-type {
 			margin-bottom: 0;
+			width: 90%;
+			@media screen and (max-width: 768px) {
+				width: 100%;
+			}
+			@media screen and (max-width: 1150px) and (min-width: 768px) {
+				font-size: 12px;
+			}
 		}
 	}
 
@@ -193,6 +203,9 @@
 
 	.ac-container input:checked ~ article.ac-small {
 	    height: 100px;
+	    @media screen and (max-width: 360px) {
+			height: 120px;
+		}
 	}
 
 	.ac-container input:checked ~ article.ac-medium {

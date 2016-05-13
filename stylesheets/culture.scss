@@ -32,6 +32,12 @@
 	}
 	article {
 		margin-top: $base_spacing;
+		&.col-md-offset-1 {
+			@media screen and (min-width: 992px) {
+				margin-left: 60px;
+				width: 55%;
+			}
+		}
 		@media screen and (max-width: 640px) {
 			margin-top: 0;
 		}

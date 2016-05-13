@@ -57,6 +57,15 @@
 		.col-md-4 {
 			opacity: 0;
 			transition: opacity 1s;
+			a > div {
+				transition: all 0.3s ease-in-out;
+			}
+			a:hover {
+				> div {
+					background-position: 0 100%; 
+				}
+
+			}
 		}
 		&.show {
 			.col-md-4 {

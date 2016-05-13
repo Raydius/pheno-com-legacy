@@ -47,9 +47,8 @@ angular.module('phenoCom').directive('carouselComponentCenter', function() {
                 ],
                 loop: true,
                 dots: false,
-                touchDrag: true
-            });
-
+                touchDrag: true,
+            }); 
         }
     };
 
@@ -139,7 +138,10 @@ angular.module('phenoCom').directive('showmore', function() {
 
             element.bind('click', function() {
                 var name = $(this).attr('childContainer');
-                $(name).toggle();
+                // set a timeout so this happened after close event
+                setTimeout(function(){ 
+                    $(name).toggle();
+                }, 1);
             })
         }
     };
@@ -211,9 +213,9 @@ angular.module('phenoCom').directive('updateTitle', ['$rootScope', '$timeout',
             link: function(scope, element) {
                 var title = 'Default Title'
                 var listener = function(event, toState) { 
+if (toState.data && toState.data.pageTitle) title = toState.data.pageTitle;
 
-                    if (toState.data && toState.data.pageTitle) title = toState.data.pageTitle;
-
+                    
                     $timeout(function() {
                         element.text(title);
                     }, 0, false);

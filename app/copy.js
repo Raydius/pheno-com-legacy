@@ -117,21 +117,21 @@ var copy =
           "name": "Amy Weisenbach",
           "jobTitle": "VP Marketing, Wilson",
           "project": "Wilson Launches<br> Futuristic Ball.",
-          "contributorAvatar": require("assets/images/client_icons/icon-wilson.svg"),
+          "contributorAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson.png"),
           "href": "#/work/wilson-x"
         },
         {
           "name": "Matt Stringer",
-          "jobTitle": "EVP Marketing, Men&#8217s Wearhouse",
+          "jobTitle": "EVP Marketing, Tailored Brands",
           "project": "Men&#8217s Wearhouse<br> Updates Its Wardrobe.",
-          "contributorAvatar": require("assets/images/client_icons/icon-mw.svg"),
+          "contributorAvatar": require("assets/images/illustrations/phenomenon-matt-stringer-menswearhouse.png"),
           "href": "#/work/mens-wearhouse"
         },
         {
           "name": "Megan Crossland",
           "jobTitle": "Sr. Director of Marketing, thinkThin",
           "project": "thinkThin Helps<br> Women Shed the Guilt.",
-          "contributorAvatar": require("assets/images/client_icons/icon-thinkthin.svg"),
+          "contributorAvatar": require("assets/images/illustrations/phenomenon-megan-crossland-thinkthin.png"),
           "href": "#/work/think-thin"
         },
       ],
@@ -164,8 +164,8 @@ var copy =
       "className": "about",
       "blockquote": "Something like a Phenomenon.",
       "subquote": "A behind-the-scenes look at the most appropriately-named company I know.",
-      "quoterName": "Kevin Dahlstrom, CMO",
-      "quoterTitle": "Mr. Cooper", 
+      "quoterName": "Kevin Dahlstrom",
+      "quoterTitle": "CMO, Mr. Cooper", 
       "description": "Phenomenon - About",
       "dictionary": {
         "noun": "1. a person who can get out of their comfort zone to solve a problem.", 
@@ -182,7 +182,7 @@ var copy =
         "So you kind of self-select clients that are going to appreciate the kind of work you do.<span>Very much so.</span>"        
       ],*/
       "paragraph3": [
-        "<span>I&#8217;ve worked with Phenomenon for 7 years across two companies. When I was hired to transform and re-brand the country&#8217;s largest non-bank home loan company, one of my first calls was to Phenomenon.</span>",
+        "I&#8217;ve worked with Phenomenon for 7 years across two companies. When I was hired to transform and re-brand the country&#8217;s largest non-bank home loan company, one of my first calls was to Phenomenon.",
         "Why did you start this company? What are you all about?",
         "<span>We all know that the agency model is badly broken. Client interests don&#8217;t line up with agency interests and that's a recipe for disaster.</span>",
         "<span>So we founded Phenomenon as a reaction to that.</span>",
@@ -307,7 +307,7 @@ var copy =
           "citeTitle": "VP Marketing, Wilson",
           "description": "For the first time a basketball is connected to your smartphone to track makes, misses and enhance performance.",
           "readmoreUrl": "#/work/wilson-x"
-        },
+        }
         /*{
           "type": "image",
           "image": true,
@@ -320,7 +320,7 @@ var copy =
           "description": "British company creates a whole new business model for payday loans that gives borrowers a better chance at getting out of debt.",
           "readmoreUrl": "#/work/sunny"          
         },*/
-        {
+        /*{
           "type": "image",
           "image": true,
           "imageUrl": require('assets/images/work-2.jpg'),
@@ -332,7 +332,7 @@ var copy =
           "description": "New company looks to make buying and selling a home not only more mobile, but more transparent.",
           "readmoreUrl": "#/work/xome"
 
-        }
+        }*/
       ]
     },
     "wilson-anthem": { 
@@ -342,11 +342,11 @@ var copy =
       "clientLogo": require('assets/images/works/clients_logo/wilson_logo.svg'),
       "clientLogoWidth": "50px",
       "project": "My Wilson",
-      "media": "Branding, Video, Digital",
+      "media": "TV, Digital, Social",
       "blockquote": "Wilson Equips Itself With Global Campaign.",
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
-      "quoterAvatar": require("assets/images/client_icons/icon-wilson.svg"),
+      "quoterAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson-grey.png"),
       "description": "CVU - Phenomenon - Wilson X", 
       "shareImg": require("assets/images/wilson_anthem_1_01-opt.jpg"),
       "topDescription": [
@@ -395,11 +395,11 @@ var copy =
               "url": require("assets/images/wilson_anthem_1_08-opt.jpg"),
               "alt": "Wilson X Packaging Photo 6"
             }
-          ],
-          "mainDescription": [
-            'After rallying the troops internally, it was time to tell the world through a global, brand campaign we called "My Wilson." We have some of the top professional athletes on our roster including Serena Williams, Roger Federer and Dustin Pedroia. But our goal with "My Wilson" was to not just celebrate the biggest athletes in the world, we wanted to show how every athlete has a powerful relationship with their equipment. We wanted to show professional and amateur youth athletes side-by-side. This connection and universal truth to sport is a recurring theme you&#8217;ll see in many communications going forward.'
           ]
         }
+      ],
+      "fromTopContentDescription": [
+        'After rallying the troops internally, it was time to tell the world through a global, brand campaign we called "My Wilson." We have some of the top professional athletes on our roster including Serena Williams, Roger Federer and Dustin Pedroia. But our goal with "My Wilson" was to not just celebrate the biggest athletes in the world, we wanted to show how every athlete has a powerful relationship with their equipment. We wanted to show professional and amateur youth athletes side-by-side. This connection and universal truth to sport is a recurring theme you&#8217;ll see in many communications going forward.'
       ],
       "detailcontent": [
         {
@@ -447,11 +447,11 @@ var copy =
       "clientLogo": require('assets/images/works/clients_logo/wilson_logo.svg'),
       "clientLogoWidth": "50px",
       "project": "Wilson X",
-      "media": "Branding, Packaging, Digital",
+      "media": "TV, Digital, Packaging",
       "blockquote": "Wilson Launches<br>Futuristic Ball.",
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
-      "quoterAvatar": require("assets/images/client_icons/icon-wilson.svg"),
+      "quoterAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson-grey.png"),
       "shareImg": require("assets/images/wilson_x_1_01-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
@@ -496,11 +496,11 @@ var copy =
               "url": require("assets/images/wilson_x_1_06-opt.jpg"),
               "alt": "Wilson X Packaging Photo 6"
             }
-          ],
-          "mainDescription": [
-            "Phenomenon was at the table as we developed the ball and brought it to market. They helped us with positioning, the UX/UI of app development, product naming and of course, the marketing of the ball at launch. They were instrumental in helping us create a user experience that was simple and intuitive, but that also felt cool and represented the next generation of Wilson. It&#8217s one thing to show young athletes in your advertising, it&#8217s a whole different thing to give them a piece of technology that they actually use and love."
           ]
         }
+      ],
+      "fromTopContentDescription": [
+        "Phenomenon was at the table as we developed the ball and brought it to market. They helped us with positioning, the UX/UI of app development, product naming and of course, the marketing of the ball at launch. They were instrumental in helping us create a user experience that was simple and intuitive, but that also felt cool and represented the next generation of Wilson. It&#8217s one thing to show young athletes in your advertising, it&#8217s a whole different thing to give them a piece of technology that they actually use and love."
       ],
       "detailcontent": [
         {
@@ -541,7 +541,8 @@ var copy =
           ],
           "mainDescription": [
             "<span class='red'>This was a bold new step for us because suddenly a mobile app was an aspect of what we were selling. The app needed to be as good as the ball itself.</span>",
-            "With the campaign, we wanted to communicate how revolutionary the Wilson X Connected Basketball is and at the same time show how it can help young athletes become better shooters from anywhere. Street to gym. Practice to playground."
+            "With the campaign, we wanted to communicate how revolutionary the Wilson X Connected Basketball is and at the same time show how it can help young athletes become better shooters from anywhere. Street to gym. Practice to playground.",
+            "The results: We sold out on Amazon in just two weeks and Wilson X will be in retail stores all over the country this Spring."
           ]
         },
         /*{
@@ -559,10 +560,7 @@ var copy =
           "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
           "thumbAlt": "Wilson X - TV Spot - All Day",
           "thumbTitle": "Click to play video",
-          "vimeo": "155010839",
-          "mainDescription": [
-            "The results: We sold out on Amazon in just two weeks and Wilson X will be in retail stores all over the country this Spring."
-          ]
+          "vimeo": "155010839"
         },
         {
           "video": true,
@@ -803,11 +801,11 @@ var copy =
       "clientLogo": require('assets/images/works/clients_logo/mens-wearhouse.svg'),
       "clientLogoWidth": "250px",
       "project": "Rebrand",
-      "media": "Branding",
+      "media": "TV, Collateral",
       "blockquote": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.", 
       "quoterName": "By Matt Stringer",
       "quoterTitle": "EVP Marketing, Tailored Brands",
-      "quoterAvatar": require("assets/images/client_icons/icon-mw.svg"),
+      "quoterAvatar": require("assets/images/illustrations/phenomenon-matt-stringer-menswearhouse-grey.png"),
       "shareImg": require("assets/images/mens-warehouse/mw_brandbook_carousel1a.png"),
 
       "description": "CVU - Phenomenon - Wilson X",
@@ -827,13 +825,13 @@ var copy =
           "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
           "thumbAlt": "Xome - TV Spot - Transparent House",
           "thumbTitle": "Click to play video",
-          "vimeo": "164752774",
-          "mainDescription": [
-            '<span class="red">The spot led two strategic initiatives. First, to show our commitment to providing quality and style. And second, that Men&#8217;s Wearhouse is home to a collection of brands.</span>',
-            'Once we established the quality and breadth of our offering, we wanted to evolve the messaging strategy from, "You&#8217;re going to like the way you look" to the more meaningful idea of, "You&#8217;re going to like the way you feel." The way we did this was by changing the focus across our brand from the pitchman to the consumer.',
-            'We launched the new direction with a Brand Book called "Go With Confidence" that detailed our new look, tone and audience; men that might need a great look to help them achieve that extra little bit of confidence.'
-          ]
+          "vimeo": "164752774"
         }
+      ],
+      "fromTopContentDescription": [
+        '<span class="red">The spot led two strategic initiatives. First, to show our commitment to providing quality and style. And second, that Men&#8217;s Wearhouse is home to a collection of brands.</span>',
+        'Once we established the quality and breadth of our offering, we wanted to evolve the messaging strategy from, "You&#8217;re going to like the way you look" to the more meaningful idea of, "You&#8217;re going to like the way you feel." The way we did this was by changing the focus across our brand from the pitchman to the consumer.',
+        'We launched the new direction with a Brand Book called "Go With Confidence" that detailed our new look, tone and audience; men that might need a great look to help them achieve that extra little bit of confidence.'
       ],
       "detailcontent": [
         {
@@ -894,12 +892,12 @@ var copy =
       "client": "thinkThin", 
       "clientLogo": require('assets/images/client_icons/icon-thinkthin.svg'),
       "clientLogoWidth": "100px",
-      "project": "thinkThin",
-      "media": "Branding",
+      "project": "Brand Campaign",
+      "media": "TV, Digital, Social",
       "blockquote": 'thinkThin Helps <br>Women Shed the Guilt.',
       "quoterName": "By Megan Crossland",
       "quoterTitle": "Sr. Director of Marketing, thinkThin",
-      "quoterAvatar": require("assets/images/client_icons/icon-thinkthin.svg"),
+      "quoterAvatar": require("assets/images/illustrations/phenomenon-megan-crossland-thinkthin-grey.png"), 
       "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
@@ -1105,7 +1103,7 @@ var copy =
         "writerTitle": "VP Marketing, Wilson",
         "projectUrl": "#/work/wilson-x",
         "projectThumbSrc": require("assets/images/morecases/4.png")
-      },
+      }/*,
       {
         "projectName": "It's a Sunny Day for Payday Loans.",
         "writerName": "By Patsy Hauer",
@@ -1119,7 +1117,7 @@ var copy =
         "writerTitle": "SVP Marketing, Xome",
         "projectUrl": "#/work/xome", 
         "projectThumbSrc": require("assets/images/morecases/6.jpg")
-      }
+      }*/
     ],
     "culture": { 
       "title": "Culture", 
@@ -1137,9 +1135,9 @@ var copy =
       "title": "Jobs",
       "className": "jobs",
       "description": "Phenomenon - Jobs",
-      "blockquote": "After a meeting, I wasn't sure who was from what department. Every person seemed to be involved in every aspect of what they were presenting.&#8221;",
-      "quoterName": "Allison Cornia",
-      "quoterTitle": "SVP Marketing, Xome",
+      "blockquote": "After the first meeting with them, I wasn't sure who was from what department. Every person seemed to be involved in every aspect of what they were presenting.&#8221;",
+      "quoterName": "Amy Weisenbach",
+      "quoterTitle": "VP Marketing, Wilson",
       "positions": "Open Positions",
       "listing": [
         {
@@ -1155,11 +1153,11 @@ var copy =
           "listingUrl": "https://www.linkedin.com/jobs2/view/85312460"
         },
         {
-          "listingTitle": "Digital Brand Manager (Digital Account Executive)",
+          "listingTitle": "Digital Brand Manager",
           "listingUrl": "https://www.linkedin.com/jobs2/view/125942963"
         },
         {
-          "listingTitle": "Brand Manager/Account Executive",
+          "listingTitle": "Brand Manager",
           "listingUrl": "https://www.linkedin.com/jobs2/view/111550639"
         },
       ],
