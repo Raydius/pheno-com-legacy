@@ -39,6 +39,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
         }*/
         if(window.innerHeight < window.innerWidth){
             $('body, html').removeClass('opend');
+            $('#hamburger').removeClass('open');
         }
     })
 
