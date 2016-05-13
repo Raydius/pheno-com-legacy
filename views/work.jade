@@ -11,7 +11,7 @@ section.row.no-padding.work.work-landing
 	
 	each contentItem in pageData.subcontent 
 		a(href= contentItem.readmoreUrl)
-			article.col-md-12.no-padding.cf
+			article.col-md-12.no-padding.cf.allcases
 				.col-xs-12.col-sm-12.col-md-8.no-padding
 					if contentItem.image
 						img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
@@ -20,8 +20,9 @@ section.row.no-padding.work.work-landing
 						legend= contentItem.legend
 						h3!= contentItem.headline 
 						cite
-							span!= contentItem.citeName
-							span!= contentItem.citeTitle
+							.wrapper
+								span!= contentItem.citeName
+								span!= contentItem.citeTitle
 
 						div.line
 						p!= contentItem.description

@@ -19,7 +19,7 @@ angular.module('phenoCom',[
     ngAnimate,
     'ngCookies',
     'ngMessages',
-    '720kb.socialshare'
+    '720kb.socialshare' 
 ]);
 
 

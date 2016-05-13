@@ -12,10 +12,12 @@ html, body {
   -webkit-font-smoothing: antialiased;
   &.opend {
   	overflow: hidden;
+  	position: relative;
   }
 }
 body {
 	display: none;
+
 	&.opend {
 		overflow: hidden;
 		.body-wrapper {
@@ -47,6 +49,7 @@ body {
     font-family: $primary_font;
     border-bottom: 8px solid $primary_color;
     position: relative;
+    transition: left 0.15s ease-in-out;
     left: 0;
 }
 .red {
@@ -118,7 +121,6 @@ article p {
 figcaption {
 	h3 {
 		font-family: $secondary_font;
-		font-weight: bold;
 		font-size: 32px;
 	}
 
@@ -127,6 +129,10 @@ figcaption {
 	position: relative;
 	border-bottom: 1px solid $gray_border_color;
 	padding: ($base_spacing - 20) 0;
+	margin-top: $fix_header_height;
+	@media screen and (max-width: 640px) {
+		margin-top: 0; 
+	}
 	h2 {
 		margin-top: 0;
 		font-weight: normal;
@@ -156,8 +162,10 @@ cite {
 		}
 		span {
 			&:last-of-type {
-				color: $gray_color;
+				color: #333;
+				opacity: 0.75;
 				display: block;
+				font-family: "Circular-book";
 			}
 		}
 	}
@@ -318,7 +326,7 @@ h3 blockquote {
         float: left;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
 	.topcontent {
 		display: flex;
 		flex-direction: column;
@@ -328,12 +336,36 @@ h3 blockquote {
 			}
 			&:nth-child(2) {
 				order: 1;
+				margin-bottom: 10px;
 			}
 			&:last-child {
 				order: 2;
 			}
 		}
 	}
+}
+/* @media (max-width: 991px) and (min-width: 640px) {
+	.topcontent {
+		#icon-details-container > fieldset {
+			float: left;
+		}
+		label {
+			float: left;
+			display: block;
+		}
+	}
+}
+ */
+ .client_logo-wrapper {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	background: white;
+	border-radius: 50%;
+	display: table;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	margin-bottom: 15px;
 }
 .desktop .drawer {
 	display: none;
@@ -362,8 +394,20 @@ h3 blockquote {
 			font-size: 20px;
 			margin-top: $base_spacing - 30;
 			width: 100%;
+			&.selected {
+		        a:before{
+		          content: "";
+		          position: absolute;
+		          bottom: 0;
+		          width: 100%;
+		          left: 0;
+		          border-bottom: 2px solid $primary_color;
+		        }
+		    }
 			a {
 				color: #333;
+				padding-bottom: 3px;
+
 			}
 		}
 	}
@@ -427,7 +471,7 @@ h3 blockquote {
 		}
 	}
 	.topnav {
-		height: 121px;
+		height: $fix_header_height;
 		background: black;
 	}
 }

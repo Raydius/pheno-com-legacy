@@ -117,21 +117,21 @@ var copy =
           "name": "Amy Weisenbach",
           "jobTitle": "VP Marketing, Wilson",
           "project": "Wilson Launches<br> Futuristic Ball.",
-          "contributorAvatar": require("assets/images/home/avatar-1.png"),
-          "href": "#/work/wilson-anthem"
+          "contributorAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson.png"),
+          "href": "#/work/wilson-x"
         },
         {
           "name": "Matt Stringer",
-          "jobTitle": "EVP Marketing, Men&#8217s Wearhouse",
+          "jobTitle": "EVP Marketing, Tailored Brands",
           "project": "Men&#8217s Wearhouse<br> Updates Its Wardrobe.",
-          "contributorAvatar": require("assets/images/home/avatar-2.png"),
+          "contributorAvatar": require("assets/images/illustrations/phenomenon-matt-stringer-menswearhouse.png"),
           "href": "#/work/mens-wearhouse"
         },
         {
           "name": "Megan Crossland",
-          "jobTitle": "Director of Marketing, thinkThin",
+          "jobTitle": "Sr. Director of Marketing, thinkThin",
           "project": "thinkThin Helps<br> Women Shed the Guilt.",
-          "contributorAvatar": require("assets/images/home/avatar-3.png"),
+          "contributorAvatar": require("assets/images/illustrations/phenomenon-megan-crossland-thinkthin.png"),
           "href": "#/work/think-thin"
         },
       ],
@@ -163,15 +163,15 @@ var copy =
       "title": "About Phenomenon",
       "className": "about",
       "blockquote": "Something like a Phenomenon.",
-      "subquote": "A behind-the-scenes look at the most appropriately-named agency I know.",
-      "quoterName": "Kevin Dahlstrom, CMO",
-      "quoterTitle": "Mr. Cooper Home Loans", 
+      "subquote": "A behind-the-scenes look at the most appropriately-named company I know.",
+      "quoterName": "Kevin Dahlstrom",
+      "quoterTitle": "CMO, Mr. Cooper", 
       "description": "Phenomenon - About",
       "dictionary": {
         "noun": "1. a person who can get out of their comfort zone to solve a problem.", 
         "verb": "2. to carry out a solution in any direction that is correct for the problem."
       },
-      "paragraph1": [
+      /*"paragraph1": [
         "I first met the Founder and CEO of Phenomenon in 2009 when I was looking for an agency to help launch a Payday Loan company. Pheno was a small shop and I was sure that we would be one of their biggest clients, so I was excited to talk to them. But when I got Krish on the phone and explained the brief to him, he wasn&#8217;t interested.",
         "Years later, as we sat in his office on the 28th floor of the SBE building in Los Angeles, our conversation began with that rather inauspicious start."
       ],
@@ -180,31 +180,30 @@ var copy =
         "Absolutely<span>Look, we throw ourselves into everything we do. We work long hours, we scrutinize, we push. We really go all out. And to put that much effort into something, we have to believe in it. And, truthfully, the Payday Loan business had a lot of negative implications with predatory lending and all that. And it just didn&#8217;t feel like the kind of thing we could feel good about.</span>",
         "So what changed your mind?<span>The second you gave us the permission to help you create a new kind of company, one that actually helped people break the cycle of poverty and bad credit, we were in. 100%. We&#8217;re actually not very good at working with clients who want more of the same. It&#8217;s when they want to radically change their business, growth, trajectory and market share that we&#8217;re the right firm to call.</span>",
         "So you kind of self-select clients that are going to appreciate the kind of work you do.<span>Very much so.</span>"        
-      ],
+      ],*/
       "paragraph3": [
-        "You guys do a lot of different things for clients. You&#8217;re not an ad agency, but you make ads. You&#8217;re not a strategy firm, but you do strategy... how do you explain what it is you&#8217;re all about?<span>It&#8217;s always hard to define something that&#8217;s completely new and different and a departure from everything that&#8217;s come before it.</span><span>First and foremost we&#8217;re an Innovations Agency. Sometimes that innovation is an app, tool or piece of technology. Sometimes it&#8217;s a product. Sometimes it&#8217;s a radical business strategy. Sometimes it&#8217;s a new retail concept. Sometimes it&#8217;s inventing a whole new brand or category. Sometimes it&#8217;s an ad campaign. And fairly often it&#8217;s all of the above.</span>", 
-        "Right, but playing devil's advocate for a second, that's the same stuff that everyone promises. How are you any different?<span>Ah, my favorite question. So historically there are 4 types of agencies: Strategic Agencies that can analyze your business, Design Agencies that can do your graphic ID, packaging and brand guidelines, Digital Agencies that can do your websites and apps and Advertising Agencies that can do your brand campaign or retail work.</span><span>And you're right, to some degree they all claim to be able to do everything. But truthfully, they have a legacy as a specific kind of agency, and they are geared to create a certain kind of deliverable.</span>",
-        "Right. I know if I go to an Ad Agency with my problem, I'm going to get an ad campaign as the solution...",
-        "<span>Exactly! Which makes perfect sense because that&#8217;s what they&#8217;re built to make. They invest their money in people that make ads, and they need a return on that investment. They may hire a digital leader, or a proper business strategist, but that person is always going to feel a bit like a fish out of water in that kind of environment. And unfortunately, they&#8217;ll feel like a second class citizen because their work isn&#8217;t driving revenue anywhere near the level that the advertising is.</span>",
-        "<span>When a client talks to us, we don&#8217;t have any preconceived notions about what the solution will be. We always start with strategic insights and go from there. Based on the results, we may recommend a product portfolio solution, or an app/utility solution, or a user experience solution, or an integrated ad campaign. Or something completely different that&#8217;s never been done before.</span>",
-        "<span>To put it simply, everyone else is trying, very slowly, to move to the intersection of the 4 types of agencies, but we don&#8217;t need to move an inch, because we were actually born there.</span>"
+        "I&#8217;ve worked with Phenomenon for 7 years across two companies. When I was hired to transform and re-brand the country&#8217;s largest non-bank home loan company, one of my first calls was to Phenomenon.",
+        "Why did you start this company? What are you all about?",
+        "<span>We all know that the agency model is badly broken. Client interests don&#8217;t line up with agency interests and that's a recipe for disaster.</span>",
+        "<span>So we founded Phenomenon as a reaction to that.</span>",
+        "<span>Instead of the old agency model of pitching big ideas that require big budgets to produce, so that the agency can charge big fees on the production; we simply focus on solving our clients&#8217; problems in ways that make sense for them.</span>",
+        "<span>We're not an ad agency, we&#8217;re an Innovations Company.</span>",
+        "<span>Sometimes that innovation is an app, tool or piece of technology. Sometimes it&#8217;s a product. Sometimes it&#8217;s a radical business strategy. Sometimes it&#8217;s a new retail concept. Sometimes it&#8217;s inventing a whole new brand or category. Sometimes it&#8217;s an ad campaign. And fairly often it&#8217;s all of the above.</span>",
+        "I love that. So what's different about working with an Innovations Company?",
+        "<span>For starters, we&#8217;re focused on solving business problems, not just advertising problems. So everything we do starts with a business strategy, even before we look at a communications strategy.</span>",
+        "<span>And because we&#8217;re focused on the totality of a clients&#8217; business, we have to offer holistic thinking instead of silo-ed thinking. So our designers inform our strategy. Our strategy informs our design. Our UX informs our business strategy and so on.</span>"
       ],
       "paragraph4": [
-        "OK, but can you really claim to be experts in each of those categories? How are you not a jack of all trades and master of none?",
-        "<span>We've been giving it a lot of thought and we think there are two things that made this happen: our people and our organization.</span>",
-        "<span>Our people are strategists who love strategy, but hate the limits of working at a strategy firm. They're designers who love design, but feel handcuffed working at a pure design shop. They're digital leaders who don't want to be so disconnected from the brand thinking. And they're ad agency leaders who are sick and tired of being relegated to just TV, Print and Out of Home. They're all looking for innovation. And our organization gives them the ability to apply their skills in all kinds of new ways.</span>",
-        "<span>We fundamentally understand each of these disciplines and how to plug them into the agency. They aren't bolted onto the framework as an added discipline. They are a part of the gears and fabric of the agency at a very core level.</span>",
-        "How so?",
-        "<span>Well, I founded the place, and I&#8217;m a classically trained computer engineer who loves art and design and I&#8217;ve been the president of Digitas (one of the industry&#8217;s leading digital firms) and I&#8217;ve been the Global Chief Strategy Officer at DDB (one of the world&#8217;s most successful advertising agencies.) And I grew the agency&#8217;s capabilities around my own passions. Now I&#8217;ve got world-class leaders running every discipline in the agency, and I get to have amazing conversations with them all day long.</span>",
-        "OK, but can you really claim to be experts in each of those categories? How are you not a jack of all trades and master of none",
-        "<span>Well, here&#8217;s an example. We don&#8217;t do a lot of pitches, right? But this year we did three, and we won each of them. One was a strategy assignment and we beat out Profit and McKenzie. One was an Ad Agency AOR assignment and we beat out BBDO and GSDM. And the last one was a Digital Design AOR relationship and we beat out R/GA and Blast Radius. So, clearly we must be doing something right.</span>",
-        "<span>I&#8217;ve been giving it a lot of thought and I think there are two things that made this happen: our people and our organization.</span>",
+        "Right, my experience has been that truly great brands are embedded in the DNA of the company, and the only way to make that happen is to think about everything as part of the brand.",
+        '<span>Exactly. Which means our people have to be insanely good at collaboration. Not just with co-workers with different points of view and skill sets, but also with our clients and partner agencies. We don&#8217;t care who&#8217;s "right", we just want the end product to be stunning.</span>',
+        "<span>The last thing that really makes us different is our process. While traditional agencies follow a linear process, we believe in constant iteration. We have to be able to throw away good work to get to great work. And at every step of the journey, we are learning new things, so we have to be adaptable and nimble so we can incorporate those insights to make the final product something really special.</span>",
+        "Tell me a little bit more about your people. Who&#8217;s a good fit at Phenomenon?",
         "<span>Our people are strategists who love strategy, but hate the limits of working at a strategy firm. They&#8217;re designers who love design, but feel handcuffed working at a design shop. They&#8217;re digital leaders who don&#8217;t want to be so disconnected from the brand thinking. And they&#8217;re ad agency leaders who are sick and tired of being relegated to just TV, Print and Out of Home. They&#8217;re all looking for innovation. And our organization gives them the ability to apply their skills in all kinds of new ways.</span>"
-        
+
       ],
       "paragraph5": [
-        "It&#8217;s interesting that you say that your talent is looking for innovation, because as a client, that&#8217;s exactly what I&#8217;m looking for too. ",
-        "<span>Right, and when the client&#8217;s ambitions mesh with the agency&#8217;s ambitions and the ambitions of the individuals that work there, that&#8217;s when great things happen.</span>"
+        "It&#8217;s interesting that you say that your talent is looking for innovation, because as a client, that&#8217;s exactly what I&#8217;m looking for too.",
+        "<span>Exactly. And when the client&#8217;s ambitions mesh with the agency&#8217;s ambitions and the ambitions of the individuals that work there, that&#8217;s when great things happen.</span>"
       ],
       "accordion": [
         {
@@ -292,7 +291,7 @@ var copy =
           "legend": "Food / Drink",
           "headline": "thinkThin Helps Women Shed the Guilt.",
           "citeName": "By Megan Crossland",
-          "citeTitle": "Director of Marketing, thinkThin",
+          "citeTitle": "Sr. Director of Marketing, thinkThin",
           "description": "Nutritional bar targeted to women launches its first campaign using humor to rave reviews online.",
           "readmoreUrl": "#/work/think-thin"
 
@@ -308,7 +307,7 @@ var copy =
           "citeTitle": "VP Marketing, Wilson",
           "description": "For the first time a basketball is connected to your smartphone to track makes, misses and enhance performance.",
           "readmoreUrl": "#/work/wilson-x"
-        },
+        }
         /*{
           "type": "image",
           "image": true,
@@ -321,37 +320,38 @@ var copy =
           "description": "British company creates a whole new business model for payday loans that gives borrowers a better chance at getting out of debt.",
           "readmoreUrl": "#/work/sunny"          
         },*/
-        {
+        /*{
           "type": "image",
           "image": true,
           "imageUrl": require('assets/images/work-2.jpg'),
           "imageAlt": "Wilson Image 2",
           "legend": "Home / Real Estate",
-          "headline": "When Buying a House, There's No place Like Xome.",
+          "headline": "When Buying a House, There's No Place Like Xome.",
           "citeName": "By Allison Cornia",
           "citeTitle": "SVP Marketing, Xome",
           "description": "New company looks to make buying and selling a home not only more mobile, but more transparent.",
           "readmoreUrl": "#/work/xome"
 
-        }
+        }*/
       ]
     },
     "wilson-anthem": { 
-      "title": "Wilson Anthem",
+      "title": "My Wilson", 
       "className": "wilson-anthem",
       "client": "Wilson",
       "clientLogo": require('assets/images/works/clients_logo/wilson_logo.svg'),
-      "project": "Wilson Anthem",
-      "media": "Branding, Video, Digital",
+      "clientLogoWidth": "50px",
+      "project": "My Wilson",
+      "media": "TV, Digital, Social",
       "blockquote": "Wilson Equips Itself With Global Campaign.",
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
-      //"quoterAvatar": require("assets/images/about/about-avatar.png"),
+      "quoterAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson-grey.png"),
       "description": "CVU - Phenomenon - Wilson X", 
       "shareImg": require("assets/images/wilson_anthem_1_01-opt.jpg"),
       "topDescription": [
         "Even though Wilson makes sporting equipment for just about every sport in the world, it had been years since we had any sort of global brand campaign. Since this was our first campaign in a while, we needed to reestablish what Wilson was all about. Yes, we make quality, trusted equipment, but what do we stand for? What is our role in the world of sports?",
-        "<span class='red'>We worked with the strategic team at Phenomenon to land on a pivotal but simple idea; between every athlete and their equipment exists a powerful relationship</span>",
+        "<span class='red'>We worked with the strategic team at Phenomenon to land on a pivotal but simple idea; between every athlete and their equipment exists a powerful relationship.</span>",
         "Before we launched any consumer-facing branding, we asked Phenomenon to create something that could unify the Wilson team from within. What did this new face of Wilson mean? How could we as employees live this new mantra? The result was a beautifully bound brand book containing words and images that boldly and loudly defined who we are. We handed out these books to each of our employees."
       ],
       "caseWriter": {
@@ -445,12 +445,13 @@ var copy =
       "className": "wilson-x",
       "client": "Wilson",
       "clientLogo": require('assets/images/works/clients_logo/wilson_logo.svg'),
+      "clientLogoWidth": "50px",
       "project": "Wilson X",
-      "media": "Branding, Packaging, Digital",
+      "media": "TV, Digital, Packaging",
       "blockquote": "Wilson Launches<br>Futuristic Ball.",
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
-      //"quoterAvatar": require("assets/images/about/about-avatar.png"),
+      "quoterAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson-grey.png"),
       "shareImg": require("assets/images/wilson_x_1_01-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
@@ -588,6 +589,7 @@ var copy =
       "className": "sls",
       "client": "SBE",
       "clientLogo": require('assets/images/works/clients_logo/sbe.svg'),
+      "clientLogoWidth": "100px",
       "project": "SLS",
       "media": "Branding",
       "blockquote": " SLS Vegas Gives the<br> Strip a Whole New Look.",
@@ -689,20 +691,21 @@ var copy =
       "title": "Xome",
       "className": "Xome",
       "client": "Xome",
-      "clientLogo": require('assets/images/works/clients_logo/xome.svg'),
-      "project": "Xome",
-      "media": "Branding",
+      "clientLogo": require('assets/images/client_icons/icon-xome.svg'),
+      "clientLogoWidth": "100px",
+      "project": "Launch Campaign",
+      "media": "Branding, Digital",
       "blockquote": "When Buying a House,<br> There&#8217;s No Place Like Xome.",
       "quoterName": "By Allison Cornia",
       "quoterTitle": "SVP Marketing, Xome",
-      //"quoterAvatar": require("assets/images/about/about-avatar.png"),
+      "quoterAvatar": require("assets/images/client_icons/icon-xome.svg"),
       "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
-        "If you&#8217ve ever bought or sold a home, you know it&#8217s a complex, fragmented and darned unfriendly process. Believe it or not, studies have shown that buying a house is more stressful than bankruptcy, divorce or even the death of a loved one. With Xome, we not only brought homebuying into the 21st century, we introduced a radically better way to do it.",
-        "<span class='red'>The whole purpose of Xome is to help homebuyers and sellers from start to finish.</span>",
-        "Our mission is to give people more control, provide transparency and help people when they need it the most.",
-        "The whole purpose of Xome is to help homebuyers and sellers from start to finish. So we worked with Pheno to build a beautifully intuitive mobile app. In just six weeks we completed the app making it the first truly integrated way to buy and sell a home. With it, you can list a home, search for a home, make and receive offers, move into escrow and close the deal, all from the palm of your hand."
+        "If you&#8217;ve ever bought or sold a home, you know it&#8217;s a complex, fragmented and darned unfriendly process. With Xome, we wanted to create an experience that didn&#8217;t undermine one of life&#8217;s biggest moments.",
+        "<span class='red'>We found an idea that really spoke to what Xome does, it makes the entire buying/selling process more transparent.</span>",
+        "So we worked with Pheno to build a beautifully intuitive mobile app. In just six weeks we completed an app that integrated the offline and online processes of buying and selling a home. With it, you can list a home, search for a home, make and receive offers, move into escrow and close the deal, all from the palm of your hand.",
+        "Once we launched the app we needed to tell people about it. After exploring a few different directions, we found an idea that really spoke to what Xome does, it makes the entire buying/selling process more transparent. This teaser spot led people to our site where one could learn in better detail everything Xome does for the homebuyer & seller."
       ],
       "topcontent": [
         {
@@ -717,7 +720,7 @@ var copy =
       "caseWriter": {
         "name": "Allison Cornia",
         "title": "SVP Marketing, Xome",
-        "description": "Allison is a seasoned Senior Marketing Executive with over 15 years experience including over 5 years as a Director of Marketing at Microsoft."
+        "description": "Allison is a seasoned Senior Marketing Executive with over 20 years of experience including over five years as a Director of Marketing at Microsoft. A four-time homeowner, Allison is passionate about improving the experience for homebuyers and sellers."
       },
       "detailcontent": [
         {
@@ -732,10 +735,7 @@ var copy =
           "type": "image",
           "image": true,
           "imageUrl": require("assets/images/xome-comp-01-opt.jpg"),
-          "imageAlt": "Sunny",
-          "mainDescription": [
-            "<span class='red'>We fell in love with an idea that really spoke to what Xome does, it makes the entire buying/selling process more transparent.</span>"
-          ]   
+          "imageAlt": "Sunny"
         }
       ]
     },
@@ -749,7 +749,7 @@ var copy =
       "blockquote": 'It&#8217;s A &#8220;Sunny&#8221; Day<br>for Payday Loans.',
       "quoterName": "Patsy Hauer",
       "quoterTitle": "SVP Brand Marketing, Elevate",
-      //"quoterAvatar": require("assets/images/about/about-avatar.png"),
+      "quoterAvatar": require("assets/images/client_icons/icon-sunny.svg"),
       "shareImg": require("assets/images/sunny-1.png"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
@@ -797,16 +797,17 @@ var copy =
       ]
     },
     "mens-wearhouse": { 
-      "title": "Men's Wearhouse",
+      "title": "Rebrand",
       "className": "mens-wearhouse",
       "client": "Men's Wearhouse", 
       "clientLogo": require('assets/images/works/clients_logo/mens-wearhouse.svg'),
-      "project": "Men's Wearhouse",
-      "media": "Branding",
+      "clientLogoWidth": "250px",
+      "project": "Rebrand",
+      "media": "TV, Collateral",
       "blockquote": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.", 
       "quoterName": "By Matt Stringer",
       "quoterTitle": "EVP Marketing, Tailored Brands",
-      //"quoterAvatar": require("assets/images/about/about-avatar.png"), 
+      "quoterAvatar": require("assets/images/illustrations/phenomenon-matt-stringer-menswearhouse-grey.png"),
       "shareImg": require("assets/images/mens-warehouse/mw_brandbook_carousel1a.png"),
 
       "description": "CVU - Phenomenon - Wilson X",
@@ -828,9 +829,9 @@ var copy =
           "thumbTitle": "Click to play video",
           "vimeo": "164752774",
           "mainDescription": [
-            '<span class="red">The spot led two strategic initiatives. 1) Show our commitment to providing quality products, including products beyond just suits. And 2) that Men&#8217;s Wearhouse is home to a collection of brands.</span>',
+            '<span class="red">The spot led two strategic initiatives. First, to show our commitment to providing quality and style. And second, that Men&#8217;s Wearhouse is home to a collection of brands.</span>',
             'Once we established the quality and breadth of our offering, we wanted to evolve the messaging strategy from, "You&#8217;re going to like the way you look" to the more meaningful idea of, "You&#8217;re going to like the way you feel." The way we did this was by changing the focus across our brand from the pitchman to the consumer.',
-            'We launched the new direction with a Brand Book called "Go With Confidence" that detailed our new look, tone and audience. Men that might need a great look to help them achieve that extra little bit of confidence.'
+            'We launched the new direction with a Brand Book called "Go With Confidence" that detailed our new look, tone and audience; men that might need a great look to help them achieve that extra little bit of confidence.'
           ]
         }
       ],
@@ -881,7 +882,8 @@ var copy =
           "vimeo": "134437401",
           "mainDescription": [
             '<span class="red">We used Father&#8217;s Day as a way to sell the emotional side of our product by celebrating the very dads we outfit everyday.</span>',
-            "The spot was well received - there was a detectable buzz on social media and even in our offices and stores - people felt proud of what we stood for. Of course we won&#8217;t be looking to create an emotional hook every time we advertise, but when the opportunity presents itself, we realize the importance of standing for something bigger with our customers. And that&#8217;s something we can thank our partners for helping us achieve. In the end, 2015 was a very good year for the Men&#8217;s Wearhouse brand. We reported a total sales increase of 6.2% on a solid comp sales increase of 4.9%. And our brand health saw significant increases as well. Brand love is up 9%, loyalty is up 8%, and credit for quality and style is up 9%."
+            "The spot was well received. There was a detectable buzz on social media and even in our offices and stores. People felt proud of what we stood for. When the opportunity presents itself, we realize the importance of standing for something bigger with our customers. And that&#8217;s something we can thank our partners for helping us achieve.",
+            "In the end, 2015 was a very good year for the Men&#8217;s Wearhouse brand. We reported a total sales increase of 6.2% on a solid comp sales increase of 4.9%. And our brand health saw significant increases as well. Brand love is up 9%, loyalty is up 8%, and credit for quality and style is up 9%."
           ]
         }
       ]
@@ -890,13 +892,14 @@ var copy =
       "title": "Think Thin",
       "className": "think-thin",
       "client": "thinkThin", 
-      "clientLogo": require('assets/images/works/clients_logo/think-thin.svg'),
-      "project": "thinkThin",
-      "media": "Branding",
-      "blockquote": 'thinkThin&reg; Helps <br>Women Shed the Guilt.',
+      "clientLogo": require('assets/images/client_icons/icon-thinkthin.svg'),
+      "clientLogoWidth": "100px",
+      "project": "Brand Campaign",
+      "media": "TV, Digital, Social",
+      "blockquote": 'thinkThin Helps <br>Women Shed the Guilt.',
       "quoterName": "By Megan Crossland",
-      "quoterTitle": "Director of Marketing, thinkThin",
-      //"quoterAvatar": require("assets/images/about/about-avatar.png"),
+      "quoterTitle": "Sr. Director of Marketing, thinkThin",
+      "quoterAvatar": require("assets/images/illustrations/phenomenon-megan-crossland-thinkthin-grey.png"), 
       "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
@@ -921,8 +924,8 @@ var copy =
       ],
       "caseWriter": {
         "name": "Megan Crossland",
-        "title": "Director of Marketing, thinkThin",
-        "description": "Before becoming the Director of Marketing for thinkThin in 2014, Megan worked as a marketing manager for over 10 years at Nestle."
+        "title": "Sr. Director of Marketing, thinkThin",
+        "description": "Before becoming the Sr. Director of Marketing for thinkThin in 2014, Megan worked as a marketing manager for over 10 years at Nestle."
       },
       "detailcontent": [
 /*        {
@@ -1085,14 +1088,14 @@ var copy =
       {
         "projectName": "Men&#8217s Wearhouse <br>Updates Its Closet.",
         "writerName": "By Matt Stringer",
-        "writerTitle": "EVO Marketing, Men&#8217s Wearhouse",
+        "writerTitle": "EVP Marketing, Tailored Brands",
         "projectUrl": "#/work/mens-wearhouse",
         "projectThumbSrc": require("assets/images/morecases/2.png") 
       },
       {
         "projectName": "thinkThin Helps<br>Women Shed the Guilt.",
         "writerName": "By Megan Crossland",
-        "writerTitle": "Director of Marketing, thinkThin",
+        "writerTitle": "Sr. Director of Marketing, thinkThin",
         "projectUrl": "#/work/think-thin", 
         "projectThumbSrc": require("assets/images/morecases/3.png")
       },
@@ -1134,7 +1137,7 @@ var copy =
       "title": "Jobs",
       "className": "jobs",
       "description": "Phenomenon - Jobs",
-      "blockquote": "After a meeting, I wasn't sure who was from what department. Every person seemed to be involved in every aspect of what they were presenting.&#8221;",
+      "blockquote": "After the first meeting with them, I wasn't sure who was from what department. Every person seemed to be involved in every aspect of what they were presenting.&#8221;",
       "quoterName": "Allison Cornia",
       "quoterTitle": "SVP Marketing, Xome",
       "positions": "Open Positions",

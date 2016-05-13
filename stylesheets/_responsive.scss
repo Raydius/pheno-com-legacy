@@ -24,11 +24,12 @@
   }
 }
 @media (max-width: 768px) {   
-  main, .maincontent, .topnav .nav-wrapper {
+  main, .maincontent {
     padding: 0 $base_spacing - 30;
   }
   .topnav .nav-wrapper {
     margin-top: 30px;
+    padding: 0 $base_spacing - 45;
   }
   .topnav .tabs {
     margin-left: 0;
@@ -290,7 +291,7 @@
         width: 160px;
         position: relative;
         left: 50%;
-        margin-left: -70px;
+        margin-left: -80px;
       }
     }
     

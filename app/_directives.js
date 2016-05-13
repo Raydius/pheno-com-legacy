@@ -139,7 +139,10 @@ angular.module('phenoCom').directive('showmore', function() {
 
             element.bind('click', function() {
                 var name = $(this).attr('childContainer');
-                $(name).toggle();
+                
+                setTimeout(function(){ 
+                    $(name).toggle();
+                }, 1);
             })
         }
     };
@@ -209,12 +212,11 @@ angular.module('phenoCom').directive('updateTitle', ['$rootScope', '$timeout',
     function($rootScope, $timeout) {
         return {
             link: function(scope, element) {
-
+                var title = 'Default Title'
                 var listener = function(event, toState) { 
+if (toState.data && toState.data.pageTitle) title = toState.data.pageTitle;
 
-                    var title = 'Default Title';
-                    if (toState.data && toState.data.pageTitle) title = toState.data.pageTitle;
-
+                    
                     $timeout(function() {
                         element.text(title);
                     }, 0, false);

@@ -27,16 +27,18 @@
     background-color: #FFF;
     position: relative;
     min-height: 70px;
+    position: fixed;
     @media screen and (max-width: 640px) {
       min-height: 50px;
       position: fixed;
+      z-index: 99999;
     } 
     &.fixed {
       position: fixed;
       background-color: rgba(255,255,255,.95);
       z-index: 99999;
-      top: -121px;
-      animation: ttt 0.5s forwards ease-in-out;
+      top: -$fix_header_height;
+      animation: ttt 0.4s forwards ease-in-out;
       .logo-wrapper {
         float: left;
         margin-right: $base_spacing - 20;
@@ -51,11 +53,6 @@
           }
         }
       }
-    }
-    .mobile .topnav {
-      @media screen and (max-width: 640px) {
-        position: fixed;
-      } 
     }
     .logo-wrapper{
       height: 40px;
@@ -119,17 +116,18 @@
       text-align: center;
       padding: 0;
       position: relative;
-      padding: 0 5px;
       margin: 0 30px;
       //width: 135.5px;
 
-      &.selected:before{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        left: 0;
-        border-bottom: 2px solid $primary_color;
+      &.selected {
+        a:before{
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          left: 0;
+          border-bottom: 2px solid $primary_color;
+        }
       }
       
       &:first-child{
@@ -144,7 +142,7 @@
       }
 
       a{
-        padding: 20px 0 15px 0;
+        padding: 20px 5px 15px 5px;
         width: 100%;
         display: block;
         font-family: "Circular-Bold";
@@ -348,7 +346,6 @@ main.maincontent {
     padding-top: 70px;
   }
 }
-
 @keyframes test {
   0% {
     top: -120px;
@@ -362,7 +359,7 @@ main.maincontent {
 
 @keyframes ttt {
   0% {
-    top: -121px;
+    top: -$fix_header_height;
   }
   100% {
     top: 0;

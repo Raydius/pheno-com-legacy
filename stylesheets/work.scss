@@ -1,9 +1,15 @@
 .work {
 	&.work-landing {
 		.col-md-4 {
-			fieldset {
+			> fieldset {
 				max-width: 275px;
+				@media screen and (max-width: 1024px) and (min-width: 640px){ 
+					margin-top: 30px;
+				}
 			}
+		}
+		> article:nth-of-type(2) {
+			margin-top: 0;
 		}
 	}
 	a legend {
@@ -18,6 +24,13 @@
 		}
 	}
 	&.work-details {
+		.client_logo-wrapper {
+			width: 60px;
+			height: 60px;
+			background-color: #f2f2f2;
+			margin-bottom: 0;
+			margin-right: 20px;
+		}
 		.detail-wrapper {
 			@media screen and (min-width: 640px) {
 				display: block!important;
@@ -144,16 +157,24 @@
 					}
 				}
 			}
-			ul.social-icons {
+			ul.social-icons { 
 				display: none;
 				padding-left: 15px;
 				@media screen and (max-width: 640px) {
 					width: 100%;
 					margin: 10px 0 30px 0;
 				}
+				.bubble-wrapper {
+					width: 184px;
+					margin: 0 auto;
+					height: 100%;
+				}
 				li {
 					float: left;
 					margin-right: 5px;
+					@media screen and (max-width: 640px) {
+						margin-right: 11px;
+					}
 					a {
 						//border: 1px solid #ccc;
 						border-radius: 50%;
@@ -188,6 +209,9 @@
 				margin: ($base_spacing - 20) 0;
 				margin-left: - ($base_spacing - 20);
 				line-height: 40px;
+				@media screen and (max-width: 768px) {
+					margin-left: 0;
+				}
 				@media screen and (max-width: 640px) {
 					font-size: 20px;
 					line-height: 26px;
@@ -197,12 +221,16 @@
 	}
 	> article {
 		margin-top: $base_spacing;
+		&.top-main {
+			margin-top: $fix_header_height;
+			@media screen and (max-width: 640px) {
+		        margin-top: 0;
+		    }
+		}
 		p {
 			margin-top: 30px;
 		}
-		&:first-of-type {
-			margin: 0;
-		}
+		
 		&:nth-of-type(odd) {
 			.col-md-8 {
 				float: right;
@@ -242,14 +270,7 @@
 			color: $gray_font;
 			font-size: 30px;
 			margin-bottom: $base_spacing - 40;
-			+ cite {
-				span {
-					&:last-of-type {
-						font-family: "Circular-book";
-						color: darken($gray_color, 15%);
-					}
-				}
-			}
+			
 		}
 		span {
 			font-family: "Circular-bold";
@@ -269,7 +290,6 @@
 	}
 	cite {
 		margin: $base_spacing - 50 0;
-		opacity: 0.75;
 	}
 	.line {
 		width: 50px;

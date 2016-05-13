@@ -6,6 +6,7 @@
 	h3 blockquote {
 		letter-spacing: -0.5px;
 		max-width: 320px;
+		width: auto;
 		&:before {
 			left: -15px;
 		}
@@ -31,8 +32,24 @@
 	}
 	article {
 		margin-top: $base_spacing;
+		&.col-md-offset-1 {
+			@media screen and (min-width: 992px) {
+				margin-left: 60px;
+				width: 55%;
+			}
+		}
 		@media screen and (max-width: 640px) {
 			margin-top: 0;
+		}
+		&.gif {
+			img {
+				max-width: 320px;
+				margin: 0 auto;
+				@media screen and (max-width: 640px) {
+					max-width: 300px;
+				}
+			}
+
 		}
 		&.table {
 			display: table;
@@ -41,12 +58,19 @@
 				vertical-align: middle;
 				float: none;
 				height: 100%;
+				// in order to keep it center vertically
 			}
 			h3 {
 				margin-left: 30px;
 				@media screen and (max-width: 640px) {
 					margin-left: 0;
-					padding: 0 30px;
+					padding: 0 15px;
+				}
+				blockquote {
+					width: 400px;
+					@media screen and (max-width: 640px) {
+						width: auto;
+					}
 				}
 			}
 		}
@@ -266,6 +290,7 @@
 	}
 	.margin-bottom-md {
 		margin-bottom: 40px;
+		margin-top: 0;
 		@media screen and (max-width: 975px) {
 			margin-bottom: 20px;
 		} 

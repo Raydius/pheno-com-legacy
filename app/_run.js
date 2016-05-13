@@ -45,14 +45,22 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
 
     // detect state change
     $(window).on('hashchange', function(e){
-       $('html, body').hide();
-       
-       $('html, body').animate({
-                scrollTop: 0
-            }, 0, function(){
+        
+        if ( $(document).scrollTop() > 0) {
+           $('html, body').animate({
+                    scrollTop: 1
+                }, 0, function(){
 
-        });
-       $('html, body').fadeIn();
+            });
+        } else if ($(document).scrollTop() == 0) {
+           $('html, body').animate({
+                    scrollTop: 0
+                }, 0, function(){
+
+            });
+        }
+       
+       $('html, body').show();
        
     });
 
@@ -63,7 +71,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
 
     $('.featured-contributors').addClass('show');
 
-       if ($(document).scrollTop() > 121) {
+       if ($(document).scrollTop() > 0) {
         $(".desktop nav.topnav").addClass("fixed");
       } else {
         $(".desktop nav.topnav").removeClass("fixed");  

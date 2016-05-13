@@ -6,13 +6,16 @@ block variables
 
 // title and body copy
 section.row.no-padding.culture 
-	article.col-md-3.col-md-offset-1.no-padding.gif
-		img(src=require('assets/images/culture/culture.gif')) 
-	article.col-md-6.col-md-offset-1.top-main
-		h2 
-			blockquote!= pageData.blockquote
+	
+	article.col-md-12.top-main
+		article.col-md-4.no-padding.gif
+			img(src=require('assets/images/culture/phno-gif.gif')) 
 		
-		include components/cite-components
+		article.col-md-7.col-md-offset-1.no-padding
+			h2 
+				blockquote!= pageData.blockquote
+			
+			include components/cite-components
 
 	article.col-md-12.no-padding.margin-bottom-md
 		img(src=require('assets/images/culture/culture1.jpg'))
@@ -23,7 +26,7 @@ section.row.no-padding.culture
 		.col-xs-12.col-sm-12.col-md-6.col-md-offset-1
 			h3
 				blockquote
-					| I know I&#8217;m at Phenomenon when I walk past the La Brea Tar Pits and see the baby mammoth screaming in anguish as its mother is sucked into a bubbling pit of tar.&#8221;  
+					| If you plan on visiting them, pencil in an extra hour or two to sneak across the street and check out LACMA.&#8221;
 				cite
 					.wrapper
 						span
@@ -38,7 +41,7 @@ section.row.no-padding.culture
 		.col-xs-12.col-sm-12.col-md-4
 			h3
 				blockquote 
-					| Every day there&#8217;s a slew of food trucks in front of their building. I gain 5 pounds every time we have meetings there.&#8221;
+					| Every day there&#8217;s a slew of food trucks in front of their building where you can get just about everything under the sun. And sunny it usually is.&#8221;
 				cite
 					.wrapper
 						span
@@ -84,7 +87,7 @@ section.row.no-padding.culture
 		.col-xs-12.col-md-5
 			h3
 				blockquote
-					| I always know a Pheno because they&#8217;re smiling.
+					| I always know a Pheno because they&#8217;re smiling.&#8221;
 				cite
 					.wrapper
 						span
@@ -97,7 +100,7 @@ section.row.no-padding.culture
 			img(src=require('assets/images/culture/culture7.png')) 
 			h3
 				blockquote
-					| They have quite a collection of ugly mugs. Last time I was there I drank out of Mona Lisa&#8217s head.&#8221;
+					| They have quite a collection of ugly mugs. Last time I was there I drank my coffee out of Mona Lisa&#8217;s head.&#8221;
 				cite
 					.wrapper
 						span
@@ -107,11 +110,11 @@ section.row.no-padding.culture
 		.col-xs-12.col-md-7
 			h3
 				blockquote
-					| They&#8217re generally<br> a  pretty clean bunch.&#8221;
+					| Yeah, I&#8217;d say they&#8217;re generally<br> a pretty clean bunch.&#8221;
 				cite
 					.wrapper
 						span
-							| Carl Mackey
+							| Carl
 						span
 							| Building Custodian
 						

@@ -95,6 +95,9 @@
 }
 .icon-right-arrow:before {
     content: "\e902";
+    position: relative;
+    //left: 0;
+
 }
 .icon-linkedin:before {
     content: "\e900";
