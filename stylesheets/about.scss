@@ -168,11 +168,11 @@
 	    height: 0;
 	    position: relative;
 	    z-index: 10;
-	    -webkit-transition: height 0.2s ease-in; 
-	    -moz-transition: height 0.2s ease-in;
-	    -o-transition: height 0.2s ease-in;
-	    -ms-transition: height 0.2s ease-in;
-	    transition: height 0.2s ease-in;
+	    -webkit-transition: height 0.3s ease-in-out; 
+	    -moz-transition: height 0.3s ease-in-out;
+	    -o-transition: height 0.3s ease-in-out;
+	    -ms-transition: height 0.3s ease-in-out;
+	    transition: height 0.3s ease-in-out;
 	}
 
 	.ac-container article p {
