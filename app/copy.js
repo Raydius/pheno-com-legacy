@@ -1153,11 +1153,11 @@ var copy =
           "listingUrl": "https://www.linkedin.com/jobs2/view/85312460"
         },
         {
-          "listingTitle": "Digital Brand Manager (Digital Account Executive)",
+          "listingTitle": "Digital Brand Manager",
           "listingUrl": "https://www.linkedin.com/jobs2/view/125942963"
         },
         {
-          "listingTitle": "Brand Manager/Account Executive",
+          "listingTitle": "Brand Manager",
           "listingUrl": "https://www.linkedin.com/jobs2/view/111550639"
         },
       ],
