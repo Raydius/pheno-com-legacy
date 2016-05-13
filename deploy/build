@@ -30,9 +30,9 @@ case $i in
     shift
     ;;
 
-    # local build for origin/master to www.phenomenon.com
+    # local build for origin/master to phenomenon.com
     pub)
-    export OUTPUT_HOST="http://www.phenomenon.com"
+    export OUTPUT_HOST="http://phenomenon.com"
     export OUTPUT_PORT=80
     export OUTPUT_DIR="html"
     export NODE_ENV="production"
