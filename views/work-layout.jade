@@ -1,0 +1,34 @@
+- var copy = require('app/copy.js')
+- var page = htmlWebpackPlugin.options.pageSlug
+- var currentProjectIndex = htmlWebpackPlugin.options.currentProjectIndex
+
+doctype html
+html(xmlns:ng="http://angularjs.org/" ng-app='phenoCom')
+	head
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+
+		base(href='#{htmlWebpackPlugin.options.ogUrl}')
+
+		meta(property="og:url", content="#{htmlWebpackPlugin.options.ogUrl}")
+		meta(property="og:type" content="website")
+		meta(property="og:title" content="")
+		meta(property="og:description" content="#{htmlWebpackPlugin.options.ogDescription}")
+		meta(property="og:image" content="")
+
+		title #{htmlWebpackPlugin.options.title}
+		include favicon
+
+	body(class=bodyClass)
+
+		.body-wrapper
+			include components/work-top-nav
+
+			main.maincontent
+				.main-wrapper
+					.component
+						include components/content-template
+					span
+					include components/footer
+		.drawer
+			include components/side-nav
+
