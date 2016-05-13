@@ -183,7 +183,6 @@
  */
  .owl-nav {
   margin-top: 10px;
-  text-align: center;
   -webkit-tap-highlight-color: transparent; 
  }
    .owl-nav [class*='owl-'] {
@@ -205,6 +204,32 @@
   .desktop .owl-nav [class*='owl-'] button {
     bottom: 10px;
     position: absolute;
+    @media screen and (max-width: 640px) {
+      bottom: 0;
+    }
+    &.icon-left-arrow {
+      left: 30%;
+      @media screen and (max-width: 640px) {
+        left: 30px;
+      } 
+      &:before {
+        position: absolute;
+        left: 0;
+      }
+    }
+   
+    &.icon-right-arrow {
+      right: 30%;
+
+      @media screen and (max-width: 640px) {
+        right: 30px;
+      }
+      
+      &:before {
+        position: absolute;
+        right: 0;
+      }
+    }
   }
 
     .owl-nav [class*='owl-']:hover {
@@ -320,9 +345,11 @@
   padding: 10px 0 60px 0;
 }
  */
+// fix backface bug showing on loop carousel overlapping issue
 .owl-carousel .owl-item img, .owl-carousel .owl-item p, .owl-carousel .owl-item span, .owl-carousel .owl-item a {
   -webkit-backface-visibility: hidden;
 }
+
 .work .more-case-wrapper .owl-item .col-md-4 {
 	padding: 0 10px;
 }
