@@ -541,7 +541,8 @@ var copy =
           ],
           "mainDescription": [
             "<span class='red'>This was a bold new step for us because suddenly a mobile app was an aspect of what we were selling. The app needed to be as good as the ball itself.</span>",
-            "With the campaign, we wanted to communicate how revolutionary the Wilson X Connected Basketball is and at the same time show how it can help young athletes become better shooters from anywhere. Street to gym. Practice to playground."
+            "With the campaign, we wanted to communicate how revolutionary the Wilson X Connected Basketball is and at the same time show how it can help young athletes become better shooters from anywhere. Street to gym. Practice to playground.",
+            "The results: We sold out on Amazon in just two weeks and Wilson X will be in retail stores all over the country this Spring."
           ]
         },
         /*{
@@ -559,10 +560,7 @@ var copy =
           "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
           "thumbAlt": "Wilson X - TV Spot - All Day",
           "thumbTitle": "Click to play video",
-          "vimeo": "155010839",
-          "mainDescription": [
-            "The results: We sold out on Amazon in just two weeks and Wilson X will be in retail stores all over the country this Spring."
-          ]
+          "vimeo": "155010839"
         },
         {
           "video": true,
