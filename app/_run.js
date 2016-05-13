@@ -45,13 +45,21 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
 
     // detect state change
     $(window).on('hashchange', function(e){
-       $('html, body').hide();
-       
-       $('html, body').animate({
-                scrollTop: 1
-            }, 1, function(){
+        
+        if ( $(document).scrollTop() > 0) {
+           $('html, body').animate({
+                    scrollTop: 1
+                }, 0, function(){
 
-        });
+            });
+        } else if ($(document).scrollTop() == 0) {
+           $('html, body').animate({
+                    scrollTop: 0
+                }, 0, function(){
+
+            });
+        }
+       
        $('html, body').show();
        
     });

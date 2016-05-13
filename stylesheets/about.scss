@@ -204,6 +204,9 @@
 
 	.ac-container input:checked ~ article.ac-small {
 	    height: 100px;
+	    @media screen and (max-width: 360px) {
+			height: 120px;
+		}
 	}
 
 	.ac-container input:checked ~ article.ac-medium {
