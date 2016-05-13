@@ -19,7 +19,9 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
             $('body').addClass('desktop');
         }   
        
-
+        if(window.innerHeight < window.innerWidth){
+            $('body, html').removeClass('opend');
+        }
         
     });
 
