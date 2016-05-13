@@ -1077,7 +1077,7 @@ var copy =
     },
     "moreCases": [
       {
-        "projectName": "Wilson Equips Itself With Global Campaign",
+        "projectName": "Wilson Equips Itself With Global Campaign.",
         "writerName": "By Amy Weisenback",
         "writerTitle": "VP Marketing, Wilson",
         "projectUrl": "#/work/wilson-anthem",
