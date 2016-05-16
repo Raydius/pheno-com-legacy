@@ -440,7 +440,7 @@ var copy =
         }
       ]
     },
-    "wilsonX": { 
+    "wilson-x": {  
       "title": "Wilson X",
       "className": "wilson-x",
       "client": "Wilson",
