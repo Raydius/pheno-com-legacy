@@ -1,4 +1,5 @@
 - var copy = require('app/copy.js')
+- var copyObject = copy.content[htmlWebpackPlugin.options.pageSlug]
 - var page = htmlWebpackPlugin.options.pageSlug
 - var currentProjectIndex = htmlWebpackPlugin.options.currentProjectIndex
 
@@ -7,13 +8,13 @@ html(xmlns:ng="http://angularjs.org/" ng-app='phenoCom')
 	head
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 
-		base(href='#{htmlWebpackPlugin.options.ogUrl}')
+		base(href='/work/#{page}/')
 
-		meta(property="og:url", content="#{htmlWebpackPlugin.options.ogUrl}")
+		meta(property="og:url", content="/work/#{page}/")
 		meta(property="og:type" content="website")
-		meta(property="og:title" content="")
-		meta(property="og:description" content="#{htmlWebpackPlugin.options.ogDescription}")
-		meta(property="og:image" content="")
+		meta(property="og:title" content="#{htmlWebpackPlugin.options.title}")
+		meta(property="og:description" content="#{copyObject.blockquote}")
+		meta(property="og:image" content="#{copyObject.shareImg}")
 
 		// Google Analytics
 		script.
@@ -47,5 +48,5 @@ html(xmlns:ng="http://angularjs.org/" ng-app='phenoCom')
 					span
 					include components/footer
 		.drawer
-			include components/side-nav
+			include components/work-side-nav
 

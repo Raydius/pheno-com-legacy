@@ -268,7 +268,7 @@ var copy =
           "citeName": "By Amy Weisenbach",
           "citeTitle": "VP Marketing, Wilson",
           "description": "New 360-degree global campaign for 100-year-old company.",
-          "readmoreUrl": "#/work/wilson-anthem"
+          "readmoreUrl": "/work/wilson-anthem/"
         },
         {
           "type": "image",
@@ -280,7 +280,7 @@ var copy =
           "citeName": "By Matt Stringer",
           "citeTitle": "EVP Marketing, Tailored Brands",
           "description": "After the departure of longtime owner and face of brand, company looks to modernize all the way down to the cufflinks.",
-          "readmoreUrl": "#/work/mens-wearhouse"
+          "readmoreUrl": "/work/mens-wearhouse/"
 
         },
         {
@@ -293,7 +293,7 @@ var copy =
           "citeName": "By Megan Crossland",
           "citeTitle": "Sr. Director of Marketing, thinkThin",
           "description": "Nutritional bar targeted to women launches its first campaign using humor to rave reviews online.",
-          "readmoreUrl": "#/work/think-thin"
+          "readmoreUrl": "/work/think-thin/"
 
         },
         {
@@ -306,7 +306,7 @@ var copy =
           "citeName": "By Amy Weisenbach",
           "citeTitle": "VP Marketing, Wilson",
           "description": "For the first time a basketball is connected to your smartphone to track makes, misses and enhance performance.",
-          "readmoreUrl": "#/work/wilson-x"
+          "readmoreUrl": "/work/wilson-x/"
         }
         /*{
           "type": "image",
@@ -347,7 +347,7 @@ var copy =
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
       "quoterAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson-grey.png"),
-      "description": "CVU - Phenomenon - Wilson X", 
+      "description": "CVU - Phenomenon - Wilson X",
       "shareImg": require("assets/images/wilson_anthem_1_01-opt.jpg"),
       "topDescription": [
         "Even though Wilson makes sporting equipment for just about every sport in the world, it had been years since we had any sort of global brand campaign. Since this was our first campaign in a while, we needed to reestablish what Wilson was all about. Yes, we make quality, trusted equipment, but what do we stand for? What is our role in the world of sports?",
@@ -440,7 +440,7 @@ var copy =
         }
       ]
     },
-    "wilsonX": { 
+    "wilson-x": { 
       "title": "Wilson X",
       "className": "wilson-x",
       "client": "Wilson",
@@ -897,7 +897,7 @@ var copy =
       "blockquote": 'thinkThin Helps <br>Women Shed the Guilt.',
       "quoterName": "By Megan Crossland",
       "quoterTitle": "Sr. Director of Marketing, thinkThin",
-      "quoterAvatar": require("assets/images/illustrations/phenomenon-megan-crossland-thinkthin-grey.png"), 
+      "quoterAvatar": require("assets/images/illustrations/phenomenon-megan-crossland-thinkthin-grey.png"),
       "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [

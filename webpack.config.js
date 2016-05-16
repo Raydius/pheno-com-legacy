@@ -105,17 +105,45 @@ module.exports = {
             googleAnalytics: gaConfig
         }),
 
+        // Wilson Anthem landing page
         new HtmlWebpackPlugin({
             excludeChunks: ['app'],
             template: 'views/work-layout.jade',
             filename: 'work/wilson-anthem/index.html',
             title: 'PHENOMENON - Wilson Anthem case study',
             pageSlug: "wilson-anthem",
-            currentProjectIndex: 0,
-            ogUrl: "/work/wilson-anthem/",
-            ogDescription: "test"
-        })
+            currentProjectIndex: 0
+        }),
 
+        // Men's Wearhouse landing page
+        new HtmlWebpackPlugin({
+            excludeChunks: ['app'],
+            template: 'views/work-layout.jade',
+            filename: 'work/mens-wearhouse/index.html',
+            title: 'PHENOMENON - Men\'s Wearhouse case study',
+            pageSlug: "mens-wearhouse",
+            currentProjectIndex: 1
+        }),
+
+        // Think Thin landing page
+        new HtmlWebpackPlugin({
+            excludeChunks: ['app'],
+            template: 'views/work-layout.jade',
+            filename: 'work/think-thin/index.html',
+            title: 'PHENOMENON - Think Thin case study',
+            pageSlug: "think-thin",
+            currentProjectIndex: 2
+        }),
+
+        // WilsonX landing page
+        new HtmlWebpackPlugin({
+            excludeChunks: ['app'],
+            template: 'views/work-layout.jade',
+            filename: 'work/wilson-x/index.html',
+            title: 'PHENOMENON - Wilson X case study',
+            pageSlug: "wilsonX",
+            currentProjectIndex: 3
+        }),
     ],
     module: {
         noParse: [
