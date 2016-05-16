@@ -86,6 +86,12 @@
 		// for put this part at the end part for mobile
 		.col-md-7 {
 			float: right;
+			p {
+				@media screen and (max-width: 640px) {
+					padding: 0 30px;
+
+				}
+			}
 		}
 		.col-md-5 {
 			float: left;
@@ -156,6 +162,7 @@
 		padding-bottom: 20px;
 		&:last-of-type {
 			border-bottom: 0;
+			margin-bottom: 0;
 		}
 	}
 	.ac-container input {
@@ -165,14 +172,14 @@
 	.ac-container article {
 	    margin-top: -1px;
 	    overflow: hidden;
-	    height: 0;
+	    max-height: 0;
 	    position: relative;
 	    z-index: 10;
-	    -webkit-transition: height 0.2s ease-in; 
-	    -moz-transition: height 0.2s ease-in;
-	    -o-transition: height 0.2s ease-in;
-	    -ms-transition: height 0.2s ease-in;
-	    transition: height 0.2s ease-in;
+	    -webkit-transition: max-height 0.5s ease-out; 
+	    -moz-transition: max-height 0.5s ease-out;
+	    -o-transition: max-height 0.5s ease-out;
+	    -ms-transition: max-height 0.5s ease-out;
+	    transition: max-height 0.5s ease-out; 
 	}
 
 	.ac-container article p {
@@ -184,37 +191,21 @@
 		&:last-of-type {
 			margin-bottom: 0;
 			width: 90%;
-			@media screen and (max-width: 768px) {
-				width: 100%;
-			}
-			@media screen and (max-width: 1150px) and (min-width: 768px) {
-				font-size: 12px;
-			}
 		}
 	}
 
 	.ac-container input:checked ~ article {
-	    -webkit-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-	    -moz-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-	    -o-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-	    -ms-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-	    transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+	    -webkit-transition: max-height 0.8s ease-out;
+	    -moz-transition: max-height 0.8s ease-out;
+	    -o-transition: max-height 0.8s ease-out;
+	    -ms-transition: max-height 0.8s ease-out;
+	    transition: max-height 0.8s ease-out;
 	}
 
 	.ac-container input:checked ~ article.ac-small {
-	    height: 100px;
-	    @media screen and (max-width: 360px) {
-			height: 120px;
-		}
+	    max-height: 300px;
 	}
 
-	.ac-container input:checked ~ article.ac-medium {
-	    height: 100px;
-	}
-
-	.ac-container input:checked ~ article.ac-large {
-	    height: 230px;
-	}
 	.folders {
 		margin-top: $base-spacing;
 		img {

@@ -118,21 +118,21 @@ var copy =
           "jobTitle": "VP Marketing, Wilson",
           "project": "Wilson Launches<br> Futuristic Ball.",
           "contributorAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson.png"),
-          "href": "#/work/wilson-x"
+          "href": "/work/wilson-x"
         },
         {
           "name": "Matt Stringer",
           "jobTitle": "EVP Marketing, Tailored Brands",
           "project": "Men&#8217s Wearhouse<br> Updates Its Wardrobe.",
           "contributorAvatar": require("assets/images/illustrations/phenomenon-matt-stringer-menswearhouse.png"),
-          "href": "#/work/mens-wearhouse"
+          "href": "/work/mens-wearhouse"
         },
         {
           "name": "Megan Crossland",
           "jobTitle": "Sr. Director of Marketing, thinkThin",
           "project": "thinkThin Helps<br> Women Shed the Guilt.",
           "contributorAvatar": require("assets/images/illustrations/phenomenon-megan-crossland-thinkthin.png"),
-          "href": "#/work/think-thin"
+          "href": "/work/think-thin"
         },
       ],
       "contributorsMore": [
@@ -141,21 +141,21 @@ var copy =
           "jobTitle": "SVP Marketing, Xome",
           "project": "When Buying a House, There&#8217s No Place Like Xome.",
           "contributorAvatar": require("assets/images/home/avatar-2.png"),
-          "href": "#/work/xome"
+          "href": "/work/xome"
         },*/
         /*{
           "name": "Pasty Hauer",
           "jobTitle": "VP Brand Marketing, Sunny",
           "project": "It&#8217;s A &#8220;Sunny&#8221; Day for Payday Loans.",
           "contributorAvatar": require("assets/images/home/avatar-4.png"),
-          "href": "#/work/sunny"
+          "href": "/work/sunny"
         },*/
         /*{
           "name": "Amy Weisenbach",
           "jobTitle": "VP Marketing, Wilson",
           "project": "Wilson Launches<br> Futuristic Ball.",
           "contributorAvatar": require("assets/images/home/avatar-7.png"),
-          "href": "#/work/wilson-x"
+          "href": "/work/wilson-x"
         }*/
       ]
     },
@@ -268,7 +268,7 @@ var copy =
           "citeName": "By Amy Weisenbach",
           "citeTitle": "VP Marketing, Wilson",
           "description": "New 360-degree global campaign for 100-year-old company.",
-          "readmoreUrl": "/work/wilson-anthem/"
+          "readmoreUrl": "/work/wilson-anthem"
         },
         {
           "type": "image",
@@ -280,7 +280,7 @@ var copy =
           "citeName": "By Matt Stringer",
           "citeTitle": "EVP Marketing, Tailored Brands",
           "description": "After the departure of longtime owner and face of brand, company looks to modernize all the way down to the cufflinks.",
-          "readmoreUrl": "/work/mens-wearhouse/"
+          "readmoreUrl": "/work/mens-wearhouse"
 
         },
         {
@@ -293,7 +293,7 @@ var copy =
           "citeName": "By Megan Crossland",
           "citeTitle": "Sr. Director of Marketing, thinkThin",
           "description": "Nutritional bar targeted to women launches its first campaign using humor to rave reviews online.",
-          "readmoreUrl": "/work/think-thin/"
+          "readmoreUrl": "/work/think-thin"
 
         },
         {
@@ -306,7 +306,7 @@ var copy =
           "citeName": "By Amy Weisenbach",
           "citeTitle": "VP Marketing, Wilson",
           "description": "For the first time a basketball is connected to your smartphone to track makes, misses and enhance performance.",
-          "readmoreUrl": "/work/wilson-x/"
+          "readmoreUrl": "/work/wilson-x"
         }
         /*{
           "type": "image",
@@ -318,7 +318,7 @@ var copy =
           "citeName": "By Patsy Hauer",
           "citeTitle": "VP Brand Marketing, Sunny",
           "description": "British company creates a whole new business model for payday loans that gives borrowers a better chance at getting out of debt.",
-          "readmoreUrl": "#/work/sunny"          
+          "readmoreUrl": "/work/sunny"          
         },*/
         /*{
           "type": "image",
@@ -330,7 +330,7 @@ var copy =
           "citeName": "By Allison Cornia",
           "citeTitle": "SVP Marketing, Xome",
           "description": "New company looks to make buying and selling a home not only more mobile, but more transparent.",
-          "readmoreUrl": "#/work/xome"
+          "readmoreUrl": "/work/xome"
 
         }*/
       ]
@@ -347,7 +347,7 @@ var copy =
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
       "quoterAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson-grey.png"),
-      "description": "CVU - Phenomenon - Wilson X",
+      "description": "CVU - Phenomenon - Wilson X", 
       "shareImg": require("assets/images/wilson_anthem_1_01-opt.jpg"),
       "topDescription": [
         "Even though Wilson makes sporting equipment for just about every sport in the world, it had been years since we had any sort of global brand campaign. Since this was our first campaign in a while, we needed to reestablish what Wilson was all about. Yes, we make quality, trusted equipment, but what do we stand for? What is our role in the world of sports?",
@@ -414,8 +414,8 @@ var copy =
           ]
         },
         {
-          "type": "image",
-          "image": true,
+          "type": "scrollingSite", 
+          "scrollingSite": true,
           "imageUrl": require("assets/images/Wilson-Anthem-LandingPage_02c.jpg"),
           "imageAlt": "SLS",
           "mainDescription": [
@@ -440,7 +440,7 @@ var copy =
         }
       ]
     },
-    "wilson-x": { 
+    "wilson-x": {  
       "title": "Wilson X",
       "className": "wilson-x",
       "client": "Wilson",
@@ -897,7 +897,7 @@ var copy =
       "blockquote": 'thinkThin Helps <br>Women Shed the Guilt.',
       "quoterName": "By Megan Crossland",
       "quoterTitle": "Sr. Director of Marketing, thinkThin",
-      "quoterAvatar": require("assets/images/illustrations/phenomenon-megan-crossland-thinkthin-grey.png"),
+      "quoterAvatar": require("assets/images/illustrations/phenomenon-megan-crossland-thinkthin-grey.png"), 
       "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
@@ -1077,45 +1077,45 @@ var copy =
     },
     "moreCases": [
       {
-        "projectName": "Wilson Equips Itself With Global Campaign",
+        "projectName": "Wilson Equips Itself With Global Campaign.",
         "writerName": "By Amy Weisenback",
         "writerTitle": "VP Marketing, Wilson",
-        "projectUrl": "#/work/wilson-anthem",
+        "projectUrl": "/work/wilson-anthem",
         "projectThumbSrc": require("assets/images/morecases/1.jpg") 
       },
       {
         "projectName": "Men&#8217s Wearhouse <br>Updates Its Closet.",
         "writerName": "By Matt Stringer",
         "writerTitle": "EVP Marketing, Tailored Brands",
-        "projectUrl": "#/work/mens-wearhouse",
+        "projectUrl": "/work/mens-wearhouse",
         "projectThumbSrc": require("assets/images/morecases/2.png") 
       },
       {
         "projectName": "thinkThin Helps<br>Women Shed the Guilt.",
         "writerName": "By Megan Crossland",
         "writerTitle": "Sr. Director of Marketing, thinkThin",
-        "projectUrl": "#/work/think-thin", 
+        "projectUrl": "/work/think-thin", 
         "projectThumbSrc": require("assets/images/morecases/3.png")
       },
       {
         "projectName": "Wilson Launches<br>Futuristic Ball.",
         "writerName": "By Amy Weisenbach",
         "writerTitle": "VP Marketing, Wilson",
-        "projectUrl": "#/work/wilson-x",
+        "projectUrl": "/work/wilson-x",
         "projectThumbSrc": require("assets/images/morecases/4.png")
       }/*,
       {
         "projectName": "It's a Sunny Day for Payday Loans.",
         "writerName": "By Patsy Hauer",
         "writerTitle": "VP Brand Marketing, Sunny",
-        "projectUrl": "#/work/sunny",  
+        "projectUrl": "/work/sunny",  
         "projectThumbSrc": require("assets/images/morecases/5.jpg")
       },
       {
         "projectName": "When Buying a House, There's No Place Like Xome",
         "writerName": "By Alison Cornia",
         "writerTitle": "SVP Marketing, Xome",
-        "projectUrl": "#/work/xome", 
+        "projectUrl": "/work/xome", 
         "projectThumbSrc": require("assets/images/morecases/6.jpg")
       }*/
     ],
