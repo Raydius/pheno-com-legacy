@@ -64,6 +64,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         .state('work/wilson-anthem', {
             url: '/work/wilson-anthem',
             template: templateWorkAnthem, 
+            controller: 'workController',
             data: {
                 pageTitle: 'phenomenon - Innovations Company | Work - Wilson',
                 pageShareImg: require('assets/images/work-1.jpg')                

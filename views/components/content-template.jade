@@ -24,6 +24,7 @@ section.row.no-padding.work.work-details
 				fieldset
 					.detail-wrapper
 						if pageData.clientLogoWidth 
+							// need to specify logo width in copy.js otherwise it may be too large
 							img.clientlogo(src= pageData.clientLogo style="width:" + pageData.clientLogoWidth)
 						fieldset 
 							legend Client
@@ -81,7 +82,7 @@ section.row.no-padding.work.work-details
 						.col-xs-12.no-padding
 							img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
 			if contentItem.scrollingSite
-				article.col-md-12.no-padding.tet(sticky offset="80") 
+				article#scrollingSite.col-md-12.no-padding.tet
 					section.image-component.component.row.no-padding
 						.col-xs-12.no-padding
 							img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
