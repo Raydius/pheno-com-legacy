@@ -42,7 +42,7 @@ angular.module('phenoCom').controller('phenoController', function($state, $scope
 
 });
 
-angular.module('phenoCom').controller('homeController', function($state, $scope) {
+angular.module('phenoCom').controller('homeController', function($state, $scope, $window) {
     
     // adjust homepage headline height to be fullscreen all the time
 
