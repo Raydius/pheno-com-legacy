@@ -24,6 +24,7 @@ angular.module('phenoCom',[
 
 
 require('./_config');
+require('./_routes');
 require('./_run');
 require('./_controllers');
 require('./_directives');
