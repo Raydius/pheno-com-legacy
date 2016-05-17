@@ -141,7 +141,7 @@ module.exports = {
             template: 'views/work-layout.jade',
             filename: 'work/wilson-x/index.html',
             title: 'PHENOMENON - Wilson X case study',
-            pageSlug: "wilsonX",
+            pageSlug: "wilson-x",
             currentProjectIndex: 3
         }),
     ],
