@@ -86,6 +86,12 @@
 		// for put this part at the end part for mobile
 		.col-md-7 {
 			float: right;
+			p {
+				@media screen and (max-width: 640px) {
+					padding: 0 30px;
+
+				}
+			}
 		}
 		.col-md-5 {
 			float: left;

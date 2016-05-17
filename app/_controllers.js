@@ -42,13 +42,23 @@ angular.module('phenoCom').controller('phenoController', function($state, $scope
 
 });
 
-angular.module('phenoCom').controller('homeController', function($state, $scope) {
+angular.module('phenoCom').controller('homeController', function($state, $scope, $window) {
+    
+    // adjust homepage headline height to be fullscreen all the time
 
-    $('.top-main').css('height', $(window).height() - 121); 
+    var $topSection = $('.top-main');
+    var $nav = $('.topnav');
+
+    $topSection.css('height', $(window).height() - $nav.height()); 
+    
+    angular.element($window).bind('resize',function(){
+        $topSection.css('height', $(window).height() - $nav.height());
+    })
 
 });
 
 angular.module('phenoCom').controller('aboutController', function($state, $scope) {
+    
     /*var options = {
         'offset_top': 121,
     }
@@ -66,6 +76,13 @@ angular.module('phenoCom').controller('aboutController', function($state, $scope
     })*/
 });
 
+angular.module('phenoCom').controller('workController', function($state, $scope) {
+    /*var options = {
+        'offset_top': 121,
+    }
+
+    $('#scrollingSite').stick_in_parent(options); */
+});
 
 angular.module('phenoCom').controller('contactController', function($scope, $state, $http) {
 

@@ -85,7 +85,7 @@ angular.module('phenoCom').directive('scrolltotop', function() {
             })
         }
     };
-  });
+});
 
 angular.module('phenoCom').directive('scrolltop2', function() {
     return {

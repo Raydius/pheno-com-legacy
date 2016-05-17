@@ -55,6 +55,7 @@ module.exports = {
     entry: {
         // entry point for main application
         app: './app/phenomenon.js',
+        appWork: './app/phenomenon_work.js',
 
         // entry point for stylesheets
         style: './stylesheets/style.scss',
@@ -66,7 +67,6 @@ module.exports = {
         filename: '[name]-bundle.min.js',
         path: path.resolve(__dirname, output_dir),
         publicPath: publicPath,
-        //publicPath: debug ? host+':'+port+'/' : path.resolve(__dirname, '/'),
         libraryTarget: "umd"
     },
     plugins: [
@@ -98,11 +98,52 @@ module.exports = {
 
         // generate index.html as public entry point
         new HtmlWebpackPlugin({
+            excludeChunks: ['appWork'],
             template: 'views/index.jade',
             filename: 'index.html',
             title: 'PHENOMENON - Innovations Agency | Marketing, UX, Digital, Cultural Innovation',
             googleAnalytics: gaConfig
-        })
+        }),
+
+        // Wilson Anthem landing page
+        new HtmlWebpackPlugin({
+            excludeChunks: ['app'],
+            template: 'views/work-layout.jade',
+            filename: 'work/wilson-anthem/index.html',
+            title: 'PHENOMENON - Wilson Anthem case study',
+            pageSlug: "wilson-anthem",
+            currentProjectIndex: 0
+        }),
+
+        // Men's Wearhouse landing page
+        new HtmlWebpackPlugin({
+            excludeChunks: ['app'],
+            template: 'views/work-layout.jade',
+            filename: 'work/mens-wearhouse/index.html',
+            title: 'PHENOMENON - Men\'s Wearhouse case study',
+            pageSlug: "mens-wearhouse",
+            currentProjectIndex: 1
+        }),
+
+        // Think Thin landing page
+        new HtmlWebpackPlugin({
+            excludeChunks: ['app'],
+            template: 'views/work-layout.jade',
+            filename: 'work/think-thin/index.html',
+            title: 'PHENOMENON - Think Thin case study',
+            pageSlug: "think-thin",
+            currentProjectIndex: 2
+        }),
+
+        // WilsonX landing page
+        new HtmlWebpackPlugin({
+            excludeChunks: ['app'],
+            template: 'views/work-layout.jade',
+            filename: 'work/wilson-x/index.html',
+            title: 'PHENOMENON - Wilson X case study',
+            pageSlug: "wilson-x",
+            currentProjectIndex: 3
+        }),
     ],
     module: {
         noParse: [

@@ -16,7 +16,7 @@ html, body {
   }
 }
 body {
-	display: none;
+	//display: none;
 
 	&.opend {
 		overflow: hidden;
@@ -260,6 +260,7 @@ h3 blockquote {
 	.icon-right-arrow {
 		display: inline-block;
 		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
 		font-size: 24px;  
 		margin-bottom: 15px;
 		color: #ccc;
