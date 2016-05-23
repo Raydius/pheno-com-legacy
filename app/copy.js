@@ -1160,6 +1160,10 @@ var copy =
           "listingTitle": "Brand Manager",
           "listingUrl": "https://www.linkedin.com/jobs2/view/111550639"
         },
+        {
+          "listingTitle": "Senior Brand Strategist",
+          "listingUrl": "https://www.linkedin.com/jobs2/view/134226006"
+        }
       ],
       "details": [
         "Buying or selling a home is often a complex, fragmented and darned unfriendly process. Xome is a radically better way to do it because it lets you complete everything from the convenience of an app. In just six weeks we built Xome: the first truly integrated way to buy and sell a home. The app lets you list your home, search for a home, make and receive offers, move into escrow and close the deal.",
