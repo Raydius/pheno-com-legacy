@@ -1204,7 +1204,7 @@ var copy =
         {
           "cat": "New Business",
           "description": "Pheno works mostly by referral. Mostly. Not exclusively.",
-          "email": "info@phenomenon.com"
+          "email": "newbiz@phenomenon.com"
         }
       ]
     },
