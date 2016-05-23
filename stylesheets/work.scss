@@ -46,8 +46,14 @@
 		.case-writer {
 			border-top: 1px solid #ccc;
 			padding-top: $base_spacing/2;
+			> span {
+				margin-bottom: 20px;
+				display: block;
+				font-size: 18px;
+			}
 			> span > span:first-of-type {
 				font-family: "Circular-Bold";
+
 			}
 			@media screen and (max-width: 640px) {
 				padding: 30px 30px 0 30px;
