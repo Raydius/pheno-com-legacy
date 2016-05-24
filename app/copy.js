@@ -348,7 +348,7 @@ var copy =
       "quoterTitle": "VP Marketing, Wilson",
       "quoterAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson-grey.png"),
       "description": "CVU - Phenomenon - Wilson X", 
-      "shareImg": require("assets/images/wilson_anthem_1_01-opt.jpg"),
+      "shareImg": require("assets/images/work-1.jpg"),
       "topDescription": [
         "Even though Wilson makes sporting equipment for just about every sport in the world, it had been years since we had any sort of global brand campaign. Since this was our first campaign in a while, we needed to reestablish what Wilson was all about. Yes, we make quality, trusted equipment, but what do we stand for? What is our role in the world of sports?",
         "<span class='red'>We worked with the strategic team at Phenomenon to land on a pivotal but simple idea; between every athlete and their equipment exists a powerful relationship.</span>",
@@ -452,7 +452,7 @@ var copy =
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
       "quoterAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson-grey.png"),
-      "shareImg": require("assets/images/wilson_x_1_01-opt.jpg"),
+      "shareImg": require("assets/images/work-4.jpg"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
         "With over 100 years of experience making sports equipment, we&#8217ve been at the forefront of nearly every major technology advancement in just about every sport. So it only made sense to pioneer the use of sensors and IOT technology inside our equipment with the Wilson X Connected Basketball.",
@@ -697,7 +697,7 @@ var copy =
       "quoterName": "By Allison Cornia",
       "quoterTitle": "SVP Marketing, Xome",
       "quoterAvatar": require("assets/images/client_icons/icon-xome.svg"),
-      "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
+      "shareImg": require("assets/images/work-2.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "If you&#8217;ve ever bought or sold a home, you know it&#8217;s a complex, fragmented and darned unfriendly process. With Xome, we wanted to create an experience that didn&#8217;t undermine one of life&#8217;s biggest moments.",
@@ -748,7 +748,7 @@ var copy =
       "quoterName": "Patsy Hauer",
       "quoterTitle": "SVP Brand Marketing, Elevate",
       "quoterAvatar": require("assets/images/client_icons/icon-sunny.svg"),
-      "shareImg": require("assets/images/sunny-1.png"),
+      "shareImg": require("assets/images/work-5.png"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "In the UK, the short-term loans business is not dissimilar to the States in that we have a huge stigma problem. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
@@ -806,7 +806,7 @@ var copy =
       "quoterName": "By Matt Stringer",
       "quoterTitle": "EVP Marketing, Tailored Brands",
       "quoterAvatar": require("assets/images/illustrations/phenomenon-matt-stringer-menswearhouse-grey.png"),
-      "shareImg": require("assets/images/mens-warehouse/mw_brandbook_carousel1a.png"),
+      "shareImg": require("assets/images/mens-warehouse/work-3.jpg"),
 
       "description": "CVU - Phenomenon - Wilson X",
       "caseWriter": {
@@ -898,7 +898,7 @@ var copy =
       "quoterName": "By Megan Crossland",
       "quoterTitle": "Sr. Director of Marketing, thinkThin",
       "quoterAvatar": require("assets/images/illustrations/phenomenon-megan-crossland-thinkthin-grey.png"), 
-      "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
+      "shareImg": require("assets/images/work-6.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "thinkThin is a healthy lifestyle brand, founded by an inspirational female entrepreneur in Southern California. Over the last decade, we have become a major name in the energy bar category, thanks in large part to our delicious recipes and protein-rich nutritional profile. In addition to our products, our clean, elegant and iconic design aesthetic drives differentiation and trial at shelf.",

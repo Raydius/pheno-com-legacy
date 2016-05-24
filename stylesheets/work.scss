@@ -47,13 +47,17 @@
 			border-top: 1px solid #ccc;
 			padding-top: $base_spacing/2;
 			> span {
-				margin-bottom: 20px;
+				margin-bottom: 10px;
 				display: block;
-				font-size: 18px;
+				font-size: 16px;
 			}
 			> span > span:first-of-type {
 				font-family: "Circular-Bold";
 
+			}
+			p {
+				font-size: 14px;
+				margin-top: 10px;
 			}
 			@media screen and (max-width: 640px) {
 				padding: 30px 30px 0 30px;
