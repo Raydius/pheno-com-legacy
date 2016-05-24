@@ -344,6 +344,7 @@ var copy =
       "project": "My Wilson",
       "media": "TV, Digital, Social",
       "blockquote": "Wilson Equips Itself With Global Campaign.",
+      "ogDescription": "Wilson Equips Itself With Global Campaign.",
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
       "quoterAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson-grey.png"),
