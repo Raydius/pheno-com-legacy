@@ -344,11 +344,12 @@ var copy =
       "project": "My Wilson",
       "media": "TV, Digital, Social",
       "blockquote": "Wilson Equips Itself With Global Campaign.",
+      "ogDescription": "Wilson Equips Itself With Global Campaign.",
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
       "quoterAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson-grey.png"),
       "description": "CVU - Phenomenon - Wilson X", 
-      "shareImg": require("assets/images/wilson_anthem_1_01-opt.jpg"),
+      "shareImg": require("assets/images/work-1.jpg"),
       "topDescription": [
         "Even though Wilson makes sporting equipment for just about every sport in the world, it had been years since we had any sort of global brand campaign. Since this was our first campaign in a while, we needed to reestablish what Wilson was all about. Yes, we make quality, trusted equipment, but what do we stand for? What is our role in the world of sports?",
         "<span class='red'>We worked with the strategic team at Phenomenon to land on a pivotal but simple idea; between every athlete and their equipment exists a powerful relationship.</span>",
@@ -449,10 +450,11 @@ var copy =
       "project": "Wilson X",
       "media": "TV, Digital, Packaging",
       "blockquote": "Wilson Launches<br>Futuristic Ball.",
+      "ogDescription": "Wilson Launches Futuristic Ball.",
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
       "quoterAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson-grey.png"),
-      "shareImg": require("assets/images/wilson_x_1_01-opt.jpg"),
+      "shareImg": require("assets/images/work-4.png"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
         "With over 100 years of experience making sports equipment, we&#8217ve been at the forefront of nearly every major technology advancement in just about every sport. So it only made sense to pioneer the use of sensors and IOT technology inside our equipment with the Wilson X Connected Basketball.",
@@ -591,6 +593,7 @@ var copy =
       "project": "SLS",
       "media": "Branding",
       "blockquote": " SLS Vegas Gives the<br> Strip a Whole New Look.",
+      "ogDescription": " SLS Vegas Gives the Strip a Whole New Look.",
       "shareImg": require("assets/images/wilson_x_1_01-opt.jpg"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
@@ -694,10 +697,12 @@ var copy =
       "project": "Launch Campaign",
       "media": "Branding, Digital",
       "blockquote": "When Buying a House,<br> There&#8217;s No Place Like Xome.",
+      "ogDescription": "When Buying a House, There&#8217;s No Place Like Xome.",
+      "quoterName": "By Allison Cornia",
       "quoterName": "By Allison Cornia",
       "quoterTitle": "SVP Marketing, Xome",
       "quoterAvatar": require("assets/images/client_icons/icon-xome.svg"),
-      "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
+      "shareImg": require("assets/images/work-2.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "If you&#8217;ve ever bought or sold a home, you know it&#8217;s a complex, fragmented and darned unfriendly process. With Xome, we wanted to create an experience that didn&#8217;t undermine one of life&#8217;s biggest moments.",
@@ -745,10 +750,11 @@ var copy =
       "project": "Sunny",
       "media": "Branding",
       "blockquote": 'It&#8217;s A &#8220;Sunny&#8221; Day<br>for Payday Loans.',
+      "ogDescription": 'It&#8217;s A &#8220;Sunny&#8221; Day for Payday Loans.',
       "quoterName": "Patsy Hauer",
       "quoterTitle": "SVP Brand Marketing, Elevate",
       "quoterAvatar": require("assets/images/client_icons/icon-sunny.svg"),
-      "shareImg": require("assets/images/sunny-1.png"),
+      "shareImg": require("assets/images/work-5.png"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "In the UK, the short-term loans business is not dissimilar to the States in that we have a huge stigma problem. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
@@ -803,10 +809,12 @@ var copy =
       "project": "Rebrand",
       "media": "TV, Collateral",
       "blockquote": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.", 
+      "ogDescription": "Men&#8217;s Wearhouse Updates Its Wardrobe.", 
+      "ogDescription": "Men&#8217;s Wearhouse Updates Its Wardrobe.", 
       "quoterName": "By Matt Stringer",
       "quoterTitle": "EVP Marketing, Tailored Brands",
       "quoterAvatar": require("assets/images/illustrations/phenomenon-matt-stringer-menswearhouse-grey.png"),
-      "shareImg": require("assets/images/mens-warehouse/mw_brandbook_carousel1a.png"),
+      "shareImg": require("assets/images/work-3.jpg"),
 
       "description": "CVU - Phenomenon - Wilson X",
       "caseWriter": {
@@ -895,10 +903,11 @@ var copy =
       "project": "Brand Campaign",
       "media": "TV, Digital, Social",
       "blockquote": 'thinkThin Helps <br>Women Shed the Guilt.',
+      "ogDescription": 'thinkThin Helps Women Shed the Guilt.',
       "quoterName": "By Megan Crossland",
       "quoterTitle": "Sr. Director of Marketing, thinkThin",
       "quoterAvatar": require("assets/images/illustrations/phenomenon-megan-crossland-thinkthin-grey.png"), 
-      "shareImg": require("assets/images/xome_thumb_02-opt.jpg"),
+      "shareImg": require("assets/images/work-6.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "thinkThin is a healthy lifestyle brand, founded by an inspirational female entrepreneur in Southern California. Over the last decade, we have become a major name in the energy bar category, thanks in large part to our delicious recipes and protein-rich nutritional profile. In addition to our products, our clean, elegant and iconic design aesthetic drives differentiation and trial at shelf.",
@@ -1160,6 +1169,10 @@ var copy =
           "listingTitle": "Brand Manager",
           "listingUrl": "https://www.linkedin.com/jobs2/view/111550639"
         },
+        {
+          "listingTitle": "Senior Brand Strategist",
+          "listingUrl": "https://www.linkedin.com/jobs2/view/134226006"
+        }
       ],
       "details": [
         "Buying or selling a home is often a complex, fragmented and darned unfriendly process. Xome is a radically better way to do it because it lets you complete everything from the convenience of an app. In just six weeks we built Xome: the first truly integrated way to buy and sell a home. The app lets you list your home, search for a home, make and receive offers, move into escrow and close the deal.",
@@ -1200,7 +1213,7 @@ var copy =
         {
           "cat": "New Business",
           "description": "Pheno works mostly by referral. Mostly. Not exclusively.",
-          "email": "info@phenomenon.com"
+          "email": "newbiz@phenomenon.com"
         }
       ]
     },

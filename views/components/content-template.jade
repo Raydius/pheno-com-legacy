@@ -92,11 +92,11 @@ section.row.no-padding.work.work-details
 							each par in contentItem.mainDescription
 								p!= par
 	if pageData.caseWriter
-		article.col-md-6.no-padding.case-writer
+		article.col-md-7.no-padding.case-writer
 			span
 				span!= pageData.caseWriter.name
-				span!= '/ ' + pageData.caseWriter.title
-			div!= pageData.caseWriter.description
+				span!= ' / ' + pageData.caseWriter.title
+			p!= pageData.caseWriter.description
 
 	include more-cases
 	

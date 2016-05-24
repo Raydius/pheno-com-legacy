@@ -13,8 +13,25 @@ html(xmlns:ng="http://angularjs.org/" ng-app='phenoCom')
 		meta(property="og:url", content="/work/#{page}/")
 		meta(property="og:type" content="website")
 		meta(property="og:title" content="#{htmlWebpackPlugin.options.title}")
-		meta(property="og:description" content="#{copyObject.blockquote}")
+		meta(property="og:description" content!="#{copyObject.ogDescription}")
 		meta(property="og:image" content="#{copyObject.shareImg}")
+		
+		// Google Analytics
+		script.
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function () {
+							(i[r].q = i[r].q || []).push(arguments)
+						}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+						m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-51195233-1', 'phenomenon.com');
+			ga('send', 'pageview');
 
 		title #{htmlWebpackPlugin.options.title}
 		include favicon
