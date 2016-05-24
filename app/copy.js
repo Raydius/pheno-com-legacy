@@ -452,7 +452,7 @@ var copy =
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
       "quoterAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson-grey.png"),
-      "shareImg": require("assets/images/work-4.jpg"),
+      "shareImg": require("assets/images/work-4.png"),
       "description": "CVU - Phenomenon - Wilson X", 
       "topDescription": [
         "With over 100 years of experience making sports equipment, we&#8217ve been at the forefront of nearly every major technology advancement in just about every sport. So it only made sense to pioneer the use of sensors and IOT technology inside our equipment with the Wilson X Connected Basketball.",
@@ -806,7 +806,7 @@ var copy =
       "quoterName": "By Matt Stringer",
       "quoterTitle": "EVP Marketing, Tailored Brands",
       "quoterAvatar": require("assets/images/illustrations/phenomenon-matt-stringer-menswearhouse-grey.png"),
-      "shareImg": require("assets/images/mens-warehouse/work-3.jpg"),
+      "shareImg": require("assets/images/work-3.jpg"),
 
       "description": "CVU - Phenomenon - Wilson X",
       "caseWriter": {
