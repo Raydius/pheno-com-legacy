@@ -1,9 +1,6 @@
 import 'npm/owl-carousel-2/owl.carousel';
 
-var copy = require('app/copy.js');
-
 angular.module('phenoCom').config(function($sceDelegateProvider) {
-
 
   $sceDelegateProvider.resourceUrlWhitelist([
     'self',
