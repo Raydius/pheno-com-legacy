@@ -61,7 +61,7 @@ module.exports = {
         style: './stylesheets/style.scss',
 
         // vendor JS files to be separated into vendors.js
-        vendors: [ 'angular', 'jquery', 'angular-ui-router', 'bootstrap' ]
+        vendors: [ 'angular', 'jquery', 'angular-ui-router', 'bootstrap', 'angular-cookies', 'angular-messages', 'angular-snap', 'angular-socialshare' ]
     },
     output: {
         filename: '[name]-bundle.min.js',
