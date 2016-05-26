@@ -115,7 +115,7 @@ angular.module('phenoCom').directive('close', function() {
                       self = this;
 
                   $(document).bind(ename, function tempo(e){
-                      if(e.target !== self && !$.contains(self, e.target)){
+                      if(e.target !== self && !$.contains(self, e.target) ){
                           cb.apply(self, [e]);
                           if(!self.parentNode) $(document.body).unbind(ename, tempo);
                       }
@@ -125,8 +125,10 @@ angular.module('phenoCom').directive('close', function() {
             }(jQuery));
                 element.bind().outside('click', function() { 
                 var name = $(this).attr('childContainer');
-                $(name).hide();
-
+                // set a timeout so that social icons link hover state can be cancel before hide
+                setTimeout(function(){ 
+                    $(name).hide();
+                }, 500);
             })
         }
     };
@@ -138,6 +140,7 @@ angular.module('phenoCom').directive('showmore', function() {
 
             element.bind('click', function() {
                 var name = $(this).attr('childContainer');
+
                 // set a timeout so this happened after close event
                 setTimeout(function(){ 
                     $(name).toggle();
