@@ -199,6 +199,9 @@
 						&:hover {
 							color: $primary_color;
 						}
+						&:active {
+							color: #333;
+						}
 					}
 				}
 			}

@@ -108,27 +108,20 @@ angular.module('phenoCom').directive('scrolltop2', function() {
 angular.module('phenoCom').directive('close', function() {
     return {
       link: function (scope, element, attrs) {
-        (function($){
-            $.fn.outside = function(ename, cb){
-              return this.each(function(){
-                  var $this = $(this),
-                      self = this;
+            var name = element.attr('childContainer');
+            
+            $('body').click(function(event){
+                    
+                if($(event.target).hasClass('icon')) {
+                
+                    return;
+                
+                } else {
 
-                  $(document).bind(ename, function tempo(e){
-                      if(e.target !== self && !$.contains(self, e.target) ){
-                          cb.apply(self, [e]);
-                          if(!self.parentNode) $(document.body).unbind(ename, tempo);
-                      }
-                  });
-              });
-            };
-            }(jQuery));
-                element.bind().outside('click', function() { 
-                var name = $(this).attr('childContainer');
-                // set a timeout so that social icons link hover state can be cancel before hide
-                setTimeout(function(){ 
                     $(name).hide();
-                }, 500);
+                
+                }
+                
             })
         }
     };
