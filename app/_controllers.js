@@ -57,32 +57,6 @@ angular.module('phenoCom').controller('homeController', function($state, $scope,
 
 });
 
-angular.module('phenoCom').controller('aboutController', function($state, $scope) {
-    
-    /*var options = {
-        'offset_top': 121,
-    }
-    
-    $(".ac .col-md-5").stick_in_parent(options);     
-        if ($(window).outerWidth() < 640 ) {
-            $(".ac .col-md-5").trigger("sticky_kit:detach");
-        }
-
-    $(window).resize(function(){
-
-        if ($(window).outerWidth() < 640 ) {
-            $(".ac .col-md-5").trigger("sticky_kit:detach");
-        }
-    })*/
-});
-
-angular.module('phenoCom').controller('workController', function($state, $scope) {
-    /*var options = {
-        'offset_top': 121,
-    }
-
-    $('#scrollingSite').stick_in_parent(options); */
-});
 
 angular.module('phenoCom').controller('contactController', function($scope, $state, $http) {
 
