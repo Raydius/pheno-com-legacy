@@ -32,24 +32,36 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             url: '/',
             template: templateHome,
             controller: 'homeController',
-            data: {
-                pageTitle: 'PHENOMENON'
+            metaTags: {
+                title: 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation',
+                description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
+                properties: {
+                    'og:title': 'Frontpage'
+                }
             }
         })
 
         .state('about', {
             url: '/about',
             template: templateAbout,
-            data: {
-                pageTitle: 'PHENOMENON'
+            metaTags: {
+                title: 'phenomenon - Innovations Agency | About Us',
+                description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
             }
         })
 
         .state('work', {
             url: '/work',
             template: templateWork,
-            data: {
-                pageTitle: 'PHENOMENON - Wilson X case study'
+            metaTags: {
+                title: 'phenomenon - Innovations Company | Work',
+                description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
+                properties: {
+                    'og:title': 'Frontpage'
+                }
             }
         })
         .state('work/wilson-anthem', {
@@ -108,6 +120,15 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             }
         })
 
+        .state('think-thin', {
+            url: '/think-thin',
+            templateUrl: '/views/think-thin',
+            data: {
+                pageTitle: 'PHENOMENON - thinkThin case study',
+                pageShareImg: require('assets/images/work-1.jpg')
+            }
+        })
+
         .state('work/sunny', {
             url: '/work/sunny-hide',
             template: templateWorkSunny,
@@ -130,48 +151,51 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         .state('entertainment', {
             url: '/entertainment-hide',
             template: templateEntertainment,
-            data: {
-                pageTitle: 'PHENOMENON - Wilson Anthem case study'
+            metaTags: {
+                title: 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation',
+                description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
             }
         })
 
         .state('culture', {
             url: '/culture',
             template: templateCulture,
-            data: {
-                pageTitle: 'PHENOMENON - Xome case study'
+            metaTags: {
+                title: 'phenomenon - Innovations Company | Culture',
+                description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
             }
         })
 
-        .state('think-thin', {
-            url: '/think-thin',
-            templateUrl: '/views/think-thin',
-            data: {
-                pageTitle: 'PHENOMENON - thinkThin case study',
-                pageShareImg: require('assets/images/work-1.jpg')
-            }
-        })
+       
         .state('jobs', {
             url: '/jobs',
             template: templateJobs,
-            data: {
-                pageTitle: 'PHENOMENON - Jobs'
+            metaTags: {
+                title: 'phenomenon - Innovations Company | Jobs',
+                description: 'phenomenon - Innovations Company - jobs, careers, open positions',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
             }
         })
         .state('contact', {
             url: '/contact',
             template: templateContact,
             controller: 'contactController',
-            data: {
-                pageTitle: 'PHENOMENON - Contact Us'
+            metaTags: {
+                title: 'phenomenon - Innovations Company | Jobs',
+                description: 'phenomenon Innovations Company - Contact us about jobs, new business, and public relations.',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, contact us, jobs, new business, PR',
             }
         })
 
         .state('thanks', {
             url: '/thanks',
             templateUrl: '/views/components/thanks',
-            data: {
-                pageTitle: 'PHENOMENON - Thanks'
+            metaTags: {
+                title: 'phenomenon - Innovations Company | Thanks',
+                description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
             }
         })
     ;

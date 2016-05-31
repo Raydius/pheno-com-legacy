@@ -1,11 +1,6 @@
 // Setup simple stylguide rules
 
-h1, .h1{
-	font-size: $h1_size;
-	color: $logo_color;
-}
-
-h2, .h2{
+h1, .h1, h2, .h2{
 	font-size: $h2_size;
 	color: $gray_font;
 	font-family: $secondary_font;

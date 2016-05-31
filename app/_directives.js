@@ -202,7 +202,7 @@ angular.module('phenoCom').directive('fileModel', ['$parse', function ($parse) {
 }]);
 
 
-// handle page title changes on state change
+/*// handle page title changes on state change
 angular.module('phenoCom').directive('updateTitle', ['$rootScope', '$timeout',
     function($rootScope, $timeout) {
         return {
@@ -223,3 +223,4 @@ if (toState.data && toState.data.pageTitle) title = toState.data.pageTitle;
         };
     }
 ]);
+*/

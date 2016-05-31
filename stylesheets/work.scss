@@ -1,5 +1,9 @@
 .work {
 	&.work-landing {
+		h1 {
+			position: absolute;
+			text-indent: -9999em;
+		}
 		.col-md-4 {
 			> fieldset {
 				max-width: 275px;

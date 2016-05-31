@@ -1,7 +1,13 @@
 doctype html
 html(xmlns:ng="http://angularjs.org/" ng-app='phenoCom')
 	head
-		title(update-title) 
+		title(ng-bind="MetaTags.title") Default title
+		meta(name="description" content="{{MetaTags.description}}")
+		meta(name="keywords" content="{{MetaTags.keywords}}")
+		meta(ng-repeat="(key, value) in MetaTags.properties" property="{{key}}" content="{{value}}")
+		meta(name="prerender-status-code" content="{{MetaTags.prerender.statusCode}}")
+		meta(name="prerender-header" ng-if="MetaTags.prerender.header" content="{{MetaTags.prerender.header}}")
+
 
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 		meta(property="og:type" content="website")
