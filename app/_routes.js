@@ -40,7 +40,6 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         .state('about', {
             url: '/about',
             template: templateAbout,
-            controller: 'aboutController',
             data: {
                 pageTitle: 'PHENOMENON'
             }
