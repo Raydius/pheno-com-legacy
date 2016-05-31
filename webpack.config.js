@@ -101,7 +101,7 @@ module.exports = {
             excludeChunks: ['appWork'],
             template: 'views/index.jade',
             filename: 'index.html',
-            title: 'PHENOMENON - Innovations Agency | Marketing, UX, Digital, Cultural Innovation',
+            title: 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation',
             googleAnalytics: gaConfig
         }),
 
@@ -110,9 +110,11 @@ module.exports = {
             excludeChunks: ['app'],
             template: 'views/work-layout.jade',
             filename: 'work/wilson-anthem/index.html',
-            title: 'PHENOMENON - Wilson Anthem case study',
+            title: 'phenomenon - Wilson Anthem case study',
             pageSlug: "wilson-anthem",
-            currentProjectIndex: 0
+            keywords: "phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Wilson",
+            description: "phenomenon - Innovations Company - client work, projects, media - Wilson",
+            currentProjectIndex: 0 
         }),
 
         // Men's Wearhouse landing page
@@ -120,8 +122,10 @@ module.exports = {
             excludeChunks: ['app'],
             template: 'views/work-layout.jade',
             filename: 'work/mens-wearhouse/index.html',
-            title: 'PHENOMENON - Men\'s Wearhouse case study',
+            title: 'phenomenon - Men\'s Wearhouse case study',
             pageSlug: "mens-wearhouse",
+            keywords: "phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Men's Wearhouse",
+            description: "phenomenon - Innovations Company - client work, projects, media - Men's Wearhouse",
             currentProjectIndex: 1
         }),
 
@@ -130,7 +134,9 @@ module.exports = {
             excludeChunks: ['app'],
             template: 'views/work-layout.jade',
             filename: 'work/think-thin/index.html',
-            title: 'PHENOMENON - Think Thin case study',
+            title: 'phenomenon - Think Thin case study',
+            keywords: "phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Men's Wearhouse",
+            description: "phenomenon - Innovations Company - client work, projects, media - thinkThin",
             pageSlug: "think-thin",
             currentProjectIndex: 2
         }),
@@ -140,7 +146,9 @@ module.exports = {
             excludeChunks: ['app'],
             template: 'views/work-layout.jade',
             filename: 'work/wilson-x/index.html',
-            title: 'PHENOMENON - Wilson X case study',
+            title: 'phenomenon - Wilson X case study',
+            keywords: "phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Wilson",
+            description: "phenomenon - Innovations Company - client work, projects, media - Wilson",
             pageSlug: "wilson-x",
             currentProjectIndex: 3
         }),

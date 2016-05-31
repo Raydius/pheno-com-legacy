@@ -19,7 +19,6 @@ angular.module('phenoCom',[
     uirouter,
     ngAnimate,
     'ngCookies',
-    'ui.router',
     'ui.router.metatags',
     'ngMessages',
     '720kb.socialshare' 
