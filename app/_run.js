@@ -2,12 +2,11 @@
  * Created by rdollete on 4/1/16.
  */
 
-function runBlock($rootScope, MetaTags) {
+angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorScroll, MetaTags) {
+    
+    // init meta tag 
     $rootScope.MetaTags = MetaTags;
-}
-
-
-angular.module('phenoCom').run(['$rootScope', 'MetaTags', runBlock], function($rootScope, $window, $location, $anchorScroll) {
+    
     
     var $htmlBody = $('html, body');
 
@@ -41,7 +40,6 @@ angular.module('phenoCom').run(['$rootScope', 'MetaTags', runBlock], function($r
     $(window).scroll(function() {
 
         //$('.featured-contributors').addClass('show').css('marginTop', -($('.home .top-main').height()/2 - $('.top-main .col-md-6').height()));
-
     $('.featured-contributors').addClass('show');
 
        if ($(document).scrollTop() > 0) {
