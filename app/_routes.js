@@ -46,7 +46,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             url: '/about',
             template: templateAbout,
             metaTags: {
-                title: 'phenomenon - Innovations Agency | About Us',
+                title: 'phenomenon - Innovations Company | About Us',
                 description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
             }
@@ -183,7 +183,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             template: templateContact,
             controller: 'contactController',
             metaTags: {
-                title: 'phenomenon - Innovations Company | Jobs',
+                title: 'phenomenon - Innovations Company | Contact', 
                 description: 'phenomenon Innovations Company - Contact us about jobs, new business, and public relations.',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, contact us, jobs, new business, PR',
             }
