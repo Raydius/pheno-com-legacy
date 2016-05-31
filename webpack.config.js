@@ -146,7 +146,7 @@ module.exports = {
             excludeChunks: ['app'],
             template: 'views/work-layout.jade',
             filename: 'work/wilson-x/index.html',
-            title: 'phenomenon - Innovations Company | Work - Wilson',
+            title: 'phenomenon - Innovations Company | Work - Wilson X',
             keywords: "phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Wilson",
             description: "phenomenon - Innovations Company - client work, projects, media - Wilson",
             pageSlug: "wilson-x",
