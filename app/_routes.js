@@ -57,8 +57,8 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             template: templateWork,
             metaTags: {
                 title: 'phenomenon - Innovations Company | Work',
-                description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
-                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
+                description: 'phenomenon - Innovations Company - client work, projects, media',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media',
                 properties: {
                     'og:title': 'Frontpage'
                 }
@@ -145,6 +145,11 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             data: {
                 pageTitle: 'PHENOMENON - Mr.Cooper case study',
                 pageShareImg: require('assets/images/work-1.jpg')
+            },
+            metaTags: {
+                title: 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation',
+                description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
             }
         })
 
