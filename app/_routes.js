@@ -68,7 +68,6 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             url: '/work/wilson-anthem',
             template: templateWorkAnthem,
             data: {
-                pageTitle: 'PHENOMENON - Wilson Anthem case study',
                 pageShareImg: require('assets/images/work-1.jpg')
             }
         })
@@ -76,16 +75,12 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         .state('work/wilson-x', {
             url: '/work/wilson-x',
             template: templateWorkWilsonX,
-            data: {
-                pageTitle: 'PHENOMENON - Wilson X case study'
-            }
         })
 
         .state('work/xome', {
             url: '/work/xome',
             template: templateWorkXome,
             data: {
-                pageTitle: 'PHENOMENON - Xome case study',
                 pageShareImg: require('assets/images/work-1.jpg')
             }
         })
@@ -94,7 +89,6 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             url: '/work/mens-wearhouse',
             template: templateWorkMens,
             data: {
-                pageTitle: 'PHENOMENON - Wilson Anthem case study',
                 pageShareImg: require('assets/images/work-1.jpg')
 
             }
@@ -104,7 +98,6 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             url: '/work/think-thin',
             template: templateWorkThinkThin,
             data: {
-                pageTitle: 'PHENOMENON - Think Thin case study',
                 pageShareImg: require('assets/images/work-1.jpg')
 
             }
@@ -114,7 +107,6 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             url: '/work/sls-hide',
             template: templateWorkSLS,
             data: {
-                pageTitle: 'PHENOMENON - SLS case study',
                 pageShareImg: require('assets/images/work-1.jpg')
 
             }
@@ -124,7 +116,6 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             url: '/think-thin',
             templateUrl: '/views/think-thin',
             data: {
-                pageTitle: 'PHENOMENON - thinkThin case study',
                 pageShareImg: require('assets/images/work-1.jpg')
             }
         })
@@ -133,7 +124,6 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             url: '/work/sunny-hide',
             template: templateWorkSunny,
             data: {
-                pageTitle: 'PHENOMENON - Sunny case study',
                 pageShareImg: require('assets/images/work-1.jpg')
 
             }
@@ -143,7 +133,6 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             url: '/work/cooper-hide',
             template: templateWorkCooper,
             data: {
-                pageTitle: 'PHENOMENON - Mr.Cooper case study',
                 pageShareImg: require('assets/images/work-1.jpg')
             },
             metaTags: {
