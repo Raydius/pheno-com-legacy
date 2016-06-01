@@ -21,9 +21,7 @@ var templateEntertainment = require('views/entertainment.jade');
 var templateCulture = require('views/culture.jade');
 var templateContact = require('views/contact.jade');
 var templateJobs = require('views/jobs.jade');
-var defaultTitle = 'phenomenon - Innovations Company';
-var defaultDescript = 'phenomenon - Innovations Company';
-var defaultShareImgSrc = 'assets/images/fb-share-center.png';
+
 
 angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
     
@@ -86,6 +84,9 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         .state('work/wilson-x', {
             url: '/work/wilson-x',
             template: templateWorkWilsonX,
+            title: 'phenomenon - Innovations Company | Work - Wilson',
+            description: 'phenomenon - Innovations Company - client work, projects, media - Wilson X',
+            keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Wilson X',
             properties: {
                 'og:type': 'website',
                 'og:title': 'phenomenon - Innovations Company | Work - Wilson X',
@@ -97,6 +98,9 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         .state('work/xome', {
             url: '/work/xome',
             template: templateWorkXome,
+            title: 'phenomenon - Innovations Company | Work - Xome',
+            description: 'phenomenon - Innovations Company - client work, projects, media - Xome',
+            keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Xome',
             properties: {
                 'og:type': 'website',
                 'og:title': 'phenomenon - Innovations Company | Work - Xome',
@@ -108,6 +112,9 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         .state('work/mens-wearhouse', {
             url: '/work/mens-wearhouse',
             template: templateWorkMens,
+            title: 'phenomenon - Innovations Company | Work - Xome',
+            description: 'phenomenon - Innovations Company - client work, projects, media - Mes\'s Wearhouse',
+            keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Mes\'s Wearhouse',
             properties: {
                 'og:type': 'website',
                 'og:title': 'phenomenon - Innovations Company | Work - Men\'s Wearhouse',
@@ -119,6 +126,9 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         .state('work/think-thin', {
             url: '/work/think-thin',
             template: templateWorkThinkThin,
+            title: 'phenomenon - Innovations Company | Work - Xome',
+            description: 'phenomenon - Innovations Company - client work, projects, media - thinkThin',
+            keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, thinkThin',
             properties: {
                 'og:type': 'website',
                 'og:title': 'phenomenon - Innovations Company | Work - thinThin',
