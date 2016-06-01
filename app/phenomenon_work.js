@@ -9,6 +9,8 @@ import uirouter from 'angular-ui-router';
 import ngAnimate from 'angular-animate';
 import 'angular-socialshare';
 import 'sticky-kit/dist/sticky-kit.min.js';
+import 'ui-router-metatags/dist/ui-router-metatags.min.js';
+
 
 require('angular-cookies');
 require('angular-messages');
@@ -38,6 +40,7 @@ angular.module('phenoCom',[
     uirouter,
     ngAnimate,
     'ngCookies',
+    'ui.router.metatags',
     'ngMessages',
     '720kb.socialshare' 
 ]);

@@ -108,25 +108,20 @@ angular.module('phenoCom').directive('scrolltop2', function() {
 angular.module('phenoCom').directive('close', function() {
     return {
       link: function (scope, element, attrs) {
-        (function($){
-            $.fn.outside = function(ename, cb){
-              return this.each(function(){
-                  var $this = $(this),
-                      self = this;
+            var name = element.attr('childContainer');
+            
+            $('body').click(function(event){
+                    
+                if($(event.target).hasClass('icon')) {
+                
+                    return;
+                
+                } else {
 
-                  $(document).bind(ename, function tempo(e){
-                      if(e.target !== self && !$.contains(self, e.target)){
-                          cb.apply(self, [e]);
-                          if(!self.parentNode) $(document.body).unbind(ename, tempo);
-                      }
-                  });
-              });
-            };
-            }(jQuery));
-                element.bind().outside('click', function() { 
-                var name = $(this).attr('childContainer');
-                $(name).hide();
-
+                    $(name).hide();
+                
+                }
+                
             })
         }
     };
@@ -138,6 +133,7 @@ angular.module('phenoCom').directive('showmore', function() {
 
             element.bind('click', function() {
                 var name = $(this).attr('childContainer');
+
                 // set a timeout so this happened after close event
                 setTimeout(function(){ 
                     $(name).toggle();
@@ -206,7 +202,7 @@ angular.module('phenoCom').directive('fileModel', ['$parse', function ($parse) {
 }]);
 
 
-// handle page title changes on state change
+/*// handle page title changes on state change
 angular.module('phenoCom').directive('updateTitle', ['$rootScope', '$timeout',
     function($rootScope, $timeout) {
         return {
@@ -227,3 +223,4 @@ if (toState.data && toState.data.pageTitle) title = toState.data.pageTitle;
         };
     }
 ]);
+*/

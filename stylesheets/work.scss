@@ -1,5 +1,9 @@
 .work {
 	&.work-landing {
+		h1 {
+			position: absolute;
+			text-indent: -9999em;
+		}
 		.col-md-4 {
 			> fieldset {
 				max-width: 275px;
@@ -24,6 +28,11 @@
 		}
 	}
 	&.work-details {
+		h1 {
+			position: absolute;
+			text-indent: -9999em;
+			opacity: 0;
+		}
 		.client_logo-wrapper {
 			width: 60px;
 			height: 60px;
@@ -190,8 +199,17 @@
 						border-radius: 50%;
 						padding: 10px;
 						color: #333;
+						&.original-color {
+							&:hover {
+								color: #333;
+							}
+						}
+
 						&:hover {
 							color: $primary_color;
+						}
+						&:active {
+							color: #333;
 						}
 					}
 				}
