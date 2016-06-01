@@ -1,16 +1,5 @@
 import 'npm/owl-carousel-2/owl.carousel';
 
-angular.module('phenoCom').config(['UIRouterMetatagsProvider', defaultMetaTags], function($sceDelegateProvider) {
-
-  $sceDelegateProvider.resourceUrlWhitelist([
-    'self',
-    'http://tech.phenomenonstaging.com/**',
-    'https://player.vimeo.com/**',
-    'https://vimeo.com/**'
-  ]);
-
-});
-
 
 function defaultMetaTags(UIRouterMetatagsProvider) {
 	var defaultTitle = 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation';
@@ -31,3 +20,16 @@ function defaultMetaTags(UIRouterMetatagsProvider) {
             })
         .setOGURL(true);
 }
+
+angular.module('phenoCom').config(function($sceDelegateProvider) {
+
+  $sceDelegateProvider.resourceUrlWhitelist([
+    'self',
+    'http://tech.phenomenonstaging.com/**',
+    'https://player.vimeo.com/**',
+    'https://vimeo.com/**'
+  ]);
+
+});
+
+angular.module('phenoCom').config(['UIRouterMetatagsProvider', defaultMetaTags]);
