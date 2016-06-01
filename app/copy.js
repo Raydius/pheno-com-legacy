@@ -299,7 +299,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": require('assets/images/work-4.png'),
+          "imageUrl": require('assets/images/work-4.png'), 
           "imageAlt": "Wilson Image 4",
           "legend": "Sport / Lifestyle",
           "headline": "Wilson Launches Futuristic Ball.",
@@ -1089,28 +1089,28 @@ var copy =
         "projectName": "Wilson Equips Itself With Global Campaign.",
         "writerName": "By Amy Weisenback",
         "writerTitle": "VP Marketing, Wilson",
-        "projectUrl": "#/work/wilson-anthem/",
+        "projectUrl": "#/work/wilson-anthem",
         "projectThumbSrc": require("assets/images/morecases/1.jpg") 
       },
       {
         "projectName": "Men&#8217s Wearhouse <br>Updates Its Closet.",
         "writerName": "By Matt Stringer",
         "writerTitle": "EVP Marketing, Tailored Brands",
-        "projectUrl": "#/work/mens-wearhouse/",
+        "projectUrl": "#/work/mens-wearhouse",
         "projectThumbSrc": require("assets/images/morecases/2.png") 
       },
       {
         "projectName": "thinkThin Helps<br>Women Shed the Guilt.",
         "writerName": "By Megan Crossland",
         "writerTitle": "Sr. Director of Marketing, thinkThin",
-        "projectUrl": "#/work/think-thin/", 
+        "projectUrl": "#/work/think-thin", 
         "projectThumbSrc": require("assets/images/morecases/3.png")
       },
       {
         "projectName": "Wilson Launches<br>Futuristic Ball.",
         "writerName": "By Amy Weisenbach",
         "writerTitle": "VP Marketing, Wilson",
-        "projectUrl": "#/work/wilson-x/",
+        "projectUrl": "#/work/wilson-x",
         "projectThumbSrc": require("assets/images/morecases/4.png")
       }/*,
       {
