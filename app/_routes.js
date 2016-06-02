@@ -70,12 +70,12 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             template: templateWorkAnthem,
             metaTags: {
                 title: 'phenomenon - Innovations Company | Work - Wilson',
-                description: 'phenomenon - Innovations Company - client work, projects, media - Wilson Anthem',
+                description: 'phenomenon - Innovations Company - client work, projects, media - Wilson',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Wilson',
                 properties: {
                     'og:type': 'website',
-                    'og:title': 'phenomenon - Innovations Company | Work - Wilson',
-                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - Wilson Anthem',
+                    'og:title': 'phenomenon - Innovations Company | Work - Wilson Anthem',
+                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - Wilson',
                     'og:image': require('assets/images/work-1.jpg')
                 }
             }
