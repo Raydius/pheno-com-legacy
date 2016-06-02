@@ -27,7 +27,6 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
     
     // config routing
     $urlRouterProvider.otherwise('/');
-
     $stateProvider
         .state('home', {
             url: '/',

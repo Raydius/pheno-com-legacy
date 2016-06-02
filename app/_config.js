@@ -34,6 +34,10 @@ angular.module('phenoCom').config(function($sceDelegateProvider) {
 
 angular.module('phenoCom').config(['UIRouterMetatagsProvider', defaultMetaTags]);
 
+angular.module('phenoCom').
+  config(function($locationProvider) {
+    $locationProvider.hashPrefix('!');
+});
 // remove html5 mode for now since we need to deal with rewrite problem in server side
 // also remove base(href="/") in layout.jade
 
