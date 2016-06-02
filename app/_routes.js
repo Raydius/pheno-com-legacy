@@ -65,8 +65,8 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
                 }
             }
         })
-        .state('work/wilson-anthem', {
-            url: '/work/wilson-anthem',
+        .state('work/wilson-anthem/', {
+            url: '/work/wilson-anthem/',
             template: templateWorkAnthem,
             metaTags: {
                 title: 'phenomenon - Innovations Company | Work - Wilson',
@@ -81,8 +81,8 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             }
         })
 
-        .state('work/wilson-x', {
-            url: '/work/wilson-x',
+        .state('work/wilson-x/', {
+            url: '/work/wilson-x/',
             template: templateWorkWilsonX,
             title: 'phenomenon - Innovations Company | Work - Wilson',
             description: 'phenomenon - Innovations Company - client work, projects, media - Wilson X',
@@ -95,8 +95,8 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             }
         })
 
-        .state('work/xome', {
-            url: '/work/xome',
+        .state('work/xome/', {
+            url: '/work/xome/',
             template: templateWorkXome,
             title: 'phenomenon - Innovations Company | Work - Xome',
             description: 'phenomenon - Innovations Company - client work, projects, media - Xome',
@@ -109,8 +109,8 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             }
         })
 
-        .state('work/mens-wearhouse', {
-            url: '/work/mens-wearhouse',
+        .state('work/mens-wearhouse/', {
+            url: '/work/mens-wearhouse/',
             template: templateWorkMens,
             title: 'phenomenon - Innovations Company | Work - Xome',
             description: 'phenomenon - Innovations Company - client work, projects, media - Mes\'s Wearhouse',
@@ -124,7 +124,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         })
 
         .state('work/think-thin', {
-            url: '/work/think-thin',
+            url: '/work/think-thin/',
             template: templateWorkThinkThin,
             title: 'phenomenon - Innovations Company | Work - Xome',
             description: 'phenomenon - Innovations Company - client work, projects, media - thinkThin',
@@ -138,7 +138,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         })
 
         .state('work/sls', {
-            url: '/work/sls-hide',
+            url: '/work/sls-hide/',
             template: templateWorkSLS,
             data: {
                 pageShareImg: require('assets/images/work-1.jpg')
@@ -147,7 +147,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         })
 
         .state('think-thin', {
-            url: '/think-thin',
+            url: '/think-thin/',
             templateUrl: '/views/think-thin',
             data: {
                 pageShareImg: require('assets/images/work-1.jpg')
@@ -155,7 +155,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         })
 
         .state('work/sunny', {
-            url: '/work/sunny-hide',
+            url: '/work/sunny-hide/',
             template: templateWorkSunny,
             data: {
                 pageShareImg: require('assets/images/work-1.jpg')
@@ -164,7 +164,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         })
 
         .state('work/cooper', {
-            url: '/work/cooper-hide',
+            url: '/work/cooper-hide/',
             template: templateWorkCooper,
             data: {
                 pageShareImg: require('assets/images/work-1.jpg')
@@ -177,7 +177,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         })
 
         .state('entertainment', {
-            url: '/entertainment-hide',
+            url: '/entertainment-hide/',
             template: templateEntertainment,
             metaTags: {
                 title: 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation',
