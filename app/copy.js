@@ -12,30 +12,30 @@ var copy =
     {
       "navTitle": "About",
       "title": "View About Page",
-      "uiSref": "about",
+      "uiSref": "about/",
       "className": "about"
     },
     {
       "navTitle": "Work",
       "title": "View Work Page",
-      "uiSref": "work",
+      "uiSref": "work/",
       "className": "work"
     },
     {
       "navTitle": "Culture",
       "title": "View Culture Page",
-      "uiSref": "culture",
+      "uiSref": "culture/",
       "className": "culture"
     },
     {
       "navTitle": "Jobs",
       "title": "View Jobs Page",
-      "uiSref": "jobs"
+      "uiSref": "jobs/"
     },
     {
       "navTitle": "Contact",
       "title": "View Contact Form",
-      "uiSref": "contact"
+      "uiSref": "contact/"
     }
   ],
   "share": {
