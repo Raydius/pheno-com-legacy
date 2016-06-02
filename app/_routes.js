@@ -22,6 +22,7 @@ var templateCulture = require('views/culture.jade');
 var templateContact = require('views/contact.jade');
 var templateJobs = require('views/jobs.jade');
 
+
 angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
     
     // config routing
@@ -67,39 +68,72 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         .state('work/wilson-anthem', {
             url: '/work/wilson-anthem',
             template: templateWorkAnthem,
-            data: {
-                pageShareImg: require('assets/images/work-1.jpg')
+            metaTags: {
+                title: 'phenomenon - Innovations Company | Work - Wilson',
+                description: 'phenomenon - Innovations Company - client work, projects, media - Wilson',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Wilson',
+                properties: {
+                    'og:type': 'website',
+                    'og:title': 'phenomenon - Innovations Company | Work - Wilson',
+                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - Wilson',
+                    'og:image': require('assets/images/work-1.jpg')
+                }
             }
         })
 
         .state('work/wilson-x', {
             url: '/work/wilson-x',
             template: templateWorkWilsonX,
+            title: 'phenomenon - Innovations Company | Work - Wilson',
+            description: 'phenomenon - Innovations Company - client work, projects, media - Wilson X',
+            keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Wilson X',
+            properties: {
+                'og:type': 'website',
+                'og:title': 'phenomenon - Innovations Company | Work - Wilson X',
+                'og:description': 'phenomenon - Innovations Company - client work, projects, media - Wilson X',
+                'og:image': require('assets/images/work-4.png')
+            }
         })
 
         .state('work/xome', {
             url: '/work/xome',
             template: templateWorkXome,
-            data: {
-                pageShareImg: require('assets/images/work-1.jpg')
+            title: 'phenomenon - Innovations Company | Work - Xome',
+            description: 'phenomenon - Innovations Company - client work, projects, media - Xome',
+            keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Xome',
+            properties: {
+                'og:type': 'website',
+                'og:title': 'phenomenon - Innovations Company | Work - Xome',
+                'og:description': 'phenomenon - Innovations Company - client work, projects, media - Xome',
+                'og:image': require('assets/images/work-2.jpg')
             }
         })
 
         .state('work/mens-wearhouse', {
             url: '/work/mens-wearhouse',
             template: templateWorkMens,
-            data: {
-                pageShareImg: require('assets/images/work-1.jpg')
-
+            title: 'phenomenon - Innovations Company | Work - Xome',
+            description: 'phenomenon - Innovations Company - client work, projects, media - Mes\'s Wearhouse',
+            keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Mes\'s Wearhouse',
+            properties: {
+                'og:type': 'website',
+                'og:title': 'phenomenon - Innovations Company | Work - Men\'s Wearhouse',
+                'og:description': 'phenomenon - Innovations Company - client work, projects, media - Men\'s Wearhouse',
+                'og:image': require('assets/images/work-3.jpg')
             }
         })
 
         .state('work/think-thin', {
             url: '/work/think-thin',
             template: templateWorkThinkThin,
-            data: {
-                pageShareImg: require('assets/images/work-1.jpg')
-
+            title: 'phenomenon - Innovations Company | Work - Xome',
+            description: 'phenomenon - Innovations Company - client work, projects, media - thinkThin',
+            keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, thinkThin',
+            properties: {
+                'og:type': 'website',
+                'og:title': 'phenomenon - Innovations Company | Work - thinThin',
+                'og:description': 'phenomenon - Innovations Company - client work, projects, media - thinkThin',
+                'og:image': require('assets/images/work-6.jpg')
             }
         })
 

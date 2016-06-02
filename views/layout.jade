@@ -2,6 +2,7 @@ doctype html
 html(xmlns:ng="http://angularjs.org/" ng-app='phenoCom')
 	head
 		title(ng-bind="MetaTags.title") Phenomenon
+		meta(name="fragment" content="!")
 		meta(name="description" content="{{MetaTags.description}}")
 		meta(name="keywords" content="{{MetaTags.keywords}}")
 		meta(ng-repeat="(key, value) in MetaTags.properties" property="{{key}}" content="{{value}}")
@@ -10,10 +11,10 @@ html(xmlns:ng="http://angularjs.org/" ng-app='phenoCom')
 
 
 		meta(name="viewport", content="width=device-width, initial-scale=1")
-		meta(property="og:type" content="website")
-		meta(property="og:title" content="Phenomenon - Innovations Company")
-		meta(property="og:description" content="Phenomenon - Innovations Company")
-		meta(property="og:image" content=require('assets/images/fb-share-center.png'))
+		//- meta(property="og:type" content="website")
+		//- meta(property="og:title" content="Phenomenon - Innovations Company")
+		//- meta(property="og:description" content="Phenomenon - Innovations Company")
+		//- meta(property="og:image" content=require('assets/images/fb-share-center.png'))
 		
 		// Google Analytics
 		script.
