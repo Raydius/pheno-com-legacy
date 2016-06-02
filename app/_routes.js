@@ -29,7 +29,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-        .state('home/', {
+        .state('home', {
             url: '/',
             template: templateHome,
             controller: 'homeController',
@@ -43,8 +43,8 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             }
         })
 
-        .state('about/', {
-            url: '/about/',
+        .state('about', {
+            url: '/about',
             template: templateAbout,
             metaTags: {
                 title: 'phenomenon - Innovations Company | About Us',
@@ -53,8 +53,8 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             }
         })
 
-        .state('work/', {
-            url: '/work/',
+        .state('work', {
+            url: '/work',
             template: templateWork,
             metaTags: {
                 title: 'phenomenon - Innovations Company | Work',
@@ -70,12 +70,12 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             template: templateWorkAnthem,
             metaTags: {
                 title: 'phenomenon - Innovations Company | Work - Wilson',
-                description: 'phenomenon - Innovations Company - client work, projects, media - Wilson',
+                description: 'phenomenon - Innovations Company - client work, projects, media - Wilson Anthem',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Wilson',
                 properties: {
                     'og:type': 'website',
                     'og:title': 'phenomenon - Innovations Company | Work - Wilson',
-                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - Wilson',
+                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - Wilson Anthem',
                     'og:image': require('assets/images/work-1.jpg')
                 }
             }
@@ -186,7 +186,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             }
         })
 
-        .state('culture/', {
+        .state('culture', {
             url: '/culture',
             template: templateCulture,
             metaTags: {
@@ -197,8 +197,8 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         })
 
        
-        .state('jobs/', {
-            url: '/jobs/',
+        .state('jobs', {
+            url: '/jobs',
             template: templateJobs,
             metaTags: {
                 title: 'phenomenon - Innovations Company | Jobs',
@@ -206,8 +206,8 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
             }
         })
-        .state('contact/', {
-            url: '/contact/',
+        .state('contact', {
+            url: '/contact',
             template: templateContact,
             controller: 'contactController',
             metaTags: {
@@ -217,8 +217,8 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             }
         })
 
-        .state('thanks/', {
-            url: '/thanks/',
+        .state('thanks', {
+            url: '/thanks',
             templateUrl: '/views/components/thanks',
             metaTags: {
                 title: 'phenomenon - Innovations Company | Thanks',
