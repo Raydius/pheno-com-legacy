@@ -268,7 +268,7 @@ var copy =
           "citeName": "By Amy Weisenbach",
           "citeTitle": "VP Marketing, Wilson",
           "description": "New 360-degree global campaign for 100-year-old company.",
-          "readmoreUrl": "/work/wilson-anthem"
+          "readmoreUrl": "/work/wilson-anthem/"
         },
         {
           "type": "image",
@@ -280,7 +280,7 @@ var copy =
           "citeName": "By Matt Stringer",
           "citeTitle": "EVP Marketing, Tailored Brands",
           "description": "After the departure of longtime owner and face of brand, company looks to modernize all the way down to the cufflinks.",
-          "readmoreUrl": "/work/mens-wearhouse"
+          "readmoreUrl": "/work/mens-wearhouse/"
 
         },
         {
@@ -293,7 +293,7 @@ var copy =
           "citeName": "By Megan Crossland",
           "citeTitle": "Sr. Director of Marketing, thinkThin",
           "description": "Nutritional bar targeted to women launches its first campaign using humor to rave reviews online.",
-          "readmoreUrl": "/work/think-thin"
+          "readmoreUrl": "/work/think-thin/"
 
         },
         {
@@ -306,7 +306,7 @@ var copy =
           "citeName": "By Amy Weisenbach",
           "citeTitle": "VP Marketing, Wilson",
           "description": "For the first time a basketball is connected to your smartphone to track makes, misses and enhance performance.",
-          "readmoreUrl": "/work/wilson-x"
+          "readmoreUrl": "/work/wilson-x/"
         }
         /*{
           "type": "image",
@@ -1089,28 +1089,28 @@ var copy =
         "projectName": "Wilson Equips Itself With Global Campaign.",
         "writerName": "By Amy Weisenback",
         "writerTitle": "VP Marketing, Wilson",
-        "projectUrl": "/work/wilson-anthem",
+        "projectUrl": "/work/wilson-anthem/",
         "projectThumbSrc": require("assets/images/morecases/1.jpg") 
       },
       {
         "projectName": "Men&#8217s Wearhouse <br>Updates Its Closet.",
         "writerName": "By Matt Stringer",
         "writerTitle": "EVP Marketing, Tailored Brands",
-        "projectUrl": "/work/mens-wearhouse",
+        "projectUrl": "/work/mens-wearhouse/",
         "projectThumbSrc": require("assets/images/morecases/2.png") 
       },
       {
         "projectName": "thinkThin Helps<br>Women Shed the Guilt.",
         "writerName": "By Megan Crossland",
         "writerTitle": "Sr. Director of Marketing, thinkThin",
-        "projectUrl": "/work/think-thin", 
+        "projectUrl": "/work/think-thin/", 
         "projectThumbSrc": require("assets/images/morecases/3.png")
       },
       {
         "projectName": "Wilson Launches<br>Futuristic Ball.",
         "writerName": "By Amy Weisenbach",
         "writerTitle": "VP Marketing, Wilson",
-        "projectUrl": "/work/wilson-x",
+        "projectUrl": "/work/wilson-x/",
         "projectThumbSrc": require("assets/images/morecases/4.png")
       }/*,
       {
