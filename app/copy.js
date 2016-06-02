@@ -141,21 +141,21 @@ var copy =
           "jobTitle": "SVP Marketing, Xome",
           "project": "When Buying a House, There&#8217s No Place Like Xome.",
           "contributorAvatar": require("assets/images/home/avatar-2.png"),
-          "href": "#/work/xome/"
+          "href": "/work/xome/"
         },*/
         /*{
           "name": "Pasty Hauer",
           "jobTitle": "VP Brand Marketing, Sunny",
           "project": "It&#8217;s A &#8220;Sunny&#8221; Day for Payday Loans.",
           "contributorAvatar": require("assets/images/home/avatar-4.png"),
-          "href": "#/work/sunny/"
+          "href": "/work/sunny/"
         },*/
         /*{
           "name": "Amy Weisenbach",
           "jobTitle": "VP Marketing, Wilson",
           "project": "Wilson Launches<br> Futuristic Ball.",
           "contributorAvatar": require("assets/images/home/avatar-7.png"),
-          "href": "#/work/wilson-x/"
+          "href": "/work/wilson-x/"
         }*/
       ]
     },
@@ -318,7 +318,7 @@ var copy =
           "citeName": "By Patsy Hauer",
           "citeTitle": "VP Brand Marketing, Sunny",
           "description": "British company creates a whole new business model for payday loans that gives borrowers a better chance at getting out of debt.",
-          "readmoreUrl": "#/work/sunny/"          
+          "readmoreUrl": "/work/sunny/"          
         },*/
         /*{
           "type": "image",
@@ -330,7 +330,7 @@ var copy =
           "citeName": "By Allison Cornia",
           "citeTitle": "SVP Marketing, Xome",
           "description": "New company looks to make buying and selling a home not only more mobile, but more transparent.",
-          "readmoreUrl": "#/work/xome/"
+          "readmoreUrl": "/work/xome/"
 
         }*/
       ]
@@ -1089,42 +1089,42 @@ var copy =
         "projectName": "Wilson Equips Itself With Global Campaign.",
         "writerName": "By Amy Weisenback",
         "writerTitle": "VP Marketing, Wilson",
-        "projectUrl": "#/work/wilson-anthem",
+        "projectUrl": "/work/wilson-anthem",
         "projectThumbSrc": require("assets/images/morecases/1.jpg") 
       },
       {
         "projectName": "Men&#8217s Wearhouse <br>Updates Its Closet.",
         "writerName": "By Matt Stringer",
         "writerTitle": "EVP Marketing, Tailored Brands",
-        "projectUrl": "#/work/mens-wearhouse",
+        "projectUrl": "/work/mens-wearhouse",
         "projectThumbSrc": require("assets/images/morecases/2.png") 
       },
       {
         "projectName": "thinkThin Helps<br>Women Shed the Guilt.",
         "writerName": "By Megan Crossland",
         "writerTitle": "Sr. Director of Marketing, thinkThin",
-        "projectUrl": "#/work/think-thin", 
+        "projectUrl": "/work/think-thin", 
         "projectThumbSrc": require("assets/images/morecases/3.png")
       },
       {
         "projectName": "Wilson Launches<br>Futuristic Ball.",
         "writerName": "By Amy Weisenbach",
         "writerTitle": "VP Marketing, Wilson",
-        "projectUrl": "#/work/wilson-x",
+        "projectUrl": "/work/wilson-x",
         "projectThumbSrc": require("assets/images/morecases/4.png")
       }/*,
       {
         "projectName": "It's a Sunny Day for Payday Loans.",
         "writerName": "By Patsy Hauer",
         "writerTitle": "VP Brand Marketing, Sunny",
-        "projectUrl": "#/work/sunny/",  
+        "projectUrl": "/work/sunny/",  
         "projectThumbSrc": require("assets/images/morecases/5.jpg")
       },
       {
         "projectName": "When Buying a House, There's No Place Like Xome",
         "writerName": "By Alison Cornia",
         "writerTitle": "SVP Marketing, Xome",
-        "projectUrl": "#/work/xome/", 
+        "projectUrl": "/work/xome/", 
         "projectThumbSrc": require("assets/images/morecases/6.jpg")
       }*/
     ],
