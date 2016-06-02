@@ -13,7 +13,7 @@ var webpack = require('webpack'),
 var express = require('express');
 var app = express();
 
-app.use(require('prerender-node').set('prerenderToken', 'YHkgnHYMxBOCTqWOJbRS'));
+//app.use(require('prerender-node').set('prerenderToken', 'YHkgnHYMxBOCTqWOJbRS'));
 
 // set debug variable based on whether or not this is a prod environment
 var debug = process.env.NODE_ENV !== 'production';
