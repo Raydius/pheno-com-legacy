@@ -268,7 +268,7 @@ var copy =
           "citeName": "By Amy Weisenbach",
           "citeTitle": "VP Marketing, Wilson",
           "description": "New 360-degree global campaign for 100-year-old company.",
-          "readmoreUrl": "#/work/wilson-anthem"
+          "readmoreUrl": "/work/wilson-anthem"
         },
         {
           "type": "image",
@@ -280,7 +280,7 @@ var copy =
           "citeName": "By Matt Stringer",
           "citeTitle": "EVP Marketing, Tailored Brands",
           "description": "After the departure of longtime owner and face of brand, company looks to modernize all the way down to the cufflinks.",
-          "readmoreUrl": "#/work/mens-wearhouse"
+          "readmoreUrl": "/work/mens-wearhouse"
 
         },
         {
@@ -293,7 +293,7 @@ var copy =
           "citeName": "By Megan Crossland",
           "citeTitle": "Sr. Director of Marketing, thinkThin",
           "description": "Nutritional bar targeted to women launches its first campaign using humor to rave reviews online.",
-          "readmoreUrl": "#/work/think-thin"
+          "readmoreUrl": "/work/think-thin"
 
         },
         {
@@ -306,7 +306,7 @@ var copy =
           "citeName": "By Amy Weisenbach",
           "citeTitle": "VP Marketing, Wilson",
           "description": "For the first time a basketball is connected to your smartphone to track makes, misses and enhance performance.",
-          "readmoreUrl": "#/work/wilson-x"
+          "readmoreUrl": "/work/wilson-x"
         }
         /*{
           "type": "image",

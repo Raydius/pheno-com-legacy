@@ -33,3 +33,7 @@ angular.module('phenoCom').config(function($sceDelegateProvider) {
 });
 
 angular.module('phenoCom').config(['UIRouterMetatagsProvider', defaultMetaTags]);
+
+angular.module('phenoCom').config(function($locationProvider) {
+    $locationProvider.html5Mode(true);
+});
