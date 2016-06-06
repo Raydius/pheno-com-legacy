@@ -10,6 +10,8 @@ var webpack = require('webpack'),
     OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'),
     node_modules_dir = path.resolve(__dirname, 'node_modules');
 
+
+
 // set debug variable based on whether or not this is a prod environment
 var debug = process.env.NODE_ENV !== 'production';
 
@@ -38,6 +40,11 @@ var gaConfig = {
     pageViewOnLoad: true
 };
 
+var express = require('express');
+var app = express();
+
+app.use(require('prerender-node').set('prerenderServiceUrl', 'http://localhost:3000'));
+
 // main webpack module
 module.exports = {
     context: __dirname,
@@ -55,8 +62,6 @@ module.exports = {
     entry: {
         // entry point for main application
         app: './app/phenomenon.js',
-        appWork: './app/phenomenon_work.js',
-
         // entry point for stylesheets
         style: './stylesheets/style.scss',
 
@@ -98,60 +103,11 @@ module.exports = {
 
         // generate index.html as public entry point
         new HtmlWebpackPlugin({
-            excludeChunks: ['appWork'],
             template: 'views/index.jade',
             filename: 'index.html',
             title: 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation',
             googleAnalytics: gaConfig
-        }),
-
-        // Wilson Anthem landing page
-        new HtmlWebpackPlugin({
-            excludeChunks: ['app'],
-            template: 'views/work-layout.jade',
-            filename: 'work/wilson-anthem/index.html',
-            title: 'phenomenon - Innovations Company | Work - Wilson',
-            pageSlug: "wilson-anthem",
-            keywords: "phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Wilson",
-            description: "phenomenon - Innovations Company - client work, projects, media - Wilson",
-            currentProjectIndex: 0 
-        }),
-
-        // Men's Wearhouse landing page
-        new HtmlWebpackPlugin({
-            excludeChunks: ['app'],
-            template: 'views/work-layout.jade',
-            filename: 'work/mens-wearhouse/index.html',
-            title: 'phenomenon - Innovations Company | Work - Men\'s Wearhouse',
-            pageSlug: "mens-wearhouse",
-            keywords: "phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Men's Wearhouse",
-            description: "phenomenon - Innovations Company - client work, projects, media - Men's Wearhouse",
-            currentProjectIndex: 1
-        }),
-
-        // Think Thin landing page
-        new HtmlWebpackPlugin({
-            excludeChunks: ['app'],
-            template: 'views/work-layout.jade',
-            filename: 'work/think-thin/index.html',
-            title: 'phenomenon - Innovations Company | Work - thinkThin',
-            keywords: "phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Men's Wearhouse",
-            description: "phenomenon - Innovations Company - client work, projects, media - thinkThin",
-            pageSlug: "think-thin",
-            currentProjectIndex: 2
-        }),
-
-        // WilsonX landing page
-        new HtmlWebpackPlugin({
-            excludeChunks: ['app'],
-            template: 'views/work-layout.jade',
-            filename: 'work/wilson-x/index.html',
-            title: 'phenomenon - Innovations Company | Work - Wilson X',
-            keywords: "phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Wilson",
-            description: "phenomenon - Innovations Company - client work, projects, media - Wilson",
-            pageSlug: "wilson-x",
-            currentProjectIndex: 3
-        }),
+        })
     ],
     module: {
         noParse: [

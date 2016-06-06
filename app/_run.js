@@ -7,6 +7,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
     // init meta tag 
     $rootScope.MetaTags = MetaTags;
     
+
     
     var $htmlBody = $('html, body');
 
@@ -37,7 +38,9 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
         }
     }) 
 
+
     $(window).scroll(function() {
+        
 
         //$('.featured-contributors').addClass('show').css('marginTop', -($('.home .top-main').height()/2 - $('.top-main .col-md-6').height()));
     $('.featured-contributors').addClass('show');

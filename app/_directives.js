@@ -147,25 +147,32 @@ angular.module('phenoCom').directive('showmore', function() {
 angular.module('phenoCom').directive('scrollableComponent', function($window) {
 
     return {
-        restrict: 'E',
+        restrict: 'A',
         link: function (scope, element, attrs) {
-            var $element = $(element),
-                scrollFlag = false,
-                scrollClass = 'scroll-active';
-
+            var $element = $(element);
+                
+            
+            
             angular.element($window).bind("scroll", function() {
-                if( (this.pageYOffset >= $element.offset().top) &&
-                    (this.pageYOffset <= $element.offset().top + 20) ){
-                    if(!scrollFlag){
-                        $element.toggleClass(scrollClass);
-                        scrollFlag = true;
-                    }
-                }
-                else{
-                    if(scrollFlag){
-                        $element.toggleClass(scrollClass);
-                        scrollFlag = false;
-                    }
+                
+                var scroll = $(window).scrollTop();
+                var offset = element.offset();
+                var scrollParentWidth = element.width();
+                var longImgHeight = element.find('.longImg').height();
+                var scrollImg = -(scroll - element.offset().top + 70);
+               
+
+                $('#scrollingSite .image-component').css('height', longImgHeight);
+                if ( offset.top - scroll < 80 && offset.top - scroll > -(longImgHeight - $(window).height()/2)) {
+                   
+                    $('#scrollingSite .image-component').addClass('fixed').css('width', scrollParentWidth);
+                    $('#scrollingSite .image-component img.longImg').css({transform: 'translateY(' + scrollImg +'px)'});
+                
+                } else {
+
+                    $('#scrollingSite .image-component ').removeClass('fixed');
+                    $('#scrollingSite .image-component img.longImg').css({transform: 'translateY(' + 0 +'px)'}); 
+                
                 }
             });
         }
