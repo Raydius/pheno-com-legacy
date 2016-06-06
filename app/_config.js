@@ -40,3 +40,10 @@ angular.module('phenoCom').config(['UIRouterMetatagsProvider', defaultMetaTags])
 /*angular.module('phenoCom').config(function($locationProvider) {
     $locationProvider.html5Mode(true);
 });*/
+
+angular.module('phenoCom').config([  
+    '$locationProvider',
+    function($locationProvider) {
+        $locationProvider.hashPrefix('!');
+    }
+]);
