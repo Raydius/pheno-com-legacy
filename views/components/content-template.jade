@@ -83,10 +83,12 @@ section.row.no-padding.work.work-details
 						.col-xs-12.no-padding
 							img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
 			if contentItem.scrollingSite
-				article#scrollingSite.col-md-12.no-padding.tet
+				article#scrollingSite.col-md-12.no-padding.tet(scrollable-component)
 					section.image-component.component.row.no-padding
-						.col-xs-12.no-padding
-							img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
+						.browser-bar
+							img(src= require("assets/images/browser.png"))
+						img.longImg(src= contentItem.imageUrl, alt=contentItem.imageAlt)
+
 			if contentItem.mainDescription
 				article.col-md-12.no-padding.tet
 						article.col-md-7.no-padding

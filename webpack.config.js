@@ -10,10 +10,7 @@ var webpack = require('webpack'),
     OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'),
     node_modules_dir = path.resolve(__dirname, 'node_modules');
 
-var express = require('express');
-var app = express();
 
-app.use(require('prerender-node').set('prerenderToken', 'YHkgnHYMxBOCTqWOJbRS'));
 
 // set debug variable based on whether or not this is a prod environment
 var debug = process.env.NODE_ENV !== 'production';
@@ -42,6 +39,11 @@ var gaConfig = {
     trackingId: 'UA-51195233-1',
     pageViewOnLoad: true
 };
+
+var express = require('express');
+var app = express();
+
+app.use(require('prerender-node').set('prerenderServiceUrl', 'http://localhost:3000'));
 
 // main webpack module
 module.exports = {
