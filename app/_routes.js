@@ -95,56 +95,64 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         .state('work/wilson-x/', {
             url: '/work/wilson-x/',
             template: templateWorkWilsonX,
-            title: 'phenomenon - Innovations Company | Work - Wilson',
-            description: 'phenomenon - Innovations Company - client work, projects, media - Wilson X',
-            keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Wilson X',
-            properties: {
-                'og:type': 'website',
-                'og:title': 'phenomenon - Innovations Company | Work - Wilson X',
-                'og:description': 'phenomenon - Innovations Company - client work, projects, media - Wilson X',
-                'og:image': require('assets/images/work-4.png')
+            metaTags: {
+                title: 'phenomenon - Innovations Company | Work - Wilson',
+                description: 'phenomenon - Innovations Company - client work, projects, media - Wilson X',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Wilson X',
+                properties: {
+                    'og:type': 'website',
+                    'og:title': 'phenomenon - Innovations Company | Work - Wilson X',
+                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - Wilson X',
+                    'og:image': require('assets/images/work-4.png')
+                }
             }
         })
 
         .state('work/xome/', {
             url: '/work/xome/',
             template: templateWorkXome,
-            title: 'phenomenon - Innovations Company | Work - Xome',
-            description: 'phenomenon - Innovations Company - client work, projects, media - Xome',
-            keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Xome',
-            properties: {
-                'og:type': 'website',
-                'og:title': 'phenomenon - Innovations Company | Work - Xome',
-                'og:description': 'phenomenon - Innovations Company - client work, projects, media - Xome',
-                'og:image': require('assets/images/work-2.jpg')
+            metaTags: {
+                title: 'phenomenon - Innovations Company | Work - Xome',
+                description: 'phenomenon - Innovations Company - client work, projects, media - Xome',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Xome',
+                properties: {
+                    'og:type': 'website',
+                    'og:title': 'phenomenon - Innovations Company | Work - Xome',
+                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - Xome',
+                    'og:image': require('assets/images/work-2.jpg')
+                }
             }
         })
 
         .state('work/mens-wearhouse/', {
             url: '/work/mens-wearhouse/',
             template: templateWorkMens,
-            title: 'phenomenon - Innovations Company | Work - Xome',
-            description: 'phenomenon - Innovations Company - client work, projects, media - Mes\'s Wearhouse',
-            keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Mes\'s Wearhouse',
-            properties: {
-                'og:type': 'website',
-                'og:title': 'phenomenon - Innovations Company | Work - Men\'s Wearhouse',
-                'og:description': 'phenomenon - Innovations Company - client work, projects, media - Men\'s Wearhouse',
-                'og:image': require('assets/images/work-3.jpg')
+            metaTags: {
+                title: 'phenomenon - Innovations Company | Work - Mens Wearhouse',
+                description: 'phenomenon - Innovations Company - client work, projects, media - Men\'s Wearhouse',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Men\'s Wearhouse',
+                properties: {
+                    'og:type': 'website',
+                    'og:title': 'phenomenon - Innovations Company | Work - Men\'s Wearhouse',
+                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - Men\'s Wearhouse',
+                    'og:image': require('assets/images/work-3.jpg')
+                }
             }
         })
 
         .state('work/think-thin', {
             url: '/work/think-thin/',
             template: templateWorkThinkThin,
-            title: 'phenomenon - Innovations Company | Work - Xome',
-            description: 'phenomenon - Innovations Company - client work, projects, media - thinkThin',
-            keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, thinkThin',
-            properties: {
-                'og:type': 'website',
-                'og:title': 'phenomenon - Innovations Company | Work - thinThin',
-                'og:description': 'phenomenon - Innovations Company - client work, projects, media - thinkThin',
-                'og:image': require('assets/images/work-6.jpg')
+             metaTags: {
+                title: 'phenomenon - Innovations Company | Work - think Thin',
+                description: 'phenomenon - Innovations Company - client work, projects, media - think Thin',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, think Thin',
+                properties: {
+                    'og:type': 'website',
+                    'og:title': 'phenomenon - Innovations Company | Work - think Thin',
+                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - think Thin',
+                    'og:image': require('assets/images/work-6.jpg')
+                }
             }
         })
 
