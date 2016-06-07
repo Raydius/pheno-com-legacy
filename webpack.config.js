@@ -48,7 +48,7 @@ app.use(require('prerender-node').set('prerenderServiceUrl', 'http://localhost:3
 // main webpack module
 module.exports = {
     context: __dirname,
-    devtool: debug ? "inline-source-map" : null,
+    devtool: "inline-source-map", //debug ? "inline-source-map" : null,
     debug: debug,
     resolve: {
         alias: {
