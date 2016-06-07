@@ -98,7 +98,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             metaTags: {
                 title: 'phenomenon - Innovations Company | Work - Wilson',
                 description: 'phenomenon - Innovations Company - client work, projects, media - Wilson X',
-                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Wilson',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Wilson X',
                 properties: {
                     'og:type': 'website',
                     'og:title': 'phenomenon - Innovations Company | Work - Wilson X',
@@ -133,7 +133,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Men\'s Wearhouse',
                 properties: {
                     'og:type': 'website',
-                    'og:title': 'phenomenon - Innovations Company | Work - Xome',
+                    'og:title': 'phenomenon - Innovations Company | Work - Men\'s Wearhouse',
                     'og:description': 'phenomenon - Innovations Company - client work, projects, media - Men\'s Wearhouse',
                     'og:image': require('assets/images/work-3.jpg')
                 }
