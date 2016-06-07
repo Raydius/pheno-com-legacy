@@ -37,7 +37,10 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
                 description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
                 properties: {
-                    'og:title': 'Frontpage'
+                    'og:type': 'website',
+                    'og:title': 'Phenomenon - Innovations Company',
+                    'og:description': 'Phenomenon - Innovations Company',
+                    'og:image': require('assets/images/fb-share-center.png')
                 }
             }
         })
@@ -49,6 +52,12 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
                 title: 'phenomenon - Innovations Company | About Us',
                 description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
+                properties: {
+                    'og:type': 'website',
+                    'og:title': 'Phenomenon - Innovations Company',
+                    'og:description': 'Phenomenon - Innovations Company',
+                    'og:image': require('assets/images/fb-share-center.png')
+                }
             }
         })
 
@@ -60,7 +69,10 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
                 description: 'phenomenon - Innovations Company - client work, projects, media',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media',
                 properties: {
-                    'og:title': 'Frontpage'
+                    'og:type': 'website',
+                    'og:title': 'Phenomenon - Innovations Company',
+                    'og:description': 'Phenomenon - Innovations Company',
+                    'og:image': require('assets/images/fb-share-center.png')
                 }
             }
         })
@@ -145,14 +157,6 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             }
         })
 
-        .state('think-thin/', {
-            url: '/think-thin/',
-            templateUrl: '/views/think-thin',
-            data: {
-                pageShareImg: require('assets/images/work-1.jpg')
-            }
-        })
-
         .state('work/sunny/', {
             url: '/work/sunny-hide/',
             template: templateWorkSunny,
@@ -192,6 +196,12 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
                 title: 'phenomenon - Innovations Company | Culture',
                 description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
+                properties: {
+                    'og:type': 'website',
+                    'og:title': 'Phenomenon - Innovations Company',
+                    'og:description': 'Phenomenon - Innovations Company',
+                    'og:image': require('assets/images/fb-share-center.png')
+                }
             }
         })
 
@@ -203,6 +213,12 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
                 title: 'phenomenon - Innovations Company | Jobs',
                 description: 'phenomenon - Innovations Company - jobs, careers, open positions',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
+                properties: {
+                    'og:type': 'website',
+                    'og:title': 'Phenomenon - Innovations Company',
+                    'og:description': 'Phenomenon - Innovations Company',
+                    'og:image': require('assets/images/fb-share-center.png')
+                }
             }
         })
         .state('contact', {
@@ -213,6 +229,12 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
                 title: 'phenomenon - Innovations Company | Contact', 
                 description: 'phenomenon Innovations Company - Contact us about jobs, new business, and public relations.',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, contact us, jobs, new business, PR',
+                properties: {
+                    'og:type': 'website',
+                    'og:title': 'Phenomenon - Innovations Company',
+                    'og:description': 'Phenomenon - Innovations Company',
+                    'og:image': require('assets/images/fb-share-center.png')
+                }
             }
         })
 
@@ -223,6 +245,12 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
                 title: 'phenomenon - Innovations Company | Thanks',
                 description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
+                properties: {
+                    'og:type': 'website',
+                    'og:title': 'Phenomenon - Innovations Company',
+                    'og:description': 'Phenomenon - Innovations Company',
+                    'og:image': require('assets/images/fb-share-center.png')
+                }
             }
         })
     ;
