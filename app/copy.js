@@ -165,7 +165,7 @@ var copy =
       "blockquote": "Something like a Phenomenon.",
       "subquote": "A behind-the-scenes look at the most appropriately-named company I know.",
       "quoterName": "Kevin Dahlstrom",
-      "quoterTitle": "CMO, Mr. Cooper", 
+      "quoterTitle": "CMO, Nationstar Mortgage/Mr. Cooper", 
       "description": "Phenomenon - About",
       "dictionary": {
         "noun": "1. a person who can get out of their comfort zone to solve a problem.", 
@@ -182,7 +182,7 @@ var copy =
         "So you kind of self-select clients that are going to appreciate the kind of work you do.<span>Very much so.</span>"        
       ],*/
       "paragraph3": [
-        "I&#8217;ve worked with Phenomenon for 7 years across two companies. When I was hired to transform and re-brand the country&#8217;s largest non-bank home loan company, one of my first calls was to Phenomenon.",
+        "I&#8217;ve worked with Phenomenon for seven years across two companies. When I was hired to transform and re-brand the country&#8217;s largest non-bank mortgage servicer, one of my first calls was to Phenomenon.",
         "Why did you start this company? What are you all about?",
         "<span>We all know that the agency model is badly broken. Client interests don&#8217;t line up with agency interests and that's a recipe for disaster.</span>",
         "<span>So we founded Phenomenon as a reaction to that.</span>",
