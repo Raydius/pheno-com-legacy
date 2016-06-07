@@ -253,7 +253,7 @@ var copy =
       "description": "Phenomenon - Work",
       "blockquote": "A lot of the work they do is confidential. Here&#8217;s some that isn&#8217t.&#8221;",
       "quoterName": "Kevin Dahlstrom",
-      "quoterTitle": "CMO, Mr. Cooper",
+      "quoterTitle": "CMO, Nationstar Mortgage/Mr. Cooper",
       "maincontent": [
 
       ],
