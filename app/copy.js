@@ -118,21 +118,21 @@ var copy =
           "jobTitle": "VP Marketing, Wilson",
           "project": "Wilson Launches<br> Futuristic Ball.",
           "contributorAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson.png"),
-          "href": "work/wilson-x"
+          "href": "!#/work/wilson-x"
         },
         {
           "name": "Matt Stringer",
           "jobTitle": "EVP Marketing, Tailored Brands",
           "project": "Men&#8217s Wearhouse<br> Updates Its Wardrobe.",
           "contributorAvatar": require("assets/images/illustrations/phenomenon-matt-stringer-menswearhouse.png"),
-          "href": "work/mens-wearhouse"
+          "href": "!#/work/mens-wearhouse"
         },
         {
           "name": "Megan Crossland",
           "jobTitle": "Sr. Director of Marketing, thinkThin",
           "project": "thinkThin Helps<br> Women Shed the Guilt.",
           "contributorAvatar": require("assets/images/illustrations/phenomenon-megan-crossland-thinkthin.png"),
-          "href": "work/think-thin"
+          "href": "!#/work/think-thin"
         },
       ],
       "contributorsMore": [
