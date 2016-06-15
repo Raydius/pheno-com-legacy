@@ -1150,24 +1150,16 @@ var copy =
       "positions": "Open Positions",
       "listing": [
         {
-          "listingTitle": "UI Director",
-          "listingUrl": "https://www.linkedin.com/jobs2/view/125948058"
+          "listingTitle": "Junior Project Manager",
+          "listingUrl": "https://www.linkedin.com/jobs/view/143332356"
         },
         {
           "listingTitle": "Studio Manager",
           "listingUrl": "https://www.linkedin.com/jobs2/view/118724849"
         },
         {
-          "listingTitle": "Digital Design Director",
-          "listingUrl": "https://www.linkedin.com/jobs2/view/85312460"
-        },
-        {
           "listingTitle": "Digital Brand Manager",
           "listingUrl": "https://www.linkedin.com/jobs2/view/125942963"
-        },
-        {
-          "listingTitle": "Brand Manager",
-          "listingUrl": "https://www.linkedin.com/jobs2/view/111550639"
         },
         {
           "listingTitle": "Senior Brand Strategist",
