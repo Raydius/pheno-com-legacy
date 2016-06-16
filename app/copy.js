@@ -1158,6 +1158,10 @@ var copy =
           "listingUrl": "https://www.linkedin.com/jobs2/view/118724849"
         },
         {
+          "listingTitle": "Digital Design Director",
+          "listingUrl": "https://www.linkedin.com/jobs2/view/85312460"
+        },
+        {
           "listingTitle": "Digital Brand Manager",
           "listingUrl": "https://www.linkedin.com/jobs2/view/125942963"
         },
