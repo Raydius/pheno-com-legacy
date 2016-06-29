@@ -1168,6 +1168,10 @@ var copy =
         {
           "listingTitle": "Senior Brand Strategist",
           "listingUrl": "https://www.linkedin.com/jobs2/view/134226006"
+        },
+        {
+          "listingTitle": "Analytics Manager",
+          "listingUrl": "https://www.linkedin.com/jobs/view/149255948"
         }
       ],
       "details": [
