@@ -1150,10 +1150,6 @@ var copy =
       "positions": "Open Positions",
       "listing": [
         {
-          "listingTitle": "Junior Project Manager",
-          "listingUrl": "https://www.linkedin.com/jobs/view/143332356"
-        },
-        {
           "listingTitle": "Studio Manager",
           "listingUrl": "https://www.linkedin.com/jobs2/view/118724849"
         },
