@@ -1150,6 +1150,10 @@ var copy =
       "positions": "Open Positions",
       "listing": [
         {
+          "listingTitle": "HR Manager",
+          "listingUrl": "https://www.linkedin.com/jobs2/cap/view/150868855"
+        },
+        {
           "listingTitle": "Studio Manager",
           "listingUrl": "https://www.linkedin.com/jobs2/view/118724849"
         },
