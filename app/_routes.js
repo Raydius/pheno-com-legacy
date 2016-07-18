@@ -246,6 +246,11 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             }
         })
 
+        .state('blog', {
+            url: '/blog',
+            template: 'test'
+        })
+
         .state('thanks', {
             url: '/thanks',
             templateUrl: '/views/components/thanks',
