@@ -165,7 +165,7 @@ var copy =
       "blockquote": "Something like a Phenomenon.",
       "subquote": "A behind-the-scenes look at the most appropriately-named company I know.",
       "quoterName": "Kevin Dahlstrom",
-      "quoterTitle": "CMO, Nationstar Mortgage/Mr. Cooper", 
+      "quoterTitle": "CMO, Nationstar Mortgage",
       "description": "Phenomenon - About",
       "dictionary": {
         "noun": "1. a person who can get out of their comfort zone to solve a problem.", 
@@ -253,7 +253,7 @@ var copy =
       "description": "Phenomenon - Work",
       "blockquote": "A lot of the work they do is confidential. Here&#8217;s some that isn&#8217t.&#8221;",
       "quoterName": "Kevin Dahlstrom",
-      "quoterTitle": "CMO, Nationstar Mortgage/Mr. Cooper",
+      "quoterTitle": "CMO, Nationstar Mortgage",
       "maincontent": [
 
       ],
