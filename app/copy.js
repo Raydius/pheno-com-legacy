@@ -1150,6 +1150,10 @@ var copy =
       "positions": "Open Positions",
       "listing": [
         {
+          "listingTitle": "ACD/Copywriter",
+          "listingUrl": "https://www.linkedin.com/jobs/view/184897336"
+        },
+        {
           "listingTitle": "HR Manager",
           "listingUrl": "https://www.linkedin.com/jobs2/cap/view/150868855"
         },
