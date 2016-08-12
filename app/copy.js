@@ -1150,12 +1150,12 @@ var copy =
       "positions": "Open Positions",
       "listing": [
         {
-          "listingTitle": "ACD/Copywriter",
-          "listingUrl": "https://www.linkedin.com/jobs/view/184897336"
+          "listingTitle": "IT Director",
+          "listingUrl": "https://www.linkedin.com/jobs/view/187272051"
         },
         {
-          "listingTitle": "HR Manager",
-          "listingUrl": "https://www.linkedin.com/jobs2/cap/view/150868855"
+          "listingTitle": "ACD/Copywriter",
+          "listingUrl": "https://www.linkedin.com/jobs/view/184897336"
         },
         {
           "listingTitle": "Studio Manager",
@@ -1168,14 +1168,6 @@ var copy =
         {
           "listingTitle": "Digital Brand Manager",
           "listingUrl": "https://www.linkedin.com/jobs2/view/125942963"
-        },
-        {
-          "listingTitle": "Senior Brand Strategist",
-          "listingUrl": "https://www.linkedin.com/jobs2/view/134226006"
-        },
-        {
-          "listingTitle": "Analytics Manager",
-          "listingUrl": "https://www.linkedin.com/jobs/view/149255948"
         }
       ],
       "details": [
