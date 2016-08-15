@@ -28,8 +28,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
     // config routing
 
     // TODO: 404 handler
-    // $urlRouterProvider.otherwise('/');
-
+    $urlRouterProvider.otherwise('/404.html');
     
     $stateProvider
         .state('home', {
