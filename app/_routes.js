@@ -33,6 +33,11 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         },
         template: "<div></div>"
     });*/
+    $urlRouterProvider.when('', '/');
+    $urlRouterProvider.otherwise(function($injector, $location) {
+        console.log('otherwise');
+    });
+
 
     // config routing
     $stateProvider
