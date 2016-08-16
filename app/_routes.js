@@ -27,17 +27,12 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
 
 
     // TODO: 404 handler
-    /*$urlRouterProvider.otherwise({
-        controller: function() {
-            window.location.replace('/');
-        },
-        template: "<div></div>"
-    });*/
-    $urlRouterProvider.when('', '/');
+    /*$urlRouterProvider.when('', '/');
     $urlRouterProvider.otherwise(function($injector, $location) {
         console.log('otherwise');
-    });
+    });*/
 
+    $urlRouterProvider.otherwise('/');
 
     // config routing
     $stateProvider
