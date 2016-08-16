@@ -1150,6 +1150,10 @@ var copy =
       "positions": "Open Positions",
       "listing": [
         {
+          "listingTitle": "Front Desk Coordinator",
+          "listingUrl": "https://www.linkedin.com/jobs2/cap/view/191086180"
+        },
+        {
           "listingTitle": "IT Director",
           "listingUrl": "https://www.linkedin.com/jobs/view/187272051"
         },

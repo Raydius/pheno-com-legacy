@@ -24,9 +24,17 @@ var templateJobs = require('views/jobs.jade');
 
 
 angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
-    
-    // config routing
+
+
+    // TODO: 404 handler
+    /*$urlRouterProvider.when('', '/');
+    $urlRouterProvider.otherwise(function($injector, $location) {
+        console.log('otherwise');
+    });*/
+
     $urlRouterProvider.otherwise('/');
+
+    // config routing
     $stateProvider
         .state('home', {
             url: '/',
@@ -266,5 +274,8 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
                 }
             }
         })
+
     ;
+
+
 });
