@@ -44,7 +44,7 @@ var copy =
       "className": "icon-twitter",
       "title": "View Phenomenon's Tweets"
     },
-    "facebook": { 
+    "facebook": {
       "url": "https://www.facebook.com/PHENOMENONmarketing/",
       "className": "icon-facebook",
       "title": "View Phenomenon's Facebook Page"
@@ -136,7 +136,7 @@ var copy =
         },
       ],
       "contributorsMore": [
-       /* { 
+       /* {
           "name": "Allison Cornia",
           "jobTitle": "SVP Marketing, Xome",
           "project": "When Buying a House, There&#8217s No Place Like Xome.",
@@ -168,7 +168,7 @@ var copy =
       "quoterTitle": "CMO, Nationstar Mortgage",
       "description": "Phenomenon - About",
       "dictionary": {
-        "noun": "1. a person who can get out of their comfort zone to solve a problem.", 
+        "noun": "1. a person who can get out of their comfort zone to solve a problem.",
         "verb": "2. to carry out a solution in any direction that is correct for the problem."
       },
       /*"paragraph1": [
@@ -179,7 +179,7 @@ var copy =
         'KD: So, do you say, "no" to every client at first, or was it just me?<span>PHENO: Ha! So this is where you want to start?</span>',
         "Absolutely<span>Look, we throw ourselves into everything we do. We work long hours, we scrutinize, we push. We really go all out. And to put that much effort into something, we have to believe in it. And, truthfully, the Payday Loan business had a lot of negative implications with predatory lending and all that. And it just didn&#8217;t feel like the kind of thing we could feel good about.</span>",
         "So what changed your mind?<span>The second you gave us the permission to help you create a new kind of company, one that actually helped people break the cycle of poverty and bad credit, we were in. 100%. We&#8217;re actually not very good at working with clients who want more of the same. It&#8217;s when they want to radically change their business, growth, trajectory and market share that we&#8217;re the right firm to call.</span>",
-        "So you kind of self-select clients that are going to appreciate the kind of work you do.<span>Very much so.</span>"        
+        "So you kind of self-select clients that are going to appreciate the kind of work you do.<span>Very much so.</span>"
       ],*/
       "paragraph3": [
         "I&#8217;ve worked with Phenomenon for seven years across two companies. When I was hired to transform and re-brand the country&#8217;s largest non-bank mortgage servicer, one of my first calls was to Phenomenon.",
@@ -299,7 +299,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": require('assets/images/work-4.png'), 
+          "imageUrl": require('assets/images/work-4.png'),
           "imageAlt": "Wilson Image 4",
           "legend": "Sport / Lifestyle",
           "headline": "Wilson Launches Futuristic Ball.",
@@ -318,7 +318,7 @@ var copy =
           "citeName": "By Patsy Hauer",
           "citeTitle": "VP Brand Marketing, Sunny",
           "description": "British company creates a whole new business model for payday loans that gives borrowers a better chance at getting out of debt.",
-          "readmoreUrl": "#!/work/sunny/"          
+          "readmoreUrl": "#!/work/sunny/"
         },*/
         /*{
           "type": "image",
@@ -335,8 +335,8 @@ var copy =
         }*/
       ]
     },
-    "wilson-anthem": { 
-      "title": "My Wilson", 
+    "wilson-anthem": {
+      "title": "My Wilson",
       "className": "wilson-anthem",
       "client": "Wilson",
       "clientLogo": require('assets/images/works/clients_logo/wilson_logo.svg'),
@@ -348,7 +348,7 @@ var copy =
       "quoterName": "By Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
       "quoterAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson-grey.png"),
-      "description": "CVU - Phenomenon - Wilson X", 
+      "description": "CVU - Phenomenon - Wilson X",
       "shareImg": require("assets/images/work-1.jpg"),
       "topDescription": [
         "Even though Wilson makes sporting equipment for just about every sport in the world, it had been years since we had any sort of global brand campaign. Since this was our first campaign in a while, we needed to reestablish what Wilson was all about. Yes, we make quality, trusted equipment, but what do we stand for? What is our role in the world of sports?",
@@ -410,12 +410,12 @@ var copy =
           "thumbTitle": "Click to play video",
           "vimeo": "155010840",
           "mainDescription": [
-            "<span class='red'>The launch film was not just a celebration of the biggest athletes in the world, it showed how every athlete has a powerful relationship with their equipment. It showed professional and amateur youth athletes side-by-side.</span>", 
+            "<span class='red'>The launch film was not just a celebration of the biggest athletes in the world, it showed how every athlete has a powerful relationship with their equipment. It showed professional and amateur youth athletes side-by-side.</span>",
             "We didn't have a massive media buy, so we decided to leverage social media to get more views and at the same time ambitiously grow our social presence. The way we did this was by using content to create two-way conversations with our followers. We asked amateurs all over the world to upload videos of themselves out on the playing fields, and we edited that footage into the actual spot giving youth athletes a personalized version that they could share over Facebook, Twitter or Instagram."
           ]
         },
         {
-          "type": "scrollingSite", 
+          "type": "scrollingSite",
           "scrollingSite": true,
           "imageUrl": require("assets/images/Wilson-Anthem-LandingPage_02c.jpg"),
           "imageAlt": "SLS",
@@ -441,7 +441,7 @@ var copy =
         }
       ]
     },
-    "wilson-x": {  
+    "wilson-x": {
       "title": "Wilson X",
       "className": "wilson-x",
       "client": "Wilson",
@@ -455,7 +455,7 @@ var copy =
       "quoterTitle": "VP Marketing, Wilson",
       "quoterAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson-grey.png"),
       "shareImg": require("assets/images/work-4.png"),
-      "description": "CVU - Phenomenon - Wilson X", 
+      "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "With over 100 years of experience making sports equipment, we&#8217ve been at the forefront of nearly every major technology advancement in just about every sport. So it only made sense to pioneer the use of sensors and IOT technology inside our equipment with the Wilson X Connected Basketball.",
         "Wilson X really pushes the boundaries of what a basketball can be.",
@@ -584,7 +584,7 @@ var copy =
         }
       ]
     },
-    "sls": { 
+    "sls": {
       "title": "SLS",
       "className": "sls",
       "client": "SBE",
@@ -595,7 +595,7 @@ var copy =
       "blockquote": " SLS Vegas Gives the<br> Strip a Whole New Look.",
       "ogDescription": " SLS Vegas Gives the Strip a Whole New Look.",
       "shareImg": require("assets/images/wilson_x_1_01-opt.jpg"),
-      "description": "CVU - Phenomenon - Wilson X", 
+      "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "The SLS chain of high-end, luxury hotels has been a mainstay in Miami and Los Angeles for over a decade. Since 2007 we have been anxiously anticipating our expansion to Sin City. And 7 years later we were ready to launch. But when it comes to Vegas, it's not as simple as just opening the doors. You have to really identify and brand who you are. Every hotel in Vegas has shows. Everyone has restaurants. Everyone has gambling. But what will you get when you come to the SLS Vegas? That was the challenge ahead of us.",
         "<span class='red'>So when we created the branding for the SLS Vegas, we literally mixed the old Vegas with the new.</span>",
@@ -645,8 +645,8 @@ var copy =
           "mainDescription": [
             "Most people don't know, but in LA - where the SLS is iconic- we actually own numerous restaurants and clubs in addition to the hotels. But the challenge with our new Vegas location, was that all of these entities are housed under the same roof. So from a visual standpoint, we wanted some kind of harmony, some kind of tone that unified everything from a club to a little coffee shop.",
             "They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq.",
-            "Phenomenon helped us with all of this. They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq."            
-          ]      
+            "Phenomenon helped us with all of this. They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq."
+          ]
         },
         {
           "type": "image",
@@ -688,7 +688,7 @@ var copy =
         }
       ]
     },
-    "xome": { 
+    "xome": {
       "title": "Xome",
       "className": "Xome",
       "client": "Xome",
@@ -742,7 +742,7 @@ var copy =
         }
       ]
     },
-    "sunny": { 
+    "sunny": {
       "title": "Sunny",
       "className": "sunny",
       "client": "Sunny",
@@ -772,7 +772,7 @@ var copy =
             'Strategically, Phenomenon recognized that there was no loyalty in our industry, and for good reason. People took out their first loan and then had to pay so much back that they took out another loan to pay for that, and so on and so on. Often working with multiple companies in the process, or as they deemed it, "a circle of debt." Because of the rates and the product architecture, people didn&#8217t have any choice, this was the way this category operated and no one was challenging the status quo of a predatory business model, until Sunny.',
             "Sunny was a business idea that was different because it was architected to help customers; a first for this category. Things like making payments on time lowered their interest. And the more loans you take out with us, as long as you continue to pay back on time, the lower the rate goes.",
             "After we all committed to making this change to our business model and challenging the entire category, Phenomenon then transitioned into helping us make it a reality. They designed the logo. Designed and built the website. And launched a brand campaign that ran all over the UK. This campaign included a series of ads featuring puppets. Why? Well, for years the notoriously shady payday loan company, Wonga hid behind endearing puppets. We decided to take them head on with a campaign that basically said don&#8217t trust puppets, trust a better way of doing payday loans."
-          ]      
+          ]
         }
       ],
       "caseWriter": {
@@ -800,17 +800,17 @@ var copy =
         }
       ]
     },
-    "mens-wearhouse": { 
+    "mens-wearhouse": {
       "title": "Rebrand",
       "className": "mens-wearhouse",
-      "client": "Men's Wearhouse", 
+      "client": "Men's Wearhouse",
       "clientLogo": require('assets/images/works/clients_logo/mens-wearhouse.svg'),
       "clientLogoWidth": "250px",
       "project": "Rebrand",
       "media": "TV, Collateral",
-      "blockquote": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.", 
-      "ogDescription": "Men&#8217;s Wearhouse Updates Its Wardrobe.", 
-      "ogDescription": "Men&#8217;s Wearhouse Updates Its Wardrobe.", 
+      "blockquote": "Men&#8217;s Wearhouse<br> Updates Its Wardrobe.",
+      "ogDescription": "Men&#8217;s Wearhouse Updates Its Wardrobe.",
+      "ogDescription": "Men&#8217;s Wearhouse Updates Its Wardrobe.",
       "quoterName": "By Matt Stringer",
       "quoterTitle": "EVP Marketing, Tailored Brands",
       "quoterAvatar": require("assets/images/illustrations/phenomenon-matt-stringer-menswearhouse-grey.png"),
@@ -846,7 +846,7 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1a.png"), 
+              "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1a.png"),
               "alt": "Men's Wearhouse Photo 1"
             },
             {
@@ -894,10 +894,10 @@ var copy =
         }
       ]
     },
-    "think-thin": { 
+    "think-thin": {
       "title": "Think Thin",
       "className": "think-thin",
-      "client": "thinkThin", 
+      "client": "thinkThin",
       "clientLogo": require('assets/images/client_icons/icon-thinkthin.svg'),
       "clientLogoWidth": "100px",
       "project": "Brand Campaign",
@@ -906,7 +906,7 @@ var copy =
       "ogDescription": 'thinkThin Helps Women Shed the Guilt.',
       "quoterName": "By Megan Crossland",
       "quoterTitle": "Sr. Director of Marketing, thinkThin",
-      "quoterAvatar": require("assets/images/illustrations/phenomenon-megan-crossland-thinkthin-grey.png"), 
+      "quoterAvatar": require("assets/images/illustrations/phenomenon-megan-crossland-thinkthin-grey.png"),
       "shareImg": require("assets/images/work-6.jpg"),
       "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
@@ -985,7 +985,7 @@ var copy =
         }*/
       ]
     },
-    "cooper": { 
+    "cooper": {
       "title": "Cooper",
       "className": "cooper",
       "client": "Mr.Cooper",
@@ -994,7 +994,7 @@ var copy =
       "media": "Branding",
       "blockquote": "Home Loans Get More Human with Mr.Cooper.",
       "shareImg": require("assets/images/wilson_x_1_02-opt.jpg"),
-      "description": "CVU - Phenomenon - Wilson X", 
+      "description": "CVU - Phenomenon - Wilson X",
       "topDescription": [
         "In the UK, the short-term loans business is not dissimilar to the States in that we have a huge stigma problem. Most people associate us with shady strip malls with big neon signs and questionable business practices. And brands you do know, like Wonga, notoriously take advantage of consumers and their need for fast cash.",
         "We went to Phenomenon to help us create a differentiating short-term loan product",
@@ -1041,8 +1041,8 @@ var copy =
           "mainDescription": [
             "Most people don't know, but in LA - where the SLS is iconic- we actually own numerous restaurants and clubs in addition to the hotels. But the challenge with our new Vegas location, was that all of these entities are housed under the same roof. So from a visual standpoint, we wanted some kind of harmony, some kind of tone that unified everything from a club to a little coffee shop.",
             "They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq.",
-            "Phenomenon helped us with all of this. They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq."            
-          ]      
+            "Phenomenon helped us with all of this. They designed the packaging for the amenities in the hotel. They created logos and brand books for just about all of our new restaurants and clubs. They even named our espresso bar, Perq."
+          ]
         },
         {
           "type": "image",
@@ -1090,20 +1090,20 @@ var copy =
         "writerName": "By Amy Weisenback",
         "writerTitle": "VP Marketing, Wilson",
         "projectUrl": "#!/work/wilson-anthem/",
-        "projectThumbSrc": require("assets/images/morecases/1.jpg") 
+        "projectThumbSrc": require("assets/images/morecases/1.jpg")
       },
       {
         "projectName": "Men&#8217s Wearhouse <br>Updates Its Closet.",
         "writerName": "By Matt Stringer",
         "writerTitle": "EVP Marketing, Tailored Brands",
         "projectUrl": "#!/work/mens-wearhouse/",
-        "projectThumbSrc": require("assets/images/morecases/2.png") 
+        "projectThumbSrc": require("assets/images/morecases/2.png")
       },
       {
         "projectName": "thinkThin Helps<br>Women Shed the Guilt.",
         "writerName": "By Megan Crossland",
         "writerTitle": "Sr. Director of Marketing, thinkThin",
-        "projectUrl": "#!/work/think-thin/", 
+        "projectUrl": "#!/work/think-thin/",
         "projectThumbSrc": require("assets/images/morecases/3.png")
       },
       {
@@ -1117,19 +1117,19 @@ var copy =
         "projectName": "It's a Sunny Day for Payday Loans.",
         "writerName": "By Patsy Hauer",
         "writerTitle": "VP Brand Marketing, Sunny",
-        "projectUrl": "#!/work/sunny/",  
+        "projectUrl": "#!/work/sunny/",
         "projectThumbSrc": require("assets/images/morecases/5.jpg")
       },
       {
         "projectName": "When Buying a House, There's No Place Like Xome",
         "writerName": "By Alison Cornia",
         "writerTitle": "SVP Marketing, Xome",
-        "projectUrl": "#!/work/xome/", 
+        "projectUrl": "#!/work/xome/",
         "projectThumbSrc": require("assets/images/morecases/6.jpg")
       }*/
     ],
-    "culture": { 
-      "title": "Culture", 
+    "culture": {
+      "title": "Culture",
       "className": "culture",
       "description": "Phenomenon - Culture",
       "blockquote": "Their office on the 28th floor provides great views of all the amazing places in LA that I've wanted to see but didn't have time to sit in traffic for two hours to visit.&#8221;",
@@ -1149,6 +1149,10 @@ var copy =
       "quoterTitle": "VP Marketing, Wilson",
       "positions": "Open Positions",
       "listing": [
+        {
+          "listingTitle": "Brand Manager (Chicago)",
+          "listingUrl": "https://www.linkedin.com/jobs2/cap/view/199096527"
+        },
         {
           "listingTitle": "IT Director",
           "listingUrl": "https://www.linkedin.com/jobs/view/187272051"
@@ -1267,4 +1271,4 @@ var copy =
   }
 };
 
-module.exports = copy; 
+module.exports = copy;
