@@ -1150,7 +1150,7 @@ var copy =
       "positions": "Open Positions",
       "listing": [
         {
-          "listingTitle": "Executive Assistant",
+          "listingTitle": "Executive Assistant (Los Angeles)",
           "listingUrl": "https://www.linkedin.com/jobs/view/196680842"
         },
         {
