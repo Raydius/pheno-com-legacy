@@ -111,7 +111,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	__webpack_require__(19);
 	__webpack_require__(7);
 	__webpack_require__(21);
-	module.exports = __webpack_require__(5);
+	__webpack_require__(5);
+	__webpack_require__(29);
+	__webpack_require__(31);
+	__webpack_require__(33);
+	module.exports = __webpack_require__(24);
 
 
 /***/ },
@@ -207,7 +211,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-	 * jQuery JavaScript Library v2.2.2
+	 * jQuery JavaScript Library v2.2.3
 	 * http://jquery.com/
 	 *
 	 * Includes Sizzle.js
@@ -217,7 +221,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Released under the MIT license
 	 * http://jquery.org/license
 	 *
-	 * Date: 2016-03-17T17:51Z
+	 * Date: 2016-04-05T19:26Z
 	 */
 
 	(function( global, factory ) {
@@ -273,7 +277,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	var
-		version = "2.2.2",
+		version = "2.2.3",
 
 		// Define a local copy of jQuery
 		jQuery = function( selector, context ) {
@@ -9683,7 +9687,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			// If it fails, this function gets "jqXHR", "status", "error"
 			} ).always( callback && function( jqXHR, status ) {
 				self.each( function() {
-					callback.apply( self, response || [ jqXHR.responseText, status, jqXHR ] );
+					callback.apply( this, response || [ jqXHR.responseText, status, jqXHR ] );
 				} );
 			} );
 		}
@@ -12418,11 +12422,11 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/**
-	 * @license AngularJS v1.5.3
+	 * @license AngularJS v1.5.5
 	 * (c) 2010-2016 Google, Inc. http://angularjs.org
 	 * License: MIT
 	 */
-	(function(window, document, undefined) {'use strict';
+	(function(window) {'use strict';
 
 	/**
 	 * @description
@@ -12476,7 +12480,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return match;
 	    });
 
-	    message += '\nhttp://errors.angularjs.org/1.5.3/' +
+	    message += '\nhttp://errors.angularjs.org/1.5.5/' +
 	      (module ? module + '/' : '') + code;
 
 	    for (i = SKIP_INDEXES, paramPrefix = '?'; i < templateArgs.length; i++, paramPrefix = '&') {
@@ -12590,6 +12594,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @ngdoc module
 	 * @name ng
 	 * @module ng
+	 * @installation
 	 * @description
 	 *
 	 * # ng (core module)
@@ -12656,7 +12661,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * documentMode is an IE-only property
 	 * http://msdn.microsoft.com/en-us/library/ie/cc196988(v=vs.85).aspx
 	 */
-	msie = document.documentMode;
+	msie = window.document.documentMode;
 
 
 	/**
@@ -13466,6 +13471,41 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @param {*} o1 Object or value to compare.
 	 * @param {*} o2 Object or value to compare.
 	 * @returns {boolean} True if arguments are equal.
+	 *
+	 * @example
+	   <example module="equalsExample" name="equalsExample">
+	     <file name="index.html">
+	      <div ng-controller="ExampleController">
+	        <form novalidate>
+	          <h3>User 1</h3>
+	          Name: <input type="text" ng-model="user1.name">
+	          Age: <input type="number" ng-model="user1.age">
+
+	          <h3>User 2</h3>
+	          Name: <input type="text" ng-model="user2.name">
+	          Age: <input type="number" ng-model="user2.age">
+
+	          <div>
+	            <br/>
+	            <input type="button" value="Compare" ng-click="compare()">
+	          </div>
+	          User 1: <pre>{{user1 | json}}</pre>
+	          User 2: <pre>{{user2 | json}}</pre>
+	          Equal: <pre>{{result}}</pre>
+	        </form>
+	      </div>
+	    </file>
+	    <file name="script.js">
+	        angular.module('equalsExample', []).controller('ExampleController', ['$scope', function($scope) {
+	          $scope.user1 = {};
+	          $scope.user2 = {};
+	          $scope.result;
+	          $scope.compare = function() {
+	            $scope.result = angular.equals($scope.user1, $scope.user2);
+	          };
+	        }]);
+	    </file>
+	  </example>
 	 */
 	function equals(o1, o2) {
 	  if (o1 === o2) return true;
@@ -13512,8 +13552,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!isDefined(csp.rules)) {
 
 
-	    var ngCspElement = (document.querySelector('[ng-csp]') ||
-	                    document.querySelector('[data-ng-csp]'));
+	    var ngCspElement = (window.document.querySelector('[ng-csp]') ||
+	                    window.document.querySelector('[data-ng-csp]'));
 
 	    if (ngCspElement) {
 	      var ngCspAttribute = ngCspElement.getAttribute('ng-csp') ||
@@ -13588,7 +13628,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var i, ii = ngAttrPrefixes.length, prefix, name;
 	  for (i = 0; i < ii; ++i) {
 	    prefix = ngAttrPrefixes[i];
-	    if (el = document.querySelector('[' + prefix.replace(':', '\\:') + 'jq]')) {
+	    if (el = window.document.querySelector('[' + prefix.replace(':', '\\:') + 'jq]')) {
 	      name = el.getAttribute(prefix + 'jq');
 	      break;
 	    }
@@ -13653,7 +13693,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    val = undefined;
 	  } else if (isWindow(value)) {
 	    val = '$WINDOW';
-	  } else if (value &&  document === value) {
+	  } else if (value &&  window.document === value) {
 	    val = '$DOCUMENT';
 	  } else if (isScope(value)) {
 	    val = '$SCOPE';
@@ -14105,11 +14145,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    element = jqLite(element);
 
 	    if (element.injector()) {
-	      var tag = (element[0] === document) ? 'document' : startingTag(element);
+	      var tag = (element[0] === window.document) ? 'document' : startingTag(element);
 	      //Encode angle brackets to prevent input from being sanitized to empty string #8683
 	      throw ngMinErr(
 	          'btstrpd',
-	          "App Already Bootstrapped with this Element '{0}'",
+	          "App already bootstrapped with this element '{0}'",
 	          tag.replace(/</,'&lt;').replace(/>/,'&gt;'));
 	    }
 
@@ -14556,9 +14596,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	           * @ngdoc method
 	           * @name angular.Module#decorator
 	           * @module ng
-	           * @param {string} The name of the service to decorate.
-	           * @param {Function} This function will be invoked when the service needs to be
-	           *                                    instantiated and should return the decorated service instance.
+	           * @param {string} name The name of the service to decorate.
+	           * @param {Function} decorFn This function will be invoked when the service needs to be
+	           *                           instantiated and should return the decorated service instance.
 	           * @description
 	           * See {@link auto.$provide#decorator $provide.decorator()}.
 	           */
@@ -14862,11 +14902,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * - `codeName` – `{string}` – Code name of the release, such as "jiggling-armfat".
 	 */
 	var version = {
-	  full: '1.5.3',    // all of these placeholder strings will be replaced by grunt's
+	  full: '1.5.5',    // all of these placeholder strings will be replaced by grunt's
 	  major: 1,    // package task
 	  minor: 5,
-	  dot: 3,
-	  codeName: 'diplohaplontic-meiosis'
+	  dot: 5,
+	  codeName: 'material-conspiration'
 	};
 
 
@@ -15123,6 +15163,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * - `inheritedData()` - same as `data()`, but walks up the DOM until a value is found or the top
 	 *   parent element is reached.
 	 *
+	 * @knownIssue You cannot spy on `angular.element` if you are using Jasmine version 1.x. See
+	 * https://github.com/angular/angular.js/issues/14251 for more information.
+	 *
 	 * @param {string|DOMElement} element HTML string or DOMElement to be wrapped into jQuery.
 	 * @returns {Object} jQuery object.
 	 */
@@ -15249,7 +15292,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 	function jqLiteParseHTML(html, context) {
-	  context = context || document;
+	  context = context || window.document;
 	  var parsed;
 
 	  if ((parsed = SINGLE_TAG_REGEXP.exec(html))) {
@@ -15275,7 +15318,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// IE9-11 has no method "contains" in SVG element and in Node.prototype. Bug #10259.
-	var jqLiteContains = Node.prototype.contains || function(arg) {
+	var jqLiteContains = window.Node.prototype.contains || function(arg) {
 	  // jshint bitwise: false
 	  return !!(this.compareDocumentPosition(arg) & 16);
 	  // jshint bitwise: true
@@ -15547,8 +15590,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    // check if document is already loaded
-	    if (document.readyState === 'complete') {
-	      setTimeout(trigger);
+	    if (window.document.readyState === 'complete') {
+	      window.setTimeout(trigger);
 	    } else {
 	      this.on('DOMContentLoaded', trigger); // works for modern browsers and IE9
 	      // we can not use jqLite since we are not done loading and jQuery could be loaded later.
@@ -16238,6 +16281,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * @ngdoc module
 	 * @name auto
+	 * @installation
 	 * @description
 	 *
 	 * Implicit module which gets automatically added to each {@link auto.$injector $injector}.
@@ -16251,7 +16295,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var $injectorMinErr = minErr('$injector');
 
 	function extractArgs(fn) {
-	  var fnText = fn.toString().replace(STRIP_COMMENTS, ''),
+	  var fnText = Function.prototype.toString.call(fn).replace(STRIP_COMMENTS, ''),
 	      args = fnText.match(ARROW_ARG) || fnText.match(FN_ARGS);
 	  return args;
 	}
@@ -17671,6 +17715,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	       * // remove all the animation event listeners listening for `enter`
 	       * $animate.off('enter');
 	       *
+	       * // remove listeners for all animation events from the container element
+	       * $animate.off(container);
+	       *
 	       * // remove all the animation event listeners listening for `enter` on the given element and its children
 	       * $animate.off('enter', container);
 	       *
@@ -17679,7 +17726,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	       * $animate.off('enter', container, callback);
 	       * ```
 	       *
-	       * @param {string} event the animation event (e.g. enter, leave, move, addClass, removeClass, etc...)
+	       * @param {string|DOMElement} event|container the animation event (e.g. enter, leave, move,
+	       * addClass, removeClass, etc...), or the container element. If it is the element, all other
+	       * arguments are ignored.
 	       * @param {DOMElement=} container the container element the event listener was placed on
 	       * @param {Function=} callback the callback function that was registered as the listener
 	       */
@@ -19252,8 +19301,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *   this element). This is a good place to put initialization code for your controller.
 	 * * `$onChanges(changesObj)` - Called whenever one-way (`<`) or interpolation (`@`) bindings are updated. The
 	 *   `changesObj` is a hash whose keys are the names of the bound properties that have changed, and the values are an
-	 *   object of the form `{ currentValue: ..., previousValue: ... }`. Use this hook to trigger updates within a component
-	 *   such as cloning the bound value to prevent accidental mutation of the outer value.
+	 *   object of the form `{ currentValue, previousValue, isFirstChange() }`. Use this hook to trigger updates within a
+	 *   component such as cloning the bound value to prevent accidental mutation of the outer value.
 	 * * `$onDestroy()` - Called on a controller when its containing scope is destroyed. Use this hook for releasing
 	 *   external resources, watches and event handlers. Note that components have their `$onDestroy()` hooks called in
 	 *   the same order as the `$scope.$broadcast` events are triggered, which is top down. This means that parent
@@ -19800,6 +19849,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var $compileMinErr = minErr('$compile');
 
+	function UNINITIALIZED_VALUE() {}
+	var _UNINITIALIZED_VALUE = new UNINITIALIZED_VALUE();
+
 	/**
 	 * @ngdoc provider
 	 * @name $compileProvider
@@ -19824,7 +19876,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  function parseIsolateBindings(scope, directiveName, isController) {
 	    var LOCAL_REGEXP = /^\s*([@&<]|=(\*?))(\??)\s*(\w*)\s*$/;
 
-	    var bindings = {};
+	    var bindings = createMap();
 
 	    forEach(scope, function(definition, scopeName) {
 	      if (definition in bindingCache) {
@@ -19998,6 +20050,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	   *      See {@link ng.$compile#-bindtocontroller- `bindToController`}.
 	   *    - `transclude` – `{boolean=}` – whether {@link $compile#transclusion content transclusion} is enabled.
 	   *      Disabled by default.
+	   *    - `require` - `{Object<string, string>=}` - requires the controllers of other directives and binds them to
+	   *      this component's controller. The object keys specify the property names under which the required
+	   *      controllers (object values) will be bound. See {@link ng.$compile#-require- `require`}.
 	   *    - `$...` – additional properties to attach to the directive factory function and the controller
 	   *      constructor function. (This is used by the component router to annotate)
 	   *
@@ -20043,7 +20098,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	   * See also {@link ng.$compileProvider#directive $compileProvider.directive()}.
 	   */
 	  this.component = function registerComponent(name, options) {
-	    var controller = options.controller || noop;
+	    var controller = options.controller || function() {};
 
 	    function factory($injector) {
 	      function makeInjectable(fn) {
@@ -20057,7 +20112,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 
 	      var template = (!options.template && !options.templateUrl ? '' : options.template);
-	      return {
+	      var ddo = {
 	        controller: controller,
 	        controllerAs: identifierForController(options.controller) || options.controllerAs || '$ctrl',
 	        template: makeInjectable(template),
@@ -20068,14 +20123,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	        restrict: 'E',
 	        require: options.require
 	      };
+
+	      // Copy annotations (starting with $) over to the DDO
+	      forEach(options, function(val, key) {
+	        if (key.charAt(0) === '$') ddo[key] = val;
+	      });
+
+	      return ddo;
 	    }
 
-	    // Copy any annotation properties (starting with $) over to the factory function
+	    // TODO(pete) remove the following `forEach` before we release 1.6.0
+	    // The component-router@0.2.0 looks for the annotations on the controller constructor
+	    // Nothing in Angular looks for annotations on the factory function but we can't remove
+	    // it from 1.5.x yet.
+
+	    // Copy any annotation properties (starting with $) over to the factory and controller constructor functions
 	    // These could be used by libraries such as the new component router
 	    forEach(options, function(val, key) {
 	      if (key.charAt(0) === '$') {
 	        factory[key] = val;
-	        controller[key] = val;
+	        // Don't try to copy over annotations to named controller
+	        if (isFunction(controller)) controller[key] = val;
 	      }
 	    });
 
@@ -20212,7 +20280,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	             $controller,   $rootScope,   $sce,   $animate,   $$sanitizeUri) {
 
 	    var SIMPLE_ATTR_NAME = /^\w/;
-	    var specialAttrHolder = document.createElement('div');
+	    var specialAttrHolder = window.document.createElement('div');
 
 
 
@@ -20543,7 +20611,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      if (debugInfoEnabled) {
 	        content = ' ' + (directiveName || '') + ': ' + (comment || '') + ' ';
 	      }
-	      return document.createComment(content);
+	      return window.document.createComment(content);
 	    };
 
 	    return compile;
@@ -20566,7 +20634,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var domNode = $compileNodes[i];
 
 	        if (domNode.nodeType === NODE_TYPE_TEXT && domNode.nodeValue.match(NOT_EMPTY) /* non-empty */) {
-	          jqLiteWrapNode(domNode, $compileNodes[i] = document.createElement('span'));
+	          jqLiteWrapNode(domNode, $compileNodes[i] = window.document.createElement('span'));
 	        }
 	      }
 
@@ -21259,7 +21327,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	            replaceDirective = directive;
 	          }
 
+	          /* jshint -W021 */
 	          nodeLinkFn = compileTemplateUrl(directives.splice(i, directives.length - i), $compileNode,
+	          /* jshint +W021 */
 	              templateAttrs, jqCollection, hasTranscludeDirective && childTranscludeFn, preLinkFns, postLinkFns, {
 	                controllerDirectives: controllerDirectives,
 	                newScopeDirective: (newScopeDirective !== directive) && newScopeDirective,
@@ -21323,7 +21393,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      function nodeLinkFn(childLinkFn, scope, linkNode, $rootElement, boundTranscludeFn) {
 	        var i, ii, linkFn, isolateScope, controllerScope, elementControllers, transcludeFn, $element,
-	            attrs, removeScopeBindingWatches, removeControllerBindingWatches;
+	            attrs, scopeBindingInfo;
 
 	        if (compileNode === linkNode) {
 	          attrs = templateAttrs;
@@ -21362,11 +21432,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	          compile.$$addScopeClass($element, true);
 	          isolateScope.$$isolateBindings =
 	              newIsolateScopeDirective.$$isolateBindings;
-	          removeScopeBindingWatches = initializeDirectiveBindings(scope, attrs, isolateScope,
+	          scopeBindingInfo = initializeDirectiveBindings(scope, attrs, isolateScope,
 	                                        isolateScope.$$isolateBindings,
 	                                        newIsolateScopeDirective);
-	          if (removeScopeBindingWatches) {
-	            isolateScope.$on('$destroy', removeScopeBindingWatches);
+	          if (scopeBindingInfo.removeWatches) {
+	            isolateScope.$on('$destroy', scopeBindingInfo.removeWatches);
 	          }
 	        }
 
@@ -21377,8 +21447,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	          var bindings = controllerDirective.$$bindings.bindToController;
 
 	          if (controller.identifier && bindings) {
-	            removeControllerBindingWatches =
+	            controller.bindingInfo =
 	              initializeDirectiveBindings(controllerScope, attrs, controller.instance, bindings, controllerDirective);
+	          } else {
+	            controller.bindingInfo = {};
 	          }
 
 	          var controllerResult = controller();
@@ -21387,8 +21459,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	            // from setupControllers
 	            controller.instance = controllerResult;
 	            $element.data('$' + controllerDirective.name + 'Controller', controllerResult);
-	            removeControllerBindingWatches && removeControllerBindingWatches();
-	            removeControllerBindingWatches =
+	            controller.bindingInfo.removeWatches && controller.bindingInfo.removeWatches();
+	            controller.bindingInfo =
 	              initializeDirectiveBindings(controllerScope, attrs, controller.instance, bindings, controllerDirective);
 	          }
 	        }
@@ -21404,6 +21476,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        // Handle the init and destroy lifecycle hooks on all controllers that have them
 	        forEach(elementControllers, function(controller) {
 	          var controllerInstance = controller.instance;
+	          if (isFunction(controllerInstance.$onChanges)) {
+	            controllerInstance.$onChanges(controller.bindingInfo.initialChanges);
+	          }
 	          if (isFunction(controllerInstance.$onInit)) {
 	            controllerInstance.$onInit();
 	          }
@@ -21860,7 +21935,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      switch (type) {
 	      case 'svg':
 	      case 'math':
-	        var wrapper = document.createElement('div');
+	        var wrapper = window.document.createElement('div');
 	        wrapper.innerHTML = '<' + type + '>' + template + '</' + type + '>';
 	        return wrapper.childNodes[0].childNodes;
 	      default:
@@ -22004,7 +22079,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      // - remove them from the DOM
 	      // - allow them to still be traversed with .nextSibling
 	      // - allow a single fragment.qSA to fetch all elements being removed
-	      var fragment = document.createDocumentFragment();
+	      var fragment = window.document.createDocumentFragment();
 	      for (i = 0; i < removeCount; i++) {
 	        fragment.appendChild(elementsToRemove[i]);
 	      }
@@ -22050,6 +22125,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    // only occurs for isolate scopes and new scopes with controllerAs.
 	    function initializeDirectiveBindings(scope, attrs, destination, bindings, directive) {
 	      var removeWatchCollection = [];
+	      var initialChanges = {};
 	      var changes;
 	      forEach(bindings, function initializeBinding(definition, scopeName) {
 	        var attrName = definition.attrName,
@@ -22065,7 +22141,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              destination[scopeName] = attrs[attrName] = void 0;
 	            }
 	            attrs.$observe(attrName, function(value) {
-	              if (isString(value)) {
+	              if (isString(value) || isBoolean(value)) {
 	                var oldValue = destination[scopeName];
 	                recordChanges(scopeName, value, oldValue);
 	                destination[scopeName] = value;
@@ -22082,6 +22158,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              // the value to boolean rather than a string, so we special case this situation
 	              destination[scopeName] = lastValue;
 	            }
+	            initialChanges[scopeName] = new SimpleChange(_UNINITIALIZED_VALUE, destination[scopeName]);
 	            break;
 
 	          case '=':
@@ -22137,11 +22214,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	            parentGet = $parse(attrs[attrName]);
 
 	            destination[scopeName] = parentGet(scope);
+	            initialChanges[scopeName] = new SimpleChange(_UNINITIALIZED_VALUE, destination[scopeName]);
 
-	            removeWatch = scope.$watch(parentGet, function parentValueWatchAction(newParentValue) {
-	              var oldValue = destination[scopeName];
-	              recordChanges(scopeName, newParentValue, oldValue);
-	              destination[scopeName] = newParentValue;
+	            removeWatch = scope.$watch(parentGet, function parentValueWatchAction(newValue, oldValue) {
+	              if (newValue === oldValue) {
+	                // If the new and old values are identical then this is the first time the watch has been triggered
+	                // So instead we use the current value on the destination as the old value
+	                oldValue = destination[scopeName];
+	              }
+	              recordChanges(scopeName, newValue, oldValue);
+	              destination[scopeName] = newValue;
 	            }, parentGet.literal);
 
 	            removeWatchCollection.push(removeWatch);
@@ -22178,7 +22260,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            previousValue = changes[key].previousValue;
 	          }
 	          // Store this change
-	          changes[key] = {previousValue: previousValue, currentValue: currentValue};
+	          changes[key] = new SimpleChange(previousValue, currentValue);
 	        }
 	      }
 
@@ -22188,14 +22270,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	        changes = undefined;
 	      }
 
-	      return removeWatchCollection.length && function removeWatches() {
-	        for (var i = 0, ii = removeWatchCollection.length; i < ii; ++i) {
-	          removeWatchCollection[i]();
+	      return {
+	        initialChanges: initialChanges,
+	        removeWatches: removeWatchCollection.length && function removeWatches() {
+	          for (var i = 0, ii = removeWatchCollection.length; i < ii; ++i) {
+	            removeWatchCollection[i]();
+	          }
 	        }
 	      };
 	    }
 	  }];
 	}
+
+	function SimpleChange(previous, current) {
+	  this.previousValue = previous;
+	  this.currentValue = current;
+	}
+	SimpleChange.prototype.isFirstChange = function() { return this.previousValue === _UNINITIALIZED_VALUE; };
+
 
 	var PREFIX_REGEXP = /^((?:x|data)[\:\-_])/i;
 	/**
@@ -23136,7 +23228,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * That means changes to the properties of `data` are not local to the transform function (since Javascript passes objects by reference).
 	     * For example, when calling `$http.get(url, $scope.myObject)`, modifications to the object's properties in a transformRequest
 	     * function will be reflected on the scope and in any templates where the object is data-bound.
-	     * To prevent his, transform functions should have no side-effects.
+	     * To prevent this, transform functions should have no side-effects.
 	     * If you need to modify properties, it is recommended to make a copy of the data, or create new object to return.
 	     * </div>
 	     *
@@ -23382,6 +23474,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	     *    - **headers** – `{Object}` – Map of strings or functions which return strings representing
 	     *      HTTP headers to send to the server. If the return value of a function is null, the
 	     *      header will not be sent. Functions accept a config object as an argument.
+	     *    - **eventHandlers** - `{Object}` - Event listeners to be bound to the XMLHttpRequest object.
+	     *      To bind events to the XMLHttpRequest upload object, use `uploadEventHandlers`.
+	     *      The handler will be called in the context of a `$apply` block.
+	     *    - **uploadEventHandlers** - `{Object}` - Event listeners to be bound to the XMLHttpRequest upload
+	     *      object. To bind events to the XMLHttpRequest object, use `eventHandlers`.
+	     *      The handler will be called in the context of a `$apply` block.
 	     *    - **xsrfHeaderName** – `{string}` – Name of HTTP header to populate with the XSRF token.
 	     *    - **xsrfCookieName** – `{string}` – Name of cookie containing the XSRF token.
 	     *    - **transformRequest** –
@@ -23840,10 +23938,34 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 
 	        $httpBackend(config.method, url, reqData, done, reqHeaders, config.timeout,
-	            config.withCredentials, config.responseType);
+	            config.withCredentials, config.responseType,
+	            createApplyHandlers(config.eventHandlers),
+	            createApplyHandlers(config.uploadEventHandlers));
 	      }
 
 	      return promise;
+
+	      function createApplyHandlers(eventHandlers) {
+	        if (eventHandlers) {
+	          var applyHandlers = {};
+	          forEach(eventHandlers, function(eventHandler, key) {
+	            applyHandlers[key] = function(event) {
+	              if (useApplyAsync) {
+	                $rootScope.$applyAsync(callEventHandler);
+	              } else if ($rootScope.$$phase) {
+	                callEventHandler();
+	              } else {
+	                $rootScope.$apply(callEventHandler);
+	              }
+
+	              function callEventHandler() {
+	                eventHandler(event);
+	              }
+	            };
+	          });
+	          return applyHandlers;
+	        }
+	      }
 
 
 	      /**
@@ -23965,7 +24087,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function createHttpBackend($browser, createXhr, $browserDefer, callbacks, rawDocument) {
 	  // TODO(vojta): fix the signature
-	  return function(method, url, post, callback, headers, timeout, withCredentials, responseType) {
+	  return function(method, url, post, callback, headers, timeout, withCredentials, responseType, eventHandlers, uploadEventHandlers) {
 	    $browser.$$incOutstandingRequestCount();
 	    url = url || $browser.url();
 
@@ -24024,6 +24146,14 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      xhr.onerror = requestError;
 	      xhr.onabort = requestError;
+
+	      forEach(eventHandlers, function(value, key) {
+	          xhr.addEventListener(key, value);
+	      });
+
+	      forEach(uploadEventHandlers, function(value, key) {
+	        xhr.upload.addEventListener(key, value);
+	      });
 
 	      if (withCredentials) {
 	        xhr.withCredentials = true;
@@ -26003,7 +26133,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.readString(ch);
 	      } else if (this.isNumber(ch) || ch === '.' && this.isNumber(this.peek())) {
 	        this.readNumber();
-	      } else if (this.isIdent(ch)) {
+	      } else if (this.isIdentifierStart(this.peekMultichar())) {
 	        this.readIdent();
 	      } else if (this.is(ch, '(){}[].,;:?')) {
 	        this.tokens.push({index: this.index, text: ch});
@@ -26047,10 +26177,47 @@ return /******/ (function(modules) { // webpackBootstrap
 	            ch === '\n' || ch === '\v' || ch === '\u00A0');
 	  },
 
-	  isIdent: function(ch) {
+	  isIdentifierStart: function(ch) {
+	    return this.options.isIdentifierStart ?
+	        this.options.isIdentifierStart(ch, this.codePointAt(ch)) :
+	        this.isValidIdentifierStart(ch);
+	  },
+
+	  isValidIdentifierStart: function(ch) {
 	    return ('a' <= ch && ch <= 'z' ||
 	            'A' <= ch && ch <= 'Z' ||
 	            '_' === ch || ch === '$');
+	  },
+
+	  isIdentifierContinue: function(ch) {
+	    return this.options.isIdentifierContinue ?
+	        this.options.isIdentifierContinue(ch, this.codePointAt(ch)) :
+	        this.isValidIdentifierContinue(ch);
+	  },
+
+	  isValidIdentifierContinue: function(ch, cp) {
+	    return this.isValidIdentifierStart(ch, cp) || this.isNumber(ch);
+	  },
+
+	  codePointAt: function(ch) {
+	    if (ch.length === 1) return ch.charCodeAt(0);
+	    /*jshint bitwise: false*/
+	    return (ch.charCodeAt(0) << 10) + ch.charCodeAt(1) - 0x35FDC00;
+	    /*jshint bitwise: true*/
+	  },
+
+	  peekMultichar: function() {
+	    var ch = this.text.charAt(this.index);
+	    var peek = this.peek();
+	    if (!peek) {
+	      return ch;
+	    }
+	    var cp1 = ch.charCodeAt(0);
+	    var cp2 = peek.charCodeAt(0);
+	    if (cp1 >= 0xD800 && cp1 <= 0xDBFF && cp2 >= 0xDC00 && cp2 <= 0xDFFF) {
+	      return ch + peek;
+	    }
+	    return ch;
 	  },
 
 	  isExpOperator: function(ch) {
@@ -26101,12 +26268,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  readIdent: function() {
 	    var start = this.index;
+	    this.index += this.peekMultichar().length;
 	    while (this.index < this.text.length) {
-	      var ch = this.text.charAt(this.index);
-	      if (!(this.isIdent(ch) || this.isNumber(ch))) {
+	      var ch = this.peekMultichar();
+	      if (!this.isIdentifierContinue(ch)) {
 	        break;
 	      }
-	      this.index++;
+	      this.index += ch.length;
 	    }
 	    this.tokens.push({
 	      index: start,
@@ -27036,7 +27204,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	  },
 
 	  nonComputedMember: function(left, right) {
-	    return left + '.' + right;
+	    var SAFE_IDENTIFIER = /[$_a-zA-Z][$_a-zA-Z0-9]*/;
+	    var UNSAFE_CHARACTERS = /[^$_a-zA-Z0-9]/g;
+	    if (SAFE_IDENTIFIER.test(right)) {
+	      return left + '.' + right;
+	    } else {
+	      return left  + '["' + right.replace(UNSAFE_CHARACTERS, this.stringEscapeFn) + '"]';
+	    }
 	  },
 
 	  computedMember: function(left, right) {
@@ -27599,6 +27773,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    'null': null,
 	    'undefined': undefined
 	  };
+	  var identStart, identContinue;
 
 	  /**
 	   * @ngdoc method
@@ -27615,17 +27790,50 @@ return /******/ (function(modules) { // webpackBootstrap
 	    literals[literalName] = literalValue;
 	  };
 
+	 /**
+	  * @ngdoc method
+	  * @name $parseProvider#setIdentifierFns
+	  * @description
+	  *
+	  * Allows defining the set of characters that are allowed in Angular expressions. The function
+	  * `identifierStart` will get called to know if a given character is a valid character to be the
+	  * first character for an identifier. The function `identifierContinue` will get called to know if
+	  * a given character is a valid character to be a follow-up identifier character. The functions
+	  * `identifierStart` and `identifierContinue` will receive as arguments the single character to be
+	  * identifier and the character code point. These arguments will be `string` and `numeric`. Keep in
+	  * mind that the `string` parameter can be two characters long depending on the character
+	  * representation. It is expected for the function to return `true` or `false`, whether that
+	  * character is allowed or not.
+	  *
+	  * Since this function will be called extensivelly, keep the implementation of these functions fast,
+	  * as the performance of these functions have a direct impact on the expressions parsing speed.
+	  *
+	  * @param {function=} identifierStart The function that will decide whether the given character is
+	  *   a valid identifier start character.
+	  * @param {function=} identifierContinue The function that will decide whether the given character is
+	  *   a valid identifier continue character.
+	  */
+	  this.setIdentifierFns = function(identifierStart, identifierContinue) {
+	    identStart = identifierStart;
+	    identContinue = identifierContinue;
+	    return this;
+	  };
+
 	  this.$get = ['$filter', function($filter) {
 	    var noUnsafeEval = csp().noUnsafeEval;
 	    var $parseOptions = {
 	          csp: noUnsafeEval,
 	          expensiveChecks: false,
-	          literals: copy(literals)
+	          literals: copy(literals),
+	          isIdentifierStart: isFunction(identStart) && identStart,
+	          isIdentifierContinue: isFunction(identContinue) && identContinue
 	        },
 	        $parseOptionsExpensive = {
 	          csp: noUnsafeEval,
 	          expensiveChecks: true,
-	          literals: copy(literals)
+	          literals: copy(literals),
+	          isIdentifierStart: isFunction(identStart) && identStart,
+	          isIdentifierContinue: isFunction(identContinue) && identContinue
 	        };
 	    var runningChecksEnabled = false;
 
@@ -31420,7 +31628,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// doesn't know about mocked locations and resolves URLs to the real document - which is
 	// exactly the behavior needed here.  There is little value is mocking these out for this
 	// service.
-	var urlParsingNode = document.createElement("a");
+	var urlParsingNode = window.document.createElement("a");
 	var originUrl = urlResolve(window.location.href);
 
 
@@ -32120,7 +32328,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @param {(number|string)=} fractionSize Number of decimal places to round the number to.
 	 * If this is not provided then the fraction size is computed from the current locale's number
 	 * formatting pattern. In the case of the default locale, it will be 3.
-	 * @returns {string} Number rounded to fractionSize and places a “,” after each third digit.
+	 * @returns {string} Number rounded to `fractionSize` appropriately formatted based on the current
+	 *                   locale (e.g., in the en_US locale it will have "." as the decimal separator and
+	 *                   include "," group separators after each third digit).
 	 *
 	 * @example
 	   <example module="numberFilterExample">
@@ -36349,7 +36559,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	              updateClasses(oldClasses, newClasses);
 	            }
 	          }
-	          oldVal = shallowCopy(newVal);
+	          if (isArray(newVal)) {
+	            oldVal = newVal.map(function(v) { return shallowCopy(v); });
+	          } else {
+	            oldVal = shallowCopy(newVal);
+	          }
 	        }
 	      }
 	    };
@@ -38065,7 +38279,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          // support innerHTML, so detect this here and try to generate the contents
 	          // specially.
 	          $element.empty();
-	          $compile(jqLiteBuildFragment(ctrl.template, document).childNodes)(scope,
+	          $compile(jqLiteBuildFragment(ctrl.template, window.document).childNodes)(scope,
 	              function namespaceAdaptedClone(clone) {
 	            $element.append(clone);
 	          }, {futureParentElement: $element});
@@ -39979,7 +40193,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	// jshint maxlen: 100
 
 
-	var ngOptionsDirective = ['$compile', '$parse', function($compile, $parse) {
+	var ngOptionsDirective = ['$compile', '$document', '$parse', function($compile, $document, $parse) {
 
 	  function parseOptionsExpression(optionsExp, selectElement, scope) {
 
@@ -40140,8 +40354,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  // we can't just jqLite('<option>') since jqLite is not smart enough
 	  // to create it in <select> and IE barfs otherwise.
-	  var optionTemplate = document.createElement('option'),
-	      optGroupTemplate = document.createElement('optgroup');
+	  var optionTemplate = window.document.createElement('option'),
+	      optGroupTemplate = window.document.createElement('optgroup');
 
 	    function ngOptionsPostLink(scope, selectElement, attr, ctrls) {
 
@@ -40166,7 +40380,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      var options;
 	      var ngOptions = parseOptionsExpression(attr.ngOptions, selectElement, scope);
-
+	      // This stores the newly created options before they are appended to the select.
+	      // Since the contents are removed from the fragment when it is appended,
+	      // we only need to create it once.
+	      var listFragment = $document[0].createDocumentFragment();
 
 	      var renderEmptyOption = function() {
 	        if (!providedEmptyOption) {
@@ -40201,7 +40418,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        selectCtrl.writeValue = function writeNgOptionsValue(value) {
 	          var option = options.getOptionFromViewValue(value);
 
-	          if (option && !option.disabled) {
+	          if (option) {
 	            // Don't update the option when it is already selected.
 	            // For example, the browser will select the first option by default. In that case,
 	            // most properties are set automatically - except the `selected` attribute, which we
@@ -40263,7 +40480,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          if (value) {
 	            value.forEach(function(item) {
 	              var option = options.getOptionFromViewValue(item);
-	              if (option && !option.disabled) option.element.selected = true;
+	              if (option) option.element.selected = true;
 	            });
 	          }
 	        };
@@ -40315,6 +40532,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        emptyOption = jqLite(optionTemplate.cloneNode(false));
 	      }
 
+	      selectElement.empty();
+
 	      // We need to do this here to ensure that the options object is defined
 	      // when we first hit it in writeNgOptionsValue
 	      updateOptions();
@@ -40323,6 +40542,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	      scope.$watchCollection(ngOptions.getWatchables, updateOptions);
 
 	      // ------------------------------------------------------------------ //
+
+	      function addOptionElement(option, parent) {
+	        var optionElement = optionTemplate.cloneNode(false);
+	        parent.appendChild(optionElement);
+	        updateOptionElement(option, optionElement);
+	      }
 
 
 	      function updateOptionElement(option, element) {
@@ -40340,133 +40565,66 @@ return /******/ (function(modules) { // webpackBootstrap
 	        if (option.value !== element.value) element.value = option.selectValue;
 	      }
 
-	      function addOrReuseElement(parent, current, type, templateElement) {
-	        var element;
-	        // Check whether we can reuse the next element
-	        if (current && lowercase(current.nodeName) === type) {
-	          // The next element is the right type so reuse it
-	          element = current;
-	        } else {
-	          // The next element is not the right type so create a new one
-	          element = templateElement.cloneNode(false);
-	          if (!current) {
-	            // There are no more elements so just append it to the select
-	            parent.appendChild(element);
-	          } else {
-	            // The next element is not a group so insert the new one
-	            parent.insertBefore(element, current);
-	          }
-	        }
-	        return element;
-	      }
-
-
-	      function removeExcessElements(current) {
-	        var next;
-	        while (current) {
-	          next = current.nextSibling;
-	          jqLiteRemove(current);
-	          current = next;
-	        }
-	      }
-
-
-	      function skipEmptyAndUnknownOptions(current) {
-	        var emptyOption_ = emptyOption && emptyOption[0];
-	        var unknownOption_ = unknownOption && unknownOption[0];
-
-	        // We cannot rely on the extracted empty option being the same as the compiled empty option,
-	        // because the compiled empty option might have been replaced by a comment because
-	        // it had an "element" transclusion directive on it (such as ngIf)
-	        if (emptyOption_ || unknownOption_) {
-	          while (current &&
-	                (current === emptyOption_ ||
-	                current === unknownOption_ ||
-	                current.nodeType === NODE_TYPE_COMMENT ||
-	                (nodeName_(current) === 'option' && current.value === ''))) {
-	            current = current.nextSibling;
-	          }
-	        }
-	        return current;
-	      }
-
-
 	      function updateOptions() {
-
 	        var previousValue = options && selectCtrl.readValue();
+
+	        // We must remove all current options, but cannot simply set innerHTML = null
+	        // since the providedEmptyOption might have an ngIf on it that inserts comments which we
+	        // must preserve.
+	        // Instead, iterate over the current option elements and remove them or their optgroup
+	        // parents
+	        if (options) {
+
+	          for (var i = options.items.length - 1; i >= 0; i--) {
+	            var option = options.items[i];
+	            if (option.group) {
+	              jqLiteRemove(option.element.parentNode);
+	            } else {
+	              jqLiteRemove(option.element);
+	            }
+	          }
+	        }
 
 	        options = ngOptions.getOptions();
 
-	        var groupMap = {};
-	        var currentElement = selectElement[0].firstChild;
+	        var groupElementMap = {};
 
 	        // Ensure that the empty option is always there if it was explicitly provided
 	        if (providedEmptyOption) {
 	          selectElement.prepend(emptyOption);
 	        }
 
-	        currentElement = skipEmptyAndUnknownOptions(currentElement);
-
-	        options.items.forEach(function updateOption(option) {
-	          var group;
+	        options.items.forEach(function addOption(option) {
 	          var groupElement;
-	          var optionElement;
 
 	          if (isDefined(option.group)) {
 
 	            // This option is to live in a group
 	            // See if we have already created this group
-	            group = groupMap[option.group];
+	            groupElement = groupElementMap[option.group];
 
-	            if (!group) {
+	            if (!groupElement) {
 
-	              // We have not already created this group
-	              groupElement = addOrReuseElement(selectElement[0],
-	                                               currentElement,
-	                                               'optgroup',
-	                                               optGroupTemplate);
-	              // Move to the next element
-	              currentElement = groupElement.nextSibling;
+	              groupElement = optGroupTemplate.cloneNode(false);
+	              listFragment.appendChild(groupElement);
 
 	              // Update the label on the group element
 	              groupElement.label = option.group;
 
 	              // Store it for use later
-	              group = groupMap[option.group] = {
-	                groupElement: groupElement,
-	                currentOptionElement: groupElement.firstChild
-	              };
-
+	              groupElementMap[option.group] = groupElement;
 	            }
 
-	            // So now we have a group for this option we add the option to the group
-	            optionElement = addOrReuseElement(group.groupElement,
-	                                              group.currentOptionElement,
-	                                              'option',
-	                                              optionTemplate);
-	            updateOptionElement(option, optionElement);
-	            // Move to the next element
-	            group.currentOptionElement = optionElement.nextSibling;
+	            addOptionElement(option, groupElement);
 
 	          } else {
 
 	            // This option is not in a group
-	            optionElement = addOrReuseElement(selectElement[0],
-	                                              currentElement,
-	                                              'option',
-	                                              optionTemplate);
-	            updateOptionElement(option, optionElement);
-	            // Move to the next element
-	            currentElement = optionElement.nextSibling;
+	            addOptionElement(option, listFragment);
 	          }
 	        });
 
-
-	        // Now remove all excess options and group
-	        Object.keys(groupMap).forEach(function(key) {
-	          removeExcessElements(groupMap[key].currentOptionElement);
-	        });
-	        removeExcessElements(currentElement);
+	        selectElement[0].appendChild(listFragment);
 
 	        ngModelCtrl.$render();
 
@@ -42161,7 +42319,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  //
 	  // We can't just jqLite('<option>') since jqLite is not smart enough
 	  // to create it in <select> and IE barfs otherwise.
-	  self.unknownOption = jqLite(document.createElement('option'));
+	  self.unknownOption = jqLite(window.document.createElement('option'));
 	  self.renderUnknownOption = function(val) {
 	    var unknownVal = '? ' + hashKey(val) + ' ?';
 	    self.unknownOption.val(unknownVal);
@@ -43124,11 +43282,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	});
 	}]);
 
-	  jqLite(document).ready(function() {
-	    angularInit(document, bootstrap);
+	  jqLite(window.document).ready(function() {
+	    angularInit(window.document, bootstrap);
 	  });
 
-	})(window, document);
+	})(window);
 
 	!window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
 
@@ -47679,6 +47837,2316 @@ return /******/ (function(modules) { // webpackBootstrap
 	  .filter('isState', $IsStateFilter)
 	  .filter('includedByState', $IncludedByStateFilter);
 	})(window, window.angular);
+
+/***/ },
+/* 22 */,
+/* 23 */,
+/* 24 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var require;/* WEBPACK VAR INJECTION */(function(module) {(function commonJS(require, module) {
+	    'use strict';
+
+	    __webpack_require__(26);
+
+	    module.exports = '720kb.socialshare';
+	}(require, module));
+
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)(module)))
+
+/***/ },
+/* 25 */
+/***/ function(module, exports) {
+
+	module.exports = function(module) {
+		if(!module.webpackPolyfill) {
+			module.deprecate = function() {};
+			module.paths = [];
+			// module.parent = undefined by default
+			module.children = [];
+			module.webpackPolyfill = 1;
+		}
+		return module;
+	}
+
+
+/***/ },
+/* 26 */
+/***/ function(module, exports) {
+
+	/*
+	 * angular-socialshare
+	 * @latest
+	 *
+	 * A social urls and content sharing directive for angularjs.
+	 * http://720kb.githb.io/angular-socialshare
+	 *
+	 * MIT license
+	 * Thu Feb 04 2016
+	 */
+	/*global angular*/
+	/*eslint no-loop-func:0, func-names:0*/
+
+	(function withAngular(angular) {
+	  'use strict';
+
+	  var directiveName = 'socialshare'
+	    , socialshareProviderNames = ['facebook', 'facebook-messenger', 'twitter', 'linkedin', 'google', 'pinterest', 'tumblr', 'reddit', 'stumbleupon', 'buffer', 'digg', 'delicious', 'vk', 'pocket', 'wordpress', 'flipboard', 'xing', 'hackernews', 'evernote', 'whatsapp', 'viber', 'skype', 'email', 'ok']
+	    , socialshareConfigurationProvider = /*@ngInject*/ function socialshareConfigurationProvider() {
+
+	      var socialshareConfigurationDefault = [{
+	        'provider': 'email',
+	        'conf': {
+	          'subject': '',
+	          'body': '',
+	          'to': '',
+	          'cc': '',
+	          'bcc': '',
+	          'trigger': 'click'
+	        }
+	      },
+	      {
+	        'provider': 'facebook',
+	        'conf': {
+	          'url':'',
+	          'text': '',
+	          'media': '',
+	          'type': '',
+	          'via': '',
+	          'to': '',
+	          'from': '',
+	          'ref': '',
+	          'display': '',
+	          'source': '',
+	          'caption': '',
+	          'redirectUri': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'facebook-messenger',
+	        'conf': {
+	          'url': ''
+	        }
+	      },
+	      {
+	        'provider': 'twitter',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'via': '',
+	          'hashtags': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'linkedin',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'description': '',
+	          'source': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'reddit',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'subreddit': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'vk',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'media': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'ok',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'digg',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'media': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'delicious',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'media': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'stumbleupon',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'media': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'pinterest',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'media': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'google',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'media': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'tumblr',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'media': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'buffer',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'via': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'pocket',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'flipboard',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'hackernews',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'wordpress',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'media': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'xing',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'media': '',
+	          'follow' : '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'evernote',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      },
+	      {
+	        'provider': 'whatsapp',
+	        'conf': {
+	          'url': '',
+	          'text': ''
+	        }
+	      },
+	      {
+	        'provider': 'viber',
+	        'conf': {
+	          'url': '',
+	          'text': ''
+	        }
+	      },
+	      {
+	        'provider': 'skype',
+	        'conf': {
+	          'url': '',
+	          'text': '',
+	          'trigger': 'click',
+	          'popupHeight': 600,
+	          'popupWidth': 500
+	        }
+	      }];
+
+	      return {
+	        'configure': function configure(configuration) {
+
+	          var configIndex = 0
+	            , configurationKeys
+	            , configurationIndex
+	            , aConfigurationKey
+	            , configElement
+	            , internIndex = 0
+	          //this is necessary becuase provider run before any service
+	          //so i have to take the log from another injector
+	          , $log = angular.injector(['ng']).get('$log');
+
+	          if (configuration && configuration.length > 0) {
+	            for (; configIndex < configuration.length; configIndex += 1) {
+	              if (configuration[configIndex].provider && socialshareProviderNames.indexOf(configuration[configIndex].provider) > -1) {
+
+	                for (; internIndex < socialshareConfigurationDefault.length; internIndex += 1) {
+	                  configElement = socialshareConfigurationDefault[internIndex];
+
+	                  if (configElement &&
+	                    configElement.provider &&
+	                    configuration[configIndex].provider === configElement.provider) {
+
+	                      configurationKeys = Object.keys(configElement.conf);
+	                      configurationIndex = 0;
+
+	                      for (; configurationIndex < configurationKeys.length; configurationIndex += 1) {
+
+	                        aConfigurationKey = configurationKeys[configurationIndex];
+	                        if (aConfigurationKey && configuration[configIndex].conf[aConfigurationKey]) {
+
+	                          configElement.conf[aConfigurationKey] = configuration[configIndex].conf[aConfigurationKey];
+	                        }
+	                      }
+	                    }
+	                  }
+	                } else {
+	                  $log.warn('Invalid provider at element ' + configIndex + ' with name:' + configuration[configIndex].provider);
+	                }
+	              }
+	            }
+	        }
+	        , '$get': /*@ngInject*/ function instantiateProvider() {
+
+	            return socialshareConfigurationDefault;
+	        }
+	      };
+	    }
+	    , socialshareDirective = /*@ngInject*/ ['$window', '$location', 'socialshareConf', '$log', function socialshareDirective($window, $location, socialshareConf, $log) {
+
+	      var linkingFunction = function linkingFunction($scope, element, attrs) {
+
+	        // observe the values in each of the properties so that if they're updated elsewhere,
+	        // they are updated in this directive.
+	        var configurationElement
+	        , index = 0
+	        , onEventTriggered = function onEventTriggered() {
+	          /*eslint-disable no-use-before-define*/
+	          if (attrs.socialshareProvider in sharingFunctions) {
+	            sharingFunctions[attrs.socialshareProvider]($window, $location, attrs, element);
+	          } else {
+	            return true;
+	          }
+	        };
+	        /*eslint-enable no-use-before-define*/
+	        //looking into configuration if there is a config for the current provider
+	        for (; index < socialshareConf.length; index += 1) {
+	          if (socialshareConf[index].provider === attrs.socialshareProvider) {
+	            configurationElement = socialshareConf[index];
+	            break;
+	          }
+	        }
+
+	        if (socialshareProviderNames.indexOf(configurationElement.provider) === -1) {
+	          $log.warn('Invalid Provider Name : ' + attrs.socialshareProvider);
+	        }
+
+	        //if some attribute is not define provide a default one
+	        attrs.socialshareUrl = attrs.socialshareUrl || configurationElement.conf.url;
+	        attrs.socialshareText = attrs.socialshareText || configurationElement.conf.text;
+	        attrs.socialshareMedia = attrs.socialshareMedia || configurationElement.conf.media;
+	        attrs.socialshareType =  attrs.socialshareType || configurationElement.conf.type;
+	        attrs.socialshareVia = attrs.socialshareVia || configurationElement.conf.via;
+	        attrs.socialshareTo =  attrs.socialshareTo || configurationElement.conf.to;
+	        attrs.socialshareFrom =  attrs.socialshareFrom || configurationElement.conf.from;
+	        attrs.socialshareRef = attrs.socialshareRef || configurationElement.conf.ref;
+	        attrs.socialshareDislay = attrs.socialshareDislay || configurationElement.conf.display;
+	        attrs.socialshareSource = attrs.socialshareSource || configurationElement.conf.source;
+	        attrs.socialshareCaption = attrs.socialshareCaption || configurationElement.conf.caption;
+	        attrs.socialshareRedirectUri = attrs.socialshareRedirectUri || configurationElement.conf.redirectUri;
+	        attrs.socialshareTrigger =  attrs.socialshareTrigger || configurationElement.conf.trigger;
+	        attrs.socialsharePopupHeight = attrs.socialsharePopupHeight || configurationElement.conf.popupHeight;
+	        attrs.socialsharePopupWidth = attrs.socialsharePopupWidth || configurationElement.conf.popupWidth;
+	        attrs.socialshareSubreddit = attrs.socialshareSubreddit || configurationElement.conf.subreddit;
+	        attrs.socialshareDescription = attrs.socialshareDescription || configurationElement.conf.description;
+	        attrs.socialshareFollow = attrs.socialshareFollow || configurationElement.conf.follow;
+	        attrs.socialshareHashtags = attrs.socialshareHashtags || configurationElement.conf.hashtags;
+
+	        if (attrs.socialshareTrigger) {
+
+	          element.bind(attrs.socialshareTrigger, onEventTriggered);
+	        } else {
+
+	          onEventTriggered();
+	        }
+	      };
+
+	      return {
+	        'restrict': 'A',
+	        'link': linkingFunction
+	      };
+	    }]
+	    , manageEmailShare = function manageEmailShare($window, $location, attrs) {
+	      var urlString = 'mailto:';
+
+	      if (attrs.socialshareTo) {
+
+	        urlString += encodeURIComponent(attrs.socialshareTo);
+	      }
+
+	      urlString += '?';
+
+	      if (attrs.socialshareBody) {
+
+	        urlString += 'body=' + encodeURIComponent(attrs.socialshareBody);
+	      }
+
+	      if (attrs.socialshareSubject) {
+
+	        urlString += '&subject=' + encodeURIComponent(attrs.socialshareSubject);
+	      }
+	      if (attrs.socialshareCc) {
+
+	        urlString += '&cc=' + encodeURIComponent(attrs.socialshareCc);
+	      }
+	      if (attrs.socialshareBcc) {
+
+	        urlString += '&bcc=' + encodeURIComponent(attrs.socialshareBcc);
+	      }
+
+	      $window.open(urlString, '_self');
+	    }
+	    , manageFacebookShare = function manageFacebookShare($window, $location, attrs) {
+
+	      var urlString;
+
+	      if (attrs.socialshareType && attrs.socialshareType === 'feed') {
+	        // if user specifies that they want to use the Facebook feed dialog (https://developers.facebook.com/docs/sharing/reference/feed-dialog/v2.4)
+	        urlString = 'https://www.facebook.com/dialog/feed?';
+
+	        if (attrs.socialshareVia) {
+	          urlString += '&app_id=' + encodeURIComponent(attrs.socialshareVia);
+	        }
+
+	        if (attrs.socialshareRedirectUri) {
+	          urlString += '&redirect_uri=' + encodeURIComponent(attrs.socialshareRedirectUri);
+	        }
+	        if (attrs.socialshareUrl) {
+	          urlString += '&link=' + encodeURIComponent(attrs.socialshareUrl);
+	        }
+
+	        if (attrs.socialshareTo) {
+	          urlString += '&to=' + encodeURIComponent(attrs.socialshareTo);
+	        }
+
+	        if (attrs.socialshareDisplay) {
+	          urlString += '&display=' + encodeURIComponent(attrs.socialshareDisplay);
+	        }
+
+	        if (attrs.socialshareRef) {
+	          urlString += '&ref=' + encodeURIComponent(attrs.socialshareRef);
+	        }
+
+	        if (attrs.socialshareFrom) {
+	          urlString += '&from=' + encodeURIComponent(attrs.socialshareFrom);
+	        }
+
+	        if (attrs.socialshareDescription) {
+	          urlString += '&description=' + encodeURIComponent(attrs.socialshareDescription);
+	        }
+
+	        if (attrs.socialshareText) {
+	          urlString += '&name=' + encodeURIComponent(attrs.socialshareText);
+	        }
+
+	        if (attrs.socialshareCaption) {
+	          urlString += '&caption=' + encodeURIComponent(attrs.socialshareCaption);
+	        }
+
+	        if (attrs.socialshareMedia) {
+	          urlString += '&picture=' + encodeURIComponent(attrs.socialshareMedia);
+	        }
+
+	        if (attrs.socialshareSource) {
+	          urlString += '&source=' + encodeURIComponent(attrs.socialshareSource);
+	        }
+
+	        $window.open(
+	          urlString,
+	          'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	          + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+
+	      } else if (attrs.socialshareType && attrs.socialshareType === 'send') {
+	        // if user specifies that they want to use the Facebook send dialog (https://developers.facebook.com/docs/sharing/reference/send-dialog)
+	        urlString = 'https://www.facebook.com/dialog/send?';
+
+	        if (attrs.socialshareVia) {
+	          urlString += '&app_id=' + encodeURIComponent(attrs.socialshareVia);
+	        }
+
+	        if (attrs.socialshareRedirectUri) {
+	          urlString += '&redirect_uri=' + encodeURIComponent(attrs.socialshareRedirectUri);
+	        }
+
+	        if (attrs.socialshareUrl) {
+	          urlString += '&link=' + encodeURIComponent(attrs.socialshareUrl);
+	        }
+
+	        if (attrs.socialshareTo) {
+	          urlString += '&to=' + encodeURIComponent(attrs.socialshareTo);
+	        }
+
+	        if (attrs.socialshareDisplay) {
+	          urlString += '&display=' + encodeURIComponent(attrs.socialshareDisplay);
+	        }
+
+	        if (attrs.socialshareRef) {
+	          urlString += '&ref=' + encodeURIComponent(attrs.socialshareRef);
+	        }
+
+	        $window.open(
+	          urlString,
+	          'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	          + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+
+	      } else {
+	        //otherwise default to using sharer.php
+	        $window.open(
+	          'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl())
+	          , 'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	          + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	      }
+	    }
+	    , facebookMessengerShare = function facebookMessengerShare($window, $location, attrs, element) {
+
+	      var href = 'fb-messenger://share?link=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl());
+
+	      element.attr('href', href);
+	    }
+	    , manageTwitterShare = function manageTwitterShare($window, $location, attrs) {
+	      var urlString = 'https://www.twitter.com/intent/tweet?';
+
+	      if (attrs.socialshareText) {
+	        urlString += 'text=' + encodeURIComponent(attrs.socialshareText);
+	      }
+
+	      if (attrs.socialshareVia) {
+	        urlString += '&via=' + encodeURIComponent(attrs.socialshareVia);
+	      }
+
+	      if (attrs.socialshareHashtags) {
+	        urlString += '&hashtags=' + encodeURIComponent(attrs.socialshareHashtags);
+	      }
+
+	      //default to the current page if a URL isn't specified
+	      urlString += '&url=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl());
+
+	      $window.open(
+	        urlString,
+	        'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	        + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	    }
+	    , manageGooglePlusShare = function manageGooglePlusShare($window, $location, attrs) {
+
+	      $window.open(
+	        'https://plus.google.com/share?url=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl())
+	        , 'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	        + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	      }
+	    , manageRedditShare = function manageRedditShare($window, $location, attrs) {
+	      var urlString = 'https://www.reddit.com/';
+
+	      if (attrs.socialshareSubreddit) {
+	        urlString += 'r/' + attrs.socialshareSubreddit + '/submit?url=';
+	      } else {
+	        urlString += 'submit?url=';
+	      }
+	      /*-
+	      * Reddit isn't responsive and at default width for our popups (500 x 500), everything is messed up.
+	      * So, overriding the width if it is less than 900 (played around to settle on this) and height if
+	      * it is less than 650px.
+	      */
+	      if (attrs.socialsharePopupWidth < 900) {
+	        attrs.socialsharePopupWidth = 900;
+	      }
+
+	      if (attrs.socialsharePopupHeight < 650) {
+	        attrs.socialsharePopupHeight = 650;
+	      }
+
+	      $window.open(
+	        urlString + encodeURIComponent(attrs.socialshareUrl || $location.absUrl()) + '&title=' + encodeURIComponent(attrs.socialshareText)
+	        , 'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	        + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	      }
+	    , manageStumbleuponShare = function manageStumbleuponShare($window, $location, attrs) {
+
+	      $window.open(
+	        'https://www.stumbleupon.com/submit?url=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl()) + '&title=' + encodeURIComponent(attrs.socialshareText)
+	        , 'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	        + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	    }
+	    , manageLinkedinShare = function manageLinkedinShare($window, $location, attrs) {
+	      /*
+	      * Refer: https://developer.linkedin.com/docs/share-on-linkedin
+	      * Tab: Customized URL
+	      */
+	      var urlString = 'https://www.linkedin.com/shareArticle?mini=true';
+
+	      urlString += '&url=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl());
+
+	      if (attrs.socialshareText) {
+	        urlString += '&title=' + encodeURIComponent(attrs.socialshareText);
+	      }
+
+	      if (attrs.socialshareDescription) {
+	        urlString += '&summary=' + encodeURIComponent(attrs.socialshareDescription);
+	      }
+
+	      if (attrs.socialshareSource) {
+	        urlString += '&source=' + encodeURIComponent(attrs.socialshareSource);
+	      }
+
+	      $window.open(
+	        urlString,
+	        'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	        + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	    }
+	    , managePinterestShare = function managePinterestShare($window, $location, attrs) {
+
+	      $window.open(
+	        'https://www.pinterest.com/pin/create/button/?url=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl()) + '&media=' + encodeURIComponent(attrs.socialshareMedia) + '&description=' + encodeURIComponent(attrs.socialshareText)
+	        , 'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	        + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	    }
+	    , manageDiggShare = function manageDiggShare($window, $location, attrs) {
+
+	      $window.open(
+	        'https://www.digg.com/submit?url=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl()) + '&title=' + encodeURIComponent(attrs.socialshareText)
+	        , 'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	        + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	    }
+	    , manageTumblrShare = function manageTumblrShare($window, $location, attrs) {
+
+	      if (attrs.socialshareMedia) {
+	        var urlString = 'https://www.tumblr.com/share/photo?source=' + encodeURIComponent(attrs.socialshareMedia);
+
+	        if (attrs.socialshareText) {
+	          urlString += '&caption=' + encodeURIComponent(attrs.socialshareText);
+	        }
+
+	        $window.open(
+	          urlString,
+	          'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	          + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	      } else {
+
+	        $window.open(
+	          'https://www.tumblr.com/share/link?url=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl()) + '&description=' + encodeURIComponent(attrs.socialshareText)
+	          , 'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	          + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	      }
+	    }
+	    , manageVkShare = function manageVkShare($window, $location, attrs) {
+	      var urlString = 'https://www.vk.com/share.php?url=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl());
+
+	      if (attrs.socialshareText) {
+	        urlString += '&title=' + encodeURIComponent(attrs.socialshareText);
+	      }
+
+	      if (attrs.socialshareMedia) {
+	        urlString += '&image=' + encodeURIComponent(attrs.socialshareMedia);
+	      }
+
+	      if (attrs.socialshareDescription) {
+	        urlString += '&description=' + encodeURIComponent(attrs.socialshareDescription);
+	      }
+
+	      $window.open(
+	       urlString
+	       , 'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	       + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	    }
+	    , manageOkShare = function manageOkShare($window, $location, attrs) {
+	      $window.open(
+	        'http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl()) + '&st.comments=' + encodeURIComponent(attrs.socialshareText)
+	        , 'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	        + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	    }
+	    , manageDeliciousShare = function manageDeliciousShare($window, $location, attrs) {
+
+	     $window.open(
+	       'https://www.delicious.com/save?v=5&noui&jump=close&url=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl()) + '&title=' + encodeURIComponent(attrs.socialshareText)
+	       , 'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	       + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	    }
+	    , manageBufferShare = function manageBufferShare($window, $location, attrs) {
+	      var urlString = 'https://bufferapp.com/add?';
+
+	      if (attrs.socialshareText) {
+	        urlString += 'text=' + encodeURIComponent(attrs.socialshareText);
+	      }
+
+	      if (attrs.socialshareVia) {
+	        urlString += '&via=' + encodeURIComponent(attrs.socialshareVia);
+	      }
+
+	      //default to the current page if a URL isn't specified
+	      urlString += '&url=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl());
+
+	      $window.open(
+	        urlString,
+	        'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	        + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	    }
+	    , manageHackernewsShare = function manageHackernewsShare($window, $location, attrs) {
+	      var urlString = 'https://news.ycombinator.com/submitlink?';
+
+	      if (attrs.socialshareText) {
+	        urlString += 't=' + encodeURIComponent(attrs.socialshareText) + '&';
+	      }
+	      //default to the current page if a URL isn't specified
+	      urlString += 'u=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl());
+
+	      $window.open(
+	       urlString,
+	       'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	      + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	    }
+	    , manageFlipboardShare = function manageFlipboardShare($window, $location, attrs) {
+	      var urlString = 'https://share.flipboard.com/bookmarklet/popout?v=2&';
+
+	      if (attrs.socialshareText) {
+	        urlString += 'title=' + encodeURIComponent(attrs.socialshareText) + '&';
+	      }
+
+	      //default to the current page if a URL isn't specified
+	      urlString += 'url=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl());
+
+	      $window.open(
+	        urlString,
+	        'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	        + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	    }
+	    , managePocketShare = function managePocketShare($window, $location, attrs) {
+	      var urlString = 'https://getpocket.com/save?';
+
+	      if (attrs.socialshareText) {
+	        urlString += 'text=' + encodeURIComponent(attrs.socialshareText) + '&';
+	      }
+
+	      //default to the current page if a URL isn't specified
+	      urlString += 'url=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl());
+
+	      $window.open(
+	        urlString,
+	        'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	        + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	    }
+	    , manageWordpressShare = function manageWordpressShare($window, $location, attrs) {
+	      var urlString = 'http://wordpress.com/press-this.php?';
+
+	      if (attrs.socialshareText) {
+	        urlString += 't=' + encodeURIComponent(attrs.socialshareText) + '&';
+	      }
+	      if (attrs.socialshareMedia) {
+	        urlString += 'i=' + encodeURIComponent(attrs.socialshareMedia) + '&';
+	      }
+
+	      //default to the current page if a URL isn't specified
+	      urlString += 'u=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl());
+
+	      $window.open(
+	        urlString,
+	        'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	        + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	    }
+	    , manageXingShare = function manageXingShare($window, $location, attrs) {
+	      var followUrl = '';
+
+	      if (attrs.socialshareFollow) {
+	        followUrl = '&follow_url=' + encodeURIComponent(attrs.socialshareFollow);
+	      }
+	      $window.open(
+	        'https://www.xing.com/spi/shares/new?url=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl()) + followUrl
+	        , 'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	        + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	    }
+	    , manageEvernoteShare = function manageEvernoteShare($window, $location, attrs) {
+
+	      var urlString = 'http://www.evernote.com/clip.action?url=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl());
+
+	      if (attrs.socialshareText) {
+	        urlString += '&title=' + encodeURIComponent(attrs.socialshareText);
+	      }
+
+	      $window.open(
+	        urlString
+	        , 'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	        + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	    }
+	    , manageWhatsappShare = function manageWhatsappShare($window, $location, attrs, element) {
+
+	      var href = 'whatsapp://send?text=' + encodeURIComponent(attrs.socialshareText + ' ') + encodeURIComponent(attrs.socialshareUrl || $location.absUrl());
+
+	      element.attr('href', href);
+	    }
+	    , manageViberShare = function manageViberShare($window, $location, attrs, element) {
+
+	      var href = 'viber://forward?text=' + encodeURIComponent(attrs.socialshareText + ' ') + encodeURIComponent(attrs.socialshareUrl || $location.absUrl());
+
+	      element.attr('href', href);
+	    }
+	    , skypeShare = function skypeShare($window, $location, attrs) {
+
+	      var urlString = 'https://web.skype.com/share?source=button&url=' + encodeURIComponent(attrs.socialshareUrl || $location.absUrl());
+
+	      if (attrs.socialshareText) {
+	        urlString += '&text=' + encodeURIComponent(attrs.socialshareText);
+	      }
+
+	      $window.open(
+	        urlString
+	        , 'sharer', 'toolbar=0,status=0,width=' + attrs.socialsharePopupWidth + ',height=' + attrs.socialsharePopupHeight
+	        + ',top=' + ($window.innerHeight - attrs.socialsharePopupHeight) / 2 + ',left=' + ($window.innerWidth - attrs.socialsharePopupWidth) / 2);
+	    }
+	    , sharingFunctions = {
+	      'email': manageEmailShare
+	      , 'facebook': manageFacebookShare
+	      , 'facebook-messenger': facebookMessengerShare
+	      , 'twitter': manageTwitterShare
+	      , 'google': manageGooglePlusShare
+	      , 'reddit': manageRedditShare
+	      , 'stumbleupon': manageStumbleuponShare
+	      , 'linkedin': manageLinkedinShare
+	      , 'pinterest': managePinterestShare
+	      , 'digg': manageDiggShare
+	      , 'tumblr': manageTumblrShare
+	      , 'vk': manageVkShare
+	      , 'ok': manageOkShare
+	      , 'delicious': manageDeliciousShare
+	      , 'buffer': manageBufferShare
+	      , 'hackernews': manageHackernewsShare
+	      , 'flipboard': manageFlipboardShare
+	      , 'pocket': managePocketShare
+	      , 'wordpress': manageWordpressShare
+	      , 'xing': manageXingShare
+	      , 'evernote': manageEvernoteShare
+	      , 'whatsapp': manageWhatsappShare
+	      , 'viber': manageViberShare
+	      , 'skype': skypeShare
+	    };
+
+
+	  angular.module('720kb.socialshare', [])
+	  .provider(directiveName + 'Conf', socialshareConfigurationProvider)
+	  .directive(directiveName, socialshareDirective);
+	}(angular));
+
+
+/***/ },
+/* 27 */,
+/* 28 */,
+/* 29 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(30);
+	module.exports = 'ngCookies';
+
+
+/***/ },
+/* 30 */
+/***/ function(module, exports) {
+
+	/**
+	 * @license AngularJS v1.5.5
+	 * (c) 2010-2016 Google, Inc. http://angularjs.org
+	 * License: MIT
+	 */
+	(function(window, angular) {'use strict';
+
+	/**
+	 * @ngdoc module
+	 * @name ngCookies
+	 * @description
+	 *
+	 * # ngCookies
+	 *
+	 * The `ngCookies` module provides a convenient wrapper for reading and writing browser cookies.
+	 *
+	 *
+	 * <div doc-module-components="ngCookies"></div>
+	 *
+	 * See {@link ngCookies.$cookies `$cookies`} for usage.
+	 */
+
+
+	angular.module('ngCookies', ['ng']).
+	  /**
+	   * @ngdoc provider
+	   * @name $cookiesProvider
+	   * @description
+	   * Use `$cookiesProvider` to change the default behavior of the {@link ngCookies.$cookies $cookies} service.
+	   * */
+	   provider('$cookies', [function $CookiesProvider() {
+	    /**
+	     * @ngdoc property
+	     * @name $cookiesProvider#defaults
+	     * @description
+	     *
+	     * Object containing default options to pass when setting cookies.
+	     *
+	     * The object may have following properties:
+	     *
+	     * - **path** - `{string}` - The cookie will be available only for this path and its
+	     *   sub-paths. By default, this is the URL that appears in your `<base>` tag.
+	     * - **domain** - `{string}` - The cookie will be available only for this domain and
+	     *   its sub-domains. For security reasons the user agent will not accept the cookie
+	     *   if the current domain is not a sub-domain of this domain or equal to it.
+	     * - **expires** - `{string|Date}` - String of the form "Wdy, DD Mon YYYY HH:MM:SS GMT"
+	     *   or a Date object indicating the exact date/time this cookie will expire.
+	     * - **secure** - `{boolean}` - If `true`, then the cookie will only be available through a
+	     *   secured connection.
+	     *
+	     * Note: By default, the address that appears in your `<base>` tag will be used as the path.
+	     * This is important so that cookies will be visible for all routes when html5mode is enabled.
+	     *
+	     **/
+	    var defaults = this.defaults = {};
+
+	    function calcOptions(options) {
+	      return options ? angular.extend({}, defaults, options) : defaults;
+	    }
+
+	    /**
+	     * @ngdoc service
+	     * @name $cookies
+	     *
+	     * @description
+	     * Provides read/write access to browser's cookies.
+	     *
+	     * <div class="alert alert-info">
+	     * Up until Angular 1.3, `$cookies` exposed properties that represented the
+	     * current browser cookie values. In version 1.4, this behavior has changed, and
+	     * `$cookies` now provides a standard api of getters, setters etc.
+	     * </div>
+	     *
+	     * Requires the {@link ngCookies `ngCookies`} module to be installed.
+	     *
+	     * @example
+	     *
+	     * ```js
+	     * angular.module('cookiesExample', ['ngCookies'])
+	     *   .controller('ExampleController', ['$cookies', function($cookies) {
+	     *     // Retrieving a cookie
+	     *     var favoriteCookie = $cookies.get('myFavorite');
+	     *     // Setting a cookie
+	     *     $cookies.put('myFavorite', 'oatmeal');
+	     *   }]);
+	     * ```
+	     */
+	    this.$get = ['$$cookieReader', '$$cookieWriter', function($$cookieReader, $$cookieWriter) {
+	      return {
+	        /**
+	         * @ngdoc method
+	         * @name $cookies#get
+	         *
+	         * @description
+	         * Returns the value of given cookie key
+	         *
+	         * @param {string} key Id to use for lookup.
+	         * @returns {string} Raw cookie value.
+	         */
+	        get: function(key) {
+	          return $$cookieReader()[key];
+	        },
+
+	        /**
+	         * @ngdoc method
+	         * @name $cookies#getObject
+	         *
+	         * @description
+	         * Returns the deserialized value of given cookie key
+	         *
+	         * @param {string} key Id to use for lookup.
+	         * @returns {Object} Deserialized cookie value.
+	         */
+	        getObject: function(key) {
+	          var value = this.get(key);
+	          return value ? angular.fromJson(value) : value;
+	        },
+
+	        /**
+	         * @ngdoc method
+	         * @name $cookies#getAll
+	         *
+	         * @description
+	         * Returns a key value object with all the cookies
+	         *
+	         * @returns {Object} All cookies
+	         */
+	        getAll: function() {
+	          return $$cookieReader();
+	        },
+
+	        /**
+	         * @ngdoc method
+	         * @name $cookies#put
+	         *
+	         * @description
+	         * Sets a value for given cookie key
+	         *
+	         * @param {string} key Id for the `value`.
+	         * @param {string} value Raw value to be stored.
+	         * @param {Object=} options Options object.
+	         *    See {@link ngCookies.$cookiesProvider#defaults $cookiesProvider.defaults}
+	         */
+	        put: function(key, value, options) {
+	          $$cookieWriter(key, value, calcOptions(options));
+	        },
+
+	        /**
+	         * @ngdoc method
+	         * @name $cookies#putObject
+	         *
+	         * @description
+	         * Serializes and sets a value for given cookie key
+	         *
+	         * @param {string} key Id for the `value`.
+	         * @param {Object} value Value to be stored.
+	         * @param {Object=} options Options object.
+	         *    See {@link ngCookies.$cookiesProvider#defaults $cookiesProvider.defaults}
+	         */
+	        putObject: function(key, value, options) {
+	          this.put(key, angular.toJson(value), options);
+	        },
+
+	        /**
+	         * @ngdoc method
+	         * @name $cookies#remove
+	         *
+	         * @description
+	         * Remove given cookie
+	         *
+	         * @param {string} key Id of the key-value pair to delete.
+	         * @param {Object=} options Options object.
+	         *    See {@link ngCookies.$cookiesProvider#defaults $cookiesProvider.defaults}
+	         */
+	        remove: function(key, options) {
+	          $$cookieWriter(key, undefined, calcOptions(options));
+	        }
+	      };
+	    }];
+	  }]);
+
+	angular.module('ngCookies').
+	/**
+	 * @ngdoc service
+	 * @name $cookieStore
+	 * @deprecated
+	 * @requires $cookies
+	 *
+	 * @description
+	 * Provides a key-value (string-object) storage, that is backed by session cookies.
+	 * Objects put or retrieved from this storage are automatically serialized or
+	 * deserialized by angular's toJson/fromJson.
+	 *
+	 * Requires the {@link ngCookies `ngCookies`} module to be installed.
+	 *
+	 * <div class="alert alert-danger">
+	 * **Note:** The $cookieStore service is **deprecated**.
+	 * Please use the {@link ngCookies.$cookies `$cookies`} service instead.
+	 * </div>
+	 *
+	 * @example
+	 *
+	 * ```js
+	 * angular.module('cookieStoreExample', ['ngCookies'])
+	 *   .controller('ExampleController', ['$cookieStore', function($cookieStore) {
+	 *     // Put cookie
+	 *     $cookieStore.put('myFavorite','oatmeal');
+	 *     // Get cookie
+	 *     var favoriteCookie = $cookieStore.get('myFavorite');
+	 *     // Removing a cookie
+	 *     $cookieStore.remove('myFavorite');
+	 *   }]);
+	 * ```
+	 */
+	 factory('$cookieStore', ['$cookies', function($cookies) {
+
+	    return {
+	      /**
+	       * @ngdoc method
+	       * @name $cookieStore#get
+	       *
+	       * @description
+	       * Returns the value of given cookie key
+	       *
+	       * @param {string} key Id to use for lookup.
+	       * @returns {Object} Deserialized cookie value, undefined if the cookie does not exist.
+	       */
+	      get: function(key) {
+	        return $cookies.getObject(key);
+	      },
+
+	      /**
+	       * @ngdoc method
+	       * @name $cookieStore#put
+	       *
+	       * @description
+	       * Sets a value for given cookie key
+	       *
+	       * @param {string} key Id for the `value`.
+	       * @param {Object} value Value to be stored.
+	       */
+	      put: function(key, value) {
+	        $cookies.putObject(key, value);
+	      },
+
+	      /**
+	       * @ngdoc method
+	       * @name $cookieStore#remove
+	       *
+	       * @description
+	       * Remove given cookie
+	       *
+	       * @param {string} key Id of the key-value pair to delete.
+	       */
+	      remove: function(key) {
+	        $cookies.remove(key);
+	      }
+	    };
+
+	  }]);
+
+	/**
+	 * @name $$cookieWriter
+	 * @requires $document
+	 *
+	 * @description
+	 * This is a private service for writing cookies
+	 *
+	 * @param {string} name Cookie name
+	 * @param {string=} value Cookie value (if undefined, cookie will be deleted)
+	 * @param {Object=} options Object with options that need to be stored for the cookie.
+	 */
+	function $$CookieWriter($document, $log, $browser) {
+	  var cookiePath = $browser.baseHref();
+	  var rawDocument = $document[0];
+
+	  function buildCookieString(name, value, options) {
+	    var path, expires;
+	    options = options || {};
+	    expires = options.expires;
+	    path = angular.isDefined(options.path) ? options.path : cookiePath;
+	    if (angular.isUndefined(value)) {
+	      expires = 'Thu, 01 Jan 1970 00:00:00 GMT';
+	      value = '';
+	    }
+	    if (angular.isString(expires)) {
+	      expires = new Date(expires);
+	    }
+
+	    var str = encodeURIComponent(name) + '=' + encodeURIComponent(value);
+	    str += path ? ';path=' + path : '';
+	    str += options.domain ? ';domain=' + options.domain : '';
+	    str += expires ? ';expires=' + expires.toUTCString() : '';
+	    str += options.secure ? ';secure' : '';
+
+	    // per http://www.ietf.org/rfc/rfc2109.txt browser must allow at minimum:
+	    // - 300 cookies
+	    // - 20 cookies per unique domain
+	    // - 4096 bytes per cookie
+	    var cookieLength = str.length + 1;
+	    if (cookieLength > 4096) {
+	      $log.warn("Cookie '" + name +
+	        "' possibly not set or overflowed because it was too large (" +
+	        cookieLength + " > 4096 bytes)!");
+	    }
+
+	    return str;
+	  }
+
+	  return function(name, value, options) {
+	    rawDocument.cookie = buildCookieString(name, value, options);
+	  };
+	}
+
+	$$CookieWriter.$inject = ['$document', '$log', '$browser'];
+
+	angular.module('ngCookies').provider('$$cookieWriter', function $$CookieWriterProvider() {
+	  this.$get = $$CookieWriter;
+	});
+
+
+	})(window, window.angular);
+
+
+/***/ },
+/* 31 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(32);
+	module.exports = 'ngMessages';
+
+
+/***/ },
+/* 32 */
+/***/ function(module, exports) {
+
+	/**
+	 * @license AngularJS v1.5.5
+	 * (c) 2010-2016 Google, Inc. http://angularjs.org
+	 * License: MIT
+	 */
+	(function(window, angular) {'use strict';
+
+	/* jshint ignore:start */
+	// this code is in the core, but not in angular-messages.js
+	var isArray = angular.isArray;
+	var forEach = angular.forEach;
+	var isString = angular.isString;
+	var jqLite = angular.element;
+	/* jshint ignore:end */
+
+	/**
+	 * @ngdoc module
+	 * @name ngMessages
+	 * @description
+	 *
+	 * The `ngMessages` module provides enhanced support for displaying messages within templates
+	 * (typically within forms or when rendering message objects that return key/value data).
+	 * Instead of relying on JavaScript code and/or complex ng-if statements within your form template to
+	 * show and hide error messages specific to the state of an input field, the `ngMessages` and
+	 * `ngMessage` directives are designed to handle the complexity, inheritance and priority
+	 * sequencing based on the order of how the messages are defined in the template.
+	 *
+	 * Currently, the ngMessages module only contains the code for the `ngMessages`, `ngMessagesInclude`
+	 * `ngMessage` and `ngMessageExp` directives.
+	 *
+	 * # Usage
+	 * The `ngMessages` directive allows keys in a key/value collection to be associated with a child element
+	 * (or 'message') that will show or hide based on the truthiness of that key's value in the collection. A common use
+	 * case for `ngMessages` is to display error messages for inputs using the `$error` object exposed by the
+	 * {@link ngModel ngModel} directive.
+	 *
+	 * The child elements of the `ngMessages` directive are matched to the collection keys by a `ngMessage` or
+	 * `ngMessageExp` directive. The value of these attributes must match a key in the collection that is provided by
+	 * the `ngMessages` directive.
+	 *
+	 * Consider the following example, which illustrates a typical use case of `ngMessages`. Within the form `myForm` we
+	 * have a text input named `myField` which is bound to the scope variable `field` using the {@link ngModel ngModel}
+	 * directive.
+	 *
+	 * The `myField` field is a required input of type `email` with a maximum length of 15 characters.
+	 *
+	 * ```html
+	 * <form name="myForm">
+	 *   <label>
+	 *     Enter text:
+	 *     <input type="email" ng-model="field" name="myField" required maxlength="15" />
+	 *   </label>
+	 *   <div ng-messages="myForm.myField.$error" role="alert">
+	 *     <div ng-message="required">Please enter a value for this field.</div>
+	 *     <div ng-message="email">This field must be a valid email address.</div>
+	 *     <div ng-message="maxlength">This field can be at most 15 characters long.</div>
+	 *   </div>
+	 * </form>
+	 * ```
+	 *
+	 * In order to show error messages corresponding to `myField` we first create an element with an `ngMessages` attribute
+	 * set to the `$error` object owned by the `myField` input in our `myForm` form.
+	 *
+	 * Within this element we then create separate elements for each of the possible errors that `myField` could have.
+	 * The `ngMessage` attribute is used to declare which element(s) will appear for which error - for example,
+	 * setting `ng-message="required"` specifies that this particular element should be displayed when there
+	 * is no value present for the required field `myField` (because the key `required` will be `true` in the object
+	 * `myForm.myField.$error`).
+	 *
+	 * ### Message order
+	 *
+	 * By default, `ngMessages` will only display one message for a particular key/value collection at any time. If more
+	 * than one message (or error) key is currently true, then which message is shown is determined by the order of messages
+	 * in the HTML template code (messages declared first are prioritised). This mechanism means the developer does not have
+	 * to prioritise messages using custom JavaScript code.
+	 *
+	 * Given the following error object for our example (which informs us that the field `myField` currently has both the
+	 * `required` and `email` errors):
+	 *
+	 * ```javascript
+	 * <!-- keep in mind that ngModel automatically sets these error flags -->
+	 * myField.$error = { required : true, email: true, maxlength: false };
+	 * ```
+	 * The `required` message will be displayed to the user since it appears before the `email` message in the DOM.
+	 * Once the user types a single character, the `required` message will disappear (since the field now has a value)
+	 * but the `email` message will be visible because it is still applicable.
+	 *
+	 * ### Displaying multiple messages at the same time
+	 *
+	 * While `ngMessages` will by default only display one error element at a time, the `ng-messages-multiple` attribute can
+	 * be applied to the `ngMessages` container element to cause it to display all applicable error messages at once:
+	 *
+	 * ```html
+	 * <!-- attribute-style usage -->
+	 * <div ng-messages="myForm.myField.$error" ng-messages-multiple>...</div>
+	 *
+	 * <!-- element-style usage -->
+	 * <ng-messages for="myForm.myField.$error" multiple>...</ng-messages>
+	 * ```
+	 *
+	 * ## Reusing and Overriding Messages
+	 * In addition to prioritization, ngMessages also allows for including messages from a remote or an inline
+	 * template. This allows for generic collection of messages to be reused across multiple parts of an
+	 * application.
+	 *
+	 * ```html
+	 * <script type="text/ng-template" id="error-messages">
+	 *   <div ng-message="required">This field is required</div>
+	 *   <div ng-message="minlength">This field is too short</div>
+	 * </script>
+	 *
+	 * <div ng-messages="myForm.myField.$error" role="alert">
+	 *   <div ng-messages-include="error-messages"></div>
+	 * </div>
+	 * ```
+	 *
+	 * However, including generic messages may not be useful enough to match all input fields, therefore,
+	 * `ngMessages` provides the ability to override messages defined in the remote template by redefining
+	 * them within the directive container.
+	 *
+	 * ```html
+	 * <!-- a generic template of error messages known as "my-custom-messages" -->
+	 * <script type="text/ng-template" id="my-custom-messages">
+	 *   <div ng-message="required">This field is required</div>
+	 *   <div ng-message="minlength">This field is too short</div>
+	 * </script>
+	 *
+	 * <form name="myForm">
+	 *   <label>
+	 *     Email address
+	 *     <input type="email"
+	 *            id="email"
+	 *            name="myEmail"
+	 *            ng-model="email"
+	 *            minlength="5"
+	 *            required />
+	 *   </label>
+	 *   <!-- any ng-message elements that appear BEFORE the ng-messages-include will
+	 *        override the messages present in the ng-messages-include template -->
+	 *   <div ng-messages="myForm.myEmail.$error" role="alert">
+	 *     <!-- this required message has overridden the template message -->
+	 *     <div ng-message="required">You did not enter your email address</div>
+	 *
+	 *     <!-- this is a brand new message and will appear last in the prioritization -->
+	 *     <div ng-message="email">Your email address is invalid</div>
+	 *
+	 *     <!-- and here are the generic error messages -->
+	 *     <div ng-messages-include="my-custom-messages"></div>
+	 *   </div>
+	 * </form>
+	 * ```
+	 *
+	 * In the example HTML code above the message that is set on required will override the corresponding
+	 * required message defined within the remote template. Therefore, with particular input fields (such
+	 * email addresses, date fields, autocomplete inputs, etc...), specialized error messages can be applied
+	 * while more generic messages can be used to handle other, more general input errors.
+	 *
+	 * ## Dynamic Messaging
+	 * ngMessages also supports using expressions to dynamically change key values. Using arrays and
+	 * repeaters to list messages is also supported. This means that the code below will be able to
+	 * fully adapt itself and display the appropriate message when any of the expression data changes:
+	 *
+	 * ```html
+	 * <form name="myForm">
+	 *   <label>
+	 *     Email address
+	 *     <input type="email"
+	 *            name="myEmail"
+	 *            ng-model="email"
+	 *            minlength="5"
+	 *            required />
+	 *   </label>
+	 *   <div ng-messages="myForm.myEmail.$error" role="alert">
+	 *     <div ng-message="required">You did not enter your email address</div>
+	 *     <div ng-repeat="errorMessage in errorMessages">
+	 *       <!-- use ng-message-exp for a message whose key is given by an expression -->
+	 *       <div ng-message-exp="errorMessage.type">{{ errorMessage.text }}</div>
+	 *     </div>
+	 *   </div>
+	 * </form>
+	 * ```
+	 *
+	 * The `errorMessage.type` expression can be a string value or it can be an array so
+	 * that multiple errors can be associated with a single error message:
+	 *
+	 * ```html
+	 *   <label>
+	 *     Email address
+	 *     <input type="email"
+	 *            ng-model="data.email"
+	 *            name="myEmail"
+	 *            ng-minlength="5"
+	 *            ng-maxlength="100"
+	 *            required />
+	 *   </label>
+	 *   <div ng-messages="myForm.myEmail.$error" role="alert">
+	 *     <div ng-message-exp="'required'">You did not enter your email address</div>
+	 *     <div ng-message-exp="['minlength', 'maxlength']">
+	 *       Your email must be between 5 and 100 characters long
+	 *     </div>
+	 *   </div>
+	 * ```
+	 *
+	 * Feel free to use other structural directives such as ng-if and ng-switch to further control
+	 * what messages are active and when. Be careful, if you place ng-message on the same element
+	 * as these structural directives, Angular may not be able to determine if a message is active
+	 * or not. Therefore it is best to place the ng-message on a child element of the structural
+	 * directive.
+	 *
+	 * ```html
+	 * <div ng-messages="myForm.myEmail.$error" role="alert">
+	 *   <div ng-if="showRequiredError">
+	 *     <div ng-message="required">Please enter something</div>
+	 *   </div>
+	 * </div>
+	 * ```
+	 *
+	 * ## Animations
+	 * If the `ngAnimate` module is active within the application then the `ngMessages`, `ngMessage` and
+	 * `ngMessageExp` directives will trigger animations whenever any messages are added and removed from
+	 * the DOM by the `ngMessages` directive.
+	 *
+	 * Whenever the `ngMessages` directive contains one or more visible messages then the `.ng-active` CSS
+	 * class will be added to the element. The `.ng-inactive` CSS class will be applied when there are no
+	 * messages present. Therefore, CSS transitions and keyframes as well as JavaScript animations can
+	 * hook into the animations whenever these classes are added/removed.
+	 *
+	 * Let's say that our HTML code for our messages container looks like so:
+	 *
+	 * ```html
+	 * <div ng-messages="myMessages" class="my-messages" role="alert">
+	 *   <div ng-message="alert" class="some-message">...</div>
+	 *   <div ng-message="fail" class="some-message">...</div>
+	 * </div>
+	 * ```
+	 *
+	 * Then the CSS animation code for the message container looks like so:
+	 *
+	 * ```css
+	 * .my-messages {
+	 *   transition:1s linear all;
+	 * }
+	 * .my-messages.ng-active {
+	 *   // messages are visible
+	 * }
+	 * .my-messages.ng-inactive {
+	 *   // messages are hidden
+	 * }
+	 * ```
+	 *
+	 * Whenever an inner message is attached (becomes visible) or removed (becomes hidden) then the enter
+	 * and leave animation is triggered for each particular element bound to the `ngMessage` directive.
+	 *
+	 * Therefore, the CSS code for the inner messages looks like so:
+	 *
+	 * ```css
+	 * .some-message {
+	 *   transition:1s linear all;
+	 * }
+	 *
+	 * .some-message.ng-enter {}
+	 * .some-message.ng-enter.ng-enter-active {}
+	 *
+	 * .some-message.ng-leave {}
+	 * .some-message.ng-leave.ng-leave-active {}
+	 * ```
+	 *
+	 * {@link ngAnimate Click here} to learn how to use JavaScript animations or to learn more about ngAnimate.
+	 */
+	angular.module('ngMessages', [])
+
+	   /**
+	    * @ngdoc directive
+	    * @module ngMessages
+	    * @name ngMessages
+	    * @restrict AE
+	    *
+	    * @description
+	    * `ngMessages` is a directive that is designed to show and hide messages based on the state
+	    * of a key/value object that it listens on. The directive itself complements error message
+	    * reporting with the `ngModel` $error object (which stores a key/value state of validation errors).
+	    *
+	    * `ngMessages` manages the state of internal messages within its container element. The internal
+	    * messages use the `ngMessage` directive and will be inserted/removed from the page depending
+	    * on if they're present within the key/value object. By default, only one message will be displayed
+	    * at a time and this depends on the prioritization of the messages within the template. (This can
+	    * be changed by using the `ng-messages-multiple` or `multiple` attribute on the directive container.)
+	    *
+	    * A remote template can also be used to promote message reusability and messages can also be
+	    * overridden.
+	    *
+	    * {@link module:ngMessages Click here} to learn more about `ngMessages` and `ngMessage`.
+	    *
+	    * @usage
+	    * ```html
+	    * <!-- using attribute directives -->
+	    * <ANY ng-messages="expression" role="alert">
+	    *   <ANY ng-message="stringValue">...</ANY>
+	    *   <ANY ng-message="stringValue1, stringValue2, ...">...</ANY>
+	    *   <ANY ng-message-exp="expressionValue">...</ANY>
+	    * </ANY>
+	    *
+	    * <!-- or by using element directives -->
+	    * <ng-messages for="expression" role="alert">
+	    *   <ng-message when="stringValue">...</ng-message>
+	    *   <ng-message when="stringValue1, stringValue2, ...">...</ng-message>
+	    *   <ng-message when-exp="expressionValue">...</ng-message>
+	    * </ng-messages>
+	    * ```
+	    *
+	    * @param {string} ngMessages an angular expression evaluating to a key/value object
+	    *                 (this is typically the $error object on an ngModel instance).
+	    * @param {string=} ngMessagesMultiple|multiple when set, all messages will be displayed with true
+	    *
+	    * @example
+	    * <example name="ngMessages-directive" module="ngMessagesExample"
+	    *          deps="angular-messages.js"
+	    *          animations="true" fixBase="true">
+	    *   <file name="index.html">
+	    *     <form name="myForm">
+	    *       <label>
+	    *         Enter your name:
+	    *         <input type="text"
+	    *                name="myName"
+	    *                ng-model="name"
+	    *                ng-minlength="5"
+	    *                ng-maxlength="20"
+	    *                required />
+	    *       </label>
+	    *       <pre>myForm.myName.$error = {{ myForm.myName.$error | json }}</pre>
+	    *
+	    *       <div ng-messages="myForm.myName.$error" style="color:maroon" role="alert">
+	    *         <div ng-message="required">You did not enter a field</div>
+	    *         <div ng-message="minlength">Your field is too short</div>
+	    *         <div ng-message="maxlength">Your field is too long</div>
+	    *       </div>
+	    *     </form>
+	    *   </file>
+	    *   <file name="script.js">
+	    *     angular.module('ngMessagesExample', ['ngMessages']);
+	    *   </file>
+	    * </example>
+	    */
+	   .directive('ngMessages', ['$animate', function($animate) {
+	     var ACTIVE_CLASS = 'ng-active';
+	     var INACTIVE_CLASS = 'ng-inactive';
+
+	     return {
+	       require: 'ngMessages',
+	       restrict: 'AE',
+	       controller: ['$element', '$scope', '$attrs', function($element, $scope, $attrs) {
+	         var ctrl = this;
+	         var latestKey = 0;
+	         var nextAttachId = 0;
+
+	         this.getAttachId = function getAttachId() { return nextAttachId++; };
+
+	         var messages = this.messages = {};
+	         var renderLater, cachedCollection;
+
+	         this.render = function(collection) {
+	           collection = collection || {};
+
+	           renderLater = false;
+	           cachedCollection = collection;
+
+	           // this is true if the attribute is empty or if the attribute value is truthy
+	           var multiple = isAttrTruthy($scope, $attrs.ngMessagesMultiple) ||
+	                          isAttrTruthy($scope, $attrs.multiple);
+
+	           var unmatchedMessages = [];
+	           var matchedKeys = {};
+	           var messageItem = ctrl.head;
+	           var messageFound = false;
+	           var totalMessages = 0;
+
+	           // we use != instead of !== to allow for both undefined and null values
+	           while (messageItem != null) {
+	             totalMessages++;
+	             var messageCtrl = messageItem.message;
+
+	             var messageUsed = false;
+	             if (!messageFound) {
+	               forEach(collection, function(value, key) {
+	                 if (!messageUsed && truthy(value) && messageCtrl.test(key)) {
+	                   // this is to prevent the same error name from showing up twice
+	                   if (matchedKeys[key]) return;
+	                   matchedKeys[key] = true;
+
+	                   messageUsed = true;
+	                   messageCtrl.attach();
+	                 }
+	               });
+	             }
+
+	             if (messageUsed) {
+	               // unless we want to display multiple messages then we should
+	               // set a flag here to avoid displaying the next message in the list
+	               messageFound = !multiple;
+	             } else {
+	               unmatchedMessages.push(messageCtrl);
+	             }
+
+	             messageItem = messageItem.next;
+	           }
+
+	           forEach(unmatchedMessages, function(messageCtrl) {
+	             messageCtrl.detach();
+	           });
+
+	           unmatchedMessages.length !== totalMessages
+	              ? $animate.setClass($element, ACTIVE_CLASS, INACTIVE_CLASS)
+	              : $animate.setClass($element, INACTIVE_CLASS, ACTIVE_CLASS);
+	         };
+
+	         $scope.$watchCollection($attrs.ngMessages || $attrs['for'], ctrl.render);
+
+	         // If the element is destroyed, proactively destroy all the currently visible messages
+	         $element.on('$destroy', function() {
+	           forEach(messages, function(item) {
+	             item.message.detach();
+	           });
+	         });
+
+	         this.reRender = function() {
+	           if (!renderLater) {
+	             renderLater = true;
+	             $scope.$evalAsync(function() {
+	               if (renderLater) {
+	                 cachedCollection && ctrl.render(cachedCollection);
+	               }
+	             });
+	           }
+	         };
+
+	         this.register = function(comment, messageCtrl) {
+	           var nextKey = latestKey.toString();
+	           messages[nextKey] = {
+	             message: messageCtrl
+	           };
+	           insertMessageNode($element[0], comment, nextKey);
+	           comment.$$ngMessageNode = nextKey;
+	           latestKey++;
+
+	           ctrl.reRender();
+	         };
+
+	         this.deregister = function(comment) {
+	           var key = comment.$$ngMessageNode;
+	           delete comment.$$ngMessageNode;
+	           removeMessageNode($element[0], comment, key);
+	           delete messages[key];
+	           ctrl.reRender();
+	         };
+
+	         function findPreviousMessage(parent, comment) {
+	           var prevNode = comment;
+	           var parentLookup = [];
+
+	           while (prevNode && prevNode !== parent) {
+	             var prevKey = prevNode.$$ngMessageNode;
+	             if (prevKey && prevKey.length) {
+	               return messages[prevKey];
+	             }
+
+	             // dive deeper into the DOM and examine its children for any ngMessage
+	             // comments that may be in an element that appears deeper in the list
+	             if (prevNode.childNodes.length && parentLookup.indexOf(prevNode) == -1) {
+	               parentLookup.push(prevNode);
+	               prevNode = prevNode.childNodes[prevNode.childNodes.length - 1];
+	             } else if (prevNode.previousSibling) {
+	               prevNode = prevNode.previousSibling;
+	             } else {
+	               prevNode = prevNode.parentNode;
+	               parentLookup.push(prevNode);
+	             }
+	           }
+	         }
+
+	         function insertMessageNode(parent, comment, key) {
+	           var messageNode = messages[key];
+	           if (!ctrl.head) {
+	             ctrl.head = messageNode;
+	           } else {
+	             var match = findPreviousMessage(parent, comment);
+	             if (match) {
+	               messageNode.next = match.next;
+	               match.next = messageNode;
+	             } else {
+	               messageNode.next = ctrl.head;
+	               ctrl.head = messageNode;
+	             }
+	           }
+	         }
+
+	         function removeMessageNode(parent, comment, key) {
+	           var messageNode = messages[key];
+
+	           var match = findPreviousMessage(parent, comment);
+	           if (match) {
+	             match.next = messageNode.next;
+	           } else {
+	             ctrl.head = messageNode.next;
+	           }
+	         }
+	       }]
+	     };
+
+	     function isAttrTruthy(scope, attr) {
+	      return (isString(attr) && attr.length === 0) || //empty attribute
+	             truthy(scope.$eval(attr));
+	     }
+
+	     function truthy(val) {
+	       return isString(val) ? val.length : !!val;
+	     }
+	   }])
+
+	   /**
+	    * @ngdoc directive
+	    * @name ngMessagesInclude
+	    * @restrict AE
+	    * @scope
+	    *
+	    * @description
+	    * `ngMessagesInclude` is a directive with the purpose to import existing ngMessage template
+	    * code from a remote template and place the downloaded template code into the exact spot
+	    * that the ngMessagesInclude directive is placed within the ngMessages container. This allows
+	    * for a series of pre-defined messages to be reused and also allows for the developer to
+	    * determine what messages are overridden due to the placement of the ngMessagesInclude directive.
+	    *
+	    * @usage
+	    * ```html
+	    * <!-- using attribute directives -->
+	    * <ANY ng-messages="expression" role="alert">
+	    *   <ANY ng-messages-include="remoteTplString">...</ANY>
+	    * </ANY>
+	    *
+	    * <!-- or by using element directives -->
+	    * <ng-messages for="expression" role="alert">
+	    *   <ng-messages-include src="expressionValue1">...</ng-messages-include>
+	    * </ng-messages>
+	    * ```
+	    *
+	    * {@link module:ngMessages Click here} to learn more about `ngMessages` and `ngMessage`.
+	    *
+	    * @param {string} ngMessagesInclude|src a string value corresponding to the remote template.
+	    */
+	   .directive('ngMessagesInclude',
+	     ['$templateRequest', '$document', '$compile', function($templateRequest, $document, $compile) {
+
+	     return {
+	       restrict: 'AE',
+	       require: '^^ngMessages', // we only require this for validation sake
+	       link: function($scope, element, attrs) {
+	         var src = attrs.ngMessagesInclude || attrs.src;
+	         $templateRequest(src).then(function(html) {
+	           $compile(html)($scope, function(contents) {
+	             element.after(contents);
+
+	             // the anchor is placed for debugging purposes
+	             var comment = $compile.$$createComment ?
+	                 $compile.$$createComment('ngMessagesInclude', src) :
+	                 $document[0].createComment(' ngMessagesInclude: ' + src + ' ');
+	             var anchor = jqLite(comment);
+	             element.after(anchor);
+
+	             // we don't want to pollute the DOM anymore by keeping an empty directive element
+	             element.remove();
+	           });
+	         });
+	       }
+	     };
+	   }])
+
+	   /**
+	    * @ngdoc directive
+	    * @name ngMessage
+	    * @restrict AE
+	    * @scope
+	    *
+	    * @description
+	    * `ngMessage` is a directive with the purpose to show and hide a particular message.
+	    * For `ngMessage` to operate, a parent `ngMessages` directive on a parent DOM element
+	    * must be situated since it determines which messages are visible based on the state
+	    * of the provided key/value map that `ngMessages` listens on.
+	    *
+	    * More information about using `ngMessage` can be found in the
+	    * {@link module:ngMessages `ngMessages` module documentation}.
+	    *
+	    * @usage
+	    * ```html
+	    * <!-- using attribute directives -->
+	    * <ANY ng-messages="expression" role="alert">
+	    *   <ANY ng-message="stringValue">...</ANY>
+	    *   <ANY ng-message="stringValue1, stringValue2, ...">...</ANY>
+	    * </ANY>
+	    *
+	    * <!-- or by using element directives -->
+	    * <ng-messages for="expression" role="alert">
+	    *   <ng-message when="stringValue">...</ng-message>
+	    *   <ng-message when="stringValue1, stringValue2, ...">...</ng-message>
+	    * </ng-messages>
+	    * ```
+	    *
+	    * @param {expression} ngMessage|when a string value corresponding to the message key.
+	    */
+	  .directive('ngMessage', ngMessageDirectiveFactory())
+
+
+	   /**
+	    * @ngdoc directive
+	    * @name ngMessageExp
+	    * @restrict AE
+	    * @priority 1
+	    * @scope
+	    *
+	    * @description
+	    * `ngMessageExp` is a directive with the purpose to show and hide a particular message.
+	    * For `ngMessageExp` to operate, a parent `ngMessages` directive on a parent DOM element
+	    * must be situated since it determines which messages are visible based on the state
+	    * of the provided key/value map that `ngMessages` listens on.
+	    *
+	    * @usage
+	    * ```html
+	    * <!-- using attribute directives -->
+	    * <ANY ng-messages="expression">
+	    *   <ANY ng-message-exp="expressionValue">...</ANY>
+	    * </ANY>
+	    *
+	    * <!-- or by using element directives -->
+	    * <ng-messages for="expression">
+	    *   <ng-message when-exp="expressionValue">...</ng-message>
+	    * </ng-messages>
+	    * ```
+	    *
+	    * {@link module:ngMessages Click here} to learn more about `ngMessages` and `ngMessage`.
+	    *
+	    * @param {expression} ngMessageExp|whenExp an expression value corresponding to the message key.
+	    */
+	  .directive('ngMessageExp', ngMessageDirectiveFactory());
+
+	function ngMessageDirectiveFactory() {
+	  return ['$animate', function($animate) {
+	    return {
+	      restrict: 'AE',
+	      transclude: 'element',
+	      priority: 1, // must run before ngBind, otherwise the text is set on the comment
+	      terminal: true,
+	      require: '^^ngMessages',
+	      link: function(scope, element, attrs, ngMessagesCtrl, $transclude) {
+	        var commentNode = element[0];
+
+	        var records;
+	        var staticExp = attrs.ngMessage || attrs.when;
+	        var dynamicExp = attrs.ngMessageExp || attrs.whenExp;
+	        var assignRecords = function(items) {
+	          records = items
+	              ? (isArray(items)
+	                    ? items
+	                    : items.split(/[\s,]+/))
+	              : null;
+	          ngMessagesCtrl.reRender();
+	        };
+
+	        if (dynamicExp) {
+	          assignRecords(scope.$eval(dynamicExp));
+	          scope.$watchCollection(dynamicExp, assignRecords);
+	        } else {
+	          assignRecords(staticExp);
+	        }
+
+	        var currentElement, messageCtrl;
+	        ngMessagesCtrl.register(commentNode, messageCtrl = {
+	          test: function(name) {
+	            return contains(records, name);
+	          },
+	          attach: function() {
+	            if (!currentElement) {
+	              $transclude(scope, function(elm) {
+	                $animate.enter(elm, null, element);
+	                currentElement = elm;
+
+	                // Each time we attach this node to a message we get a new id that we can match
+	                // when we are destroying the node later.
+	                var $$attachId = currentElement.$$attachId = ngMessagesCtrl.getAttachId();
+
+	                // in the event that the element or a parent element is destroyed
+	                // by another structural directive then it's time
+	                // to deregister the message from the controller
+	                currentElement.on('$destroy', function() {
+	                  if (currentElement && currentElement.$$attachId === $$attachId) {
+	                    ngMessagesCtrl.deregister(commentNode);
+	                    messageCtrl.detach();
+	                  }
+	                });
+	              });
+	            }
+	          },
+	          detach: function() {
+	            if (currentElement) {
+	              var elm = currentElement;
+	              currentElement = null;
+	              $animate.leave(elm);
+	            }
+	          }
+	        });
+	      }
+	    };
+	  }];
+
+	  function contains(collection, key) {
+	    if (collection) {
+	      return isArray(collection)
+	          ? collection.indexOf(key) >= 0
+	          : collection.hasOwnProperty(key);
+	    }
+	  }
+	}
+
+
+	})(window, window.angular);
+
+
+/***/ },
+/* 33 */
+/***/ function(module, exports) {
+
+	angular.module('snap', []);
+
+	(function() {
+	  'use strict';
+	  var version = [1, 8, 5]
+	    , vObj = {
+	        full: version.join('.'),
+	        major: version[0],
+	        minor: version[1],
+	        patch: version[2]
+	      };
+	  angular.module('snap').constant('SNAP_VERSION', vObj);
+	}());
+
+	angular.module('snap')
+	  .directive('snapClose', ['$rootScope', 'snapRemote', function($rootScope, snapRemote) {
+	    'use strict';
+	    return {
+	      restrict: 'A',
+	      link: function (scope, element, attrs) {
+	        element.bind('click', function() {
+	          // Wrap in anonymous function for easier testing
+	          snapRemote.close(scope.$eval(attrs.snapId));
+	          $rootScope.$digest();
+	        });
+	      }
+	    };
+	  }]);
+
+	angular.module('snap')
+	  .directive('snapContent', ['SnapConstructor', 'snapRemote', function (SnapConstructor, snapRemote) {
+	    'use strict';
+	    return {
+	      restrict: 'AE',
+	      link: function postLink(scope, element, attrs) {
+	        element.addClass('snap-content');
+
+	        var snapId = attrs.snapId;
+	        if(!!snapId) {
+	          snapId = scope.$eval(attrs.snapId);
+	        }
+
+	        var snapOptions = angular.extend({}, snapRemote.globalOptions);
+
+	        var watchAttr = function(val, attr) {
+	          scope.$watch(function() {
+	            return scope.$eval(val);
+	          }, function(newVal, oldVal) {
+	            if(angular.isDefined(oldVal) && newVal !== oldVal) {
+	              snapRemote.getSnapper(snapId).then(function(snapper) {
+	                var settingsUpdate = {};
+	                settingsUpdate[attr] = newVal;
+	                snapper.settings(settingsUpdate);
+	              });
+	            }
+	          });
+	        };
+
+	        // Get `snapOpt*` attrs, for now there is no *binding* going on here.
+	        // We're just providing a more declarative way to set initial values.
+	        angular.forEach(attrs, function(val, attr) {
+	          if(attr.indexOf('snapOpt') === 0) {
+	            attr = attr.substring(7);
+	            if(attr.length) {
+	              attr = attr[0].toLowerCase() + attr.substring(1);
+	              snapOptions[attr] = scope.$eval(val);
+	              watchAttr(val, attr);
+	            }
+	          }
+	        });
+
+	        // Always force the snap element to be the one this directive is
+	        // attached to.
+	        snapOptions.element = element[0];
+
+	        // override snap options if some provided in snap-options attribute
+	        if(angular.isDefined(attrs.snapOptions) && attrs.snapOptions) {
+	          angular.extend(snapOptions, scope.$eval(attrs.snapOptions));
+	        }
+
+	        snapRemote.register(new SnapConstructor(snapOptions), snapId);
+
+	        // watch snapOptions for updates
+	        if(angular.isDefined(attrs.snapOptions) && attrs.snapOptions) {
+	          scope.$watch(attrs.snapOptions, function(newSnapOptions) {
+	            snapRemote.getSnapper(snapId).then(function(snapper) {
+	              snapper.settings(newSnapOptions);
+	            });
+	          }, true);
+	        }
+
+	        scope.$on('$destroy', function() {
+	          snapRemote.unregister(snapId);
+	        });
+	      }
+	    };
+	  }]);
+
+	angular.module('snap')
+	  .directive('snapDragger', ['snapRemote', function(snapRemote) {
+	    'use strict';
+	    return {
+	      restrict: 'AE',
+	      link: function(scope, element, attrs) {
+	        var snapId = scope.$eval(attrs.snapId);
+	        snapRemote.getSnapper(snapId).then(function(snapper) {
+	          snapper.settings({
+	            dragger: element[0]
+	          });
+	        });
+	      }
+	    };
+	  }]);
+
+
+	angular.module('snap')
+	  .directive('snapDrawer', function () {
+	    'use strict';
+	    return {
+	      restrict: 'AE',
+	      link: function(scope, element, attrs) {
+	        element.addClass('snap-drawer');
+
+	        // Don't force a `snap-drawers` wrapper when we only want to use a
+	        // single shelf
+	        var parent = element.parent()
+	          , needsDrawersWrapper = true;
+
+	        if (attrs.snapDrawer === 'right') {
+	          element.addClass('snap-drawer-right');
+	        } else {
+	          element.addClass('snap-drawer-left');
+	        }
+
+	        while(parent.length) {
+	          if(parent.hasClass('snap-drawers')) {
+	            needsDrawersWrapper = false;
+	          }
+	          parent = parent.parent();
+	        }
+
+	        if(needsDrawersWrapper) {
+	          element.wrap('<div class="snap-drawers" />');
+	        }
+
+	      }
+	    };
+	  });
+
+	angular.module('snap')
+	  .directive('snapDrawers', function () {
+	    'use strict';
+	    return {
+	      restrict: 'AE',
+	      compile: function(element, attrs) {
+	        element.addClass('snap-drawers');
+	      }
+	    };
+	  });
+
+
+	angular.module('snap')
+	  .directive('snapToggle', ['$rootScope', 'snapRemote', function($rootScope, snapRemote) {
+	      'use strict';
+	      return {
+	        restrict: 'A',
+	        link: function (scope, element, attrs) {
+	          var snapId = attrs.snapId
+	            , snapSide = attrs.snapToggle || 'left';
+
+	          if(!!snapId) {
+	            snapId = scope.$eval(snapId);
+	          }
+
+	          /**
+	           * Stifle mousedown and mouseup events by default
+	           *
+	           * See issue #61
+	           *
+	           * mousedown can create a race condition with the Snap.js `tapToClose`
+	           * setting, the `tapToClose` handler runs first (if drawer is open)
+	           * then our toggle handler runs. Depending on how far along in the
+	           * close animation the drawer is when the toggle handler runs we may
+	           * end up keeping the drawer open (i.e. a quick open/close) or *only*
+	           * performing a double close.
+	           *
+	           * The situation is trickier because we want to allow mouseup events
+	           * to flow through **if** the corresponding mousedown event did not
+	           * target out toggle button... otherwise you could get stuck in a
+	           * drag. We have a naive approach to preventing this... you can still
+	           * get stuck in drag temporarily if you: mouse down on the toggle
+	           * button, then mouse up off screen, then start a drag, then mouse
+	           * down on the toggle button.
+	           */
+	          if(!attrs.snapUnsafe) {
+	            var downOnMe = false;
+	            element.bind('mousedown', function(event) {
+	              downOnMe = true;
+	              event.stopImmediatePropagation();
+	            });
+
+	            element.bind('mouseup', function(event) {
+	              if(downOnMe) {
+	                event.stopImmediatePropagation();
+	              }
+	              downOnMe = false;
+	            });
+	          }
+
+	          element.bind('click', function() {
+	            snapRemote.toggle(snapSide, snapId);
+	            $rootScope.$digest();
+	          });
+	        }
+	      };
+	  }]);
+
+	angular.module('snap')
+	.provider('SnapConstructor', function() {
+	  'use strict';
+	  var constructor;
+
+	  this.use = function(MySnap) {
+	    constructor = MySnap;
+	  };
+
+	  this.$get = ['$window', function($window) {
+	    var S = constructor || $window.Snap;
+	    if(angular.isUndefined(S)) {
+	      throw new Error('Snap constructor is not defined. Make sure ' +
+	          'window.Snap is defined or supply your own with ' +
+	          'SnapConstructorProvider.use(MySnap).');
+	    }
+	    return S;
+	  }];
+	});
+
+
+	angular.module('snap')
+	.provider('snapRemote', function SnapRemoteProvider() {
+	  'use strict';
+
+	  // Global Snap.js options
+	  var self = this;
+	  this.globalOptions = {};
+
+	  this.$get = ['$q', function($q) {
+
+	    var snapperStore = {}
+	      , DEFAULT_SNAPPER_ID = '__DEFAULT_SNAPPER_ID__'
+	      , exports = {}
+	      , initStoreForId
+	      , resolveInStoreById;
+
+	    exports.globalOptions = self.globalOptions;
+
+	    exports.getSnapper = function(id) {
+	      id = id || DEFAULT_SNAPPER_ID;
+	      if(!snapperStore.hasOwnProperty(id)) {
+	        initStoreForId(id);
+	      }
+	      return snapperStore[id].deferred.promise;
+	    };
+
+	    exports.register = function(snapper, id) {
+	      id = id || DEFAULT_SNAPPER_ID;
+	      if(!snapperStore.hasOwnProperty(id)) {
+	        initStoreForId(id);
+	      }
+	      if(snapperStore[id].isResolved) {
+	        initStoreForId(id);
+	      }
+	      resolveInStoreById(snapper, id);
+	    };
+
+	    exports.unregister = function(id) {
+	      id = id || DEFAULT_SNAPPER_ID;
+	      if(snapperStore.hasOwnProperty(id)) {
+	        delete snapperStore[id];
+	      }
+	    };
+
+	    exports.toggle = function(side, id) {
+	      id = id || DEFAULT_SNAPPER_ID;
+	      exports.getSnapper(id).then(function(snapper) {
+	        if(side === snapper.state().state) {
+	          exports.close(id);
+	        } else {
+	          exports.open(side, id);
+	        }
+	      });
+	    };
+
+	    exports.open = function(side, id) {
+	      id = id || DEFAULT_SNAPPER_ID;
+	      exports.getSnapper(id).then(function(snapper) {
+	        snapper.open(side);
+	      });
+	    };
+
+	    exports.close = function(id) {
+	      id = id || DEFAULT_SNAPPER_ID;
+	      exports.getSnapper(id).then(function(snapper) {
+	        snapper.close();
+	      });
+	    };
+
+	    exports.expand = function(side, id) {
+	      id = id || DEFAULT_SNAPPER_ID;
+	      exports.getSnapper(id).then(function(snapper) {
+	        snapper.expand(side);
+	      });
+	    };
+
+	    exports.enable = function(id) {
+	      id = id || DEFAULT_SNAPPER_ID;
+	      exports.getSnapper(id).then(function(snapper) {
+	        snapper.enable();
+	      });
+	    };
+
+	    exports.disable = function(id) {
+	      id = id || DEFAULT_SNAPPER_ID;
+	      exports.getSnapper(id).then(function(snapper) {
+	        snapper.disable();
+	      });
+	    };
+
+	    initStoreForId = function(id) {
+	      snapperStore[id] = {
+	        deferred: $q.defer(),
+	        isResolved: false
+	      };
+	    };
+
+	    resolveInStoreById = function(snapper, id) {
+	      snapperStore[id].deferred.resolve(snapper);
+	      snapperStore[id].isResolved = true;
+	    };
+
+	    return exports;
+	  }];
+
+	  return this;
+	});
+
 
 /***/ }
 /******/ ])

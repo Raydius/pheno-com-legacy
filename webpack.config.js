@@ -103,6 +103,7 @@ module.exports = {
 
         // generate index.html as public entry point
         new HtmlWebpackPlugin({
+            //template: '!!jade!views/index.jade',
             template: 'views/index.jade',
             filename: 'index.html',
             title: 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation',

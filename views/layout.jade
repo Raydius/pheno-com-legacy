@@ -9,7 +9,6 @@ html(xmlns:ng="http://angularjs.org/" ng-app='phenoCom')
 		meta(ng-repeat="(key, value) in MetaTags.properties" property="{{key}}" content="{{value}}")
 		meta(name="prerender-status-code" content="{{MetaTags.prerender.statusCode}}")
 		meta(name="prerender-header" ng-if="MetaTags.prerender.header" content="{{MetaTags.prerender.header}}")
- 
 
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 		//- meta(property="og:type" content="website")
@@ -37,6 +36,21 @@ html(xmlns:ng="http://angularjs.org/" ng-app='phenoCom')
 		include ./favicon
 
 	body(class=bodyClass, ng-controller="phenoController")
+
+		// Google Tag Manager
+		noscript
+			iframe(src="//www.googletagmanager.com/ns.html?id=GTM-M5T7GR", height="0", width="0", style="display:none;visibility:hidden;")
+		script.
+			(function (w,d,s,l,i) {
+				w[l]=w[l]||[];
+				w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+				var f=d.getElementsByTagName(s)[0],
+					j=d.createElement(s),
+					dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async=true;
+				j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window, document, 'script', 'dataLayer', 'GTM-M5T7GR');
+		// End Google Tag Manager
 
 		.body-wrapper
 			include ./components/top-nav
