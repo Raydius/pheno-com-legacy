@@ -1150,6 +1150,10 @@ var copy =
       "positions": "Open Positions",
       "listing": [
         {
+          "listingTitle": "Project Manager (Los Angeles)",
+          "listingUrl": "https://www.linkedin.com/jobs/view/196680842"
+        },
+        {
           "listingTitle": "Executive Assistant (Los Angeles)",
           "listingUrl": "https://www.linkedin.com/jobs/view/196680842"
         },
@@ -1158,19 +1162,19 @@ var copy =
           "listingUrl": "https://www.linkedin.com/jobs2/cap/view/199096527"
         },
         {
-          "listingTitle": "IT Director",
+          "listingTitle": "IT Director (Los Angeles)",
           "listingUrl": "https://www.linkedin.com/jobs/view/187272051"
         },
         {
-          "listingTitle": "ACD/Copywriter",
+          "listingTitle": "ACD/Copywriter (Los Angeles)",
           "listingUrl": "https://www.linkedin.com/jobs/view/184897336"
         },
         {
-          "listingTitle": "Digital Design Director",
+          "listingTitle": "Digital Design Director (Los Angeles)",
           "listingUrl": "https://www.linkedin.com/jobs2/view/85312460"
         },
         {
-          "listingTitle": "Digital Brand Manager",
+          "listingTitle": "Digital Brand Manager (Los Angeles)",
           "listingUrl": "https://www.linkedin.com/jobs2/view/125942963"
         }
       ],
