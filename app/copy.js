@@ -1150,6 +1150,10 @@ var copy =
       "positions": "Open Positions",
       "listing": [
         {
+          "listingTitle": "Executive Assistant",
+          "listingUrl": "https://www.linkedin.com/jobs/view/196680842"
+        },
+        {
           "listingTitle": "Brand Manager (Chicago)",
           "listingUrl": "https://www.linkedin.com/jobs2/cap/view/199096527"
         },
