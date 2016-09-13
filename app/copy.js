@@ -1151,7 +1151,7 @@ var copy =
       "listing": [
         {
           "listingTitle": "Project Manager",
-          "listingUrl": "https://www.linkedin.com/jobs/view/196680842"
+          "listingUrl": "https://www.linkedin.com/jobs/view/196927473"
         },
         {
           "listingTitle": "Executive Assistant",
