@@ -78,6 +78,14 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
         // close snap drawer
         //$main.trigger('routeChange');
 
+        // fire GTM tracking
+        dataLayer.push({
+           event: 'ngRouteChange',
+            attributes: {
+               route: $location.path()
+            }
+        });
+
         // fire Google Analytics tracking
         $window.ga('send', 'pageview', { page: $location.url() });
 

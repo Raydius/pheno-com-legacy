@@ -9,11 +9,14 @@ import uirouter from 'angular-ui-router';
 import ngAnimate from 'angular-animate';
 import 'angular-socialshare';
 import 'sticky-kit/dist/sticky-kit.min.js';
-import 'ui-router-metatags/dist/ui-router-metatags.min.js';
+import 'ui-router-metatags/dist/ui-router-metatags.js';
 
 require('angular-cookies');
 require('angular-messages');
 require('angular-snap');
+
+// initialize dataLayer for Google Tag Manager
+var dataLayer = window.dataLayer = window.dataLayer || [];
 
 angular.module('phenoCom',[
     uirouter,
