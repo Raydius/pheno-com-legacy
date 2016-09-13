@@ -1150,6 +1150,10 @@ var copy =
       "positions": "Open Positions",
       "listing": [
         {
+          "listingTitle": "Senior Recruiter",
+          "listingUrl": "https://www.linkedin.com/jobs/view/196967030"
+        },
+        {
           "listingTitle": "Project Manager",
           "listingUrl": "https://www.linkedin.com/jobs/view/196927473"
         },
