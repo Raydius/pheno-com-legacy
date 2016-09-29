@@ -261,6 +261,15 @@ var copy =
         {
           "type": "image",
           "image": true,
+          "imageUrl": require('assets/images/aetna-thumb.jpg'),
+          "legend": "Healthcare / B2B",
+          "headline": "Aetna Brings Out Medicare&#8217;s Potential.",
+          "description": "Healthcare giant takes a more human approach with B2B initiative.",
+          "readmoreUrl": "#!/work/aetna-potential/"
+        },
+        {
+          "type": "image",
+          "image": true,
           "imageUrl": require('assets/images/work-1.jpg'),
           "imageAlt": "Wilson Image 1",
           "legend": "Sport / Lifestyle",
@@ -985,6 +994,33 @@ var copy =
         }*/
       ]
     },
+    "aetna": {
+      "title": "Aetna Brings Out Medicare’s Potential.",
+      "client": "Aetna",
+      "clientLogo": require('assets/images/works/clients_logo/aetna.png'),
+      "project": "Potential",
+      "media": "B2B, Digital, Social",
+      "topDescription": "Big health care insurers face two overwhelming obstacles in this country; intense regulation and widespread public distrust. Because of this, many have a tough time both communicating to the public and distinguishing any sort of difference between each other. Early in 2015, Aetna took its first steps in improving their positioning by taking a more holistic and zen approach to health care. They started internally by building 24-hour gyms at many of their offices. They then raised the minimum wage for employees to $16 an hour. Decisions that alluded to a bigger belief in broadening how this industry can actually improve people’s lives, not just get them better when they’re sick. Later in 2015, Aetna came to Phenomenon looking for help within their Group Medicare sector. Specifically, improving new business figures with large companies. The team quickly noticed that they lacked a distinctive value proposition when it came to the millions of retirees that they served. Knowing this is an incredibly commoditized category and knowing the direction the company was headed, the team netted out with a simple idea.<span class='red'>Aetna believes that when it comes to retirement, there’s a ton of potential. Phenomenon built a strategic deck that didn’t just focus on costs or helping members when they were sick. Instead they honed in on a more emotional idea that Aetna sees the potential in seniors. Rather than clichés of walking on sunset beaches, Aetna helps retirees stay connected and maintain a sense of purpose. Instead of just living longer, it was about living better. A 60 second film was created to emotionally reiterate this simple thought. </span> With a more honest and inspiring strategic direction, Aetna needed to adjust the way they communicated to current and potential members, not just plan sponsors. So, Phenomenon lead the charge in overhauling all of the company’s Medicare photography from pitch decks to posters to the images on AetnaMedicare.com. This more broad definition of health allowed us to expand what a Medicare member looked like. Instead of exclusively seeing photos of exercise classes and retirees holding pills and seniors searching online, we suddenly saw them enjoying hobbies, spending time with their families and living life to its fullest. In just six months Aetna won two out of their next three corporate pitches and continues to incorporate this new approach in all Medicare communication.",
+      "share": {
+
+        "twitter": {
+          "url": "http://www.twitter.com/aetna",
+          "className": "icon-twitter",
+          "title": "View Aetna's Tweets"
+        },
+        "facebook": {
+          "url": "http://www.facebook.com/aetna",
+          "className": "icon-facebook",
+          "title": "View Aetna's Facebook Page"
+        },
+        "linkedin": {
+          "url": "http://www.linkedin.com/company/aetna?trk=top_nav_home",
+          "className": "icon-linkedin",
+          "title": "View Aetna's LinkedIn Page"
+        }
+    },
+
+  },
     "cooper": {
       "title": "Cooper",
       "className": "cooper",
@@ -1149,10 +1185,7 @@ var copy =
       "quoterTitle": "VP Marketing, Wilson",
       "positions": "Open Positions",
       "listing": [
-        {
-          "listingTitle": "Senior Recruiter",
-          "listingUrl": "https://www.linkedin.com/jobs/view/196967030"
-        },
+
         {
           "listingTitle": "Project Manager",
           "listingUrl": "https://www.linkedin.com/jobs/view/196927473"
@@ -1160,22 +1193,6 @@ var copy =
         {
           "listingTitle": "Executive Assistant",
           "listingUrl": "https://www.linkedin.com/jobs/view/196680842"
-        },
-        {
-          "listingTitle": "IT Director",
-          "listingUrl": "https://www.linkedin.com/jobs/view/187272051"
-        },
-        {
-          "listingTitle": "ACD/Copywriter",
-          "listingUrl": "https://www.linkedin.com/jobs/view/184897336"
-        },
-        {
-          "listingTitle": "Digital Design Director",
-          "listingUrl": "https://www.linkedin.com/jobs2/view/85312460"
-        },
-        {
-          "listingTitle": "Digital Brand Manager",
-          "listingUrl": "https://www.linkedin.com/jobs2/view/125942963"
         }
       ],
       "details": [
