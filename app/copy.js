@@ -1036,7 +1036,7 @@ var copy =
           "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
           "thumbAlt": "Xome - TV Spot - Transparent House",
           "thumbTitle": "Click to play video",
-          "vimeo": "164752774"
+          "vimeo": "182635703"
         }
       ],
       "fromTopContentDescription": [
@@ -1089,9 +1089,9 @@ var copy =
           "type": "video",
           "video": true,
           "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
-          "thumbAlt": "Xome - TV Spot - Transparent House",
+          "thumbAlt": "Aetna - Potential",
           "thumbTitle": "Click to play video",
-          "vimeo": "134437401",
+          "vimeo": "182635703",
           "mainDescription": [
             "With a more honest and inspiring strategic direction, Aetna needed to adjust the way they communicated " +
             "to current and potential members, not just plan sponsors. So, Phenomenon lead the charge in overhauling " +
