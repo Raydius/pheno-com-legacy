@@ -998,23 +998,23 @@ var copy =
       "title": "Aetna Brings Out Medicare's Potential",
       "className": "aetna",
       "client": "Aetna",
-      "clientLogo": require('assets/images/works/clients_logo/aetna.png'),
+      "clientLogo": require('assets/images/works/clients_logo/aetna-logo.png'),
       "clientLogoWidth": "250px",
       "project": "Potential",
       "media": "B2B, Digital, Social",
       "blockquote": "Aetna Brings Out Medicare's Potential",
       "ogDescription": "Aetna Brings Out Medicare's Potential",
-      "quoterName": "By [quoter]",
+      /*"quoterName": "By [quoter]",
       "quoterTitle": "[quoter title], [quoter company]",
-      "quoterAvatar": require("assets/images/illustrations/phenomenon-matt-stringer-menswearhouse-grey.png"),
+      "quoterAvatar": require("assets/images/illustrations/phenomenon-matt-stringer-menswearhouse-grey.png"),*/
       "shareImg": require("assets/images/work-3.jpg"),
 
       "description": "[desc]", //"CVU - Phenomenon - Wilson X",
-      "caseWriter": {
+      /*"caseWriter": {
         "name": "[caseWriter]",
         "title": "[caseWriter Title]",
         "description": "[caseWriter by-line]"
-      },
+      },*/
       "topDescription": [
         "Big health care insurers face two overwhelming obstacles in this country; intense regulation " +
         "and widespread public distrust. Because of this, many have a tough time both communicating to the public and " +
@@ -1027,25 +1027,34 @@ var copy =
         "their Group Medicare sector. Specifically, improving new business figures with large companies. The team quickly " +
         "noticed that they lacked a distinctive value proposition when it came to the millions of retirees that they " +
         "served. Knowing this is an incredibly commoditized category and knowing the direction the company was headed, " +
-        "the team netted out with a simple idea."
-      ],
-      "topcontent": [
-        {
-          "type": "video",
-          "video": true,
-          "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
-          "thumbAlt": "Xome - TV Spot - Transparent House",
-          "thumbTitle": "Click to play video",
-          "vimeo": "182635703"
-        }
-      ],
-      "fromTopContentDescription": [
+        "the team netted out with a simple idea.",
         "<span class='red'>Aetna believes that when it comes to retirement, there's a ton of potential.</span>",
         "Phenomenon built a strategic deck that didn't just focus on costs or helping members when they were sick. " +
         "Instead they honed in on a more emotional idea that Aetna sees the potential in seniors. Rather than " +
         "clich&eacute;s of walking on sunset beaches, Aetna helps retirees stay connected and maintain a sense of " +
         "purpose. Instead of just living longer, it was about living better. A 60 second film was created to emotionally " +
         "reiterate this simple thought."
+      ],
+      "topcontent": [
+        {
+          "type": "video",
+          "video": true,
+          "vimeo": "182635703",
+          "mainDescription": [
+            "<br />With a more honest and inspiring strategic direction, Aetna needed to adjust the way they communicated " +
+            "to current and potential members, not just plan sponsors. So, Phenomenon lead the charge in overhauling " +
+            "all of the company's Medicare photography from pitch decks to posters to the images on AetnaMedicare.com. " +
+            "This more broad definition of health allowed us to expand what a Medicare member looked like. Instead of " +
+            "exclusively seeing photos of exercise classes and retirees holding pills and seniors searching online, we " +
+            "suddenly saw them enjoying hobbies, spending time with their families and living life to its fullest. In " +
+            "just six months Aetna won two out of their next three corporate pitches and continues to incorporate this " +
+            "new approach in all Medicare communication."
+          ]
+        }
+
+      ],
+      "fromTopContentDescription": [
+
       ],
       "detailcontent": [
         {
@@ -1058,49 +1067,7 @@ var copy =
             {
               "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1c.png"),
               "alt": "Wilson X Packaging Photo 3"
-            },
-            {
-              "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1d.png"),
-              "alt": "Wilson X Packaging Photo 4"
-            },
-            {
-              "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1e.png"),
-              "alt": "Wilson X Packaging Photo 5"
-            },
-            {
-              "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1f.png"),
-              "alt": "Wilson X Packaging Photo 6"
             }
-            ,
-            {
-              "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1g.png"),
-              "alt": "Wilson X Packaging Photo 7"
-            },
-            {
-              "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1h.png"),
-              "alt": "Wilson X Packaging Photo 8"
-            }
-          ],
-          "mainDescription": [
-            "Late Spring is always an important quarter for us as it&#8217;s the time for Dads and Grads. In 2015, to supplement our typical retail promotions, Pheno helped us create something more memorable and special for Father&#8217;s Day."
-          ]
-        },
-        {
-          "type": "video",
-          "video": true,
-          "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
-          "thumbAlt": "Aetna - Potential",
-          "thumbTitle": "Click to play video",
-          "vimeo": "182635703",
-          "mainDescription": [
-            "With a more honest and inspiring strategic direction, Aetna needed to adjust the way they communicated " +
-            "to current and potential members, not just plan sponsors. So, Phenomenon lead the charge in overhauling " +
-            "all of the company’s Medicare photography from pitch decks to posters to the images on AetnaMedicare.com. " +
-            "This more broad definition of health allowed us to expand what a Medicare member looked like. Instead of " +
-            "exclusively seeing photos of exercise classes and retirees holding pills and seniors searching online, we " +
-            "suddenly saw them enjoying hobbies, spending time with their families and living life to its fullest. In " +
-            "just six months Aetna won two out of their next three corporate pitches and continues to incorporate this " +
-            "new approach in all Medicare communication."
           ]
         }
       ]
