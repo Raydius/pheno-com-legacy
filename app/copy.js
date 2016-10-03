@@ -1053,21 +1053,9 @@ var copy =
       ],
       "detailcontent": [
         {
-          "carousel": true,
-          "images": [
-            {
-              "url": require("assets/images/aetna/Pheno_Aetna_Zipscreens_1200x668_Mechanical_093016_CN_R1.jpg"),
-              "alt": "Aetna Photo 1"
-            },
-            {
-              "url": require("assets/images/aetna/Pheno_Aetna_Zipscreens_1200x668_Mechanical_093016_CN_R12.jpg"),
-              "alt": "Aetna Photo 2"
-            },
-            {
-              "url": require("assets/images/aetna/Pheno_Aetna_Zipscreens_1200x668_Mechanical_093016_CN_R13.jpg"),
-              "alt": "Aetna Photo 3"
-            }
-          ]
+          "image": true,
+          "imageUrl": require("assets/images/aetna/Aetna_1200x668_Posters_093016.jpg"),
+          "imageAlt": "Aetna Posters"
         }
       ]
 
