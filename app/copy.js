@@ -261,6 +261,15 @@ var copy =
         {
           "type": "image",
           "image": true,
+          "imageUrl": require('assets/images/aetna-thumb.jpg'),
+          "legend": "Healthcare / B2B",
+          "headline": "Aetna Brings Out Medicare&#8217;s Potential.",
+          "description": "Healthcare giant takes a more human approach with B2B initiative.",
+          "readmoreUrl": "#!/work/aetna-potential/"
+        },
+        {
+          "type": "image",
+          "image": true,
           "imageUrl": require('assets/images/work-1.jpg'),
           "imageAlt": "Wilson Image 1",
           "legend": "Sport / Lifestyle",
@@ -935,56 +944,72 @@ var copy =
         "description": "Before becoming the Sr. Director of Marketing for thinkThin in 2014, Megan worked as a marketing manager for over 10 years at Nestle."
       },
       "detailcontent": [
-/*        {
-          "type": "video",
-            "video": true,
-            "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
-            "thumbAlt": "Xome - TV Spot - Transparent House",
-            "thumbTitle": "Click to play video",
-            "vimeo": "159447308"
-        },
-        {
-          "type": "video",
-            "video": true,
-            "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
-            "thumbAlt": "Xome - TV Spot - Transparent House",
-            "thumbTitle": "Click to play video",
-            "vimeo": "159448353",
-            "mainDescription": [
-              'The line that brought it all together was, "There are lots of things to feel guilty about, thinkThin isn&#8217;t one of them." The creative team then executed around this line in everything from print and TV to digital, mobile and sponsorships.'
-            ]
-        },
-        {
-          "carousel": true,
-          "images": [
-            {
-              "url": require("assets/images/thinkthin-1-01.jpg"),
-              "alt": "Men's Wearhouse Photo 1"
-            },
-            {
-              "url": require("assets/images/thinkthin-1-02.jpg"),
-              "alt": "Wilson X Packaging Photo 2"
-            }
-          ],
-          "mainDescription": [
-            "The result is a campaign that&#8217;s been highly effective, helped us drive national sales growth and made a lasting connection with our audience."
-          ]
-        },
-        {
-          "carousel": true,
-          "images": [
-            {
-              "url": require("assets/images/thinkthin-2-01.jpg"),
-              "alt": "Men's Wearhouse Photo 1"
-            },
-            {
-              "url": require("assets/images/thinkthin-2-02.jpg"),
-              "alt": "Wilson X Packaging Photo 2"
-            }
-          ]
-        }*/
+
       ]
     },
+    "aetna": {
+      "title": "Aetna Brings Out Medicare's Potential",
+      "className": "aetna",
+      "client": "Aetna",
+      "clientLogo": require('assets/images/aetna/aetna-thumb.png'),
+      "clientLogoWidth": "250px",
+      "project": "Potential",
+      "media": "B2B, Digital, Social",
+      "blockquote": "Aetna Brings Out Medicare's Potential",
+      "ogDescription": "Aetna Brings Out Medicare's Potential",
+      "shareImg": require("assets/images/work-3.jpg"),
+
+      "description": "[desc]",
+      "topDescription": [
+        "Big health care insurers face two overwhelming obstacles in this country; intense regulation " +
+        "and widespread public distrust. Because of this, many have a tough time both communicating to the public and " +
+        "distinguishing any sort of difference between each other. Early in 2015, Aetna took its first steps in improving " +
+        "their positioning by taking a more holistic and zen approach to health care. They started internally by " +
+        "building 24-hour gyms at many of their offices. They then raised the minimum wage for employees to $16 an hour. " +
+        "Decisions that alluded to a bigger belief in broadening how this industry can actually improve people's lives, " +
+        "not just get them better when they're sick.",
+        "Later in 2015, Aetna came to Phenomenon looking for help within " +
+        "their Group Medicare sector. Specifically, improving new business figures with large companies. The team quickly " +
+        "noticed that they lacked a distinctive value proposition when it came to the millions of retirees that they " +
+        "served. Knowing this is an incredibly commoditized category and knowing the direction the company was headed, " +
+        "the team netted out with a simple idea.",
+        "<span class='red'>Aetna believes that when it comes to retirement, there's a ton of potential.</span>",
+        "Phenomenon built a strategic deck that didn't just focus on costs or helping members when they were sick. " +
+        "Instead they honed in on a more emotional idea that Aetna sees the potential in seniors. Rather than " +
+        "clich&eacute;s of walking on sunset beaches, Aetna helps retirees stay connected and maintain a sense of " +
+        "purpose. Instead of just living longer, it was about living better. A 60 second film was created to emotionally " +
+        "reiterate this simple thought."
+      ],
+      "topcontent": [
+        {
+          "type": "video",
+          "video": true,
+          "vimeo": "182635703",
+          "mainDescription": [
+            "<br />With a more honest and inspiring strategic direction, Aetna needed to adjust the way they communicated " +
+            "to current and potential members, not just plan sponsors. So, Phenomenon lead the charge in overhauling " +
+            "all of the company's Medicare photography from pitch decks to posters to the images on AetnaMedicare.com. " +
+            "This more broad definition of health allowed us to expand what a Medicare member looked like. Instead of " +
+            "exclusively seeing photos of exercise classes and retirees holding pills and seniors searching online, we " +
+            "suddenly saw them enjoying hobbies, spending time with their families and living life to its fullest. In " +
+            "just six months Aetna won two out of their next three corporate pitches and continues to incorporate this " +
+            "new approach in all Medicare communication."
+          ]
+        }
+
+      ],
+      "fromTopContentDescription": [
+
+      ],
+      "detailcontent": [
+        {
+          "image": true,
+          "imageUrl": require("assets/images/aetna/Aetna_1200x668_Posters_093016.jpg"),
+          "imageAlt": "Aetna Posters"
+        }
+      ]
+
+  },
     "cooper": {
       "title": "Cooper",
       "className": "cooper",
@@ -1112,21 +1137,7 @@ var copy =
         "writerTitle": "VP Marketing, Wilson",
         "projectUrl": "#!/work/wilson-x/",
         "projectThumbSrc": require("assets/images/morecases/4.png")
-      }/*,
-      {
-        "projectName": "It's a Sunny Day for Payday Loans.",
-        "writerName": "By Patsy Hauer",
-        "writerTitle": "VP Brand Marketing, Sunny",
-        "projectUrl": "#!/work/sunny/",
-        "projectThumbSrc": require("assets/images/morecases/5.jpg")
-      },
-      {
-        "projectName": "When Buying a House, There's No Place Like Xome",
-        "writerName": "By Alison Cornia",
-        "writerTitle": "SVP Marketing, Xome",
-        "projectUrl": "#!/work/xome/",
-        "projectThumbSrc": require("assets/images/morecases/6.jpg")
-      }*/
+      }
     ],
     "culture": {
       "title": "Culture",
@@ -1149,10 +1160,7 @@ var copy =
       "quoterTitle": "VP Marketing, Wilson",
       "positions": "Open Positions",
       "listing": [
-        {
-          "listingTitle": "Senior Recruiter",
-          "listingUrl": "https://www.linkedin.com/jobs/view/196967030"
-        },
+
         {
           "listingTitle": "Project Manager",
           "listingUrl": "https://www.linkedin.com/jobs/view/196927473"
@@ -1160,22 +1168,6 @@ var copy =
         {
           "listingTitle": "Executive Assistant",
           "listingUrl": "https://www.linkedin.com/jobs/view/196680842"
-        },
-        {
-          "listingTitle": "IT Director",
-          "listingUrl": "https://www.linkedin.com/jobs/view/187272051"
-        },
-        {
-          "listingTitle": "ACD/Copywriter",
-          "listingUrl": "https://www.linkedin.com/jobs/view/184897336"
-        },
-        {
-          "listingTitle": "Digital Design Director",
-          "listingUrl": "https://www.linkedin.com/jobs2/view/85312460"
-        },
-        {
-          "listingTitle": "Digital Brand Manager",
-          "listingUrl": "https://www.linkedin.com/jobs2/view/125942963"
         }
       ],
       "details": [

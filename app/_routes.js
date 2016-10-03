@@ -10,6 +10,7 @@ var templateHome = require('views/welcome.jade');
 var templateAbout = require('views/about.jade');
 var templateWork = require('views/work.jade');
 var templateWorkAnthem = require('views/wilson-anthem.jade');
+var templateWorkAetna = require('views/aetna-potential.jade');
 var templateWorkWilsonX = require('views/wilson-x.jade');
 var templateWorkSLS = require('views/sls.jade');
 var templateWorkXome = require('views/xome.jade');
@@ -82,6 +83,22 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
                     'og:description': 'Phenomenon - Innovations Company',
                     'og:image': require('assets/images/fb-share-center.png')
                 }
+            }
+        })
+        .state('work/aetna-potential/', {
+            url: '/work/aetna-potential/',
+            template: templateWorkAetna,
+            //templateWorkAetna,
+            metaTags: {
+                title: "Aetna Brings Out Medicare's Potential",
+                /*description: 'Healthcare giant takes a more human approach with B2B initiative.',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, aetna',
+                properties: {
+                    'og:type': 'website',
+                    'og:title': 'phenomenon - Innovations Company | Work - Aetna Potential',
+                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - Aetna',
+                    'og:image': require('assets/images/work-1.jpg')
+                }*/
             }
         })
         .state('work/wilson-anthem/', {
@@ -221,7 +238,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             }
         })
 
-       
+
         .state('jobs', {
             url: '/jobs',
             template: templateJobs,
@@ -242,7 +259,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             template: templateContact,
             controller: 'contactController',
             metaTags: {
-                title: 'phenomenon - Innovations Company | Contact', 
+                title: 'phenomenon - Innovations Company | Contact',
                 description: 'phenomenon Innovations Company - Contact us about jobs, new business, and public relations.',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, contact us, jobs, new business, PR',
                 properties: {
@@ -254,10 +271,10 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             }
         })
 
-        .state('blog', {
+        /*.state('blog', {
             url: '/blog',
             template: 'test'
-        })
+        })*/
 
         .state('thanks', {
             url: '/thanks',
