@@ -1009,12 +1009,7 @@ var copy =
       "quoterAvatar": require("assets/images/illustrations/phenomenon-matt-stringer-menswearhouse-grey.png"),*/
       "shareImg": require("assets/images/work-3.jpg"),
 
-      "description": "[desc]", //"CVU - Phenomenon - Wilson X",
-      /*"caseWriter": {
-        "name": "[caseWriter]",
-        "title": "[caseWriter Title]",
-        "description": "[caseWriter by-line]"
-      },*/
+      "description": "[desc]",
       "topDescription": [
         "Big health care insurers face two overwhelming obstacles in this country; intense regulation " +
         "and widespread public distrust. Because of this, many have a tough time both communicating to the public and " +
@@ -1061,12 +1056,16 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1a.png"),
-              "alt": "Men's Wearhouse Photo 1"
+              "url": require("assets/images/aetna/Pheno_Aetna_Zipscreens_1200x668_Mechanical_093016_CN_R1.jpg"),
+              "alt": "Aetna Photo 1"
             },
             {
-              "url": require("assets/images/mens-warehouse/mw_brandbook_carousel1c.png"),
-              "alt": "Wilson X Packaging Photo 3"
+              "url": require("assets/images/aetna/Pheno_Aetna_Zipscreens_1200x668_Mechanical_093016_CN_R12.jpg"),
+              "alt": "Aetna Photo 2"
+            },
+            {
+              "url": require("assets/images/aetna/Pheno_Aetna_Zipscreens_1200x668_Mechanical_093016_CN_R13.jpg"),
+              "alt": "Aetna Photo 3"
             }
           ]
         }
