@@ -944,69 +944,19 @@ var copy =
         "description": "Before becoming the Sr. Director of Marketing for thinkThin in 2014, Megan worked as a marketing manager for over 10 years at Nestle."
       },
       "detailcontent": [
-/*        {
-          "type": "video",
-            "video": true,
-            "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
-            "thumbAlt": "Xome - TV Spot - Transparent House",
-            "thumbTitle": "Click to play video",
-            "vimeo": "159447308"
-        },
-        {
-          "type": "video",
-            "video": true,
-            "thumb": require("assets/images/xome_thumb_02-opt.jpg"),
-            "thumbAlt": "Xome - TV Spot - Transparent House",
-            "thumbTitle": "Click to play video",
-            "vimeo": "159448353",
-            "mainDescription": [
-              'The line that brought it all together was, "There are lots of things to feel guilty about, thinkThin isn&#8217;t one of them." The creative team then executed around this line in everything from print and TV to digital, mobile and sponsorships.'
-            ]
-        },
-        {
-          "carousel": true,
-          "images": [
-            {
-              "url": require("assets/images/thinkthin-1-01.jpg"),
-              "alt": "Men's Wearhouse Photo 1"
-            },
-            {
-              "url": require("assets/images/thinkthin-1-02.jpg"),
-              "alt": "Wilson X Packaging Photo 2"
-            }
-          ],
-          "mainDescription": [
-            "The result is a campaign that&#8217;s been highly effective, helped us drive national sales growth and made a lasting connection with our audience."
-          ]
-        },
-        {
-          "carousel": true,
-          "images": [
-            {
-              "url": require("assets/images/thinkthin-2-01.jpg"),
-              "alt": "Men's Wearhouse Photo 1"
-            },
-            {
-              "url": require("assets/images/thinkthin-2-02.jpg"),
-              "alt": "Wilson X Packaging Photo 2"
-            }
-          ]
-        }*/
+
       ]
     },
     "aetna": {
       "title": "Aetna Brings Out Medicare's Potential",
       "className": "aetna",
       "client": "Aetna",
-      "clientLogo": require('assets/images/works/clients_logo/aetna-logo.png'),
+      "clientLogo": require('assets/images/aetna/aetna-thumb.png'),
       "clientLogoWidth": "250px",
       "project": "Potential",
       "media": "B2B, Digital, Social",
       "blockquote": "Aetna Brings Out Medicare's Potential",
       "ogDescription": "Aetna Brings Out Medicare's Potential",
-      /*"quoterName": "By [quoter]",
-      "quoterTitle": "[quoter title], [quoter company]",
-      "quoterAvatar": require("assets/images/illustrations/phenomenon-matt-stringer-menswearhouse-grey.png"),*/
       "shareImg": require("assets/images/work-3.jpg"),
 
       "description": "[desc]",
@@ -1187,21 +1137,7 @@ var copy =
         "writerTitle": "VP Marketing, Wilson",
         "projectUrl": "#!/work/wilson-x/",
         "projectThumbSrc": require("assets/images/morecases/4.png")
-      }/*,
-      {
-        "projectName": "It's a Sunny Day for Payday Loans.",
-        "writerName": "By Patsy Hauer",
-        "writerTitle": "VP Brand Marketing, Sunny",
-        "projectUrl": "#!/work/sunny/",
-        "projectThumbSrc": require("assets/images/morecases/5.jpg")
-      },
-      {
-        "projectName": "When Buying a House, There's No Place Like Xome",
-        "writerName": "By Alison Cornia",
-        "writerTitle": "SVP Marketing, Xome",
-        "projectUrl": "#!/work/xome/",
-        "projectThumbSrc": require("assets/images/morecases/6.jpg")
-      }*/
+      }
     ],
     "culture": {
       "title": "Culture",
