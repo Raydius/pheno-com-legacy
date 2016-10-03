@@ -951,13 +951,13 @@ var copy =
       "title": "Aetna Brings Out Medicare's Potential",
       "className": "aetna",
       "client": "Aetna",
-      "clientLogo": require('assets/images/aetna/aetna-thumb.png'),
+      "clientLogo": require('assets/images/aetna/aetna-logo.png'),
       "clientLogoWidth": "250px",
       "project": "Potential",
       "media": "B2B, Digital, Social",
       "blockquote": "Aetna Brings Out Medicare's Potential",
       "ogDescription": "Aetna Brings Out Medicare's Potential",
-      "shareImg": require("assets/images/work-3.jpg"),
+      "shareImg": require("assets/images/aetna/aetna-thumb.png"),
 
       "description": "[desc]",
       "topDescription": [
