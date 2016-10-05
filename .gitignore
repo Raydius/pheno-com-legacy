@@ -2,3 +2,5 @@
 views/*.html
 node_modules
 public
+public/vendors.js
+public/app-bundle.min.js
