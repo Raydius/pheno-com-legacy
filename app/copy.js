@@ -261,7 +261,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": require('assets/images/aetna-thumb.jpg'),
+          "imageUrl": require('assets/images/aetna/aetna-thumb.jpg'),
           "legend": "Healthcare / B2B",
           "headline": "Aetna Brings Out Medicare&#8217;s Potential.",
           "description": "Healthcare giant takes a more human approach with B2B initiative.",
@@ -317,31 +317,6 @@ var copy =
           "description": "For the first time a basketball is connected to your smartphone to track makes, misses and enhance performance.",
           "readmoreUrl": "#!/work/wilson-x/"
         }
-        /*{
-          "type": "image",
-          "image": true,
-          "imageUrl": require('assets/images/work-5.png'),
-          "imageAlt": "Wilson Image 5",
-          "legend": "Finance / Loans",
-          "headline": 'It&#8217;s A &#8220;Sunny&#8221; Day<br> for Payday Loans.',
-          "citeName": "By Patsy Hauer",
-          "citeTitle": "VP Brand Marketing, Sunny",
-          "description": "British company creates a whole new business model for payday loans that gives borrowers a better chance at getting out of debt.",
-          "readmoreUrl": "#!/work/sunny/"
-        },*/
-        /*{
-          "type": "image",
-          "image": true,
-          "imageUrl": require('assets/images/work-2.jpg'),
-          "imageAlt": "Wilson Image 2",
-          "legend": "Home / Real Estate",
-          "headline": "When Buying a House, There's No Place Like Xome.",
-          "citeName": "By Allison Cornia",
-          "citeTitle": "SVP Marketing, Xome",
-          "description": "New company looks to make buying and selling a home not only more mobile, but more transparent.",
-          "readmoreUrl": "#!/work/xome/"
-
-        }*/
       ]
     },
     "wilson-anthem": {
@@ -957,7 +932,7 @@ var copy =
       "media": "B2B, Digital, Social",
       "blockquote": "Aetna Brings Out Medicare's Potential",
       "ogDescription": "Aetna Brings Out Medicare's Potential",
-      "shareImg": require("assets/images/aetna/aetna-thumb.png"),
+      "shareImg": require("assets/images/aetna/aetna-thumb.jpg"),
 
       "description": "[desc]",
       "topDescription": [
@@ -980,6 +955,11 @@ var copy =
         "purpose. Instead of just living longer, it was about living better. A 60 second film was created to emotionally " +
         "reiterate this simple thought."
       ],
+      /*"caseWriter": {
+        "name": "Amy Weisenbach",
+        "title": "VP Marketing, Wilson",
+        "description": "Amy is the VP of Marketing for Wilson Sporting Goods. Prior to joining Wilson she was the first VP of Marketing for Trunk Club and has also worked at both Beam and Unilever on the AXE brand team. In 2012, Amy was named a Woman to Watch by Advertising Age. She is a graduate of Harvard Business School."
+      },*/
       "topcontent": [
         {
           "type": "video",
