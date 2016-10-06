@@ -19,11 +19,12 @@ section.row.no-padding.work.work-landing
 				.col-xs-12.col-sm-12.col-md-4.no-padding
 					fieldset
 						legend= contentItem.legend
-						h3!= contentItem.headline 
-						cite
-							.wrapper
-								span!= contentItem.citeName
-								span!= contentItem.citeTitle
+						h3!= contentItem.headline
+						if contentItem.citeName
+							cite
+								.wrapper
+									span!= contentItem.citeName
+									span!= contentItem.citeTitle
 
 						div.line
 						p!= contentItem.description
