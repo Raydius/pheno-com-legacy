@@ -58,6 +58,15 @@ angular.module('phenoCom').controller('homeController', function($state, $scope,
 });
 
 
+/**
+ * Controller for Jobs Page
+ *
+ * Primarily interfaces with pheno-api to get job listings
+ */
+angular.module('phenoCom').controller('jobsController', function($scope, $state, $http) {
+
+});
+
 angular.module('phenoCom').controller('contactController', function($scope, $state, $http) {
 
     $scope.data = {
