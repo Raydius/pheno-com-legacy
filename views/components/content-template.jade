@@ -94,12 +94,15 @@ section.row.no-padding.work.work-details
 						article.col-md-7.no-padding
 							each par in contentItem.mainDescription
 								p!= par
-	if pageData.caseWriter
-		article.col-md-7.no-padding.case-writer
+	article.col-md-7.no-padding.case-writer
+		if pageData.caseWriter
 			span
 				span!= pageData.caseWriter.name
 				span!= ' / ' + pageData.caseWriter.title
 			p!= pageData.caseWriter.description
+		// corrected spacing for articles without a case writer
+		else
+			p
 
 	include more-cases
 	
