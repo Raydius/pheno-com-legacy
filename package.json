@@ -61,6 +61,7 @@
     "optimize-css-assets-webpack-plugin": "^1.3.0",
     "owl-carousel-2": "0.0.3",
     "pngquant": "^1.1.1",
+    "pngquant-bin": "^3.1.1",
     "postcss-loader": "^0.8.2",
     "prerender-node": "^2.2.2",
     "querystring": "^0.2.0",
