@@ -103,8 +103,8 @@ module.exports = {
 
         // generate index.html as public entry point
         new HtmlWebpackPlugin({
-            //template: '!!jade!views/index.jade',
-            template: 'views/index.jade',
+            //template: '!!jade!views/index.pug',
+            template: 'views/index.pug',
             filename: 'index.html',
             title: 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation',
             googleAnalytics: gaConfig
@@ -133,8 +133,8 @@ module.exports = {
             { test: /\.json$/, loader: "json-loader" },
             //{ test: /\.html$/,  loader: "html" },
             {
-                test: /\.jade$/,
-                loader: 'jade'
+                test: /\.(jade|pug)$/,
+                loader: 'pug'
             },
             {
                 test: /\.scss$/,
