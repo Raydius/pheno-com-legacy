@@ -242,6 +242,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         .state('jobs', {
             url: '/jobs',
             template: templateJobs,
+            controller: 'jobsController',
             metaTags: {
                 title: 'phenomenon - Innovations Company | Jobs',
                 description: 'phenomenon - Innovations Company - jobs, careers, open positions',

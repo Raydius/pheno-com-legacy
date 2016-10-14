@@ -18,6 +18,5 @@ section.row.no-padding.jobs
 			
 			ul
 				span= pageData.positions
-				each contentItem in pageData.listing
-					li 
-						a(href=contentItem.listingUrl target="blank")= contentItem.listingTitle
+				li(ng-repeat="position in jobs.openPositions")
+					a(ng-href="{{position.url}}", target="blank") {{position.title}}

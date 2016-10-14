@@ -1138,7 +1138,10 @@ var copy =
       "blockquote": "After the first meeting with them, I wasn't sure who was from what department. Every person seemed to be involved in every aspect of what they were presenting.&#8221;",
       "quoterName": "Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
-      "positions": "Open Positions",
+      "positions": "Open Positions"
+
+      /*
+      NOTE: As of 10/14/16, job positions are no longer managed here -- they are managed in the Greenhouse.io admin -Ray
       "listing": [
 
         {
@@ -1149,11 +1152,7 @@ var copy =
           "listingTitle": "Executive Assistant",
           "listingUrl": "https://www.linkedin.com/jobs/view/196680842"
         }
-      ],
-      "details": [
-        "Buying or selling a home is often a complex, fragmented and darned unfriendly process. Xome is a radically better way to do it because it lets you complete everything from the convenience of an app. In just six weeks we built Xome: the first truly integrated way to buy and sell a home. The app lets you list your home, search for a home, make and receive offers, move into escrow and close the deal.",
-        "When it came to the TV spot, we created something that spoke to the core of what Xome does, it makes the entire home buying/selling process more transparent. This teaser spot led people to our site where a demo video explained in better detail everything Xome does for the home buyer."
-      ]
+      ]*/
     },
     "contact": {
       "blockquote": "Don't call them. They're my ninjas.&#8221;",
