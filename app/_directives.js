@@ -55,8 +55,8 @@ angular.module('phenoCom').directive('carouselComponentCenter', function() {
 });
 
 
-var videoComponentTemplate = require('components/video-component.jade');
-var scrolltopTemplate = require('components/scrolltop.jade');
+var videoComponentTemplate = require('components/video-component.pug');
+var scrolltopTemplate = require('components/scrolltop.pug');
 
 // embedded vimeo player
 angular.module('phenoCom').directive('videoComponent', function() {
