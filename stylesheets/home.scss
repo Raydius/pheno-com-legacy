@@ -13,6 +13,14 @@
 			@media screen and (max-height: 700px) {
 				top: 50%;
 			}
+
+			/* control word wrapping inside the col-md-6 on the home page */
+			@media screen and (min-width: 1385px) {
+				width: 55%;
+			}
+			@media screen and (min-width: 990px) {
+				width:80%;
+			}
 		}
 		p {
 			font-size: 34px;
