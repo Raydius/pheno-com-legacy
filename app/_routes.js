@@ -6,22 +6,22 @@ import 'npm/owl-carousel-2/owl.carousel';
 
 var copy = require('app/copy.js');
 
-var templateHome = require('views/welcome.jade');
-var templateAbout = require('views/about.jade');
-var templateWork = require('views/work.jade');
-var templateWorkAnthem = require('views/wilson-anthem.jade');
-var templateWorkAetna = require('views/aetna-potential.jade');
-var templateWorkWilsonX = require('views/wilson-x.jade');
-var templateWorkSLS = require('views/sls.jade');
-var templateWorkXome = require('views/xome.jade');
-var templateWorkThinkThin = require('views/think-thin.jade');
-var templateWorkMens = require('views/mens-wearhouse.jade');
-var templateWorkSunny = require('views/sunny.jade');
-var templateWorkCooper = require('views/cooper.jade');
-var templateEntertainment = require('views/entertainment.jade');
-var templateCulture = require('views/culture.jade');
-var templateContact = require('views/contact.jade');
-var templateJobs = require('views/jobs.jade');
+var templateHome = require('views/welcome.pug');
+var templateAbout = require('views/about.pug');
+var templateWork = require('views/work.pug');
+var templateWorkAnthem = require('views/wilson-anthem.pug');
+var templateWorkAetna = require('views/aetna-potential.pug');
+var templateWorkWilsonX = require('views/wilson-x.pug');
+var templateWorkSLS = require('views/sls.pug');
+var templateWorkXome = require('views/xome.pug');
+var templateWorkThinkThin = require('views/think-thin.pug');
+var templateWorkMens = require('views/mens-wearhouse.pug');
+var templateWorkSunny = require('views/sunny.pug');
+var templateWorkCooper = require('views/cooper.pug');
+var templateEntertainment = require('views/entertainment.pug');
+var templateCulture = require('views/culture.pug');
+var templateContact = require('views/contact.pug');
+var templateJobs = require('views/jobs.pug');
 
 
 angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
