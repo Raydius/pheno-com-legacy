@@ -36,6 +36,11 @@ var copy =
       "navTitle": "Contact",
       "title": "View Contact Form",
       "uiSref": "contact"
+    },
+    {
+      "navTitle": "Blog",
+      "title": "Phenomenon NOW Blog",
+      "uiSref": "blog"
     }
   ],
   "share": {
@@ -1192,8 +1197,8 @@ var copy =
         }
       ]
     },
-    "blogs": {
-      "title": "thinkThin",
+    "blog": {
+      "title": "Phenomenon NOW",
       "className": "think-thin",
       "description": "CVU - Phenomenon - thinkThin",
       "details": [

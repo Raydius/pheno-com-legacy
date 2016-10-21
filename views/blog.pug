@@ -1,0 +1,21 @@
+block variables
+- copy = require('app/copy.js')
+- page = "blog"
+- pageData = copy.content[page]
+
+
+// title and body copy
+section.row.no-padding.culture
+
+	article.col-md-12.top-main
+		article.col-md-4.no-padding.gif
+			img(src=require('assets/images/culture/phno-gif.gif'))
+
+		article.col-md-7.col-md-offset-1.no-padding
+			h1 Culture
+			h2 Phenomenon NOW
+
+
+			include components/cite-components
+
+

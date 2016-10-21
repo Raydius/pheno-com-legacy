@@ -185,3 +185,34 @@ angular.module('phenoCom').controller('contactController', function($scope, $sta
 
 });
 
+angular.module('phenoCom').controller('blogController', function($scope, $state, $http) {
+
+    /*
+    $scope.jobs = {
+        openPositions: []
+    };
+
+    $http({
+        method: 'GET',
+        url: 'https://api.greenhouse.io/v1/boards/phenomenon/embed/jobs'
+    }).then(function (response) {
+
+        var jobs = response.data.jobs;
+
+        for(var i=0, len = jobs.length; i < len; i++) {
+
+            var job = jobs[i];
+
+            // job must have a LinkedIn URL in order to be listed on the jobs page
+            if(job.metadata[0].value) {
+                var position = {
+                    title: job.title,
+                    url: job.metadata[0].value
+                };
+                $scope.jobs.openPositions.push(position);
+            }
+        }
+    });
+    */
+
+});

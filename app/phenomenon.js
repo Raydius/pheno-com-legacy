@@ -14,6 +14,7 @@ import 'ui-router-metatags/dist/ui-router-metatags.js';
 require('angular-cookies');
 require('angular-messages');
 require('angular-snap');
+require('angular-environment');
 
 // initialize dataLayer for Google Tag Manager
 var dataLayer = window.dataLayer = window.dataLayer || [];
@@ -24,7 +25,8 @@ angular.module('phenoCom',[
     'ngCookies',
     'ui.router.metatags',
     'ngMessages',
-    '720kb.socialshare' 
+    '720kb.socialshare',
+    'environment'
 ]);
 
 
