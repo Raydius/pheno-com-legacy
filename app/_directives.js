@@ -6,6 +6,7 @@
  */
 
 var blogPostTemplate = require('components/blog-post.pug');
+var blogPostSingleTemplate = require('components/single-post.pug');
 var blogHeaderTemplate = require('components/blog-header.pug');
 
 
@@ -233,12 +234,13 @@ angular.module('phenoCom').directive('blogPostSingle', function(){
 
   return {
       scope: {
-          preview: '@',
+          content: '@',
           title: '@',
           blogger: '@',
           positionTitle: '@',
           image: '@',
           position: '=',
+          date:'@'
       },
       template: blogPostSingleTemplate,
       link: function (scope, element, attrs) {

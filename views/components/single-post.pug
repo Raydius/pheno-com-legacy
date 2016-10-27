@@ -1,0 +1,12 @@
+blog-header
+
+section.row.no-padding.culture
+  article.col-md-6
+    .date {{date}}
+    .post-title {{title}}
+    .col-md-12.author-container.post-container
+      img.pheno-p.blog-post-p(src=require('assets/images/blog/pheno-p.png'))
+      .blog-author {{blogger}}
+        .position {{positionTitle}}
+    img(src='{{image}}')
+    .blog-content {{content}}
