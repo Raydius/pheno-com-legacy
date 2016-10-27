@@ -23,6 +23,7 @@ var templateCulture = require('views/culture.pug');
 var templateContact = require('views/contact.pug');
 var templateJobs = require('views/jobs.pug');
 var templateBlog = require('views/blog.pug');
+var templateBlogPostSingle = require('views/blog-post-single.pug');
 
 
 angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
@@ -276,6 +277,11 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         .state('blog', {
             url: '/blog',
             template: templateBlog,
+            controller: 'blogController'
+        })
+        .state('post', {
+            url: '/post',
+            template: templateBlogPostSingle,
             controller: 'blogController'
         })
 

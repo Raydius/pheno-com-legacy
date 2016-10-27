@@ -38,7 +38,7 @@ var copy =
       "uiSref": "contact"
     },
     {
-      "navTitle": "Blog",
+      "navTitle": "Now",
       "title": "Phenomenon NOW Blog",
       "uiSref": "blog"
     }

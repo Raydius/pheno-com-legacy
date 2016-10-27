@@ -1,0 +1,147 @@
+.page-divide.col-md-12 {
+    color: black;
+    border-bottom: 1px solid #CCC;
+}
+
+/*blog style  */
+.phno-logo {
+  width: 130px;
+  margin-left: 20px;
+}
+
+h2.phno-now {
+    font-family: "Circular-Book";
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 60px;
+}
+
+article.col-md-7.col-md-offset-1.no-padding.blog-no-padding {
+    padding: 0 !important;
+    margin-left: 25px;
+}
+
+article.no-padding.blog-no-padding {
+    margin-top: 0px;
+    display: inline-block;
+    position: relative;
+}
+
+img.phno-logo {
+    float: left;
+}
+
+.contact-section {
+    float: right;
+}
+
+.pageDivide.col-md-12 {
+    border-bottom: 1px solid #ccc;
+}
+
+p.tagline {
+    display: flex;
+    width: 410px;
+    margin-left: 15% !important;
+    margin-top: 10% !important;
+}
+
+span.blog-title {
+    font-size: 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+a.read-moreUrl.full-article-link {
+    color: #D0021B;
+    text-decoration: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+.page-divide.end-post.col-md-12 {
+    margin-top: 20px;
+}
+
+img.pheno-p {height: 61px;width: 61px;    margin-right: 20px;}
+
+p.blog-author {
+    display: inline-flex;
+    position: relative;
+    font-size: 20px;
+    width: 100%;
+}
+
+.col-md-12.author-container {
+    display: inline-flex;
+    width: 350px;
+    margin-top: 20px;
+    height: 110px;
+    border-bottom: 5px solid;
+}
+
+p.position {
+    position: relative;
+}
+
+.blog-author {
+    color: black;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.position {
+    color: #868484;
+    font-size: 15px;
+}
+
+.big-divide.col-md-12 {
+    border-bottom: 5px solid #333333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+article.col-md-4.blog-column {
+    height: 100%;
+}
+
+@media all and (max-width:768px) {
+	.pageDivide.col-md-12 {
+    border-bottom: 1px solid #ccc;
+    margin-top: 180px;
+    position: relative;
+    margin-bottom: 50px;
+	}
+}
+
+ul.blog-action-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.post-title {
+    font-size: 36px;
+}
+
+.col-md-12.author-container.post-container {
+    /* margin-bottom: 40px; */
+    border-bottom: none;
+}
+
+.blog-content {
+    margin-top: 40px;
+}
+
+img.pheno-p.blog-post-p {
+    margin-left: -20px;
+}
+
+.blog-content::first-letter {
+  line-height: .2;
+  font-size: 50px;
+  font-weight: bold;
+}

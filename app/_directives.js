@@ -5,6 +5,9 @@
  * Created by rdollete on 4/1/16.
  */
 
+var blogPostTemplate = require('components/blog-post.pug');
+var blogHeaderTemplate = require('components/blog-header.pug');
+
 
 angular.module('phenoCom').directive('carouselComponent', function() {
 
@@ -48,7 +51,7 @@ angular.module('phenoCom').directive('carouselComponentCenter', function() {
                 loop: true,
                 dots: false,
                 touchDrag: true,
-            }); 
+            });
         }
     };
 
@@ -76,7 +79,7 @@ angular.module('phenoCom').directive('scrolltotop', function() {
     return {
       template: scrolltopTemplate,
       link: function (scope, element, attrs) {
-            
+
             element.bind('click', function() {
                 $('html, body').animate({
                         scrollTop: 0
@@ -109,19 +112,19 @@ angular.module('phenoCom').directive('close', function() {
     return {
       link: function (scope, element, attrs) {
             var name = element.attr('childContainer');
-            
+
             $('body').click(function(event){
-                    
+
                 if($(event.target).hasClass('icon')) {
-                
+
                     return;
-                
+
                 } else {
 
                     $(name).hide();
-                
+
                 }
-                
+
             })
         }
     };
@@ -135,7 +138,7 @@ angular.module('phenoCom').directive('showmore', function() {
                 var name = $(this).attr('childContainer');
 
                 // set a timeout so this happened after close event
-                setTimeout(function(){ 
+                setTimeout(function(){
                     $(name).toggle();
                 }, 1);
             })
@@ -150,29 +153,29 @@ angular.module('phenoCom').directive('scrollableComponent', function($window) {
         restrict: 'A',
         link: function (scope, element, attrs) {
             var $element = $(element);
-                
-            
-            
+
+
+
             angular.element($window).bind("scroll", function() {
-                
+
                 var scroll = $(window).scrollTop();
                 var offset = element.offset();
                 var scrollParentWidth = element.width();
                 var longImgHeight = element.find('.longImg').height();
                 var scrollImg = -(scroll - element.offset().top + 70);
-               
+
 
                 $('#scrollingSite .image-component').css('height', longImgHeight);
                 if ( offset.top - scroll < 80 && offset.top - scroll > -(longImgHeight - $(window).height()/2)) {
-                   
+
                     $('#scrollingSite .image-component').addClass('fixed').css('width', scrollParentWidth);
                     $('#scrollingSite .image-component img.longImg').css({transform: 'translateY(' + scrollImg +'px)'});
-                
+
                 } else {
 
                     $('#scrollingSite .image-component ').removeClass('fixed');
-                    $('#scrollingSite .image-component img.longImg').css({transform: 'translateY(' + 0 +'px)'}); 
-                
+                    $('#scrollingSite .image-component img.longImg').css({transform: 'translateY(' + 0 +'px)'});
+
                 }
             });
         }
@@ -208,6 +211,53 @@ angular.module('phenoCom').directive('fileModel', ['$parse', function ($parse) {
     };
 }]);
 
+angular.module('phenoCom').directive('blogPost', function(){
+
+  return {
+      scope: {
+          preview: '@',
+          title: '@',
+          blogger: '@',
+          positionTitle: '@',
+          image: '@',
+          position: '=',
+      },
+      template: blogPostTemplate,
+      link: function (scope, element, attrs) {
+          // add any variable transformation here...
+      }
+  };
+
+})
+angular.module('phenoCom').directive('blogPostSingle', function(){
+
+  return {
+      scope: {
+          preview: '@',
+          title: '@',
+          blogger: '@',
+          positionTitle: '@',
+          image: '@',
+          position: '=',
+      },
+      template: blogPostSingleTemplate,
+      link: function (scope, element, attrs) {
+          // add any variable transformation here...
+      }
+  };
+
+})
+angular.module('phenoCom').directive('blogHeader', function(){
+
+  return {
+      template: blogHeaderTemplate,
+      link: function (scope, element, attrs) {
+          // add any variable transformation here...
+      }
+  };
+
+})
+
 
 /*// handle page title changes on state change
 angular.module('phenoCom').directive('updateTitle', ['$rootScope', '$timeout',
@@ -215,10 +265,10 @@ angular.module('phenoCom').directive('updateTitle', ['$rootScope', '$timeout',
         return {
             link: function(scope, element) {
                 var title = 'Default Title'
-                var listener = function(event, toState) { 
+                var listener = function(event, toState) {
 if (toState.data && toState.data.pageTitle) title = toState.data.pageTitle;
 
-                    
+
                     $timeout(function() {
                         element.text(title);
                     }, 0, false);

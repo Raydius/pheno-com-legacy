@@ -22,7 +22,7 @@ angular.module('phenoCom').controller('phenoController', function($state, $scope
 
     // use current state to determine which menu item is selected
     $scope.isSelected = function(sref) {
-        var s = $state.$current.name; 
+        var s = $state.$current.name;
         // make work tab selected while view work detail page
         if(sref == s || sref == s.substring(0, s.indexOf('/'))) {
             return true;
@@ -33,24 +33,24 @@ angular.module('phenoCom').controller('phenoController', function($state, $scope
 
     $scope.toggleDrawer = function () {
         if ($.browser.mobile || $(window).outerWidth() < 640 ) {
-            
+
             $('body, html').toggleClass('opend');
-            $('#hamburger').toggleClass('open'); 
-        
+            $('#hamburger').toggleClass('open');
+
         }
     }
 
 });
 
 angular.module('phenoCom').controller('homeController', function($state, $scope, $window) {
-    
+
     // adjust homepage headline height to be fullscreen all the time
 
     var $topSection = $('.top-main');
     var $nav = $('.topnav');
 
-    $topSection.css('height', $(window).height() - $nav.height()); 
-    
+    $topSection.css('height', $(window).height() - $nav.height());
+
     angular.element($window).bind('resize',function(){
         $topSection.css('height', $(window).height() - $nav.height());
     })
@@ -186,33 +186,5 @@ angular.module('phenoCom').controller('contactController', function($scope, $sta
 });
 
 angular.module('phenoCom').controller('blogController', function($scope, $state, $http) {
-
-    /*
-    $scope.jobs = {
-        openPositions: []
-    };
-
-    $http({
-        method: 'GET',
-        url: 'https://api.greenhouse.io/v1/boards/phenomenon/embed/jobs'
-    }).then(function (response) {
-
-        var jobs = response.data.jobs;
-
-        for(var i=0, len = jobs.length; i < len; i++) {
-
-            var job = jobs[i];
-
-            // job must have a LinkedIn URL in order to be listed on the jobs page
-            if(job.metadata[0].value) {
-                var position = {
-                    title: job.title,
-                    url: job.metadata[0].value
-                };
-                $scope.jobs.openPositions.push(position);
-            }
-        }
-    });
-    */
 
 });
