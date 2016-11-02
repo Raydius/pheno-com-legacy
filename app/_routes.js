@@ -24,6 +24,7 @@ var templateContact = require('views/contact.pug');
 var templateJobs = require('views/jobs.pug');
 var templateBlog = require('views/blog.pug');
 var templateBlogPostSingle = require('views/blog-post-single.pug');
+var templateError = require('views/404.pug');
 
 
 angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
@@ -35,7 +36,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         console.log('otherwise');
     });*/
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/error');
 
     // config routing
     $stateProvider
@@ -283,6 +284,10 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             url: '/post',
             template: templateBlogPostSingle,
             controller: 'blogController'
+        })
+        .state('error', {
+            url: '/error',
+            template: templateError,
         })
 
         .state('thanks', {
