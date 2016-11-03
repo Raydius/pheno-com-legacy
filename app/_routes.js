@@ -36,7 +36,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         console.log('otherwise');
     });*/
 
-    $urlRouterProvider.otherwise('/error');
+    $urlRouterProvider.otherwise('/');
 
     // config routing
     $stateProvider
