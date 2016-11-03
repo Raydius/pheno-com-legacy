@@ -31,8 +31,8 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
 
 
     // TODO: 404 handler
-    /*$urlRouterProvider.when('', '/');
-    $urlRouterProvider.otherwise(function($injector, $location) {
+    $urlRouterProvider.when('', '/');
+    /*$urlRouterProvider.otherwise(function($injector, $location) {
         console.log('otherwise');
     });*/
 
