@@ -8,9 +8,13 @@ h1.stuck {
     color: black;
 }
 
-p.stuck {
+.stuck {
     font-size: 50px;
 }
+.stuck2 {
+    display: inline;
+}
+
 
 @media (max-width:768px) {
   .col-md-12.error-container {
