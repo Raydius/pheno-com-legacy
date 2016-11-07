@@ -8,15 +8,27 @@ block variables
 section.row.no-padding.jobs
 	.top-main
 		article.col-md-5
-			img(src=require('assets/images/jobs/jobs1.png')) 
-		article.col-xs-12.col-sm-12.col-md-7.col-sm-offset-0.no-padding
-			h1 Jobs
-			h2 
+			img(src=require('assets/images/jobs/jobs1.png'))
+		article.col-md-7.jobs-header
+			h2
 				blockquote!= pageData.blockquote
-				
-			include components/cite-components
-			
+		article.col-xs-12.col-sm-12.col-md-12.col-sm-offset-0.no-padding
+			h1 Jobs
+
+			//- include components/cite-components
+
 			ul
-				span= pageData.positions
+				//- span= pageData.positions
+				span.positions Creative
 				li(ng-repeat="position in jobs.openPositions")
 					a(ng-href="{{position.url}}", target="blank") {{position.title}}
+					.location Los Angeles
+				span.positions Brand
+				li(ng-repeat="position in jobs.openPositions")
+					a(ng-href="{{position.url}}", target="blank") {{position.title}}
+					.location Los Angeles
+
+				span.positions User Experience
+				li(ng-repeat="position in jobs.openPositions")
+					a(ng-href="{{position.url}}", target="blank") {{position.title}}
+					.location Los Angeles

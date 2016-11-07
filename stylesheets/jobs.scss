@@ -58,6 +58,7 @@ ul {
 			font-size: 17px;
 			padding: 20px 0;
 			display: block;
+			margin-top: 50px;
 		}
 		li {
 			padding: 20px 0;
@@ -69,11 +70,16 @@ ul {
 			&:last-child {
 				border-bottom: 1px solid #ddd;
 			}
-		} 
+		}
 	}
 	a, .a, .link {
 		color: $gray_font;
 		font-family: $secondary_font;
 		font-family: 28px;
 	}
+}
+.location {
+    font-size: 17px;
+    font-family: "Courier New";
+    color: #969696;
 }
