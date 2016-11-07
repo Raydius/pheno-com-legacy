@@ -13,8 +13,6 @@ section.row.no-padding.jobs
 			h2
 				blockquote!= pageData.blockquote
 		article.col-xs-12.col-sm-12.col-md-12.col-sm-offset-0.no-padding
-			h1 Jobs
-
 			//- include components/cite-components
 
 			ul
@@ -27,7 +25,6 @@ section.row.no-padding.jobs
 				li(ng-repeat="position in jobs.openPositions")
 					a(ng-href="{{position.url}}", target="blank") {{position.title}}
 					.location Los Angeles
-
 				span.positions User Experience
 				li(ng-repeat="position in jobs.openPositions")
 					a(ng-href="{{position.url}}", target="blank") {{position.title}}
