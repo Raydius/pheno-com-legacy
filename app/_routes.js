@@ -25,6 +25,8 @@ var templateJobs = require('views/jobs.pug');
 var templateBlog = require('views/blog.pug');
 var templateBlogPostSingle = require('views/blog-post-single.pug');
 var templateError = require('views/404.pug');
+var templateJob = require('views/job.pug');
+var templateApplication = require('views/application.pug');
 
 
 angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
@@ -255,7 +257,10 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
                     'og:title': 'Phenomenon - Innovations Company',
                     'og:description': 'Phenomenon - Innovations Company',
                     'og:image': require('assets/images/fb-share-center.png')
-                }
+                },
+                ncyBreadcrumb: {
+                label: 'Jobs'
+              }
             }
         })
         .state('contact', {
@@ -288,6 +293,20 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         .state('error', {
             url: '/error',
             template: templateError,
+        })
+        .state('job', {
+            url: '/job',
+            template: templateJob,
+            ncyBreadcrumb: {
+            label: 'job name'
+          }
+        })
+        .state('application', {
+            url: '/application',
+            template: templateApplication,
+            ncyBreadcrumb: {
+            // label: 'job name'
+          }
         })
 
         .state('thanks', {

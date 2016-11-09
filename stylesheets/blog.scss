@@ -228,3 +228,8 @@ img.blog-image {
     box-shadow: 1px 3px 9px;
     border-radius: 10px;
 }
+
+article.col-md-4.blog-column > img {
+    box-shadow: 3px 3px 7px #bbb9b9;
+    border-radius: 5px;
+}

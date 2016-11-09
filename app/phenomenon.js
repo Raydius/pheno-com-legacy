@@ -10,8 +10,10 @@ import ngAnimate from 'angular-animate';
 import 'angular-socialshare';
 import 'sticky-kit/dist/sticky-kit.min.js';
 import 'ui-router-metatags/dist/ui-router-metatags.js';
+// import 'angular-breadcrumb/dist/angular-breadcrumb.min.js';
 
 require('angular-cookies');
+// require('angular-breadcrumbs');
 require('angular-messages');
 require('angular-snap');
 require('angular-environment');
@@ -23,6 +25,7 @@ angular.module('phenoCom',[
     uirouter,
     ngAnimate,
     'ngCookies',
+    // 'ncy-angular-breadcrumb',
     'ui.router.metatags',
     'ngMessages',
     '720kb.socialshare',
