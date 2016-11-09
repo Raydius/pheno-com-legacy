@@ -16,8 +16,8 @@ section.row.no-padding.jobs
 
 			ul
 				.department(ng-repeat="department in jobs.departments")
-					span.positions {{department.name}}
+					.positions {{department.name}}
+					hr
 					li(ng-repeat="position in department.openPositions")
 						a(ng-href="{{position.url}}", target="blank") {{position.title}}
 						.location {{position.location}}
-

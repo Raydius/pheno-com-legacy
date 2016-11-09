@@ -77,13 +77,13 @@
 		li {
 			padding: 20px 0;
 			font-size: 26px;
-			border-top: 1px solid #ddd;
+/* 			border-top: 1px solid #ddd; */
 			@media screen and (max-width: 640px) {
 				font-size: 20px;
 			}
 
 			&:last-child {
-				border-bottom: 1px solid #ddd;
+/* 				border-bottom: 1px solid #ddd; */
 			}
 		}
 	}
@@ -168,6 +168,13 @@ p {
 		font-family: inherit;
 		padding-bottom: 40px;
 	}
+}
+
+.positions {
+    color: #d0021b;
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 h2.join-us {
