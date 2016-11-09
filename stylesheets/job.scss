@@ -1,0 +1,137 @@
+.job-author {
+    font-family: inherit;
+    font-size: 17px;
+    color: #7b7b7b;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-weight: 900;
+}
+
+.job-content {
+  font-family: "Tiempose-Semibold";
+    font-size: 20px;
+}
+
+.job-title {
+    font-family: "Tiempose-Semibold";
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: black
+}
+
+.job-category {
+    font-weight: 800;
+}
+
+.job-dep {
+    font-family: "Courier New";
+    letter-spacing: 1.5px;
+    font-size: 12px;
+}
+
+.location-job {
+    font-family: "Courier New";
+    letter-spacing: 1.5px;
+    font-size: 12px;
+}
+
+.job-location {
+    font-weight: 800;
+}
+
+article.col-md-6.job-desc {
+    margin-top: 50px;
+}
+
+.job-tasks {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 60px;
+}
+
+.job-column {
+    margin-top: 200px !important;
+}
+
+@media (max-width:768px) {
+  .job-column {
+      margin-top: 20px !important;
+  }
+  article.col-md-3.pull-right.col-sm-12.col-xs-12.job-column-2 {
+    margin-top: 100px !important;
+}
+
+  section.row.no-padding.culture.job-posting {
+      margin-left: 0px !important;
+  }
+}
+
+article.col-md-8.job-column {
+    margin-left: 15px;
+}
+
+li > span {
+    font-family: "Circular-Book", Helvetica, Arial, Sans-Serif;
+    margin-left: 10px;
+    color: black;
+    font-size: 14px;
+    position: absolute;
+    top: 5px;
+}
+
+
+ul.taskList {
+    -webkit-padding-start: 0px;
+}
+ul.qualifications {
+    -webkit-padding-start: 0px;
+}
+
+li.icon-right-arrow {
+    margin-top: 15px;
+    color: #d0d0d0;
+    font-size: 24px;
+    margin-bottom: -5px;
+}
+
+section.row.no-padding.culture.job-posting {
+    margin-left: -50px;
+}
+
+.candidate-privacy {
+    color: #cc2128;
+    margin-top: 80px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.eoe {
+    color: #4a4a4a;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+hr.secondHr {margin-top: 90px;}
+
+a.apply-now {
+    position: relative;
+    display: flex;
+    margin-top: 75px;
+    background: #efefef;
+    font-weight: 600;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    height: 60px;
+    color: black;
+    font-size: 16px;
+}
+
+img.share-icon {
+    width: 10% !important;
+    display: inline;
+    margin-right: 10px;
+}
+
+article.col-md-3.pull-right.col-sm-12.col-xs-12.job-column-2 {margin-top: 370px;}

@@ -4,13 +4,12 @@ block variables
 - pageData = copy.content[page]
 
 
-// title and body copy
 section.row.no-padding.jobs
 	.top-main
 		article.col-md-5
 			img(src=require('assets/images/jobs/jobs1.png'))
 		article.col-md-7.jobs-header
-			h2
+			h2.animated.fadeInUp
 				blockquote!= pageData.blockquote
 		article.col-xs-12.col-sm-12.col-md-12.col-sm-offset-0.no-padding
 			//- include components/cite-components
@@ -29,3 +28,7 @@ section.row.no-padding.jobs
 				li(ng-repeat="position in jobs.openPositions")
 					a(ng-href="{{position.url}}", target="blank") {{position.title}}
 					.location Los Angeles
+			.col-md-12.join-team
+				h2.join-us Want to join the Pheno team?
+				p If you do not see available positions that match your skills and experience, or if you are a freelancer, feel free to send us your information.
+				a.read-moreUrl.full-article-link.learn-more Learn More >

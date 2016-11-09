@@ -1,6 +1,5 @@
 // Contact Page custom styles
 
-.contact{
   h1 {
     position: absolute;
     text-indent: -9999em;
@@ -71,11 +70,11 @@
     }
   }
   .contactbiz {
-    
+
     text-align: center;
     margin-top: $base_spacing + 40;
     padding-bottom: $base_spacing*3;
-    
+
     /* @media (max-width: 768px) {
       .col-sm-4 {
         width: calc(33.33333% - 10px);
@@ -91,7 +90,7 @@
     hr {
       width: 15%;
       height: 5px;
-      border-top: 1px solid #ccc; 
+      border-top: 1px solid #ccc;
       margin: 24px auto;
     }
     span {
@@ -104,7 +103,7 @@
     a {
       color: $primary_color;
     }
-  
+
   }
 
   &.thank-you{
@@ -164,7 +163,7 @@
   form{
     padding-bottom: ($base_spacing/2);
   }
-}
+
 
 .help-block{
   position: absolute;
