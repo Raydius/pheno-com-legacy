@@ -36,6 +36,11 @@ var copy =
       "navTitle": "Contact",
       "title": "View Contact Form",
       "uiSref": "contact"
+    },
+    {
+      "navTitle": "Now",
+      "title": "Phenomenon NOW Blog",
+      "uiSref": "blog"
     }
   ],
   "share": {
@@ -1138,7 +1143,7 @@ var copy =
       "blockquote": "After the first meeting with them, I wasn't sure who was from what department. Every person seemed to be involved in every aspect of what they were presenting.&#8221;",
       "quoterName": "Amy Weisenbach",
       "quoterTitle": "VP Marketing, Wilson",
-      "positions": "Open Positions"
+      "positions": "Open Positions",
 
       /*
       NOTE: As of 10/14/16, job positions are no longer managed here -- they are managed in the Greenhouse.io admin -Ray
@@ -1192,8 +1197,8 @@ var copy =
         }
       ]
     },
-    "blogs": {
-      "title": "thinkThin",
+    "blog": {
+      "title": "Phenomenon NOW",
       "className": "think-thin",
       "description": "CVU - Phenomenon - thinkThin",
       "details": [

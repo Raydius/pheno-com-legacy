@@ -16,6 +16,7 @@
     "angular": "^1.5.3",
     "angular-animate": "^1.5.3",
     "angular-cookies": "^1.5.3",
+    "angular-environment": "^1.0.4",
     "angular-messages": "^1.5.3",
     "angular-snap": "^1.8.5",
     "angular-socialshare": "^2.1.3",

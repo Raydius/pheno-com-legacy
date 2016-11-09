@@ -1,0 +1,13 @@
+blog-header
+
+section.row.no-padding.culture
+  article.col-md-10.col-lg-8.col-sm-12
+    .date {{date}}
+    .post-title {{title}}
+    .col-md-12.author-container.post-container
+      img.pheno-p.blog-post-p(src=require('assets/images/blog/pheno-p.png'))
+      .blog-author {{blogger}}
+        .position {{positionTitle}}
+    img.blog-image(src='{{image}}')
+    .blog-content {{content}}
+    a.share Share

@@ -22,14 +22,19 @@ var templateEntertainment = require('views/entertainment.pug');
 var templateCulture = require('views/culture.pug');
 var templateContact = require('views/contact.pug');
 var templateJobs = require('views/jobs.pug');
+var templateBlog = require('views/blog.pug');
+var templateBlogPostSingle = require('views/blog-post-single.pug');
+var templateError = require('views/404.pug');
+var templateJob = require('views/job.pug');
+var templateApplication = require('views/application.pug');
 
 
 angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
 
 
     // TODO: 404 handler
-    /*$urlRouterProvider.when('', '/');
-    $urlRouterProvider.otherwise(function($injector, $location) {
+    $urlRouterProvider.when('', '/');
+    /*$urlRouterProvider.otherwise(function($injector, $location) {
         console.log('otherwise');
     });*/
 
@@ -252,7 +257,10 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
                     'og:title': 'Phenomenon - Innovations Company',
                     'og:description': 'Phenomenon - Innovations Company',
                     'og:image': require('assets/images/fb-share-center.png')
-                }
+                },
+                ncyBreadcrumb: {
+                label: 'Jobs'
+              }
             }
         })
         .state('contact', {
@@ -272,10 +280,34 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             }
         })
 
-        /*.state('blog', {
+        .state('blog', {
             url: '/blog',
-            template: 'test'
-        })*/
+            template: templateBlog,
+            controller: 'blogController'
+        })
+        .state('post', {
+            url: '/post',
+            template: templateBlogPostSingle,
+            controller: 'blogController'
+        })
+        .state('error', {
+            url: '/error',
+            template: templateError,
+        })
+        .state('job', {
+            url: '/job',
+            template: templateJob,
+            ncyBreadcrumb: {
+            label: 'job name'
+          }
+        })
+        .state('application', {
+            url: '/application',
+            template: templateApplication,
+            ncyBreadcrumb: {
+            // label: 'job name'
+          }
+        })
 
         .state('thanks', {
             url: '/thanks',

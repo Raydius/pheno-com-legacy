@@ -8,15 +8,16 @@ block variables
 section.row.no-padding.jobs
 	.top-main
 		article.col-md-5
-			img(src=require('assets/images/jobs/jobs1.png')) 
-		article.col-xs-12.col-sm-12.col-md-7.col-sm-offset-0.no-padding
-			h1 Jobs
-			h2 
+			img(src=require('assets/images/jobs/jobs1.png'))
+		article.col-md-7.jobs-header
+			h2
 				blockquote!= pageData.blockquote
-				
-			include components/cite-components
-			
+		article.col-xs-12.col-sm-12.col-md-12.col-sm-offset-0.no-padding
+
 			ul
-				span= pageData.positions
-				li(ng-repeat="position in jobs.openPositions")
-					a(ng-href="{{position.url}}", target="blank") {{position.title}}
+				.department(ng-repeat="department in jobs.departments")
+					.positions {{department.name}}
+					hr
+					li(ng-repeat="position in department.openPositions")
+						a(ng-href="{{position.url}}", target="blank") {{position.title}}
+						.location {{position.location}}
