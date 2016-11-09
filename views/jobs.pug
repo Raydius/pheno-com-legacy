@@ -13,19 +13,11 @@ section.row.no-padding.jobs
 			h2
 				blockquote!= pageData.blockquote
 		article.col-xs-12.col-sm-12.col-md-12.col-sm-offset-0.no-padding
-			//- include components/cite-components
 
 			ul
-				//- span= pageData.positions
-				span.positions Creative
-				li(ng-repeat="position in jobs.openPositions")
-					a(ng-href="{{position.url}}", target="blank") {{position.title}}
-					.location Los Angeles
-				span.positions Brand
-				li(ng-repeat="position in jobs.openPositions")
-					a(ng-href="{{position.url}}", target="blank") {{position.title}}
-					.location Los Angeles
-				span.positions User Experience
-				li(ng-repeat="position in jobs.openPositions")
-					a(ng-href="{{position.url}}", target="blank") {{position.title}}
-					.location Los Angeles
+				.department(ng-repeat="department in jobs.departments")
+					span.positions
+					li(ng-repeat="position in department.openPositions")
+						a(ng-href="{{position.url}}", target="blank") {{position.title}}
+						.location {{position.location}}
+
