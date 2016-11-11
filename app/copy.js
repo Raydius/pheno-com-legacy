@@ -36,12 +36,12 @@ var copy =
       "navTitle": "Contact",
       "title": "View Contact Form",
       "uiSref": "contact"
-    },
-    {
-      "navTitle": "Now",
-      "title": "Phenomenon NOW Blog",
-      "uiSref": "blog"
     }
+    // {
+    //   "navTitle": "Now",
+    //   "title": "Phenomenon NOW Blog",
+    //   "uiSref": "blog"
+    // }
   ],
   "share": {
     "twitter": {
@@ -932,7 +932,7 @@ var copy =
       "className": "aetna",
       "client": "Aetna",
       "clientLogo": require('assets/images/aetna/aetna-logo.svg'),
-      "clientLogoWidth": "250px",
+      "clientLogoWidth": "180px",
       "project": "Potential",
       "media": "B2B, Digital, Social",
       "blockquote": "Aetna Brings Out Medicare's Potential",
