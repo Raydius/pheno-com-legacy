@@ -60,3 +60,13 @@ angular.module('phenoCom').config([
         $locationProvider.hashPrefix('!');
     }
 ]);
+
+
+// html render filter
+angular.module('phenoCom').filter('toTrusted', ['$sce', function($sce) {
+
+    return function(text) {
+        return $sce.trustAsHtml(text);
+    };
+
+}]);

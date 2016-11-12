@@ -245,6 +245,7 @@ angular.module('phenoCom').directive('blogPostSingle', function(){
       template: blogPostSingleTemplate,
       link: function (scope, element, attrs) {
           // add any variable transformation here...
+
       }
   };
 

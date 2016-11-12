@@ -211,6 +211,31 @@ angular.module('phenoCom').controller('contactController', function($scope, $sta
 
 });
 
-angular.module('phenoCom').controller('blogController', function($scope, $state, $http) {
+angular.module('phenoCom').controller('blogController', function($scope, $state, $sce, $http) {
+
+
+    $scope.articles = [];
+
+    $http({
+        method: 'GET',
+        url: 'http://phenomenon.com:2088/wp-json/wp/v2/article'
+    }).then(function (response) {
+
+        var articles = response.data;
+
+        for(var i=0, len=articles.length; i < len; i++) {
+
+            var articleData = articles[i];
+
+            var article = {
+                title: articleData.title.rendered,
+                preview: articleData.excerpt.rendered
+            };
+
+            $scope.articles.push(article);
+
+        }
+
+    });
 
 });

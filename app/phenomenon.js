@@ -17,6 +17,7 @@ require('angular-cookies');
 require('angular-messages');
 require('angular-snap');
 require('angular-environment');
+require('angular-sanitize');
 
 // initialize dataLayer for Google Tag Manager
 var dataLayer = window.dataLayer = window.dataLayer || [];
