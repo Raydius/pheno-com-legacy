@@ -219,14 +219,11 @@ angular.module('phenoCom').directive('blogPost', function(){
           preview: '@',
           title: '@',
           blogger: '@',
-          positionTitle: '@',
-          image: '@',
-          position: '=',
+          thumbnail: '@',
+          alt: '@',
+          author: '@',
       },
       template: blogPostTemplate,
-      link: function (scope, element, attrs) {
-          // add any variable transformation here...
-      }
   };
 
 })

@@ -1,5 +1,5 @@
 article.col-md-4.blog-column
-  img(src='{{image}}')
+  img(src='{{thumbnail}}', alt='{{alt}}')
   span.blog-title(ng-bind-html="title | toTrusted")
   p.blog-preview(ng-bind-html="preview | toTrusted")
   a(ui-sref='post').read-moreUrl.full-article-link read more >

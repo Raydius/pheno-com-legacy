@@ -13,55 +13,10 @@ section.row.no-padding.culture
     ng-repeat="article in articles"
     preview="{{article.preview}}",
     title="{{article.title}}",
-    blogger="Steve O'brien",
-    position= 1,
-    image=require('assets/images/blog/HumanInnovation.png')
+    thumbnail="{{article.thumbnail}}",
+    alt="{{article.alt}}",
+    blogger="{{article.author}}"
   )
-  blog-post(
-    preview="As a top-ranked college swimmer, Bruce Gemmell shied away from success at a high level, left the sport and became an engineer, garnering eleven patents for his innovations. Years later he returned to swimming with a great opportunity to coach Katie Ledecky following the 2012 Olympics (where she won gold and set an American record at age 15). With lessons learned in his previous experiences that kept him from succeeding as a swimmer, yet propelling him to thrive as an innovative engineer, he developed an ability to not only guide Ledecky to even greater success, he did it in a way that brought out the best in both of them.",
-    title="Human Innovation As Sport",
-    blogger="Steve O'brien",
-    position-title="Associate Creative Director / Copywriter",
-    position= 1,
-    image=require('assets/images/blog/HumanInnovation.png')
-    )
-  blog-post(
-      preview="Stem cell research, while still controversial for humans and the medical field, is now being used in a new field: food. Specifically, burgers. The first lab-grown burgers have been created, without harming a cow. Professor Mark Post took stem cells from a cow and grew the stuff of burgers: muscle and fat. For those worried about the cruelty (or the environmental impact) of the meat industry, we could have a new solution in the next five years for those who will not give up the taste of their cow-made burgers.",
-      title="Lab Burgers",
-      blogger="Ted Kapusta",
-      position-title="Creative Director",
-      position= 1,
-      image=require('assets/images/blog/lab_grown_meat_is_it_the_future.png')
-      )
-  blog-post(
-      preview='It has been about a year since ESPN started seriously airing video game tournaments on their network. Many viewers were up-in-arms about the extremely competitive gaming world entering into their other "pre-approved" extremely competitive gaming worlds. While video game playing is not dependent on athletic prowess, neither are eating competitions or spelling bees or poker tournaments — all of which are shown on the Entertainment and Sports Programming Network. And video games, at the fast pace they are evolving, are becoming one of the most interesting and entertaining fields of the 21st century.',
-      title="Human Innovation As Sport",
-      blogger="medium.com",
-      position= 0,
-      image=require('assets/images/blog/espn.png')
-      )
-  blog-post(
-      preview="Look at them. They are looking at you. Acknowledge them. Recognize them. Rebecca Campbell's portrait series, You Are Here, currently displayed at the LA Louver in Venice, draws viewers' attention to female artists currently working in Los Angeles. It states simply, without argument about representation or controversy over gender, that these women exist. They are here."
-      title="You Are Here",
-      blogger="Ted Kapusta",
-      position-title="Creative Director",
-      position= 1,
-      image=require('assets/images/blog/youarehere.png')
-      )
-  blog-post(
-      preview="As the world's people realize the causes and effects of climate change and collectively tries to backtrack its damage and assemble a contingency plan, every factor counts. For example, have you thought about your clothes? How much production and waste goes into creating them and how much water you waste making sure they are clean? Take a look at some companies and entrepreneurs who are attempting to reduce that waste with better materials or even clothes you don't have to wash! Would you wear them?"
-      title="Mr. Green Jeans",
-      blogger="aiga.com",
-      position= 0,
-      image=require('assets/images/blog/mrgreenjeans.png')
-      )
-  blog-post(
-      preview="Once considered the more utilitarian bridge (with the Golden Gate drawing more tourists & photo ops), the Bay Bridge will now become a fantastical icon itself, as it permanently becomes the largest LED light installation in the world."
-      title="All Of The Lights",
-      blogger="Ray Dolette",
-      position-title="Associate Director of Creative Technology",
-      position= 1,
-      image=require('assets/images/blog/allofthelights.png')
-      )
+
 
 include components/cite-components

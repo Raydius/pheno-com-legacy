@@ -229,7 +229,11 @@ angular.module('phenoCom').controller('blogController', function($scope, $state,
 
             var article = {
                 title: articleData.title.rendered,
-                preview: articleData.excerpt.rendered
+                slug: articleData.slug,
+                preview: articleData.excerpt.rendered,
+                thumbnail: articleData.better_featured_image.media_details.sizes.medium.source_url,
+                alt: articleData.better_featured_image.alt_text,
+                author: articleData.acf.author
             };
 
             $scope.articles.push(article);
