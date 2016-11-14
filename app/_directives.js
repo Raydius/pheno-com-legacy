@@ -222,31 +222,16 @@ angular.module('phenoCom').directive('blogPost', function(){
           thumbnail: '@',
           alt: '@',
           author: '@',
+          slug: '@'
       },
       template: blogPostTemplate,
-  };
-
-})
-angular.module('phenoCom').directive('blogPostSingle', function(){
-
-  return {
-      scope: {
-          content: '@',
-          title: '@',
-          blogger: '@',
-          positionTitle: '@',
-          image: '@',
-          position: '=',
-          date:'@'
-      },
-      template: blogPostSingleTemplate,
       link: function (scope, element, attrs) {
-          // add any variable transformation here...
-
+          scope.postUrl = '/#!/blog/'+ scope.slug + '/';
       }
   };
 
-})
+});
+
 angular.module('phenoCom').directive('blogHeader', function(){
 
   return {
@@ -256,7 +241,7 @@ angular.module('phenoCom').directive('blogHeader', function(){
       }
   };
 
-})
+});
 
 
 /*// handle page title changes on state change

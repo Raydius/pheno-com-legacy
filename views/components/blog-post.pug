@@ -2,7 +2,7 @@ article.col-md-4.blog-column
   img(src='{{thumbnail}}', alt='{{alt}}')
   span.blog-title(ng-bind-html="title | toTrusted")
   p.blog-preview(ng-bind-html="preview | toTrusted")
-  a(ui-sref='post').read-moreUrl.full-article-link read more >
+  a(href='{{postUrl}}').read-moreUrl.full-article-link read more >
     .page-divide.end-post.col-md-12
     .col-md-12.author-container
       img.pheno-p(src=require('assets/images/blog/pheno-p.png'))

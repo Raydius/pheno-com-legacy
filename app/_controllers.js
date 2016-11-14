@@ -211,11 +211,13 @@ angular.module('phenoCom').controller('contactController', function($scope, $sta
 
 });
 
+// controller for blog landing page
 angular.module('phenoCom').controller('blogController', function($scope, $state, $sce, $http) {
 
 
     $scope.articles = [];
 
+    // get all blog posts
     $http({
         method: 'GET',
         url: 'http://phenomenon.com:2088/wp-json/wp/v2/article'
@@ -238,6 +240,42 @@ angular.module('phenoCom').controller('blogController', function($scope, $state,
 
             $scope.articles.push(article);
 
+        }
+
+    });
+
+});
+
+// controller for individual blog posts
+angular.module('phenoCom').controller('blogPostController', function($scope, $state, $sce, $http, $stateParams) {
+
+    var slug = $stateParams.slug;
+
+    $scope.article = {};
+
+    $http({
+        method: 'GET',
+        url: 'http://phenomenon.com:2088/wp-json/wp/v2/article?filter[name]='+slug
+    }).then(function(response) {
+        console.log(response.data);
+
+        if (response.data.length == 1) {
+            // success
+            var post = response.data[0];
+
+            $scope.article = {
+                title: post.title.rendered,
+                content: post.content.rendered,
+                date: post.date,
+                image: post.better_featured_image.source_url,
+                author: post.acf.author,
+                byline: post.acf.byline
+            };
+            console.log($scope.article);
+        }
+        else {
+            // error
+            console.log('error');
         }
 
     });

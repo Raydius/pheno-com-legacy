@@ -281,14 +281,14 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         })
 
         .state('blog', {
-            url: '/blog',
+            url: '/blog/',
             template: templateBlog,
             controller: 'blogController'
         })
         .state('post', {
-            url: '/post',
+            url: '/blog/:slug/',
             template: templateBlogPostSingle,
-            controller: 'blogController'
+            controller: 'blogPostController'
         })
         .state('error', {
             url: '/error',

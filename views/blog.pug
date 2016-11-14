@@ -10,7 +10,8 @@ section.row.no-padding.culture
   blog-header
 
   blog-post(
-    ng-repeat="article in articles"
+    ng-repeat="article in articles",
+    slug="{{article.slug}}",
     preview="{{article.preview}}",
     title="{{article.title}}",
     thumbnail="{{article.thumbnail}}",

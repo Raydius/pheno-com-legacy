@@ -2,12 +2,12 @@ blog-header
 
 section.row.no-padding.culture
   article.col-md-10.col-lg-8.col-sm-12
-    .date {{date}}
-    .post-title {{title}}
+    .date {{article.date}}
+    .post-title {{article.title}}
     .col-md-12.author-container.post-container
-      img.pheno-p.blog-post-p(src=require('assets/images/blog/pheno-p.png'))
-      .blog-author {{blogger}}
+      img.pheno-p.blog-post-p(src="{{article.image}}")
+      .blog-author {{article.author}}
         .position {{positionTitle}}
     img.blog-image(src='{{image}}')
-    .blog-content {{content}}
+    .blog-content {{article.content}}
     a.share Share
