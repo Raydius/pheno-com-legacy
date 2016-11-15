@@ -6,7 +6,7 @@
  */
 
 var blogPostTemplate = require('components/blog-post.pug');
-var blogPostSingleTemplate = require('components/single-post.pug');
+// var blogPostSingleTemplate = require('components/single-post.pug');
 var blogHeaderTemplate = require('components/blog-header.pug');
 
 
