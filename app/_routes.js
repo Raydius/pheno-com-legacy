@@ -18,6 +18,7 @@ var templateWorkThinkThin = require('views/think-thin.pug');
 var templateWorkMens = require('views/mens-wearhouse.pug');
 var templateWorkSunny = require('views/sunny.pug');
 var templateWorkCooper = require('views/cooper.pug');
+var templateWorkFederer = require('views/federer.pug');
 var templateEntertainment = require('views/entertainment.pug');
 var templateCulture = require('views/culture.pug');
 var templateContact = require('views/contact.pug');
@@ -104,6 +105,21 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
                     'og:description': 'phenomenon - Innovations Company - client work, projects, media - Aetna',
                     'og:image': require('assets/images/work-1.jpg')
                 }*/
+            }
+        })
+        .state('work/federer/', {
+            url: '/work/federer/',
+            template: templateWorkFederer,
+            metaTags: {
+                title: "From Federer by Federer.",
+                description: 'Tennis legend includes a personal touch with launch of his first co-designed racket.',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, wilson, federer',
+                properties: {
+                    'og:type': 'website',
+                    'og:title': 'phenomenon - Innovations Company | Work - From Federer',
+                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - Federer',
+                    'og:image': require('assets/images/work-3.jpg')
+                }
             }
         })
         .state('work/wilson-anthem/', {

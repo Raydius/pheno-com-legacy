@@ -266,6 +266,15 @@ var copy =
         {
           "type": "image",
           "image": true,
+          "imageUrl": require('assets/images/work-1.jpg'),
+          "legend": "Sports / Lifestyle",
+          "headline": "From Federer By Federer.",
+          "description": "Tennis legend includes a personal touch with launch of his first co-designed racket.",
+          "readmoreUrl": "#!/work/federer/"
+        },
+        {
+          "type": "image",
+          "image": true,
           "imageUrl": require('assets/images/aetna/aetna-thumb.jpg'),
           "legend": "Healthcare / B2B",
           "headline": "Aetna Brings Out Medicare&#8217;s Potential.",
@@ -323,6 +332,55 @@ var copy =
           "readmoreUrl": "#!/work/wilson-x/"
         }
       ]
+    },
+    "federer": {
+      "title": "From Federer by Federer.",
+      "className": "federer",
+      "client": "Federer",
+      "clientLogo": require('assets/images/works/clients_logo/wilson_logo.svg'),
+      "clientLogoWidth": "50px",
+      "project": "From Federer",
+      "media": "TV, Digital, Social, Packaging",
+      "blockquote": "From Federer by Federer.",
+      "ogDescription": "Tennis legend includes a personal touch with launch of his first co-designed racket.",
+      "topDescription": [
+        "The new Wilson RF97 autograph racket is the first racket co-designed by Roger Federer and Wilson. It looks and plays like nothing else. In a world where loud colors are the norm for racket design, Federer preferred an approach that speaks to his love of minimalist design: A predominantly black racket with strategically placed highlights like a tiny Swiss flag. The result is a racket with the pure feel, power and precision to give players a technological edge, and the understated elegance to give them a mental edge whenever they step on the court.",
+        "<img class='fed-image' src='assets/images/federer-image.jpg'>",
+        'To announce the arrival of the new RF97 Phenomenon developed an integrated campaign led by a black-an-white film called "From Federer". The film features top junior players, Federer himself, and a handwritten note from Roger that plays a central role in the rest of the campaign. In the letter, Fed writes about the type of players he designed the racket for: Ones who push harder, play faster, and are obsessed with the game. Players who look at him not as someone to emulate, but someone to one day eclipse.',
+        "<span class='red'>The film features top junior players, Federer himself, and a handwritten note from Roger that plays a central role in the rest of the campaign.</span>",
+        "Before we launched any consumer-facing branding, we asked Phenomenon to create something that could unify the Wilson team from within. What did this new face of Wilson mean? How could we as employees live this new mantra? The result was a beautifully bound brand book containing words and images that boldly and loudly defined who we are. We handed out these books to each of our employees.",
+      ],
+      "topcontent": [
+        {
+          "carousel": true,
+          "images": [
+            {
+              "url": require("assets/images/Federer-racket-1.jpg"),
+              "alt": "Federer Image"
+            },
+            {
+              "url": require("assets/images/Federer-Racket-2.jpg"),
+              "alt": "Federer Image"
+            }
+          ]
+        }
+      ],
+      "fromTopContentDescription": [
+        'When it came time to reveal the RF97 to the world, Roger passionately discussed his inspiration, the racket’s details and what co-designing a racket with Wilson—the company he’s been with from the beginning—meant to him. Reactions to the new RF97 from the press, blogosphere and most importantly, tennis players around the world have been overwhelmingly positive and it is already making a significant impact on this global game.'
+      ],
+      "detailcontent": [
+        {
+          "video": true,
+          "thumb": require('assets/images/wilsonx_thumb_02-opt.jpg'),
+          "thumbAlt": "From Federer",
+          "thumbTitle": "Click to play video",
+          "vimeo": "191695425",
+          "mainDescription": [
+            "Excerpts from the note were featured across other mediums, including social activations on Facebook, Twitter and Instagram, banners and in-store posters. Prior to the unveiling, new RF97’s were delivered to top junior players who embodied the qualities detailed in Roger’s letter. As a nice perk (and to prove to friends that didn’t believe them) each player also received an autographed copy of the note itself."
+          ]
+        }
+      ]
+
     },
     "wilson-anthem": {
       "title": "My Wilson",
