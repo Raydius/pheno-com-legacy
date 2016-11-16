@@ -36,12 +36,12 @@ var copy =
       "navTitle": "Contact",
       "title": "View Contact Form",
       "uiSref": "contact"
-    },
+    }/*,
     {
        "navTitle": "Blog",
        "title": "Phenomenon NOW Blog",
        "uiSref": "blog"
-    }
+    }*/
   ],
   "share": {
     "twitter": {
