@@ -91,13 +91,12 @@ p.blog-author {
 p.blog-preview {margin-bottom: -20px !important;}
 
 .col-md-12.author-container {
-    display: inline-flex;
-    width: 350px;
+    display: flex;
+    width: 100%;
     margin-top: 20px;
     height: 90px;
     border-bottom: 5px solid black;
 }
-
 p.position {
     position: relative;
 }
