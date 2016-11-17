@@ -70,6 +70,7 @@ a.read-moreUrl.full-article-link {
 
 .page-divide.end-post.col-md-12 {
     margin-top: 20px;
+    width: 94%;
 }
 
 img.pheno-p {
@@ -92,11 +93,14 @@ p.blog-author {
     width: 100%;
 }
 
-p.blog-preview {margin-bottom: -20px !important;}
+p.blog-preview {
+    margin-bottom: -20px !important;
+    width: 91%;
+}
 
 .col-md-12.author-container {
     display: flex;
-    width: 100%;
+    width: 94%;
     margin-top: 20px;
     height: 90px;
     border-bottom: 5px solid black;
@@ -122,12 +126,17 @@ p.position {
     margin-bottom: 20px;
 }
 article.col-md-4.blog-column {
-    height: 800px;
+    height: 810px;
     margin-right: 0px;
     padding-left: 0;
     position: relative;
     display: inline-table;
     margin-top: 20px;
+}
+
+li.action-text {
+    margin-left: -50px;
+    font-size: 16px;
 }
 
 section.row.no-padding.culture.blog-posts {
@@ -140,8 +149,94 @@ section.row.no-padding.culture.blog-posts {
   .pageDivide.col-md-12 {
       border-bottom: 1px solid #ccc;
       margin-bottom: 20px !important;
-      margin-top: 80px !important;
+      margin-top: 120px !important;
   }
+}
+
+@media (min-device-width: 412px) and (max-device-width: 460px) and (-webkit-min-device-pixel-ratio: 2) {
+  p.tagline {
+      display: flex;
+      width: 310px;
+      margin-left: 15%;
+      margin-top: 10%;
+      padding-right: 10px;
+      margin-right: 50px;
+  }
+
+ul.blog-action-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-right: -20px;
+}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    p.tagline {
+        display: flex;
+        width: 310px;
+        margin-left: 15%;
+        margin-top: 10%;
+        padding-right: 10px;
+    }
+
+ul.blog-action-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: -20px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 470px) and (-webkit-min-device-pixel-ratio: 2) {
+    p.tagline {
+        display: flex;
+        width: 370px;
+        margin-left: 15%;
+        margin-top: 10%;
+        padding-right: 10px;
+    }
+
+ul.blog-action-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-left: -30px !important;
+    margin-right: -20px;
+  }
+ }
+
+
+@media all and (max-width:400px) {
+
+  article.col-md-4.blog-column {
+    height: 100%;
+    margin-right: 0px !important;
+    padding-left: 15px;
+}
+
+  li.action-text {
+    margin-left: -20px;
+}
+p.tagline {
+    display: flex;
+    width: 100%;
+    margin-left: 0% !important;
+    margin-top: 10% !important;
+    padding-right: 10px !important;
+}
+ul.blog-action-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-left: -20px !important;
+    margin-right: -20px;
+}
 }
 
 @media all and (max-width:768px) {
@@ -151,14 +246,6 @@ section.row.no-padding.culture.blog-posts {
     margin-bottom: 100px;
     display: block;
     overflow: hidden;
-}
-
-p.tagline {
-    display: flex;
-    width: 420px;
-    margin-left: 15% !important;
-    margin-top: 10% !important;
-    padding-right: 10px !important;
 }
 
 h2.phno-now {
@@ -183,11 +270,11 @@ h2.phno-now {
       color: black;
   }
 
-  .pageDivide.col-md-12 {
-      border-bottom: 1px solid #ccc;
-      margin-bottom: 20px !important;
-      margin-top: 130px !important;
-  }
+.pageDivide.col-md-12 {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px !important;
+    margin-top: 180px !important;
+}
 
   p.blog-preview {
     margin-bottom: 20px !important;
@@ -197,11 +284,11 @@ h2.phno-now {
     margin-bottom: 30px;
 }
 
-  article.col-md-4.blog-column {
+article.col-md-4.blog-column {
     height: 100%;
     margin-right: 20px;
-    padding-left: 15px;
-  }
+    padding-left: 30px;
+}
 
 }
 
@@ -214,6 +301,8 @@ ul.blog-action-list {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 50px;
+    margin-left: -45px;
 }
 
 .post-title {
@@ -344,4 +433,8 @@ article.col-md-4.blog-column > img {
 
 .blog-content > p {
     line-height: 30px;
+}
+
+article.col-md-4.blog-column > a > img {
+    width: 95%;
 }
