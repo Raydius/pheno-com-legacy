@@ -266,7 +266,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": require('assets/images/work-1.jpg'),
+          "imageUrl": require('assets/images/federer-work-image.jpg'),
           "legend": "Sports / Lifestyle",
           "headline": "From Federer By Federer.",
           "description": "Tennis legend includes a personal touch with launch of his first co-designed racket.",
