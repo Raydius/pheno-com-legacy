@@ -14,6 +14,7 @@ h2.phno-now {
     margin-top: 20px;
     margin-left: 5px;
     font-size: 60px;
+    font-weight: 800;
 }
 
 article.col-md-7.col-md-offset-1.no-padding.blog-no-padding {
@@ -37,13 +38,16 @@ img.phno-logo {
 
 .pageDivide.col-md-12 {
     border-bottom: 1px solid #ccc;
+    margin-bottom: 20px !important;
+    /* margin-top: 80px !important; */
 }
 
 p.tagline {
-    display: flex;
+    display: inline-flex;
     width: 410px;
-    margin-left: 15% !important;
-    margin-top: 10% !important;
+    /* margin-left: 15% !important; */
+    margin-top: 35px !important;
+    margin-bottom: -20px !important;
 }
 
 span.blog-title {
@@ -123,6 +127,7 @@ article.col-md-4.blog-column {
     padding-left: 0;
     position: relative;
     display: inline-table;
+    margin-top: 20px;
 }
 
 section.row.no-padding.culture.blog-posts {
@@ -131,7 +136,37 @@ section.row.no-padding.culture.blog-posts {
     overflow: hidden;
 }
 
+@media (max-width:881px) {
+  .pageDivide.col-md-12 {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 20px !important;
+      margin-top: 80px !important;
+  }
+}
+
 @media all and (max-width:768px) {
+
+
+  section.row.no-padding.culture.blog-posts {
+    margin-bottom: 100px;
+    display: block;
+    overflow: hidden;
+}
+
+p.tagline {
+    display: flex;
+    width: 420px;
+    margin-left: 15% !important;
+    margin-top: 10% !important;
+    padding-right: 10px !important;
+}
+
+h2.phno-now {
+    font-family: "Circular-Book";
+    margin-top: 40px;
+    margin-left: 5px;
+    font-size: 60px !important;
+}
 
   .see-more {
       text-align: center;
@@ -148,12 +183,11 @@ section.row.no-padding.culture.blog-posts {
       color: black;
   }
 
-	.pageDivide.col-md-12 {
-    border-bottom: 1px solid #ccc;
-    margin-top: 180px;
-    position: relative;
-    margin-bottom: 50px;
-	}
+  .pageDivide.col-md-12 {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 20px !important;
+      margin-top: 130px !important;
+  }
 
   p.blog-preview {
     margin-bottom: 20px !important;
