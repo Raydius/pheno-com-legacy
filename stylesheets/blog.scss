@@ -326,7 +326,9 @@ ul.blog-action-list {
 }
 
 .post-title {
-    font-size: 36px;
+    font-size: 50px;
+    color: black;
+    font-family: "Tiempose-Semibold";
 }
 
 .col-md-12.author-container.post-container {
@@ -339,7 +341,7 @@ ul.blog-action-list {
 }
 
 img.pheno-p.blog-post-p {
-    margin-left: -20px;
+    margin-left: -10px;
 }
 img.pheno-p.blog-post-p:hover {
   -webkit-animation-name: spin;
@@ -484,4 +486,21 @@ p.blog-preview > p {
 .big-divide {
     margin-bottom: 80px;
   }
+}
+
+.date {
+  color: #868484;
+  display: flex;
+  margin-top: -125px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 664px) {
+  .date {
+    color: #868484;
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
 }
