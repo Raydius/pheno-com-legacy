@@ -364,7 +364,7 @@ var copy =
           "thumbTitle": "Click to play video",
           "vimeo": "191695425",
           "mainDescription": [
-            "Excerpts from the note were featured across other mediums, including social activations on Facebook, Twitter and Instagram, banners and in-store posters. Prior to the unveiling, new RF97's were delivered to top junior players who embodied the qualities detailed in Roger's letter. As a nice perk (and to prove to friends that didn't believe them) each player also received an autographed copy of the note itself."
+            "<br><br>Excerpts from the note were featured across other mediums, including social activations on Facebook, Twitter and Instagram, banners and in-store posters. Prior to the unveiling, new RF97's were delivered to top junior players who embodied the qualities detailed in Roger's letter. As a nice perk (and to prove to friends that didn't believe them) each player also received an autographed copy of the note itself."
           ]
         },
         {
@@ -382,7 +382,7 @@ var copy =
         }
       ],
       "fromTopContentDescription": [
-        "When it came time to reveal the RF97 to the world, Roger passionately discussed his inspiration, the racket's details and what co-designing a racket with Wilson—the company he's been with from the beginning meant to him. Reactions to the new RF97 from the press, blogosphere and most importantly, tennis players around the world have been overwhelmingly positive and it is already making a significant impact on this global game."
+        "When it came time to reveal the RF97 to the world, Roger passionately discussed his inspiration, the racket's details and what co-designing a racket with Wilson—the company he's been with from the beginning meant to him.<br> <br> Reactions to the new RF97 from the press, blogosphere and most importantly, tennis players around the world have been overwhelmingly positive and it is already making a significant impact on this global game."
       ],
       "detailcontent": [
         {
