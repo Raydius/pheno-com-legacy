@@ -38,7 +38,7 @@ img.phno-logo {
 
 .pageDivide.col-md-12 {
     border-bottom: 1px solid #ccc;
-    margin-bottom: 20px !important;
+    margin-bottom: 110px !important;
     /* margin-top: 80px !important; */
 }
 
@@ -51,11 +51,12 @@ p.tagline {
 }
 
 span.blog-title {
-    font-size: 36px;
+    font-size: 30px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-top: 20px;
+    padding-left: 20px;
     color: #333333;
     padding-bottom: 20px;
     font-family: "Tiempose-semibold";
@@ -65,12 +66,13 @@ a.read-moreUrl.full-article-link {
     color: #D0021B;
     text-decoration: none;
     display: block;
+    font-size: 12px;
     margin-top: 0px;
 }
 
 .page-divide.end-post.col-md-12 {
     margin-top: 20px;
-    width: 94%;
+    width: 95%;
 }
 
 img.pheno-p {
@@ -95,12 +97,12 @@ p.blog-author {
 
 p.blog-preview {
     margin-bottom: -20px !important;
-    width: 91%;
+    width: 93%;
 }
 
 .col-md-12.author-container {
     display: flex;
-    width: 94%;
+    width: 95%;
     margin-top: 20px;
     height: 90px;
     border-bottom: 5px solid black;
@@ -125,14 +127,6 @@ p.position {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-article.col-md-4.blog-column {
-    height: 810px;
-    margin-right: 0px;
-    padding-left: 0;
-    position: relative;
-    display: inline-table;
-    margin-top: 20px;
-}
 
 li.action-text {
     margin-left: -50px;
@@ -146,10 +140,10 @@ section.row.no-padding.culture.blog-posts {
 }
 
 @media (max-width:881px) {
-  .pageDivide.col-md-12 {
-      border-bottom: 1px solid #ccc;
-      margin-bottom: 20px !important;
-      margin-top: 120px !important;
+.pageDivide.col-md-12 {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 110px !important;
+    margin-top: 120px !important;
   }
 }
 
@@ -213,10 +207,11 @@ ul.blog-action-list {
 
 @media all and (max-width:400px) {
 
-  article.col-md-4.blog-column {
+ article.col-md-4.blog-column {
     height: 100%;
     margin-right: 0px !important;
     padding-left: 15px;
+    margin-top: 20px;
 }
 
   li.action-text {
@@ -237,6 +232,12 @@ ul.blog-action-list {
     margin-left: -20px !important;
     margin-right: -20px;
 }
+.pageDivide.col-md-12 {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px !important;
+    margin-top: 220px !important;
+    padding-bottom: 20px;
+  }
 }
 
 @media all and (max-width:768px) {
@@ -272,7 +273,7 @@ h2.phno-now {
 
 .pageDivide.col-md-12 {
     border-bottom: 1px solid #ccc;
-    margin-bottom: 20px !important;
+    margin-bottom: 80px;
     margin-top: 180px !important;
 }
 
@@ -441,4 +442,27 @@ article.col-md-4.blog-column > a > img {
 
 .blog-content > p > a {
     color: #cc2128;
+}
+
+p.blog-preview > p {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+
+  article.col-md-4.blog-column {
+    height: 810px;
+    margin-right: 0px;
+    padding-left: 0;
+    position: relative;
+    display: inline-table;
+    margin-top: -50px;
+  }
+}
+@media (max-width: 991px) and (min-width: 779px){
+.big-divide {
+    margin-bottom: 80px;
+  }
 }
