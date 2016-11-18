@@ -94,17 +94,16 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         .state('work/aetna-potential/', {
             url: '/work/aetna-potential/',
             template: templateWorkAetna,
-            //templateWorkAetna,
             metaTags: {
                 title: "Aetna Brings Out Medicare's Potential",
-                /*description: 'Healthcare giant takes a more human approach with B2B initiative.',
+                description: 'Healthcare giant takes a more human approach with B2B initiative.',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, aetna',
                 properties: {
                     'og:type': 'website',
                     'og:title': 'phenomenon - Innovations Company | Work - Aetna Potential',
                     'og:description': 'phenomenon - Innovations Company - client work, projects, media - Aetna',
-                    'og:image': require('assets/images/work-1.jpg')
-                }*/
+                    'og:image': require('assets/images/aetna/aetna-thumb.jpg')
+                }
             }
         })
         .state('work/federer/', {
@@ -118,7 +117,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
                     'og:type': 'website',
                     'og:title': 'phenomenon - Innovations Company | Work - From Federer',
                     'og:description': 'phenomenon - Innovations Company - client work, projects, media - Federer',
-                    'og:image': require('assets/images/work-3.jpg')
+                    'og:image': require('assets/images/federer-work-image.jpg')
                 }
             }
         })
