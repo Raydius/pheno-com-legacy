@@ -386,10 +386,9 @@ var copy =
       ],
       "detailcontent": [
         {
-          "type": "scrollingSite",
-          "scrollingSite": true,
+          "type": "image",
+          "image": true,
           "imageUrl": require("assets/images/wilson-federer-pro-staff-web-1140×3156.jpg"),
-          "imageAlt": "Federer Website"
         }
       ]
 
