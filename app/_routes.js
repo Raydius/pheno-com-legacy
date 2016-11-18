@@ -25,6 +25,8 @@ var templateContact = require('views/contact.pug');
 var templateJobs = require('views/jobs.pug');
 var templateBlog = require('views/blog.pug');
 var templateBlogPostSingle = require('views/blog-post-single.pug');
+// var templateSearchPost = require('views/search-post.pug');
+var templateBlogSearch = require('views/blog-search.pug');
 var templateError = require('views/404.pug');
 var templateJob = require('views/job.pug');
 var templateApplication = require('views/application.pug');
@@ -305,6 +307,11 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             url: '/blog/:slug/',
             template: templateBlogPostSingle,
             controller: 'blogPostController'
+        })
+        .state('search/', {
+            url: '/search/',
+            template: templateBlogSearch,
+            controller: 'blogController'
         })
         .state('error', {
             url: '/error',

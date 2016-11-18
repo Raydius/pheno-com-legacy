@@ -6,6 +6,7 @@
  */
 
 var blogPostTemplate = require('components/blog-post.pug');
+var searchPostTemplate = require('components/search-post.pug');
 // var blogPostSingleTemplate = require('components/single-post.pug');
 var blogHeaderTemplate = require('components/blog-header.pug');
 
@@ -225,6 +226,26 @@ angular.module('phenoCom').directive('blogPost', function(){
           slug: '@'
       },
       template: blogPostTemplate,
+      link: function (scope, element, attrs) {
+          scope.postUrl = '/#!/blog/'+ scope.slug + '/';
+      }
+  };
+
+});
+
+angular.module('phenoCom').directive('searchPost', function(){
+
+  return {
+      scope: {
+          preview: '@',
+          title: '@',
+          blogger: '@',
+          thumbnail: '@',
+          alt: '@',
+          author: '@',
+          slug: '@'
+      },
+      template: searchPostTemplate,
       link: function (scope, element, attrs) {
           scope.postUrl = '/#!/blog/'+ scope.slug + '/';
       }

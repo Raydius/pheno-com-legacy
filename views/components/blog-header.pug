@@ -6,9 +6,11 @@ article.col-md-12.top-main
     .contact-section
       p.tagline INNOVATION. CULTURE. AND WHERE THEY MEET. Give us a tip at now@phenomenon.com
       ul.blog-action-list
-        li.search
+        a(ui-sref="search/")
+          li.search
           img(src="assets/images/blog/search.png", alt="alt")
-        li.action-text Search
+        a(ui-sref="search/")
+          li.action-text.search Search
         li.subscribe
           img(src="assets/images/blog/subscribe.png", alt="alt")
         li.action-text Subscribe
