@@ -382,13 +382,15 @@ var copy =
         }
       ],
       "fromTopContentDescription": [
-        "When it came time to reveal the RF97 to the world, Roger passionately discussed his inspiration, the racket's details and what co-designing a racket with Wilson -- the company he's been with from the beginning meant to him.<br><br> Reactions to the new RF97 from the press, blogosphere and most importantly, tennis players around the world have been overwhelmingly positive and it is already making a significant impact on this global game."
+
+        "When it came time to reveal the RF97 to the world, Roger passionately discussed his inspiration, the racket's details and what co-designing a racket with Wilson -- the company he's been with from the beginning meant to him. Reactions to the new RF97 from the press, blogosphere and most importantly, tennis players around the world have been overwhelmingly positive and it is already making a significant impact on this global game."
+
       ],
       "detailcontent": [
         {
           "type": "image",
           "image": true,
-          "imageUrl": require("assets/images/wilson-federer-pro-staff-web-1140×3156.jpg"),
+          "imageUrl": require("assets/images/wilson-website.jpg"),
         }
       ]
 

@@ -30,8 +30,7 @@ var templateJob = require('views/job.pug');
 var templateApplication = require('views/application.pug');
 
 
-angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
-
+angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
     // TODO: 404 handler
     $urlRouterProvider.when('', '/');
@@ -39,7 +38,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         console.log('otherwise');
     });*/
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/error');
 
     // config routing
     $stateProvider
@@ -342,5 +341,10 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
 
     ;
 
-
+//     if(window.history && window.history.pushState) {
+//     $locationProvider.html5Mode({
+//         enabled : true,
+//         requireBase : false
+//     }).hashPrefix('');
+// }
 });

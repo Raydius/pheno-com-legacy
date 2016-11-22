@@ -37,12 +37,11 @@ var corsOptions = {
 // store copy as JSON
 var copy = require('./../app/copy.json');
 
-
 // welcome page
 router.get('/', function(req, res, next) {
 
 	// if user has been here within the last 15 days, they will have the visited cookie set
-	
+
 	res.render('welcome', {title: 'Index', copy: copy});
 
 });
@@ -180,5 +179,3 @@ router.post('/sendMail', upload.fields([
 });
 
 module.exports = router;
-
-
