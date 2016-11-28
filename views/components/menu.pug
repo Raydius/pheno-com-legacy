@@ -5,4 +5,4 @@ nav.nav
 	ul
 		each navItem in copy.navigation
 			li( ng-class="{ selected: isSelected('#{navItem.uiSref}') }", class=navItem.className, ui-sref-active='selected')
-				a.hvr-underline-from-center(ui-sref=navItem.uiSref, href=navItem.uiSref, title=navItem.title, ng-click="toggleDrawer()")= navItem.navTitle
+				a.hvr-underline-from-center(ui-sref=navItem.uiSref, title=navItem.title, ng-click="toggleDrawer()")= navItem.navTitle
