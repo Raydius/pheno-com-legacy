@@ -383,7 +383,7 @@ var copy =
       ],
       "fromTopContentDescription": [
 
-        "When it came time to reveal the RF97 to the world, Roger passionately discussed his inspiration, the racket's details and what co-designing a racket with Wilson -- the company he's been with from the beginning -- meant to him. <br><br> Reactions to the new RF97 from the press, blogosphere and most importantly, tennis players around the world have been overwhelmingly positive and it is already making a significant impact on this global game."
+        "When it came time to reveal the RF97 to the world, Roger passionately discussed his inspiration, the racket's details and what co-designing a racket with Wilson -- the company he's been with from the beginning -- meant to him. <br> <br> Reactions to the new RF97 from the press, blogosphere and most importantly, tennis players around the world have been overwhelmingly positive and it is already making a significant impact on this global game."
 
       ],
       "detailcontent": [
