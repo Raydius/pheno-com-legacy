@@ -1,0 +1,24 @@
+block variables
+- copy = require('app/copy.js')
+- page = "blog"
+- pageData = copy.content[page]
+
+
+//- title and body copy
+section.row.no-padding.culture.blog-posts
+
+  blog-header
+
+  blog-post(
+    ng-repeat="article in articles",
+    slug="{{article.slug}}",
+    preview="{{article.preview}}",
+    title="{{article.title}}",
+    thumbnail="{{article.thumbnail}}",
+    alt="{{article.alt}}",
+    blogger="{{article.author}}"
+  )
+
+include components/cite-components
+
+.see-more(ng-click='loadMore()') See More

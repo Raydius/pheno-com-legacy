@@ -21,7 +21,7 @@ function defaultMetaTags(UIRouterMetatagsProvider) {
         .setOGURL(true);
 }
 
-angular.module('phenoCom').config(function($sceDelegateProvider) {
+angular.module('phenoCom').config(function($sceDelegateProvider, envServiceProvider) {
 
   $sceDelegateProvider.resourceUrlWhitelist([
     'self',
@@ -29,6 +29,19 @@ angular.module('phenoCom').config(function($sceDelegateProvider) {
     'https://player.vimeo.com/**',
     'https://vimeo.com/**'
   ]);
+
+  envServiceProvider.config(
+    {
+      domains: {
+      local: ['localhost', '127.0.0.1'],
+      staging: ['tech.phenomenonstaging.com'],
+      production: ['latest.phenomenon.com','phenomenon.com']
+    },
+    vars: {
+
+    }
+
+  });
 
 });
 
@@ -47,3 +60,13 @@ angular.module('phenoCom').config([
         $locationProvider.hashPrefix('!');
     }
 ]);
+
+
+// html render filter
+angular.module('phenoCom').filter('toTrusted', ['$sce', function($sce) {
+
+    return function(text) {
+        return $sce.trustAsHtml(text);
+    };
+
+}]);

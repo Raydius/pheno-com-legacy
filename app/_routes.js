@@ -18,22 +18,27 @@ var templateWorkThinkThin = require('views/think-thin.pug');
 var templateWorkMens = require('views/mens-wearhouse.pug');
 var templateWorkSunny = require('views/sunny.pug');
 var templateWorkCooper = require('views/cooper.pug');
+var templateWorkFederer = require('views/federer.pug');
 var templateEntertainment = require('views/entertainment.pug');
 var templateCulture = require('views/culture.pug');
 var templateContact = require('views/contact.pug');
 var templateJobs = require('views/jobs.pug');
+var templateBlog = require('views/blog.pug');
+var templateBlogPostSingle = require('views/blog-post-single.pug');
+var templateError = require('views/404.pug');
+var templateJob = require('views/job.pug');
+var templateApplication = require('views/application.pug');
 
 
-angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
-
+angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
     // TODO: 404 handler
-    /*$urlRouterProvider.when('', '/');
-    $urlRouterProvider.otherwise(function($injector, $location) {
+    $urlRouterProvider.when('', '/');
+    /*$urlRouterProvider.otherwise(function($injector, $location) {
         console.log('otherwise');
     });*/
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/error');
 
     // config routing
     $stateProvider
@@ -88,17 +93,31 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         .state('work/aetna-potential/', {
             url: '/work/aetna-potential/',
             template: templateWorkAetna,
-            //templateWorkAetna,
             metaTags: {
                 title: "Aetna Brings Out Medicare's Potential",
-                /*description: 'Healthcare giant takes a more human approach with B2B initiative.',
+                description: 'Healthcare giant takes a more human approach with B2B initiative.',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, aetna',
                 properties: {
                     'og:type': 'website',
                     'og:title': 'phenomenon - Innovations Company | Work - Aetna Potential',
                     'og:description': 'phenomenon - Innovations Company - client work, projects, media - Aetna',
-                    'og:image': require('assets/images/work-1.jpg')
-                }*/
+                    'og:image': require('assets/images/aetna/aetna-thumb.jpg')
+                }
+            }
+        })
+        .state('work/federer/', {
+            url: '/work/federer/',
+            template: templateWorkFederer,
+            metaTags: {
+                title: "From Federer by Federer.",
+                description: 'Tennis legend includes a personal touch with launch of his first co-designed racket.',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, wilson, federer',
+                properties: {
+                    'og:type': 'website',
+                    'og:title': 'phenomenon - Innovations Company | Work - From Federer',
+                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - Federer',
+                    'og:image': require('assets/images/federer-work-image.jpg')
+                }
             }
         })
         .state('work/wilson-anthem/', {
@@ -252,7 +271,10 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
                     'og:title': 'Phenomenon - Innovations Company',
                     'og:description': 'Phenomenon - Innovations Company',
                     'og:image': require('assets/images/fb-share-center.png')
-                }
+                },
+                ncyBreadcrumb: {
+                label: 'Jobs'
+              }
             }
         })
         .state('contact', {
@@ -272,10 +294,34 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
             }
         })
 
-        /*.state('blog', {
-            url: '/blog',
-            template: 'test'
-        })*/
+        .state('blog', {
+            url: '/blog/',
+            template: templateBlog,
+            controller: 'blogController'
+        })
+        .state('post', {
+            url: '/blog/:slug/',
+            template: templateBlogPostSingle,
+            controller: 'blogPostController'
+        })
+        .state('error', {
+            url: '/error',
+            template: templateError,
+        })
+        .state('job', {
+            url: '/job',
+            template: templateJob,
+            ncyBreadcrumb: {
+            label: 'job name'
+          }
+        })
+        .state('application', {
+            url: '/application',
+            template: templateApplication,
+            ncyBreadcrumb: {
+            // label: 'job name'
+          }
+        })
 
         .state('thanks', {
             url: '/thanks',
@@ -295,5 +341,10 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
 
     ;
 
-
+//     if(window.history && window.history.pushState) {
+//     $locationProvider.html5Mode({
+//         enabled : true,
+//         requireBase : false
+//     }).hashPrefix('');
+// }
 });

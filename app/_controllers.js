@@ -22,7 +22,7 @@ angular.module('phenoCom').controller('phenoController', function($state, $scope
 
     // use current state to determine which menu item is selected
     $scope.isSelected = function(sref) {
-        var s = $state.$current.name; 
+        var s = $state.$current.name;
         // make work tab selected while view work detail page
         if(sref == s || sref == s.substring(0, s.indexOf('/'))) {
             return true;
@@ -33,24 +33,24 @@ angular.module('phenoCom').controller('phenoController', function($state, $scope
 
     $scope.toggleDrawer = function () {
         if ($.browser.mobile || $(window).outerWidth() < 640 ) {
-            
+
             $('body, html').toggleClass('opend');
-            $('#hamburger').toggleClass('open'); 
-        
+            $('#hamburger').toggleClass('open');
+
         }
     }
 
 });
 
 angular.module('phenoCom').controller('homeController', function($state, $scope, $window) {
-    
+
     // adjust homepage headline height to be fullscreen all the time
 
     var $topSection = $('.top-main');
     var $nav = $('.topnav');
 
-    $topSection.css('height', $(window).height() - $nav.height()); 
-    
+    $topSection.css('height', $(window).height() - $nav.height());
+
     angular.element($window).bind('resize',function(){
         $topSection.css('height', $(window).height() - $nav.height());
     })
@@ -66,29 +66,55 @@ angular.module('phenoCom').controller('homeController', function($state, $scope,
 angular.module('phenoCom').controller('jobsController', function($scope, $state, $http) {
 
     $scope.jobs = {
-        openPositions: []
+        departments: []
     };
 
     $http({
         method: 'GET',
-        url: 'https://api.greenhouse.io/v1/boards/phenomenon/embed/jobs'
+        url: 'https://api.greenhouse.io/v1/boards/phenomenon/embed/departments'
     }).then(function (response) {
 
-        var jobs = response.data.jobs;
+        var departments = response.data.departments;
 
-        for(var i=0, len = jobs.length; i < len; i++) {
+        // step through all departments
+        for(var i=0, len = departments.length; i < len; i++) {
 
-            var job = jobs[i];
+            var depJobs = departments[i].jobs;
+            var openPositions = [];
 
-            // job must have a LinkedIn URL in order to be listed on the jobs page
-            if(job.metadata[0].value) {
-                var position = {
-                    title: job.title,
-                    url: job.metadata[0].value
-                };
-                $scope.jobs.openPositions.push(position);
+            // step through all jobs in the department
+            for (var n=0, jlen = depJobs.length; n < jlen; n++) {
+
+                var job = depJobs[n];
+
+                // job must have a LinkedIn URL in order to be listed on the jobs page
+                if(job.metadata[0].value) {
+
+                    var position = {
+                        title: job.title,
+                        url: job.metadata[0].value,
+                        location: job.location.name
+                    };
+                    openPositions.push(position);
+                }
+
             }
+
+            // if there were jobs in this department...
+            if(openPositions.length > 0) {
+
+                // push department to scope
+                var department = {
+                    'name': departments[i].name,
+                    'openPositions': openPositions
+                };
+
+                $scope.jobs.departments.push(department);
+            }
+
         }
+
+        console.log($scope.jobs);
     });
 
 });
@@ -185,3 +211,73 @@ angular.module('phenoCom').controller('contactController', function($scope, $sta
 
 });
 
+// controller for blog landing page
+angular.module('phenoCom').controller('blogController', function($scope, $state, $sce, $http) {
+
+
+    $scope.articles = [];
+
+    // get all blog posts
+    $http({
+        method: 'GET',
+        url: 'http://phenomenon.com:2088/wp-json/wp/v2/article'
+    }).then(function (response) {
+
+        var articles = response.data;
+
+        for(var i=0, len=articles.length; i < len; i++) {
+
+            var articleData = articles[i];
+
+            var article = {
+                title: articleData.title.rendered,
+                slug: articleData.slug,
+                preview: articleData.excerpt.rendered,
+                thumbnail: articleData.better_featured_image.media_details.sizes.medium.source_url,
+                alt: articleData.better_featured_image.alt_text,
+                author: articleData.acf.author
+            };
+
+            $scope.articles.push(article);
+
+        }
+
+    });
+
+});
+
+// controller for individual blog posts
+angular.module('phenoCom').controller('blogPostController', function($scope, $state, $sce, $http, $stateParams) {
+
+    var slug = $stateParams.slug;
+
+    $scope.article = {};
+
+    $http({
+        method: 'GET',
+        url: 'http://phenomenon.com:2088/wp-json/wp/v2/article?filter[name]='+slug
+    }).then(function(response) {
+        console.log(response.data);
+
+        if (response.data.length == 1) {
+            // success
+            var post = response.data[0];
+
+            $scope.article = {
+                title: post.title.rendered,
+                content: post.content.rendered,
+                date: post.date,
+                image: post.better_featured_image.source_url,
+                author: post.acf.author,
+                byline: post.acf.byline
+            };
+            console.log($scope.article);
+        }
+        else {
+            // error
+            console.log('error');
+        }
+
+    });
+
+});

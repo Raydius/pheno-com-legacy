@@ -1,0 +1,36 @@
+
+
+section.row.no-padding.culture.job-posting
+  article.col-md-8.job-column
+    //- ncy-breadcrumb
+    ul.breadcrumbs
+      li.breadcrumb Careers  >
+      li.breadcrumb-current Digital Design Director
+    .job-title Digital Design Director
+    //- span.apply-with Apply with LinkedIn
+    a(href="#")
+      img( class='linkedIn-link' src="assets/images/linkedIn.png", alt="alt")
+      img( class='or' src="assets/images/or.png", alt="alt")
+
+    span.fill-it Fill out the form below
+    form(action="sumbit" method="post")
+      .form-group
+        button.btn.btn-default.attach-res(type="submit") Attach Resume
+        input(type='text' name='Full Name' placeholder='Full Name *')
+        input(type='email' name='Email' placeholder='Email *')
+        input(type='text' name='Phone Number' placeholder='Phone Number *')
+        input(type='text' name='Website / Online Portfolio' placeholder='Website / Online Portfolio')
+        input(type='text' name='LinkedIn Profile' placeholder='LinkedIn Profile')
+        input(type='text' name='Anything Else?' placeholder='Is there anything else you would like us to know?')
+
+    a.apply-now.submit-app(ui-sref='application') Submit Application
+  article.col-md-3.pull-right.col-sm-12.col-xs-12.job-column-3
+    .job-dep Department
+    .job-category Creative
+    br
+    br
+    .location-job Location
+    .job-location Los Angeles
+    hr
+    img( class='share-icon' src="assets/images/share-128.png")
+    span.job-location Share
