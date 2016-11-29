@@ -38,7 +38,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         console.log('otherwise');
     });*/
 
-    $urlRouterProvider.otherwise('/error');
+    $urlRouterProvider.otherwise('/error/');
 
     // config routing
     $stateProvider
@@ -60,7 +60,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
 
         .state('about', {
-            url: '/about',
+            url: '/about/',
             template: templateAbout,
             metaTags: {
                 title: 'phenomenon - Innovations Company | About Us',
@@ -76,7 +76,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
 
         .state('work', {
-            url: '/work',
+            url: '/work/',
             template: templateWork,
             metaTags: {
                 title: 'phenomenon - Innovations Company | Work',
@@ -242,7 +242,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
 
         .state('culture', {
-            url: '/culture',
+            url: '/culture/',
             template: templateCulture,
             metaTags: {
                 title: 'phenomenon - Innovations Company | Culture',
@@ -259,7 +259,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 
 
         .state('jobs', {
-            url: '/jobs',
+            url: '/jobs/',
             template: templateJobs,
             controller: 'jobsController',
             metaTags: {
@@ -278,7 +278,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             }
         })
         .state('contact', {
-            url: '/contact',
+            url: '/contact/',
             template: templateContact,
             controller: 'contactController',
             metaTags: {
@@ -305,18 +305,18 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             controller: 'blogPostController'
         })
         .state('error', {
-            url: '/error',
+            url: '/error/',
             template: templateError,
         })
         .state('job', {
-            url: '/job',
+            url: '/job/',
             template: templateJob,
             ncyBreadcrumb: {
             label: 'job name'
           }
         })
         .state('application', {
-            url: '/application',
+            url: '/job/application/',
             template: templateApplication,
             ncyBreadcrumb: {
             // label: 'job name'
@@ -324,7 +324,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
 
         .state('thanks', {
-            url: '/thanks',
+            url: '/job/thanks/',
             templateUrl: '/views/components/thanks',
             metaTags: {
                 title: 'phenomenon - Innovations Company | Thanks',
@@ -341,10 +341,6 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 
     ;
 
-//     if(window.history && window.history.pushState) {
-//     $locationProvider.html5Mode({
-//         enabled : true,
-//         requireBase : false
-//     }).hashPrefix('');
-// }
+    $locationProvider.html5Mode(true);
+
 });

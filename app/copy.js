@@ -123,21 +123,24 @@ var copy =
           "jobTitle": "VP Marketing, Wilson",
           "project": "Wilson Launches<br> Futuristic Ball.",
           "contributorAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson.png"),
-          "href": "#!/work/wilson-x/"
+          "href": "#!/work/wilson-x/",
+          "sref": "work/wilson-x/"
         },
         {
           "name": "Matt Stringer",
           "jobTitle": "EVP Marketing, Tailored Brands",
           "project": "Men&#8217s Wearhouse<br> Updates Its Wardrobe.",
           "contributorAvatar": require("assets/images/illustrations/phenomenon-matt-stringer-menswearhouse.png"),
-          "href": "#!/work/mens-wearhouse/"
+          "href": "#!/work/mens-wearhouse/",
+          "sref": "work/mens-wearhouse/"
         },
         {
           "name": "Megan Crossland",
           "jobTitle": "Sr. Director of Marketing, thinkThin",
           "project": "thinkThin Helps<br> Women Shed the Guilt.",
           "contributorAvatar": require("assets/images/illustrations/phenomenon-megan-crossland-thinkthin.png"),
-          "href": "#!/work/think-thin/"
+          "href": "#!/work/think-thin/",
+          "sref": "work/think-thin/"
         },
       ],
       "contributorsMore": [
@@ -270,7 +273,8 @@ var copy =
           "legend": "Sport / Lifestyle",
           "headline": "From Federer By Federer.",
           "description": "Tennis legend includes a personal touch with launch of his first co-designed racket.",
-          "readmoreUrl": "#!/work/federer/"
+          "readmoreUrl": "#!/work/federer/",
+          "sref": "work/federer/"
         },
         {
           "type": "image",
@@ -279,7 +283,8 @@ var copy =
           "legend": "Healthcare / B2B",
           "headline": "Aetna Brings Out Medicare&#8217;s Potential.",
           "description": "Healthcare giant takes a more human approach with B2B initiative.",
-          "readmoreUrl": "#!/work/aetna-potential/"
+          "readmoreUrl": "#!/work/aetna-potential/",
+          "sref": "work/aetna-potential/"
         },
         {
           "type": "image",
@@ -291,7 +296,8 @@ var copy =
           "citeName": "By Amy Weisenbach",
           "citeTitle": "VP Marketing, Wilson",
           "description": "New 360-degree global campaign for 100-year-old company.",
-          "readmoreUrl": "#!/work/wilson-anthem/"
+          "readmoreUrl": "#!/work/wilson-anthem/",
+          "sref": "work/wilson-anthem/"
         },
         {
           "type": "image",
@@ -303,7 +309,8 @@ var copy =
           "citeName": "By Matt Stringer",
           "citeTitle": "EVP Marketing, Tailored Brands",
           "description": "After the departure of longtime owner and face of brand, company looks to modernize all the way down to the cufflinks.",
-          "readmoreUrl": "#!/work/mens-wearhouse/"
+          "readmoreUrl": "#!/work/mens-wearhouse/",
+          "sref": "work/mens-wearhouse"
 
         },
         {
@@ -316,7 +323,8 @@ var copy =
           "citeName": "By Megan Crossland",
           "citeTitle": "Sr. Director of Marketing, thinkThin",
           "description": "Nutritional bar targeted to women launches its first campaign using humor to rave reviews online.",
-          "readmoreUrl": "#!/work/think-thin/"
+          "readmoreUrl": "#!/work/think-thin/",
+          "sref": "work/think-thin/"
 
         },
         {
@@ -329,7 +337,8 @@ var copy =
           "citeName": "By Amy Weisenbach",
           "citeTitle": "VP Marketing, Wilson",
           "description": "For the first time a basketball is connected to your smartphone to track makes, misses and enhance performance.",
-          "readmoreUrl": "#!/work/wilson-x/"
+          "readmoreUrl": "#!/work/wilson-x/",
+          "sref": "work/wilson-x/"
         }
       ]
     },
