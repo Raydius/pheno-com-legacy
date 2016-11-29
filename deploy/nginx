@@ -1,0 +1,14 @@
+#!/bin/bash
+
+export OUTPUT_HOST="http://localhost"
+export OUTPUT_PORT=8000
+export OUTPUT_DIR="public-staging"
+export NODE_ENV="production"
+
+echo Building directory ./${OUTPUT_DIR} for ${OUTPUT_HOST}:${OUTPUT_PORT}
+
+./node_modules/.bin/webpack --progress
+
+echo Running NGINX via Docker...
+
+docker run --name pheno-com-nginx --rm -p 8000:80 -v "$PWD"/public-staging:/usr/share/nginx/html:ro -v "$PWD"/nginx/nginx.conf:/etc/nginx/nginx.conf:ro nginx
