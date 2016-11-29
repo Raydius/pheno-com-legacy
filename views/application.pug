@@ -14,21 +14,20 @@ section.row.no-padding.culture.job-posting
 
     span.fill-it Fill out the form below
     form(name="userForm" ng-submit="submitForm()" novalidate)
+      button.btn.btn-default.attach-res(type="submit") Attach Resume
       .form-group( ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }")
-        button.btn.btn-default.attach-res(type="submit") Attach Resume
         input(type='text' ng-model="user.name" name='name' placeholder='Full Name *' required ng-model-options="{ debounce: 1500 }")
         p.help-block( ng-show='userForm.name.$invalid && !userForm.name.$pristine') If you really don't have a name, we'd love to meet you.
       .form-group( ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }")
-        input(type='email' name='email' placeholder='Email *' ng-model='user.email' required)
+        input(type='email' name='email' placeholder='Email *' ng-model='user.email' required ng-model-options="{ debounce: 1500 }")
         p.help-block( ng-show='userForm.email.$invalid && !userForm.email.$pristine') How can we tell you you're hired without an email address?
       .form-group( ng-class="{ 'has-error' : userForm.phone.$invalid && !userForm.phone.$pristine} ")
-        input(type='text' name='phone' placeholder='Phone Number *' ng-model='user.phone' ng-minlength="10" ng-maxlength="10" ng-required='true')
+        input(type='text' name='phone' placeholder='Phone Number *' ng-model='user.phone' ng-minlength="10" ng-maxlength="10" ng-required='true' ng-model-options="{ debounce: 1500 }")
         p.help-block( ng-show='userForm.phone.$invalid && !userForm.phone.$pristine') Please provide us with a number we can use to reach out to you.
       .form-group
         input(type='text' name='Website / Online Portfolio' placeholder='Website / Online Portfolio' ng-model='user.website')
-      .form-group(ng-class="{ has-error : userForm.linkedin.$invalid && !userForm.linkedin.$pristine} ")
-        input(type='text' name='linkedin' placeholder='LinkedIn Profile' ng-model='user.linkedin' required)
-        p.help-block( ng-show='userForm.linkedin.$invalid && !userForm.linkedin.$pristine') We'd love to connect on LinkedIn!
+      .form-group
+        input(type='text' name='linkedin' placeholder='LinkedIn Profile' ng-model='user.linkedin')
       .form-group
         input(type='text' name='Anything Else?' placeholder='Is there anything else you would like us to know?')
 
