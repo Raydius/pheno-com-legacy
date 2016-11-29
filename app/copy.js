@@ -267,7 +267,7 @@ var copy =
           "type": "image",
           "image": true,
           "imageUrl": require('assets/images/federer-work-image.jpg'),
-          "legend": "Sports / Lifestyle",
+          "legend": "Sport / Lifestyle",
           "headline": "From Federer By Federer.",
           "description": "Tennis legend includes a personal touch with launch of his first co-designed racket.",
           "readmoreUrl": "#!/work/federer/"
@@ -353,7 +353,7 @@ var copy =
           "imageUrl": require("assets/images/federer-image.jpg"),
           "imageAlt": "Federer",
           "mainDescription": [
-            'To announce the arrival of the new RF97 Phenomenon developed an integrated campaign led by a black-an-white film called "From Federer". The film features top junior players, Federer himself, and a handwritten note from Roger that plays a central role in the rest of the campaign. In the letter, Fed writes about the type of players he designed the racket for: Ones who push harder, play faster, and are obsessed with the game. Players who look at him not as someone to emulate, but someone to one day eclipse.',
+            'To announce the arrival of the new RF97 Phenomenon developed an integrated campaign led by a black-an-white film called "From Federer". The film features top junior players, Federer himself, and a handwritten note from Roger that plays a central role in the rest of the campaign. In the letter, Fed writes about the type of players he designed the racket for: the ones who push harder, play faster, and are obsessed with the game. Players who look at him not as someone to emulate, but someone to one day eclipse.',
             "<span class='red'>The film features top junior players, Federer himself, and a handwritten note from Roger that plays a central role in the rest of the campaign.</span>"
           ]
         },
@@ -383,7 +383,7 @@ var copy =
       ],
       "fromTopContentDescription": [
 
-        "When it came time to reveal the RF97 to the world, Roger passionately discussed his inspiration, the racket's details and what co-designing a racket with Wilson -- the company he's been with from the beginning meant to him. Reactions to the new RF97 from the press, blogosphere and most importantly, tennis players around the world have been overwhelmingly positive and it is already making a significant impact on this global game."
+        "When it came time to reveal the RF97 to the world, Roger passionately discussed his inspiration, the racket's details and what co-designing a racket with Wilson -- the company he's been with from the beginning -- meant to him. <br><br> Reactions to the new RF97 from the press, blogosphere and most importantly, tennis players around the world have been overwhelmingly positive and it is already making a significant impact on this global game."
 
       ],
       "detailcontent": [
