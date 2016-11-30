@@ -310,7 +310,7 @@ var copy =
           "citeTitle": "EVP Marketing, Tailored Brands",
           "description": "After the departure of longtime owner and face of brand, company looks to modernize all the way down to the cufflinks.",
           "readmoreUrl": "#!/work/mens-wearhouse/",
-          "sref": "work/mens-wearhouse"
+          "sref": "work/mens-wearhouse/"
 
         },
         {

@@ -1,7 +1,11 @@
 
 var angular = require('angular');
 
-angular.module('phenoCom').controller('phenoController', function($state, $scope, $cookies) {
+// main global controller
+angular.module('phenoCom').controller('phenoController', function($state, $scope, $cookies, envService) {
+
+    $scope.baseUrl = envService.read('baseUrl');
+
     // temporary onload solution to hide unstyle content for now
     // don't forgot to remove display: none in layout.jade
 

@@ -23,6 +23,7 @@ function defaultMetaTags(UIRouterMetatagsProvider) {
 
 angular.module('phenoCom').config(function($sceDelegateProvider, envServiceProvider) {
 
+  // whitelist for CORS
   $sceDelegateProvider.resourceUrlWhitelist([
     'self',
     'http://tech.phenomenonstaging.com/**',
@@ -30,39 +31,36 @@ angular.module('phenoCom').config(function($sceDelegateProvider, envServiceProvi
     'https://vimeo.com/**'
   ]);
 
-  envServiceProvider.config(
-    {
-      domains: {
+  // define environment-specific vars
+  envServiceProvider.config({
+    domains: {
       local: ['localhost', '127.0.0.1'],
       staging: ['tech.phenomenonstaging.com'],
       production: ['latest.phenomenon.com','phenomenon.com']
     },
     vars: {
-
+      local: {
+          baseUrl: '//localhost'
+      },
+      staging: {
+          baseUrl: '//tech.phenomenonstaging.com:2070'
+      },
+      production: {
+          baseUrl: '//phenomenon.com'
+      }
     }
 
   });
+
+  // run the environment check to recall the correct set of vars
+  envServiceProvider.check();
 
 });
 
 angular.module('phenoCom').config(['UIRouterMetatagsProvider', defaultMetaTags]);
 
-// remove html5 mode for now since we need to deal with rewrite problem in server side
-// also remove base(href="/") in layout.jade
 
-/*angular.module('phenoCom').config(function($locationProvider) {
-    $locationProvider.html5Mode(true);
-});*/
-
-angular.module('phenoCom').config([  
-    '$locationProvider',
-    function($locationProvider) {
-        $locationProvider.hashPrefix('!');
-    }
-]);
-
-
-// html render filter
+// html render filter for recalling HTML-formatted blog entries
 angular.module('phenoCom').filter('toTrusted', ['$sce', function($sce) {
 
     return function(text) {

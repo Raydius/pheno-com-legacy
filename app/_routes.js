@@ -103,6 +103,9 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                     'og:description': 'phenomenon - Innovations Company - client work, projects, media - Aetna',
                     'og:image': require('assets/images/aetna/aetna-thumb.jpg')
                 }
+            },
+            data: {
+				shareUrl: 'http://phenomenon.com/work/aetna-potential/'
             }
         })
         .state('work/federer/', {
@@ -118,6 +121,9 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                     'og:description': 'phenomenon - Innovations Company - client work, projects, media - Federer',
                     'og:image': require('assets/images/federer-work-image.jpg')
                 }
+            },
+            data: {
+				shareUrl: 'http://phenomenon.com/work/federer/'
             }
         })
         .state('work/wilson-anthem/', {
@@ -133,6 +139,9 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                     'og:description': 'phenomenon - Innovations Company - client work, projects, media - Wilson',
                     'og:image': require('assets/images/work-1.jpg')
                 }
+            },
+            data: {
+                shareUrl: 'http://phenomenon.com/work/wilson-anthem/'
             }
         })
 
@@ -149,6 +158,9 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                     'og:description': 'phenomenon - Innovations Company - client work, projects, media - Wilson X',
                     'og:image': require('assets/images/work-4.png')
                 }
+            },
+            data: {
+				shareUrl: 'http://phenomenon.com/work/wilson-x/'
             }
         })
 
@@ -165,6 +177,9 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                     'og:description': 'phenomenon - Innovations Company - client work, projects, media - Xome',
                     'og:image': require('assets/images/work-2.jpg')
                 }
+            },
+            data: {
+				shareUrl: 'http://phenomenon.com/work/xome/'
             }
         })
 
@@ -181,10 +196,13 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                     'og:description': 'phenomenon - Innovations Company - client work, projects, media - Men\'s Wearhouse',
                     'og:image': require('assets/images/work-3.jpg')
                 }
+            },
+            data: {
+				shareUrl: 'http://phenomenon.com/work/mens-wearhouse/'
             }
         })
 
-        .state('work/think-thin', {
+        .state('work/think-thin/', {
             url: '/work/think-thin/',
             template: templateWorkThinkThin,
              metaTags: {
@@ -197,47 +215,9 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                     'og:description': 'phenomenon - Innovations Company - client work, projects, media - think Thin',
                     'og:image': require('assets/images/work-6.jpg')
                 }
-            }
-        })
-
-        .state('work/sls/', {
-            url: '/work/sls-hide/',
-            template: templateWorkSLS,
-            data: {
-                pageShareImg: require('assets/images/work-1.jpg')
-
-            }
-        })
-
-        .state('work/sunny/', {
-            url: '/work/sunny-hide/',
-            template: templateWorkSunny,
-            data: {
-                pageShareImg: require('assets/images/work-1.jpg')
-
-            }
-        })
-
-        .state('work/cooper/', {
-            url: '/work/cooper-hide/',
-            template: templateWorkCooper,
-            data: {
-                pageShareImg: require('assets/images/work-1.jpg')
             },
-            metaTags: {
-                title: 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation',
-                description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
-                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
-            }
-        })
-
-        .state('entertainment/', {
-            url: '/entertainment-hide/',
-            template: templateEntertainment,
-            metaTags: {
-                title: 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation',
-                description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
-                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
+            data: {
+				shareUrl: 'http://phenomenon.com/work/think-thin/'
             }
         })
 
