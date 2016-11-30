@@ -10,7 +10,7 @@ section.row.no-padding.work.work-landing
 			blockquote!= pageData.blockquote
 		include components/cite-components
 	each contentItem in pageData.subcontent
-		a(ui-sref=contentItem.sref)
+		a(href=contentItem.readmoreUrl)
 			article.col-md-12.no-padding.cf.allcases
 				.col-xs-12.col-sm-12.col-md-8.no-padding
 					if contentItem.image
@@ -28,4 +28,4 @@ section.row.no-padding.work.work-landing
 						div.line
 						p!= contentItem.description
 
-						a.red(ui-sref=contentItem.sref) Read more &gt;
+						a.red(href=contentItem.readmoreUrl) Read more &gt;

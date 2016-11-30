@@ -92,4 +92,10 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
 
     });
 
+	$rootScope.$on('$stateChangeError', function (event, toState, toParams, fromState, fromParams, error) {
+		event.preventDefault();
+		$state.get('error').error = { code: 123, description: 'Exception stack trace' }
+		return $state.go('error');
+	});
+
 });
