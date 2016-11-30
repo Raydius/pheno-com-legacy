@@ -26,6 +26,7 @@ var templateJobs = require('views/jobs.pug');
 var templateBlog = require('views/blog.pug');
 var templateBlogPostSingle = require('views/blog-post-single.pug');
 var templateError = require('views/404.pug');
+var templateThanks = require('views/thanks.pug');
 var templateJob = require('views/job.pug');
 var templateApplication = require('views/application.pug');
 
@@ -305,11 +306,15 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             controller: 'blogPostController'
         })
         .state('error', {
-            url: '/error',
+            url: '/error/',
             template: templateError,
         })
+        .state('thank-you', {
+            url: '/thank-you/',
+            template: templateThanks,
+        })
         .state('job', {
-            url: '/job',
+            url: '/job/',
             template: templateJob,
             ncyBreadcrumb: {
             label: 'job name'

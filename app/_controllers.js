@@ -282,12 +282,13 @@ angular.module('phenoCom').controller('blogPostController', function($scope, $st
 
 });
 
-angular.module('phenoCom').controller('applicationFormController', function($scope) {
+angular.module('phenoCom').controller('applicationFormController', function($scope, $state, $stateParams) {
 
 		$scope.submitForm = function() {
 
 			if ($scope.userForm.$valid) {
-				alert('our form is amazing');
+				// alert('our form is amazing');
+        $state.go('thank-you')
 			}
 
 		};

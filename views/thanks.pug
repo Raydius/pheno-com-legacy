@@ -1,0 +1,15 @@
+block variables
+- copy = require('app/copy.js')
+- page = "thanks"
+- pageData = copy.content[page]
+
+section.row.no-padding.culture.job-posting
+section.row.no-padding.culture
+  .col-md-12.error-container.animated.lightSpeedIn
+    .col-md-6.stuck-cont
+      .stuck Thank you!
+      .thanks-message We really appreciate you taking time out of your day to fill out an application and share your work with us. We'll be in touch if your skills meet our requirements.
+      .thanks-message Keep being awesome.
+      br
+      a(ui-sref="work")
+        h4.red#getmeout Take me back >
