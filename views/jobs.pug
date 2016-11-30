@@ -10,10 +10,17 @@ section.row.no-padding.jobs
 		article.col-xs-12.col-md-5.no-padding.jobs-fig
 			figure.jobs-figure
 				img(src=require('assets/images/jobs/jobs1.png'))
+				figcaption.pheno-job-perks
+					h3.pheno-perks Pheno Work Perks
+					p.pheno-perks-description In addition to offering a comprehensive benefits package -- including medical, dental, and vision coverage -- Phenomenon also offers up to 12 weeks of paid parental leave and an open Paid Time Off policy to all full-time regular employees.
 		article.col-md-7.jobs-header
 			h2
 				blockquote!= pageData.blockquote
-		article.col-xs-12.col-sm-12.col-md-6.col-sm-offset-0.no-padding
+
+			b.quote-by - Alison Cornia
+			p.quote-by &nbsp; / SVP Marketing, Xome
+
+		article.col-xs-12.col-sm-12.col-md-6.col-sm-offset-0.no-padding.jobs-list
 
 			ul
 				.department(ng-repeat="department in jobs.departments")

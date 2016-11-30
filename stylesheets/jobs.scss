@@ -12,15 +12,18 @@
 		h2 {
 			margin-top: $base-spacing*2;
 			margin-left: 20px;
+			margin-bottom: 0px;
 			@media screen and (max-width: 640px) {
 				margin-left: 0;
 				padding-top: 30px;
 				text-align: center;
 			}
 
-			blockquote {
-				font-size: 30px;
-				line-height: 42px;
+		blockquote {
+			font-size: 30px;
+			line-height: 37px;
+			text-align: left;
+			display: inline-block;
 				@media screen and (max-width: 640px) {
 					font-size: 28px;
 					line-height: 34px;
@@ -60,7 +63,7 @@
 	}
 
 	ul {
-		margin-top: $base-spacing*2 - 40;
+		margin-top: 108px;
 		margin-left: 0;
 		padding: 0 20px;
 		@media screen and (max-width: 640px) {
@@ -204,7 +207,7 @@ li.breadcrumb-current {
 figure.jobs-figure {
     background: #f2f2f2;
     text-align: center;
-    padding-bottom: 254px;
+    padding-bottom: 0;
     padding-top: 200px;
     margin-top: 240px;
     z-index: -1;
@@ -212,10 +215,112 @@ figure.jobs-figure {
 
 
 .jobs-fig {
-    margin-left: -60px;
+    margin-left: -100px;
     margin-right: 30px;
 }
 
 .top-main.noline {
 	border-bottom: none !important;
+}
+
+p.quote-by {
+    font-family: "circular-book";
+    color: #7f7f7f;
+    font-size: 18px;
+}
+
+p.pheno-perks-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 26px;
+    text-align: left;
+    font-size: 17px;
+    margin-left: 25px;
+}
+
+figcaption.pheno-job-perks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+h3.pheno-perks {
+    text-align: left;
+    margin-left: 50px;
+    font-size: 32px;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 70px;
+}
+
+.jobs > ul {
+	margin-top: -15px !important;
+    margin-left: 0;
+    padding: 0 20px;
+}
+
+b.quote-by {
+	display: inline;
+    color: #7f7f7f;
+    position: relative;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+p.quote-by {
+    display: inline;
+}
+
+@media (max-width: 991px){
+
+.jobs .top-main h2 blockquote {
+    font-size: 30px;
+    line-height: 37px;
+    text-align: left;
+    display: inline-block;
+    margin-top: 80px;
+}
+
+h3.pheno-perks {
+    text-align: center;
+    margin-left: 0px;
+    font-size: 32px;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 70px;
+	}
+
+	.jobs-fig {
+    margin-left: -30px;
+    margin-right: 30px;
+	}
+
+}
+@media (max-width: 640px){
+
+h3.pheno-perks {
+    text-align: left;
+    margin-left: 50px;
+    font-size: 32px;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 70px;
+	}
+
+	figure.jobs-figure {
+    background: #f2f2f2;
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 0px;
+    margin-top: 0px;
+    z-index: -1;
+}
+
+	.jobs-fig {
+    margin-left: 0px;
+    margin-right: 30px;
+	}
+
 }
