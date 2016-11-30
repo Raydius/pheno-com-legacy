@@ -49,7 +49,8 @@
 
 			img {
 				@media screen and (max-width: 640px) {
-					margin-left: 0;
+				margin-left: 15px;
+				margin-top: -160px;
 				}
 			}
 		}
@@ -59,7 +60,10 @@
 	margin-top: -414px;
     margin-left: 20px;
     z-index: 2;
-    width: 90%;
+    width: 91%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	}
 
 	ul {
@@ -302,7 +306,7 @@ h3.pheno-perks {
 
 h3.pheno-perks {
     text-align: left;
-    margin-left: 50px;
+    margin-left: 25px;
     font-size: 32px;
     color: black;
     margin-bottom: 10px;
@@ -313,14 +317,43 @@ h3.pheno-perks {
     background: #f2f2f2;
     text-align: center;
     padding-bottom: 0;
-    padding-top: 0px;
-    margin-top: 0px;
+    padding-top: 10px;
+    margin-top: 150px;
     z-index: -1;
 }
 
 	.jobs-fig {
     margin-left: 0px;
     margin-right: 30px;
+	}
+
+}
+@media (max-width: 400px){
+
+h3.pheno-perks {
+    text-align: left;
+    margin-left: 25px;
+    font-size: 32px;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 70px;
+	}
+
+	figure.jobs-figure {
+    background: #f2f2f2;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    margin-top: 120px;
+    z-index: -1;
+}
+
+	.jobs-fig {
+    margin-left: 0px;
+    margin-right: 30px;
+    padding: 0px !important;
+    padding-top: 130px !important;
+    margin-top: -100px;
 	}
 
 }
