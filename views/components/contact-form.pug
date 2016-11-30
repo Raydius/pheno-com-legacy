@@ -2,40 +2,40 @@ section.contact
 	h2 Contact Us
 	form(name="contactForm", method="post", enctype="multipart/form-data", novalidate, ng-submit="sendData()")
 		.row
-			.form-group.col-xs.12.col-sm-6(ng-class="{'has-error': contactForm.firstName.$invalid && contactForm.firstName.attempted }")
+			.form-group.col-xs-12.col-sm-6(ng-class="{'has-error': contactForm.firstName.$invalid && contactForm.firstName.attempted }")
 				label(for="firstName").hidden First Name:
 				input(type="text", id="firstName", name="firstName", placeholder="First Name", ng-model="data.firstName", required="true", ng-blur="setAttempted(contactForm.firstName)")
 				.help-block(ng-show="contactForm.firstName.attempted" ng-messages="contactForm.firstName.$error", role="alert")
 					div(ng-message="required") Required Field
-			.form-group.col-xs.12.col-sm-6(ng-class="{'has-error': contactForm.lastName.$invalid && contactForm.lastName.attempted }")
+			.form-group.col-xs-12.col-sm-6(ng-class="{'has-error': contactForm.lastName.$invalid && contactForm.lastName.attempted }")
 				label(for="lastName").hidden Last Name:
 				input(type="text", id="lastName", name="lastName", placeholder="Last Name", ng-model="data.lastName", required="true", ng-blur="setAttempted(contactForm.lastName)")
 				.help-block(ng-show="contactForm.lastName.attempted" ng-messages="contactForm.lastName.$error", role="alert")
 					div(ng-message="required") Required Field
 		.row
-			.form-group.col-xs.12.col-sm-6(ng-class="{'has-error': contactForm.email.$invalid && contactForm.email.attempted }")
+			.form-group.col-xs-12.col-sm-6(ng-class="{'has-error': contactForm.email.$invalid && contactForm.email.attempted }")
 				label(for="email").hidden Email:
 				input(type="email", id="email", name="email", placeholder="Email", ng-model="data.email", required="true", ng-blur="setAttempted(contactForm.email)")
 				.help-block(ng-show="contactForm.email.attempted" ng-messages="contactForm.email.$error", role="alert")
 					div(ng-message="required") Required Field
 					div(ng-message="email") Invalid Email Address
-			.form-group.col-xs.12.col-sm-6
+			.form-group.col-xs-12.col-sm-6
 				label(for="phone").hidden Phone Number:
 				input(type="text", id="phone", placeholder="Phone Number", ng-model="data.phone")
 		.row
-			.form-group.col-xs.12.col-sm-6
+			.form-group.col-xs-12.col-sm-6
 				label(for="portfolioUrl").hidden Portfolio URL:
 				input(type="text", id="portfolioUrl", placeholder="Portfolio URL", ng-model="data.portfolioUrl")
-			.form-group.col-xs.12.col-sm-6
+			.form-group.col-xs-12.col-sm-6
 				label(for="linkedin").hidden LinkedIn Profile:
 				input(type="text", id="linkedin", placeholder="LinkedIn Profile", ng-model="data.linkedin")
 		.row
-			.form-group.col-xs.12.col-sm-6.input-file
+			.form-group.col-xs-12.col-sm-6.input-file
 				h4 Attach Resume
 				input(type="file", id="resume", name="resume", file-model="resume", placeholder="Attach Resume", accept=".txt,application/zip,application/msword,application/pdf,image/*,")
 				label(for="resume", ng-bind="data.labels.resume") Resume
 
-			.form-group.col-xs.12.col-sm-6.input-file
+			.form-group.col-xs-12.col-sm-6.input-file
 				h4 Attach Cover Letter
 				input(type="file", id="coverletter", name="coverletter", file-model="coverletter", placeholder="Attach Cover Letter", accept=".txt,application/zip,application/msword,application/pdf,image/*,")
 				label(for="coverletter", ng-bind="data.labels.coverletter") Cover Letter

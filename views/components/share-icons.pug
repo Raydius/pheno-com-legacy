@@ -13,4 +13,4 @@ ul.social-icons
 			li.social-icon
 				a.icon-linkedin.icon(socialshare socialshare-provider="linkedin" socialshare-text="#phenomenon" socialshare-hashtags="#phenomenon" socialshare-url="{{shareUrl}}", socialshare-popup-height="600" socialshare-popup-width="500")
 			li.social-icon
-				a.icon-mail.icon(href="mailto:"+'?subject={{MetaTags.title}}' + '&body=Check out this link from Phenomenon.com!{{shareUrl}}')
+				a.icon-mail.icon(socialshare socialshare-provider="email" socialshare-subject="{{Metatags.title}}" socialshare-body="Check out this link from Phenomenon.com!")

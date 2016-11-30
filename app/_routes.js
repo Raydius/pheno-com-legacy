@@ -112,7 +112,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 				}
 			},
 			data: {
-				shareUrl: ''
+				shareUrl: 'link'
 			}
 
         })
