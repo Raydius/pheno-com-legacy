@@ -6,13 +6,14 @@ block variables
 
 // title and body copy
 section.row.no-padding.jobs
-	.top-main
-		article.col-md-5
-			img(src=require('assets/images/jobs/jobs1.png'))
+	.top-main.noline
+		article.col-xs-12.col-md-5.no-padding.jobs-fig
+			figure.jobs-figure
+				img(src=require('assets/images/jobs/jobs1.png'))
 		article.col-md-7.jobs-header
 			h2
 				blockquote!= pageData.blockquote
-		article.col-xs-12.col-sm-12.col-md-12.col-sm-offset-0.no-padding
+		article.col-xs-12.col-sm-12.col-md-6.col-sm-offset-0.no-padding
 
 			ul
 				.department(ng-repeat="department in jobs.departments")
