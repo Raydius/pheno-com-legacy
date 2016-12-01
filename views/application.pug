@@ -14,7 +14,9 @@ section.row.no-padding.culture.job-posting(ng-controller="applicationFormControl
 
     span.fill-it Fill out the form below
     form(name="userForm" ng-submit="submitForm()" novalidate)
-      button.btn.btn-default.attach-res(type="submit") Attach Resume
+      button.btn.btn-default.attach-res(ng-click="uploadFile()") Attach Resume
+      input.upload(type="file" file-model="myFile")
+      .resume-attached-hidden.red Resume attached.
       .form-group( ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }")
         input(type='text' ng-model="user.name" name='name' placeholder='Full Name *' required ng-model-options="{ debounce: 1500 }")
         p.help-block( ng-show='userForm.name.$invalid && !userForm.name.$pristine') If you really don't have a name, we'd love to meet you.

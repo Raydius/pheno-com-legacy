@@ -306,7 +306,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             controller: 'blogPostController'
         })
         .state('error', {
-            url: '/error/',
+            url: '/error',
             template: templateError,
         })
         .state('thank-you', {
@@ -314,7 +314,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             template: templateThanks,
         })
         .state('job', {
-            url: '/job/',
+            url: '/job',
             template: templateJob,
             ncyBreadcrumb: {
             label: 'job name'

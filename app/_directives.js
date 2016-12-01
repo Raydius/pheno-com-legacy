@@ -186,31 +186,31 @@ angular.module('phenoCom').directive('scrollableComponent', function($window) {
 
 
 // use this directive to bring file data into controller scope
-angular.module('phenoCom').directive('fileModel', ['$parse', function ($parse) {
-    return {
-        restrict: 'A',
-        link: function(scope, element, attr) {
-            var model = $parse(attr.fileModel);
-            var modelSetter = model.assign;
-
-            element.bind('change', function(){
-                scope.$apply(function(){
-
-                    // make file available in scope
-                    modelSetter(scope, element[0].files[0]);
-
-                    // update the H4 (pseudo-field)
-                    var fileName = jQuery('#'+attr.id).val().split('\\').pop();
-                    scope.data.labels[attr.id] = scope.data.fields[attr.id] + ' Attached: ' + fileName;
-
-                    // fire off GA event tracker
-                    ga('send', 'event', 'upload', 'attach', scope.data.ga[attr.id]);
-                });
-
-            });
-        }
-    };
-}]);
+// angular.module('phenoCom').directive('fileModel', ['$parse', function ($parse) {
+//     return {
+//         restrict: 'A',
+//         link: function(scope, element, attr) {
+//             var model = $parse(attr.fileModel);
+//             var modelSetter = model.assign;
+//
+//             element.bind('change', function(){
+//                 scope.$apply(function(){
+//
+//                     // make file available in scope
+//                     modelSetter(scope, element[0].files[0]);
+//
+//                     // update the H4 (pseudo-field)
+//                     var fileName = jQuery('#'+attr.id).val().split('\\').pop();
+//                     scope.data.labels[attr.id] = scope.data.fields[attr.id] + ' Attached: ' + fileName;
+//
+//                     // fire off GA event tracker
+//                     ga('send', 'event', 'upload', 'attach', scope.data.ga[attr.id]);
+//                 });
+//
+//             });
+//         }
+//     };
+// }]);
 
 angular.module('phenoCom').directive('blogPost', function(){
 
@@ -242,6 +242,38 @@ angular.module('phenoCom').directive('blogHeader', function(){
   };
 
 });
+
+angular.module('phenoCom').directive('fileModel', ['$parse', function ($parse) {
+    return {
+        restrict: 'A',
+        link: function(scope, element, attrs) {
+            var model = $parse(attrs.fileModel);
+            var modelSetter = model.assign;
+
+            element.bind('change', function(){
+                scope.$apply(function(){
+                    modelSetter(scope, element[0].files[0]);
+                });
+            });
+        }
+    };
+}]);
+
+angular.module('phenoCom').service('fileUpload', ['$http', function ($http) {
+    this.uploadFileToUrl = function(file, uploadUrl){
+        var fd = new FormData();
+        fd.append('file', file);
+        $http.post(uploadUrl, fd, {
+            transformRequest: angular.identity,
+            headers: {'Content-Type': undefined}
+        })
+        .success(function(){
+          $('.resume-attached-hidden').toggleClass('resume-attached')
+        })
+        .error(function(){
+        });
+    }
+}]);
 
 
 /*// handle page title changes on state change

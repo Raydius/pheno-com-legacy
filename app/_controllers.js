@@ -282,7 +282,16 @@ angular.module('phenoCom').controller('blogPostController', function($scope, $st
 
 });
 
-angular.module('phenoCom').controller('applicationFormController', function($scope, $state, $stateParams) {
+angular.module('phenoCom').controller('applicationFormController', ['$scope', 'fileUpload', function($scope, fileUpload, $state) {
+
+  $scope.attachResume = function(){
+
+    var file = $scope.myFile;
+       console.log('file is ' );
+       console.dir(file);
+       var uploadUrl = "/fileUpload";
+       fileUpload.uploadFileToUrl(file, uploadUrl);
+  }
 
 		$scope.submitForm = function() {
 
@@ -293,4 +302,17 @@ angular.module('phenoCom').controller('applicationFormController', function($sco
 
 		};
 
-	});
+	}]);
+
+//
+//   angular.module('phenoCom').controller('formController', ['$scope', 'fileUpload', function($scope, fileUpload){
+//
+//     $scope.uploadFile = function(){
+//         var file = $scope.myFile;
+//         console.log('file is ' );
+//         console.dir(file);
+//         var uploadUrl = "/fileUpload";
+//         fileUpload.uploadFileToUrl(file, uploadUrl);
+//     };
+//
+// }]);
