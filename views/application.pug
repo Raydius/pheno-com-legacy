@@ -18,10 +18,10 @@ section.row.no-padding.culture.job-posting(ng-controller="applicationFormControl
       input.upload(type="file" file-model="myFile")
       .resume-attached-hidden.red Resume attached.
       .form-group( ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }")
-        input(type='text' ng-model="user.name" name='name' placeholder='Full Name *' required ng-model-options="{ debounce: 1500 }")
+        input(type='text' ng-model="user.name" name='name' placeholder='Full Name *' required ng-model-options="{ 'updateOn': 'blur' }")
         p.help-block( ng-show='userForm.name.$invalid && !userForm.name.$pristine') If you really don't have a name, we'd love to meet you.
       .form-group( ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }")
-        input(type='email' name='email' placeholder='Email *' ng-model='user.email' required ng-model-options="{ debounce: 1500 }")
+        input(type='email' name='email' placeholder='Email *' ng-model='user.email' required ng-model-options="{ 'updateOn': 'blur' }")
         p.help-block( ng-show='userForm.email.$invalid && !userForm.email.$pristine') How can we tell you you're hired without an email address?
       .form-group( ng-class="{ 'has-error' : userForm.phone.$invalid && !userForm.phone.$pristine} ")
         input(type='text' name='phone' placeholder='Phone Number *' ng-model='user.phone' ng-minlength="10" ng-maxlength="14" ng-required='true' ng-model-options="{ debounce: 1500 }")
