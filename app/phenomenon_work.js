@@ -42,7 +42,8 @@ angular.module('phenoCom',[
     'ngCookies',
     'ui.router.metatags',
     'ngMessages',
-    '720kb.socialshare' 
+    '720kb.socialshare',
+    'scroll-animate-directive' 
 ]);
 
 

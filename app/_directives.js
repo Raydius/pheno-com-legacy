@@ -244,6 +244,7 @@ angular.module('phenoCom').directive('blogHeader', function(){
 });
 
 
+
 /*// handle page title changes on state change
 angular.module('phenoCom').directive('updateTitle', ['$rootScope', '$timeout',
     function($rootScope, $timeout) {
