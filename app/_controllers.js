@@ -285,3 +285,69 @@ angular.module('phenoCom').controller('blogPostController', function($scope, $st
     });
 
 });
+
+angular.module('phenoCom').controller('scrollController', function(){
+
+
+  function getXY(evt) {
+      var element = document.getElementById('culture-animate-1');  //replace elementId with your element's Id.
+      var rect = element.getBoundingClientRect();
+      var scrollTop = document.documentElement.scrollTop?
+                      document.documentElement.scrollTop:document.body.scrollTop;
+      var scrollLeft = document.documentElement.scrollLeft?
+                      document.documentElement.scrollLeft:document.body.scrollLeft;
+      var elementLeft = rect.left+scrollLeft;
+      var elementTop = rect.top+scrollTop;
+
+          if (document.all){ //detects using IE
+              x = event.clientX+scrollLeft-elementLeft; //event not evt because of IE
+              y = event.clientY+scrollTop-elementTop;
+          }
+          else{
+            $('#culture-animate-2').animate({'opacity': '1'},1500).addClass('animated').addClass('slideInLeft')
+            $('#culture-animate-2-quote').animate({'opacity': '1'},1500).addClass('animated').addClass('slideInRight')
+              x = event.pageX-elementLeft;
+              y = event.pageY-elementTop;
+
+
+      }
+    }
+
+
+
+
+            $('#culture-animate-1').mousemove(function(e){
+                var m = getXY(e, this);
+                console.log(m.x, m.y);
+            });
+
+$(window).bind('mousewheel', function(event) {
+
+    var x = event.clientX;
+    var y = event.clientY;
+    var coords = "X coords: " + x + ", Y coords: " + y;
+    // console.log(coords)
+
+  // var scrollPos = $('.culture-animate-1').scrollTop(300)
+  // console.log(scrollPos)
+
+  if (event.originalEvent.wheelDelta <= 0) {
+
+
+  // work
+  $('.allcases').animate({'opacity': '1'},1500).addClass('animated').addClass('zoomIn')
+
+
+  // culture
+  $('#culture-animate-1').animate({'opacity': '1'},1500).addClass('animated').addClass('zoomIn')
+  // if (y > 400 && x > 230 ) {
+  //   $('.culture-animate-2').animate({'opacity': '1'},1500).addClass('animated').addClass('slideInLeft')
+  //   $('.culture-animate-2-quote').animate({'opacity': '1'},1500).addClass('animated').addClass('slideInRight')
+  // }
+
+}
+else {
+    console.log('Scroll up');
+}
+});
+})

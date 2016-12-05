@@ -369,7 +369,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": require("assets/images/wilson-federer-pro-staff-web-comp-edit.jpg"),
+          "imageUrl": require("assets/images/16-1291_RF97_Gift_Giveaway_Edited_Hi-Res_Image-edit.jpg"),
           "imageAlt": "Federer",
           "mainDescription": [
             "When it came time to reveal the RF97 to the world, Roger passionately discussed his inspiration, the racket's details and what co-designing a racket with Wilson -- the company he's been with from the beginning -- meant to him. ",
@@ -386,7 +386,11 @@ var copy =
             {
               "url": require("assets/images/Federer-Racket-2.jpg"),
               "alt": "Federer Image"
-            }
+            },
+            {
+              "url": require("assets/images/wilson-federer-pro-staff-web-comp-edit (1).jpg"),
+              "alt": "Federer Image"
+            },
           ]
         }
       ],
