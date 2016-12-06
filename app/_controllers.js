@@ -306,7 +306,7 @@ angular.module('phenoCom').controller('scrollController', function(){
     $('#culture-animate-7').animate({'opacity': '1'},4000).addClass('animated').addClass('slideInLeft')
     $('#culture-animate-6').animate({'opacity': '1'},4000).addClass('animated').addClass('fadeInUp')
   })
-  $('.culture-animate-last').mouseover(function(){
+  $('.culture-animate-last, #culture-animate-7, #culture-animate-8, #culture-animate-5').mouseover(function(){
     $('#culture-animate-8').animate({'opacity': '1'},2000).addClass('animated').addClass('fadeInLeft')
     $('#culture-animate-9').animate({'opacity': '1'},2000).addClass('animated').addClass('fadeInRight')
   })
@@ -339,17 +339,17 @@ angular.module('phenoCom').controller('scrollController', function(){
                 var m = getXY(e, this);
             });
 
-$(window).bind('mousewheel', function(event) {
-
-    var x = event.clientX;
-    var y = event.clientY;
-    var coords = "X coords: " + x + ", Y coords: " + y;
-
-  if (event.originalEvent.wheelDelta <= 0) {
-  $('#culture-animate-1').animate({'opacity': '1'},1500).addClass('animated').addClass('zoomIn')
-}
-  else {
-    console.log('Scroll up');
-    }
-  });
+// $(window).bind('mousewheel', function(event) {
+//
+//     var x = event.clientX;
+//     var y = event.clientY;
+//     var coords = "X coords: " + x + ", Y coords: " + y;
+//
+//   if (event.originalEvent.wheelDelta <= 0) {
+//   $('#culture-animate-1').animate({'opacity': '1'},1500).addClass('animated').addClass('zoomIn')
+// }
+//   else {
+//     console.log('Scroll up');
+//     }
+//   });
 })
