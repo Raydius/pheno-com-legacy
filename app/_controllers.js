@@ -61,6 +61,22 @@ angular.module('phenoCom').controller('homeController', function($state, $scope,
 
 });
 
+angular.module('phenoCom').controller('welcomeController', function($state, $scope, $window) {
+
+  $('.indie-agency').animate({
+    'opacity':'1',
+    'transition-delay':'1s'
+})
+setTimeout(function(){
+  $('.indie-minds').animate({
+    'opacity':'1',
+  },1000)
+
+},2500)
+
+});
+
+
 
 /**
  * Controller for Jobs Page
@@ -328,9 +344,6 @@ angular.module('phenoCom').controller('scrollController', function(){
           else {
             $('#culture-animate-2').animate({'opacity': '1'},1500).addClass('animated').addClass('slideInLeft')
             $('#culture-animate-2-quote').animate({'opacity': '1'},1500).addClass('animated').addClass('slideInRight')
-
-              // x = event.pageX-elementLeft;
-              // y = event.pageY-elementTop;
 
       }
     }
