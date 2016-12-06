@@ -287,9 +287,31 @@ angular.module('phenoCom').controller('blogPostController', function($scope, $st
 });
 
 angular.module('phenoCom').controller('scrollController', function(){
+  $('#culture-animate-1').mouseover(function(){
+    $('#culture-animate-2').css('left','0')
+  })
 
+  $('#culture-animate-2').mouseover(function(){
+    $('#culture-animate-3').animate({'opacity': '1'},2000)
+    $('#culture-animate-3-quote').animate({'opacity': '1'},2000)
+  })
+  $('#culture-animate-3').mouseover(function(){
+    $('#culture-animate-4').animate({'opacity': '1'},1400).addClass('animated').addClass('fadeInLeft')
+    $('#culture-animate-4-quote').animate({'opacity': '1'},2000).addClass('animated').addClass('slideInRight')
+  })
 
-  function getXY(evt) {
+  $('#culture-animate-4').mouseover(function(){
+    $('#culture-animate-5').animate({'opacity': '1'},1400).addClass('animated').addClass('fadeInLeft')
+    $('#culture-animate-5-quote').animate({'opacity': '1'},2500).addClass('animated').addClass('slideInRight')
+    $('#culture-animate-7').animate({'opacity': '1'},4000).addClass('animated').addClass('slideInLeft')
+    $('#culture-animate-6').animate({'opacity': '1'},4000).addClass('animated').addClass('fadeInUp')
+  })
+  $('.culture-animate-last').mouseover(function(){
+    $('#culture-animate-8').animate({'opacity': '1'},2000).addClass('animated').addClass('fadeInLeft')
+    $('#culture-animate-9').animate({'opacity': '1'},2000).addClass('animated').addClass('fadeInRight')
+  })
+
+  function getXY(event) {
       var element = document.getElementById('culture-animate-1');  //replace elementId with your element's Id.
       var rect = element.getBoundingClientRect();
       var scrollTop = document.documentElement.scrollTop?
@@ -303,22 +325,18 @@ angular.module('phenoCom').controller('scrollController', function(){
               x = event.clientX+scrollLeft-elementLeft; //event not evt because of IE
               y = event.clientY+scrollTop-elementTop;
           }
-          else{
+          else {
             $('#culture-animate-2').animate({'opacity': '1'},1500).addClass('animated').addClass('slideInLeft')
             $('#culture-animate-2-quote').animate({'opacity': '1'},1500).addClass('animated').addClass('slideInRight')
-              x = event.pageX-elementLeft;
-              y = event.pageY-elementTop;
 
+              // x = event.pageX-elementLeft;
+              // y = event.pageY-elementTop;
 
       }
     }
 
-
-
-
-            $('#culture-animate-1').mousemove(function(e){
+            $('#culture-animate-1, #culture-animate-2, #culture-animate-3').mousemove(function(e){
                 var m = getXY(e, this);
-                console.log(m.x, m.y);
             });
 
 $(window).bind('mousewheel', function(event) {
@@ -326,28 +344,12 @@ $(window).bind('mousewheel', function(event) {
     var x = event.clientX;
     var y = event.clientY;
     var coords = "X coords: " + x + ", Y coords: " + y;
-    // console.log(coords)
-
-  // var scrollPos = $('.culture-animate-1').scrollTop(300)
-  // console.log(scrollPos)
 
   if (event.originalEvent.wheelDelta <= 0) {
-
-
-  // work
-  $('.allcases').animate({'opacity': '1'},1500).addClass('animated').addClass('zoomIn')
-
-
-  // culture
   $('#culture-animate-1').animate({'opacity': '1'},1500).addClass('animated').addClass('zoomIn')
-  // if (y > 400 && x > 230 ) {
-  //   $('.culture-animate-2').animate({'opacity': '1'},1500).addClass('animated').addClass('slideInLeft')
-  //   $('.culture-animate-2-quote').animate({'opacity': '1'},1500).addClass('animated').addClass('slideInRight')
-  // }
-
 }
-else {
+  else {
     console.log('Scroll up');
-}
-});
+    }
+  });
 })

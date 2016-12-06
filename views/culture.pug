@@ -21,8 +21,8 @@ section.row.no-padding.culture(ng-controller='scrollController')
 	article.col-md-12.no-padding.margin-bottom-md#culture-animate-1
 		img(src=require('assets/images/culture/culture1.jpg'))
 
-	article.col-md-12.table
-		.col-xs-12.col-sm-12.col-md-5.no-padding#culture-animate-2
+	article.col-md-12.table#culture-animate-2
+		.col-xs-12.col-sm-12.col-md-5.no-padding
 			img(src=require('assets/images/culture/culture2.png'))
 		.col-xs-12.col-sm-12.col-md-6.col-md-offset-1
 			h3
@@ -35,13 +35,13 @@ section.row.no-padding.culture(ng-controller='scrollController')
 						span
 							| Client
 
-	article.col-md-12.change-order.no-padding
+	article.col-md-12.change-order.no-padding#culture-animate-3
 		.col-xs-12.col-sm-12.col-md-7.no-padding
 			img(src=require('assets/images/culture/culture3.png'))
 
 		.col-xs-12.col-sm-12.col-md-4
 			h3
-				blockquote
+				blockquote#culture-animate-3-quote
 					| Every day there&#8217;s a slew of food trucks in front of their building where you can get just about everything under the sun. And sunny it usually is.&#8221;
 				cite
 					.wrapper
@@ -49,7 +49,7 @@ section.row.no-padding.culture(ng-controller='scrollController')
 							| Claire
 						span
 							| Client
-	article.headshots.col-xs-12.col-md-12.no-padding
+	article.headshots.col-xs-12.col-md-12.no-padding#culture-animate-4
 		.col-xs-6.col-sm-4.col-md-15.no-padding
 			ul.cf
 				// fake image tag to gain height of the container
@@ -83,11 +83,11 @@ section.row.no-padding.culture(ng-controller='scrollController')
 				li
 	article.col-xs-12.col-md-10.no-padding.building
 		.col-xs-12.col-md-7
-			img(src=require('assets/images/culture/culture4.png'))
-			img(src=require('assets/images/culture/culture5.png'))
+			img#culture-animate-5(src=require('assets/images/culture/culture4.png'))
+			img#culture-animate-7(src=require('assets/images/culture/culture5.png'))
 		.col-xs-12.col-md-5
 			h3
-				blockquote
+				blockquote#culture-animate-5-quote
 					| I always know a Pheno because they&#8217;re smiling.&#8221;
 				cite
 					.wrapper
@@ -95,9 +95,10 @@ section.row.no-padding.culture(ng-controller='scrollController')
 							| John
 						span
 							| Building Security
-			img(src=require('assets/images/culture/culture6.gif'))
+			img#culture-animate-6(src=require('assets/images/culture/culture6.gif'))
+	article.culture-animate-last
 	article.col-md-12.no-padding.mugs
-		.col-xs-12.col-md-5
+		.col-xs-12.col-md-5#culture-animate-8
 			img(src=require('assets/images/culture/culture7.png'))
 			h3
 				blockquote
@@ -108,7 +109,7 @@ section.row.no-padding.culture(ng-controller='scrollController')
 							| Nancy
 						span
 							| Client
-		.col-xs-12.col-md-7
+		.col-xs-12.col-md-7#culture-animate-9
 			h3
 				blockquote
 					| Yeah, I&#8217;d say they&#8217;re generally<br> a pretty clean bunch.&#8221;
