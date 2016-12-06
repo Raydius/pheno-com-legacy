@@ -366,3 +366,13 @@ angular.module('phenoCom').controller('scrollController', function(){
 //     }
 //   });
 })
+
+angular.module('phenoCom').controller('holidayController', function(){
+  $('#holidayvideo').hide();
+
+  $('#holidaygif').click(function(){
+    $('#holidaygif').hide();
+    $('#holidayvideo').show()
+    $('#holidayvideo').play()
+  })
+})

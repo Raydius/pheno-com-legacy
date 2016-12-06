@@ -18,6 +18,7 @@ var templateBlogPostSingle = require('views/blog-post-single.pug');
 var templateError = require('views/404.pug');
 var templateJob = require('views/job.pug');
 var templateApplication = require('views/application.pug');
+var templateHoliday = require('views/holiday.pug');
 
 
 angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $locationProvider) {
@@ -198,6 +199,10 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             ncyBreadcrumb: {
             // label: 'job name'
           }
+        })
+        .state('happy-holidays', {
+            url: '/happy-holidays',
+            template: templateHoliday
         })
 
         .state('thanks', {
