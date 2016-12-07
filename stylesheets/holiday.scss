@@ -1,5 +1,17 @@
 #holidaygif {
-
+    position: relative;
+    /* left: 50%; */
+    margin-left: 50%;
+    margin-top: 51%;
+    margin-bottom: 0px !important;
+    min-width: 90%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-58%);
+    background-size: contain;
+    transition: 1s opacity;
 }
 
 video#holidayvideo {
@@ -16,4 +28,9 @@ video#holidayvideo {
     transform: translateX(-50%) translateY(-50%);
     background-size: contain;
     transition: 1s opacity;
+}
+
+section.row.no-padding.holiday-card-container {
+    position: relative;
+    margin-bottom: -360px;
 }
