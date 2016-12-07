@@ -303,26 +303,26 @@ angular.module('phenoCom').controller('blogPostController', function($scope, $st
 });
 
 angular.module('phenoCom').controller('scrollController', function(){
-  $('#culture-animate-1').mouseover(function(){
+  $('#culture-animate-1').mouseenter(function(){
     $('#culture-animate-2').css('left','0')
   })
 
-  $('#culture-animate-2').mouseover(function(){
+  $('#culture-animate-2').mouseenter(function(){
     $('#culture-animate-3').animate({'opacity': '1'},2000)
     $('#culture-animate-3-quote').animate({'opacity': '1'},2000)
   })
-  $('#culture-animate-3').mouseover(function(){
+  $('#culture-animate-3').mouseenter(function(){
     $('#culture-animate-4').animate({'opacity': '1'},1400).addClass('animated').addClass('fadeInLeft')
     $('#culture-animate-4-quote').animate({'opacity': '1'},2000).addClass('animated').addClass('slideInRight')
   })
 
-  $('#culture-animate-4').mouseover(function(){
+  $('#culture-animate-4').mouseenter(function(){
     $('#culture-animate-5').animate({'opacity': '1'},1400).addClass('animated').addClass('fadeInLeft')
     $('#culture-animate-5-quote').animate({'opacity': '1'},2500).addClass('animated').addClass('slideInRight')
     $('#culture-animate-7').animate({'opacity': '1'},4000).addClass('animated').addClass('slideInLeft')
     $('#culture-animate-6').animate({'opacity': '1'},4000).addClass('animated').addClass('fadeInUp')
   })
-  $('.culture-animate-last, #culture-animate-7, #culture-animate-8, #culture-animate-5').mouseover(function(){
+  $('.culture-animate-last, #culture-animate-7, #culture-animate-8, #culture-animate-5').mouseenter(function(){
     $('#culture-animate-8').animate({'opacity': '1'},2000).addClass('animated').addClass('fadeInLeft')
     $('#culture-animate-9').animate({'opacity': '1'},2000).addClass('animated').addClass('fadeInRight')
   })
@@ -351,6 +351,45 @@ angular.module('phenoCom').controller('scrollController', function(){
             $('#culture-animate-1, #culture-animate-2, #culture-animate-3').mousemove(function(e){
                 var m = getXY(e, this);
             });
+
+var checkScrollSpeed = (function(settings){
+
+                settings = settings || {};
+
+                var lastPos, newPos, timer, delta,
+                    delay = settings.delay || 50; // in "ms" (higher means lower fidelity )
+
+                function clear() {
+                  lastPos = null;
+                  delta = 0;
+                }
+
+                clear();
+
+                return function(){
+                  newPos = window.scrollY;
+                  if ( lastPos != null ){ // && newPos < maxScroll
+                    delta = newPos -  lastPos;
+                  }
+                  lastPos = newPos;
+                  clearTimeout(timer);
+                  timer = setTimeout(clear, delay);
+                  return delta;
+
+                  if (delta > 15) {
+                    console.log(delta + ' delta exceeded 15')
+                    $('#culture-animate-1, #culture-animate-2, #culture-animate-3, #culture-animate-3-quote,#culture-animate-4, #culture-animate-4-quote, #culture-animate-5, #culture-animate-5-quote, #culture-animate-6, #culture-animate-7, #culture-animate-8, #culture-animate-9').animate(
+                      {'opacity':'1'},400).addClass('animated').addClass('fadeIn')
+                  }
+                };
+            })();
+
+            // listen to "scroll" event
+            window.onscroll = function(){
+              console.log( checkScrollSpeed );
+            };
+
+
 
 // $(window).bind('mousewheel', function(event) {
 //
