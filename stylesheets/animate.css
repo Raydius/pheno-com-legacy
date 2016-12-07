@@ -15,7 +15,7 @@
 		animation-duration: .75s;
 	}
 	&.bounceIn {
-		animation-duration: .75s;
+		animation-duration: 1.2s;
 	}
 	&.bounceOut {
 		animation-duration: .75s;
@@ -1767,6 +1767,8 @@
 	//Instead of the line below you could use @include backface-visibility($visibility)
 	backface-visibility: visible !important;
 	animation-name: flipInX;
+	animation-delay: 4s;
+
 }
 @-webkit-keyframes flipInY {
 	from {

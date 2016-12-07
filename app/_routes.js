@@ -9,16 +9,6 @@ var copy = require('app/copy.js');
 var templateHome = require('views/welcome.pug');
 var templateAbout = require('views/about.pug');
 var templateWork = require('views/work.pug');
-var templateWorkAnthem = require('views/wilson-anthem.pug');
-var templateWorkAetna = require('views/aetna-potential.pug');
-var templateWorkWilsonX = require('views/wilson-x.pug');
-var templateWorkSLS = require('views/sls.pug');
-var templateWorkXome = require('views/xome.pug');
-var templateWorkThinkThin = require('views/think-thin.pug');
-var templateWorkMens = require('views/mens-wearhouse.pug');
-var templateWorkSunny = require('views/sunny.pug');
-var templateWorkCooper = require('views/cooper.pug');
-var templateWorkFederer = require('views/federer.pug');
 var templateEntertainment = require('views/entertainment.pug');
 var templateCulture = require('views/culture.pug');
 var templateContact = require('views/contact.pug');
@@ -38,7 +28,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         console.log('otherwise');
     });*/
 
-    $urlRouterProvider.otherwise('/error');
+    $urlRouterProvider.otherwise('/error/');
 
     // config routing
     $stateProvider
@@ -60,7 +50,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
 
         .state('about', {
-            url: '/about',
+            url: '/about/',
             template: templateAbout,
             metaTags: {
                 title: 'phenomenon - Innovations Company | About Us',
@@ -76,7 +66,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
 
         .state('work', {
-            url: '/work',
+            url: '/work/',
             template: templateWork,
             metaTags: {
                 title: 'phenomenon - Innovations Company | Work',
@@ -90,159 +80,46 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                 }
             }
         })
-        .state('work/aetna-potential/', {
-            url: '/work/aetna-potential/',
-            template: templateWorkAetna,
-            metaTags: {
-                title: "Aetna Brings Out Medicare's Potential",
-                description: 'Healthcare giant takes a more human approach with B2B initiative.',
-                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, aetna',
-                properties: {
-                    'og:type': 'website',
-                    'og:title': 'phenomenon - Innovations Company | Work - Aetna Potential',
-                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - Aetna',
-                    'og:image': require('assets/images/aetna/aetna-thumb.jpg')
+        .state('work-case', {
+            url: '/work/:case/',
+            resolve: {
+                caseObject: function($stateParams) {
+                    return copy.content[$stateParams.case];
                 }
-            }
-        })
-        .state('work/federer/', {
-            url: '/work/federer/',
-            template: templateWorkFederer,
-            metaTags: {
-                title: "From Federer by Federer.",
-                description: 'Tennis legend includes a personal touch with launch of his first co-designed racket.',
-                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, wilson, federer',
-                properties: {
-                    'og:type': 'website',
-                    'og:title': 'phenomenon - Innovations Company | Work - From Federer',
-                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - Federer',
-                    'og:image': require('assets/images/federer-work-image.jpg')
-                }
-            }
-        })
-        .state('work/wilson-anthem/', {
-            url: '/work/wilson-anthem/',
-            template: templateWorkAnthem,
-            metaTags: {
-                title: 'phenomenon - Innovations Company | Work - Wilson',
-                description: 'phenomenon - Innovations Company - client work, projects, media - Wilson',
-                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Wilson',
-                properties: {
-                    'og:type': 'website',
-                    'og:title': 'phenomenon - Innovations Company | Work - Wilson Anthem',
-                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - Wilson',
-                    'og:image': require('assets/images/work-1.jpg')
-                }
-            }
-        })
-
-        .state('work/wilson-x/', {
-            url: '/work/wilson-x/',
-            template: templateWorkWilsonX,
-            metaTags: {
-                title: 'phenomenon - Innovations Company | Work - Wilson',
-                description: 'phenomenon - Innovations Company - client work, projects, media - Wilson X',
-                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Wilson X',
-                properties: {
-                    'og:type': 'website',
-                    'og:title': 'phenomenon - Innovations Company | Work - Wilson X',
-                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - Wilson X',
-                    'og:image': require('assets/images/work-4.png')
-                }
-            }
-        })
-
-        .state('work/xome/', {
-            url: '/work/xome/',
-            template: templateWorkXome,
-            metaTags: {
-                title: 'phenomenon - Innovations Company | Work - Xome',
-                description: 'phenomenon - Innovations Company - client work, projects, media - Xome',
-                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Xome',
-                properties: {
-                    'og:type': 'website',
-                    'og:title': 'phenomenon - Innovations Company | Work - Xome',
-                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - Xome',
-                    'og:image': require('assets/images/work-2.jpg')
-                }
-            }
-        })
-
-        .state('work/mens-wearhouse/', {
-            url: '/work/mens-wearhouse/',
-            template: templateWorkMens,
-            metaTags: {
-                title: 'phenomenon - Innovations Company | Work - Mens Wearhouse',
-                description: 'phenomenon - Innovations Company - client work, projects, media - Men\'s Wearhouse',
-                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, Men\'s Wearhouse',
-                properties: {
-                    'og:type': 'website',
-                    'og:title': 'phenomenon - Innovations Company | Work - Men\'s Wearhouse',
-                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - Men\'s Wearhouse',
-                    'og:image': require('assets/images/work-3.jpg')
-                }
-            }
-        })
-
-        .state('work/think-thin', {
-            url: '/work/think-thin/',
-            template: templateWorkThinkThin,
-             metaTags: {
-                title: 'phenomenon - Innovations Company | Work - think Thin',
-                description: 'phenomenon - Innovations Company - client work, projects, media - think Thin',
-                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, think Thin',
-                properties: {
-                    'og:type': 'website',
-                    'og:title': 'phenomenon - Innovations Company | Work - think Thin',
-                    'og:description': 'phenomenon - Innovations Company - client work, projects, media - think Thin',
-                    'og:image': require('assets/images/work-6.jpg')
-                }
-            }
-        })
-
-        .state('work/sls/', {
-            url: '/work/sls-hide/',
-            template: templateWorkSLS,
-            data: {
-                pageShareImg: require('assets/images/work-1.jpg')
-
-            }
-        })
-
-        .state('work/sunny/', {
-            url: '/work/sunny-hide/',
-            template: templateWorkSunny,
-            data: {
-                pageShareImg: require('assets/images/work-1.jpg')
-
-            }
-        })
-
-        .state('work/cooper/', {
-            url: '/work/cooper-hide/',
-            template: templateWorkCooper,
-            data: {
-                pageShareImg: require('assets/images/work-1.jpg')
             },
+            template: function($stateParams) {
+                return require('views/'+$stateParams.case+'.pug');
+			},
             metaTags: {
-                title: 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation',
-                description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
-                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
-            }
+				title: function(caseObject) { return caseObject.title },
+				description: function(caseObject) {
+				    return caseObject.ogDescription;
+                },
+				keywords: function(caseObject) {
+				    return 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, ' + caseObject.client;
+                },
+				properties: {
+					'og:type': 'website',
+					'og:title': function(caseObject) {
+					    return 'phenomenon - Innovations Company | Work - ' + caseObject.title;
+                    },
+					'og:description': function(caseObject) {
+					    return 'phenomenon - Innovations Company - client work, projects, media - ' + caseObject.client;
+                    },
+					'og:image': function(caseObject) {
+					    return caseObject.imageUrl;
+					}
+				}
+			},
+			data: {
+				shareUrl: 'link'
+			}
+
         })
 
-        .state('entertainment/', {
-            url: '/entertainment-hide/',
-            template: templateEntertainment,
-            metaTags: {
-                title: 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation',
-                description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
-                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
-            }
-        })
 
         .state('culture', {
-            url: '/culture',
+            url: '/culture/',
             template: templateCulture,
             metaTags: {
                 title: 'phenomenon - Innovations Company | Culture',
@@ -259,7 +136,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 
 
         .state('jobs', {
-            url: '/jobs',
+            url: '/jobs/',
             template: templateJobs,
             controller: 'jobsController',
             metaTags: {
@@ -278,7 +155,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             }
         })
         .state('contact', {
-            url: '/contact',
+            url: '/contact/',
             template: templateContact,
             controller: 'contactController',
             metaTags: {
@@ -305,18 +182,18 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             controller: 'blogPostController'
         })
         .state('error', {
-            url: '/error',
+            url: '/error/',
             template: templateError,
         })
         .state('job', {
-            url: '/job',
+            url: '/job/',
             template: templateJob,
             ncyBreadcrumb: {
             label: 'job name'
           }
         })
         .state('application', {
-            url: '/application',
+            url: '/job/application/',
             template: templateApplication,
             ncyBreadcrumb: {
             // label: 'job name'
@@ -324,7 +201,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
 
         .state('thanks', {
-            url: '/thanks',
+            url: '/job/thanks/',
             templateUrl: '/views/components/thanks',
             metaTags: {
                 title: 'phenomenon - Innovations Company | Thanks',
@@ -341,10 +218,6 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 
     ;
 
-//     if(window.history && window.history.pushState) {
-//     $locationProvider.html5Mode({
-//         enabled : true,
-//         requireBase : false
-//     }).hashPrefix('');
-// }
+    $locationProvider.html5Mode(true);
+
 });

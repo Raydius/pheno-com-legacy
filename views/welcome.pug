@@ -5,24 +5,24 @@ block variables
 
 
 // title and body copy
-section.row.no-padding.home
+section.row.no-padding.home(ng-controller= 'welcomeController')
 	div.top-main.col-md-12
 		.col-md-6.no-padding
 			h1 Phenomenon
 			h1 Agency
-			h2 An Independent Agency
-			h2 for Independent Minds.
+			h2.indie-agency.animated.fadeIn An Independent Agency
+			h2.indie-minds for Independent Minds.
 			//h2 The first agency site written by clients.
 			//p.red
-				| Except for this part. 
+				| Except for this part.
 			.icon-right-arrow(scrolltop2)
 	ul.row.no-padding.featured-contributors
 		h6 Featured Contributors
 		// first 3 contributors
 		each contributorItem in pageData.contributors
 			a(href=contributorItem.href)
-				li.col-sm-12.col-md-4 
-					if contributorItem.contributorAvatar 
+				li.col-sm-12.col-md-4
+					if contributorItem.contributorAvatar
 						div.client_logo-wrapper(style="background-image: url(" + contributorItem.contributorAvatar + ")")
 					cite
 						.wrapper
@@ -35,13 +35,13 @@ section.row.no-padding.home
 					a.red(href=contributorItem.href) Read full article &gt;
 		.clear
 		//- .see-more
-		//- 	input.red.view-more(type="checkbox" name="toggle" id="toggle") 
-		//- 	label(for="toggle") 
+		//- 	input.red.view-more(type="checkbox" name="toggle" id="toggle")
+		//- 	label(for="toggle")
 		//- 	.see-more-container
 		//- 		// six more contributors
 		//- 		each contributorItem in pageData.contributorsMore
-		//- 			li.col-sm-12.col-md-4 
-		//- 				if contributorItem.contributorAvatar 
+		//- 			li.col-sm-12.col-md-4
+		//- 				if contributorItem.contributorAvatar
 		//- 					img(src=contributorItem.contributorAvatar)
 		//- 				cite
 		//- 					if contributorItem.name
@@ -51,4 +51,4 @@ section.row.no-padding.home
 		//- 				if contributorItem.project
 		//- 					p!= contributorItem.project
 		//- 				a.red(href=contributorItem.href) Read full article &gt;
-		//- 		
+		//-

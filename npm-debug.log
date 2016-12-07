@@ -1,0 +1,179 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'spark-scroll' ]
+2 info using npm@2.15.9
+3 info using node@v4.5.0
+4 verbose install initial load of /Users/jpimenta/pheno-com/package.json
+5 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/angular/package.json
+6 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/angular-animate/package.json
+7 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/angular-cookies/package.json
+8 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/angular-environment/package.json
+9 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/angular-messages/package.json
+10 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/angular-sanitize/package.json
+11 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/angular-skrollr/package.json
+12 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/angular-snap/package.json
+13 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/angular-socialshare/package.json
+14 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/angular-ui-router/package.json
+15 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/angular-wrapper/package.json
+16 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/babel-core/package.json
+17 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/babel-loader/package.json
+18 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/babel-preset-es2015/package.json
+19 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/body-parser/package.json
+20 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/bootstrap/package.json
+21 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/bootstrap-sass/package.json
+22 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/cookie-parser/package.json
+23 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/cors/package.json
+24 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/css-loader/package.json
+25 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/cssnano/package.json
+26 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/debug/package.json
+27 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/enhanced-require/package.json
+28 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/eslint/package.json
+29 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/eslint-loader/package.json
+30 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/exports-loader/package.json
+31 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/express/package.json
+32 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/extract-text-webpack-plugin/package.json
+33 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/file-loader/package.json
+34 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/form-data/package.json
+35 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/fs/package.json
+36 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/gulp-sourcemaps/package.json
+37 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/html-loader/package.json
+38 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/html-webpack-plugin/package.json
+39 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/image-webpack-loader/package.json
+40 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/imports-loader/package.json
+41 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/jquery/package.json
+42 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/jshint/package.json
+43 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/jshint-loader/package.json
+44 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/json-loader/package.json
+45 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/jsxhint/package.json
+46 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/legacy-loader/package.json
+47 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/morgan/package.json
+48 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/multer/package.json
+49 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/node-sass/package.json
+50 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/node-sass-middleware/package.json
+51 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/optimize-css-assets-webpack-plugin/package.json
+52 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/owl-carousel-2/package.json
+53 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/pngquant/package.json
+54 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/postcss-loader/package.json
+55 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/prerender-node/package.json
+56 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/pug/package.json
+57 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/pug-html-loader/package.json
+58 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/pug-loader/package.json
+59 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/querystring/package.json
+60 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/raw-loader/package.json
+61 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/request/package.json
+62 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/sass/package.json
+63 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/sass-loader/package.json
+64 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/serve-favicon/package.json
+65 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/snapjs/package.json
+66 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/source-map/package.json
+67 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/sticky-kit/package.json
+68 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/style-loader/package.json
+69 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/ui-router-metatags/package.json
+70 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/url-loader/package.json
+71 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/webpack/package.json
+72 verbose installManyTop reading scoped package data from /Users/jpimenta/pheno-com/node_modules/webpack-dev-server/package.json
+73 info package.json exports-loader@0.6.3 No license field.
+74 info package.json enhanced-require@0.5.0-beta6 No repository field.
+75 info package.json enhanced-require@0.5.0-beta6 No license field.
+76 info package.json form-data@0.2.0 No license field.
+77 info package.json fs@0.0.2 fs is also the name of a node core module.
+78 info package.json fs@0.0.2 No description
+79 info package.json fs@0.0.2 No repository field.
+80 info package.json fs@0.0.2 No README data
+81 info package.json jshint-loader@0.8.3 No license field.
+82 info package.json image-webpack-loader@1.8.0 No license field.
+83 info package.json node-sass-middleware@0.9.8 No license field.
+84 info package.json raw-loader@0.5.1 No license field.
+85 info package.json sass@0.5.0 No repository field.
+86 info package.json sass@0.5.0 No license field.
+87 info package.json querystring@0.2.0 querystring is also the name of a node core module.
+88 info package.json querystring@0.2.0 No license field.
+89 info package.json owl-carousel-2@0.0.3 No repository field.
+90 verbose readDependencies loading dependencies from /Users/jpimenta/pheno-com/package.json
+91 silly cache add args [ 'spark-scroll', null ]
+92 verbose cache add spec spark-scroll
+93 silly cache add parsed spec Result {
+93 silly cache add   raw: 'spark-scroll',
+93 silly cache add   scope: null,
+93 silly cache add   name: 'spark-scroll',
+93 silly cache add   rawSpec: '',
+93 silly cache add   spec: 'latest',
+93 silly cache add   type: 'tag' }
+94 silly addNamed spark-scroll@latest
+95 verbose addNamed "latest" is being treated as a dist-tag for spark-scroll
+96 info addNameTag [ 'spark-scroll', 'latest' ]
+97 silly mapToRegistry name spark-scroll
+98 silly mapToRegistry using default registry
+99 silly mapToRegistry registry https://registry.npmjs.org/
+100 silly mapToRegistry data Result {
+100 silly mapToRegistry   raw: 'spark-scroll',
+100 silly mapToRegistry   scope: null,
+100 silly mapToRegistry   name: 'spark-scroll',
+100 silly mapToRegistry   rawSpec: '',
+100 silly mapToRegistry   spec: 'latest',
+100 silly mapToRegistry   type: 'tag' }
+101 silly mapToRegistry uri https://registry.npmjs.org/spark-scroll
+102 verbose addNameTag registry:https://registry.npmjs.org/spark-scroll not in flight; fetching
+103 verbose request uri https://registry.npmjs.org/spark-scroll
+104 verbose request no auth needed
+105 info attempt registry request try #1 at 12:16:52 PM
+106 verbose request id 2f595b8b72da1c96
+107 http request GET https://registry.npmjs.org/spark-scroll
+108 http 404 https://registry.npmjs.org/spark-scroll
+109 verbose headers { 'content-type': 'application/json',
+109 verbose headers   'cache-control': 'max-age=0',
+109 verbose headers   'content-length': '2',
+109 verbose headers   'accept-ranges': 'bytes',
+109 verbose headers   date: 'Mon, 05 Dec 2016 20:16:52 GMT',
+109 verbose headers   via: '1.1 varnish',
+109 verbose headers   age: '0',
+109 verbose headers   connection: 'keep-alive',
+109 verbose headers   'x-served-by': 'cache-sea1926-SEA',
+109 verbose headers   'x-cache': 'MISS',
+109 verbose headers   'x-cache-hits': '0',
+109 verbose headers   'x-timer': 'S1480969012.299401,VS0,VE333',
+109 verbose headers   vary: 'Accept-Encoding' }
+110 silly get cb [ 404,
+110 silly get   { 'content-type': 'application/json',
+110 silly get     'cache-control': 'max-age=0',
+110 silly get     'content-length': '2',
+110 silly get     'accept-ranges': 'bytes',
+110 silly get     date: 'Mon, 05 Dec 2016 20:16:52 GMT',
+110 silly get     via: '1.1 varnish',
+110 silly get     age: '0',
+110 silly get     connection: 'keep-alive',
+110 silly get     'x-served-by': 'cache-sea1926-SEA',
+110 silly get     'x-cache': 'MISS',
+110 silly get     'x-cache-hits': '0',
+110 silly get     'x-timer': 'S1480969012.299401,VS0,VE333',
+110 silly get     vary: 'Accept-Encoding' } ]
+111 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/spark-scroll
+111 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+111 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+111 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+111 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+111 verbose stack     at emitTwo (events.js:87:13)
+111 verbose stack     at Request.emit (events.js:172:7)
+111 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+111 verbose stack     at emitOne (events.js:82:20)
+111 verbose stack     at Request.emit (events.js:169:7)
+111 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+112 verbose statusCode 404
+113 verbose pkgid spark-scroll
+114 verbose cwd /Users/jpimenta/pheno-com
+115 error Darwin 15.4.0
+116 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "spark-scroll"
+117 error node v4.5.0
+118 error npm  v2.15.9
+119 error code E404
+120 error 404 Registry returned 404 for GET on https://registry.npmjs.org/spark-scroll
+120 error 404
+120 error 404 'spark-scroll' is not in the npm registry.
+120 error 404 You should bug the author to publish it (or use the name yourself!)
+120 error 404 It was specified as a dependency of 'pheno-com'
+120 error 404
+120 error 404 Note that you can also install from a
+120 error 404 tarball, folder, http url, or git url.
+121 verbose exit [ 1, true ]
