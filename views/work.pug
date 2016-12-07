@@ -14,9 +14,9 @@ section.row.no-padding.work.work-landing(ng-controller='scrollController')
 			article.col-md-12.no-padding.cf.allcases
 				.col-xs-12.col-sm-12.col-md-8.no-padding
 					if contentItem.image
-						img.animated.fadeInUp(src= contentItem.imageUrl, alt=contentItem.imageAlt)
+						img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
 				.col-xs-12.col-sm-12.col-md-4.no-padding
-					fieldset.animated.bounceInRight
+					fieldset
 						legend= contentItem.legend
 						h3!= contentItem.headline
 						if contentItem.citeName
