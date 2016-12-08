@@ -313,3 +313,17 @@
 		z-index: -1;
 	}
 }
+
+.culture-animate-last {
+    background: transparent;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    z-index: 0;
+    opacity: .2;
+}
+
+ #culture-animate-2, #culture-animate-2-quote, #culture-animate-3, #culture-animate-3-quote, #culture-animate-4, #culture-animate-4-quote, #culture-animate-5, #culture-animate-5-quote, #culture-animate-6, #culture-animate-7, #culture-animate-8, #culture-animate-9, #culture-animate-last {
+	opacity: 0;
+}

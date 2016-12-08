@@ -341,7 +341,7 @@ h3 blockquote {
 				margin-bottom: 10px;
 			}
 			&:last-child {
-				order: 2;
+				order: 4; /* was order: 2 -- changed to fix Federer display bug on mobile 12/6/16 */
 			}
 		}
 	}

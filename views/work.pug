@@ -3,14 +3,14 @@ block variables
 - page = "work"
 - pageData = copy.content[page]
 
-section.row.no-padding.work.work-landing
+section.row.no-padding.work.work-landing(ng-controller='scrollController')
 	article.col-md-12.top-main
 		h1 Work
 		h2
 			blockquote!= pageData.blockquote
 		include components/cite-components
 	each contentItem in pageData.subcontent
-		a(href= contentItem.readmoreUrl)
+		a(href=contentItem.readmoreUrl)
 			article.col-md-12.no-padding.cf.allcases
 				.col-xs-12.col-sm-12.col-md-8.no-padding
 					if contentItem.image

@@ -123,21 +123,21 @@ var copy =
           "jobTitle": "VP Marketing, Wilson",
           "project": "Wilson Launches<br> Futuristic Ball.",
           "contributorAvatar": require("assets/images/illustrations/phenomenon-amy-weisenbach-wilson.png"),
-          "href": "#!/work/wilson-x/"
+          "href": "/work/wilson-x/"
         },
         {
           "name": "Matt Stringer",
           "jobTitle": "EVP Marketing, Tailored Brands",
           "project": "Men&#8217s Wearhouse<br> Updates Its Wardrobe.",
           "contributorAvatar": require("assets/images/illustrations/phenomenon-matt-stringer-menswearhouse.png"),
-          "href": "#!/work/mens-wearhouse/"
+          "href": "/work/mens-wearhouse/"
         },
         {
           "name": "Megan Crossland",
           "jobTitle": "Sr. Director of Marketing, thinkThin",
           "project": "thinkThin Helps<br> Women Shed the Guilt.",
           "contributorAvatar": require("assets/images/illustrations/phenomenon-megan-crossland-thinkthin.png"),
-          "href": "#!/work/think-thin/"
+          "href": "/work/think-thin/"
         },
       ],
       "contributorsMore": [
@@ -270,7 +270,7 @@ var copy =
           "legend": "Sport / Lifestyle",
           "headline": "From Federer By Federer.",
           "description": "Tennis legend includes a personal touch with launch of his first co-designed racket.",
-          "readmoreUrl": "#!/work/federer/"
+          "readmoreUrl": "/work/federer/"
         },
         {
           "type": "image",
@@ -279,7 +279,7 @@ var copy =
           "legend": "Healthcare / B2B",
           "headline": "Aetna Brings Out Medicare&#8217;s Potential.",
           "description": "Healthcare giant takes a more human approach with B2B initiative.",
-          "readmoreUrl": "#!/work/aetna-potential/"
+          "readmoreUrl": "/work/aetna-potential/"
         },
         {
           "type": "image",
@@ -291,7 +291,7 @@ var copy =
           "citeName": "By Amy Weisenbach",
           "citeTitle": "VP Marketing, Wilson",
           "description": "New 360-degree global campaign for 100-year-old company.",
-          "readmoreUrl": "#!/work/wilson-anthem/"
+          "readmoreUrl": "/work/wilson-anthem/"
         },
         {
           "type": "image",
@@ -303,7 +303,7 @@ var copy =
           "citeName": "By Matt Stringer",
           "citeTitle": "EVP Marketing, Tailored Brands",
           "description": "After the departure of longtime owner and face of brand, company looks to modernize all the way down to the cufflinks.",
-          "readmoreUrl": "#!/work/mens-wearhouse/"
+          "readmoreUrl": "/work/mens-wearhouse/"
 
         },
         {
@@ -316,7 +316,7 @@ var copy =
           "citeName": "By Megan Crossland",
           "citeTitle": "Sr. Director of Marketing, thinkThin",
           "description": "Nutritional bar targeted to women launches its first campaign using humor to rave reviews online.",
-          "readmoreUrl": "#!/work/think-thin/"
+          "readmoreUrl": "/work/think-thin/"
 
         },
         {
@@ -329,7 +329,7 @@ var copy =
           "citeName": "By Amy Weisenbach",
           "citeTitle": "VP Marketing, Wilson",
           "description": "For the first time a basketball is connected to your smartphone to track makes, misses and enhance performance.",
-          "readmoreUrl": "#!/work/wilson-x/"
+          "readmoreUrl": "/work/wilson-x/",
         }
       ]
     },
@@ -345,17 +345,16 @@ var copy =
       "ogDescription": "Tennis legend includes a personal touch with launch of his first co-designed racket.",
       "topDescription": [
         "The new Wilson RF97 autograph racket is the first racket co-designed by Roger Federer and Wilson. It looks and plays like nothing else. In a world where loud colors are the norm for racket design, Federer preferred an approach that speaks to his love of minimalist design: A predominantly black racket with strategically placed highlights like a tiny Swiss flag. The result is a racket with the pure feel, power and precision to give players a technological edge, and the understated elegance to give them a mental edge whenever they step on the court.",
+        'To announce the arrival of the new RF97 Phenomenon developed an integrated campaign led by a black-an-white film called "From Federer". The film features top junior players, Federer himself, and a handwritten note from Roger that plays a central role in the rest of the campaign. In the letter, Fed writes about the type of players he designed the racket for: the ones who push harder, play faster, and are obsessed with the game. Players who look at him not as someone to emulate, but someone to one day eclipse.',
+        "<span class='red'>The film features top junior players, Federer himself, and a handwritten note from Roger that plays a central role in the rest of the campaign.</span>"
+
       ],
       "topcontent": [
         {
           "type": "image",
-          "image": true,
+          "image": false,
           "imageUrl": require("assets/images/federer-image.jpg"),
-          "imageAlt": "Federer",
-          "mainDescription": [
-            'To announce the arrival of the new RF97 Phenomenon developed an integrated campaign led by a black-an-white film called "From Federer". The film features top junior players, Federer himself, and a handwritten note from Roger that plays a central role in the rest of the campaign. In the letter, Fed writes about the type of players he designed the racket for: the ones who push harder, play faster, and are obsessed with the game. Players who look at him not as someone to emulate, but someone to one day eclipse.',
-            "<span class='red'>The film features top junior players, Federer himself, and a handwritten note from Roger that plays a central role in the rest of the campaign.</span>"
-          ]
+          "imageAlt": "Federer"
         },
         {
           "video": true,
@@ -365,6 +364,16 @@ var copy =
           "vimeo": "191695425",
           "mainDescription": [
             "<br><br>Excerpts from the note were featured across other mediums, including social activations on Facebook, Twitter and Instagram, banners and in-store posters. Prior to the unveiling, new RF97's were delivered to top junior players who embodied the qualities detailed in Roger's letter. As a nice perk (and to prove to friends that didn't believe them) each player also received an autographed copy of the note itself."
+          ]
+        },
+        {
+          "type": "image",
+          "image": true,
+          "imageUrl": require("assets/images/16-1291_RF97_Gift_Giveaway_Edited_Hi-Res_Image-edit.jpg"),
+          "imageAlt": "Federer",
+          "mainDescription": [
+            "When it came time to reveal the RF97 to the world, Roger passionately discussed his inspiration, the racket's details and what co-designing a racket with Wilson -- the company he's been with from the beginning -- meant to him. ",
+            "Reactions to the new RF97 from the press, blogosphere and most importantly, tennis players around the world have been overwhelmingly positive and it is already making a significant impact on this global game."
           ]
         },
         {
@@ -378,18 +387,20 @@ var copy =
               "url": require("assets/images/Federer-Racket-2.jpg"),
               "alt": "Federer Image"
             }
+            // {
+            //   "url": require("assets/images/wilson-federer-pro-staff-web-comp-edit (1).jpg"),
+            //   "alt": "Federer Image"
+            // }
           ]
         }
       ],
-      "fromTopContentDescription": [
-
-        "When it came time to reveal the RF97 to the world, Roger passionately discussed his inspiration, the racket's details and what co-designing a racket with Wilson -- the company he's been with from the beginning -- meant to him. <br> <br> Reactions to the new RF97 from the press, blogosphere and most importantly, tennis players around the world have been overwhelmingly positive and it is already making a significant impact on this global game."
-
-      ],
+      // "fromTopContentDescription": [
+      //   "When it came time to reveal the RF97 to the world, Roger passionately discussed his inspiration, the racket's details and what co-designing a racket with Wilson -- the company he's been with from the beginning -- meant to him. <br> <br> Reactions to the new RF97 from the press, blogosphere and most importantly, tennis players around the world have been overwhelmingly positive and it is already making a significant impact on this global game."
+      // ],
       "detailcontent": [
         {
           "type": "image",
-          "image": true,
+          "image": false,
           "imageUrl": require("assets/images/wilson-federer-pro-staff-web-1140×3156.jpg"),
         }
       ]
@@ -998,7 +1009,7 @@ var copy =
 
       ]
     },
-    "aetna": {
+    "aetna-potential": {
       "title": "Aetna Brings Out Medicare's Potential",
       "className": "aetna",
       "client": "Aetna",
