@@ -79,7 +79,7 @@ setTimeout(function(){
 
 
 /**
- * Controller for Jobs Page
+ * Controller for Jobs Index Page
  *
  * Pulls data from Greenhouse.io job board
  */
@@ -112,7 +112,7 @@ angular.module('phenoCom').controller('jobsController', function($scope, $state,
 
                     var position = {
                         title: job.title,
-                        url: job.metadata[0].value,
+                        url: '/jobs/'+job.id+'/', //job.metadata[0].value,
                         location: job.location.name
                     };
                     openPositions.push(position);
@@ -138,6 +138,37 @@ angular.module('phenoCom').controller('jobsController', function($scope, $state,
     });
 
 });
+
+
+/**
+ * Controller for individual job landing page
+ *
+ * Queries job data from Greenhouse.io
+ */
+angular.module('phenoCom').controller('jobController', function($scope, $stateParams, $http, $sce) {
+
+    var jobId = $stateParams.jobId;
+	var url = 'https://api.greenhouse.io/v1/boards/phenomenon/embed/job?id='+jobId+'&questions=true';
+
+	$scope.applyUrl = '/jobs/'+jobId+'/apply/';
+
+    $http({
+        method: 'GET',
+        url: url
+    }).then(function (response) {
+        $scope.data = response.data;
+        console.log($scope.data);
+
+    });
+
+    $scope.renderHtml = function(html_code) {
+        var txt = document.createElement("textarea");
+        txt.innerHTML = html_code;
+        return $sce.trustAsHtml(txt.value);
+    };
+
+});
+
 
 angular.module('phenoCom').controller('contactController', function($scope, $state, $http) {
 
@@ -352,56 +383,56 @@ angular.module('phenoCom').controller('scrollController', function(){
                 var m = getXY(e, this);
             });
 
-var checkScrollSpeed = (function(settings){
+    var checkScrollSpeed = (function(settings){
 
-                settings = settings || {};
+        settings = settings || {};
 
-                var lastPos, newPos, timer, delta,
-                    delay = settings.delay || 50; // in "ms" (higher means lower fidelity )
+        var lastPos, newPos, timer, delta,
+            delay = settings.delay || 50; // in "ms" (higher means lower fidelity )
 
-                function clear() {
-                  lastPos = null;
-                  delta = 0;
-                }
+        function clear() {
+          lastPos = null;
+          delta = 0;
+        }
 
-                clear();
+        clear();
 
-                return function(){
-                  newPos = window.scrollY;
-                  if ( lastPos != null ){ // && newPos < maxScroll
-                    delta = newPos -  lastPos;
-                  }
-                  lastPos = newPos;
-                  clearTimeout(timer);
-                  timer = setTimeout(clear, delay);
-                  return delta;
+        return function(){
+          newPos = window.scrollY;
+          if ( lastPos != null ){ // && newPos < maxScroll
+            delta = newPos -  lastPos;
+          }
+          lastPos = newPos;
+          clearTimeout(timer);
+          timer = setTimeout(clear, delay);
+          return delta;
 
-                  if (delta > 15) {
-                    console.log(delta + ' delta exceeded 15')
-                    $('#culture-animate-1, #culture-animate-2, #culture-animate-3, #culture-animate-3-quote,#culture-animate-4, #culture-animate-4-quote, #culture-animate-5, #culture-animate-5-quote, #culture-animate-6, #culture-animate-7, #culture-animate-8, #culture-animate-9').animate(
-                      {'opacity':'1'},400).addClass('animated').addClass('fadeIn')
-                  }
-                };
-            })();
+          if (delta > 15) {
+            console.log(delta + ' delta exceeded 15')
+            $('#culture-animate-1, #culture-animate-2, #culture-animate-3, #culture-animate-3-quote,#culture-animate-4, #culture-animate-4-quote, #culture-animate-5, #culture-animate-5-quote, #culture-animate-6, #culture-animate-7, #culture-animate-8, #culture-animate-9').animate(
+              {'opacity':'1'},400).addClass('animated').addClass('fadeIn')
+          }
+        };
+    })();
 
-            // listen to "scroll" event
-            window.onscroll = function(){
-              console.log( checkScrollSpeed );
-            };
+    // listen to "scroll" event
+    window.onscroll = function(){
+      console.log( checkScrollSpeed );
+    };
 
 
 
-// $(window).bind('mousewheel', function(event) {
-//
-//     var x = event.clientX;
-//     var y = event.clientY;
-//     var coords = "X coords: " + x + ", Y coords: " + y;
-//
-//   if (event.originalEvent.wheelDelta <= 0) {
-//   $('#culture-animate-1').animate({'opacity': '1'},1500).addClass('animated').addClass('zoomIn')
-// }
-//   else {
-//     console.log('Scroll up');
-//     }
-//   });
-})
+    // $(window).bind('mousewheel', function(event) {
+    //
+    //     var x = event.clientX;
+    //     var y = event.clientY;
+    //     var coords = "X coords: " + x + ", Y coords: " + y;
+    //
+    //   if (event.originalEvent.wheelDelta <= 0) {
+    //   $('#culture-animate-1').animate({'opacity': '1'},1500).addClass('animated').addClass('zoomIn')
+    // }
+    //   else {
+    //     console.log('Scroll up');
+    //     }
+    //   });
+});

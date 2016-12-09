@@ -155,6 +155,24 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
               }
             }
         })
+        .state('job', {
+            url: '/jobs/:jobId/',
+            template: templateJob,
+            controller: 'jobController',
+            metaTags: {
+
+            }
+        })
+		.state('application', {
+			url: '/jobs/:jobId/apply/',
+			template: templateApplication,
+			ncyBreadcrumb: {
+				// label: 'job name'
+			}
+		})
+
+
+
         .state('contact', {
             url: '/contact/',
             template: templateContact,
@@ -190,18 +208,11 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             url: '/thank-you/',
             template: templateThanks,
         })
-        .state('job', {
+        .state('jobtest', {
             url: '/job/',
             template: templateJob,
             ncyBreadcrumb: {
             label: 'job name'
-          }
-        })
-        .state('application', {
-            url: '/job/application/',
-            template: templateApplication,
-            ncyBreadcrumb: {
-            // label: 'job name'
           }
         })
 
