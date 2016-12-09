@@ -421,18 +421,4 @@ angular.module('phenoCom').controller('scrollController', function(){
     };
 
 
-
-    // $(window).bind('mousewheel', function(event) {
-    //
-    //     var x = event.clientX;
-    //     var y = event.clientY;
-    //     var coords = "X coords: " + x + ", Y coords: " + y;
-    //
-    //   if (event.originalEvent.wheelDelta <= 0) {
-    //   $('#culture-animate-1').animate({'opacity': '1'},1500).addClass('animated').addClass('zoomIn')
-    // }
-    //   else {
-    //     console.log('Scroll up');
-    //     }
-    //   });
 });

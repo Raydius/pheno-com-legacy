@@ -18,18 +18,23 @@
         position: relative;
 
         &:before {
-            content: "-";
+          content: "-";
             display: inline-block;
             margin-right: 20px;
-            content: '\e902';
+            content: '\E902';
             position: absolute;
             left: 0;
+            color: #cccccc;
             top: 0;
             font-size: 20px;
             line-height: 24px;
-            font-family: 'icomoon' !important;
+            font-family: icomoon!important;
         }
     }
+}
+.job-content-quote {
+  font-family: "Tiempose-Semibold";
+  font-size: 20px;
 }
 
 .job-title {
@@ -152,6 +157,10 @@ img.share-icon {
     width: 10% !important;
     display: inline;
     margin-right: 10px;
+}
+
+.job-content ul li:last-child {
+    margin-bottom: 80px;
 }
 
 article.col-md-3.pull-right.col-sm-12.col-xs-12.job-column-2 {margin-top: 370px;}
