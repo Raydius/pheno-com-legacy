@@ -8,8 +8,28 @@
 }
 
 .job-content {
-  font-family: "Tiempose-Semibold";
+    font-family: "Tiempose-Semibold";
     font-size: 20px;
+
+    ul li {
+        margin-top: 15px;
+        line-height: 24px;
+        padding-left: 30px;
+        position: relative;
+
+        &:before {
+            content: "-";
+            display: inline-block;
+            margin-right: 20px;
+            content: '\e902';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 20px;
+            line-height: 24px;
+            font-family: 'icomoon' !important;
+        }
+    }
 }
 
 .job-title {
