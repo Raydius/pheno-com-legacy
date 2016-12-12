@@ -405,3 +405,20 @@ var checkScrollSpeed = (function(settings){
 //     }
 //   });
 })
+
+angular.module('phenoCom').controller('holidayController', function(){
+
+  var holidayvideo = document.getElementById('holidayvideo')
+  $('.maincontent').css('padding','0')
+  $('#holidayvideo').hide();
+
+  $('#holidaygif').click(function(){
+    $('#holidaygif').hide();
+    $('#holidayvideo').show()
+    holidayvideo.play()
+  })
+
+  $('a').click(function(){
+  $('.maincontent').css('padding','0 150px')
+  })
+})
