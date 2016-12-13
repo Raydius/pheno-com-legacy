@@ -201,7 +201,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
           }
         })
         .state('happy-holidays', {
-            url: '/happy-holidays',
+            url: '/happy-holidays/',
             template: templateHoliday
         })
 
