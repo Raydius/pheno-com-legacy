@@ -4,5 +4,5 @@ web:
    - "2070:80"
   volumes:
    - ./:/usr/share/nginx/html
-   - ./nginx.conf:/etc/nginx/nginx.conf
+   - ./nginx-staging.conf:/etc/nginx/conf.d/prerender.conf
   restart: always
