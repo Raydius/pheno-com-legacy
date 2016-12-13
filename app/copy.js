@@ -386,11 +386,11 @@ var copy =
             {
               "url": require("assets/images/Federer-Racket-2.jpg"),
               "alt": "Federer Image"
+            },
+            {
+              "url": require("assets/images/wilson-federer-pro-staff-web-comp-edit-(final).jpg"),
+              "alt": "Federer Image"
             }
-            // {
-            //   "url": require("assets/images/wilson-federer-pro-staff-web-comp-edit (1).jpg"),
-            //   "alt": "Federer Image"
-            // }
           ]
         }
       ],
