@@ -404,21 +404,26 @@ var checkScrollSpeed = (function(settings){
 //     console.log('Scroll up');
 //     }
 //   });
-})
+});
 
-angular.module('phenoCom').controller('holidayController', function(){
 
-  var holidayvideo = document.getElementById('holidayvideo')
-  $('.maincontent').css('padding','0')
-  $('#holidayvideo').hide();
 
-  $('#holidaygif').click(function(){
-    $('#holidaygif').hide();
-    $('#holidayvideo').show()
-    holidayvideo.play()
-  })
 
-  $('a').click(function(){
-  $('.maincontent').css('padding','0 150px')
-  })
-})
+/**
+ * Holiday Card Controller Revisited
+ */
+angular.module('phenoCom').controller('holidayController', function($scope) {
+
+    // set initial visibility of the gif and the video
+    $scope.videoHide = true;
+
+    $scope.playTheVideo = function() {
+
+		// toggle visibility of the gif and the video
+        $scope.videoHide = false;
+
+        // play the video
+        $('#holidayvideo').get(0).play();
+    };
+
+});

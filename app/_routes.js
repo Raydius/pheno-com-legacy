@@ -9,7 +9,7 @@ var copy = require('app/copy.js');
 var templateHome = require('views/welcome.pug');
 var templateAbout = require('views/about.pug');
 var templateWork = require('views/work.pug');
-var templateEntertainment = require('views/entertainment.pug');
+//var templateEntertainment = require('views/entertainment.pug');
 var templateCulture = require('views/culture.pug');
 var templateContact = require('views/contact.pug');
 var templateJobs = require('views/jobs.pug');
@@ -202,7 +202,8 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
         .state('happy-holidays', {
             url: '/happy-holidays/',
-            template: templateHoliday
+            template: templateHoliday,
+            controller: 'holidayController'
         })
 
         .state('thanks', {

@@ -1,5 +1,6 @@
-section.row.no-padding.holiday-card-container(ng-controller='holidayController')
-  img#holidaygif(src="assets/images/homer.gif", alt="alt")
-  video#holidayvideo(controls='false')
-    source(src="assets/video/Nick-Offerman.mp4", type="video/mp4")
-    |Your browser does not support the video tag.
+section.row.no-padding.holiday-card-container
+  img#holidaygif(ng-show="videoHide" src=require('assets/images/homer.gif'), alt="alt", ng-click="playTheVideo()")
+
+  video#holidayvideo(ng-hide="videoHide" controls='false')
+    source(src=require('file!assets/video/Nick-Offerman.mp4'), type="video/mp4")
+    | Your browser does not support the video tag.
