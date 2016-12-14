@@ -498,11 +498,11 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": require("assets/images/wilson_anthem_2_01-opt.jpg"),
+              "url": require("assets/images/wilson-web-banners-1.jpg"),
               "alt": "Wilson X Packaging Photo 1"
             },
             {
-              "url": require("assets/images/wilson_anthem_2_02-opt.jpg"),
+              "url": require("assets/images/wilson-web-banners-2.jpg"),
               "alt": "Wilson X Packaging Photo 2"
             }
           ],
