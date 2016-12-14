@@ -1014,7 +1014,7 @@ var copy =
       "className": "aetna",
       "client": "Aetna",
       "clientLogo": require('assets/images/aetna/aetna-logo.svg'),
-      "clientLogoWidth": "180px",
+      "clientLogoWidth": "100px",
       "project": "Potential",
       "media": "B2B, Digital, Social",
       "blockquote": "Aetna Brings Out Medicare's Potential",
