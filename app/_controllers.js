@@ -328,7 +328,7 @@ angular.module('phenoCom').controller('scrollController', function(){
   })
 
   function getXY(event) {
-      var element = document.getElementById('culture-animate-1');  //replace elementId with your element's Id.
+      var element = document.getElementById('culture-animate-1');
       var rect = element.getBoundingClientRect();
       var scrollTop = document.documentElement.scrollTop?
                       document.documentElement.scrollTop:document.body.scrollTop;
@@ -347,61 +347,24 @@ angular.module('phenoCom').controller('scrollController', function(){
 
       }
     }
-
-            $('#culture-animate-1, #culture-animate-2, #culture-animate-3').mousemove(function(e){
-                var m = getXY(e, this);
-            });
-
-var checkScrollSpeed = (function(settings){
-
-                settings = settings || {};
-
-                var lastPos, newPos, timer, delta,
-                    delay = settings.delay || 50; // in "ms" (higher means lower fidelity )
-
-                function clear() {
-                  lastPos = null;
-                  delta = 0;
-                }
-
-                clear();
-
-                return function(){
-                  newPos = window.scrollY;
-                  if ( lastPos != null ){ // && newPos < maxScroll
-                    delta = newPos -  lastPos;
-                  }
-                  lastPos = newPos;
-                  clearTimeout(timer);
-                  timer = setTimeout(clear, delay);
-                  return delta;
-
-                  if (delta > 15) {
-                    console.log(delta + ' delta exceeded 15')
-                    $('#culture-animate-1, #culture-animate-2, #culture-animate-3, #culture-animate-3-quote,#culture-animate-4, #culture-animate-4-quote, #culture-animate-5, #culture-animate-5-quote, #culture-animate-6, #culture-animate-7, #culture-animate-8, #culture-animate-9').animate(
-                      {'opacity':'1'},400).addClass('animated').addClass('fadeIn')
-                  }
-                };
-            })();
-
-            // listen to "scroll" event
-            window.onscroll = function(){
-              console.log( checkScrollSpeed );
-            };
+});
 
 
+/**
+ * Holiday Card Controller Revisited
+ */
+angular.module('phenoCom').controller('holidayController', function($scope) {
 
-// $(window).bind('mousewheel', function(event) {
-//
-//     var x = event.clientX;
-//     var y = event.clientY;
-//     var coords = "X coords: " + x + ", Y coords: " + y;
-//
-//   if (event.originalEvent.wheelDelta <= 0) {
-//   $('#culture-animate-1').animate({'opacity': '1'},1500).addClass('animated').addClass('zoomIn')
-// }
-//   else {
-//     console.log('Scroll up');
-//     }
-//   });
-})
+    // set initial visibility of the gif and the video
+    $scope.videoHide = true;
+
+    $scope.playTheVideo = function() {
+
+		// toggle visibility of the gif and the video
+        $scope.videoHide = false;
+
+        // play the video
+        $('#holidayvideo').get(0).play();
+    };
+
+});

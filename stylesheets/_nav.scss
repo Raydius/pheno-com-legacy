@@ -34,9 +34,9 @@
         float: left;
         margin-right: $base_spacing - 20;
         ~ .tabs {
-          margin: 0;
-          padding: 0;
-          padding-left: 200px;
+          // margin: 0;
+          // padding: 0;
+          // padding-left: 200px;
           li {
             a {
               padding: 5px 0 20px 0;
@@ -56,7 +56,7 @@
     .nav-wrapper{
       width: 100%;
       max-width: $body_size;
-      padding: 30px $base_spacing*2 0 $base_spacing*2;
+      padding: 30px 120px 0 150px;
       margin: 0 auto;
       position: relative;
       /* top: -120px;
@@ -90,13 +90,13 @@
   }
 
   .tabs {
-    margin: 0 -20px 0;
+    margin: 0 -40px 0;
     padding: 0 20px;
     border-bottom: 1px solid #ccc;
 
     ul{
       margin: 0;
-      margin-left: -40px;
+      margin-left: -17px;
       position: relative;
     }
 
@@ -356,3 +356,8 @@ main.maincontent {
     top: 0;
   }
 }
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_nav.scss

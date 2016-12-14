@@ -57,7 +57,7 @@ body {
 	color: $primary_color;
 }
 a, .a, .link{
-	
+
 	&.red {
 		color: $primary_color;
 		font-family: "Circular-bold";
@@ -76,7 +76,7 @@ h1 {
       color: $logo_color;
     }
   }
-  
+
   sub{
     bottom: 0;
     font-size: 12px;
@@ -89,13 +89,13 @@ legend {
 	font-size: 14px;
 }
 article p {
-	font-size: 16px; 
+	font-size: 16px;
 	line-height: 26px;
 
 	&:last-of-type {
 		margin-bottom: $base_spacing;
 		@media screen and (max-width: 640px) {
-			margin: 0 0 10px; 
+			margin: 0 0 10px;
 		}
 	}
 
@@ -128,14 +128,15 @@ figcaption {
 }
 .top-main {
 	position: relative;
-	border-bottom: 1px solid $gray_border_color !important;
+	// border-bottom: 1px solid $gray_border_color !important;
 	padding: ($base_spacing - 20) 0;
 	margin-top: $fix_header_height;
 	@media screen and (max-width: 640px) {
-		margin-top: 0; 
+		margin-top: 0;
 	}
 	h2 {
 		margin-top: 0;
+		margin-bottom: 0px;
 		font-weight: normal;
 	}
 }
@@ -157,7 +158,7 @@ cite {
 		span {
 			display: block;
 			&:first-of-type {
-				font-family: "Circular-bold"; 
+				font-family: "Circular-bold";
 			}
 
 		}
@@ -191,7 +192,7 @@ h2 blockquote, h3 blockquote, h1 blockquote  {
 		font-size: inherit;
 		position: absolute;
 		left: -25px;
-		top: 10px; 
+		top: 10px;
 		color: inherit;
 	}
 	&:last-letter {
@@ -231,7 +232,7 @@ h3 blockquote {
 	a {
 		display: block;
 		height: 100%;
-		width: 100%; 
+		width: 100%;
 		color: $gray_color;
 		font-size: 27px;
 		text-align: center;
@@ -253,7 +254,7 @@ h3 blockquote {
 	position: fixed;
     top: 0;
 }
-.backtotop { 
+.backtotop {
 	text-align: center;
 	margin: $base_spacing 0;
 	cursor: pointer;
@@ -262,7 +263,7 @@ h3 blockquote {
 		display: inline-block;
 		transform: rotate(-90deg);
 		-webkit-transform: rotate(-90deg);
-		font-size: 24px;  
+		font-size: 24px;
 		margin-bottom: 15px;
 		color: #ccc;
 	}
@@ -295,7 +296,7 @@ h3 blockquote {
     line-height: 35px;
   }
 }
-    
+
 /* boostrap 5 col supports */
 .col-xs-15,
 .col-sm-15,
@@ -452,7 +453,7 @@ h3 blockquote {
 .black {
 	width: 100%; height: 100%;
 	position: fixed;
-	background: black; 
+	background: black;
 	z-index: 99999;
 	left: 0;
 	top: 0;

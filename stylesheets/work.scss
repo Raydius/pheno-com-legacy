@@ -56,6 +56,36 @@
 			}
 
 		}
+		@media (min-width: 540px) and (max-width: 768px){
+		#scrollingSite {
+		    margin-bottom: -1030px;
+			}
+		}
+		@media (min-width: 320px) and (max-width: 400px){
+		#scrollingSite {
+		    margin-bottom: -1100px;
+			}
+		}
+		@media (min-width: 400px) and (max-width: 540px){
+		#scrollingSite {
+		    margin-bottom: -1410px;
+			}
+		}
+		@media (min-width: 768px) and (max-width: 979px){
+		#scrollingSite {
+		    margin-bottom: -800px;
+			}
+		}
+		@media (min-width: 979px) and (max-width: 1110px){
+		#scrollingSite {
+		      margin-bottom: -680px;
+			}
+		}
+		@media (min-width: 1100px) and (max-width: 1300px){
+		#scrollingSite {
+		      margin-bottom: -330px;
+			}
+		}
 		h1 {
 			position: absolute;
 			text-indent: -9999em;
@@ -136,6 +166,8 @@
 		}
 		.project-detail {
 			float: right;
+			margin-top: 40px;
+    	margin-bottom: 20px;
 			> .col-md-4 {
 				float: right;
 			}
@@ -487,7 +519,7 @@ left: 36px;
 		margin-bottom: 10px;
 	}
 }
-// 
+//
 // .allcases {
 // 	opacity: 0;
 // }

@@ -386,11 +386,11 @@ var copy =
             {
               "url": require("assets/images/Federer-Racket-2.jpg"),
               "alt": "Federer Image"
+            },
+            {
+              "url": require("assets/images/wilson-federer-pro-staff-web-comp-edit-(final).jpg"),
+              "alt": "Federer Image"
             }
-            // {
-            //   "url": require("assets/images/wilson-federer-pro-staff-web-comp-edit (1).jpg"),
-            //   "alt": "Federer Image"
-            // }
           ]
         }
       ],
@@ -1014,7 +1014,7 @@ var copy =
       "className": "aetna",
       "client": "Aetna",
       "clientLogo": require('assets/images/aetna/aetna-logo.svg'),
-      "clientLogoWidth": "180px",
+      "clientLogoWidth": "100px",
       "project": "Potential",
       "media": "B2B, Digital, Social",
       "blockquote": "Aetna Brings Out Medicare's Potential",

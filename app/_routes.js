@@ -9,7 +9,7 @@ var copy = require('app/copy.js');
 var templateHome = require('views/welcome.pug');
 var templateAbout = require('views/about.pug');
 var templateWork = require('views/work.pug');
-var templateEntertainment = require('views/entertainment.pug');
+//var templateEntertainment = require('views/entertainment.pug');
 var templateCulture = require('views/culture.pug');
 var templateContact = require('views/contact.pug');
 var templateJobs = require('views/jobs.pug');
@@ -18,6 +18,7 @@ var templateBlogPostSingle = require('views/blog-post-single.pug');
 var templateError = require('views/404.pug');
 var templateJob = require('views/job.pug');
 var templateApplication = require('views/application.pug');
+var templateHoliday = require('views/holiday.pug');
 
 
 angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $locationProvider) {
@@ -198,6 +199,11 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             ncyBreadcrumb: {
             // label: 'job name'
           }
+        })
+        .state('happy-holidays', {
+            url: '/happy-holidays/',
+            template: templateHoliday,
+            controller: 'holidayController'
         })
 
         .state('thanks', {
