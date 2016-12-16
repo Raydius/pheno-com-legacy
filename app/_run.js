@@ -36,7 +36,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
             $('body, html').removeClass('opend');
             $('#hamburger').removeClass('open');
         }
-    })
+    });
 
 
     $(window).scroll(function() {
@@ -57,9 +57,11 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
         $(this).toggleClass('open');
     });
 
-    $rootScope.$on('$stateChangeSuccess', function() {
-        // scroll to the top
 
+    // whenever a new angular state is successfully loaded...
+    $rootScope.$on('$stateChangeSuccess', function() {
+
+        // scroll back to the top of the page
         if ( $(document).scrollTop() > 0) {
            $htmlBody.animate({
                     scrollTop: 1
