@@ -1013,7 +1013,7 @@ var copy =
       "title": "Aetna Brings Out Medicare's Potential",
       "className": "aetna",
       "client": "Aetna",
-      "clientLogo": require('assets/images/aetna/aetna-logo.svg'),
+      "clientLogo": require('assets/images/aetna-logo-180x50.png'),
       "clientLogoWidth": "100px",
       "project": "Potential",
       "media": "B2B, Digital, Social",
