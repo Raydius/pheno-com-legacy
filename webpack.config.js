@@ -6,6 +6,7 @@
 var webpack = require('webpack'),
     path = require('path'),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
+    CopyWebPackPlugin = require('copy-webpack-plugin'),
     ExtractTextPlugin = require('extract-text-webpack-plugin'),
     OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'),
     node_modules_dir = path.resolve(__dirname, 'node_modules');
@@ -108,7 +109,11 @@ module.exports = {
             filename: 'index.html',
             title: 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation',
             googleAnalytics: gaConfig
-        })
+        }),
+
+        new CopyWebPackPlugin([
+            { from: 'standalone-pages/holiday-2016', to: 'holiday-2016/' }
+        ])
     ],
     module: {
         noParse: [
