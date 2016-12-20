@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Phenomenon Holiday Card</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" sizes="16x16" href='http://d1t5y70k963i5u.cloudfront.net/pheno-com/favicon/favicon-16x16.png'>
+		<link rel="icon" type="image/png" sizes="32x32" href='http://d1t5y70k963i5u.cloudfront.net/pheno-com/favicon/favicon-32x32.png'>
+		<link rel="icon" type="image/png" sizes="96x96" href='http://d1t5y70k963i5u.cloudfront.net/pheno-com/favicon/favicon-96x96.png'>
+
+		<link rel="apple-touch-icon" sizes="57x57" href='http://d1t5y70k963i5u.cloudfront.net/pheno-com/favicon/apple-touch-icon-57x57.png'>
+		<link rel="apple-touch-icon" sizes="60x60" href='http://d1t5y70k963i5u.cloudfront.net/pheno-com/favicon/apple-touch-icon-60x60.png'>
+		<link rel="apple-touch-icon" sizes="72x72" href='http://d1t5y70k963i5u.cloudfront.net/pheno-com/favicon/apple-touch-icon-72x72.png'>
+		<link rel="apple-touch-icon" sizes="76x76" href='http://d1t5y70k963i5u.cloudfront.net/pheno-com/favicon/apple-touch-icon-76x76.png'>
+		<link rel="apple-touch-icon" sizes="114x114" href='http://d1t5y70k963i5u.cloudfront.net/pheno-com/favicon/apple-touch-icon-114x114.png'>
+		<link rel="apple-touch-icon" sizes="120x120" href='http://d1t5y70k963i5u.cloudfront.net/pheno-com/favicon/apple-touch-icon-120x120.png'>
+		<link rel="apple-touch-icon" sizes="144x144" href='http://d1t5y70k963i5u.cloudfront.net/pheno-com/favicon/apple-touch-icon-144x144.png'>
+		<link rel="apple-touch-icon" sizes="152x152" href='http://d1t5y70k963i5u.cloudfront.net/pheno-com/favicon/apple-touch-icon-152x152.png'>
+		<link rel="apple-touch-icon" sizes="180x180" href='http://d1t5y70k963i5u.cloudfront.net/pheno-com/favicon/apple-touch-icon-180x180.png'>
+
+		<link rel="icon", type="image/png" sizes="36x36" href='http://d1t5y70k963i5u.cloudfront.net/pheno-com/favicon/android-chrome-36x36.png'>
+		<link rel="icon", type="image/png" sizes="48x48" href='http://d1t5y70k963i5u.cloudfront.net/pheno-com/favicon/android-chrome-48x48.png'>
+		<link rel="icon", type="image/png" sizes="72x72" href='http://d1t5y70k963i5u.cloudfront.net/pheno-com/favicon/android-chrome-72x72.png'>
+		<link rel="icon", type="image/png" sizes="96x96" href='http://d1t5y70k963i5u.cloudfront.net/pheno-com/favicon/android-chrome-96x96.png'>
+		<link rel="icon", type="image/png" sizes="144x144" href='http://d1t5y70k963i5u.cloudfront.net/pheno-com/favicon/android-chrome-144x144.png'>
+		<link rel="icon", type="image/png" sizes="192x192" href='http://d1t5y70k963i5u.cloudfront.net/pheno-com/favicon/android-chrome-192x192.png'>
+		<link rel="shortcut icon" href=".ico">
+		<link rel="stylesheet" href="./style/style.css">
+		<link rel="manifest" href="manifest.json" />
+
+	</head>
+	<body>
+		<img id='holidayGif' name='holidayGif' src="http://d1t5y70k963i5u.cloudfront.net/holidaycard2016/holiday_web_gif_720_optimized.gif" />
+
+		<video id='holidayVideo' controls='false' canplay loop>
+			<source id='source1' src="http://d1t5y70k963i5u.cloudfront.net/holidaycard2016/holidayvideo2016-lowres.mp4" type="video/mp4">
+			<source id='source2' src="http://d1t5y70k963i5u.cloudfront.net/holidaycard2016/holidayvideo2016-lowres.webm" type="video/webm">
+		</video>
+
+		<!-- main program script -->
+		<script type="text/javascript">
+
+
+			var playable = false;
+			var holidayGif = document.getElementById('holidayGif');
+			var holidayVideo = document.getElementById('holidayVideo');
+
+
+			function hideGifAndPlayVideo() {
+
+				// play the video if you can
+				if(playable) {
+					holidayGif.style.display = 'none';
+					holidayVideo.style.display = 'block';
+					holidayVideo.play();
+				}
+				else {
+					// do nothing, keep loading stuff
+				}
+
+
+			}
+
+
+			holidayVideo.addEventListener('canplay', function() {
+				playable = true;
+			});
+
+			holidayGif.addEventListener('click', function() {
+				hideGifAndPlayVideo();
+			});
+
+			holidayVideo.addEventListener('click', function(){
+				this.paused?this.play():this.pause();
+			});
+
+
+
+		</script>
+
+		<!-- GTM -->
+		<noscript>
+			<iframe src="//www.googletagmanager.com/ns.html?id=GTM-M5T7GR" height="0" width="0" style="display:none;visibility:hidden;"></iframe>
+		</noscript>
+		<script type="text/javascript">
+          (function (w,d,s,l,i) {
+            w[l]=w[l]||[];
+            w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),
+              dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async=true;
+            j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window, document, 'script', 'dataLayer', 'GTM-M5T7GR');
+		</script>
+
+	</body>
+</html>
