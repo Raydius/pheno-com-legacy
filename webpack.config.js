@@ -112,7 +112,7 @@ module.exports = {
         }),
 
         new CopyWebPackPlugin([
-            { from: 'standalone-pages/holiday-card', to: 'holiday-card/' }
+            { from: 'standalone-pages/holidaycard2016', to: 'holiday-card/' }
         ])
     ],
     module: {
