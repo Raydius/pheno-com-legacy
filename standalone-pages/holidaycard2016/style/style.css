@@ -4,8 +4,8 @@
     top: 50%;
     left: 50%;
     min-width: 100%;
-    min-height: 100%;
-    width: auto;
+    /* min-height: 100%; */
+    width: 100%;
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
@@ -15,12 +15,14 @@
 
 body {
     margin: 0 auto;
+    background-color: #000;
 }
 
 
 #holidayGif {
     position: absolute;;
-
+    top: 50%;
+    left: 50%;
     min-width: 100%;
     min-height: 100%;
     padding: 0;
@@ -28,6 +30,7 @@ body {
     width: 100%;
     height: auto;
     background-size: cover;
+    transform: translateX(-50%) translateY(-50%);
     z-index: 1;
 }
 
