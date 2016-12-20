@@ -498,11 +498,11 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": require("assets/images/wilson_anthem_2_01-opt.jpg"),
+              "url": require("assets/images/wilson-web-banners-1.jpg"),
               "alt": "Wilson X Packaging Photo 1"
             },
             {
-              "url": require("assets/images/wilson_anthem_2_02-opt.jpg"),
+              "url": require("assets/images/wilson-web-banners-2.jpg"),
               "alt": "Wilson X Packaging Photo 2"
             }
           ],
@@ -1013,7 +1013,7 @@ var copy =
       "title": "Aetna Brings Out Medicare's Potential",
       "className": "aetna",
       "client": "Aetna",
-      "clientLogo": require('assets/images/aetna/aetna-logo.svg'),
+      "clientLogo": require('assets/images/aetna-logo-180x50.png'),
       "clientLogoWidth": "100px",
       "project": "Potential",
       "media": "B2B, Digital, Social",

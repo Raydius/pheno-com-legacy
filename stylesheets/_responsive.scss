@@ -235,7 +235,7 @@
 
 @media (min-width: 640px) and (max-width: 1024px) {
     .topnav img.logo {
-      margin: 0;
+      margin: 0 -3px;
     }
     .topnav .tabs ul {
       padding: 0;
@@ -440,3 +440,7 @@
     padding: 0 30px;
   }
 }
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_responsive.scss
