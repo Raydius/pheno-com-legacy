@@ -30,52 +30,46 @@
 		<link rel="shortcut icon" href=".ico">
 		<link rel="stylesheet" href="./style/style.css">
 		<link rel="manifest" href="manifest.json" />
+		<script src="https://player.vimeo.com/api/player.js"></script>
+
 
 	</head>
 	<body>
 		<img id='holidayGif' name='holidayGif' src="http://d1t5y70k963i5u.cloudfront.net/holidaycard2016/holiday_web_gif_720_optimized.gif" />
-
-		<video id='holidayVideo' controls='false' canplay loop>
-			<source id='source1' src="http://d1t5y70k963i5u.cloudfront.net/holidaycard2016/holidayvideo2016-lowres.mp4" type="video/mp4">
-			<source id='source2' src="http://d1t5y70k963i5u.cloudfront.net/holidaycard2016/holidayvideo2016-lowres.webm" type="video/webm">
-		</video>
+		<!-- <div id ='holidayVideo'></div> -->
+		<iframe src="https://vimeo.com/196482901/7d68941a4b" id='holidayVideo' width="1000" height="1000" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 		<!-- main program script -->
 		<script type="text/javascript">
 
-
-			var playable = false;
-			var holidayGif = document.getElementById('holidayGif');
-			var holidayVideo = document.getElementById('holidayVideo');
+		var holidayVideo = document.getElementById('holidayVideo')
+		var videoPlayer = new Vimeo.Player('holidayVideo');
+		var holidayGif = document.getElementById('holidayGif');
 
 
 			function hideGifAndPlayVideo() {
 
-				// play the video if you can
-				if(playable) {
+
 					holidayGif.style.display = 'none';
 					holidayVideo.style.display = 'block';
-					holidayVideo.play();
-				}
-				else {
-					// do nothing, keep loading stuff
-				}
-
+					// holidayVideo.play();
+			  	videoPlayer.play()
 
 			}
 
 
-			holidayVideo.addEventListener('canplay', function() {
-				playable = true;
-			});
+			// holidayVideo.addEventListener('canplay', function() {
+			// 	// playable = true;
+			// });
 
 			holidayGif.addEventListener('click', function() {
 				hideGifAndPlayVideo();
+
 			});
 
-			holidayVideo.addEventListener('click', function(){
-				this.paused?this.play():this.pause();
-			});
+			// holidayVideo.addEventListener('click', function(){
+			// 	this.paused?this.play():this.pause();
+			// });
 
 
 
