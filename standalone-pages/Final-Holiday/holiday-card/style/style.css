@@ -31,6 +31,18 @@ body {
     z-index: 1;
 }
 
+
+/*non-stretchy gif*/
+/*#holidayGif {
+    position: fixed;
+    min-width: 70%;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+}*/
+
 @media all and (max-width: 475px) {
 
   #holidayGif {
