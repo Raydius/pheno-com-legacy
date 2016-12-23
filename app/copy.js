@@ -189,26 +189,26 @@ var copy =
       "paragraph3": [
         "I&#8217;ve worked with Phenomenon for seven years across two companies. When I was hired to transform and re-brand the country&#8217;s largest non-bank mortgage servicer, one of my first calls was to Phenomenon.",
         "KD: Why did you start this company? What are you all about?",
-        "<span><b>PHNO:</b> We all know that the agency model is badly broken. Client interests don&#8217;t line up with agency interests and that's a recipe for disaster.</span>",
+        "<span>PHNO: We all know that the agency model is badly broken. Client interests don&#8217;t line up with agency interests and that's a recipe for disaster.</span>",
         "<span>So we founded Phenomenon as a reaction to that.</span>",
         "<span>Instead of the old agency model of pitching big ideas that require big budgets to produce, so that the agency can charge big fees on the production; we simply focus on solving our clients&#8217; problems in ways that make sense for them.</span>",
         "<span>We're not an ad agency, we&#8217;re an Innovations Company.</span>",
         "<span>Sometimes that innovation is an app, tool or piece of technology. Sometimes it&#8217;s a product. Sometimes it&#8217;s a radical business strategy. Sometimes it&#8217;s a new retail concept. Sometimes it&#8217;s inventing a whole new brand or category. Sometimes it&#8217;s an ad campaign. And fairly often it&#8217;s all of the above.</span>",
         "KD: I love that. So what's different about working with an Innovations Company?",
-        "<span><b>PHNO:</b> For starters, we&#8217;re focused on solving business problems, not just advertising problems. So everything we do starts with a business strategy, even before we look at a communications strategy.</span>",
+        "<span>PHNO: For starters, we&#8217;re focused on solving business problems, not just advertising problems. So everything we do starts with a business strategy, even before we look at a communications strategy.</span>",
         "<span>And because we&#8217;re focused on the totality of a clients&#8217; business, we have to offer holistic thinking instead of silo-ed thinking. So our designers inform our strategy. Our strategy informs our design. Our UX informs our business strategy and so on.</span>"
       ],
       "paragraph4": [
         "KD: Right, my experience has been that truly great brands are embedded in the DNA of the company, and the only way to make that happen is to think about everything as part of the brand.",
-        '<span><b>PHNO:</b> Exactly. Which means our people have to be insanely good at collaboration. Not just with co-workers with different points of view and skill sets, but also with our clients and partner agencies. We don&#8217;t care who&#8217;s "right", we just want the end product to be stunning.</span>',
+        '<span>PHNO: Exactly. Which means our people have to be insanely good at collaboration. Not just with co-workers with different points of view and skill sets, but also with our clients and partner agencies. We don&#8217;t care who&#8217;s "right", we just want the end product to be stunning.</span>',
         "<span>The last thing that really makes us different is our process. While traditional agencies follow a linear process, we believe in constant iteration. We have to be able to throw away good work to get to great work. And at every step of the journey, we are learning new things, so we have to be adaptable and nimble so we can incorporate those insights to make the final product something really special.</span>",
         "KD: Tell me a little bit more about your people. Who&#8217;s a good fit at Phenomenon?",
-        "<span><b>PHNO:</b> Our people are strategists who love strategy, but hate the limits of working at a strategy firm. They&#8217;re designers who love design, but feel handcuffed working at a design shop. They&#8217;re digital leaders who don&#8217;t want to be so disconnected from the brand thinking. And they&#8217;re ad agency leaders who are sick and tired of being relegated to just TV, Print and Out of Home. They&#8217;re all looking for innovation. And our organization gives them the ability to apply their skills in all kinds of new ways.</span>"
+        "<span>PHNO: Our people are strategists who love strategy, but hate the limits of working at a strategy firm. They&#8217;re designers who love design, but feel handcuffed working at a design shop. They&#8217;re digital leaders who don&#8217;t want to be so disconnected from the brand thinking. And they&#8217;re ad agency leaders who are sick and tired of being relegated to just TV, Print and Out of Home. They&#8217;re all looking for innovation. And our organization gives them the ability to apply their skills in all kinds of new ways.</span>"
 
       ],
       "paragraph5": [
         "KD: It&#8217;s interesting that you say that your talent is looking for innovation, because as a client, that&#8217;s exactly what I&#8217;m looking for too.",
-        "<span><b>PHNO:</b> Exactly. And when the client&#8217;s ambitions mesh with the agency&#8217;s ambitions and the ambitions of the individuals that work there, that&#8217;s when great things happen.</span>"
+        "<span>PHNO: Exactly. And when the client&#8217;s ambitions mesh with the agency&#8217;s ambitions and the ambitions of the individuals that work there, that&#8217;s when great things happen.</span>"
       ],
       "accordion": [
         {
@@ -1013,8 +1013,8 @@ var copy =
       "title": "Aetna Brings Out Medicare's Potential",
       "className": "aetna",
       "client": "Aetna",
-      "clientLogo": require('assets/images/aetna/aetna-logo.svg'),
-      "clientLogoWidth": "180px",
+      "clientLogo": require('assets/aetna-logo-180x50 (1).png'),
+      "clientLogoWidth": "100px",
       "project": "Potential",
       "media": "B2B, Digital, Social",
       "blockquote": "Aetna Brings Out Medicare's Potential",
