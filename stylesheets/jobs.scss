@@ -135,11 +135,12 @@ p {
 
 	.job-title {
 	    font-family: "Tiempose-Semibold";
-	    font-size: 70px;
+	    font-size: 60px !important;
 	    margin-bottom: 40px;
 	    color: black;
 	    display: flex;
 	    text-align: center;
+	    padding-right: 30px;
 	}
 
 	a.read-moreUrl.full-article-link.learn-more {
@@ -207,3 +208,12 @@ li.breadcrumb-current {
     font-family: 'circular-book';
 		margin-bottom: 30px;
 }
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/jobs.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/jobs.scss

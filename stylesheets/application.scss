@@ -30,7 +30,45 @@ a.apply-now.submit-app {
     margin-top: 0px;
 }
 
-@media (max-width:640px) {
+.job-title.apply-title {
+    padding-right: 0px !important;
+}
+
+@media (max-width:736px) {
+
+.submit-app {
+    font-size: 16px !important;
+    width: 200px !important;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+  .resume-attached-hidden {
+    margin-top: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+  button.btn.btn-default.attach-res {
+    margin-top: 50px;
+    border: 2px solid #e2e2e2;
+    border-radius: 0px;
+    font-weight: 900;
+    font-size: 16px;
+    width: 200px;
+    height: 60px;
+    width: 200px;
+    height: 60px;
+    margin-top: 40px !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+}
 
   a.apply-now.submit-app {
     margin-top: 0px;
@@ -38,7 +76,7 @@ a.apply-now.submit-app {
     margin-left: 15px;
 }
   img.linkedIn-link {
-      width: 50%;
+      width: 54%;
       display: flex;
       margin-top: 40px !important;
       align-items: center;
@@ -96,3 +134,13 @@ button.btn.btn-default.attach-res:hover {
 article.col-md-3.pull-right.col-sm-12.col-xs-12.job-column-3 {
     margin-top: 390px;
 }
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss

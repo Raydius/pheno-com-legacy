@@ -10,12 +10,14 @@
 .job-content {
     font-family: "Tiempose-Semibold";
     font-size: 20px;
+    padding-right: 30px;
 
     ul li {
         margin-top: 15px;
         line-height: 24px;
         padding-left: 30px;
         position: relative;
+        padding-right: 20px;
 
         &:before {
           content: "-";
@@ -35,6 +37,8 @@
 .job-content-quote {
   font-family: "Tiempose-Semibold";
   font-size: 20px;
+  padding-right: 30px;
+
 }
 
 .job-title {
@@ -72,6 +76,10 @@ article.col-md-6.job-desc {
     font-size: 18px;
     font-weight: bolder;
     margin-top: 60px;
+}
+
+.resume-attached-hidden {
+    margin-top: 10px;
 }
 
 .job-column {
@@ -134,6 +142,7 @@ section.row.no-padding.culture.job-posting {
     color: #4a4a4a;
     font-size: 14px;
     margin-top: 20px;
+    padding-right: 20px;
 }
 
 hr.secondHr {margin-top: 90px;}
@@ -144,7 +153,7 @@ a.apply-now {
     margin-top: 75px;
     background: #efefef;
     font-weight: 600;
-    width: 30%;
+    width: 40%;
     align-items: center;
     justify-content: center;
     padding: 15px;
@@ -164,3 +173,13 @@ img.share-icon {
 }
 
 article.col-md-3.pull-right.col-sm-12.col-xs-12.job-column-2 {margin-top: 370px;}
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/job.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/job.scss
