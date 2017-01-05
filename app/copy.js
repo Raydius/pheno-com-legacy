@@ -342,6 +342,7 @@ var copy =
       "project": "From Federer",
       "media": "TV, Digital, Social, Packaging",
       "blockquote": "From Federer by Federer.",
+      "shareImg": require('assets/images/federer-work-image.jpg'),
       "ogDescription": "Tennis legend includes a personal touch with launch of his first co-designed racket.",
       "topDescription": [
         "The new Wilson RF97 autograph racket is the first racket co-designed by Roger Federer and Wilson. It looks and plays like nothing else. In a world where loud colors are the norm for racket design, Federer preferred an approach that speaks to his love of minimalist design: A predominantly black racket with strategically placed highlights like a tiny Swiss flag. The result is a racket with the pure feel, power and precision to give players a technological edge, and the understated elegance to give them a mental edge whenever they step on the court.",
