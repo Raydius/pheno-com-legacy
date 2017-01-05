@@ -59,7 +59,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
                 properties: {
                     'og:type': 'website',
-                    'og:title': 'Phenomenon - Innovations Company',
+                    'og:title': 'Phenomenon - Innovations Company | About',
                     'og:description': 'Phenomenon - Innovations Company',
                     'og:image': require('assets/images/fb-share-center.png')
                 }
@@ -75,7 +75,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media',
                 properties: {
                     'og:type': 'website',
-                    'og:title': 'Phenomenon - Innovations Company',
+                    'og:title': 'Phenomenon - Innovations Company | Work',
                     'og:description': 'Phenomenon - Innovations Company',
                     'og:image': require('assets/images/fb-share-center.png')
                 }
@@ -108,7 +108,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 					    return 'phenomenon - Innovations Company - client work, projects, media - ' + caseObject.client;
                     },
 					'og:image': function(caseObject) {
-					    return caseObject.imageUrl;
+					    return caseObject.shareImg;
 					}
 				}
 			},
@@ -146,7 +146,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
                 properties: {
                     'og:type': 'website',
-                    'og:title': 'Phenomenon - Innovations Company',
+                    'og:title': 'Phenomenon - Innovations Company | Jobs',
                     'og:description': 'Phenomenon - Innovations Company',
                     'og:image': require('assets/images/fb-share-center.png')
                 },

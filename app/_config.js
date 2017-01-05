@@ -21,6 +21,9 @@ function defaultMetaTags(UIRouterMetatagsProvider) {
         .setOGURL(true);
 }
 
+angular.module('phenoCom').config(['UIRouterMetatagsProvider', defaultMetaTags]);
+
+
 angular.module('phenoCom').config(function($sceDelegateProvider, envServiceProvider) {
 
   // whitelist for CORS
@@ -57,7 +60,7 @@ angular.module('phenoCom').config(function($sceDelegateProvider, envServiceProvi
 
 });
 
-angular.module('phenoCom').config(['UIRouterMetatagsProvider', defaultMetaTags]);
+
 
 
 // html render filter for recalling HTML-formatted blog entries

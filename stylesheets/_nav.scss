@@ -48,6 +48,8 @@
     .logo-wrapper{
       height: 40px;
       width: 160px;
+      position: relative;
+      z-index: 10;
       img {
         //transition: all 0.3s;
       }
@@ -356,6 +358,11 @@ main.maincontent {
     top: 0;
   }
 }
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_nav.scss
 
 
 
