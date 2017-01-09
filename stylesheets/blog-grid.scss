@@ -2,16 +2,23 @@
 
 
 .row-blog {
- -moz-column-width: 18em;
- -webkit-column-width: 18em;
+ -moz-column-width: 23em;
+ -webkit-column-width: 23em;
  -moz-column-gap: 1em;
  -webkit-column-gap:1em;
  margin-top: 200px;
 
 }
 
+.well {
+    position: relative;
+    display: table-cell !important;
+    background-color: transparent;
+    border: none;
+}
+
 .item {
- display: inline-block;
+ display: table-cell;
  padding:  .25rem;
  width:  100%;
 }
@@ -22,6 +29,18 @@
     background-color: transparent;
     border: none;
 }
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss
 
 
 // WEBPACK FOOTER //
