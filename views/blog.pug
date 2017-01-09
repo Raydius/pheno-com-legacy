@@ -8,7 +8,6 @@ block variables
 section.row.no-padding.culture.blog-posts
 
   blog-header
-
   blog-post.animated.fadeInUp(
     ng-repeat="article in articles",
     slug="{{article.slug}}",
@@ -17,7 +16,7 @@ section.row.no-padding.culture.blog-posts
     thumbnail="{{article.thumbnail}}",
     alt="{{article.alt}}",
     blogger="{{article.author}}"
-  )
+    )
 
 include components/cite-components
 
