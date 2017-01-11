@@ -214,6 +214,18 @@ angular.module('phenoCom').controller('contactController', function($scope, $sta
 // controller for blog landing page
 angular.module('phenoCom').controller('blogController', function($scope, $state, $sce, $http) {
 
+    $('.search-input, .search-arrow, .arrow-up, .arrow-up-outline').hide()
+    $('.subscribe-input, .subscribe-arrow, .arrow-up-sub, .arrow-up-outline-sub').hide()
+
+    $('.action-text.subscribe').click(function() {
+      $('.search-input, .search-arrow, .arrow-up, .arrow-up-outline').hide()
+    $('.subscribe-input, .subscribe-arrow, .arrow-up-sub, .arrow-up-outline-sub').show()
+  })
+    $('.action-text.search').click(function() {
+      $('.subscribe-input, .subscribe-arrow, .arrow-up-sub, .arrow-up-outline-sub').hide()
+    $('.search-input, .search-arrow, .arrow-up, .arrow-up-outline').show()
+  })
+
 
     $scope.articles = [];
 
@@ -243,6 +255,7 @@ angular.module('phenoCom').controller('blogController', function($scope, $state,
         }
 
     });
+
 
 });
 

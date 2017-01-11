@@ -7,19 +7,19 @@ block variables
 
   //- section.row.no-padding.culture.blog-posts
 
-  //- blog-header
-  .container
-    .row-blog
-      .item
-        blog-post.animated.fadeInUp(
-          ng-repeat="article in articles",
-          slug="{{article.slug}}",
-          preview="{{article.preview}}",
-          title="{{article.title}}",
-          thumbnail="{{article.thumbnail}}",
-          alt="{{article.alt}}",
-          blogger="{{article.author}}"
-          )
+blog-header
+.container.blog-container
+  .row-blog
+    .item
+      blog-post.animated.fadeInUp(
+        ng-repeat="article in articles",
+        slug="{{article.slug}}",
+        preview="{{article.preview}}",
+        title="{{article.title}}",
+        thumbnail="{{article.thumbnail}}",
+        alt="{{article.alt}}",
+        blogger="{{article.author}}"
+        )
 
 include components/cite-components
 
