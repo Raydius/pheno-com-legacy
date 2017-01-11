@@ -172,10 +172,11 @@ p {
 }
 
 .positions {
-    color: #d0021b;
+    color: #cc2128;
     margin-top: 40px;
     font-size: 16px;
-    font-weight: 600;
+    font-family: Circular-Bold;
+    text-rendering: geometricPrecision;
 }
 
 h2.join-us {
@@ -209,11 +210,7 @@ li.breadcrumb-current {
 		margin-bottom: 30px;
 }
 
+* {
+	text-rendering: geometricPrecision	
+}
 
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/jobs.scss
-
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/jobs.scss
