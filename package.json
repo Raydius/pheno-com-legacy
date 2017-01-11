@@ -7,7 +7,6 @@
     "build": "bash ./deploy/build",
     "build:local": "bash ./deploy/build local",
     "build:staging": "bash ./deploy/build staging",
-    "build:latest": "bash ./deploy/build latest",
     "nginx": "bash ./deploy/nginx",
     "build:pub": "bash ./deploy/build pub",
     "start": "bash ./deploy/server",
