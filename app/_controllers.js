@@ -63,16 +63,16 @@ angular.module('phenoCom').controller('homeController', function($state, $scope,
 
 angular.module('phenoCom').controller('welcomeController', function($state, $scope, $window) {
 
-  $('.indie-agency').animate({
-    'opacity':'1',
-    'transition-delay':'1s'
-})
+//   $('.indie-agency').animate({
+//     'opacity':'1',
+//     'transition-delay':'.4s'
+// },400)
 setTimeout(function(){
   $('.indie-minds').animate({
     'opacity':'1',
   },1000)
 
-},2500)
+},2000)
 
 });
 
