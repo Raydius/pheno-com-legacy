@@ -1,6 +1,5 @@
 
 var angular = require('angular');
-
 // main global controller
 angular.module('phenoCom').controller('phenoController', function($state, $scope, $cookies, envService) {
 
@@ -59,24 +58,14 @@ angular.module('phenoCom').controller('homeController', function($state, $scope,
         $topSection.css('height', $(window).height() - $nav.height());
     })
 
-});
+    setTimeout(function(){
+      $('.indie-minds').animate({
+        'opacity':'1',
+      },1000)
 
-angular.module('phenoCom').controller('welcomeController', function($state, $scope, $window) {
-
-//   $('.indie-agency').animate({
-//     'opacity':'1',
-//     'transition-delay':'.4s'
-// },400)
-setTimeout(function(){
-  $('.indie-minds').animate({
-    'opacity':'1',
-  },1000)
-
-},2000)
+    },2000)
 
 });
-
-
 
 /**
  * Controller for Jobs Page
@@ -302,52 +291,61 @@ angular.module('phenoCom').controller('blogPostController', function($scope, $st
 
 });
 
-angular.module('phenoCom').controller('scrollController', function(){
-  $('#culture-animate-1').mouseenter(function(){
-    $('#culture-animate-2').css('left','0')
-  })
+angular.module('phenoCom').controller('scrollController', function($rootScope, $document, $scope){
 
-  $('#culture-animate-2').mouseenter(function(){
-    $('#culture-animate-3').animate({'opacity': '1'},2000)
-    $('#culture-animate-3-quote').animate({'opacity': '1'},2000)
-  })
-  $('#culture-animate-3').mouseenter(function(){
-    $('#culture-animate-4').animate({'opacity': '1'},1400).addClass('animated').addClass('fadeInLeft')
-    $('#culture-animate-4-quote').animate({'opacity': '1'},2000).addClass('animated').addClass('slideInRight')
-  })
 
-  $('#culture-animate-4').mouseenter(function(){
-    $('#culture-animate-5').animate({'opacity': '1'},1400).addClass('animated').addClass('fadeInLeft')
-    $('#culture-animate-5-quote').animate({'opacity': '1'},2500).addClass('animated').addClass('slideInRight')
-    $('#culture-animate-7').animate({'opacity': '1'},4000).addClass('animated').addClass('slideInLeft')
-    $('#culture-animate-6').animate({'opacity': '1'},4000).addClass('animated').addClass('fadeInUp')
-  })
-  $('.culture-animate-last, #culture-animate-7, #culture-animate-8, #culture-animate-5').mouseenter(function(){
-    $('#culture-animate-8').animate({'opacity': '1'},2000).addClass('animated').addClass('fadeInLeft')
-    $('#culture-animate-9').animate({'opacity': '1'},2000).addClass('animated').addClass('fadeInRight')
-  })
-
-  function getXY(event) {
-      var element = document.getElementById('culture-animate-1');
-      var rect = element.getBoundingClientRect();
-      var scrollTop = document.documentElement.scrollTop?
-                      document.documentElement.scrollTop:document.body.scrollTop;
-      var scrollLeft = document.documentElement.scrollLeft?
-                      document.documentElement.scrollLeft:document.body.scrollLeft;
-      var elementLeft = rect.left+scrollLeft;
-      var elementTop = rect.top+scrollTop;
-
-          if (document.all){ //detects using IE
-              x = event.clientX+scrollLeft-elementLeft; //event not evt because of IE
-              y = event.clientY+scrollTop-elementTop;
-          }
-          else {
-            $('#culture-animate-2').animate({'opacity': '1'},1500).addClass('animated').addClass('slideInLeft')
-            $('#culture-animate-2-quote').animate({'opacity': '1'},1500).addClass('animated').addClass('slideInRight')
-
-      }
-    }
 });
+
+angular.module('phenoCom').controller('aniDistances', ['$scope',
+        function($scope) {
+            $scope.getScrollOffsets = function(w) {
+
+                // Use the specified window or the current window if no argument
+                w = w || window;
+
+                // This works for all browsers except IE versions 8 and before
+                if (w.pageXOffset !== null) {
+                    return {
+                        x: w.pageXOffset,
+                        y: w.pageYOffset
+                    };
+                }
+
+                // For IE (or any browser) in Standards mode
+                var d = w.document;
+                if (document.compatMode === 'CSS1Compat') {
+                    return {
+                        x: d.documentElement.scrollLeft,
+                        y: d.documentElement.scrollTop
+                    };
+                }
+
+                // For browsers in Quirks mode
+                return {
+                    x: d.body.scrollLeft,
+                    y: d.body.scrollTop
+                };
+            };
+            $scope.getPosition = function(e) {
+                return {
+                    x: e[0].offsetLeft,
+                    y: e[0].offsetTop
+                };
+            }
+            $scope.getViewPortSize = function(w) {
+
+                return {
+                    x: Math.max(document.documentElement.clientWidth, w.innerWidth || 0),
+                    y: Math.max(document.documentElement.clientHeight, w.innerHeight || 0)
+                }
+
+
+            }
+        }
+    ])
+
+
+
 
 
 /**

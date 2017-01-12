@@ -3,7 +3,6 @@
  */
 
 import 'bootstrap';
-
 import angular from 'angular';
 import uirouter from 'angular-ui-router';
 import ngAnimate from 'angular-animate';

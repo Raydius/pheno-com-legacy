@@ -19,6 +19,8 @@
     "angular-environment": "^1.0.4",
     "angular-messages": "^1.5.3",
     "angular-sanitize": "^1.5.8",
+    "angular-scroll-animate": "^0.9.9",
+    "angular-scroll-magic": "^0.1.5",
     "angular-skrollr": "^0.2.1",
     "angular-snap": "^1.8.5",
     "angular-socialshare": "^2.1.3",
@@ -81,6 +83,10 @@
     "ui-router-metatags": "^1.0.3",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.14",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "wowjs": "^1.1.3"
+  },
+  "devDependencies": {
+    "exports-loader": "^0.6.3"
   }
 }

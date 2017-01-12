@@ -12,6 +12,7 @@ import 'sticky-kit/dist/sticky-kit.min.js';
 import 'ui-router-metatags/dist/ui-router-metatags.min.js';
 
 
+
 require('angular-cookies');
 require('angular-messages');
 require('angular-snap');
@@ -42,7 +43,7 @@ angular.module('phenoCom',[
     'ngCookies',
     'ui.router.metatags',
     'ngMessages',
-    '720kb.socialshare'
+    '720kb.socialshare',
 ]);
 
 

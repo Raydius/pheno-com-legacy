@@ -122,6 +122,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         .state('culture', {
             url: '/culture/',
             template: templateCulture,
+            controller: 'scrollController',
             metaTags: {
                 title: 'phenomenon - Innovations Company | Culture',
                 description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
