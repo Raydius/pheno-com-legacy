@@ -63,7 +63,7 @@ angular.module('phenoCom').controller('homeController', function($state, $scope,
         'opacity':'1',
       },1000)
 
-    },2000)
+    },1000)
 
 });
 
