@@ -29,7 +29,7 @@ angular.module('phenoCom').config(function($sceDelegateProvider, envServiceProvi
   // whitelist for CORS
   $sceDelegateProvider.resourceUrlWhitelist([
     'self',
-    'http://tech.phenomenonstaging.com/**',
+    'http://staging.phenomenon.com/**',
     'https://player.vimeo.com/**',
     'https://vimeo.com/**'
   ]);
@@ -38,7 +38,7 @@ angular.module('phenoCom').config(function($sceDelegateProvider, envServiceProvi
   envServiceProvider.config({
     domains: {
       local: ['localhost', '127.0.0.1'],
-      staging: ['tech.phenomenonstaging.com'],
+      staging: ['staging.phenomenonstaging.com'],
       production: ['latest.phenomenon.com','phenomenon.com']
     },
     vars: {
@@ -46,7 +46,7 @@ angular.module('phenoCom').config(function($sceDelegateProvider, envServiceProvi
           baseUrl: '//localhost'
       },
       staging: {
-          baseUrl: '//tech.phenomenonstaging.com:2070'
+          baseUrl: '//staging.phenomenon.com'
       },
       production: {
           baseUrl: '//phenomenon.com'
