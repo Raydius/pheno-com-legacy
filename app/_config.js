@@ -34,11 +34,14 @@ angular.module('phenoCom').config(function($sceDelegateProvider, envServiceProvi
     'https://vimeo.com/**'
   ]);
 
-  // define environment-specific vars
+  /*
+   * define environment-specific vars -- if you get a "Cannot read property 'baseUrl' of undefined" error
+   * most likely it is because the deployed domain is not properly configured here
+   */
   envServiceProvider.config({
     domains: {
       local: ['localhost', '127.0.0.1'],
-      staging: ['staging.phenomenonstaging.com'],
+      staging: ['staging.phenomenon.com'],
       production: ['latest.phenomenon.com','phenomenon.com']
     },
     vars: {

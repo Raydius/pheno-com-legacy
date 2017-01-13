@@ -1,5 +1,6 @@
 
 var angular = require('angular');
+
 // main global controller
 angular.module('phenoCom').controller('phenoController', function($state, $scope, $cookies, envService) {
 
@@ -148,7 +149,6 @@ angular.module('phenoCom').controller('contactController', function($scope, $sta
 
     $scope.setAttempted = function(element) {
         element.attempted = true;
-        return;
     };
 
     $scope.sendData = function() {
@@ -297,52 +297,51 @@ angular.module('phenoCom').controller('scrollController', function($rootScope, $
 });
 
 angular.module('phenoCom').controller('aniDistances', ['$scope',
-        function($scope) {
-            $scope.getScrollOffsets = function(w) {
+    function($scope) {
+        $scope.getScrollOffsets = function(w) {
 
-                // Use the specified window or the current window if no argument
-                w = w || window;
+            // Use the specified window or the current window if no argument
+            w = w || window;
 
-                // This works for all browsers except IE versions 8 and before
-                if (w.pageXOffset !== null) {
-                    return {
-                        x: w.pageXOffset,
-                        y: w.pageYOffset
-                    };
-                }
-
-                // For IE (or any browser) in Standards mode
-                var d = w.document;
-                if (document.compatMode === 'CSS1Compat') {
-                    return {
-                        x: d.documentElement.scrollLeft,
-                        y: d.documentElement.scrollTop
-                    };
-                }
-
-                // For browsers in Quirks mode
+            // This works for all browsers except IE versions 8 and before
+            if (w.pageXOffset !== null) {
                 return {
-                    x: d.body.scrollLeft,
-                    y: d.body.scrollTop
+                    x: w.pageXOffset,
+                    y: w.pageYOffset
                 };
+            }
+
+            // For IE (or any browser) in Standards mode
+            var d = w.document;
+            if (document.compatMode === 'CSS1Compat') {
+                return {
+                    x: d.documentElement.scrollLeft,
+                    y: d.documentElement.scrollTop
+                };
+            }
+
+            // For browsers in Quirks mode
+            return {
+                x: d.body.scrollLeft,
+                y: d.body.scrollTop
             };
-            $scope.getPosition = function(e) {
-                return {
-                    x: e[0].offsetLeft,
-                    y: e[0].offsetTop
-                };
+        };
+        $scope.getPosition = function(e) {
+            return {
+                x: e[0].offsetLeft,
+                y: e[0].offsetTop
+            };
+        };
+        $scope.getViewPortSize = function(w) {
+
+            return {
+                x: Math.max(document.documentElement.clientWidth, w.innerWidth || 0),
+                y: Math.max(document.documentElement.clientHeight, w.innerHeight || 0)
             }
-            $scope.getViewPortSize = function(w) {
 
-                return {
-                    x: Math.max(document.documentElement.clientWidth, w.innerWidth || 0),
-                    y: Math.max(document.documentElement.clientHeight, w.innerHeight || 0)
-                }
-
-
-            }
-        }
-    ])
+        };
+    }
+]);
 
 
 
