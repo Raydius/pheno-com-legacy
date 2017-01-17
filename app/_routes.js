@@ -29,6 +29,7 @@ var templateBlogPostSingle = require('views/blog-post-single.pug');
 var templateBlogSearch = require('views/blog-search.pug');
 var templateError = require('views/404.pug');
 var templateJob = require('views/job.pug');
+var templateBlogGrid = require('views/blog-grid.pug');
 var templateApplication = require('views/application.pug');
 
 
@@ -301,6 +302,11 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider) {
         .state('blog', {
             url: '/blog/',
             template: templateBlog,
+            controller: 'blogController'
+        })
+        .state('blog-grid', {
+            url: '/blog-grid',
+            template: templateBlogGrid,
             controller: 'blogController'
         })
         .state('post', {

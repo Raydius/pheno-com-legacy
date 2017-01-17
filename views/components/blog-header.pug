@@ -6,16 +6,23 @@ article.col-md-12.top-main
     .contact-section
       p.tagline INNOVATION. CULTURE. AND WHERE THEY MEET. Give us a tip at now@phenomenon.com
       ul.blog-action-list
-        a(ui-sref="search/")
+        a.search-link(ui-sref="search/")
           li.search
           img(src="assets/images/blog/search.png", alt="alt")
-        a(ui-sref="search/")
-          li.action-text.search Search
+        li.action-text.search Search
+        .bubble-search.search-input.animated.fadeIn
+          .bubble-wrapper
+            li
+              input.search-input(placeholder='Enter Search')
         li.subscribe
-          img(src="assets/images/blog/subscribe.png", alt="alt")
-        li.action-text Subscribe
-        li.archive
-          img(src="assets/images/blog/archive.png", alt="alt")
-        li.action-text Archive
+          img( src="assets/images/blog/subscribe.png", alt="alt")
+        li.action-text.subscribe Subscribe
+        .bubble-subscribe.subscribe-input.animated.fadeIn
+          .bubble-wrapper
+            li
+              input.subscribe-input(placeholder='Your E-mail')
+        //- li.archive
+        //-   img(src="assets/images/blog/archive.png", alt="alt")
+        //- li.action-text.archive Archive
 
 .pageDivide.col-md-12
