@@ -266,8 +266,7 @@ angular.module('phenoCom').controller('blogPostController', function($scope, $st
     var slug = $stateParams.slug;
 
     $scope.article = {};
-
-    console.log('Slug', slug);
+    
 
     $http({
         method: 'GET',
@@ -291,7 +290,7 @@ angular.module('phenoCom').controller('blogPostController', function($scope, $st
         }
         else {
             // error
-            console.log('error');
+            console.log('WP Error: Number of articles returned was not 1.');
         }
 
     });
