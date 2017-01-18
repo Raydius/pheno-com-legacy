@@ -15,8 +15,11 @@ var templateContact = require('views/contact.pug');
 var templateJobs = require('views/jobs.pug');
 var templateBlog = require('views/blog.pug');
 var templateBlogPostSingle = require('views/blog-post-single.pug');
+// var templateSearchPost = require('views/search-post.pug');
+var templateBlogSearch = require('views/blog-search.pug');
 var templateError = require('views/404.pug');
 var templateJob = require('views/job.pug');
+var templateBlogGrid = require('views/blog-grid.pug');
 var templateApplication = require('views/application.pug');
 var templateHoliday = require('views/holiday.pug');
 
@@ -178,10 +181,20 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             template: templateBlog,
             controller: 'blogController'
         })
+        .state('blog-grid', {
+            url: '/blog-grid',
+            template: templateBlogGrid,
+            controller: 'blogController'
+        })
         .state('post', {
             url: '/blog/:slug/',
             template: templateBlogPostSingle,
             controller: 'blogPostController'
+        })
+        .state('search/', {
+            url: '/search/',
+            template: templateBlogSearch,
+            controller: 'blogController'
         })
         .state('error', {
             url: '/error/',

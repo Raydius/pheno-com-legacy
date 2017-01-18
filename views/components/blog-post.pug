@@ -1,13 +1,29 @@
-article.col-md-4.blog-column
-  a(href='{{postUrl}}')
-    img(src='{{thumbnail}}', alt='{{alt}}')
-  a(href='{{postUrl}}')
-    span.blog-title(ng-bind-html="title | toTrusted")
-  p.blog-preview(ng-bind-html="preview | toTrusted")
-  a(href='{{postUrl}}').read-moreUrl.full-article-link Read more >
-    .page-divide.end-post.col-md-12
-    .col-md-12.author-container
-      img.pheno-p(src=require('assets/images/blog/pheno-p.png'))
-      .blog-author By {{blogger}}
-        //- .position(ng-if='position == 1') {{positionTitle}}
-  .big-divide
+.well
+   a(href='{{postUrl}}')
+     img(src='{{thumbnail}}', alt='{{alt}}')
+   a(href='{{postUrl}}')
+     span.blog-title(ng-bind-html="title | toTrusted")
+   p.blog-preview(ng-bind-html="preview | toTrusted")
+   a(href='{{postUrl}}').read-moreUrl.full-article-link Read more >
+     .page-divide.end-post.col-md-12
+     .col-md-12.author-container
+       img.pheno-p(src=require('assets/images/blog/pheno-p.png'))
+       .blog-author By {{blogger}}
+          .position(ng-if='position == 1') {{positionTitle}}
+          .big-divide
+
+
+
+//- article.col-md-4.blog-column
+//-   a(href='{{postUrl}}')
+//-     img(src='{{thumbnail}}', alt='{{alt}}')
+//-   a(href='{{postUrl}}')
+//-    span.blog-title(ng-bind-html="title | toTrusted")
+//-   p.blog-preview(ng-bind-html="preview | toTrusted")
+//-   a(href='{{postUrl}}').read-moreUrl.full-article-link Read more >
+//-    .page-divide.end-post.col-md-12
+//-    .col-md-12.author-container
+//-      img.pheno-p(src=require('assets/images/blog/pheno-p.png'))
+//-      .blog-author By {{blogger}}
+//-        .position(ng-if='position == 1') {{positionTitle}}
+//-        .big-divide
