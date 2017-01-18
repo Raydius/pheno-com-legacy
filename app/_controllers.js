@@ -291,7 +291,7 @@ angular.module('phenoCom').controller('blogPostController', function($scope, $st
         }
         else {
             // error
-            console.log('error');
+            console.log('WP Error: Number of articles returned was not 1.');
         }
 
     });
