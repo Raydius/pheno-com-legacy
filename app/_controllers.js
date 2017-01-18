@@ -267,9 +267,11 @@ angular.module('phenoCom').controller('blogPostController', function($scope, $st
 
     $scope.article = {};
 
+    console.log('Slug', slug);
+
     $http({
         method: 'GET',
-        url: 'http://phenomenon.com:2088/wp-json/wp/v2/article?filter[name]='+slug
+        url: 'http://phenomenon.com:2088/wp-json/wp/v2/article?slug='+slug
     }).then(function(response) {
         console.log(response.data);
 
