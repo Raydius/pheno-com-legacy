@@ -3,12 +3,12 @@ blog-header
 
 section.row.no-padding.culture.animated.fadeInUp
   article.col-md-10.col-lg-8.col-sm-12.single-post-article
-    .date(ng-bind="article.date | date: 'MMMM dd, yyyy'")
+    //- .date(ng-bind="article.date | date: 'MMMM dd, yyyy'")
     .post-title(ng-bind-html="article.title | toTrusted")
     .col-md-12.author-container.post-container
       img.pheno-p.blog-post-p(src=require('assets/images/blog/pheno-p.png'))
       .blog-author {{article.author}}
-        .position {{positionTitle}}
+        .position {{article.positionTitle}}
     img.blog-image(src='{{article.image}}')
     .blog-content(ng-bind-html="article.content | toTrusted")
     a.share Share

@@ -213,18 +213,18 @@ angular.module('phenoCom').controller('contactController', function($scope, $sta
 
 // controller for blog landing page
 angular.module('phenoCom').controller('blogController', function($scope, $state, $sce, $http) {
-
-    $('.search-input, .search-arrow, .arrow-up, .arrow-up-outline').hide()
-    $('.subscribe-input, .subscribe-arrow, .arrow-up-sub, .arrow-up-outline-sub').hide()
-
-    $('.action-text.subscribe').click(function() {
-      $('.search-input, .search-arrow, .arrow-up, .arrow-up-outline').hide()
-    $('.subscribe-input, .subscribe-arrow, .arrow-up-sub, .arrow-up-outline-sub').show()
-  })
-    $('.action-text.search').click(function() {
-      $('.subscribe-input, .subscribe-arrow, .arrow-up-sub, .arrow-up-outline-sub').hide()
-    $('.search-input, .search-arrow, .arrow-up, .arrow-up-outline').show()
-  })
+  //
+  //   $('.search-input, .search-arrow, .arrow-up, .arrow-up-outline').hide()
+  //   $('.subscribe-input, .subscribe-arrow, .arrow-up-sub, .arrow-up-outline-sub').hide()
+  //
+  //   $('.action-text.subscribe').click(function() {
+  //     $('.search-input, .search-arrow, .arrow-up, .arrow-up-outline').hide()
+  //   $('.subscribe-input, .subscribe-arrow, .arrow-up-sub, .arrow-up-outline-sub').show()
+  // })
+  //   $('.action-text.search').click(function() {
+  //     $('.subscribe-input, .subscribe-arrow, .arrow-up-sub, .arrow-up-outline-sub').hide()
+  //   $('.search-input, .search-arrow, .arrow-up, .arrow-up-outline').show()
+  // })
 
 
     $scope.articles = [];
@@ -247,7 +247,8 @@ angular.module('phenoCom').controller('blogController', function($scope, $state,
                 preview: articleData.excerpt.rendered,
                 thumbnail: articleData.better_featured_image.media_details.sizes.medium.source_url,
                 alt: articleData.better_featured_image.alt_text,
-                author: articleData.acf.author
+                author: articleData.acf.author,
+                positionTitle: articleData.acf.position
             };
 
             $scope.articles.push(article);
@@ -282,7 +283,7 @@ angular.module('phenoCom').controller('blogPostController', function($scope, $st
                 date: post.date,
                 image: post.better_featured_image.source_url,
                 author: post.acf.author,
-                byline: post.acf.byline
+                positionTitle: post.acf.position
             };
             console.log($scope.article);
         }
