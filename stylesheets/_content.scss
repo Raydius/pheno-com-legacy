@@ -4,6 +4,7 @@ main, .maincontent {
   max-width: $body_size;
   margin: 0 auto;
   padding: 0;
+  overflow: hidden;
   display: block;
   padding: 0 150px;
   .main-wrapper{
@@ -110,3 +111,7 @@ main, .maincontent{
 	padding-left: ($base_spacing);
 	padding-right: ($base_spacing);
 }
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_content.scss
