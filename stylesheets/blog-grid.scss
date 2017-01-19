@@ -263,3 +263,13 @@ input.subscribe-input {
     margin-left: 0;
     z-index: 2;
 }
+
+
+@-moz-document url-prefix() {
+
+  .item {
+      display: block;
+      padding: 0.25rem;
+      width: 102.5% !important;
+  }
+}
