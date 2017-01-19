@@ -28,9 +28,9 @@ var copy =
       "className": "culture",
     },
     {
-      "navTitle": "Jobs",
+      "navTitle": "Careers",
       "title": "View Jobs Page",
-      "uiSref": "jobs",
+      "uiSref": "careers",
     },
     {
       "navTitle": "Contact",

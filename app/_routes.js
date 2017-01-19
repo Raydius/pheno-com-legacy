@@ -140,12 +140,12 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
 
 
-        .state('jobs', {
-            url: '/jobs/',
+        .state('careers', {
+            url: '/careers/',
             template: templateJobs,
             controller: 'jobsController',
             metaTags: {
-                title: 'phenomenon - Innovations Company | Jobs',
+                title: 'phenomenon - Innovations Company | Careers',
                 description: 'phenomenon - Innovations Company - jobs, careers, open positions',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
                 properties: {
@@ -155,7 +155,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                     'og:image': require('assets/images/fb-share-center.png')
                 },
                 ncyBreadcrumb: {
-                label: 'Jobs'
+                label: 'careers'
               }
             }
         })
@@ -165,7 +165,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             controller: 'contactController',
             metaTags: {
                 title: 'phenomenon - Innovations Company | Contact',
-                description: 'phenomenon Innovations Company - Contact us about jobs, new business, and public relations.',
+                description: 'phenomenon Innovations Company - Contact us about careers, new business, and public relations.',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, contact us, jobs, new business, PR',
                 properties: {
                     'og:type': 'website',
