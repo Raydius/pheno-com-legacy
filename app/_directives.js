@@ -213,7 +213,9 @@ angular.module('phenoCom').directive('fileModel', ['$parse', function ($parse) {
     };
 }]);
 
-angular.module('phenoCom').directive('blogPost', function(){
+
+// Individual blog post "preview" card on main blog index page
+angular.module('phenoCom').directive('blogPost', [ '$location', function(location){
 
   return {
       scope: {
@@ -223,35 +225,17 @@ angular.module('phenoCom').directive('blogPost', function(){
           thumbnail: '@',
           alt: '@',
           author: '@',
-          slug: '@'
+          slug: '@',
+          position: '@'
       },
       template: blogPostTemplate,
       link: function (scope, element, attrs) {
-          scope.postUrl = '/#!/blog/'+ scope.slug + '/';
+          scope.postUrl = location.absUrl() + scope.slug + '/';
       }
   };
 
-});
+}]);
 
-angular.module('phenoCom').directive('searchPost', function(){
-
-  return {
-      scope: {
-          preview: '@',
-          title: '@',
-          blogger: '@',
-          thumbnail: '@',
-          alt: '@',
-          author: '@',
-          slug: '@'
-      },
-      template: searchPostTemplate,
-      link: function (scope, element, attrs) {
-          scope.postUrl = '/#!/blog/'+ scope.slug + '/';
-      }
-  };
-
-});
 
 angular.module('phenoCom').directive('blogHeader', function(){
 

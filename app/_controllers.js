@@ -257,7 +257,7 @@ angular.module('phenoCom').controller('blogController', function($scope, $state,
                 thumbnail: articleData.better_featured_image.media_details.sizes.medium.source_url,
                 alt: articleData.better_featured_image.alt_text,
                 author: articleData.acf.author,
-                positionTitle: articleData.acf.position
+                position: (articleData.acf.position) ? articleData.acf.position : ''
             };
 
             $scope.articles.push(article);

@@ -15,13 +15,9 @@ var templateContact = require('views/contact.pug');
 var templateJobs = require('views/jobs.pug');
 var templateBlog = require('views/blog.pug');
 var templateBlogPostSingle = require('views/blog-post-single.pug');
-// var templateSearchPost = require('views/search-post.pug');
-var templateBlogSearch = require('views/blog-search.pug');
 var templateError = require('views/404.pug');
 var templateJob = require('views/job.pug');
-var templateBlogGrid = require('views/blog-grid.pug');
 var templateApplication = require('views/application.pug');
-var templateHoliday = require('views/holiday.pug');
 
 
 angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $locationProvider) {
@@ -179,12 +175,18 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         .state('blog', {
             url: '/blog/',
             template: templateBlog,
-            controller: 'blogController'
-        })
-        .state('blog-grid', {
-            url: '/blog-grid',
-            template: templateBlogGrid,
-            controller: 'blogController'
+            controller: 'blogController',
+            metaTags: {
+                title: 'phenomenon - Innovations Company | Blog',
+                description: 'phenomenon Innovations Company - Contact us about careers, new business, and public relations.',
+                keywords: 'phenomenon, agency, innovation, blog, marketing, UX, digital, cultural, advertising, ideation, PR',
+                properties: {
+                    'og:type': 'website',
+                    'og:title': 'Phenomenon - Innovations Company | Blog',
+					'og:description': 'Phenomenon - Innovations Company',
+					'og:image': require('assets/images/fb-share-center.png')
+                }
+            }
         })
         .state('post', {
             url: '/blog/:slug/',
@@ -214,11 +216,8 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             // label: 'job name'
           }
         })
-        .state('happy-holidays', {
-            url: '/happy-holidays/',
-            template: templateHoliday,
-            controller: 'holidayController'
-        })
+
+
 
         .state('thanks', {
             url: '/job/thanks/',
