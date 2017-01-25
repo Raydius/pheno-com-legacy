@@ -193,11 +193,11 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             template: templateBlogPostSingle,
             controller: 'blogPostController'
         })
-        .state('search/', {
-            url: '/search/',
-            template: templateBlogSearch,
-            controller: 'blogController'
-        })
+        // .state('search/', {
+        //     url: '/search/',
+        //     template: templateBlogSearch,
+        //     controller: 'blogController'
+        // })
         .state('error', {
             url: '/error/',
             template: templateError,
