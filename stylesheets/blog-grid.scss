@@ -31,12 +31,13 @@ p.now {
 }
 @media (min-width: 768px) {
     .container.blog-container {
-        width: 670px;
+        width: 820px;
     }
 }
 @media (min-width: 992px) {
     .container.blog-container {
-        width: 890px;
+      width: 1015px;
+      margin-left: 0;
     }
 }
 @media (min-width: 1330px) {
