@@ -26,8 +26,9 @@
 }
 
 p.now {
-    margin-left: 113px !important;
-    margin-top: -6px !important;
+    margin-left: 97px!important;
+    margin-top: -6px!important;
+    font-size: 14px;
 }
 @media (min-width: 768px) {
     .container.blog-container {
@@ -151,7 +152,7 @@ p.now {
     }
 
     p.now {
-        margin-left: 112px !important;
+        margin-left: 92px !important;
         margin-top: -26px !important;
     }
 
@@ -287,3 +288,8 @@ input.subscribe-input {
         width: 102.5% !important;
     }
 }
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/blog-grid.scss
