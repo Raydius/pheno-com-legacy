@@ -70,7 +70,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             template: templateWork,
             metaTags: {
                 title: 'phenomenon - Innovations Company | Work',
-                description: 'phenomenon - Innovations Company - client work, projects, media',
+                description: 'client work, projects, media',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media',
                 properties: {
                     'og:type': 'website',
@@ -104,7 +104,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 					    return 'phenomenon - Innovations Company | Work - ' + caseObject.title;
                     },
 					'og:description': function(caseObject) {
-					    return 'phenomenon - Innovations Company - client work, projects, media - ' + caseObject.client;
+					    return 'client work, projects, media - ' + caseObject.client;
                     },
 					'og:image': function(caseObject) {
 					    return caseObject.shareImg;
