@@ -188,19 +188,27 @@ p.now {
     border-radius: 0;
 }
 
-label.icon-share {
+label.icon-share.blog-share {
     color: black;
     margin-left: 20px;
+    cursor: pointer;
+}
+
+.share-text:hover {
+  color: red;
 }
 
 .social-icon-blog {
     font-size: 14px;
     display: inline-block;
-    padding: 10px;
+    justify-content: center;
+    flex-direction: row;
+    padding: 13px;
     margin-top: -10px;
     line-height: 0px;
     font-family: "Circular-Book", Helvetica, Arial, Sans-Serif;
 }
+
 .blog-bubble {
       margin-top: 10px;
       margin-left: 15px;

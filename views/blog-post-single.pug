@@ -11,8 +11,8 @@ section.row.no-padding.culture
                 .position {{article.positionTitle}}
         img.blog-image(src='{{article.image}}')
         .blog-content(ng-bind-html="article.content | toTrusted")
-label.icon-share(close='', showmore='', childcontainer='.social-icons')
-span.share-text(close='', showmore='', childcontainer='.social-icons') Share
+label.icon-share.blog-share(close='', showmore='', childcontainer='.social-icons')
+span.share-text(close='', showmore='',childcontainer='.social-icons') Share
 ul.social-icons
     .bubble.blog-bubble
         .bubble-wrapper

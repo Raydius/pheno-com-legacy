@@ -222,6 +222,8 @@ angular.module('phenoCom').controller('contactController', function($scope, $sta
 
 // controller for blog landing page
 angular.module('phenoCom').controller('blogController', function($scope, $state, $sce, $http) {
+
+
   //
   //   $('.search-input, .search-arrow, .arrow-up, .arrow-up-outline').hide()
   //   $('.subscribe-input, .subscribe-arrow, .arrow-up-sub, .arrow-up-outline-sub').hide()
@@ -271,6 +273,14 @@ angular.module('phenoCom').controller('blogController', function($scope, $state,
 
 // controller for individual blog posts
 angular.module('phenoCom').controller('blogPostController', function($scope, $state, $sce, $http, $stateParams) {
+
+
+
+    $('.social-icons').hide();
+    $('.icon-share, .share-text').click(function(){
+      $('.social-icons').toggle();
+    })
+
 
     var slug = $stateParams.slug;
 
