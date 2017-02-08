@@ -20,6 +20,11 @@
     border: none;
 }
 
+span.full-image-block.ssNonEditable {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .container.blog-container {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -167,7 +172,7 @@ p.now {
 }
 
 .item {
-    display: table-row-group;
+    display: table;
     padding: 0.25rem;
     width: 102.5% !important;
 }
@@ -181,6 +186,24 @@ p.now {
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 0;
+}
+
+label.icon-share {
+    color: black;
+    margin-left: 20px;
+}
+
+.social-icon-blog {
+    font-size: 14px;
+    display: inline-block;
+    padding: 10px;
+    margin-top: -10px;
+    line-height: 0px;
+    font-family: "Circular-Book", Helvetica, Arial, Sans-Serif;
+}
+.blog-bubble {
+      margin-top: 10px;
+      margin-left: 15px;
 }
 
 blog-header {

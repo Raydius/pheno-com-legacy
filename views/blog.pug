@@ -11,7 +11,7 @@ blog-header
 .container.blog-container
   .row-blog
     .item
-      blog-post.animated.fadeInUp(
+      blog-post(
         ng-repeat="article in articles",
         slug="{{article.slug}}",
         preview="{{article.preview}}",
