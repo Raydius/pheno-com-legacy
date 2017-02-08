@@ -253,7 +253,7 @@ angular.module('phenoCom').controller('blogController', function($scope, $state,
             var article = {
                 title: articleData.title.rendered,
                 slug: articleData.slug,
-                preview: articleData.excerpt.rendered,
+                preview: articleData.acf.preview,
                 thumbnail: articleData.better_featured_image.media_details.sizes.medium.source_url,
                 alt: articleData.better_featured_image.alt_text,
                 author: articleData.acf.author,
@@ -275,7 +275,7 @@ angular.module('phenoCom').controller('blogPostController', function($scope, $st
     var slug = $stateParams.slug;
 
     $scope.article = {};
-    
+
 
     $http({
         method: 'GET',
