@@ -2,13 +2,26 @@
 blog-header
 
 section.row.no-padding.culture
-  article.col-md-10.col-lg-8.col-sm-12
-    .date {{article.date}}
-    .post-title(ng-bind-html="article.title | toTrusted")
-    .col-md-12.author-container.post-container
-      img.pheno-p.blog-post-p(src=require('assets/images/blog/pheno-p.png'))
-      .blog-author {{article.author}}
-        .position {{positionTitle}}
-    img.blog-image(src='{{article.image}}')
-    .blog-content(ng-bind-html="article.content | toTrusted")
-    a.share Share
+    article.col-md-10.col-lg-8.col-sm-12.single-post-article
+        .date(ng-bind="article.date | date: 'MMMM dd, yyyy'")
+        .post-title(ng-bind-html="article.title | toTrusted")
+        .col-md-12.author-container.post-container
+            img.pheno-p.blog-post-p(src=require('assets/images/blog/pheno-p.png'))
+            .blog-author {{article.author}}
+                .position {{article.positionTitle}}
+        img.blog-image(src='{{article.image}}')
+        .blog-content(ng-bind-html="article.content | toTrusted")
+label.icon-share.blog-share(close='', showmore='', childcontainer='.social-icons')
+span.share-text.blog-share-text(close='', showmore='',childcontainer='.social-icons') Share
+ul.social-icons
+    .bubble.blog-bubble
+        .bubble-wrapper
+            li.social-icon.social-icon-blog
+                a.icon-twitter.icon(socialshare socialshare-provider="twitter", socialshare-text="{{MetaTags.title}}", socialshare-hashtags="phno", socialshare-url="{{shareUrl}}", socialshare-popup-height="600", socialshare-popup-width="500")
+                    span=caseIndex
+            li.social-icon.social-icon-blog
+                a.icon-facebook.icon(socialshare socialshare-provider="facebook" socialshare-text="{{MetaTags.title}}" socialshare-hashtags="phno" socialshare-media!=fbShareImg)
+            li.social-icon.social-icon-blog
+                a.icon-linkedin.icon(socialshare socialshare-provider="linkedin" socialshare-text="#phenomenon" socialshare-hashtags="#phenomenon" socialshare-url="{{shareUrl}}", socialshare-popup-height="600" socialshare-popup-width="500")
+            li.social-icon.social-icon-blog
+                a.icon-mail.icon(socialshare socialshare-provider="email" socialshare-subject="{{Metatags.title}}" socialshare-body="Check out this link from Phenomenon.com!")

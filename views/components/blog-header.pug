@@ -4,15 +4,29 @@ article.col-md-12.top-main
     article.no-padding.blog-no-padding
       h2.phno-now now
     .contact-section
-      p.tagline INNOVATION. CULTURE. AND WHERE THEY MEET. Give us a tip at now@phenomenon.com
+      p.tagline INNOVATION. CULTURE. AND WHERE THEY MEET.
+      p.tip Give us a tip at
+      p.now(style='color:#cc2128;') now@phenomenon.com
       //- ul.blog-action-list
-      //- 	li.search
-      //- 		img(src="assets/images/blog/search.png", alt="alt")
-      //- 		| Search
-      //- 	li.subscribe
-      //- 		img(src="assets/images/blog/subscribe.png", alt="alt")
-      //- 		| Subscribe
-      //- 	li.archive
-      //- 		img(src="assets/images/blog/archive.png", alt="alt")
-      //- 		| Archive
+        a.search-link(ui-sref="search/")
+          li.search
+          img(src="assets/images/blog/search.png", alt="alt")
+        li.action-text.search Search
+        .bubble-search.search-input.animated.fadeIn
+          .bubble-wrapper
+            li
+              input.search-input(placeholder='Enter Search')
+              .icon-right-arrow.search-arrow.animated.fadeIn
+        li.subscribe
+          img( src="assets/images/blog/subscribe.png", alt="alt")
+        li.action-text.subscribe Subscribe
+        .bubble-subscribe.subscribe-input.animated.fadeIn
+          .bubble-wrapper
+            li
+              input.subscribe-input(placeholder='Your E-mail')
+              .icon-right-arrow.subscribe-arrow.animated.fadeIn
+        //- li.archive
+        //-   img(src="assets/images/blog/archive.png", alt="alt")
+        //- li.action-text.archive Archive
+
 .pageDivide.col-md-12

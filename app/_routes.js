@@ -18,7 +18,6 @@ var templateBlogPostSingle = require('views/blog-post-single.pug');
 var templateError = require('views/404.pug');
 var templateJob = require('views/job.pug');
 var templateApplication = require('views/application.pug');
-var templateHoliday = require('views/holiday.pug');
 
 
 angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $locationProvider) {
@@ -71,7 +70,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             template: templateWork,
             metaTags: {
                 title: 'phenomenon - Innovations Company | Work',
-                description: 'phenomenon - Innovations Company - client work, projects, media',
+                description: 'client work, projects, media',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media',
                 properties: {
                     'og:type': 'website',
@@ -105,7 +104,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 					    return 'phenomenon - Innovations Company | Work - ' + caseObject.title;
                     },
 					'og:description': function(caseObject) {
-					    return 'phenomenon - Innovations Company - client work, projects, media - ' + caseObject.client;
+					    return 'client work, projects, media - ' + caseObject.client;
                     },
 					'og:image': function(caseObject) {
 					    return caseObject.shareImg;
@@ -122,6 +121,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         .state('culture', {
             url: '/culture/',
             template: templateCulture,
+            controller: 'scrollController',
             metaTags: {
                 title: 'phenomenon - Innovations Company | Culture',
                 description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
@@ -151,7 +151,11 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                     'og:image': require('assets/images/fb-share-center.png')
                 },
                 ncyBreadcrumb: {
+<<<<<<< HEAD
                 label: 'Careers'
+=======
+                label: 'careers'
+>>>>>>> release/1.9.0
               }
             }
         })
@@ -161,7 +165,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             controller: 'contactController',
             metaTags: {
                 title: 'phenomenon - Innovations Company | Contact',
-                description: 'phenomenon Innovations Company - Contact us about jobs, new business, and public relations.',
+                description: 'phenomenon Innovations Company - Contact us about careers, new business, and public relations.',
                 keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, contact us, jobs, new business, PR',
                 properties: {
                     'og:type': 'website',
@@ -175,13 +179,29 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         .state('blog', {
             url: '/blog/',
             template: templateBlog,
-            controller: 'blogController'
+            controller: 'blogController',
+            metaTags: {
+                title: 'phenomenon - Innovations Company | Blog',
+                description: 'phenomenon Innovations Company - Contact us about careers, new business, and public relations.',
+                keywords: 'phenomenon, agency, innovation, blog, marketing, UX, digital, cultural, advertising, ideation, PR',
+                properties: {
+                    'og:type': 'website',
+                    'og:title': 'Phenomenon - Innovations Company | Blog',
+					'og:description': 'Phenomenon - Innovations Company',
+					'og:image': require('assets/images/fb-share-center.png')
+                }
+            }
         })
         .state('post', {
             url: '/blog/:slug/',
             template: templateBlogPostSingle,
             controller: 'blogPostController'
         })
+        // .state('search/', {
+        //     url: '/search/',
+        //     template: templateBlogSearch,
+        //     controller: 'blogController'
+        // })
         .state('error', {
             url: '/error/',
             template: templateError,
@@ -200,11 +220,8 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             // label: 'job name'
           }
         })
-        .state('happy-holidays', {
-            url: '/happy-holidays/',
-            template: templateHoliday,
-            controller: 'holidayController'
-        })
+
+
 
         .state('thanks', {
             url: '/job/thanks/',

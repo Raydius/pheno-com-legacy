@@ -29,16 +29,19 @@ angular.module('phenoCom').config(function($sceDelegateProvider, envServiceProvi
   // whitelist for CORS
   $sceDelegateProvider.resourceUrlWhitelist([
     'self',
-    'http://tech.phenomenonstaging.com/**',
+    'http://staging.phenomenon.com/**',
     'https://player.vimeo.com/**',
     'https://vimeo.com/**'
   ]);
 
-  // define environment-specific vars
+  /*
+   * define environment-specific vars -- if you get a "Cannot read property 'baseUrl' of undefined" error
+   * most likely it is because the deployed domain is not properly configured here
+   */
   envServiceProvider.config({
     domains: {
       local: ['localhost', '127.0.0.1'],
-      staging: ['tech.phenomenonstaging.com'],
+      staging: ['staging.phenomenon.com'],
       production: ['latest.phenomenon.com','phenomenon.com']
     },
     vars: {
@@ -46,7 +49,7 @@ angular.module('phenoCom').config(function($sceDelegateProvider, envServiceProvi
           baseUrl: '//localhost'
       },
       staging: {
-          baseUrl: '//tech.phenomenonstaging.com:2070'
+          baseUrl: '//staging.phenomenon.com'
       },
       production: {
           baseUrl: '//phenomenon.com'
