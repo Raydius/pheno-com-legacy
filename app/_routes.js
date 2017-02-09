@@ -104,7 +104,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 					    return 'phenomenon - Innovations Company | Work - ' + caseObject.title;
                     },
 					'og:description': function(caseObject) {
-					    return 'client work, projects, media - ' + caseObject.client;
+					    return 'An independent agency for independent minds.';
                     },
 					'og:image': function(caseObject) {
 					    return caseObject.shareImg;
