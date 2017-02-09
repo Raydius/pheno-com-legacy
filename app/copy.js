@@ -29,13 +29,8 @@ var copy =
     },
     {
       "navTitle": "Careers",
-<<<<<<< HEAD
       "title": "View Careers Page",
       "uiSref": "careers"
-=======
-      "title": "View Jobs Page",
-      "uiSref": "careers",
->>>>>>> release/1.9.0
     },
     {
       "navTitle": "Contact",
