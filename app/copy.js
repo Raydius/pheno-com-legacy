@@ -29,8 +29,8 @@ var copy =
     },
     {
       "navTitle": "Careers",
-      "title": "View Jobs Page",
-      "uiSref": "careers",
+      "title": "View Careers Page",
+      "uiSref": "careers"
     },
     {
       "navTitle": "Contact",
