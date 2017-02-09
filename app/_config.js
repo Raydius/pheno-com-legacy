@@ -42,17 +42,20 @@ angular.module('phenoCom').config(function($sceDelegateProvider, envServiceProvi
     domains: {
       local: ['localhost', '127.0.0.1'],
       staging: ['staging.phenomenon.com'],
-      production: ['latest.phenomenon.com','phenomenon.com']
+      production: ['phenomenon.com']
     },
     vars: {
       local: {
-          baseUrl: '//localhost'
+          baseUrl: '//localhost',
+          apiUrl: 'http://staging.phenomenon.com:2088'
       },
       staging: {
-          baseUrl: '//staging.phenomenon.com'
+          baseUrl: '//staging.phenomenon.com',
+          apiUrl: 'http://staging.phenomenon.com:2088'
       },
       production: {
-          baseUrl: '//phenomenon.com'
+          baseUrl: '//phenomenon.com',
+          apiUrl: 'http://phenomenon.com:2088'
       }
     }
 

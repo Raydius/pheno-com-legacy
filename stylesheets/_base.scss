@@ -347,19 +347,8 @@ h3 blockquote {
 		}
 	}
 }
-/* @media (max-width: 991px) and (min-width: 640px) {
-	.topcontent {
-		#icon-details-container > fieldset {
-			float: left;
-		}
-		label {
-			float: left;
-			display: block;
-		}
-	}
-}
- */
- .client_logo-wrapper {
+
+.client_logo-wrapper {
 	width: 100px;
 	height: 100px;
 	margin: 0 auto;
@@ -427,6 +416,101 @@ h3 blockquote {
 		}
 	}
 }
+
+/* Bubble pop-up */
+.bubble {
+	position: relative;
+	width: 185px;
+	height: 58px;
+	padding: 20px 10px;
+	background: #FFFFFF;
+	border-radius: 3px;
+	border: rgba(0,0,0,0.25) solid 1px;
+	@media screen and (max-width: 640px) {
+		margin-top: 30px;
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+.bubble:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 10px 10px;
+	border-color: #FFFFFF transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	top: -10px;
+	left: 36px;
+	@media screen and (max-width: 640px) {
+		left: 110px;
+	}
+}
+
+.bubble:before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 10px 10px;
+	border-color: rgba(0,0,0,0.25) transparent;
+	display: block;
+	width: 0;
+	z-index: 0;
+	top: -11px;
+	left: 36px;
+	@media screen and (max-width: 640px) {
+		left: 110px;
+	}
+}
+
+span.share-text {
+	font-family: "Circular-bold";
+	font-size: 13px;
+}
+
+
+/* Social icons pop-up */
+ul.social-icons {
+	display: none;
+	padding-left: 15px;
+	@media screen and (max-width: 640px) {
+		width: 100%;
+		margin: 10px 0 30px 0;
+	}
+	.bubble-wrapper {
+		width: 184px;
+		margin: 0 auto;
+		height: 100%;
+	}
+	li {
+		float: left;
+		margin-right: 5px;
+		@media screen and (max-width: 640px) {
+			margin-right: 11px;
+		}
+		a {
+			//border: 1px solid #ccc;
+			border-radius: 50%;
+			padding: 10px;
+			color: #333;
+			&.original-color {
+				&:hover {
+					color: #333;
+				}
+			}
+
+			&:hover {
+				color: $primary_color;
+			}
+			&:active {
+				color: #333;
+			}
+		}
+	}
+}
+
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the

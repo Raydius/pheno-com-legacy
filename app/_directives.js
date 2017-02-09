@@ -248,27 +248,3 @@ angular.module('phenoCom').directive('blogHeader', function(){
 
 });
 
-
-
-/*// handle page title changes on state change
-angular.module('phenoCom').directive('updateTitle', ['$rootScope', '$timeout',
-    function($rootScope, $timeout) {
-        return {
-            link: function(scope, element) {
-                var title = 'Default Title'
-                var listener = function(event, toState) {
-if (toState.data && toState.data.pageTitle) title = toState.data.pageTitle;
-
-
-                    $timeout(function() {
-                        element.text(title);
-                    }, 0, false);
-
-                };
-
-                $rootScope.$on('$stateChangeSuccess', listener);
-            }
-        };
-    }
-]);
-*/

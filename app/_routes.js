@@ -22,12 +22,10 @@ var templateApplication = require('views/application.pug');
 
 angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
-    // TODO: 404 handler
-    $urlRouterProvider.when('', '/');
-    /*$urlRouterProvider.otherwise(function($injector, $location) {
-        console.log('otherwise');
-    });*/
 
+    $urlRouterProvider.when('', '/');
+
+	// TODO: 404 handler
     $urlRouterProvider.otherwise('/error/');
 
     // config routing
@@ -143,10 +141,10 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             metaTags: {
                 title: 'phenomenon - Innovations Company | Careers',
                 description: 'phenomenon - Innovations Company - jobs, careers, open positions',
-                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
+                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, jobs, careers',
                 properties: {
                     'og:type': 'website',
-                    'og:title': 'Phenomenon - Innovations Company | Jobs',
+                    'og:title': 'Phenomenon - Innovations Company | Careers',
                     'og:description': 'Phenomenon - Innovations Company',
                     'og:image': require('assets/images/fb-share-center.png')
                 }
@@ -190,14 +188,10 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             template: templateBlogPostSingle,
             controller: 'blogPostController'
         })
-        // .state('search/', {
-        //     url: '/search/',
-        //     template: templateBlogSearch,
-        //     controller: 'blogController'
-        // })
+
         .state('error', {
             url: '/error/',
-            template: templateError,
+            template: templateError
         })
         .state('job', {
             url: '/job/',
@@ -208,10 +202,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
         .state('application', {
             url: '/job/application/',
-            template: templateApplication,
-            ncyBreadcrumb: {
-            // label: 'job name'
-          }
+            template: templateApplication
         })
 
 
