@@ -281,6 +281,13 @@ angular.module('phenoCom').controller('blogPostController', function($scope, $st
       $('.social-icons').toggle();
     })
 
+    $('.icon-share, .share-text').mouseenter(function(){
+        $('.icon-share, .share-text').css('color','#cc2128')
+    })
+    $('.icon-share, .share-text').mouseleave(function(){
+        $('.icon-share, .share-text').css('color','black')
+    })
+
 
     var slug = $stateParams.slug;
 

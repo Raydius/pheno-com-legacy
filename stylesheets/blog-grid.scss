@@ -194,8 +194,18 @@ label.icon-share.blog-share {
     cursor: pointer;
 }
 
+.icon-share.blog-share:hover{
+  color: #cc2128;
+}
+
 .share-text:hover {
-  color: red;
+  color: #cc2128;
+}
+
+.blog-share-text {
+  font-family: "Circular-Bold";
+  position: absolute;
+  margin-top: -1px;
 }
 
 .social-icon-blog {
