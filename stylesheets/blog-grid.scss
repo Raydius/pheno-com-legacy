@@ -192,8 +192,9 @@ label.icon-share.blog-share {
     color: black;
     margin-left: 20px;
     cursor: pointer;
+    margin-top: -20px;
+    margin-bottom: 15px;
 }
-
 .icon-share.blog-share:hover{
   color: #cc2128;
 }
@@ -202,10 +203,7 @@ label.icon-share.blog-share {
   color: #cc2128;
 }
 
-.blog-share-text {
-  position: absolute;
-  margin-top: -1px;
-}
+
 
 .blog-bubble {
       margin-top: 10px;

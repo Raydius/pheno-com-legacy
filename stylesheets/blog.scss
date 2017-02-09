@@ -62,20 +62,26 @@ img.phno-logo {
 }
 
 }
+
+.blog-share-text {
+    position: absolute;
+    margin-top: 1.7px;
+}
+
 @media all and (max-width:640px) {
 
   .blog-share-text {
     font-family: "Circular-Bold";
     position: absolute;
-    margin-top: 42px !important;
+    margin-top: 5px !important;
 }
 
 
-  label.icon-share.blog-share {
-    color: black;
-    margin-left: 20px;
-    cursor: pointer;
-    margin-top: 40px;
+label.icon-share.blog-share {
+  color: black;
+  margin-left: 20px;
+  cursor: pointer;
+  margin-top: 40px !important;
 }
 
   article.col-md-10.col-lg-8.col-sm-12.single-post-article {
