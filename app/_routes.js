@@ -149,10 +149,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                     'og:title': 'Phenomenon - Innovations Company | Jobs',
                     'og:description': 'Phenomenon - Innovations Company',
                     'og:image': require('assets/images/fb-share-center.png')
-                },
-                ncyBreadcrumb: {
-                label: 'careers'
-              }
+                }
             }
         })
         .state('contact', {
