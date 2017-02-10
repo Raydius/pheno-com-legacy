@@ -1,8 +1,14 @@
 .jobs {
 	margin-bottom: $base-spacing*3;
 
+	article p:last-of-type {
+    margin: 0 0 0px;
+
+}
+
 	.top-main {
 		padding-top: 20px;
+
 
 		h1 {
 			position: absolute;
@@ -47,15 +53,29 @@
 			img {
 				@media screen and (max-width: 640px) {
 					margin-left: 0;
+					margin-top: -200px;
+					padding-top: 0px;
+					padding-bottom: 40px;
+					margin-left: 0px;
+					width: 90%;
+					display: inline-flex;
 				}
 			}
 		}
+		@media all and (max-width: 640px) {
+				border-bottom: 0;
+				padding: 0px 0px !important;
+		}
 	}
 
-	img {
-		margin-top: $base-spacing;
-		margin-left: -40px;
-	}
+	 img {
+    margin-top: -200px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    margin-left: 0px;
+    width: 90%;
+    display: inline-flex;
+}
 
 	ul {
 		margin-top: $base-spacing*2 - 40;
@@ -65,7 +85,7 @@
 			padding: 0;
 		}
 
-		> span {
+		span {
 			color: $primary_color;
 			font-family: "Circular-Bold";
 			font-size: 17px;
@@ -170,11 +190,29 @@ p {
 	}
 }
 
+.quoter-holder {
+    margin-top: -10px;
+    display: -webkit-box;
+    -moz-display: -moz-box;
+}
+
 .positions {
     color: #d0021b;
     margin-top: 40px;
     font-size: 16px;
     font-family: Circular-Bold;
+}
+p.said-by {
+    color: grey;
+    font-family: circular-bold;
+}
+
+p.company {
+    position: absolute;
+    margin-top: -36px;
+    margin-left: 128px;
+    font-family: "circular-book";
+    color: grey;
 }
 
 h2.join-us {
@@ -203,7 +241,98 @@ li.breadcrumb-current {
     border-bottom: none !important;
 }
 
+p.fig-p {
+    padding-left: 60px;
+    padding-right: 60px;
+		text-align: left;
+}
 
+h3.perks {
+    text-align: left;
+    padding-left: 60px;
+    font-size: 36px;
+    color: black;
+}
+
+blockquote.jobs-blockquote {
+    font-size: 30px;
+    display: inline-block;
+}
+
+
+figure.job-figure {
+    margin-left: -60px;
+    position: relative;
+    display: block;
+    margin-top: 240px;
+    z-index: 0;
+}
+
+.quoter-holder {
+    margin-top: -10px;
+}
+
+article.col-xs-7.col-sm-7.col-md-17.col-sm-offset-0.no-padding.jobs-container {
+    padding-top: 50px;
+    padding-left: 35px;
+}
+
+@media all and (min-width:768px) and (max-width:991px) {
+	blockquote.jobs-blockquote {
+    font-size: 30px;
+    display: inline-block;
+    padding-top: 50px;
+	}
+}
+@media all and (max-width:768px) {
+	blockquote.jobs-blockquote {
+    font-size: 30px;
+    display: inline-block;
+    padding-top: 0px;
+	}
+
+	.jobs ul {
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 0 20px;
+}
+}
+@media all and (min-width:400px) and (max-width:640px) {
+	.jobs ul {
+    margin-top: 30px !important;
+    margin-left: 0;
+    padding: 0 20px;
+	}
+	figure.job-figure {
+    margin-left: 0px;
+    position: relative;
+    display: block;
+    margin-top: 100px;
+		padding-top: 100px;
+    z-index: 0;
+	}
+	p.fig-p {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: left;
+}
+
+h3.perks {
+    text-align: left;
+    padding-left: 25px;
+    font-size: 36px;
+    color: black;
+}
+}
+
+@media all and (min-width:991px) {
+	article.col-md-7.jobs-header {
+	    padding-left: 50px;
+	}
+	article.col-xs-7.col-sm-7.col-md-7.col-sm-offset-0.no-padding.jobs-container {
+    padding-left: 50px;
+	}
+}
 
 // WEBPACK FOOTER //
 // webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/jobs.scss
