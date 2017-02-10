@@ -5,4 +5,4 @@ if [ -z "$OUTPUT_PORT" ]; then
 fi
 
 ./node_modules/.bin/webpack --progress
-./node_modules/.bin/webpack-dev-server --content-base ./ --port $OUTPUT_PORT --host 0.0.0.0 --hot
+./node_modules/.bin/webpack-dev-server --content-base ./ --port $OUTPUT_PORT --host 0.0.0.0 --hot --history-api-fallback
