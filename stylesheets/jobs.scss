@@ -295,7 +295,7 @@ article.col-xs-7.col-sm-7.col-md-17.col-sm-offset-0.no-padding.jobs-container {
     margin-top: 20px;
     margin-left: 0;
     padding: 0 20px;
-}
+	}
 }
 @media all and (min-width:400px) and (max-width:640px) {
 	.jobs ul {
@@ -322,7 +322,24 @@ h3.perks {
     padding-left: 25px;
     font-size: 36px;
     color: black;
+	}
 }
+
+@media all and (min-width:991px) and (max-width:1094px) {
+	p.fig-p {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+}
+
+h3.perks {
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 20px;
+    font-size: 36px;
+    color: black;
+}
+
 }
 
 @media all and (min-width:991px) {
@@ -332,6 +349,13 @@ h3.perks {
 	article.col-xs-7.col-sm-7.col-md-7.col-sm-offset-0.no-padding.jobs-container {
     padding-left: 50px;
 	}
+}
+@media all and (max-width:991px) {
+
+		article.col-xs-7.col-sm-7.col-md-7.col-sm-offset-0.no-padding.jobs-container {
+	    padding-left: 15px;
+	}
+
 }
 
 // WEBPACK FOOTER //
