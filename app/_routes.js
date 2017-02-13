@@ -183,6 +183,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                 }
             }
         })
+
         .state('post', {
             url: '/blog/:slug/',
             template: templateBlogPostSingle,
@@ -193,28 +194,32 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             url: '/error/',
             template: templateError
         })
-        .state('job', {
-            url: '/job/',
+
+        // detailed job listing
+		.state('job', {
+			url: '/careers/:jobId/',
+			controller: 'jobController',
             template: templateJob,
+			ncyBreadcrumb: {
+				label: 'job name'
+			}
+		})
+
+        // apply to specific job
+        .state('application', {
+            url: '/careers/:jobId/apply/',
+            controller: 'jobController',
+            template: templateApplication,
             ncyBreadcrumb: {
-            label: 'job name'
-          }
-        })
-        .state('application-general', {
-            url: '/careers/application-general/',
-            template: templateApplication
+                // label: 'job name'
+            }
         })
 
-
-    .state('application', {
-    url: '/careers/:jobId/apply/',
-    template: templateApplication,
-    ncyBreadcrumb: {
-    // label: 'job name'
-    }
-    })
-
-
+		// non-specific job application
+		.state('application-general', {
+			url: '/careers/application-general/',
+			template: templateApplication
+		})
 
         .state('thanks', {
             url: '/job/thanks/',

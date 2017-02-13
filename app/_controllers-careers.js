@@ -35,7 +35,7 @@ angular.module('phenoCom').controller('jobsController', function($scope, $state,
 
 					var position = {
 						title: job.title,
-						url: job.metadata[0].value,
+						url: '/careers/'+job.id+'/',
 						location: job.location.name
 					};
 					openPositions.push(position);
@@ -59,5 +59,35 @@ angular.module('phenoCom').controller('jobsController', function($scope, $state,
 
 		console.log($scope.jobs);
 	});
+
+});
+
+
+/**
+ * Controller for individual job landing page
+ *
+ * Queries job data from Greenhouse.io
+ */
+angular.module('phenoCom').controller('jobController', function($scope, $stateParams, $http, $sce) {
+
+	var jobId = $stateParams.jobId;
+	var url = 'https://api.greenhouse.io/v1/boards/phenomenon/embed/job?id='+jobId+'&questions=true';
+
+	$scope.applyUrl = '/careers/'+jobId+'/apply/';
+
+	$http({
+		method: 'GET',
+		url: url
+	}).then(function (response) {
+		$scope.data = response.data;
+		console.log($scope.data);
+
+	});
+
+	$scope.renderHtml = function(html_code) {
+		var txt = document.createElement("textarea");
+		txt.innerHTML = html_code;
+		return $sce.trustAsHtml(txt.value);
+	};
 
 });
