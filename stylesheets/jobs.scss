@@ -1,6 +1,10 @@
 .jobs {
 	margin-bottom: $base-spacing*3;
 
+	article p:last-of-type {
+		margin: 0;
+	}
+
 	.top-main {
 		padding-top: 20px;
 
@@ -44,17 +48,31 @@
 				padding-right: 0;
 			}
 
-			img {
+			img:not(.pheno-p-jobs) {
 				@media screen and (max-width: 640px) {
 					margin-left: 0;
+					margin-top: -200px;
+					padding-top: 0;
+					padding-bottom: 40px;
+					margin-left: 0;
+					width: 90%;
+					display: inline-flex;
 				}
 			}
+		}
+		@media all and (max-width: 640px) {
+			border-bottom: 0;
+			padding: 0 !important;
 		}
 	}
 
 	img {
-		margin-top: $base-spacing;
-		margin-left: -40px;
+		margin-top: -200px;
+		padding-top: 0;
+		padding-bottom: 40px;
+		margin-left: 0;
+		width: 90%;
+		display: inline-flex;
 	}
 
 	ul {
@@ -65,7 +83,7 @@
 			padding: 0;
 		}
 
-		> span {
+		span {
 			color: $primary_color;
 			font-family: "Circular-Bold";
 			font-size: 17px;
@@ -77,13 +95,13 @@
 		li {
 			padding: 20px 0;
 			font-size: 26px;
-/* 			border-top: 1px solid #ddd; */
+			/* 			border-top: 1px solid #ddd; */
 			@media screen and (max-width: 640px) {
 				font-size: 20px;
 			}
 
 			&:last-child {
-/* 				border-bottom: 1px solid #ddd; */
+				/* 				border-bottom: 1px solid #ddd; */
 			}
 		}
 	}
@@ -111,13 +129,29 @@ a.read-moreUrl.full-article-link.learn-more {
 	font-family: inherit;
 }
 
+a.sumbit-info {
+    /* margin: 0 auto; */
+    font-family: Circular-Book;
+    color: #cc2128;
+    text-align: center;
+    position: relative;
+    display: block;
+    padding-top: 20px;
+}
+
+.apply-anyway-container.col-md-12.col-sm-12.col-xs-12 {
+    border-top: 1px solid #f2f2f2;
+    margin-top: 100px;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 60px;
+}
+
 .col-md-12.join-team {
 	background: rgba(204, 204, 204, 0.28);
 	margin-top: 100px;
 }
 
-.join-team > h2 >
-p {
+.join-team > h2 > p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -132,7 +166,6 @@ p {
 	margin-left: 300px;
 }
 @media (max-width:640px) {
-
 	.job-title {
 	    font-family: "Tiempose-Semibold";
 	    font-size: 60px !important;
@@ -171,6 +204,12 @@ p {
 	}
 }
 
+.quoter-holder {
+	margin-top: -10px;
+	display: -webkit-box;
+	-moz-display: -moz-box;
+}
+
 .positions {
     color: #cc2128;
     margin-top: 40px;
@@ -179,38 +218,233 @@ p {
     text-rendering: geometricPrecision;
 }
 
+p.said-by {
+	color: grey;
+	font-family: circular-bold;
+}
+
+p.company {
+	position: absolute;
+	margin-top: -36px;
+	margin-left: 128px;
+	font-family: "circular-book";
+	color: grey;
+}
+
 h2.join-us {
 	font-size: 40px;
 	margin-top: 60px !important;
 }
 
 ul.breadcrumbs {
-    display: inline-flex;
-    margin-top:-25px
+	display: inline-flex;
+	margin-top: -25px;
 }
 
 li.breadcrumb-current {
-    color: #cc2128;
-    margin-top: 8px;
-    margin-left: 0px;
+	color: #cc2128;
+	margin-top: 8px;
+	margin-left: 0;
+}
+
+img.pheno-p-jobs {
+    margin-top: 0;
+    width: 80px;
+    display: flex;
+    padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.apply-anyway-header {
+    font-size: 36px;
+    color: black;
+    font-family: Tiempose-Semibold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p.drop-a-line {
+    text-align: center;
+    width: 560px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+@media all and (max-width:640px) {
+	img.pheno-p-jobs {
+	    margin-top: 0;
+	    width: 80px;
+	    display: flex;
+	    padding-top: 60px;
+			// margin-left: 133px !important;
+	    justify-content: center;
+	    align-items: center;
+	    margin: 0 auto;
+	}
+
+	p.drop-a-line {
+    text-align: center;
+    width: 360px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+	}
 }
 
 .breadcrumbs > .breadcrumb {
-    background: transparent;
-    color: #7b7b7b;
-    padding-left: 0;
+	background: transparent;
+	color: #7b7b7b;
+	padding-left: 0;
 }
 
 .top-main.noLine {
-    border-bottom: none !important;
+	border-bottom: none !important;
 }
 
+p.fig-p {
+	padding-left: 60px;
+	padding-right: 60px;
+	text-align: left;
+}
+
+h3.perks {
+	text-align: left;
+	padding-left: 60px;
+	font-size: 36px;
+	color: black;
+}
+
+blockquote.jobs-blockquote {
+	font-size: 30px;
+	display: inline-block;
+}
+
+figure.job-figure {
+	margin-left: -60px;
+	position: relative;
+	display: block;
+	margin-top: 240px;
+	z-index: 0;
+}
+
+.quoter-holder {
+	margin-top: -10px;
+}
+
+article.col-xs-7.col-sm-7.col-md-17.col-sm-offset-0.no-padding.jobs-container {
+	padding-top: 50px;
+	padding-left: 35px;
+}
+@media all and (min-width:768px) and (max-width:991px) {
+	blockquote.jobs-blockquote {
+		font-size: 30px;
+		display: inline-block;
+		padding-top: 50px;
+	}
+}
+@media all and (max-width:768px) {
+	blockquote.jobs-blockquote {
+		font-size: 30px;
+		display: inline-block;
+		padding-top: 0;
+	}
+
+	.jobs ul {
+		margin-top: 20px;
+		margin-left: 0;
+		padding: 0 20px;
+	}
+}
+@media all and (min-width:400px) and (max-width:640px) {
+	.jobs ul {
+		margin-top: 30px !important;
+		margin-left: 0 !important;
+		padding: 0 20px;
+	}
+
+	figure.job-figure {
+		margin-left: 0;
+		position: relative;
+		display: block;
+		margin-top: 100px;
+		padding-top: 100px;
+		z-index: 0;
+	}
+
+	p.fig-p {
+		padding-left: 30px;
+		padding-right: 40px;
+		text-align: left;
+	}
+
+	h3.perks {
+		text-align: left;
+		padding-left: 30px;
+		font-size: 36px;
+		color: black;
+	}
+}
+@media all and (min-width:991px) {
+	article.col-md-7.jobs-header {
+		padding-left: 50px;
+	}
+
+	article.col-xs-7.col-sm-7.col-md-7.col-sm-offset-0.no-padding.jobs-container {
+		padding-left: 50px;
+	}
+
+	p.fig-p {
+		padding-left: 50px !important;
+		padding-right: 50px !important;
+		text-align: left;
+	}
+
+	.perks {
+		text-align: left;
+		padding-left: 50px !important;
+		padding-right: 20px !important;
+		font-size: 36px;
+		color: black;
+	}
+}
+@media all and (max-width:991px) {
+	article.col-xs-7.col-sm-7.col-md-7.col-sm-offset-0.no-padding.jobs-container {
+		padding-left: 15px;
+	}
+}
+@media all and (max-width:375px) {
+	figure.job-figure {
+		margin-left: 0;
+		position: relative;
+		display: block;
+		margin-top: 240px;
+		z-index: 0;
+	}
+
+	p.fig-p {
+		padding-left: 40px;
+		padding-right: 40px;
+		text-align: left;
+	}
+
+	h3.perks {
+		text-align: left;
+		padding-left: 40px;
+		font-size: 36px;
+		color: black;
+	}
+}
 .job-content p {
     font-family: 'circular-book';
 		margin-bottom: 30px;
 }
 
 * {
-	text-rendering: geometricPrecision	
+	text-rendering: geometricPrecision
 }
-

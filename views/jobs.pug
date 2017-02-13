@@ -7,17 +7,29 @@ block variables
 // title and body copy
 section.row.no-padding.jobs
 	.top-main.noLine
-		article.col-md-5
-			img(src=require('assets/images/jobs/jobs1.png'))
+		article.col-md-5.col-sm-12
+			figure.job-figure
+				img(src=require('assets/images/jobs/jobs1.png'))
+				figcaption
+					h3.perks Perks That Work
+					p.fig-p Sure, we've got the comprehensive benefits package, medical, dental, vision, 401k, etc. But we believe that a happier Pheno is a healthier one. Thats why some perks mean staying away from the office if you have to. New parents are encouraged to rear the little one away from their desks up to 12 weeks. And even if not expecting, regular full-time Phenos can take advantage of an open Paid Time Off policy. i.e., we'll help make the time when you need to take some time.
+	ul
 		article.col-md-7.jobs-header
 			h2
-				blockquote!= pageData.blockquote
-		article.col-xs-12.col-sm-12.col-md-12.col-sm-offset-0.no-padding
-
-			ul
+				blockquote.jobs-blockquote!= pageData.blockquote
+				.quoter-holder
+					p.said-by &#8212;Allison Cornia&nbsp;
+					p.company / SVP Marketing, Xome
+		article.col-xs-7.col-sm-7.col-md-7.col-sm-offset-0.no-padding.jobs-container
 				.department(ng-repeat="department in jobs.departments")
 					.positions {{department.name}}
 					hr
 					li(ng-repeat="position in department.openPositions")
 						a(ng-href="{{position.url}}", target="blank") {{position.title}}
 						.location {{position.location}}
+
+	.apply-anyway-container.col-md-12.col-sm-12.col-xs-12
+		img.pheno-p-jobs(src='assets/images/pLogo.png')
+		h3.apply-anyway-header Like what you see, but don't see what you like?
+		p.drop-a-line If we don't have an open position that matches your skills and experience, drop us a line with your info anyway. Freelancers, too. We're always looking for smart brains, talented hands, and hungry hearts.
+		a.sumbit-info(ui-sref='application') Submit your info >

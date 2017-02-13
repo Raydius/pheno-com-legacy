@@ -6,10 +6,11 @@
 section.row.no-padding.work.work-details
 	article.col-md-12.no-padding.top-main
 		h1!= pageData.blockquote
-		h2 
+		h2
 			blockquote!= pageData.blockquote
 
-		include cite-components	
+		include cite-components
+		hr.hr-content-divider
 	.topcontent
 		article.col-xs-12.col-sm-12.col-md-7.top-description.no-padding
 			if pageData.topDescription
@@ -17,29 +18,29 @@ section.row.no-padding.work.work-details
 					p!= par
 				if pageData.topcontent
 		article.col-xs-12.col-sm-12.col-md-4.col-md-offset-1.project-detail
-			
-			label.icon-details.icon-dot(close showmore childContainer=".detail-wrapper") 
+
+			label.icon-details.icon-dot(close showmore childContainer=".detail-wrapper")
 				span Details
-			
+
 			aside.col-md-12#icon-details-container
 				fieldset
 					.detail-wrapper
-						if pageData.clientLogoWidth 
+						if pageData.clientLogoWidth
 							// need to specify logo width in copy.js otherwise it may be too large
 							img.clientlogo(src= pageData.clientLogo style="width:" + pageData.clientLogoWidth)
-						fieldset 
+						fieldset
 							legend Client
 							span= pageData.client
-						fieldset 
+						fieldset
 							legend Project
 							span= pageData.project
-						fieldset 
+						fieldset
 							legend Media
 							span= pageData.media
 
 
-			label.icon-share(close showmore childContainer=".social-icons") 
-				span Share
+			label.icon-share(close showmore childContainer=".social-icons")
+				span.share-text Share
 
 			include share-icons
 
@@ -105,4 +106,3 @@ section.row.no-padding.work.work-details
 			p
 
 	include more-cases
-	

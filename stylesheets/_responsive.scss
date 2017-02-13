@@ -23,7 +23,7 @@
     margin: 0 0 60px 0;
   }
 }
-@media (max-width: 768px) {   
+@media (max-width: 768px) {
   main, .maincontent {
     padding: 0 $base_spacing - 30;
   }
@@ -36,10 +36,11 @@
     padding: 0;
   }
   .topnav .tabs ul {
+    display: flex;
     margin: 0;
   }
   .topnav .tabs li {
-    padding: 0 25px; 
+    padding: 0 25px;
     &:first-child {
       margin-left: 0;
     }
@@ -60,7 +61,7 @@
         }
         //margin-top: $base_spacing + 20;
       }
-    } 
+    }
   }
 
 }
@@ -117,13 +118,13 @@
      color: $gray_font;
   }
   :-moz-placeholder { /* Firefox 18- */
-     color: $gray_font;  
+     color: $gray_font;
   }
   ::-moz-placeholder {  /* Firefox 19+ */
-     color: $gray_font;  
+     color: $gray_font;
   }
   :-ms-input-placeholder {
-   color: $gray_font;  
+   color: $gray_font;
   }
 
   .topnav {
@@ -235,7 +236,7 @@
 
 @media (min-width: 640px) and (max-width: 1024px) {
     .topnav img.logo {
-      margin: 0;
+      margin: 0 -3px;
     }
     .topnav .tabs ul {
       padding: 0;
@@ -294,7 +295,7 @@
         margin-left: -80px;
       }
     }
-    
+
   }
   .topnav .tabs {
     display: none;
@@ -342,7 +343,7 @@
     border-bottom: 0;
     padding: ($base_spacing - 40) 30px;
   }
-  .jobs img {
+  .jobs img:not(.pheno-p-jobs) {
     margin-top: 0;
     margin-left: -40px;
   }
@@ -374,7 +375,7 @@
   .culture article.table {
     display: block;
   }
-  
+
   .culture article.table > div {
     display: block;
   }
@@ -440,3 +441,7 @@
     padding: 0 30px;
   }
 }
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_responsive.scss

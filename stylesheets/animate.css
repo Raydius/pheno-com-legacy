@@ -2984,3 +2984,22 @@
 .slideOutUp {
 	animation-name: slideOutUp;
 }
+
+
+.box.ng-hide{
+  display: block!important;
+  visibility: hidden;
+}
+
+.box.ng-hide-add {
+    -webkit-animation: bounceOutLeft 0.4s;
+    -moz-animation: bounceOutLeft 0.4s;
+    animation: bounceOutLeft 0.4s;
+    visibility: visible;
+}
+
+.box.ng-hide-remove {
+    animation: bounceInLeft 0.4s;
+    -moz-animation: bounceInLeft 0.4s;
+    -webkit-animation: bounceInLeft 0.4s;
+}

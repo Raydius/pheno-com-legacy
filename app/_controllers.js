@@ -59,86 +59,14 @@ angular.module('phenoCom').controller('homeController', function($state, $scope,
         $topSection.css('height', $(window).height() - $nav.height());
     })
 
-});
+    setTimeout(function(){
+      $('.indie-minds').animate({
+        'opacity':'1',
+      },1000)
 
-angular.module('phenoCom').controller('welcomeController', function($state, $scope, $window) {
-
-  $('.indie-agency').animate({
-    'opacity':'1',
-    'transition-delay':'1s'
-})
-setTimeout(function(){
-  $('.indie-minds').animate({
-    'opacity':'1',
-  },1000)
-
-},2500)
+    },1000)
 
 });
-
-
-
-/**
- * Controller for Jobs Index Page
- *
- * Pulls data from Greenhouse.io job board
- */
-angular.module('phenoCom').controller('jobsController', function($scope, $state, $http) {
-
-    $scope.jobs = {
-        departments: []
-    };
-
-    $http({
-        method: 'GET',
-        url: 'https://api.greenhouse.io/v1/boards/phenomenon/embed/departments'
-    }).then(function (response) {
-
-        var departments = response.data.departments;
-
-        // step through all departments
-        for(var i=0, len = departments.length; i < len; i++) {
-
-            var depJobs = departments[i].jobs;
-            var openPositions = [];
-
-            // step through all jobs in the department
-            for (var n=0, jlen = depJobs.length; n < jlen; n++) {
-
-                var job = depJobs[n];
-
-                // job must have a LinkedIn URL in order to be listed on the jobs page
-                if(job.metadata[0].value) {
-
-                    var position = {
-                        title: job.title,
-                        url: '/jobs/'+job.id+'/', //job.metadata[0].value,
-                        location: job.location.name
-                    };
-                    openPositions.push(position);
-                }
-
-            }
-
-            // if there were jobs in this department...
-            if(openPositions.length > 0) {
-
-                // push department to scope
-                var department = {
-                    'name': departments[i].name,
-                    'openPositions': openPositions
-                };
-
-                $scope.jobs.departments.push(department);
-            }
-
-        }
-
-        console.log($scope.jobs);
-    });
-
-});
-
 
 /**
  * Controller for individual job landing page
@@ -190,7 +118,6 @@ angular.module('phenoCom').controller('contactController', function($scope, $sta
 
     $scope.setAttempted = function(element) {
         element.attempted = true;
-        return;
     };
 
     $scope.sendData = function() {
@@ -262,163 +189,72 @@ angular.module('phenoCom').controller('contactController', function($scope, $sta
 
 });
 
-// controller for blog landing page
-angular.module('phenoCom').controller('blogController', function($scope, $state, $sce, $http) {
 
+angular.module('phenoCom').controller('aniDistances', ['$scope',
+    function($scope) {
+        $scope.getScrollOffsets = function(w) {
 
-    $scope.articles = [];
+            // Use the specified window or the current window if no argument
+            w = w || window;
 
-    // get all blog posts
-    $http({
-        method: 'GET',
-        url: 'http://phenomenon.com:2088/wp-json/wp/v2/article'
-    }).then(function (response) {
+            // This works for all browsers except IE versions 8 and before
+            if (w.pageXOffset !== null) {
+                return {
+                    x: w.pageXOffset,
+                    y: w.pageYOffset
+                };
+            }
 
-        var articles = response.data;
+            // For IE (or any browser) in Standards mode
+            var d = w.document;
+            if (document.compatMode === 'CSS1Compat') {
+                return {
+                    x: d.documentElement.scrollLeft,
+                    y: d.documentElement.scrollTop
+                };
+            }
 
-        for(var i=0, len=articles.length; i < len; i++) {
-
-            var articleData = articles[i];
-
-            var article = {
-                title: articleData.title.rendered,
-                slug: articleData.slug,
-                preview: articleData.excerpt.rendered,
-                thumbnail: articleData.better_featured_image.media_details.sizes.medium.source_url,
-                alt: articleData.better_featured_image.alt_text,
-                author: articleData.acf.author
+            // For browsers in Quirks mode
+            return {
+                x: d.body.scrollLeft,
+                y: d.body.scrollTop
             };
-
-            $scope.articles.push(article);
-
-        }
-
-    });
-
-});
-
-// controller for individual blog posts
-angular.module('phenoCom').controller('blogPostController', function($scope, $state, $sce, $http, $stateParams) {
-
-    var slug = $stateParams.slug;
-
-    $scope.article = {};
-
-    $http({
-        method: 'GET',
-        url: 'http://phenomenon.com:2088/wp-json/wp/v2/article?filter[name]='+slug
-    }).then(function(response) {
-        console.log(response.data);
-
-        if (response.data.length == 1) {
-            // success
-            var post = response.data[0];
-
-            $scope.article = {
-                title: post.title.rendered,
-                content: post.content.rendered,
-                date: post.date,
-                image: post.better_featured_image.source_url,
-                author: post.acf.author,
-                byline: post.acf.byline
-            };
-            console.log($scope.article);
-        }
-        else {
-            // error
-            console.log('error');
-        }
-
-    });
-
-});
-
-angular.module('phenoCom').controller('scrollController', function(){
-  $('#culture-animate-1').mouseenter(function(){
-    $('#culture-animate-2').css('left','0')
-  })
-
-  $('#culture-animate-2').mouseenter(function(){
-    $('#culture-animate-3').animate({'opacity': '1'},2000)
-    $('#culture-animate-3-quote').animate({'opacity': '1'},2000)
-  })
-  $('#culture-animate-3').mouseenter(function(){
-    $('#culture-animate-4').animate({'opacity': '1'},1400).addClass('animated').addClass('fadeInLeft')
-    $('#culture-animate-4-quote').animate({'opacity': '1'},2000).addClass('animated').addClass('slideInRight')
-  })
-
-  $('#culture-animate-4').mouseenter(function(){
-    $('#culture-animate-5').animate({'opacity': '1'},1400).addClass('animated').addClass('fadeInLeft')
-    $('#culture-animate-5-quote').animate({'opacity': '1'},2500).addClass('animated').addClass('slideInRight')
-    $('#culture-animate-7').animate({'opacity': '1'},4000).addClass('animated').addClass('slideInLeft')
-    $('#culture-animate-6').animate({'opacity': '1'},4000).addClass('animated').addClass('fadeInUp')
-  })
-  $('.culture-animate-last, #culture-animate-7, #culture-animate-8, #culture-animate-5').mouseenter(function(){
-    $('#culture-animate-8').animate({'opacity': '1'},2000).addClass('animated').addClass('fadeInLeft')
-    $('#culture-animate-9').animate({'opacity': '1'},2000).addClass('animated').addClass('fadeInRight')
-  })
-
-  function getXY(event) {
-      var element = document.getElementById('culture-animate-1');  //replace elementId with your element's Id.
-      var rect = element.getBoundingClientRect();
-      var scrollTop = document.documentElement.scrollTop?
-                      document.documentElement.scrollTop:document.body.scrollTop;
-      var scrollLeft = document.documentElement.scrollLeft?
-                      document.documentElement.scrollLeft:document.body.scrollLeft;
-      var elementLeft = rect.left+scrollLeft;
-      var elementTop = rect.top+scrollTop;
-
-          if (document.all){ //detects using IE
-              x = event.clientX+scrollLeft-elementLeft; //event not evt because of IE
-              y = event.clientY+scrollTop-elementTop;
-          }
-          else {
-            $('#culture-animate-2').animate({'opacity': '1'},1500).addClass('animated').addClass('slideInLeft')
-            $('#culture-animate-2-quote').animate({'opacity': '1'},1500).addClass('animated').addClass('slideInRight')
-
-      }
-    }
-
-            $('#culture-animate-1, #culture-animate-2, #culture-animate-3').mousemove(function(e){
-                var m = getXY(e, this);
-            });
-
-    var checkScrollSpeed = (function(settings){
-
-        settings = settings || {};
-
-        var lastPos, newPos, timer, delta,
-            delay = settings.delay || 50; // in "ms" (higher means lower fidelity )
-
-        function clear() {
-          lastPos = null;
-          delta = 0;
-        }
-
-        clear();
-
-        return function(){
-          newPos = window.scrollY;
-          if ( lastPos != null ){ // && newPos < maxScroll
-            delta = newPos -  lastPos;
-          }
-          lastPos = newPos;
-          clearTimeout(timer);
-          timer = setTimeout(clear, delay);
-          return delta;
-
-          if (delta > 15) {
-            console.log(delta + ' delta exceeded 15')
-            $('#culture-animate-1, #culture-animate-2, #culture-animate-3, #culture-animate-3-quote,#culture-animate-4, #culture-animate-4-quote, #culture-animate-5, #culture-animate-5-quote, #culture-animate-6, #culture-animate-7, #culture-animate-8, #culture-animate-9').animate(
-              {'opacity':'1'},400).addClass('animated').addClass('fadeIn')
-          }
         };
-    })();
+        $scope.getPosition = function(e) {
+            return {
+                x: e[0].offsetLeft,
+                y: e[0].offsetTop
+            };
+        };
+        $scope.getViewPortSize = function(w) {
 
-    // listen to "scroll" event
-    window.onscroll = function(){
-      console.log( checkScrollSpeed );
+            return {
+                x: Math.max(document.documentElement.clientWidth, w.innerWidth || 0),
+                y: Math.max(document.documentElement.clientHeight, w.innerHeight || 0)
+            }
+
+        };
+    }
+]);
+
+
+
+
+/**
+ * Holiday Card Controller Revisited
+ */
+angular.module('phenoCom').controller('holidayController', function($scope) {
+
+    // set initial visibility of the gif and the video
+    $scope.videoHide = true;
+
+    $scope.playTheVideo = function() {
+
+		// toggle visibility of the gif and the video
+        $scope.videoHide = false;
+
+        // play the video
+        $('#holidayvideo').get(0).play();
     };
-
 
 });

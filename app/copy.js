@@ -13,35 +13,35 @@ var copy =
       "navTitle": "About",
       "title": "View About Page",
       "uiSref": "about",
-      "className": "about"
+      "className": "about",
     },
     {
       "navTitle": "Work",
       "title": "View Work Page",
       "uiSref": "work",
-      "className": "work"
+      "className": "work",
     },
     {
       "navTitle": "Culture",
       "title": "View Culture Page",
       "uiSref": "culture",
-      "className": "culture"
+      "className": "culture",
     },
     {
-      "navTitle": "Jobs",
-      "title": "View Jobs Page",
-      "uiSref": "jobs"
+      "navTitle": "Careers",
+      "title": "View Careers Page",
+      "uiSref": "careers"
     },
     {
       "navTitle": "Contact",
       "title": "View Contact Form",
-      "uiSref": "contact"
-    }/*,
+      "uiSref": "contact",
+    },
     {
        "navTitle": "Blog",
        "title": "Phenomenon NOW Blog",
        "uiSref": "blog"
-    }*/
+    }
   ],
   "share": {
     "twitter": {
@@ -187,6 +187,7 @@ var copy =
         "So you kind of self-select clients that are going to appreciate the kind of work you do.<span>Very much so.</span>"
       ],*/
       "paragraph3": [
+
         "I&#8217;ve worked with Phenomenon for seven years across two companies. When I was hired to transform and re-brand the country&#8217;s largest non-bank mortgage servicer, one of my first calls was to Phenomenon.",
         "KD: Why did you start this company? What are you all about?",
         "<span>PHNO: We all know that the agency model is badly broken. Client interests don&#8217;t line up with agency interests and that's a recipe for disaster.</span>",
@@ -342,6 +343,7 @@ var copy =
       "project": "From Federer",
       "media": "TV, Digital, Social, Packaging",
       "blockquote": "From Federer by Federer.",
+      "shareImg": require('assets/images/federer-work-image.jpg'),
       "ogDescription": "Tennis legend includes a personal touch with launch of his first co-designed racket.",
       "topDescription": [
         "The new Wilson RF97 autograph racket is the first racket co-designed by Roger Federer and Wilson. It looks and plays like nothing else. In a world where loud colors are the norm for racket design, Federer preferred an approach that speaks to his love of minimalist design: A predominantly black racket with strategically placed highlights like a tiny Swiss flag. The result is a racket with the pure feel, power and precision to give players a technological edge, and the understated elegance to give them a mental edge whenever they step on the court.",
@@ -386,11 +388,11 @@ var copy =
             {
               "url": require("assets/images/Federer-Racket-2.jpg"),
               "alt": "Federer Image"
+            },
+            {
+              "url": require("assets/images/wilson-federer-pro-staff-web-comp-edit-(final).jpg"),
+              "alt": "Federer Image"
             }
-            // {
-            //   "url": require("assets/images/wilson-federer-pro-staff-web-comp-edit (1).jpg"),
-            //   "alt": "Federer Image"
-            // }
           ]
         }
       ],
@@ -498,11 +500,11 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": require("assets/images/wilson_anthem_2_01-opt.jpg"),
+              "url": require("assets/images/wilson-web-banners-1.jpg"),
               "alt": "Wilson X Packaging Photo 1"
             },
             {
-              "url": require("assets/images/wilson_anthem_2_02-opt.jpg"),
+              "url": require("assets/images/wilson-web-banners-2.jpg"),
               "alt": "Wilson X Packaging Photo 2"
             }
           ],
@@ -1181,28 +1183,28 @@ var copy =
         "projectName": "Wilson Equips Itself With Global Campaign.",
         "writerName": "By Amy Weisenback",
         "writerTitle": "VP Marketing, Wilson",
-        "projectUrl": "#!/work/wilson-anthem/",
+        "projectUrl": "/work/wilson-anthem/",
         "projectThumbSrc": require("assets/images/morecases/1.jpg")
       },
       {
         "projectName": "Men&#8217s Wearhouse <br>Updates Its Closet.",
         "writerName": "By Matt Stringer",
         "writerTitle": "EVP Marketing, Tailored Brands",
-        "projectUrl": "#!/work/mens-wearhouse/",
+        "projectUrl": "/work/mens-wearhouse/",
         "projectThumbSrc": require("assets/images/morecases/2.png")
       },
       {
         "projectName": "thinkThin Helps<br>Women Shed the Guilt.",
         "writerName": "By Megan Crossland",
         "writerTitle": "Sr. Director of Marketing, thinkThin",
-        "projectUrl": "#!/work/think-thin/",
+        "projectUrl": "/work/think-thin/",
         "projectThumbSrc": require("assets/images/morecases/3.png")
       },
       {
         "projectName": "Wilson Launches<br>Futuristic Ball.",
         "writerName": "By Amy Weisenbach",
         "writerTitle": "VP Marketing, Wilson",
-        "projectUrl": "#!/work/wilson-x/",
+        "projectUrl": "/work/wilson-x/",
         "projectThumbSrc": require("assets/images/morecases/4.png")
       }
     ],
