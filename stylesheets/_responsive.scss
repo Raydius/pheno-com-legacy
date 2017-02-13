@@ -343,7 +343,7 @@
     border-bottom: 0;
     padding: ($base_spacing - 40) 30px;
   }
-  .jobs img {
+  .jobs img:not(.pheno-p-jobs) {
     margin-top: 0;
     margin-left: -40px;
   }
