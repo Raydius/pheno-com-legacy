@@ -5,6 +5,7 @@
 import 'npm/owl-carousel-2/owl.carousel';
 
 var copy = require('app/copy.js');
+
 var templateHome = require('views/welcome.pug');
 var templateAbout = require('views/about.pug');
 var templateWork = require('views/work.pug');
@@ -15,7 +16,6 @@ var templateJobs = require('views/jobs.pug');
 var templateBlog = require('views/blog.pug');
 var templateBlogPostSingle = require('views/blog-post-single.pug');
 var templateError = require('views/404.pug');
-var templateThanks = require('views/thanks.pug');
 var templateJob = require('views/job.pug');
 var templateApplication = require('views/application.pug');
 
@@ -86,34 +86,33 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                 }
             },
             template: function($stateParams) {
-                return require('views/' + $stateParams.case+'.pug');
-            },
+                return require('views/'+$stateParams.case+'.pug');
+			},
             metaTags: {
-                title: function(caseObject) {
-                    return caseObject.title
+				title: function(caseObject) { return caseObject.title },
+				description: function(caseObject) {
+				    return caseObject.ogDescription;
                 },
-                description: function(caseObject) {
-                    return caseObject.ogDescription;
+				keywords: function(caseObject) {
+				    return 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, ' + caseObject.client;
                 },
-                keywords: function(caseObject) {
-                    return 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, ' + caseObject.client;
-                },
-                properties: {
-                    'og:type': 'website',
-                    'og:title': function(caseObject) {
-                        return 'phenomenon - Innovations Company | Work - ' + caseObject.title;
+				properties: {
+					'og:type': 'website',
+					'og:title': function(caseObject) {
+					    return 'phenomenon - Innovations Company | Work - ' + caseObject.title;
                     },
-                    'og:description': function(caseObject) {
-                        return 'An independent agency for independent minds.';
+					'og:description': function(caseObject) {
+					    return 'An independent agency for independent minds.';
                     },
-                    'og:image': function(caseObject) {
-                        return caseObject.shareImg;
-                    }
-                }
-            },
-            data: {
-                shareUrl: 'link'
-            }
+					'og:image': function(caseObject) {
+					    return caseObject.shareImg;
+					}
+				}
+			},
+			data: {
+				shareUrl: 'link'
+			}
+
         })
 
 
@@ -151,17 +150,6 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                 }
             }
         })
-
-    		.state('application', {
-    			url: '/careers/:jobId/apply/',
-    			template: templateApplication,
-    			ncyBreadcrumb: {
-    				// label: 'job name'
-    			}
-    		})
-
-
-
         .state('contact', {
             url: '/contact/',
             template: templateContact,
@@ -195,7 +183,6 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                 }
             }
         })
-
         .state('post', {
             url: '/blog/:slug/',
             template: templateBlogPostSingle,
@@ -204,18 +191,28 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 
         .state('error', {
             url: '/error/',
-            template: templateError,
+            template: templateError
         })
-        .state('thank-you', {
-            url: '/thank-you/',
-            template: templateThanks,
+        .state('job', {
+            url: '/job/',
+            template: templateJob,
+            ncyBreadcrumb: {
+            label: 'job name'
+          }
+        })
+        .state('application-general', {
+            url: '/careers/application-general/',
+            template: templateApplication
         })
 
-        // .state('application', {
-        //     url: '/careers/application/',
-        //     template: templateApplication
-        // })
 
+    .state('application', {
+    url: '/careers/:jobId/apply/',
+    template: templateApplication,
+    ncyBreadcrumb: {
+    // label: 'job name'
+    }
+    })
 
 
 
@@ -234,6 +231,9 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                 }
             }
         })
-      ;
-})
-    // $locationProvider.html5Mode(true);
+
+    ;
+
+    $locationProvider.html5Mode(true);
+
+});
