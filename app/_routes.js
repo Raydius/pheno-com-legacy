@@ -193,15 +193,8 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             url: '/error/',
             template: templateError
         })
-        .state('job', {
-            url: '/job/',
-            template: templateJob,
-            ncyBreadcrumb: {
-            label: 'job name'
-          }
-        })
         .state('application', {
-            url: '/job/application/',
+            url: '/careers/application/',
             template: templateApplication
         })
 
