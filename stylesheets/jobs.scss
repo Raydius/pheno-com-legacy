@@ -312,35 +312,19 @@ article.col-xs-7.col-sm-7.col-md-17.col-sm-offset-0.no-padding.jobs-container {
     z-index: 0;
 	}
 	p.fig-p {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 30px;
+    padding-right: 40px;
     text-align: left;
 }
 
 h3.perks {
     text-align: left;
-    padding-left: 25px;
+    padding-left: 30px;
     font-size: 36px;
     color: black;
 	}
 }
 
-@media all and (min-width:991px) and (max-width:1094px) {
-	p.fig-p {
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: left;
-}
-
-h3.perks {
-    text-align: left;
-    padding-left: 50px;
-    padding-right: 20px;
-    font-size: 36px;
-    color: black;
-}
-
-}
 
 @media all and (min-width:991px) {
 	article.col-md-7.jobs-header {
@@ -349,6 +333,19 @@ h3.perks {
 	article.col-xs-7.col-sm-7.col-md-7.col-sm-offset-0.no-padding.jobs-container {
     padding-left: 50px;
 	}
+	p.fig-p {
+		padding-left: 50px !important;
+		padding-right: 50px !important;
+		text-align: left;
+	}
+
+.perks {
+		text-align: left;
+		padding-left: 50px !important;
+		padding-right: 20px !important;
+		font-size: 36px;
+		color: black;
+	}
 }
 @media all and (max-width:991px) {
 
@@ -356,6 +353,28 @@ h3.perks {
 	    padding-left: 15px;
 	}
 
+}
+
+@media all and (max-width:375px) {
+	figure.job-figure {
+    margin-left: 0px;
+    position: relative;
+    display: block;
+    margin-top: 240px;
+    z-index: 0;
+}
+p.fig-p {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: left;
+}
+
+h3.perks {
+    text-align: left;
+    padding-left: 40px;
+    font-size: 36px;
+    color: black;
+}
 }
 
 // WEBPACK FOOTER //
