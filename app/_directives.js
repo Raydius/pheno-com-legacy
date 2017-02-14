@@ -187,31 +187,31 @@ angular.module('phenoCom').directive('scrollableComponent', function($window) {
 
 
 // use this directive to bring file data into controller scope
-// angular.module('phenoCom').directive('fileModel', ['$parse', function ($parse) {
-//     return {
-//         restrict: 'A',
-//         link: function(scope, element, attr) {
-//             var model = $parse(attr.fileModel);
-//             var modelSetter = model.assign;
-//
-//             element.bind('change', function(){
-//                 scope.$apply(function(){
-//
-//                     // make file available in scope
-//                     modelSetter(scope, element[0].files[0]);
-//
-//                     // update the H4 (pseudo-field)
-//                     var fileName = jQuery('#'+attr.id).val().split('\\').pop();
-//                     scope.data.labels[attr.id] = scope.data.fields[attr.id] + ' Attached: ' + fileName;
-//
-//                     // fire off GA event tracker
-//                     ga('send', 'event', 'upload', 'attach', scope.data.ga[attr.id]);
-//                 });
-//
-//             });
-//         }
-//     };
-// }]);
+angular.module('phenoCom').directive('fileModel', ['$parse', function ($parse) {
+    return {
+        restrict: 'A',
+        link: function(scope, element, attr) {
+            var model = $parse(attr.fileModel);
+            var modelSetter = model.assign;
+
+            element.bind('change', function(){
+                scope.$apply(function(){
+
+                    // make file available in scope
+                    modelSetter(scope, element[0].files[0]);
+
+                    // update the H4 (pseudo-field)
+                    var fileName = jQuery('#'+attr.id).val().split('\\').pop();
+                    scope.data.labels[attr.id] = scope.data.fields[attr.id] + ' Attached: ' + fileName;
+
+                    // fire off GA event tracker
+                    ga('send', 'event', 'upload', 'attach', scope.data.ga[attr.id]);
+                });
+
+            });
+        }
+    };
+}]);
 
 
 // Individual blog post "preview" card on main blog index page

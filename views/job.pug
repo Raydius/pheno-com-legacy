@@ -4,14 +4,11 @@ section.row.no-padding.culture.job-posting()
   article.col-md-8.job-column
     //- ncy-breadcrumb
     ul.breadcrumbs
-      li.breadcrumb(ui-sref="jobs") Jobs >
+      li.breadcrumb.bc-job(ui-sref="jobs") Jobs &nbsp;>
+      li.breadcrumb-current(ng-bind='data.departments["0"].name')
+      li.dept >
       li.breadcrumb-current(ng-bind="data.title")
     .job-title(ng-bind="data.title")
-    .job-content-quote
-      | "One thing I love about Pheno is that as a junior designer, I get to work on just about everything. Sometimes it's a new website. Sometimes it's an app logo.
-      | Sometimes it's writing a job description to find my future boss! The Design team at pheno is a tight bunch and we're looking for someone with some badass digital chops to help steer our growing ship.
-      | As you can see from this new website, we've managed alright, but with your help, we can go even further. Or is it farther? Ugh, I knew I would need a writer."
-    .job-author &mdash; Junior Designer
     .job-content(ng-bind-html="renderHtml(data.content)")
     hr.secondHr
     .candidate-privacy See our Candidate Privacy Statement
@@ -19,7 +16,7 @@ section.row.no-padding.culture.job-posting()
     a.apply-now(href='{{applyUrl}}') Apply Now
   article.col-md-3.pull-right.col-sm-12.col-xs-12.job-column-2
     .job-dep Department
-    .job-category Creative
+    .job-category(ng-bind='data.departments["0"].name')
     br
     br
     .location-job Location
@@ -27,3 +24,5 @@ section.row.no-padding.culture.job-posting()
     hr
     img( class='share-icon' src="assets/images/share-128.png")
     span.job-location Share
+    .department-quote "I've never worked with such thoughtful, inspiring designers. We push each other to look at things differently, to break molds and create new design schemas&mdash;whether we're working on posters, branding, product design or print. it's a new standard that Pheno has set, and I do believe this is the best design group in the world."
+    .job-author &mdash; Junior Designer
