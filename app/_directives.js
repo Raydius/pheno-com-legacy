@@ -264,22 +264,47 @@ angular.module('phenoCom').directive('fileModel', ['$parse', function ($parse) {
     };
 }]);
 
-angular.module('phenoCom').service('fileUpload', ['$http', function ($http) {
-    this.uploadFileToUrl = function(file, uploadUrl){
-        var fd = new FormData();
-        fd.append('file', file);
-        $http.post(uploadUrl, fd, {
-            transformRequest: angular.identity,
-            headers: {'Content-Type': undefined}
-        })
-        .success(function(){
-          $('.resume-attached-hidden').toggleClass('resume-attached')
-        })
-        .error(function(){
-        });
-    }
-}]);
+angular.module('phenoCom').directive('fileUpload', ['$parse', function($parse) {
+	return {
+		link: function (scope, element, attr) {
 
+			var model = $parse(attr.fileUpload);
+			var modelSetter = model.assign;
+
+			element.filer({
+				limit: 1,
+				maxSize: 3,
+				extensions: ['jpg', 'jpeg', 'png', 'pdf', 'doc', 'docx'],
+				changeInput: '<a class="jFiler-input-choose-btn">Attach</a>',
+				showThumbs: true
+			});
+
+			element.bind('click', function(){
+
+			});
+
+			element.bind('change', function() {
+
+				// make file available in scope
+				scope.$apply(function() {
+					modelSetter(scope, element[0].files[0]);
+				});
+
+				$(this).parents('ul').find('li.paste').hide();
+
+				// always hide attach textarea when file attached
+				$(this).parents('ul').find('textarea').hide();
+
+				$('.icon-jfi-trash').click(function(){
+					$(this).parents().find('li.paste').show();
+				});
+
+			})
+
+
+		}
+	};
+}]);
 
 
 /*// handle page title changes on state change

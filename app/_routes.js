@@ -16,8 +16,9 @@ var templateJobs = require('views/jobs.pug');
 var templateBlog = require('views/blog.pug');
 var templateBlogPostSingle = require('views/blog-post-single.pug');
 var templateError = require('views/404.pug');
+
 var templateJob = require('views/job.pug');
-var templateApplication = require('views/application.pug');
+var templateApplication = require('views/components/job-application.pug');
 
 
 angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $locationProvider) {
@@ -150,6 +151,27 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                 }
             }
         })
+
+        // job-specific description
+		.state('job', {
+			url: '/careers/:jobId/',
+			controller: 'jobController',
+			template: templateJob
+		})
+		// job-specific application
+		.state('job.application', {
+			url: 'apply/',
+			controller: 'jobApplicationController',
+			template: templateApplication
+		})
+
+		// non-specific job application
+		.state('application-general', {
+			url: '/careers/application-general/',
+			template: templateApplication
+		})
+
+
         .state('contact', {
             url: '/contact/',
             template: templateContact,
@@ -195,31 +217,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             template: templateError
         })
 
-        // detailed job listing
-		.state('job', {
-			url: '/careers/:jobId/',
-			controller: 'jobController',
-            template: templateJob,
-			ncyBreadcrumb: {
-				label: 'job name'
-			}
-		})
 
-        // apply to specific job
-        .state('application', {
-            url: '/careers/:jobId/apply/',
-            controller: 'jobController',
-            template: templateApplication,
-            ncyBreadcrumb: {
-                // label: 'job name'
-            }
-        })
-
-		// non-specific job application
-		.state('application-general', {
-			url: '/careers/application-general/',
-			template: templateApplication
-		})
 
         .state('thanks', {
             url: '/job/thanks/',

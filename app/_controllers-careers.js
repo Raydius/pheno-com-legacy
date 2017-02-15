@@ -2,11 +2,9 @@
  * AngularJS Controllers for Careers Pages
  */
 
+angular.module('phenoCom').controller('jobsController', function($scope, $state, $http, envService) {
 
-var angular = require('angular');
-
-
-angular.module('phenoCom').controller('jobsController', function($scope, $state, $http) {
+	let apiUrl = envService.read('apiUrl');
 
 	$scope.jobs = {
 		departments: []
@@ -14,48 +12,10 @@ angular.module('phenoCom').controller('jobsController', function($scope, $state,
 
 	$http({
 		method: 'GET',
-		url: 'https://api.greenhouse.io/v1/boards/phenomenon/embed/departments'
+		url: apiUrl + '/jobs/'
 	}).then(function (response) {
 
-		var departments = response.data.departments;
-
-		// step through all departments
-		for(var i=0, len = departments.length; i < len; i++) {
-
-			var depJobs = departments[i].jobs;
-			var openPositions = [];
-
-			// step through all jobs in the department
-			for (var n=0, jlen = depJobs.length; n < jlen; n++) {
-
-				var job = depJobs[n];
-
-				// job must have a LinkedIn URL in order to be listed on the jobs page
-				if(job.metadata[0].value) {
-
-					var position = {
-						title: job.title,
-						url: '/careers/'+job.id+'/',
-						location: job.location.name
-					};
-					openPositions.push(position);
-				}
-
-			}
-
-			// if there were jobs in this department...
-			if(openPositions.length > 0) {
-
-				// push department to scope
-				var department = {
-					'name': departments[i].name,
-					'openPositions': openPositions
-				};
-
-				$scope.jobs.departments.push(department);
-			}
-
-		}
+		$scope.jobs.departments = response.data;
 
 		console.log($scope.jobs);
 	});
@@ -68,26 +28,109 @@ angular.module('phenoCom').controller('jobsController', function($scope, $state,
  *
  * Queries job data from Greenhouse.io
  */
-angular.module('phenoCom').controller('jobController', function($scope, $stateParams, $http, $sce) {
+angular.module('phenoCom').controller('jobController', function($scope, $stateParams, $http, $sce, envService) {
 
-	var jobId = $stateParams.jobId;
-	var url = 'https://api.greenhouse.io/v1/boards/phenomenon/embed/job?id='+jobId+'&questions=true';
+	// use appropriate API based on current environment
+	$scope.apiUrl = envService.read('apiUrl');
 
-	$scope.applyUrl = '/careers/'+jobId+'/apply/';
+	// initial placeholder data
+	$scope.data = {
+		departments: [''],
+		title: '',
+		content: ''
+	};
+
+	// get jobId from URL parameter
+	$scope.jobId = $stateParams.jobId;
+
+	$scope.applyUrl = '/careers/' + $scope.jobId + '/apply/';
 
 	$http({
 		method: 'GET',
-		url: url
+		url: $scope.apiUrl + '/jobs/job/' + $scope.jobId + '/',
 	}).then(function (response) {
 		$scope.data = response.data;
-		console.log($scope.data);
-
 	});
 
 	$scope.renderHtml = function(html_code) {
-		var txt = document.createElement("textarea");
+		let txt = document.createElement("textarea");
 		txt.innerHTML = html_code;
 		return $sce.trustAsHtml(txt.value);
 	};
 
+
+});
+
+
+/**
+ * Controller for Job-Specific Application Form
+ */
+angular.module('phenoCom').controller('jobApplicationController', function($scope, $stateParams, $location, $http) {
+
+
+	$scope.submitForm = function() {
+
+
+		if($scope.userForm.$valid) {
+
+			console.log('form is valid');
+
+			// compile form fields into data object
+			let data = ({
+				'id': jobId,
+				'first_name': $scope.user.firstname,
+				'last_name': $scope.user.lastname,
+				'email': $scope.user.email,
+				'phone': $scope.user.phone,
+				'website': $scope.user.website,
+				'linkedin': $scope.user.linkedin,
+				'etc': $scope.user.etc
+			});
+
+			// create FormData object from form fields and optional file attachment
+			let fd = new FormData();
+			fd.append('data', JSON.stringify(data));
+			fd.append('resume', $scope.resume);
+
+			$http({
+				method: 'POST',
+				url: apiUrl + '/jobs/apply/',
+				data: fd,
+				headers: {'Content-Type': undefined},
+				transformRequest: angular.identity
+			}).then(function(response) {
+
+				// go to thank you page
+				window.location.href = '/thanks/';
+
+			}, function(data, status, headers, config) {
+
+				// handle errors
+
+			});
+
+		}
+		else {
+
+			console.log('form is invalid');
+
+			angular.forEach($scope.userForm, function(value, key) {
+
+				// add field-level error messages after attempted submit even if user has never entered those fields
+				if (typeof value === 'object') {
+					let el = $scope.userForm[key];
+
+					if(el.$invalid) {
+						el.attempted = true;
+					}
+				}
+
+			});
+
+			$scope.userForm.$setPristine();
+			$scope.userForm.$setUntouched();
+
+			alert('Please fill out all of the required fields.');
+		}
+	};
 });
