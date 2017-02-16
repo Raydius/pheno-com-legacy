@@ -68,6 +68,12 @@ angular.module('phenoCom').controller('jobController', function($scope, $statePa
 angular.module('phenoCom').controller('jobApplicationController', function($scope, $stateParams, $location, $http) {
 
 
+	$scope.authLinkedIn = function() {
+		let url = $scope.apiUrl + '/jobs/linkedin/oauth';
+		window.open(url, 'li_auth', 'toolbar=no,scrollbars=no,resizable=yes,top=500,left=500,width=480,height=550');
+	};
+
+
 	$scope.submitForm = function() {
 
 

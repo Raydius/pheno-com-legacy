@@ -21,6 +21,7 @@ var templateJob = require('views/job.pug');
 var templateApplication = require('views/components/job-application.pug');
 
 
+
 angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
 
@@ -134,7 +135,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             }
         })
 
-
+        // main careers landing page
         .state('careers', {
             url: '/careers/',
             template: templateJobs,
