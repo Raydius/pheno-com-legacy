@@ -2,16 +2,9 @@
 
 ### Stack Summary ###
 
-Environment: Docker - node:latest
+Back-end: Webpack is used for the development environment, but static builds are created for deployment.
 
-Back-end: NodeJS
-Back-end Framework: Express
-
-Front-end Core Framework: ReactJS
-
-
-
-This README would normally document whatever steps are necessary to get your application up and running.
+Front-end Core Framework: AngularJS (v1)
 
 ### What is this repository for? ###
 
@@ -22,6 +15,9 @@ This README would normally document whatever steps are necessary to get your app
 ### How do I get set up? ###
 
 * Summary of set up
+
+
+
 * Configuration
 * Dependencies
 * Database configuration
