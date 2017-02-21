@@ -19,6 +19,7 @@ var templateError = require('views/404.pug');
 
 var templateJob = require('views/job.pug');
 var templateApplication = require('views/components/job-application.pug');
+var templateApplicationLinkedIn = require('views/components/linkedin-application.pug');
 
 
 
@@ -165,7 +166,11 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 			controller: 'jobApplicationController',
 			template: templateApplication
 		})
-
+    // linkedin-populated application
+    .state('linkedin-application', {
+      url: '/linkedin-application/',
+      template: templateApplicationLinkedIn
+    })
 		// non-specific job application
 		.state('application-general', {
 			url: '/careers/application-general/',
@@ -221,7 +226,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 
 
         .state('thanks', {
-            url: '/job/thanks/',
+            url: '/careers/thanks/',
             templateUrl: '/views/components/thanks',
             metaTags: {
                 title: 'phenomenon - Innovations Company | Thanks',
