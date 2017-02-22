@@ -8,13 +8,14 @@ article.col-md-12.employment-container.ng-scope {
 }
 
 article.col-md-2.applicant-timeline {
-    padding-left: 0px;
+    padding-left: 0;
 }
 
-
-.applicant-name, .applicant-timeline, .applicant-company, .employment  {
-  font-family: 'circular-bold';
-
+.applicant-company,
+.applicant-name,
+.applicant-timeline,
+.employment {
+    font-family: 'circular-bold';
 }
 
 .applicant-job-desc {
@@ -29,13 +30,12 @@ article.col-md-12.employment-container {
     margin-bottom: 10px;
 }
 
-
-.applicant-name, .employment {
+.applicant-name,
+.employment {
     font-size: 20px;
 }
-
 @media all and (max-width:991px) {
-  .applicant-location {
-    margin-top: 0.5px;
-}
+    .applicant-location {
+        margin-top: 0.5px;
+    }
 }
