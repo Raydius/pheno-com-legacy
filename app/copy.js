@@ -350,6 +350,7 @@ var copy =
       "clientLogoWidth": "100px",
       "project": "Brand Refresh",
       "media": "TV, Collateral, Digital, Social, Packaging",
+      "blockquote":"Neustar Connects Every Person, Place and Thing We Love.",
       "shareImg": require('assets/images/neustar/neustar.jpg'),
       "ogDescription": "The leader in communications, security and connectivity reimagines their vision for a connected future.",
       "topDescription": [
