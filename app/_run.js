@@ -66,21 +66,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
     // events that occur whenever a new angular state is successfully loaded
     $rootScope.$on('$stateChangeSuccess', function() {
 
-
-        // scroll back to the top of the page
-        if ( $(document).scrollTop() > 0) {
-           $htmlBody.animate({
-                    scrollTop: 1
-                }, 0, function(){
-
-            });
-        } else if ($(document).scrollTop() == 0) {
-           $htmlBody.animate({
-                    scrollTop: 0
-                }, 0, function(){
-
-            });
-        }
+        console.log('successfully changed states')
 
 
         // close snap drawer

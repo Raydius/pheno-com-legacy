@@ -8,7 +8,7 @@ section.row.no-padding.culture.job-posting()
       li.dept >
       li.breadcrumb-current(ng-bind="data.title")
     .job-title(ng-bind="data.title")
-    .job-wrapper(ui-view)
+    .job-wrapper(ui-view autoscroll)
       .job-content(ng-bind-html="renderHtml(data.content)")
       hr.secondHr
       .candidate-privacy See our Candidate Privacy Statement
