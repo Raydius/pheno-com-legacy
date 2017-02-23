@@ -266,6 +266,15 @@ var copy =
         {
           "type": "image",
           "image": true,
+          "imageUrl": require('assets/images/neustar/NeustarDC2.jpg'),
+          "legend": "Technology / B2B",
+          "headline": "Neustar Connects Every Person, Place and Thing We Love.",
+          "description": "The leader in communications, security and connectivity reimagines their vision for a connected future.",
+          "readmoreUrl": "/work/neustar/"
+        },
+        {
+          "type": "image",
+          "image": true,
           "imageUrl": require('assets/images/federer-work-image.jpg'),
           "legend": "Sport / Lifestyle",
           "headline": "From Federer By Federer.",
@@ -333,6 +342,52 @@ var copy =
         }
       ]
     },
+    "neustar": {
+      "title": "Neustar Connects Every Person, Place and Thing We Love.",
+      "className": "neustar",
+      "client": "Neustar",
+      "clientLogo": require('assets/images/neustar/neustarlogo.png'),
+      "clientLogoWidth": "100px",
+      "project": "Brand Refresh",
+      "media": "TV, Collateral, Digital, Social, Packaging",
+      "shareImg": require('assets/images/neustar/neustar.jpg'),
+      "ogDescription": "The leader in communications, security and connectivity reimagines their vision for a connected future.",
+      "topDescription": [
+        "For more than 20 years, Neustar has been paving the way for connectivity, whether through telecommunications, online or mobile. But with a fully connected future just over the horizon—and with the acquisition of a variety of new service offerings—Neustar needed to update their brand vision to reflect their position as the leaders of the connected world.",
+        "<span class='red'>It’s not just data. It’s Connection Science.</span>",
+        "The first step was to translate Neustar’s business offerings into something their B2B audience could understand. Because the term “data” was overused in the space, and extremely impersonal, we developed a positioning strategy that would allow us to humanize the brand, making it more relatable and personal. To that end, the phrase “Connection Science” was born. By using this newly coined and ownable phrase, Phenomenon built out the brand in a way that visually and tonally suggest Neustar’s holistic role in connecting people, places and things."
+      ],
+      "topcontent": [
+        {
+          "type": "image",
+          "image": true,
+          "imageUrl": require("assets/images/neustar/neustar.jpg"),
+          "imageAlt": "neustar"
+        },
+      ],
+      "detailcontent": [
+        {
+          "type": "image",
+          "image": false,
+          "imageUrl": require("assets/images/wilson-federer-pro-staff-web-1140×3156.jpg"),
+          "mainDescription": [
+            "<br>Starting with the logo, layout and color schema, we sought to portray connection, precision and harmony through a symmetrical grid system and diverse palette. These became the glue that began to bind the brand together as a unified business with integrated services that were both inclusive and exclusive of each other. These were applied to all client- and internal-facing communications.",
+            "With the new brand identity and strategic position in place, we launched at Cannes through a series of targeted emails, event signage and digital display ads, all of which were designed to pique the interest of those decision makers who were eager to evolve in the connected world. But this was only the beginning of the full Neustar refresh.",
+            "The challenge now was to take their existing (and extremely heady) content and provide a strategic framework for their website, sales decks, case studies, white papers and more. Honing in on a more suitable and personal tone was also crucial—their current language and overall content strategy had been all to confusing."
+          ]
+        },
+        {
+          "type": "image",
+          "image": true,
+          "imageUrl": require("assets/images/neustar/NeustarDC2.jpg"),
+          "mainDescription": [
+           "<br>In developing a content strategy, Phenomenon sought to focus the main messaging based on search criteria (having done a full audit of their existing site). What problems were clients looking to solve? Was a site currently under DDoS attack? Were outgoing calls being ignored? This structure allowed us to define a streamlined user experience online, one that spoke directly to client needs on based on their own needs and/or successes. The same though was applied to additional client-facing collateral.",
+           "<span class='red'>ABC. Always Be Connecting.</span>",
+           "We live in a new frontier of connectivity. And it’s evolving every day. Every minute. Every microsecond. As the leaders in driving the connected world forward, Neustar now has a brand that is truly ownable, easily accessible, and desirable to implement. The work thus far has established them as both pioneers and evolutionaries as we pave ahead, connected into the future."
+          ]
+        }
+      ]
+    },
     "federer": {
       "title": "From Federer by Federer.",
       "className": "federer",
@@ -348,7 +403,6 @@ var copy =
         "The new Wilson RF97 autograph racket is the first racket co-designed by Roger Federer and Wilson. It looks and plays like nothing else. In a world where loud colors are the norm for racket design, Federer preferred an approach that speaks to his love of minimalist design: A predominantly black racket with strategically placed highlights like a tiny Swiss flag. The result is a racket with the pure feel, power and precision to give players a technological edge, and the understated elegance to give them a mental edge whenever they step on the court.",
         'To announce the arrival of the new RF97 Phenomenon developed an integrated campaign led by a black-an-white film called "From Federer". The film features top junior players, Federer himself, and a handwritten note from Roger that plays a central role in the rest of the campaign. In the letter, Fed writes about the type of players he designed the racket for: the ones who push harder, play faster, and are obsessed with the game. Players who look at him not as someone to emulate, but someone to one day eclipse.',
         "<span class='red'>The film features top junior players, Federer himself, and a handwritten note from Roger that plays a central role in the rest of the campaign.</span>"
-
       ],
       "topcontent": [
         {
