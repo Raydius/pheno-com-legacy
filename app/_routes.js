@@ -19,6 +19,7 @@ var templateError = require('views/404.pug');
 
 var templateJob = require('views/job.pug');
 var templateApplication = require('views/components/job-application.pug');
+var templateApplicationLinkedIn = require('views/components/linkedin-application.pug');
 
 
 
@@ -68,6 +69,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         .state('work', {
             url: '/work/',
             template: templateWork,
+            // controller: scrollController,
             metaTags: {
                 title: 'phenomenon - Innovations Company | Work',
                 description: 'client work, projects, media',
@@ -121,7 +123,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         .state('culture', {
             url: '/culture/',
             template: templateCulture,
-            controller: 'scrollController',
+            // controller: 'scrollController',
             metaTags: {
                 title: 'phenomenon - Innovations Company | Culture',
                 description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
@@ -165,7 +167,11 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 			controller: 'jobApplicationController',
 			template: templateApplication
 		})
-
+    // linkedin-populated application
+    .state('linkedin-application', {
+      url: '/linkedin-application/',
+      template: templateApplicationLinkedIn
+    })
 		// non-specific job application
 		.state('application-general', {
 			url: '/careers/application-general/',
@@ -221,7 +227,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 
 
         .state('thanks', {
-            url: '/job/thanks/',
+            url: '/careers/thanks/',
             templateUrl: '/views/components/thanks',
             metaTags: {
                 title: 'phenomenon - Innovations Company | Thanks',
