@@ -69,6 +69,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         .state('work', {
             url: '/work/',
             template: templateWork,
+            // controller: scrollController,
             metaTags: {
                 title: 'phenomenon - Innovations Company | Work',
                 description: 'client work, projects, media',
@@ -122,7 +123,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         .state('culture', {
             url: '/culture/',
             template: templateCulture,
-            controller: 'scrollController',
+            // controller: 'scrollController',
             metaTags: {
                 title: 'phenomenon - Innovations Company | Culture',
                 description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
