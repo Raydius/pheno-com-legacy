@@ -14,10 +14,7 @@ angular.module('phenoCom').controller('jobsController', function($scope, $state,
 		method: 'GET',
 		url: apiUrl + '/jobs/'
 	}).then(function (response) {
-
 		$scope.jobs.departments = response.data;
-
-		console.log($scope.jobs);
 	});
 
 });
@@ -43,20 +40,42 @@ angular.module('phenoCom').controller('jobController', function($scope, $statePa
 	// get jobId from URL parameter
 	$scope.jobId = $stateParams.jobId;
 
-	$scope.applyUrl = '/careers/' + $scope.jobId + '/apply/';
+	// a jobId of 0 means it is a non-specific position
+	if($scope.jobId == 0) {
 
-	$http({
-		method: 'GET',
-		url: $scope.apiUrl + '/jobs/job/' + $scope.jobId + '/',
-	}).then(function (response) {
-		$scope.data = response.data;
-	});
+		// static data for non-specific job
+		$scope.data = {
+			content: 'Description of general job...',
+			departments: [
+				{
+					id: 0,
+					name: 'Any'
+				}
+			],
+			title: 'Open Application'
+		};
 
-	$scope.renderHtml = function(html_code) {
-		let txt = document.createElement("textarea");
-		txt.innerHTML = html_code;
-		return $sce.trustAsHtml(txt.value);
-	};
+	}
+
+	// otherwise get the information from Greenhouse for this job
+	else {
+		$scope.applyRoute = 'job.application';
+		//$scope.applyUrl = '/careers/' + $scope.jobId + '/apply/';
+
+		$http({
+			method: 'GET',
+			url: $scope.apiUrl + '/jobs/job/' + $scope.jobId + '/',
+		}).then(function (response) {
+			$scope.data = response.data;
+			console.log(response.data);
+		});
+
+		$scope.renderHtml = function(html_code) {
+			let txt = document.createElement("textarea");
+			txt.innerHTML = html_code;
+			return $sce.trustAsHtml(txt.value);
+		};
+	}
 
 
 });
@@ -69,8 +88,12 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 
 
 	$scope.authLinkedIn = function() {
+
+		/* this functionality is temporarily disabled -RD
 		let url = $scope.apiUrl + '/jobs/linkedin/oauth';
 		window.open(url, 'li_auth', 'toolbar=no,scrollbars=no,resizable=yes,top=500,left=500,width=480,height=550');
+		*/
+
 	};
 
 

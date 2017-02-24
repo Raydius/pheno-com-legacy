@@ -1,8 +1,8 @@
-a(href="#" ng-click="authLinkedIn()")
+//a(href="#" ng-click="authLinkedIn()")
   img( class='linkedIn-link' src="assets/images/linkedIn.png", alt="alt")
   img( class='or' src="assets/images/or.png", alt="alt")
 
-span.fill-it Fill out the form below
+//span.fill-it Fill out the form below
 form(name="userForm" ng-submit="submitForm()" novalidate, enctype="multipart/form-data", method="POST")
   .form-group( ng-class="{ 'has-error' : userForm.firstname.$invalid && !userForm.firstname.$pristine }")
     input(type='text' ng-model="user.firstname" name='firstname' placeholder='First Name *' required ng-model-options="{ 'updateOn': 'blur' }")
