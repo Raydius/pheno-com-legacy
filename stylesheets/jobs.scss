@@ -203,6 +203,24 @@ li.breadcrumb-current {
     border-bottom: none !important;
 }
 
+p.said-by {
+color: grey;
+font-family: circular-bold;
+}
+
+.quoter-holder {
+margin-top: -10px;
+display: -webkit-box;
+-moz-display: -moz-box;
+}
+
+p.company {
+position: absolute;
+// margin-top: -36px;
+// margin-left: 128px;
+font-family: "circular-book";
+color: grey;
+}
 
 
 // WEBPACK FOOTER //
