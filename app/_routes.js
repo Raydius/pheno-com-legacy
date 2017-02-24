@@ -154,16 +154,26 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             }
         })
 
-        // job description
+        // job-specific description
 		.state('job', {
 			url: '/careers/:jobId/',
 			controller: 'jobController',
 			template: templateJob
 		})
-		// job application
+		// job-specific application
 		.state('job.application', {
 			url: 'apply/',
 			controller: 'jobApplicationController',
+			template: templateApplication
+		})
+    // linkedin-populated application
+    .state('linkedin-application', {
+      url: '/linkedin-application/',
+      template: templateApplicationLinkedIn
+    })
+		// non-specific job application
+		.state('Object.assign(dest, source)pplication-general', {
+			url: '/careers/application-general/',
 			template: templateApplication
 		})
 
