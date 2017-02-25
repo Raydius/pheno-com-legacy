@@ -22,6 +22,14 @@ form(name="userForm" ng-submit="submitForm()" novalidate, enctype="multipart/for
     input(type='text' name='linkedin' placeholder='LinkedIn Profile' ng-model='user.linkedin')
   .form-group
     input(type='text' name='etc' placeholder='Is there anything else you would like us to know?' ng-model='user.etc')
+  .dropdown.job-menu
+    a.dropdown-toggle.job-dropdown(data-target='#', data-toggle='dropdown') Department
+      b.caret
+    ul.dropdown-menu
+      li
+        a(href='#') Creative
+      li
+        a(href='#') Brand
   .form-group
     //button.btn.btn-default.attach-res(ng-click="uploadFile()") Attach Resume
     input(name="resume", type="file", file-upload="resume", accept=".txt,application/zip,application/msword,application/pdf")
