@@ -198,6 +198,7 @@ a.jFiler-input-choose-btn:hover {
 
 a.jFiler-input-choose-btn {
     color: #333333;
+    font-family: circular-bold;
 }
 
 ul.jFiler-items-list.jFiler-items-default {
@@ -211,9 +212,60 @@ ul.jFiler-items-list.jFiler-items-default {
 }
 
 
+.btn-group {
+    width: 240px;
+    text-align: left;
+    border-radius: 0px;
+}
+
+button.btn.dropdown-toggle {
+    border-radius: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: circular-bold;
+    text-align: center;
+    margin: 0 auto;
+}
+
+ul.dropdown-menu  li {
+    /* text-align: left; */
+    font-size: 16px;
+    margin-left: -5px;
+}
+
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #D0021B !important;
+    /* background-color: #cc2128; */
+    /* width: 90%; */
+}
+
+.open > .dropdown-menu {
+    display: block;
+    width: 226px !important;
+    border-radius: 0px;
+    padding-bottom: 10px;
+
+}
+
+button.btn.dropdown-toggle:hover {
+    background: #f2f2f2 !important;
+    color: #333333 !important;
+}
+
+
 // WEBPACK FOOTER //
 // webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
 
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
 
 
 // WEBPACK FOOTER //

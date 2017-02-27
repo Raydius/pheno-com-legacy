@@ -25,6 +25,11 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
         $('.jFiler-item').attr('style','color:#333333;')
       })
 
+      $(".dropdown-menu li a").click(function(){
+  var selText = $(this).text();
+  $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+});
+
 
         // check if mobile or desktop
         if ( $.browser.mobile ) {

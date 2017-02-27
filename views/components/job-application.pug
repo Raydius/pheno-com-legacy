@@ -23,15 +23,30 @@ form(name="userForm" ng-submit="submitForm()" novalidate, enctype="multipart/for
   .form-group
     input(type='text' name='etc' placeholder='Is there anything else you would like us to know?' ng-model='user.etc')
   .form-group
-    select.form-control.custom-select
-      option Select Department
-      option Creative
-      option Brand
-      option Finance
-      option IT
-      option Tech
-      br
-      br
+    .btn-group
+      button.btn.dropdown-toggle(name='recordinput', data-toggle='dropdown') Select Department
+        //- span.caret
+      ul.dropdown-menu
+        li
+          a(href='#') Creative
+        li
+          a(href='#') Brand
+        li
+          a(href='#') Finance
+        li
+          a(href='#') IT
+        li
+          a(href='#') Technology
+  //- .form-group
+  //-   select.form-control.custom-select
+  //-     option Select Department
+  //-     option Creative
+  //-     option Brand
+  //-     option Finance
+  //-     option IT
+  //-     option Tech
+  //-     br
+  //-     br
   .col-md-6.submit-attach
     .form-group
       //button.btn.btn-default.attach-res(ng-click="uploadFile()") Attach Resume
