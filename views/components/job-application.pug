@@ -27,26 +27,9 @@ form(name="userForm" ng-submit="submitForm()" novalidate, enctype="multipart/for
       button.btn.dropdown-toggle(name='recordinput', data-toggle='dropdown') Select Department
         //- span.caret
       ul.dropdown-menu
-        li
-          a(href='#') Creative
-        li
-          a(href='#') Brand
-        li
-          a(href='#') Finance
-        li
-          a(href='#') IT
-        li
-          a(href='#') Technology
-  //- .form-group
-  //-   select.form-control.custom-select
-  //-     option Select Department
-  //-     option Creative
-  //-     option Brand
-  //-     option Finance
-  //-     option IT
-  //-     option Tech
-  //-     br
-  //-     br
+        li(ng-repeat="department in data.departments")
+          a(href='#' ng-bind="department.name")
+
   .col-md-6.submit-attach
     .form-group
       //button.btn.btn-default.attach-res(ng-click="uploadFile()") Attach Resume

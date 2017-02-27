@@ -49,11 +49,20 @@ angular.module('phenoCom').controller('jobController', function($scope, $statePa
 			departments: [
 				{
 					id: 0,
-					name: 'Any'
+					name: 'Unspecified'
 				}
 			],
 			title: 'Open Application'
 		};
+
+		// get list of departments from Greenhouse
+		$http({
+			method: 'GET',
+			url: $scope.apiUrl + '/jobs/departments/'
+		}).then(function (response) {
+
+			$scope.data.departments = response.data;
+		});
 
 	}
 
@@ -64,7 +73,7 @@ angular.module('phenoCom').controller('jobController', function($scope, $statePa
 
 		$http({
 			method: 'GET',
-			url: $scope.apiUrl + '/jobs/job/' + $scope.jobId + '/',
+			url: $scope.apiUrl + '/jobs/job/' + $scope.jobId + '/'
 		}).then(function (response) {
 			$scope.data = response.data;
 			console.log(response.data);
