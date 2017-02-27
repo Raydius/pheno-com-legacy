@@ -20,6 +20,7 @@ var templateError = require('views/404.pug');
 var templateJob = require('views/job.pug');
 var templateApplication = require('views/components/job-application.pug');
 var templateApplicationLinkedIn = require('views/components/linkedin-application.pug');
+var templateThanks = require('views/components/thanks.pug');
 
 
 
@@ -227,7 +228,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 
         .state('thanks', {
             url: '/careers/thanks/',
-            templateUrl: '/views/components/thanks',
+            template: templateThanks,
             metaTags: {
                 title: 'phenomenon - Innovations Company | Thanks',
                 description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
