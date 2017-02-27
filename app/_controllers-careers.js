@@ -131,6 +131,7 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 
 				// go to thank you page
 				window.location.href = '/thanks/';
+				$('.resume-attached-hidden').show()
 
 			}, function(data, status, headers, config) {
 
