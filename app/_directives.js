@@ -272,10 +272,10 @@ angular.module('phenoCom').directive('fileUpload', ['$parse', function($parse) {
 			var modelSetter = model.assign;
 
 			element.filer({
-				limit: 1,
+				limit: 2,
 				maxSize: 3,
 				extensions: ['jpg', 'jpeg', 'png', 'pdf', 'doc', 'docx'],
-				changeInput: '<a class="jFiler-input-choose-btn">Attach</a>',
+				changeInput: "<a class='jFiler-input-choose-btn'>Attach Resume / Portfolio</a>",
 				showThumbs: true
 			});
 
@@ -291,6 +291,7 @@ angular.module('phenoCom').directive('fileUpload', ['$parse', function($parse) {
 				});
 
 				$(this).parents('ul').find('li.paste').hide();
+        $('.resume-attached-hidden.red').attr('style','display:block')
 
 				// always hide attach textarea when file attached
 				$(this).parents('ul').find('textarea').hide();

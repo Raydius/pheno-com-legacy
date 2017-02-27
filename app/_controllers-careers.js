@@ -145,6 +145,9 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 					// handle errors
 				}
 
+				// $('.resume-attached-hidden').show()
+
+
 			}, function(data, status, headers, config) {
 
 				// handle errors

@@ -135,6 +135,85 @@ article.col-md-3.pull-right.col-sm-12.col-xs-12.job-column-3 {
     margin-top: 390px;
 }
 
+.custom-select {
+    width: 230px;
+    padding-right: 40px;
+    font-family: circular-book;
+    font-size: 16px;
+    margin-bottom: 40px;
+    border-radius: 0px;
+    font-weight: bold;
+}
+
+// filer styles
+
+li.jFiler-item:hover {
+    color: #333333;
+}
+
+.jFiler-item-others span {
+    padding: 10px;
+}
+
+.jFiler-input-choose-btn:hover {
+
+  li.jFiler-item {
+      color: #333333;
+  }
+
+}
+
+li.jFiler-item {
+    border: 1px solid #4CAF50;
+    background: #f2f2f2;
+    width: 240px;
+    height: 57px;
+    padding: 8px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.jFiler.jFiler-theme-default:hover {
+    color: white;
+    background: #cc2128;
+    transition: .4s;
+}
+
+a.jFiler-input-choose-btn:hover {
+    color: white;
+}
+
+.jFiler.jFiler-theme-default {
+    width: 229px;
+    background: #f2f2f2;
+    /* border: 1px solid #979797; */
+    height: 58px;
+    text-align: center;
+    padding: 18px;
+    border-radius: 0px;
+    /* color: #565656; */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+a.jFiler-input-choose-btn {
+    color: #333333;
+}
+
+ul.jFiler-items-list.jFiler-items-default {
+    margin-left: 230px;
+    margin-top: -40px;
+}
+
+.col-md-6.submit-attach {
+    margin-top: 0px;
+    margin-left: -15px;
+}
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
 
 
 // WEBPACK FOOTER //

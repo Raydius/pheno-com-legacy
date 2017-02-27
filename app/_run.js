@@ -15,6 +15,16 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
     // events that occur after the page has completely loaded
     $( document ).ready(function() {
 
+      $('.resume-attached-hidden').hide()
+      // hide resume attached helper
+      $('.jFiler.jFiler-theme-default').mouseenter(function(){
+        $('.jFiler-input-choose-btn').attr('style','color:white;')
+      })
+      $('.jFiler.jFiler-theme-default').mouseleave(function(){
+        $('.jFiler-input-choose-btn').attr('style','color:#333333;')
+        $('.jFiler-item').attr('style','color:#333333;')
+      })
+
 
         // check if mobile or desktop
         if ( $.browser.mobile ) {
