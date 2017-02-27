@@ -84,7 +84,7 @@ angular.module('phenoCom').controller('jobController', function($scope, $statePa
 /**
  * Controller for Job-Specific Application Form
  */
-angular.module('phenoCom').controller('jobApplicationController', function($scope, $stateParams, $location, $http) {
+angular.module('phenoCom').controller('jobApplicationController', function($scope, $state, $stateParams, $location, $http, envService) {
 
 
 	$scope.authLinkedIn = function() {
@@ -96,6 +96,11 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 
 	};
 
+	// get jobId from URL parameter
+	$scope.jobId = $stateParams.jobId;
+
+	// use appropriate API based on current environment
+	$scope.apiUrl = envService.read('apiUrl');
 
 	$scope.submitForm = function() {
 
@@ -106,7 +111,7 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 
 			// compile form fields into data object
 			let data = ({
-				'id': jobId,
+				'id': $scope.jobId,
 				'first_name': $scope.user.firstname,
 				'last_name': $scope.user.lastname,
 				'email': $scope.user.email,
@@ -123,15 +128,25 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 
 			$http({
 				method: 'POST',
-				url: apiUrl + '/jobs/apply/',
+				url: $scope.apiUrl + '/jobs/apply/',
 				data: fd,
 				headers: {'Content-Type': undefined},
 				transformRequest: angular.identity
 			}).then(function(response) {
 
-				// go to thank you page
-				window.location.href = '/thanks/';
-				$('.resume-attached-hidden').show()
+				// if successful, go to thank you page
+				if(response.data.success == "Candidate saved successfully") {
+					$state.go('thanks');
+				}
+
+				// if not (either proxy API unreachable, or Greenhouse API unreachable)
+				else {
+					console.log(response);
+					// handle errors
+				}
+
+				// $('.resume-attached-hidden').show()
+
 
 			}, function(data, status, headers, config) {
 
