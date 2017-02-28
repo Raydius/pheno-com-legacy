@@ -184,12 +184,12 @@ li.trash-icon {
 
 .jFiler.jFiler-theme-default:hover {
     color: white;
-    background: #cc2128;
+/*     background: #cc2128; */
     transition: .4s;
 }
 
 a.jFiler-input-choose-btn:hover {
-    color: white;
+    color: #333333 !important;
 }
 
 .jFiler.jFiler-theme-default {
@@ -240,8 +240,8 @@ button.btn.dropdown-toggle {
 }
 
 .btn-group.open .dropdown-toggle {
-    /* -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); */
-    /* box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); */
+    -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.125) !important; 
+     box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.125) !important;
 }
 
 ul.dropdown-menu  li {
@@ -252,9 +252,9 @@ ul.dropdown-menu  li {
 
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-    color: #D0021B !important;
-    /* background-color: #cc2128; */
-    /* width: 90%; */
+    text-decoration: none;
+    color: #cc2128;
+    background-color: transparent !important;
 }
 
 .open > .dropdown-menu {
@@ -322,6 +322,26 @@ button.btn.dropdown-toggle:hover {
 // WEBPACK FOOTER //
 // webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
 
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
 
 
 // WEBPACK FOOTER //
