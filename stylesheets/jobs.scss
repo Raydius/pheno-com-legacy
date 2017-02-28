@@ -132,6 +132,21 @@ a.dropdown-toggle.job-dropdown {
     color: black;
     font-weight: 500;
 }
+
+.col-md-10.action-buttons {
+    display: flex;
+}
+
+@media screen and (max-width:768px) {
+.col-md-10.action-buttons {
+    display: block;
+	}
+}
+
+button.btn.dropdown-toggle {
+    margin-left: -15px !important;
+}
+
 .dropdown.job-menu {
     margin-bottom: 70px;
     /* border: 2px solid grey; */

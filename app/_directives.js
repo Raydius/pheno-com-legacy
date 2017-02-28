@@ -275,7 +275,7 @@ angular.module('phenoCom').directive('fileUpload', ['$parse', function($parse) {
 				limit: 2,
 				maxSize: 3,
 				extensions: ['jpg', 'jpeg', 'png', 'pdf', 'doc', 'docx'],
-				changeInput: "<a class='jFiler-input-choose-btn'>Attach Resume / Portfolio</a>",
+				changeInput: "<a class='jFiler-input-choose-btn'>Attach Resume</a>",
 				showThumbs: true
 			});
 
