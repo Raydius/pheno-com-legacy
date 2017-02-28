@@ -1,0 +1,108 @@
+// dynamically populate content from copy.json data
+//block variables
+- copy = require('app/copy.js')
+- pageData = copy.content[page]
+- fbShareImg = copy.content[page].shareImg
+section.row.no-padding.work.work-details
+	article.col-md-12.no-padding.top-main
+		h1!= pageData.blockquote
+		h2
+			blockquote!= pageData.blockquote
+
+		include cite-components
+		hr.hr-content-divider
+	.topcontent
+		article.col-xs-12.col-sm-12.col-md-7.top-description.no-padding
+			if pageData.topDescription
+				each par in pageData.topDescription
+					p!= par
+				if pageData.topcontent
+		article.col-xs-12.col-sm-12.col-md-4.col-md-offset-1.project-detail
+
+			label.icon-details.icon-dot(close showmore childContainer=".detail-wrapper")
+				span Details
+
+			aside.col-md-12#icon-details-container
+				fieldset
+					.detail-wrapper
+						if pageData.clientLogoWidth
+							// need to specify logo width in copy.js otherwise it may be too large
+							img.clientlogo(src= pageData.clientLogo style="width:" + pageData.clientLogoWidth)
+						fieldset
+							legend Client
+							span= pageData.client
+						fieldset
+							legend Project
+							span= pageData.project
+						fieldset
+							legend Media
+							span= pageData.media
+
+
+			label.icon-share(close showmore childContainer=".social-icons")
+				span.share-text Share
+
+			include share-icons
+
+		article.col-xs-12.col-sm-12.no-padding
+			each contentItem in pageData.topcontent
+				article.col-sm-12.col-md-12.no-padding.tet
+					if contentItem.video
+						video-component(thumb=contentItem.thumb, alt=contentItem.thumbAlt, title=contentItem.thumbTitle, vimeo=contentItem.vimeo)
+					if contentItem.carousel
+						carousel-component.carousel-component.owl-carousel.no-padding
+							each carouselItem in contentItem.images
+								img(src=carouselItem.url, alt=carouselItem.alt)
+					if contentItem.image
+						section.image-component.component.row.no-padding
+							.col-xs-12.no-padding
+								img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
+					if contentItem.mainDescription
+						article.col-md-7.no-padding
+							each par in contentItem.mainDescription
+								p!= par
+	div.detail-content
+		if pageData.fromTopContentDescription
+			article.col-md-12.no-padding
+				each par in pageData.fromTopContentDescription
+					article.col-md-7.no-padding
+						p!= par
+
+		each contentItem in pageData.detailcontent
+			if contentItem.video
+				article.col-md-12.no-padding.tet
+					video-component(thumb=contentItem.thumb, alt=contentItem.thumbAlt, title=contentItem.thumbTitle, vimeo=contentItem.vimeo)
+
+			if contentItem.carousel
+				article.col-md-12.no-padding.tet
+					carousel-component.carousel-component.owl-carousel.no-padding
+						each carouselItem in contentItem.images
+							img(src=carouselItem.url, alt=carouselItem.alt)
+			if contentItem.image
+				article.col-md-12.no-padding.tet
+					section.image-component.component.row.no-padding
+						.col-xs-12.no-padding
+							img(src= contentItem.imageUrl, alt=contentItem.imageAlt)
+			if contentItem.scrollingSite
+				article#scrollingSite.col-md-12.no-padding.tet(scrollable-component)
+					section.image-component.component.row.no-padding
+						.browser-bar
+							img(src= require("assets/images/browser.png"))
+						img.longImg(src= contentItem.imageUrl, alt=contentItem.imageAlt)
+
+			if contentItem.mainDescription
+				article.col-md-12.no-padding.tet
+						article.col-md-7.no-padding
+							each par in contentItem.mainDescription
+								p!= par
+	article.col-md-7.no-padding.case-writer
+		if pageData.caseWriter
+			span
+				span!= pageData.caseWriter.name
+				span!= ' / ' + pageData.caseWriter.title
+			p!= pageData.caseWriter.description
+		else
+			// corrected spacing for articles without a case writer
+			p
+
+	include more-cases

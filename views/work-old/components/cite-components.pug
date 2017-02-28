@@ -1,0 +1,9 @@
+block variables
+cite
+	if pageData.quoterAvatar
+		div.client_logo-wrapper(style="background-image: url(" + pageData.quoterAvatar + ")")
+	.wrapper
+		if pageData.quoterName
+			span!= pageData.quoterName
+		if pageData.quoterTitle
+			span!= pageData.quoterTitle
