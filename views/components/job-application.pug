@@ -34,5 +34,5 @@ form(name="userForm" ng-submit="submitForm()" novalidate, enctype="multipart/for
       .form-group
         //button.btn.btn-default.attach-res(ng-click="uploadFile()") Attach Resume
         input(name="resume", type="file", file-upload="resume", multiple, accept=".txt,application/zip,application/msword,application/pdf")
-        .resume-attached-hidden.red File attached.
+        //- .resume-attached-hidden.red File attached.
   input.apply-now.submit-app( type='submit', value="Submit Application" )
