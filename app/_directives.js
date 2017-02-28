@@ -276,7 +276,27 @@ angular.module('phenoCom').directive('fileUpload', ['$parse', function($parse) {
 				maxSize: 3,
 				extensions: ['jpg', 'jpeg', 'png', 'pdf', 'doc', 'docx'],
 				changeInput: "<a class='jFiler-input-choose-btn'>Attach Resume</a>",
-				showThumbs: true
+				showThumbs: true,
+        templates: {
+            box: '<ul class="animated fadeInUp jFiler-items-list jFiler-items-default"></ul>',
+            item: '<li class="jFiler-item"><div class="jFiler-item-container"><div class="jFiler-item-inner"><div class="jFiler-item-icon pull-left">{{fi-icon}}</div><div class="jFiler-item-info pull-left"><div class="jFiler-item-title" title="{{fi-name}}">{{fi-name | limitTo:30}}</div><div class="jFiler-item-others"><span class="jFiler-item-status">{{fi-progressBar}}</span></div><div class="jFiler-item-assets"><ul class="list-inline"><li class="trash-icon"><img class="jFiler-item-trash-action" src="assets/images/icon_close.svg"></li></ul></div></div></div></div></li>',
+            itemAppend: '<li class="jFiler-item"><div class="jFiler-item-container"><div class="jFiler-item-inner"><div class="jFiler-item-icon pull-left">{{fi-icon}}</div><div class="jFiler-item-info pull-left"><div class="jFiler-item-title">{{fi-name | limitTo:35}}</div><div class="jFiler-item-others"><span class="jFiler-item-status"></span></div><div class="jFiler-item-assets"><ul class="list-inline"><li class="trash-icon"><img class="jFiler-item-trash-action" src="assets/images/icon_close.svg"></li></ul></div></div></div></div></li>',
+            progressBar: '<div class="bar"></div>',
+            itemAppendToEnd: !1,
+            removeConfirmation: !0,
+            _selectors: {
+                list: ".jFiler-items-list",
+                item: ".jFiler-item",
+                progressBar: ".bar",
+                remove: ".jFiler-item-trash-action"
+            }
+        },
+        _selectors: {
+              list: '.jFiler-items-list',
+              item: '.jFiler-item',
+              progressBar: '.bar',
+              remove: '.jFiler-item-trash-action'
+          }
 			});
 
 			element.bind('click', function(){
