@@ -19,8 +19,8 @@ var templateError = require('views/404.pug');
 
 var templateJob = require('views/job.pug');
 var templateApplication = require('views/components/job-application.pug');
-var templateApplicationLinkedIn = require('views/components/linkedin-application.pug');
-var templateThanks = require('views/components/thanks.pug');
+//var templateApplicationLinkedIn = require('views/components/linkedin-application.pug');
+var templateApplicationThanks = require('views/thanks.pug');
 
 
 
@@ -155,6 +155,23 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             }
         })
 
+		// post application submission "thank you" page
+		.state('thanks', {
+			url: '/careers/thanks/',
+			template: templateApplicationThanks,
+			metaTags: {
+				title: 'phenomenon - Innovations Company | Thanks',
+				description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
+				keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
+				properties: {
+					'og:type': 'website',
+					'og:title': 'Phenomenon - Innovations Company',
+					'og:description': 'Phenomenon - Innovations Company',
+					'og:image': require('assets/images/fb-share-center.png')
+				}
+			}
+		})
+
         // job-specific description
 		.state('job', {
 			url: '/careers/:jobId/',
@@ -167,16 +184,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 			controller: 'jobApplicationController',
 			template: templateApplication
 		})
-    // linkedin-populated application
-    .state('linkedin-application', {
-      url: '/linkedin-application/',
-      template: templateApplicationLinkedIn
-    })
-		// non-specific job application
-		.state('Object.assign(dest, source)pplication-general', {
-			url: '/careers/application-general/',
-			template: templateApplication
-		})
+
 
 
         .state('contact', {
@@ -226,21 +234,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 
 
 
-        .state('thanks', {
-            url: '/careers/thanks/',
-            template: templateThanks,
-            metaTags: {
-                title: 'phenomenon - Innovations Company | Thanks',
-                description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
-                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
-                properties: {
-                    'og:type': 'website',
-                    'og:title': 'Phenomenon - Innovations Company',
-                    'og:description': 'Phenomenon - Innovations Company',
-                    'og:image': require('assets/images/fb-share-center.png')
-                }
-            }
-        })
+
 
     ;
 

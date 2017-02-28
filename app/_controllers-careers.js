@@ -32,7 +32,7 @@ angular.module('phenoCom').controller('jobController', function($scope, $statePa
 
 	// initial placeholder data
 	$scope.data = {
-		departments: [''],
+		departments: [{id: 0, name: 'Loading departments...'}],
 		title: '',
 		content: ''
 	};
@@ -41,7 +41,7 @@ angular.module('phenoCom').controller('jobController', function($scope, $statePa
 	$scope.jobId = $stateParams.jobId;
 
 	// a jobId of 0 means it is a non-specific position
-	if($scope.jobId == 0) {
+	/*if($scope.jobId == 0) {
 
 		// static data for non-specific job
 		$scope.data = {
@@ -55,19 +55,10 @@ angular.module('phenoCom').controller('jobController', function($scope, $statePa
 			title: 'Open Application'
 		};
 
-		// get list of departments from Greenhouse
-		$http({
-			method: 'GET',
-			url: $scope.apiUrl + '/jobs/departments/'
-		}).then(function (response) {
-
-			$scope.data.departments = response.data;
-		});
-
-	}
+	}*/
 
 	// otherwise get the information from Greenhouse for this job
-	else {
+	//else {
 		$scope.applyRoute = 'job.application';
 		//$scope.applyUrl = '/careers/' + $scope.jobId + '/apply/';
 
@@ -84,7 +75,7 @@ angular.module('phenoCom').controller('jobController', function($scope, $statePa
 			txt.innerHTML = html_code;
 			return $sce.trustAsHtml(txt.value);
 		};
-	}
+	//}
 
 
 });
@@ -95,21 +86,46 @@ angular.module('phenoCom').controller('jobController', function($scope, $statePa
  */
 angular.module('phenoCom').controller('jobApplicationController', function($scope, $state, $stateParams, $location, $http, envService) {
 
+	// initial placeholder data
+	$scope.data = {
+		departments: [{id: 0, name: 'Loading departments...'}],
+		title: '',
+		content: ''
+	};
+	$scope.selectedDepartment = 0;
 
+	$scope.selectNewDeptartment = function(departmentId) {
+		$scope.selectedDepartment = departmentId;
+	};
+
+	// LinkedIn integration
+	/*
 	$scope.authLinkedIn = function() {
 
-		/* this functionality is temporarily disabled -RD
+		// this functionality is temporarily disabled -RD
 		let url = $scope.apiUrl + '/jobs/linkedin/oauth';
 		window.open(url, 'li_auth', 'toolbar=no,scrollbars=no,resizable=yes,top=500,left=500,width=480,height=550');
-		*/
-
-	};
+	};*/
 
 	// get jobId from URL parameter
 	$scope.jobId = $stateParams.jobId;
 
 	// use appropriate API based on current environment
 	$scope.apiUrl = envService.read('apiUrl');
+
+
+	// functionality that only applies to the generic (non-job-specific) form
+	if($scope.jobId == 0) {
+
+		// get list of departments from Greenhouse
+		$http({
+			method: 'GET',
+			url: $scope.apiUrl + '/jobs/departments/'
+		}).then(function (response) {
+			$scope.data.departments = response.data;
+		});
+
+	}
 
 	$scope.submitForm = function() {
 
@@ -127,7 +143,7 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 				'phone': $scope.user.phone,
 				'website': $scope.user.website,
 				'linkedin': $scope.user.linkedin,
-				'etc': $scope.user.etc
+				'department': $scope.selectedDepartment
 			});
 
 			// create FormData object from form fields and optional file attachment

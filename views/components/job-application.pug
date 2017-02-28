@@ -28,11 +28,13 @@ form(name="userForm" ng-submit="submitForm()" novalidate, enctype="multipart/for
         //- span.caret
       ul.dropdown-menu
         li(ng-repeat="department in data.departments")
-          a(href='#' ng-bind="department.name")
+          a(href='#' ng-bind="department.name" ng-click="selectNewDepartment(department.id)")
+
+
 
   .col-md-6.submit-attach
     .form-group
       //button.btn.btn-default.attach-res(ng-click="uploadFile()") Attach Resume
-      input(name="resume", type="file", file-upload="resume", accept=".txt,application/zip,application/msword,application/pdf")
+      input(name="resume", type="file", file-upload="resume", multiple, accept=".txt,application/zip,application/msword,application/pdf")
       .resume-attached-hidden.red File attached.
   input.apply-now.submit-app( type='submit', value="Submit Application" )
