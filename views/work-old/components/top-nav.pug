@@ -1,0 +1,16 @@
+block variables
+- copy = require('app/copy.js')
+
+nav.topnav(role="navigation")
+	.nav-wrapper
+		#hamburger(ngClick=toggleDrawer)
+			span
+			span
+			span
+
+		header.logo-wrapper
+			a(ui-sref="home", href="/")
+				img(src=copy.logo.src, alt=src=copy.logo.alt).logo
+
+		.tabs
+			include menu

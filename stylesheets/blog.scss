@@ -59,9 +59,9 @@ img.phno-logo {
     height: 95px;
     margin-left: -10px;
     border-bottom: 5px solid black;
-  }
 }
 
+}
 
 .blog-share-text {
     position: absolute;
@@ -177,8 +177,7 @@ span.blog-title {
     justify-content: flex-start;
     align-items: center;
     padding-top: 20px;
-    padding-left: 26px;
-    padding-right: 30px;
+    padding-left: 20px;
     color: #333333;
     padding-bottom: 16px;
     font-family: "Tiempose-semibold";
@@ -337,13 +336,67 @@ section.row.no-padding.culture.blog-posts {
     }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 470px) and (-webkit-min-device-pixel-ratio: 2) {
-  p.tagline {
+
+
+  .col-md-12.author-container {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    height: 95px;
+    margin-left: -20px;
+    border-bottom: 5px solid black;
+}
+
+.page-divide.end-post.col-md-12 {
+    margin-top: 40px;
+    width: 100%;
+    margin-left: -20px;
+    border-bottom: 1px solid #CCC;
+}
+
+  a.read-moreUrl.full-article-link {
+    color: #D0021B;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+  span.blog-title {
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 20px;
+    color: #333333;
+    padding-bottom: 16px;
+    font-family: "Tiempose-semibold";
+}
+
+   p.tagline {
     display: flex;
     width: 180px;
-    margin-left: 0%;
+    margin-left: 5%;
     margin-top: 10%;
     padding-right: 10px;
-    padding-bottom: 20px;
+    line-height: 20px;
+}
+
+p.now {
+    margin-left: 122px !important;
+    margin-top: -26px !important;
+}
+
+p.tip {
+    display: block;
+    /* width: 410px; */
+    margin-left: 5% !important;
+    margin-top: 20px !important;
+    margin-bottom: -26px !important;
+    font-size: 13px;
 }
 
     ul.blog-action-list {
@@ -382,25 +435,30 @@ section.row.no-padding.culture.blog-posts {
     font-size: 12px;
     margin-top: 30px;
     margin-left: 25px;
-  }
 }
-@media all and (max-width:375px) {
-  p.readmore {
-      color: #cc2128;
-      padding-left: 24px;
-      font-size: 13px;
-  }
-}
-p.readmore {
-    color: #cc2128;
-    font-size: 13px;
+    // a.read-moreUrl.full-article-link {
+    //     color: #D0021B;
+    //     text-decoration: none;
+    //     display: block;
+    //     font-size: 12px;
+    //     margin-top: 30px;
+    //     margin-left: 0;
+    // }
+
+    // .col-md-12.author-container {
+    //     margin-bottom: 30px;
+    //     margin-left: -20px;
+    //     width: 106%;
+    // }
+    //
+    // .page-divide.end-post.col-md-12 {
+    //     margin-top: 40px;
+    //     width: 106%;
+    //     margin-left: -20px;
+    //     border-bottom: 1px solid #CCC;
+    // }
 }
 @media all and (min-width:400px) and (max-width:668px) {
-
-  .contact-section {
-    float: right;
-    width: 624px;
-}
 
     .blog-preview {
     font-size: 12px;
@@ -426,10 +484,11 @@ a.read-moreUrl.full-article-link {
     font-family: "Tiempose-semibold";
 }
 
-    p.tip {
+p.tip {
     display: block;
     margin-top: 20px !important;
     margin-bottom: -26px !important;
+    margin-left: -2px !important;
 }
     .bubble-search {
         position: absolute;
@@ -556,8 +615,8 @@ a.read-moreUrl.full-article-link {
     }
 
     .pageDivide.col-md-12 {
-        border-bottom: 1px solid #ccc;
-        margin-bottom: 80px !important;
+        border-bottom: 1px solid #fff;
+        margin-bottom: -30px !important; 
         margin-top: 184px !important;
         margin-left: -30px;
         width: 109% !important;
@@ -852,3 +911,25 @@ p.blog-preview > p {
         margin-bottom: 15px;
     }
 }
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/blog.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss

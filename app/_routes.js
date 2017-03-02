@@ -103,10 +103,10 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 				properties: {
 					'og:type': 'website',
 					'og:title': function(caseObject) {
-					    return 'phenomenon - Innovations Company | Work - ' + caseObject.title;
+					    return caseObject.client + ': ' + caseObject.title;
                     },
 					'og:description': function(caseObject) {
-					    return 'An independent agency for independent minds.';
+					    return 'phenomenon - An independent agency for independent minds.';
                     },
 					'og:image': function(caseObject) {
 					    return caseObject.shareImg;
