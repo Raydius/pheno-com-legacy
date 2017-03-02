@@ -99,10 +99,10 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 				properties: {
 					'og:type': 'website',
 					'og:title': function(caseObject) {
-					    return 'phenomenon - Innovations Company | Work';
+					    return caseObject.client + ': ' + caseObject.title;
                     },
 					'og:description': function(caseObject) {
-					    return caseObject.client + ': ' + caseObject.title;
+					    return 'phenomenon - An independent agency for independent minds.';
                     },
 					'og:image': function(caseObject) {
 					    return caseObject.shareImg;
