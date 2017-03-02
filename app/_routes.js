@@ -94,7 +94,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 				    return caseObject.ogDescription;
                 },
 				keywords: function(caseObject) {
-				    return caseObject.client + ': ' + caseObject.title;
+				    return 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, work, clients, projects, media, ' + caseObject.client;
                 },
 				properties: {
 					'og:type': 'website',
@@ -102,7 +102,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 					    return 'phenomenon - Innovations Company | Work';
                     },
 					'og:description': function(caseObject) {
-					    return 'phenomenon - An independent agency for independent minds.';
+					    return caseObject.client + ': ' + caseObject.title;
                     },
 					'og:image': function(caseObject) {
 					    return caseObject.shareImg;
