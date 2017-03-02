@@ -269,7 +269,7 @@ var copy =
           "imageUrl": require('assets/images/neustar/NeustarDC2.jpg'),
           "legend": "Technology / B2B",
           "headline": "Neustar Helps Make Data Shine.",
-          "description": "The leader in communications, security and connectivity reimagines their vision for a connected future.",
+          "description": "Visual redesign and strategic repositioning help turn analytics giant into the connectivity leader that they are.",
           "readmoreUrl": "/work/neustar/"
         },
         {
