@@ -144,10 +144,10 @@ p.now {
     }
 }
 @media screen and (min-device-width:320px) and (max-device-width:375px) {
-    p.now {
-        margin-left: 110px !important;
-        margin-top: -26px !important;
-    }
+   p.now {
+    margin-left: 108px !important;
+    margin-top: -1.85em !important;
+}
 }
 @media (min-width:320px) and (max-width:400px) {
     .container.blog-container {
@@ -324,3 +324,7 @@ input.subscribe-input {
 
 // WEBPACK FOOTER //
 // webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/blog-grid.scss

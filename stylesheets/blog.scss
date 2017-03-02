@@ -336,7 +336,7 @@ section.row.no-padding.culture.blog-posts {
     }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 470px) and (-webkit-min-device-pixel-ratio: 2) {
-  
+
 
   .col-md-12.author-container {
     display: flex;
@@ -382,10 +382,11 @@ section.row.no-padding.culture.blog-posts {
     margin-left: 5%;
     margin-top: 10%;
     padding-right: 10px;
+    line-height: 20px;
 }
 
 p.now {
-    margin-left: 122px !important; 
+    margin-left: 122px !important;
     margin-top: -26px !important;
 }
 
@@ -923,3 +924,7 @@ p.blog-preview > p {
 
 // WEBPACK FOOTER //
 // webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/blog.scss
