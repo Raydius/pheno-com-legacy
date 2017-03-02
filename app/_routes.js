@@ -99,7 +99,7 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 				properties: {
 					'og:type': 'website',
 					'og:title': function(caseObject) {
-					    return 'phenomenon - Innovations Company | Work - ' + caseObject.title;
+					    return caseObject.client + ': ' + caseObject.title;
                     },
 					'og:description': function(caseObject) {
 					    return 'phenomenon - An independent agency for independent minds.';
