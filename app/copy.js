@@ -350,7 +350,7 @@ var copy =
       "clientLogoWidth": "100px",
       "project": "Visual Brand Redesign",
       "media": "Collateral, Digital, OOH",
-      "blockquote":"Visual redesign and strategic repositioning help turn analytics giant into the connectivity leader that they are.",
+      "blockquote":"Neustar Helps Make Data Shine.",
       "shareImg": require('assets/images/neustar/neustar.jpg'),
       "ogDescription": "The leader in communications, security and connectivity reimagines their vision for a connected future.",
       "topDescription": [
