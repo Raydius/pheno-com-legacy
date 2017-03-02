@@ -268,7 +268,7 @@ var copy =
           "image": true,
           "imageUrl": require('assets/images/neustar/NeustarDC2.jpg'),
           "legend": "Technology / B2B",
-          "headline": "Neustar Connects Every Person, Place and Thing We Love.",
+          "headline": "Neustar Helps Make Data Shine.",
           "description": "The leader in communications, security and connectivity reimagines their vision for a connected future.",
           "readmoreUrl": "/work/neustar/"
         },
@@ -343,19 +343,19 @@ var copy =
       ]
     },
     "neustar": {
-      "title": "Neustar Connects Every Person, Place and Thing We Love.",
+      "title": "Neustar Helps Make Data Shine.",
       "className": "neustar",
       "client": "Neustar",
       "clientLogo": require('assets/images/neustar/neustarlogo.png'),
       "clientLogoWidth": "100px",
       "project": "Visual Brand Redesign",
       "media": "Collateral, Digital, OOH",
-      "blockquote":"Nuestar Helps Make Data Shine.",
+      "blockquote":"Visual redesign and strategic repositioning help turn analytics giant into the connectivity leader that they are.",
       "shareImg": require('assets/images/neustar/neustar.jpg'),
       "ogDescription": "The leader in communications, security and connectivity reimagines their vision for a connected future.",
       "topDescription": [
-        "For more than 20 years, Neustar has been paving the way for connectivity through real-time information, analytics and telecommunications platforms. In fact, Neustar was the pioneer of Caller ID services. However, with a fully connected future not far away—and with the acquisition of numerous new services—Neustar needed to update their brand vision to reflect their position as leaders of the connected world.",
-        'The first step was translating Neustar’s business offerings into something B2B audiences could understand. Since the term “data” is overused and extremely impersonal, we developed a positioning strategy that humanized the brand. Focusing on making Neustar more relatable and their solutions less abstract. The phrase “Connection Science” was born. From there, we created a design language that was inspired by leading academic journals to really hit home the idea of "Connection Science."',
+        "For more than 20 years, Neustar has been paving the way for connectivity through real-time information, analytics and telecommunications platforms. In fact, Neustar was the pioneer of Caller ID services. However, with a fully connected future not far away &#45; and with the acquisition of numerous new services &#45; Neustar needed to update their brand vision to reflect their position as leaders of the connected world.",
+        'The first step was translating Neustar&#39;s business offerings into something B2B audiences could understand. Since the term &quot;data&quot; is overused and extremely impersonal, we developed a positioning strategy that humanized the brand. Focusing on making Neustar more relatable and their solutions less abstract. The phrase &quot;Connection Science&quot; was born. From there, we created a design language that was inspired by leading academic journals to really hit home the idea of "Connection Science."',
         // "The first step was to translate Neustar’s business offerings into something their B2B audience could understand. Because the term “data” was overused in the space, and extremely impersonal, we developed a positioning strategy that would allow us to humanize the brand, making it more relatable and personal. To that end, the phrase “Connection Science” was born. By using this newly coined and ownable phrase, Phenomenon built out the brand in a way that visually and tonally suggest Neustar’s holistic role in connecting people, places and things."
       ],
       "topcontent": [
@@ -366,7 +366,7 @@ var copy =
           "imageAlt": "neustar",
           "mainDescription": [
             "Visually we modernized the color palette to better fit a tech company in 2016. We moved their traditional Kelly green to a more vibrant neon green. An idea inspired by the notion that Neustar can illuminate or guide businesses through the often dense world of data. Bright, accent colors helped round out the spectrum. To give the brand a sense of order in all of their communications, we designed a unique (and trademarked) Neustar grid which provides visual structure for everything from internal emails to external sales decks.",
-            "<span class='red'>We created a design language that was inspired by leading academic journals to really hit home the idea of “Connection Science.”</span>"
+            "<span class='red'>We created a design language that was inspired by leading academic journals to really hit home the idea of &nbsp; &quot;Connection Science.&quot;</span>"
           ]
         },
       ],
@@ -377,7 +377,7 @@ var copy =
           "imageUrl": require("assets/images/wilson-federer-pro-staff-web-1140×3156.jpg"),
           "mainDescription": [
             "With a new brand identity and strategic position in place, we launched at Cannes through a series of targeted emails, event signage and digital display ads, all with the intent of piquing the interest of decision makers eager to evolve in the connected world.",
-            'Next we took their existing (and occasionally heady) content and provided a strategic framework for their website, sales decks, case studies, and white papers. With language, we injected a more personal tone, focusing as much as possible on the real world outcomes of their offerings, rather than staying in the “weeds” and focusing on the “how.”'
+            'Next we took their existing (and occasionally heady) content and provided a strategic framework for their website, sales decks, case studies, and white papers. With language, we injected a more personal tone, focusing as much as possible on the real world outcomes of their offerings, rather than staying in the &quot;weeds&quot; and focusing on the &quot;how.&quot;'
           ]
         },
         {
@@ -385,8 +385,8 @@ var copy =
           "image": true,
           "imageUrl": require("assets/images/neustar/NeustarDC2.jpg"),
           "mainDescription": [
-           "After a full audit of their website and competitive search patterns, we developed a content strategy structured around real problems their clients were looking to solve—not necessarily just what Neustar had in their repertoire to sell. Headlines shifted to client pain points, like: Is your site currently under DDoS attack? Are your outgoing calls being ignored? Allowing us to craft the user experience around verified customer needs. We took this approach to collateral materials such as sales decks, white papers, and newsletters. Helping clients—both current and potential—really understand the value of Connection Science in a more tangible way.",
-           "<span class='red'>We developed a content strategy structured around real problems their clients were looking to solve—not necessarily just what Neustar had in their repertoire to sell.</span>",
+           "After a full audit of their website and competitive search patterns, we developed a content strategy structured around real problems their clients were looking to solve&#45;not necessarily just what Neustar had in their repertoire to sell. Headlines shifted to client pain points, like: Is your site currently under DDoS attack? Are your outgoing calls being ignored? Allowing us to craft the user experience around verified customer needs. We took this approach to collateral materials such as sales decks, white papers, and newsletters. Helping clients&#45;both current and potential&#45;really understand the value of Connection Science in a more tangible way.",
+           "<span class='red'>We developed a content strategy structured around real problems their clients were looking to solve&#45;not necessarily just what Neustar had in their repertoire to sell.</span>",
            "Since relaunching the Neustar brand, the tech company has gone on to win new business from numerous Fortune 500 companies and in December were acquired by a private investment firm in a multi-billion-dollar deal."
           ]
         }
