@@ -219,6 +219,11 @@ p.blog-author {
     width: 100%;
 }
 
+p.readmore {
+    color: #cc1e2d;
+    font-size: inherit;
+}
+
 p.blog-preview {
     margin-bottom: 0 !important;
     width: 163%;
@@ -335,7 +340,7 @@ section.row.no-padding.culture.blog-posts {
         margin-right: -20px;
     }
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 470px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 374px) and (max-device-width: 470px) and (-webkit-min-device-pixel-ratio: 2) {
 
 
   .col-md-12.author-container {
@@ -929,6 +934,14 @@ p.blog-preview > p {
 // WEBPACK FOOTER //
 // webpack:///stylesheets/blog.scss
 
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
 
 
 // WEBPACK FOOTER //
