@@ -1,11 +1,9 @@
-
-
 section.row.no-padding.culture.job-posting()
   article.col-md-8.job-column
     ul.breadcrumbs
-      li.breadcrumb.bc-job(ui-sref="jobs") Careers &nbsp;>
-      li.breadcrumb-current(ng-bind='data.departments["0"].name')
-      li.dept >
+      li.breadcrumb.bc-job(ui-sref="careers") Careers &nbsp;>
+      li.breadcrumb-current(ng-bind='data.departments["0"].name', ng-hide="genericApplication")
+      li.dept(ng-hide="genericApplication") >
       li.breadcrumb-current(ng-bind="data.title")
     .job-title(ng-bind="data.title")
     .job-wrapper(ui-view autoscroll)
@@ -14,7 +12,7 @@ section.row.no-padding.culture.job-posting()
       .candidate-privacy See our Candidate Privacy Statement
         .eoe Phenomenon is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity, pregnancy, Veteran status, genetic information, and/or any other protected characteristic recognized by federal, state or local laws. This policy applies to all terms and conditions of employment, including, without limitation, recruiting, hiring, placement, promotion, termination, layoffs, leaves of absence, compensation and training.
       a.apply-now(ui-sref="job.application") Apply Now
-  article.col-md-3.pull-right.col-sm-12.col-xs-12.job-column-2
+  article.col-md-3.pull-right.col-sm-12.col-xs-12.job-column-2(ng-hide="genericApplication")
     .job-dep Department
     .job-category(ng-bind='data.departments["0"].name')
     br

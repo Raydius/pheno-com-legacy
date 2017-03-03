@@ -3,6 +3,7 @@
   img( class='or' src="assets/images/or.png", alt="alt")
 
 //span.fill-it Fill out the form below
+
 form(name="userForm" ng-submit="submitForm()" novalidate, enctype="multipart/form-data", method="POST")
   .form-group( ng-class="{ 'has-error' : userForm.firstname.$invalid && !userForm.firstname.$pristine }")
     input(type='text' ng-model="user.firstname" name='firstname' placeholder='First Name *' required ng-model-options="{ 'updateOn': 'blur' }")
@@ -23,13 +24,13 @@ form(name="userForm" ng-submit="submitForm()" novalidate, enctype="multipart/for
   .form-group
     input(type='text' name='etc' placeholder='Is there anything else you would like us to know?' ng-model='user.etc')
   .col-md-10.action-buttons
-    .form-group
+    .form-group(ng-show="genericApplication")
       .btn-group
-        button.btn.dropdown-toggle(name='recordinput', data-toggle='dropdown') Select Department
+        button.btn.dropdown-toggle(name='recordinput', data-toggle='dropdown' ng-bind="selectedDepartment")
           //- span.caret
         ul.dropdown-menu
           li(ng-repeat="department in data.departments")
-            a(href='#' ng-bind="department.name" ng-click="selectNewDepartment(department.id)")
+            a(href='#' ng-bind="department.name" ng-click="selectNewDepartment(department.name)")
     .submit-attach
       .form-group
         //button.btn.btn-default.attach-res(ng-click="uploadFile()") Attach Resume
