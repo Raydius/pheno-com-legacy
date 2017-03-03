@@ -159,8 +159,9 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 					'email': $scope.user.email,
 					'phone': $scope.user.phone,
 					'website': $scope.user.website,
-					'linkedin': $scope.user.linkedin,
-					'department': $scope.selectedDepartment
+					'department': $scope.selectedDepartment,
+					'linkedin': $scope.user.linkedin
+
 				});
 
 				// create FormData object from form fields and optional file attachment

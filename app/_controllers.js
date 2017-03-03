@@ -209,23 +209,3 @@ angular.module('phenoCom').controller('aniDistances', ['$scope',
 ]);
 
 
-
-
-/**
- * Holiday Card Controller Revisited
- */
-angular.module('phenoCom').controller('holidayController', function($scope) {
-
-    // set initial visibility of the gif and the video
-    $scope.videoHide = true;
-
-    $scope.playTheVideo = function() {
-
-		// toggle visibility of the gif and the video
-        $scope.videoHide = false;
-
-        // play the video
-        $('#holidayvideo').get(0).play();
-    };
-
-});
