@@ -1,27 +1,7 @@
 import 'npm/owl-carousel-2/owl.carousel';
 
-
-function defaultMetaTags(UIRouterMetatagsProvider) {
-	var defaultTitle = 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation';
-	var defaultDescription = 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.';
-	var defaultKeywords = 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation';
-	var defaultShareImgSrc = require('assets/images/fb-share-center.png');
-
-    UIRouterMetatagsProvider
-        .setDefaultTitle(defaultTitle)
-        .setDefaultDescription(defaultDescription)
-        .setDefaultKeywords(defaultKeywords)
-        .setStaticProperties({
-                'og:type': 'website',
-                'og:title': defaultTitle,
-                'og:description': defaultDescription,
-                'og:image': defaultShareImgSrc
-
-            })
-        .setOGURL(true);
-}
-
-angular.module('phenoCom').config(['UIRouterMetatagsProvider', defaultMetaTags]);
+// catch-all Job Id for "General Inquiries" generic applications in Greenhouse
+angular.module('phenoCom').constant('genericJobId', 619593);
 
 
 angular.module('phenoCom').config(function($sceDelegateProvider, envServiceProvider) {
@@ -40,23 +20,28 @@ angular.module('phenoCom').config(function($sceDelegateProvider, envServiceProvi
    */
   envServiceProvider.config({
     domains: {
-      local: ['localhost', '127.0.0.1'],
-      staging: ['staging.phenomenon.com'],
-      production: ['phenomenon.com']
+		local: ['localhost', '127.0.0.1'],
+		dev: ['dev.phenomenon.com'],
+		staging: ['staging.phenomenon.com'],
+		production: ['phenomenon.com']
     },
     vars: {
-      local: {
-          baseUrl: '//localhost',
-          apiUrl: 'http://staging.phenomenon.com:2088'
-      },
-      staging: {
-          baseUrl: '//staging.phenomenon.com',
-          apiUrl: 'http://staging.phenomenon.com:2088'
-      },
-      production: {
-          baseUrl: '//phenomenon.com',
-          apiUrl: 'http://phenomenon.com:2088'
-      }
+		local: {
+			baseUrl: '//localhost',
+			apiUrl: 'http://localhost:8080'
+		},
+		dev: {
+			baseUrl: '//dev.phenomenon.com',
+			apiUrl: 'http://dev.phenomenon.com:8080'
+		},
+		staging: {
+			baseUrl: '//staging.phenomenon.com',
+			apiUrl: 'http://api-staging.phenomenon.com'
+		},
+		production: {
+			baseUrl: '//phenomenon.com',
+			apiUrl: 'http://api.phenomenon.com'
+		}
     }
 
   });
@@ -67,6 +52,29 @@ angular.module('phenoCom').config(function($sceDelegateProvider, envServiceProvi
 });
 
 
+// Establish default values for social share meta tags
+function defaultMetaTags(UIRouterMetatagsProvider) {
+	var defaultTitle = 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation';
+	var defaultDescription = 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.';
+	var defaultKeywords = 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation';
+	var defaultShareImgSrc = require('assets/images/fb-share-center.png');
+
+	UIRouterMetatagsProvider
+		.setDefaultTitle(defaultTitle)
+		.setDefaultDescription(defaultDescription)
+		.setDefaultKeywords(defaultKeywords)
+		.setStaticProperties({
+			'og:type': 'website',
+			'og:title': defaultTitle,
+			'og:description': defaultDescription,
+			'og:image': defaultShareImgSrc
+
+		})
+		.setOGURL(true);
+}
+
+
+angular.module('phenoCom').config(['UIRouterMetatagsProvider', defaultMetaTags]);
 
 
 // html render filter for recalling HTML-formatted blog entries

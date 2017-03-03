@@ -248,3 +248,105 @@ angular.module('phenoCom').directive('blogHeader', function(){
 
 });
 
+angular.module('phenoCom').directive('fileModel', ['$parse', function ($parse) {
+    return {
+        restrict: 'A',
+        link: function(scope, element, attrs) {
+            var model = $parse(attrs.fileModel);
+            var modelSetter = model.assign;
+
+            element.bind('change', function(){
+                scope.$apply(function(){
+                    modelSetter(scope, element[0].files[0]);
+                });
+            });
+        }
+    };
+}]);
+
+angular.module('phenoCom').directive('fileUpload', ['$parse', function($parse) {
+	return {
+		link: function (scope, element, attr) {
+
+			var model = $parse(attr.fileUpload);
+			var modelSetter = model.assign;
+
+			element.filer({
+				limit: 2,
+				maxSize: 3,
+				extensions: ['jpg', 'jpeg', 'png', 'pdf', 'doc', 'docx'],
+				changeInput: "<a class='jFiler-input-choose-btn'>Attach Resume</a>",
+				showThumbs: true,
+        templates: {
+            box: '<ul class="animated fadeInUp jFiler-items-list jFiler-items-default"></ul>',
+            item: '<li class="jFiler-item"><div class="jFiler-item-container"><div class="jFiler-item-inner"><div class="jFiler-item-icon pull-left">{{fi-icon}}</div><div class="jFiler-item-info pull-left"><div class="jFiler-item-title" title="{{fi-name}}">{{fi-name | limitTo:30}}</div><div class="jFiler-item-others"><span class="jFiler-item-status">{{fi-progressBar}}</span></div><div class="jFiler-item-assets"><ul class="list-inline"><li class="trash-icon"><img class="jFiler-item-trash-action" src="assets/images/icon_close.svg"></li></ul></div></div></div></div></li>',
+            itemAppend: '<li class="jFiler-item"><div class="jFiler-item-container"><div class="jFiler-item-inner"><div class="jFiler-item-icon pull-left">{{fi-icon}}</div><div class="jFiler-item-info pull-left"><div class="jFiler-item-title">{{fi-name | limitTo:35}}</div><div class="jFiler-item-others"><span class="jFiler-item-status"></span></div><div class="jFiler-item-assets"><ul class="list-inline"><li class="trash-icon"><img class="jFiler-item-trash-action" src="assets/images/icon_close.svg"></li></ul></div></div></div></div></li>',
+            progressBar: '<div class="bar"></div>',
+            itemAppendToEnd: !1,
+            removeConfirmation: !0,
+            _selectors: {
+                list: ".jFiler-items-list",
+                item: ".jFiler-item",
+                progressBar: ".bar",
+                remove: ".jFiler-item-trash-action"
+            }
+        },
+        _selectors: {
+              list: '.jFiler-items-list',
+              item: '.jFiler-item',
+              progressBar: '.bar',
+              remove: '.jFiler-item-trash-action'
+          }
+			});
+
+			element.bind('click', function(){
+
+			});
+
+			element.bind('change', function() {
+
+				// make file available in scope
+				scope.$apply(function() {
+					modelSetter(scope, element[0].files[0]);
+				});
+
+				$(this).parents('ul').find('li.paste').hide();
+        $('.resume-attached-hidden.red').attr('style','display:block')
+
+				// always hide attach textarea when file attached
+				$(this).parents('ul').find('textarea').hide();
+
+				$('.icon-jfi-trash').click(function(){
+					$(this).parents().find('li.paste').show();
+				});
+
+			})
+
+
+		}
+	};
+}]);
+
+
+/*// handle page title changes on state change
+angular.module('phenoCom').directive('updateTitle', ['$rootScope', '$timeout',
+    function($rootScope, $timeout) {
+        return {
+            link: function(scope, element) {
+                var title = 'Default Title'
+                var listener = function(event, toState) {
+if (toState.data && toState.data.pageTitle) title = toState.data.pageTitle;
+
+
+                    $timeout(function() {
+                        element.text(title);
+                    }, 0, false);
+
+                };
+
+                $rootScope.$on('$stateChangeSuccess', listener);
+            }
+        };
+    }
+]);
+*/

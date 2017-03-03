@@ -9,6 +9,16 @@ case $i in
     export OUTPUT_HOST="http://staging.phenomenon.com"
     export OUTPUT_PORT=80
     export OUTPUT_DIR="html"
+    compress=true
+    shift
+    ;;
+
+    # local build for hosted dev server
+    dev)
+    export OUTPUT_HOST="http://dev.phenomenon.com"
+    export OUTPUT_PORT=80
+    export OUTPUT_DIR="public-dev"
+    compress=true
     shift
     ;;
 
@@ -16,8 +26,9 @@ case $i in
     local)
     export OUTPUT_HOST="http://localhost"
     export OUTPUT_PORT=8000
-    export OUTPUT_DIR="public-staging"
+    export OUTPUT_DIR="public"
     export NODE_ENV="production"
+    compress=false
     shift
     ;;
 
@@ -27,6 +38,7 @@ case $i in
     export OUTPUT_PORT=80
     export OUTPUT_DIR="html"
     export NODE_ENV="production"
+    compress=true
     shift
     ;;    
 
@@ -37,3 +49,11 @@ done
 echo Building directory ./${OUTPUT_DIR} for ${OUTPUT_HOST}:${OUTPUT_PORT}
 
 ./node_modules/.bin/webpack --progress
+
+if [ "$compress" = true ] ; then
+    echo Compressing build and nginx configuration files into tar file...
+    tar czvf pheno-com.tar.gz nginx "$OUTPUT_DIR"
+    echo Cleaning up build artifacts...
+    rm -rf $OUTPUT_DIR
+fi
+

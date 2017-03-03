@@ -4,20 +4,23 @@
 
 import 'npm/owl-carousel-2/owl.carousel';
 
-var copy = require('app/copy.js');
+let copy = require('app/copy.js');
 
-var templateHome = require('views/welcome.pug');
-var templateAbout = require('views/about.pug');
-var templateWork = require('views/work.pug');
+let templateHome = require('views/welcome.pug');
+let templateAbout = require('views/about.pug');
+let templateWork = require('views/work.pug');
 //var templateEntertainment = require('views/entertainment.pug');
-var templateCulture = require('views/culture.pug');
-var templateContact = require('views/contact.pug');
-var templateJobs = require('views/jobs.pug');
-var templateBlog = require('views/blog.pug');
-var templateBlogPostSingle = require('views/blog-post-single.pug');
-var templateError = require('views/404.pug');
-var templateJob = require('views/job.pug');
-var templateApplication = require('views/application.pug');
+let templateCulture = require('views/culture.pug');
+let templateContact = require('views/contact.pug');
+let templateBlog = require('views/blog.pug');
+let templateBlogPostSingle = require('views/blog-post-single.pug');
+let templateError = require('views/404.pug');
+
+let templateJobs = require('views/jobs.pug');
+let templateJob = require('views/components/job-listing.pug');
+let templateApplication = require('views/components/job-application.pug');
+let templateApplicationThanks = require('views/thanks.pug');
+
 
 
 angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $locationProvider) {
@@ -133,6 +136,10 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
         })
 
 
+		/**
+		 * Careers page routes
+		 */
+		// main careers landing page
         .state('careers', {
             url: '/careers/',
             template: templateJobs,
@@ -149,24 +156,42 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
                 }
             }
         })
-        .state('contact', {
-            url: '/contact/',
-            template: templateContact,
-            controller: 'contactController',
-            metaTags: {
-                title: 'phenomenon - Innovations Company | Contact',
-                description: 'phenomenon Innovations Company - Contact us about careers, new business, and public relations.',
-                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, contact us, jobs, new business, PR',
-                properties: {
-                    'og:type': 'website',
-                    'og:title': 'Phenomenon - Innovations Company',
-                    'og:description': 'Phenomenon - Innovations Company',
-                    'og:image': require('assets/images/fb-share-center.png')
-                }
-            }
-        })
+		// post application submission "thank you" page -- this comes before the job routes intentionally in order to capture the /thanks/ sub-route
+		.state('thanks', {
+			url: '/careers/thanks/',
+			template: templateApplicationThanks,
+			metaTags: {
+				title: 'phenomenon - Innovations Company | Thanks',
+				description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
+				keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
+				properties: {
+					'og:type': 'website',
+					'og:title': 'Phenomenon - Innovations Company',
+					'og:description': 'Phenomenon - Innovations Company',
+					'og:image': require('assets/images/fb-share-center.png')
+				}
+			}
+		})
+        // job-specific description
+		.state('job', {
+			url: '/careers/:jobId/',
+			controller: 'jobController',
+			template: templateJob
+		})
+		// job-specific application
+		.state('job.application', {
+			url: 'apply/',
+			controller: 'jobApplicationController',
+			template: templateApplication
+		})
 
-        .state('blog', {
+
+
+		/**
+		 * Blog-related routes
+		 */
+
+		.state('blog', {
             url: '/blog/',
             template: templateBlog,
             controller: 'blogController',
@@ -188,39 +213,35 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
             controller: 'blogPostController'
         })
 
+
+		// contact page
+		.state('contact', {
+			url: '/contact/',
+			template: templateContact,
+			controller: 'contactController',
+			metaTags: {
+				title: 'phenomenon - Innovations Company | Contact',
+				description: 'phenomenon Innovations Company - Contact us about careers, new business, and public relations.',
+				keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation, contact us, jobs, new business, PR',
+				properties: {
+					'og:type': 'website',
+					'og:title': 'Phenomenon - Innovations Company',
+					'og:description': 'Phenomenon - Innovations Company',
+					'og:image': require('assets/images/fb-share-center.png')
+				}
+			}
+		})
+
+
+		// error state (pseudo 404)
         .state('error', {
             url: '/error/',
             template: templateError
         })
-        .state('job', {
-            url: '/job/',
-            template: templateJob,
-            ncyBreadcrumb: {
-            label: 'job name'
-          }
-        })
-        .state('application', {
-            url: '/job/application/',
-            template: templateApplication
-        })
 
 
 
-        .state('thanks', {
-            url: '/job/thanks/',
-            templateUrl: '/views/components/thanks',
-            metaTags: {
-                title: 'phenomenon - Innovations Company | Thanks',
-                description: 'phenomenon - Innovations Company.  We help consumer companies refocus their marketing spend, evolve their brands, and take advantage of "big idea" thinking.',
-                keywords: 'phenomenon, agency, innovation, marketing, UX, digital, cultural, advertising, ideation',
-                properties: {
-                    'og:type': 'website',
-                    'og:title': 'Phenomenon - Innovations Company',
-                    'og:description': 'Phenomenon - Innovations Company',
-                    'og:image': require('assets/images/fb-share-center.png')
-                }
-            }
-        })
+
 
     ;
 

@@ -187,12 +187,12 @@ h2 blockquote, h3 blockquote, h1 blockquote  {
 	font-family: $secondary_font;
 	&:before {
 		content: "";
-		display: block;
+		// display: block;
 		content: "\201C";
 		font-size: inherit;
 		position: absolute;
-		left: -25px;
-		top: 10px;
+		left: -15px;
+		// top: 10px;
 		color: inherit;
 	}
 	&:last-letter {

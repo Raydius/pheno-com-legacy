@@ -5,28 +5,38 @@ section.row.no-padding.culture.job-posting
     //- ncy-breadcrumb
     ul.breadcrumbs
       li.breadcrumb Careers  >
-      li.breadcrumb-current Digital Design Director
-    .job-title Digital Design Director
+      li.breadcrumb-current(ng-bind="data.title")
+    .job-title.apply-title(ng-bind="data.title")
     //- span.apply-with Apply with LinkedIn
     a(href="#")
       img( class='linkedIn-link' src="assets/images/linkedIn.png", alt="alt")
       img( class='or' src="assets/images/or.png", alt="alt")
 
     span.fill-it Fill out the form below
-    form(action="sumbit" method="post")
+    form(name="userForm" ng-submit="submitForm()" novalidate, enctype="multipart/form-data", method="POST")
+      .form-group( ng-class="{ 'has-error' : userForm.firstname.$invalid && !userForm.firstname.$pristine }")
+        input(type='text' ng-model="user.firstname" name='firstname' placeholder='First Name *' required ng-model-options="{ 'updateOn': 'blur' }")
+        p.help-block( ng-show='userForm.firstname.$invalid && !userForm.firstname.$pristine') If you really don't have a name, we'd love to meet you.
+      .form-group( ng-class="{ 'has-error' : userForm.lastname.$invalid && !userForm.lastname.$pristine }")
+        input(type='text' ng-model="user.lastname" name='lastname' placeholder='Last Name *' required ng-model-options="{ 'updateOn': 'blur' }")
+        p.help-block( ng-show='userForm.lastname.$invalid && !userForm.lastname.$pristine') If you really don't have a name, we'd love to meet you.
+      .form-group( ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }")
+        input(type='email' name='email' placeholder='Email *' ng-model='user.email' required ng-model-options="{ 'updateOn': 'blur' }")
+        p.help-block( ng-show='userForm.email.$invalid && !userForm.email.$pristine') How can we tell you you're hired without an email address?
+      .form-group( ng-class="{ 'has-error' : userForm.phone.$invalid && !userForm.phone.$pristine} ")
+        input(type='text' name='phone' placeholder='Phone Number *' ng-model='user.phone' ng-minlength="10" ng-maxlength="14" ng-required='true' ng-model-options="{ debounce: 1500 }")
+        p.help-block( ng-show='userForm.phone.$invalid && !userForm.phone.$pristine') Please provide us with a number we can use to reach out to you.
       .form-group
-        button.btn.btn-default.attach-res(type="submit") Attach Resume
-        input(type='text' name='Full Name' placeholder='Full Name *')
-        input(type='email' name='Email' placeholder='Email *')
-        input(type='text' name='Phone Number' placeholder='Phone Number *')
-        input(type='text' name='Website / Online Portfolio' placeholder='Website / Online Portfolio')
-        input(type='text' name='LinkedIn Profile' placeholder='LinkedIn Profile')
-        input(type='text' name='Anything Else?' placeholder='Is there anything else you would like us to know?')
+        input(type='text' name='website' placeholder='Website / Online Portfolio' ng-model='user.website')
+      .form-group
+        input(type='text' name='linkedin' placeholder='LinkedIn Profile' ng-model='user.linkedin')
+      .form-group
+        input(type='text' name='etc' placeholder='Is there anything else you would like us to know?' ng-model='user.etc')
+      .form-group
+        //button.btn.btn-default.attach-res(ng-click="uploadFile()") Attach Resume
+        input(name="resume", type="file", file-upload="resume", accept=".txt,application/zip,application/msword,application/pdf")
+        .resume-attached-hidden.red Resume attached.
 
-    a.apply-now.submit-app(ui-sref='application') Submit Application
-  article.col-md-3.pull-right.col-sm-12.col-xs-12.job-column-3
-    .job-dep Department
-    .job-category Creative
     br
     br
     .location-job Location

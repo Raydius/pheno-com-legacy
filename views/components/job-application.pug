@@ -1,0 +1,39 @@
+//a(href="#" ng-click="authLinkedIn()")
+  img( class='linkedIn-link' src="assets/images/linkedIn.png", alt="alt")
+  img( class='or' src="assets/images/or.png", alt="alt")
+
+//span.fill-it Fill out the form below
+
+form(name="userForm" ng-submit="submitForm()" novalidate, enctype="multipart/form-data", method="POST")
+  .form-group( ng-class="{ 'has-error' : userForm.firstname.$invalid && !userForm.firstname.$pristine }")
+    input(type='text' ng-model="user.firstname" name='firstname' placeholder='First Name *' required ng-model-options="{ 'updateOn': 'blur' }")
+    p.help-block( ng-show='userForm.firstname.$invalid && !userForm.firstname.$pristine') If you really don't have a name, we'd love to meet you.
+  .form-group( ng-class="{ 'has-error' : userForm.lastname.$invalid && !userForm.lastname.$pristine }")
+    input(type='text' ng-model="user.lastname" name='lastname' placeholder='Last Name *' required ng-model-options="{ 'updateOn': 'blur' }")
+    p.help-block( ng-show='userForm.lastname.$invalid && !userForm.lastname.$pristine') If you really don't have a name, we'd love to meet you.
+  .form-group( ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }")
+    input(type='email' name='email' placeholder='Email *' ng-model='user.email' required ng-model-options="{ 'updateOn': 'blur' }")
+    p.help-block( ng-show='userForm.email.$invalid && !userForm.email.$pristine') How can we tell you you're hired without an email address?
+  .form-group( ng-class="{ 'has-error' : userForm.phone.$invalid && !userForm.phone.$pristine} ")
+    input(type='text' name='phone' placeholder='Phone Number *' ng-model='user.phone' ng-minlength="10" ng-maxlength="14" ng-required='true' ng-model-options="{ debounce: 1500 }")
+    p.help-block( ng-show='userForm.phone.$invalid && !userForm.phone.$pristine') Please provide us with a number we can use to reach out to you.
+  .form-group
+    input(type='text' name='website' placeholder='Website / Online Portfolio' ng-model='user.website')
+  .form-group
+    input(type='text' name='linkedin' placeholder='LinkedIn Profile' ng-model='user.linkedin')
+  .form-group
+    input(type='text' name='etc' placeholder='Is there anything else you would like us to know?' ng-model='user.etc')
+  .col-md-10.action-buttons
+    .form-group(ng-show="genericApplication")
+      .btn-group
+        button.btn.dropdown-toggle(name='recordinput', data-toggle='dropdown' ng-bind="selectedDepartment")
+          //- span.caret
+        ul.dropdown-menu
+          li(ng-repeat="department in data.departments")
+            a(href='#' ng-bind="department.name" ng-click="selectNewDepartment(department.name)")
+    .submit-attach
+      .form-group
+        //button.btn.btn-default.attach-res(ng-click="uploadFile()") Attach Resume
+        input(name="resume", type="file", file-upload="resume", multiple, accept=".txt,application/zip,application/msword,application/pdf")
+        //- .resume-attached-hidden.red File attached.
+  input.apply-now.submit-app( type='submit', ng-value="submitText", ng-disabled="disableSubmit")
