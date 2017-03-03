@@ -146,7 +146,8 @@ p.now {
 @media screen and (min-device-width:320px) and (max-device-width:375px) {
    p.now {
     margin-left: 108px !important;
-    margin-top: -1.85em !important;
+    margin-top: -2.85em !important;
+    padding-top: 13.5px;
 }
 }
 @media (min-width:320px) and (max-width:400px) {
@@ -328,3 +329,8 @@ input.subscribe-input {
 
 // WEBPACK FOOTER //
 // webpack:///stylesheets/blog-grid.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss
