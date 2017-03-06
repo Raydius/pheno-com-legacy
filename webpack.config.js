@@ -13,7 +13,7 @@ var webpack = require('webpack'),
 
 
 
-// set debug variable based on whether or not this is a prod environment
+// set boolean debug variable based on whether or not this is a prod environment
 var debug = process.env.NODE_ENV !== 'production';
 
 // default host/port configuration
@@ -61,13 +61,16 @@ module.exports = {
         }
     },
     entry: {
-        // entry point for main application
+        // entry point for main JS application
         app: './app/phenomenon.js',
         // entry point for stylesheets
         style: './stylesheets/style.scss',
 
         // vendor JS files to be separated into vendors.js
-        vendors: [ 'angular', 'jquery', 'angular-ui-router', 'bootstrap', 'angular-cookies', 'angular-messages', 'angular-snap', 'angular-socialshare' ]
+        vendors: [
+            'angular', 'jquery', 'angular-ui-router', 'bootstrap', 'angular-cookies', 'angular-messages', 'angular-snap',
+            'angular-socialshare', 'angular-sanitize', 'angular-environment'
+        ]
     },
     output: {
         filename: '[name]-bundle.min.js',
@@ -83,6 +86,7 @@ module.exports = {
             jQuery: 'jquery',
             "window.jQuery": 'jquery'
         }),
+
         //new webpack.NoErrorsPlugin(),
 
         // optimize vendors.js
@@ -90,6 +94,7 @@ module.exports = {
 
         new webpack.dependencies.LabeledModulesPlugin(),
 
+        // build CSS sheet
         new ExtractTextPlugin('styles.css'),
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: debug ? /\.optimize.css$/g : /\.css$/g,
@@ -102,18 +107,14 @@ module.exports = {
             canPrint: true
         }),
 
-        // generate index.html as public entry point
+        // generate index.html as public entry point based on index.pug template
         new HtmlWebpackPlugin({
-            //template: '!!jade!views/index.pug',
             template: 'views/index.pug',
             filename: 'index.html',
             title: 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation',
             googleAnalytics: gaConfig
-        }),
+        })
 
-        new CopyWebPackPlugin([
-            { from: 'standalone-pages/holidaycard2016', to: 'holiday-card/' }
-        ])
     ],
     module: {
         noParse: [
@@ -124,6 +125,8 @@ module.exports = {
             {test: /\.js$/, loader: "jshint-loader", exclude: /node_modules/}
         ],
         loaders: [
+
+            // ES6 transpiling loader
             {
                 test: /\.js$/,
                 loader: "babel-loader",
@@ -132,22 +135,27 @@ module.exports = {
                 },
                 exclude: /node_modules/
             },
+
             { test: /[\/]angular\.js$/, loader: "exports?angular" },
             { loader: 'exports?window.angular', test: require.resolve('angular') },
 
             { test: /\.json$/, loader: "json-loader" },
-            //{ test: /\.html$/,  loader: "html" },
+
+            // jade/pug template loader
             {
                 test: /\.(jade|pug)$/,
                 loader: 'pug'
             },
+
+            // SASS loader
             {
                 test: /\.scss$/,
                 loader: ExtractTextPlugin.extract(["css?sourceMap", "sass?sourceMap"])
-                //loaders: ["style", "css?sourceMap", "sass?sourceMap"]
             },
             { test: /\.css$/,   loader: "style-loader!css-loader!postcss-loader" },
             { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/, loader: 'file-loader' },
+
+            // image loader with optimization
             {
                 test: /.*\.(gif|png|jpe?g)$/i,
                 loaders: [
