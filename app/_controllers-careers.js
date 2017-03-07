@@ -108,6 +108,8 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 	// functionality that only applies to the generic (non-job-specific) form
 	if($scope.genericApplication) {
 
+		$('.submit-attach').css('margin-left','50px');
+
 		$scope.data.title = 'General Application';
 
 		// store currently selected department ID

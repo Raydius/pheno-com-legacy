@@ -14,6 +14,10 @@ input:-moz-placeholder { /* Firefox 18- */
 
 }
 
+.jFiler-item-title {
+    font-weight: lighter;
+}
+
 input::-moz-placeholder {  /* Firefox 19+ */
    color: #979797;
    font-size: 14px;
@@ -177,10 +181,10 @@ li.jFiler-item {
 li.trash-icon {
     position: relative;
     top: -37px;
-    width: 28px;
-    left: 105px;
+    width: 25px;
+    left: 95px;
     z-index: 2;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .jFiler.jFiler-theme-default:hover {
@@ -209,7 +213,8 @@ a.jFiler-input-choose-btn:hover {
 
 a.jFiler-input-choose-btn {
     color: #333333;
-    font-family: circular-bold;
+    font-family: circular-book;
+    font-weight: lighter;
 }
 
 ul.jFiler-items-list.jFiler-items-default {
@@ -229,15 +234,33 @@ ul.jFiler-items-list.jFiler-items-default {
     border-radius: 0px;
 }
 
+img.dept-caret {
+    position: absolute;
+    width: 17px;
+    top: 28px;
+    left: 205px;
+    z-index: 3;
+}
+
+.submit-attach {
+    margin-left: -30px;
+}
+
 button.btn.dropdown-toggle {
     border-radius: 0px;
     font-size: 16px;
     font-weight: bold;
-    font-family: circular-bold;
-    text-align: center;
+    font-family: circular-book;
+    font-weight: lighter;
+    text-align: left;
+    padding-left: 35px;
     margin: 0 auto;
     border: 2px solid #dcdada;
-    background: #eee;
+    /* background: #eee; */
+    max-width: 390px;
+    width: 270px;
+    margin-right: 40px;
+    position: relative;
 }
 
 .btn-group.open .dropdown-toggle {
@@ -258,11 +281,12 @@ ul.dropdown-menu  li {
     background-color: transparent !important;
 }
 
-.open > .dropdown-menu {
+ .open > .dropdown-menu {
     display: block;
-    width: 227px !important;
+    width: 270px;
     border-radius: 0px;
     padding-bottom: 10px;
+    padding-left: 20px;
     margin-left: -15px;
     margin-top: 0px;
     border-left: 2px solid #dcdada;
@@ -346,6 +370,32 @@ hr.job-hr {
 
 // WEBPACK FOOTER //
 // webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scsstion.scss
+
 
 
 // WEBPACK FOOTER //
