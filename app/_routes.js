@@ -111,9 +111,6 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 					    return caseObject.shareImg;
 					}
 				}
-			},
-			data: {
-				shareUrl: 'link'
 			}
 
         })
@@ -218,7 +215,6 @@ angular.module('phenoCom').config(function($stateProvider, $urlRouterProvider, $
 		.state('contact', {
 			url: '/contact/',
 			template: templateContact,
-			controller: 'contactController',
 			metaTags: {
 				title: 'phenomenon - Innovations Company | Contact',
 				description: 'phenomenon Innovations Company - Contact us about careers, new business, and public relations.',
