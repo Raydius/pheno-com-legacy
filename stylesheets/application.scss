@@ -241,7 +241,7 @@ button.btn.dropdown-toggle {
 }
 
 .btn-group.open .dropdown-toggle {
-    -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.125) !important; 
+    -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.125) !important;
      box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.125) !important;
 }
 
@@ -276,6 +276,21 @@ ul.dropdown-menu  li {
 button.btn.dropdown-toggle:hover {
     background: #f2f2f2 !important;
     color: #333333 !important;
+}
+
+
+hr.job-hr {
+    margin-bottom: 80px;
+    border-bottom: 1px solid #eee;
+    display: -webkit-box;
+    height: 90px;
+    width: 100%;
+    color: transparent;
+    border-top: 1px solid white !important;
+}
+
+.col-md-10.action-buttons {
+    margin-top: 30px;
 }
 
 

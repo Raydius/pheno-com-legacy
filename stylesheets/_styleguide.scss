@@ -114,7 +114,7 @@ button, input[type="submit"], input[type="reset"]{
 	color: $gray_font;
 	max-width: 339px;
 	width: 100%;
-    border: 2px solid #dcdada;
+/*     border: 2px solid #dcdada; */
     outline: none;
 	font-weight: bold;
 	@include transition(background-color .15s ease-in-out, color .15s ease-in-out);
@@ -171,6 +171,10 @@ ul li {
    color: $gray_font;  
    font-weight: bold;
 }
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_styleguide.scss
 
 
 // WEBPACK FOOTER //
