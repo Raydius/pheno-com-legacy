@@ -57,7 +57,7 @@ angular.module('phenoCom').controller('jobController', function($scope, $statePa
 	if($scope.genericApplication) {
 
 		// job title for general application breadcrumb
-		$scope.data.title = 'General Inquiry';
+		$scope.data.title = 'General Application';
 
 	}
 	else {
@@ -108,7 +108,7 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 	// functionality that only applies to the generic (non-job-specific) form
 	if($scope.genericApplication) {
 
-		$scope.data.title = 'General Inquiry';
+		$scope.data.title = 'General Application';
 
 		// store currently selected department ID
 		$scope.selectedDepartment = 'Select Department';
