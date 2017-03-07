@@ -465,7 +465,7 @@ var copy =
           "image": false,
           "imageUrl": require("assets/images/neustar/NeustarDC2.jpg"),
           "mainDescription": [
-            "Next we took their existing (and occasionally heady) content and provided a strategic framework for their website, sales decks, case studies, and white papers. With language, we injected a more personal tone, focusing as much as possible on the real world outcomes of their offerings, rather than staying in the “weeds” and focusing on the “how.”"
+            "Next we took their existing (and occasionally heady) content and provided a strategic framework for their website, sales decks, case studies, and white papers. With language, we injected a more personal tone, focusing as much as possible on the real world outcomes of their offerings, rather than staying in the &quot;weeds&quot; and focusing on the &quot;how.&quot;"
           ]
         }
       ]
