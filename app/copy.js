@@ -407,15 +407,15 @@ var copy =
               "alt": "Neustar Image"
             },
             {
-              "url": require("assets/images/neustar/badge_on_floor.jpg"),
+              "url": require("assets/images/neustar/Badge_On_Floor.jpg"),
               "alt": "Neustar Image"
             },
             {
-              "url": require("assets/images/neustar/bag_person.jpg"),
+              "url": require("assets/images/neustar/Bag_Person.jpg"),
               "alt": "Neustar Image"
             },
             {
-              "url": require("assets/images/neustar/badge_person.jpg"),
+              "url": require("assets/images/neustar/Badge_Person.jpg"),
               "alt": "Neustar Image"
             }
           ]
