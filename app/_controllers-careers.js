@@ -186,17 +186,19 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 
 					// if not (either proxy API unreachable, or Greenhouse API unreachable)
 					else {
-						console.log(response);
-						// handle errors
+
+						// show error
+						alert('An error has occured, please try again later.');
+
+						// re-enable submit
 						$scope.allowSubmit(true);
 					}
-
-					// $('.resume-attached-hidden').show()
 
 
 				}, function (data, status, headers, config) {
 
-					// handle errors
+					// show error
+					alert('An error has occured, please try again later.');
 
 					// re-enable submit
 					$scope.allowSubmit(true);
