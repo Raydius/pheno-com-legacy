@@ -1,8 +1,8 @@
 section.row.no-padding.culture.job-posting()
   article.col-md-8.job-column
     ul.breadcrumbs
-      li.breadcrumb.bc-job(ui-sref="careers") Careers &nbsp;>
-      li.breadcrumb-current(ng-bind='data.departments["0"].name', ng-hide="genericApplication")
+      li.breadcrumb.bc-job(ui-sref="careers") Careers &nbsp;
+      //- li.breadcrumb-current(ng-bind='data.departments["0"].name', ng-hide="genericApplication")
       li.dept(ng-hide="genericApplication") >
       li.breadcrumb-current(ng-bind="data.title")
     .job-title(ng-bind="data.title")

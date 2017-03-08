@@ -120,13 +120,13 @@ button, input[type="submit"], input[type="reset"]{
 	@include transition(background-color .15s ease-in-out, color .15s ease-in-out);
 
 	&:hover{
-		background-color: $primary_color;
-		color: #FFF;
+		background-color: #f2f2f2;;
+		color: inherit;
 		border: 2px solid #ffffff;
 	}
 
 	&:focus{
-		background-color: $primary_color;
+		background-color: transparent;
 		color: #FFF;
 		border: 2px solid #ffffff;
 	}
@@ -171,6 +171,18 @@ ul li {
    color: $gray_font;  
    font-weight: bold;
 }
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_styleguide.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_styleguide.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_styleguide.scss
 
 
 // WEBPACK FOOTER //
