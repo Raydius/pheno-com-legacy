@@ -467,6 +467,19 @@ var copy =
           "mainDescription": [
             "Next we took their existing (and occasionally heady) content and provided a strategic framework for their website, sales decks, case studies, and white papers. With language, we injected a more personal tone, focusing as much as possible on the real world outcomes of their offerings, rather than staying in the &quot;weeds&quot; and focusing on the &quot;how.&quot;"
           ]
+        },
+        {
+          "carousel": true,
+          "images": [
+            {
+              "url": require("assets/images/neustar/neustar-macbook.png"),
+              "alt": "Neustar Image"
+            },
+            {
+              "url": require("assets/images/neustar/neustar-ipad.png"),
+              "alt": "Neustar Image"
+            }
+          ]
         }
       ]
     },
