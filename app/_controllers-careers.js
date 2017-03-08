@@ -107,7 +107,8 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 
 	// functionality that only applies to the generic (non-job-specific) form
 	if($scope.genericApplication) {
-
+		
+		// since we dont have a department dropdown on generic apps, we need to move the attach resume button over to the left to fill the empty space
 		$('.submit-attach').css('margin-left','50px');
 
 		$scope.data.title = 'General Application';

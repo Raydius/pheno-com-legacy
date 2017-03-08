@@ -90,6 +90,20 @@ p.now {
         margin-right: -30px;
     }
 }
+
+@media (min-width:401px) and (max-width:640px){
+    
+    .well {
+    position: relative;
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 40px 0 20px !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    }
+}
 @media (min-width:400px) and (max-width:640px) {
     .icon-right-arrow.subscribe-arrow {
         position: absolute;
@@ -330,6 +344,19 @@ input.subscribe-input {
 // WEBPACK FOOTER //
 // webpack:///stylesheets/blog-grid.scss
 
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss
 
 
 // WEBPACK FOOTER //

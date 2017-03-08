@@ -27,7 +27,7 @@ form(name="userForm" ng-submit="submitForm()" novalidate, enctype="multipart/for
     .form-group(ng-show="genericApplication")
       .btn-group
         button.btn.dropdown-toggle(name='recordinput', data-toggle='dropdown' ng-bind="selectedDepartment")
-        img.dept-caret(src=require("assets/images/uparrow.png"), alt="alt")
+        img.dept-caret(src=require("assets/images/uparrow.png"), data-toggle='dropdown', alt="alt")
         ul.dropdown-menu
           li(ng-repeat="department in data.departments")
             a(href='#' ng-bind="department.name" ng-click="selectNewDepartment(department.name)")

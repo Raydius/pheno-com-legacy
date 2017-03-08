@@ -14,6 +14,12 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
     // events that occur after the page has completely loaded
     $(document).ready(function() {
 
+      // rotate job department dropdown caret when menu is open
+      $('.dropdown-toggle, .dept-caret').click(function(){
+        $('.dept-caret').toggleClass('rotate');
+        $('.dropdown-menu').toggleClass('opaque');
+      })
+
         // bootstrap-enhanced alternative to a select/option menu
         $(".dropdown-menu li a").click(function(){
             var selText = $(this).text();

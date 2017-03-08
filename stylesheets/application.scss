@@ -24,6 +24,18 @@ input::-moz-placeholder {  /* Firefox 19+ */
 
 }
 
+.rotate {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    transition: .4s;
+}
+
+.opaque {
+  opacity: 1 !important;
+  transition: .5s !important;
+}
+
 input:-ms-input-placeholder {
    color: #979797;
    font-size: 14px;
@@ -240,6 +252,8 @@ img.dept-caret {
     top: 28px;
     left: 205px;
     z-index: 3;
+    transition: .4s;
+
 }
 
 .submit-attach {
@@ -295,6 +309,7 @@ ul.dropdown-menu  li {
     border-bottom: 2px solid #dcdada;
     border-top: none;
     transition: all .5s;
+    opacity: 0;
 }
 
 button.btn.dropdown-toggle:hover {
