@@ -8,7 +8,7 @@
     -moz-column-width: 23em;
     -webkit-column-width: 23em;
     -moz-column-gap: 1em;
-    column-gap: 25px !important;
+    column-gap: 24px !important;
     -webkit-column-gap: 1em;
     margin-top: 40px;
 }
@@ -92,7 +92,7 @@ p.now {
 }
 
 @media (min-width:401px) and (max-width:640px){
-    
+
     .well {
     position: relative;
     display: block;
