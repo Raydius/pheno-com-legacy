@@ -171,7 +171,7 @@ p.tip {
     font-size: 13px;
 }
 
-span.blog-title {
+  span.blog-title {
     font-size: 30px;
     display: flex;
     justify-content: flex-start;
@@ -181,7 +181,8 @@ span.blog-title {
     color: #333333;
     padding-bottom: 16px;
     font-family: "Tiempose-semibold";
-}
+  }
+
 
 a.read-moreUrl.full-article-link {
     color: #D0021B;
@@ -276,6 +277,12 @@ section.row.no-padding.culture.blog-posts {
     margin-bottom: 100px;
     display: table-cell;
     overflow: hidden;
+}
+
+@media all and (max-width:500px) {
+  span.blog-title {
+    padding-right: 20px !important;
+  }
 }
 
 @media all and (min-width:746px) and (max-width:860px) {
@@ -621,7 +628,7 @@ p.tip {
 
     .pageDivide.col-md-12 {
         border-bottom: 1px solid #fff;
-        margin-bottom: -30px !important; 
+        margin-bottom: -30px !important;
         margin-top: 184px !important;
         margin-left: -30px;
         width: 109% !important;
