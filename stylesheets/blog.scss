@@ -70,6 +70,20 @@ img.phno-logo {
 
 @media all and (max-width:640px) {
 
+  img.pheno-p {
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+    border: none;
+    border-color: white;
+    border-width: 0;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: transparent;
+    background: url(/assets/images/blog/pheno-p.png);
+    background-repeat: no-repeat;
+}
+
   .blog-share-text {
     font-family: "Circular-Bold";
     position: absolute;
@@ -177,7 +191,7 @@ p.tip {
     justify-content: flex-start;
     align-items: center;
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 30px;
     color: #333333;
     padding-bottom: 16px;
     font-family: "Tiempose-semibold";
@@ -280,6 +294,12 @@ section.row.no-padding.culture.blog-posts {
 }
 
 @media all and (max-width:500px) {
+
+  p.readmore {
+    color: #cc1e2d;
+    font-size: inherit;
+    padding-left: 10px;
+}
   span.blog-title {
     padding-right: 20px !important;
   }
@@ -637,7 +657,7 @@ p.tip {
     p.blog-preview {
       margin-bottom: 20px !important;
       line-height: 20px !important;
-      padding-left: 25px;
+      padding-left: 30px;
       padding-right: 65px;
   }
 
@@ -969,3 +989,8 @@ p.blog-preview > p {
 
 // WEBPACK FOOTER //
 // webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/blog.scss
