@@ -27,6 +27,7 @@ angular.module('phenoCom').directive('carouselComponent', function() {
                 ],
                 loop: true,
                 dots: true,
+                autoPlay: true,
                 touchDrag: true
             });
 
