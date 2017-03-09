@@ -443,10 +443,6 @@ var copy =
               "alt": "Neustar Image"
             },
             {
-              "url": require("assets/images/neustar/Booklet_v2.jpg"),
-              "alt": "Neustar Image"
-            },
-            {
               "url": require("assets/images/neustar/Applications_02.jpg"),
               "alt": "Neustar Image"
             },
