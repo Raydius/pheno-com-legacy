@@ -375,55 +375,59 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": require("assets/images/neustar/Guidelines_01.jpg"),
+              "url": require("assets/images/neustar/Guidelines_1_v2.jpg"),
               "alt": "Neustar Image"
             },
             {
-              "url": require("assets/images/neustar/Guidelines_02.jpg"),
-              "alt": "Neustar Image"
-            },
-            {
-              "url": require("assets/images/neustar/Guidelines_03.jpg"),
-              "alt": "Neustar Image"
-            },
-            {
-              "url": require("assets/images/neustar/Guidelines_04.jpg"),
-              "alt": "Neustar Image"
-            },
-            {
-              "url": require("assets/images/neustar/Guidelines_06.jpg"),
-              "alt": "Neustar Image"
-            },
-            {
-              "url": require("assets/images/neustar/Guidelines_05.jpg"),
-              "alt": "Neustar Image"
-            },
-            {
-              "url": require("assets/images/neustar/neustar-ipad_guide_01.jpg"),
-              "alt": "Neustar Image"
-            },
-            {
-              "url": require("assets/images/neustar/neustar-ipad_guide_03.jpg"),
-              "alt": "Neustar Image"
-            },
-            {
-              "url": require("assets/images/neustar/Badge_On_Floor.jpg"),
-              "alt": "Neustar Image"
-            },
-            {
-              "url": require("assets/images/neustar/Bag_Person.jpg"),
-              "alt": "Neustar Image"
-            },
-            {
-              "url": require("assets/images/neustar/Badge_Person.jpg"),
+              "url": require("assets/images/neustar/Guidelines_1_v2.jpg"),
               "alt": "Neustar Image"
             }
+            // {
+            //   "url": require("assets/images/neustar/Guidelines_02.jpg"),
+            //   "alt": "Neustar Image"
+            // },
+            // {
+            //   "url": require("assets/images/neustar/Guidelines_03.jpg"),
+            //   "alt": "Neustar Image"
+            // },
+            // {
+            //   "url": require("assets/images/neustar/Guidelines_04.jpg"),
+            //   "alt": "Neustar Image"
+            // },
+            // {
+            //   "url": require("assets/images/neustar/Guidelines_06.jpg"),
+            //   "alt": "Neustar Image"
+            // },
+            // {
+            //   "url": require("assets/images/neustar/Guidelines_05.jpg"),
+            //   "alt": "Neustar Image"
+            // },
+            // {
+            //   "url": require("assets/images/neustar/neustar-ipad_guide_01.jpg"),
+            //   "alt": "Neustar Image"
+            // },
+            // {
+            //   "url": require("assets/images/neustar/neustar-ipad_guide_03.jpg"),
+            //   "alt": "Neustar Image"
+            // },
+            // {
+            //   "url": require("assets/images/neustar/Badge_On_Floor.jpg"),
+            //   "alt": "Neustar Image"
+            // },
+            // {
+            //   "url": require("assets/images/neustar/Bag_Person.jpg"),
+            //   "alt": "Neustar Image"
+            // },
+            // {
+            //   "url": require("assets/images/neustar/Badge_Person.jpg"),
+            //   "alt": "Neustar Image"
+            // }
           ]
         },
         {
         "type": "image",
         "image": false,
-        "imageUrl": require("assets/images/neustar/Billboard_ABC.jpg"),
+        "imageUrl": require("assets/images/neustar/Billboard_ABC_v25.jpg"),
         "imageAlt": "Federer",
         "mainDescription": [
         "Visually we modernized the color palette to better fit a tech company in 2016. We moved their traditional Kelly green to a more vibrant neon green. An idea inspired by the notion that Neustar can illuminate or guide businesses through the often dense world of data. Bright, accent colors helped round out the spectrum. To give the brand a sense of order in all of their communications, we designed a unique (and trademarked) Neustar grid which provides visual structure for everything from internal emails to external sales decks.",
@@ -432,7 +436,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": require("assets/images/neustar/Billboard_ABC.jpg"),
+          "imageUrl": require("assets/images/neustar/Billboard_ABC_v25.jpg"),
           "imageAlt": "Federer",
           "mainDescription": [
             "With a new brand identity and strategic position in place, we launched at Cannes through a series of targeted emails, event signage and digital display ads, all with the intent of piquing the interest of decision makers eager to evolve in the connected world."
@@ -447,7 +451,7 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": require("assets/images/neustar/Booklet.jpg"),
+              "url": require("assets/images/neustar/Booklet_v2.jpg"),
               "alt": "Neustar Image"
             },
             {
