@@ -452,19 +452,24 @@ var copy =
             }
           ]
         },
-        // {
-        //   "type": "image",
-        //   "image": true,
-        //   "imageUrl": require("assets/images/neustar/NeustarDC2.jpg"),
-        //   "mainDescription": [
-        //     "Next we took their existing (and occasionally heady) content and provided a strategic framework for their website, sales decks, case studies, and white papers. With language, we injected a more personal tone, focusing as much as possible on the real world outcomes of their offerings, rather than staying in the &quot;weeds&quot; and focusing on the &quot;how.&quot;"
-        //   ]
-        // },
+        {
+          "type": "image",
+          "image": false,
+          "imageUrl": require("assets/images/neustar/NeustarDC2.jpg"),
+          "mainDescription": [
+            "Next we took their existing (and occasionally heady) content and provided a strategic framework for their website, sales decks, case studies, and white papers. With language, we injected a more personal tone, focusing as much as possible on the real world outcomes of their offerings, rather than staying in the &quot;weeds&quot; and focusing on the &quot;how.&quot;"
+          ]
+        },
         {
           "type": "scrollingSiteTwo",
           "scrollingSiteTwo": true,
           "imageUrl": require("assets/images/neustar/neustar-website.jpg"),
           "imageAlt": "neustar website",
+          "mainDescriptionTwo": [
+             "After a full audit of their website and competitive search patterns, we developed a content strategy structured around real problems their clients were looking to solve&#45;not necessarily just what Neustar had in their repertoire to sell. Headlines shifted to client pain points, like: Is your site currently under DDoS attack? Are your outgoing calls being ignored? Allowing us to craft the user experience around verified customer needs. We took this approach to collateral materials such as sales decks, white papers, and newsletters. Helping clients&#45;both current and potential&#45;really understand the value of Connection Science in a more tangible way.",
+             "We developed a content strategy structured around real problems their clients were looking to solve&#45;not necessarily just what Neustar had in their repertoire to sell.",
+             "Since relaunching the Neustar brand, the tech company has gone on to win new business from numerous Fortune 500 companies and in December were acquired by a private investment firm in a multi-billion-dollar deal."
+          ]
         },
         // {
         //   "type": "scrollingSite",
