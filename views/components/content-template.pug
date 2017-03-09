@@ -89,11 +89,21 @@ section.row.no-padding.work.work-details
 						.browser-bar
 							img(src= require("assets/images/browser.png"))
 						img.longImg(src= contentItem.imageUrl, alt=contentItem.imageAlt)
-
 			if contentItem.mainDescription
 				article.col-md-12.no-padding.tet
 						article.col-md-7.no-padding
 							each par in contentItem.mainDescription
+								p!= par
+			if contentItem.scrollingSiteTwo
+				article.col-md-12.no-padding.tet.custom-webscroll(scrollable-component)
+					section.image-component.component.row.no-padding
+						.browser-bar
+							img(src= require("assets/images/browser.png"))
+						img.longImg(src= contentItem.imageUrl, alt=contentItem.imageAlt)
+			if contentItem.mainDescriptionTwo
+				article.col-md-12.no-padding.tet
+						article.col-md-7.no-padding
+							each par in contentItem.mainDescriptionTwo
 								p!= par
 	article.col-md-7.no-padding.case-writer
 		if pageData.caseWriter

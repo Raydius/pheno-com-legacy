@@ -16,18 +16,21 @@ angular.module('phenoCom').directive('carouselComponent', function() {
     return {
         restrict: 'E',
         link: function (scope, element, attrs) {
-            var animationSpeed = 150;
+            var animationSpeed = 1050;
 
             $(element).owlCarousel({
                 items: 1,
                 nav:true,
+                pullDrag: true,
                 navText: [
                     "<button class='icon-left-arrow'></button>",
                     "<button class='icon-right-arrow'></button>"
                 ],
                 loop: true,
                 dots: true,
-                autoPlay: true,
+                mouseDrag: true,
+                autoplay: true,
+                autoplaySpeed: 1000,
                 touchDrag: true
             });
 

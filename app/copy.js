@@ -375,33 +375,33 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": require("assets/images/neustar/Guidelines_1_v2.jpg"),
+              "url": require("assets/images/neustar/NeustarGuidelines_08.jpg"),
               "alt": "Neustar Image"
             },
             {
-              "url": require("assets/images/neustar/Guidelines_1_v2.jpg"),
+              "url": require("assets/images/neustar/NeustarGuidelines_11.jpg"),
               "alt": "Neustar Image"
-            }
-            // {
-            //   "url": require("assets/images/neustar/Guidelines_02.jpg"),
-            //   "alt": "Neustar Image"
-            // },
-            // {
-            //   "url": require("assets/images/neustar/Guidelines_03.jpg"),
-            //   "alt": "Neustar Image"
-            // },
-            // {
-            //   "url": require("assets/images/neustar/Guidelines_04.jpg"),
-            //   "alt": "Neustar Image"
-            // },
-            // {
-            //   "url": require("assets/images/neustar/Guidelines_06.jpg"),
-            //   "alt": "Neustar Image"
-            // },
-            // {
-            //   "url": require("assets/images/neustar/Guidelines_05.jpg"),
-            //   "alt": "Neustar Image"
-            // },
+            },
+            {
+              "url": require("assets/images/neustar/Guidelines_02.jpg"),
+              "alt": "Neustar Image"
+            },
+            {
+              "url": require("assets/images/neustar/NeustarGuidelines_04.jpg"),
+              "alt": "Neustar Image"
+            },
+            {
+              "url": require("assets/images/neustar/Guidelines_04.jpg"),
+              "alt": "Neustar Image"
+            },
+            {
+              "url": require("assets/images/neustar/NeustarGuidelines_12.jpg"),
+              "alt": "Neustar Image"
+            },
+            {
+              "url": require("assets/images/neustar/NeustarGuidelines_15.jpg"),
+              "alt": "Neustar Image"
+            },
             // {
             //   "url": require("assets/images/neustar/neustar-ipad_guide_01.jpg"),
             //   "alt": "Neustar Image"
@@ -410,18 +410,18 @@ var copy =
             //   "url": require("assets/images/neustar/neustar-ipad_guide_03.jpg"),
             //   "alt": "Neustar Image"
             // },
-            // {
-            //   "url": require("assets/images/neustar/Badge_On_Floor.jpg"),
-            //   "alt": "Neustar Image"
-            // },
-            // {
-            //   "url": require("assets/images/neustar/Bag_Person.jpg"),
-            //   "alt": "Neustar Image"
-            // },
-            // {
-            //   "url": require("assets/images/neustar/Badge_Person.jpg"),
-            //   "alt": "Neustar Image"
-            // }
+            {
+              "url": require("assets/images/neustar/Badge_2.jpg"),
+              "alt": "Neustar Image"
+            },
+            {
+              "url": require("assets/images/neustar/Bag.jpg"),
+              "alt": "Neustar Image"
+            },
+            {
+              "url": require("assets/images/neustar/Badge_1.jpg"),
+              "alt": "Neustar Image"
+            }
           ]
         },
         {
@@ -477,19 +477,59 @@ var copy =
           ]
         },
         {
-          "carousel": true,
-          "images": [
-            {
-              "url": require("assets/images/neustar/neustar-macbook.png"),
-              "alt": "Neustar Image"
-            },
-            {
-              "url": require("assets/images/neustar/neustar-ipad.png"),
-              "alt": "Neustar Image"
-            }
+          "type": "scrollingSite",
+          "scrollingSite": true,
+          "imageUrl": require("assets/images/neustar/neustar-website.jpg"),
+          "imageAlt": "neustar website",
+          "mainDescription": [
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
           ]
         }
+        // {
+        //   "carousel": true,
+        //   "images": [
+        //     {
+        //       "url": require("assets/images/neustar/neustar-macbook.png"),
+        //       "alt": "Neustar Image"
+        //     },
+        //     {
+        //       "url": require("assets/images/neustar/neustar-ipad.png"),
+        //       "alt": "Neustar Image"
+        //     }
+        //   ]
+        // }
       ]
+      // "detailcontent": [
+      //   {
+      //     "type": "scrollingSiteTwo",
+      //     "scrollingSiteTwo": true,
+      //     "imageUrl": require("assets/images/neustar/neustar-website.jpg"),
+      //     "imageAlt": "neustar website",
+      //   },
+      // "detailcontent": [
+      //   // {
+      //   //   "type": "scrollingSite",
+      //   //   "scrollingSite": true,
+      //   //   "imageUrl": require("assets/images/neustar/neustar-website.jpg"),
+      //   //   "imageAlt": "neustar website",
+      //   //   "mainDescription": [
+      //   //     'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      //   //   ]
+      //   // },
+      //   {
+      //     "carousel": false,
+      //     "images": [
+      //       {
+      //         "url": require("assets/images/neustar/neustar-macbook.png"),
+      //         "alt": "Neustar Image"
+      //       },
+      //       {
+      //         "url": require("assets/images/neustar/neustar-ipad.png"),
+      //         "alt": "Neustar Image"
+      //       }
+      //     ]
+      //   }
+      // ]
     },
     "federer": {
       "title": "From Federer by Federer.",
