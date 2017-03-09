@@ -439,15 +439,15 @@ var copy =
           "carousel": true,
           "images": [
             {
-              "url": require("assets/images/neustar/Booklet_v2.jpg"),
+              "url": require("assets/images/neustar/WhitePaper/Booklet.jpg"),
               "alt": "Neustar Image"
             },
             {
-              "url": require("assets/images/neustar/Applications_02.jpg"),
+              "url": require("assets/images/neustar/WhitePaper/Applications.jpg"),
               "alt": "Neustar Image"
             },
             {
-              "url": require("assets/images/neustar/Cover.jpg"),
+              "url": require("assets/images/neustar/WhitePaper/MagazineCover.jpg"),
               "alt": "Neustar Image"
             }
           ]
