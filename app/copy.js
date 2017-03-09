@@ -383,14 +383,6 @@ var copy =
               "alt": "Neustar Image"
             },
             {
-              "url": require("assets/images/neustar/Guidelines_02.jpg"),
-              "alt": "Neustar Image"
-            },
-            {
-              "url": require("assets/images/neustar/NeustarGuidelines_04.jpg"),
-              "alt": "Neustar Image"
-            },
-            {
               "url": require("assets/images/neustar/Guidelines_04.jpg"),
               "alt": "Neustar Image"
             },
@@ -402,20 +394,16 @@ var copy =
               "url": require("assets/images/neustar/NeustarGuidelines_15.jpg"),
               "alt": "Neustar Image"
             },
-            // {
-            //   "url": require("assets/images/neustar/neustar-ipad_guide_01.jpg"),
-            //   "alt": "Neustar Image"
-            // },
-            // {
-            //   "url": require("assets/images/neustar/neustar-ipad_guide_03.jpg"),
-            //   "alt": "Neustar Image"
-            // },
             {
-              "url": require("assets/images/neustar/Badge_2.jpg"),
+              "url": require("assets/images/neustar/neustar-ipad_guide_01.jpg"),
               "alt": "Neustar Image"
             },
             {
               "url": require("assets/images/neustar/Bag.jpg"),
+              "alt": "Neustar Image"
+            },
+            {
+              "url": require("assets/images/neustar/Badge_2.jpg"),
               "alt": "Neustar Image"
             },
             {
@@ -457,34 +445,40 @@ var copy =
             {
               "url": require("assets/images/neustar/Booklet_v2.jpg"),
               "alt": "Neustar Image"
+            },
+            {
+              "url": require("assets/images/neustar/Applications_02.jpg"),
+              "alt": "Neustar Image"
+            },
+            {
+              "url": require("assets/images/neustar/Cover.jpg"),
+              "alt": "Neustar Image"
             }
-            // {
-            //   "url": require("assets/images/neustar/Applications_02.jpg"),
-            //   "alt": "Neustar Image"
-            // },
-            // {
-            //   "url": require("assets/images/neustar/Cover.jpg"),
-            //   "alt": "Neustar Image"
-            // }
           ]
         },
+        // {
+        //   "type": "image",
+        //   "image": true,
+        //   "imageUrl": require("assets/images/neustar/NeustarDC2.jpg"),
+        //   "mainDescription": [
+        //     "Next we took their existing (and occasionally heady) content and provided a strategic framework for their website, sales decks, case studies, and white papers. With language, we injected a more personal tone, focusing as much as possible on the real world outcomes of their offerings, rather than staying in the &quot;weeds&quot; and focusing on the &quot;how.&quot;"
+        //   ]
+        // },
         {
-          "type": "image",
-          "image": false,
-          "imageUrl": require("assets/images/neustar/NeustarDC2.jpg"),
-          "mainDescription": [
-            "Next we took their existing (and occasionally heady) content and provided a strategic framework for their website, sales decks, case studies, and white papers. With language, we injected a more personal tone, focusing as much as possible on the real world outcomes of their offerings, rather than staying in the &quot;weeds&quot; and focusing on the &quot;how.&quot;"
-          ]
-        },
-        {
-          "type": "scrollingSite",
-          "scrollingSite": true,
+          "type": "scrollingSiteTwo",
+          "scrollingSiteTwo": true,
           "imageUrl": require("assets/images/neustar/neustar-website.jpg"),
           "imageAlt": "neustar website",
-          "mainDescription": [
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-          ]
-        }
+        },
+        // {
+        //   "type": "scrollingSite",
+        //   "scrollingSite": true,
+        //   "imageUrl": require("assets/images/neustar/neustar-website.jpg"),
+        //   "imageAlt": "neustar website",
+        //   "mainDescription": [
+        //     'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        //   ]
+        // }
         // {
         //   "carousel": true,
         //   "images": [
@@ -499,37 +493,6 @@ var copy =
         //   ]
         // }
       ]
-      // "detailcontent": [
-      //   {
-      //     "type": "scrollingSiteTwo",
-      //     "scrollingSiteTwo": true,
-      //     "imageUrl": require("assets/images/neustar/neustar-website.jpg"),
-      //     "imageAlt": "neustar website",
-      //   },
-      // "detailcontent": [
-      //   // {
-      //   //   "type": "scrollingSite",
-      //   //   "scrollingSite": true,
-      //   //   "imageUrl": require("assets/images/neustar/neustar-website.jpg"),
-      //   //   "imageAlt": "neustar website",
-      //   //   "mainDescription": [
-      //   //     'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-      //   //   ]
-      //   // },
-      //   {
-      //     "carousel": false,
-      //     "images": [
-      //       {
-      //         "url": require("assets/images/neustar/neustar-macbook.png"),
-      //         "alt": "Neustar Image"
-      //       },
-      //       {
-      //         "url": require("assets/images/neustar/neustar-ipad.png"),
-      //         "alt": "Neustar Image"
-      //       }
-      //     ]
-      //   }
-      // ]
     },
     "federer": {
       "title": "From Federer by Federer.",

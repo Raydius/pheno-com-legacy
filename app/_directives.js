@@ -31,6 +31,8 @@ angular.module('phenoCom').directive('carouselComponent', function() {
                 mouseDrag: true,
                 autoplay: true,
                 autoplaySpeed: 1000,
+                rewind: false,
+                // autoWidth: true,
                 touchDrag: true
             });
 
