@@ -379,15 +379,15 @@ var copy =
               "alt": "Neustar Image"
             },
             {
-              "url": require("assets/images/neustar/NeustarGuidelines_11.jpg"),
+              "url": require("assets/images/neustar/NeustarGuidelines_16.jpg"),
               "alt": "Neustar Image"
             },
             {
-              "url": require("assets/images/neustar/Guidelines_04.jpg"),
+              "url": require("assets/images/neustar/NeustarGuidelines_04.jpg"),
               "alt": "Neustar Image"
             },
             {
-              "url": require("assets/images/neustar/NeustarGuidelines_12.jpg"),
+              "url": require("assets/images/neustar/NeustarGuidelines_17.jpg"),
               "alt": "Neustar Image"
             },
             {
