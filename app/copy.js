@@ -445,11 +445,11 @@ var copy =
             {
               "url": require("assets/images/neustar/WhitePaper/Applications.jpg"),
               "alt": "Neustar Image"
-            },
-            {
-              "url": require("assets/images/neustar/WhitePaper/MagazineCover.jpg"),
-              "alt": "Neustar Image"
             }
+            // {
+            //   "url": require("assets/images/neustar/WhitePaper/MagazineCover.jpg"),
+            //   "alt": "Neustar Image"
+            // }
           ]
         },
         {
