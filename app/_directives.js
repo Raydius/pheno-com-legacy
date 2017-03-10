@@ -83,6 +83,7 @@ angular.module('phenoCom').directive('videoComponent', function() {
 
 });
 
+// scroll directive used in footer
 angular.module('phenoCom').directive('scrolltotop', function() {
     return {
       template: scrolltopTemplate,
@@ -98,6 +99,7 @@ angular.module('phenoCom').directive('scrolltotop', function() {
     };
 });
 
+// scroll directive used on home page
 angular.module('phenoCom').directive('scrolltop2', function() {
     return {
       link: function (scope, element, attrs) {
