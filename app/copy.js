@@ -395,7 +395,7 @@ var copy =
               "alt": "Neustar Image"
             },
             {
-              "url": require("assets/images/neustar/neustar-ipad_guide_01.jpg"),
+              "url": require("assets/images/neustar/Infographic.jpg"),
               "alt": "Neustar Image"
             },
             {
