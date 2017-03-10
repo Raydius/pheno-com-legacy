@@ -267,7 +267,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": require('assets/images/neustar/neustar-homepage-macbook.jpg'),
+          "imageUrl": require('assets/images/neustar/NeustarLanding.jpg'),
           "legend": "Technology / B2B",
           "headline": "Neustar Helps Make Data Shine.",
           "description": "Visual design and strategic positioning help turn analytics giant into the connectivity leader that they are.",
@@ -439,13 +439,9 @@ var copy =
               "alt": "Neustar Image"
             },
             {
-              "url": require("assets/images/neustar/NeustarLanding.jpg"),
+              "url": require("assets/images/neustar/Applications_01.jpg"),
               "alt": "Neustar Image"
             }
-            // {
-            //   "url": require("assets/images/neustar/Applications_01.jpg"),
-            //   "alt": "Neustar Image"
-            // },
           ]
         },
         {
