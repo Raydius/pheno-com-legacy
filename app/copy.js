@@ -455,7 +455,7 @@ var copy =
         {
           "type": "scrollingSiteTwo",
           "scrollingSiteTwo": true,
-          "imageUrl": require("assets/images/neustar/neustar-homepage (1).jpg"),
+          "imageUrl": require("assets/images/neustar/neustar-homepage (2).jpg"),
           "imageAlt": "neustar website",
           "mainDescriptionTwo": [
                 "After a full audit of their website and competitive search patterns, we developed a content strategy structured around real problems their clients were looking to solve&#45;not necessarily just what Neustar had in their repertoire to sell. Headlines shifted to client pain points, like, &quot;Is your site currently under DDoS attack?&quot;, &quot;Are your outgoing calls being ignored?&quot;, Allowing us to craft the user experience around verified customer needs. We took this approach to collateral materials such as sales decks, white papers, and newsletters. Helping clients&#45;both current and potential&#45;really understand the value of Connection Science in a more tangible way.",
