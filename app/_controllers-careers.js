@@ -17,7 +17,10 @@ angular.module('phenoCom').controller('jobsController', function($scope, $state,
 	// use appropriate API based on current environment
 	$scope.apiUrl = envService.read('apiUrl');
 
-	$scope.genericUrl = '/careers/' + genericJobId + '/apply/';
+	// temporarily disabling generic job application page
+	//$scope.genericUrl = '/careers/' + genericJobId + '/apply/';
+
+	$scope.genericUrl = 'mailto:recruiting@phenomenon.com';
 
 	$scope.jobs = {
 		departments: []
@@ -28,6 +31,7 @@ angular.module('phenoCom').controller('jobsController', function($scope, $state,
 		url: $scope.apiUrl + '/jobs/'
 	}).then(function (response) {
 		$scope.jobs.departments = response.data;
+		console.log($scope.jobs.departments);
 	});
 
 });
@@ -117,11 +121,24 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 		$scope.selectedDepartment = 'Select Department';
 
 		// initial loading state of 'Select Department' dropdown while waiting for Greenhouse API results
-		$scope.data.departments = [{id: 0, name: 'Loading departments...'}];
+		$scope.allDepartments = [{id: 0, name: 'Loading departments...'}];
+
+		$scope.status = { isopen: false };
+		$scope.toggled = function(open) {
+			console.log('dropdown is now: ', open);
+		};
+
+		$scope.toggleDropdown = function($event) {
+			$event.preventDefault();
+			$event.stopPropagation();
+			$scope.status.isopen = !$scope.status.isopen;
+		};
 
 		// set selected department ID when dropdown option is chosen
 		$scope.selectNewDepartment = function(departmentName) {
 			$scope.selectedDepartment = departmentName;
+			console.log('dept-select', departmentName);
+			console.log('depts', $scope.allDepartments);
 		};
 
 		// get list of departments from Greenhouse
@@ -129,7 +146,8 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 			method: 'GET',
 			url: $scope.apiUrl + '/jobs/departments/'
 		}).then(function (response) {
-			$scope.data.departments = response.data;
+			$scope.allDepartments = response.data;
+			console.log('depts', $scope.allDepartments);
 		});
 
 	}

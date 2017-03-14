@@ -2,20 +2,23 @@
  * Created by rdollete on 4/1/16.
  */
 
-import 'bootstrap';
+
 import angular from 'angular';
 import uirouter from 'angular-ui-router';
 import ngAnimate from 'angular-animate';
 import 'angular-socialshare';
 import 'sticky-kit/dist/sticky-kit.min.js';
 import 'ui-router-metatags/dist/ui-router-metatags.js';
-import 'jquery.filer/js/jquery.filer.js'
+import 'jquery.filer/js/jquery.filer.js';
+import dropdown from 'angular-ui-bootstrap';
 
 require('angular-cookies');
 require('angular-messages');
 require('angular-snap');
 require('angular-environment');
 require('angular-sanitize');
+require('angular-bootstrap');
+require('angular-ui-bootstrap');
 
 // initialize dataLayer for Google Tag Manager
 const dataLayer = window.dataLayer = window.dataLayer || [];
@@ -27,7 +30,8 @@ angular.module('phenoCom',[
     'ui.router.metatags',
     'ngMessages',
     '720kb.socialshare',
-    'environment'
+    'environment',
+    dropdown
 ]);
 
 

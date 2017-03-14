@@ -25,11 +25,13 @@ form(name="userForm" ng-submit="submitForm()" novalidate, enctype="multipart/for
     input(type='text' name='etc' placeholder='Is there anything else you would like us to know?' ng-model='user.etc')
   .col-md-10.action-buttons
     .form-group(ng-show="genericApplication")
-      .btn-group
-        button.btn.dropdown-toggle(name='recordinput', data-toggle='dropdown' ng-bind="selectedDepartment")
-        img.dept-caret(src=require("assets/images/uparrow.png"), data-toggle='dropdown', alt="alt")
-        ul.dropdown-menu
-          li(ng-repeat="department in data.departments")
+      .btn-group(uib-dropdown, is-open="status.isopen")
+        button.btn#dept-dropdown(uib-dropdown-toggle)
+          | {{selectedDepartment}}
+          img.dept-caret(src=require("assets/images/uparrow.png"), data-toggle='dropdown', alt="alt")
+
+        ul.dropdown-menu(uib-dropdown-menu, role="menu", aria-labelledby="dept-dropdown")
+          li(ng-repeat="department in allDepartments")
             a(href='#' ng-bind="department.name" ng-click="selectNewDepartment(department.name)")
     .submit-attach
       .form-group
