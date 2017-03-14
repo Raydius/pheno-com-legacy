@@ -70,10 +70,10 @@ img.phno-logo {
 
 @media all and (max-width:640px) {
 
-  img.pheno-p {
+img.pheno-p {
     height: 60px;
     width: 60px;
-    margin-left: 10px;
+    margin-left: -10px;
     border: none;
     border-color: white;
     border-width: 0;
@@ -295,10 +295,10 @@ section.row.no-padding.culture.blog-posts {
 
 @media all and (max-width:500px) {
 
-  p.readmore {
+p.readmore {
     color: #cc1e2d;
     font-size: inherit;
-    padding-left: 10px;
+    padding-left: 15px;
 }
   span.blog-title {
     padding-right: 20px !important;
@@ -384,19 +384,19 @@ section.row.no-padding.culture.blog-posts {
 @media only screen and (min-device-width: 374px) and (max-device-width: 470px) and (-webkit-min-device-pixel-ratio: 2) {
 
 
-  .col-md-12.author-container {
+.col-md-12.author-container {
     display: flex;
-    width: 100%;
+    width: 80%;
     margin-top: 20px;
     height: 95px;
-    margin-left: -20px;
+    margin-left: 10px;
     border-bottom: 5px solid black;
 }
 
 .page-divide.end-post.col-md-12 {
     margin-top: 40px;
-    width: 100%;
-    margin-left: -20px;
+    width: 80%;
+    margin-left: 10px;
     border-bottom: 1px solid #CCC;
 }
 
@@ -415,7 +415,7 @@ section.row.no-padding.culture.blog-posts {
     justify-content: flex-start;
     align-items: center;
     padding-top: 20px;
-    padding-left: 30px;
+    padding-left: 40px;
     padding-right: 20px;
     color: #333333;
     padding-bottom: 16px;
@@ -669,11 +669,11 @@ p.tip {
     }
 
     p.blog-preview {
-      margin-bottom: 20px !important;
-      line-height: 20px !important;
-      padding-left: 30px;
-      padding-right: 65px;
-  }
+    margin-bottom: 20px !important;
+    line-height: 20px !important;
+    padding-left: 40px;
+    padding-right: 65px;
+    }
 
     .col-md-12.author-container {
         margin-bottom: 30px;
@@ -957,64 +957,3 @@ p.blog-preview > p {
         margin-bottom: 15px;
     }
 }
-
-
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
-
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
-
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
-
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/blog.scss
-
-
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
-
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
-
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
-
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
-
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
-
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
-
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
-
-
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/blog.scss
-
-
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/blog.scss
-
-
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/blog.scss
