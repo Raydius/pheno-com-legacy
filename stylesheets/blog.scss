@@ -347,6 +347,20 @@ section.row.no-padding.culture.blog-posts {
         margin-right: -20px;
     }
 }
+
+@media screen and (max-width:376px) {
+  h2.phno-now {
+    font-family: "Circular-Book";
+    margin-top: 6px;
+    margin-left: 5px;
+    font-size: 50px !important;
+    padding-right: 20px;
+  }
+  .phno-logo {
+    width: 90px;
+    margin-left: 15px;
+  }
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
 
 
@@ -989,6 +1003,11 @@ p.blog-preview > p {
 
 // WEBPACK FOOTER //
 // webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/blog.scss
 
 
 
