@@ -8,8 +8,37 @@
 }
 
 .job-content {
-  font-family: "Tiempose-Semibold";
+    font-family: "Tiempose-Semibold";
     font-size: 20px;
+    padding-right: 30px;
+
+    ul li {
+        margin-top: 15px;
+        line-height: 24px;
+        padding-left: 30px;
+        position: relative;
+        padding-right: 20px;
+
+        &:before {
+          content: "-";
+            display: inline-block;
+            margin-right: 20px;
+            content: '\E902';
+            position: absolute;
+            left: 0;
+            color: #cccccc;
+            top: 0;
+            font-size: 20px;
+            line-height: 24px;
+            font-family: icomoon!important;
+        }
+    }
+}
+.job-content-quote {
+  font-family: "Tiempose-Semibold";
+  font-size: 20px;
+  padding-right: 30px;
+
 }
 
 .job-title {
@@ -47,6 +76,10 @@ article.col-md-6.job-desc {
     font-size: 18px;
     font-weight: bolder;
     margin-top: 60px;
+}
+
+.resume-attached-hidden {
+    margin-top: 10px;
 }
 
 .job-column {
@@ -109,6 +142,13 @@ section.row.no-padding.culture.job-posting {
     color: #4a4a4a;
     font-size: 14px;
     margin-top: 20px;
+    padding-right: 20px;
+}
+
+span.job-location.job-share {
+    font-size: 13px;
+    position: absolute;
+    top: 152px;
 }
 
 hr.secondHr {margin-top: 90px;}
@@ -119,7 +159,7 @@ a.apply-now {
     margin-top: 75px;
     background: #efefef;
     font-weight: 600;
-    width: 30%;
+    width: 40%;
     align-items: center;
     justify-content: center;
     padding: 15px;
@@ -129,9 +169,65 @@ a.apply-now {
 }
 
 img.share-icon {
-    width: 10% !important;
     display: inline;
-    margin-right: 10px;
+    margin-right: 4px;
+    width: 8% !important;
+    /* height: 16px; */
+}
+.job-content ul li:last-child {
+    margin-bottom: 80px;
 }
 
 article.col-md-3.pull-right.col-sm-12.col-xs-12.job-column-2 {margin-top: 370px;}
+
+@media (max-width:991px) {
+
+  img.share-icon {
+    display: inline;
+    margin-right: 4px;
+    width: 20px !important;
+    /* height: 16px; */
+  }
+}
+@media (max-width:640px) {
+
+article.col-md-3.pull-right.col-sm-12.col-xs-12.job-column-2 {
+      padding-left: 30px
+}
+
+  a.apply-now {
+      margin-left: 10px;
+}
+
+  .job-content {
+      font-family: "Tiempose-Semibold";
+      font-size: 20px;
+      padding-right: 30px;
+      padding-left: 10px;
+  }
+
+  .candidate-privacy {
+    color: #cc2128;
+    margin-top: 80px;
+    font-size: 18px;
+    font-weight: 900;
+    padding-left: 10px;
+  }
+}
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/job.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/job.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/job.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/job.scss

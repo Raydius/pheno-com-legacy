@@ -1,15 +1,11 @@
-//block variables
-//- copy = require('app/copy.js')
-- var currentUrl = "test" //window.location.href
-
-ul.social-icons
+ul.social-icons(ng-controller="socialController")
 	.bubble
-		.bubble-wrapper
+		.bubble-wrapper.testclass
 			li.social-icon
 				a.icon-twitter.icon(socialshare socialshare-provider="twitter", socialshare-text="{{MetaTags.title}}", socialshare-hashtags="phno", socialshare-url="{{shareUrl}}", socialshare-popup-height="600", socialshare-popup-width="500")
 					span=caseIndex
 			li.social-icon
-				a.icon-facebook.icon(socialshare socialshare-provider="facebook" socialshare-text="{{MetaTags.title}}" socialshare-hashtags="phno" socialshare-media!=fbShareImg)
+				a.icon-facebook.icon(socialshare socialshare-provider="facebook" socialshare-text="{{MetaTags.title}}" socialshare-hashtags="phno" socialshare-url="{{shareUrl}}", socialshare-media!=fbShareImg)
 			li.social-icon
 				a.icon-linkedin.icon(socialshare socialshare-provider="linkedin" socialshare-text="#phenomenon" socialshare-hashtags="#phenomenon" socialshare-url="{{shareUrl}}", socialshare-popup-height="600" socialshare-popup-width="500")
 			li.social-icon

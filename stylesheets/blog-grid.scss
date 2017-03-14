@@ -8,7 +8,7 @@
     -moz-column-width: 23em;
     -webkit-column-width: 23em;
     -moz-column-gap: 1em;
-    column-gap: 25px !important;
+    column-gap: 24px !important;
     -webkit-column-gap: 1em;
     margin-top: 40px;
 }
@@ -90,6 +90,20 @@ p.now {
         margin-right: -30px;
     }
 }
+
+@media (min-width:401px) and (max-width:640px){
+
+    .well {
+    position: relative;
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 40px 0 20px !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    }
+}
 @media (min-width:400px) and (max-width:640px) {
     .icon-right-arrow.subscribe-arrow {
         position: absolute;
@@ -144,21 +158,17 @@ p.now {
     }
 }
 @media screen and (min-device-width:320px) and (max-device-width:375px) {
-    p.now {
-        margin-left: 122px !important;
-        margin-top: -26px !important;
-    }
+   p.now {
+    margin-left: 108px !important;
+    margin-top: -2.85em !important;
+    padding-top: 13px;
+}
 }
 @media (min-width:320px) and (max-width:400px) {
     .container.blog-container {
         padding-left: 0;
         padding-right: 0;
         margin-left: -9px;
-    }
-
-    p.now {
-        margin-left: 92px !important;
-        margin-top: -26px !important;
     }
 
     .row-blog {
@@ -192,8 +202,9 @@ label.icon-share.blog-share {
     color: black;
     margin-left: 20px;
     cursor: pointer;
+    margin-top: -20px;
+    margin-bottom: 15px;
 }
-
 .icon-share.blog-share:hover{
   color: #cc2128;
 }
@@ -202,22 +213,7 @@ label.icon-share.blog-share {
   color: #cc2128;
 }
 
-.blog-share-text {
-  font-family: "Circular-Bold";
-  position: absolute;
-  margin-top: -1px;
-}
 
-.social-icon-blog {
-    font-size: 14px;
-    display: inline-block;
-    justify-content: center;
-    flex-direction: row;
-    padding: 13px;
-    margin-top: -10px;
-    line-height: 0px;
-    font-family: "Circular-Book", Helvetica, Arial, Sans-Serif;
-}
 
 .blog-bubble {
       margin-top: 10px;
@@ -334,3 +330,34 @@ input.subscribe-input {
 
 // WEBPACK FOOTER //
 // webpack:///stylesheets/blog-grid.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/blog-grid.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss

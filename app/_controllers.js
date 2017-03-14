@@ -21,9 +21,6 @@ angular.module('phenoCom').controller('phenoController', function($state, $scope
     expireDate.setDate(expireDate.getDate() + 30);
     $cookies.put('visited', 1, { 'expires': expireDate, 'path': '/' });
 
-    // detect state and store in scope
-    $scope.$state = $state;
-
     // use current state to determine which menu item is selected
     $scope.isSelected = function(sref) {
         var s = $state.$current.name;
@@ -43,6 +40,13 @@ angular.module('phenoCom').controller('phenoController', function($state, $scope
 
         }
     }
+
+});
+
+angular.module('phenoCom').controller('socialController', function($state, $scope) {
+
+    // create target URL for social sharing
+    $scope.shareUrl = 'http://phenomenon.com/work/' + $state.params.case + '/';
 
 });
 
@@ -68,265 +72,6 @@ angular.module('phenoCom').controller('homeController', function($state, $scope,
 
 });
 
-/**
- * Controller for Jobs Page
- *
- * Pulls data from Greenhouse.io job board
- */
-angular.module('phenoCom').controller('jobsController', function($scope, $state, $http) {
-
-    $scope.jobs = {
-        departments: []
-    };
-
-    $http({
-        method: 'GET',
-        url: 'https://api.greenhouse.io/v1/boards/phenomenon/embed/departments'
-    }).then(function (response) {
-
-        var departments = response.data.departments;
-
-        // step through all departments
-        for(var i=0, len = departments.length; i < len; i++) {
-
-            var depJobs = departments[i].jobs;
-            var openPositions = [];
-
-            // step through all jobs in the department
-            for (var n=0, jlen = depJobs.length; n < jlen; n++) {
-
-                var job = depJobs[n];
-
-                // job must have a LinkedIn URL in order to be listed on the jobs page
-                if(job.metadata[0].value) {
-
-                    var position = {
-                        title: job.title,
-                        url: job.metadata[0].value,
-                        location: job.location.name
-                    };
-                    openPositions.push(position);
-                }
-
-            }
-
-            // if there were jobs in this department...
-            if(openPositions.length > 0) {
-
-                // push department to scope
-                var department = {
-                    'name': departments[i].name,
-                    'openPositions': openPositions
-                };
-
-                $scope.jobs.departments.push(department);
-            }
-
-        }
-
-        console.log($scope.jobs);
-    });
-
-});
-
-angular.module('phenoCom').controller('contactController', function($scope, $state, $http) {
-
-    $scope.data = {
-        fields: {
-            resume: 'Resume',
-            coverletter: 'Cover Letter'
-        },
-        labels: {
-            resume: 'Choose a File',
-            coverletter: 'Choose a File'
-        },
-        ga: {
-            resume: 'resume',
-            coverletter: 'cover_letter'
-        }
-    };
-
-
-    $scope.setAttempted = function(element) {
-        element.attempted = true;
-    };
-
-    $scope.sendData = function() {
-
-        // fire GA event tracker
-        ga('send', 'event', 'button', 'click', 'contact_submit');
-
-        $scope.contactForm.attempted = true;
-
-        if($scope.contactForm.$valid) {
-
-            var message = "Incoming Application\n\n" +
-                "First Name: " + $scope.data.firstName + "\n" +
-                "Last Name: " + $scope.data.lastName + "\n" +
-                "Email: " + $scope.data.email + "\n" +
-                "Phone Number: " + $scope.data.phone + "\n\n" +
-                "Portfolio URL: " + $scope.data.portfolioUrl + "\n" +
-                "LinkedIn: " + $scope.data.linkedin;
-
-            var url = '/sendMail';
-
-            // prep data for API
-            var data = ({
-                'message': message,
-                'type': 'Pheno VCU',
-                'subject': 'Application from ' + $scope.data.firstName + ' ' + $scope.data.lastName
-            });
-
-            // create multipart/form-data format
-            fd = new FormData();
-            fd.append('data', JSON.stringify(data));
-            fd.append('resume', $scope.resume);
-            fd.append('coverletter', $scope.coverletter);
-
-            // middleware API call
-            $http({
-                method: 'POST',
-                url: url,
-                data: fd,
-                headers: {'Content-Type': undefined},
-                transformRequest: angular.identity,
-            }).then(function(response) {
-
-                $state.go('thanks');
-
-            },function(data, status, headers, config){
-                errorCallback(data);
-                console.log("Error------"+JSON.stringify(data)+" "+status)
-            });
-
-        }
-        else {
-
-            angular.forEach($scope.contactForm, function(value, key) {
-                if (typeof value === 'object') {
-                    var el = $scope.contactForm[key];
-                    if(el.$invalid) {
-                        el.attempted = true;
-                    }
-                }
-            });
-
-            $scope.contactForm.$setPristine();
-            $scope.contactForm.$setUntouched();
-
-        }
-
-    };
-
-});
-
-// controller for blog landing page
-angular.module('phenoCom').controller('blogController', function($scope, $state, $sce, $http) {
-
-
-  //
-  //   $('.search-input, .search-arrow, .arrow-up, .arrow-up-outline').hide()
-  //   $('.subscribe-input, .subscribe-arrow, .arrow-up-sub, .arrow-up-outline-sub').hide()
-  //
-  //   $('.action-text.subscribe').click(function() {
-  //     $('.search-input, .search-arrow, .arrow-up, .arrow-up-outline').hide()
-  //   $('.subscribe-input, .subscribe-arrow, .arrow-up-sub, .arrow-up-outline-sub').show()
-  // })
-  //   $('.action-text.search').click(function() {
-  //     $('.subscribe-input, .subscribe-arrow, .arrow-up-sub, .arrow-up-outline-sub').hide()
-  //   $('.search-input, .search-arrow, .arrow-up, .arrow-up-outline').show()
-  // })
-
-
-    $scope.articles = [];
-
-    // get all blog posts
-    $http({
-        method: 'GET',
-        url: 'http://phenomenon.com:2088/wp-json/wp/v2/article'
-    }).then(function (response) {
-
-        var articles = response.data;
-
-        for(var i=0, len=articles.length; i < len; i++) {
-
-            var articleData = articles[i];
-
-            var article = {
-                title: articleData.title.rendered,
-                slug: articleData.slug,
-                preview: articleData.acf.preview,
-                thumbnail: articleData.better_featured_image.media_details.sizes.medium.source_url,
-                alt: articleData.better_featured_image.alt_text,
-                author: articleData.acf.author,
-                position: (articleData.acf.position) ? articleData.acf.position : ''
-            };
-
-            $scope.articles.push(article);
-
-        }
-
-    });
-
-
-});
-
-// controller for individual blog posts
-angular.module('phenoCom').controller('blogPostController', function($scope, $state, $sce, $http, $stateParams) {
-
-
-
-    $('.social-icons').hide();
-    $('.icon-share, .share-text').click(function(){
-      $('.social-icons').toggle();
-    })
-
-    $('.icon-share, .share-text').mouseenter(function(){
-        $('.icon-share, .share-text').css('color','#cc2128')
-    })
-    $('.icon-share, .share-text').mouseleave(function(){
-        $('.icon-share, .share-text').css('color','black')
-    })
-
-
-    var slug = $stateParams.slug;
-
-    $scope.article = {};
-
-
-    $http({
-        method: 'GET',
-        url: 'http://phenomenon.com:2088/wp-json/wp/v2/article?slug='+slug
-    }).then(function(response) {
-        console.log(response.data);
-
-        if (response.data.length == 1) {
-            // success
-            var post = response.data[0];
-
-            $scope.article = {
-                title: post.title.rendered,
-                content: post.content.rendered,
-                date: post.date,
-                image: post.better_featured_image.source_url,
-                author: post.acf.author,
-                positionTitle: post.acf.position
-            };
-            console.log($scope.article);
-        }
-        else {
-            // error
-            console.log('WP Error: Number of articles returned was not 1.');
-        }
-
-    });
-
-});
-
-angular.module('phenoCom').controller('scrollController', function($rootScope, $document, $scope){
-
-
-});
 
 angular.module('phenoCom').controller('aniDistances', ['$scope',
     function($scope) {
@@ -376,24 +121,3 @@ angular.module('phenoCom').controller('aniDistances', ['$scope',
 ]);
 
 
-
-
-
-/**
- * Holiday Card Controller Revisited
- */
-angular.module('phenoCom').controller('holidayController', function($scope) {
-
-    // set initial visibility of the gif and the video
-    $scope.videoHide = true;
-
-    $scope.playTheVideo = function() {
-
-		// toggle visibility of the gif and the video
-        $scope.videoHide = false;
-
-        // play the video
-        $('#holidayvideo').get(0).play();
-    };
-
-});

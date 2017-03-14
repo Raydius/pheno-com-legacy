@@ -7,8 +7,6 @@ public/style-bundle.min.js
 public/styles.css
 public/vendors.js
 public/app-bundle.min.js
-<<<<<<< HEAD
-public-staging/
-=======
 public-staging
->>>>>>> feature/wpblog
+./*.tar.gz
+pheno-com.tar.gz

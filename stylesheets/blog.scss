@@ -62,20 +62,40 @@ img.phno-logo {
 }
 
 }
+
+.blog-share-text {
+    position: absolute;
+    margin-top: 1.7px;
+}
+
 @media all and (max-width:640px) {
+
+  img.pheno-p {
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+    border: none;
+    border-color: white;
+    border-width: 0;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: transparent;
+    background: url(/assets/images/blog/pheno-p.png);
+    background-repeat: no-repeat;
+}
 
   .blog-share-text {
     font-family: "Circular-Bold";
     position: absolute;
-    margin-top: 42px !important;
+    margin-top: 5px !important;
 }
 
 
-  label.icon-share.blog-share {
-    color: black;
-    margin-left: 20px;
-    cursor: pointer;
-    margin-top: 40px;
+label.icon-share.blog-share {
+  color: black;
+  margin-left: 20px;
+  cursor: pointer;
+  margin-top: 40px !important;
 }
 
   article.col-md-10.col-lg-8.col-sm-12.single-post-article {
@@ -165,17 +185,18 @@ p.tip {
     font-size: 13px;
 }
 
-span.blog-title {
+  span.blog-title {
     font-size: 30px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 30px;
     color: #333333;
     padding-bottom: 16px;
     font-family: "Tiempose-semibold";
-}
+  }
+
 
 a.read-moreUrl.full-article-link {
     color: #D0021B;
@@ -183,13 +204,13 @@ a.read-moreUrl.full-article-link {
     display: block;
     font-size: 12px;
     margin-top: 30px;
-    margin-left: 0px;
+    margin-left: 20px;
 }
 
 .page-divide.end-post.col-md-12 {
     margin-top: 40px;
-    width: 100%;
-    margin-left: 0px;
+    width: 105%;
+    margin-left: -20px;
     border-bottom: 1px solid #CCC;
 }
 
@@ -213,6 +234,11 @@ p.blog-author {
     width: 100%;
 }
 
+p.readmore {
+    color: #cc1e2d;
+    font-size: inherit;
+}
+
 p.blog-preview {
     margin-bottom: 0 !important;
     width: 163%;
@@ -220,16 +246,16 @@ p.blog-preview {
     font-size: 13px;
     margin: 10px;
     line-height: 20px;
-    padding-left: 0px;
+    padding-left: 20px;
     padding-right: 20px;
 }
 
 .col-md-12.author-container {
     display: flex;
-    width: 100%;
+    width: 105%;
     margin-top: 20px;
     height: 95px;
-    margin-left: 0px;
+    margin-left: -20px;
     border-bottom: 5px solid black;
 }
 
@@ -265,6 +291,18 @@ section.row.no-padding.culture.blog-posts {
     margin-bottom: 100px;
     display: table-cell;
     overflow: hidden;
+}
+
+@media all and (max-width:500px) {
+
+  p.readmore {
+    color: #cc1e2d;
+    font-size: inherit;
+    padding-left: 10px;
+}
+  span.blog-title {
+    padding-right: 20px !important;
+  }
 }
 
 @media all and (min-width:746px) and (max-width:860px) {
@@ -309,6 +347,20 @@ section.row.no-padding.culture.blog-posts {
         margin-right: -20px;
     }
 }
+
+@media screen and (max-width:376px) {
+  h2.phno-now {
+    font-family: "Circular-Book";
+    margin-top: 6px;
+    margin-left: 5px;
+    font-size: 50px !important;
+    padding-right: 20px;
+  }
+  .phno-logo {
+    width: 90px;
+    margin-left: 15px;
+  }
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
 
 
@@ -329,14 +381,69 @@ section.row.no-padding.culture.blog-posts {
         margin-right: -20px;
     }
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 470px) and (-webkit-min-device-pixel-ratio: 2) {
-    p.tagline {
-        display: flex;
-        width: 370px;
-        margin-left: 15%;
-        margin-top: 10%;
-        padding-right: 10px;
-    }
+@media only screen and (min-device-width: 374px) and (max-device-width: 470px) and (-webkit-min-device-pixel-ratio: 2) {
+
+
+  .col-md-12.author-container {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    height: 95px;
+    margin-left: -20px;
+    border-bottom: 5px solid black;
+}
+
+.page-divide.end-post.col-md-12 {
+    margin-top: 40px;
+    width: 100%;
+    margin-left: -20px;
+    border-bottom: 1px solid #CCC;
+}
+
+  a.read-moreUrl.full-article-link {
+    color: #D0021B;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+  span.blog-title {
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 20px;
+    color: #333333;
+    padding-bottom: 16px;
+    font-family: "Tiempose-semibold";
+}
+
+   p.tagline {
+    display: flex;
+    width: 180px;
+    margin-left: 5%;
+    margin-top: 10%;
+    padding-right: 10px;
+    line-height: 20px;
+}
+
+p.now {
+    margin-left: 122px !important;
+    margin-top: -26px !important;
+}
+
+p.tip {
+    display: block;
+    /* width: 410px; */
+    margin-left: 5% !important;
+    margin-top: 20px !important;
+    margin-bottom: -26px !important;
+    font-size: 13px;
+}
 
     ul.blog-action-list {
         display: flex;
@@ -407,7 +514,7 @@ section.row.no-padding.culture.blog-posts {
 }
 
 a.read-moreUrl.full-article-link {
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
     span.blog-title {
@@ -423,10 +530,11 @@ a.read-moreUrl.full-article-link {
     font-family: "Tiempose-semibold";
 }
 
-    p.tip {
+p.tip {
     display: block;
     margin-top: 20px !important;
     margin-bottom: -26px !important;
+    margin-left: -2px !important;
 }
     .bubble-search {
         position: absolute;
@@ -533,7 +641,7 @@ a.read-moreUrl.full-article-link {
         font-family: "Circular-Book";
         margin-top: 20px;
         margin-left: 5px;
-        font-size: 60px !important;
+        font-size: 60px;
         padding-right: 30px;
     }
 
@@ -553,8 +661,8 @@ a.read-moreUrl.full-article-link {
     }
 
     .pageDivide.col-md-12 {
-        border-bottom: 1px solid #ccc;
-        margin-bottom: 80px !important;
+        border-bottom: 1px solid #fff;
+        margin-bottom: -30px !important;
         margin-top: 184px !important;
         margin-left: -30px;
         width: 109% !important;
@@ -563,7 +671,7 @@ a.read-moreUrl.full-article-link {
     p.blog-preview {
       margin-bottom: 20px !important;
       line-height: 20px !important;
-      padding-left: 25px;
+      padding-left: 30px;
       padding-right: 65px;
   }
 
@@ -644,6 +752,7 @@ img.pheno-p.blog-post-p:hover {
     color: black;
 }
 
+/*
 .bubble-search {
     position: absolute;
     width: 185px;
@@ -688,7 +797,8 @@ img.pheno-p.blog-post-p:hover {
         left: 60px;
     }
 }
-
+*/
+/*
 .bubble-subscribe {
     position: absolute;
     width: 185px;
@@ -701,6 +811,7 @@ img.pheno-p.blog-post-p:hover {
     border-radius: 3px;
     border: rgba(0, 0, 0, 0.25) solid 1px;
 }
+
 
 .bubble-subscribe:before {
     content: '';
@@ -733,6 +844,7 @@ img.pheno-p.blog-post-p:hover {
         left: 110px;
     }
 }
+*/
 
 .blog-content::first-letter {
     line-height: 0.2;
@@ -749,29 +861,6 @@ img.pheno-p.blog-post-p:hover {
     margin-bottom: 15px;
 }
 
-a.share {
-    height: 40px;
-    width: 100px;
-    background: #c51d23;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-    /* margin: 0 auto; */
-    align-items: center;
-    border-radius: 20px;
-    box-shadow: 4px 3px 9px 1px rgba(0, 0, 0, 0.25);
-    transition: 0.5s;
-    border: 2px solid #c51d23;
-}
-
-a.share:hover {
-    color: #c51d23;
-    background: white;
-    border: 2px solid #c51d23;
-    transition: 0.5s;
-}
 @-ms-keyframes spin {
     from {
         -ms-transform: rotate(0deg);
@@ -868,3 +957,64 @@ p.blog-preview > p {
         margin-bottom: 15px;
     }
 }
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/blog.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/blog.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/blog.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/blog.scss

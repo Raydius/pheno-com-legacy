@@ -110,7 +110,9 @@
     height: 60px;
     font-size: 16px;
     line-height: 26px;
-    padding: 18px;
+    font-family: circular-book;
+    font-weight: lighter;
+    padding: 16px;
     color: $gray_font;
     max-width: 227px;
   }
@@ -343,7 +345,7 @@
     border-bottom: 0;
     padding: ($base_spacing - 40) 30px;
   }
-  .jobs img {
+  .jobs img:not(.pheno-p-jobs) {
     margin-top: 0;
     margin-left: -40px;
   }
@@ -441,6 +443,13 @@
     padding: 0 30px;
   }
 }
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_responsive.scss
+
+
+
 
 
 // WEBPACK FOOTER //

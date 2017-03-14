@@ -1,0 +1,41 @@
+.applicant-location {
+    margin-top: 38.5px;
+}
+
+article.col-md-12.employment-container.ng-scope {
+    margin-top: 40px;
+    margin-left: 18px;
+}
+
+article.col-md-2.applicant-timeline {
+    padding-left: 0;
+}
+
+.applicant-company,
+.applicant-name,
+.applicant-timeline,
+.employment {
+    font-family: 'circular-bold';
+}
+
+.applicant-job-desc {
+    margin-top: 6px;
+}
+
+article.col-md-12.employment-container {
+    margin-bottom: 300px;
+}
+
+.employment {
+    margin-bottom: 10px;
+}
+
+.applicant-name,
+.employment {
+    font-size: 20px;
+}
+@media all and (max-width:991px) {
+    .applicant-location {
+        margin-top: 0.5px;
+    }
+}

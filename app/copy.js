@@ -187,8 +187,9 @@ var copy =
         "So you kind of self-select clients that are going to appreciate the kind of work you do.<span>Very much so.</span>"
       ],*/
       "paragraph3": [
-        "KD: I&#8217;ve worked with Phenomenon for seven years across two companies. When I was hired to transform and re-brand the country&#8217;s largest non-bank mortgage servicer, one of my first calls was to Phenomenon.",
-        "Why did you start this company? What are you all about?",
+
+        "I&#8217;ve worked with Phenomenon for seven years across two companies. When I was hired to transform and re-brand the country&#8217;s largest non-bank mortgage servicer, one of my first calls was to Phenomenon.",
+        "KD: Why did you start this company? What are you all about?",
         "<span>PHNO: We all know that the agency model is badly broken. Client interests don&#8217;t line up with agency interests and that's a recipe for disaster.</span>",
         "<span>So we founded Phenomenon as a reaction to that.</span>",
         "<span>Instead of the old agency model of pitching big ideas that require big budgets to produce, so that the agency can charge big fees on the production; we simply focus on solving our clients&#8217; problems in ways that make sense for them.</span>",
@@ -266,6 +267,15 @@ var copy =
         {
           "type": "image",
           "image": true,
+          "imageUrl": require('assets/images/neustar/NeustarLanding.jpg'),
+          "legend": "Technology / B2B",
+          "headline": "Neustar Helps Make Data Shine.",
+          "description": "Visual design and strategic positioning help turn analytics giant into the connectivity leader that they are.",
+          "readmoreUrl": "/work/neustar/"
+        },
+        {
+          "type": "image",
+          "image": true,
           "imageUrl": require('assets/images/federer-work-image.jpg'),
           "legend": "Sport / Lifestyle",
           "headline": "From Federer By Federer.",
@@ -333,6 +343,156 @@ var copy =
         }
       ]
     },
+    "neustar": {
+      "title": "Neustar Helps Make Data Shine.",
+      "className": "neustar",
+      "client": "Neustar",
+      "clientLogo": require('assets/images/neustar/neustarlogo.png'),
+      "clientLogoWidth": "100px",
+      "project": "Visual Brand Design",
+      "media": "Collateral, Digital, OOH",
+      "blockquote":"Neustar Helps Make Data Shine.",
+      "shareImg": require('assets/images/neustar/neustar.jpg'),
+      "ogDescription": "The leader in communications, security and connectivity reimagines their vision for a connected future.",
+      "topDescription": [
+        "For more than 20 years, Neustar has been paving the way for connectivity through real-time information, analytics and telecommunications platforms. In fact, Neustar was the pioneer of Caller ID services. However, with a fully connected future not far away &#45; and with the acquisition of numerous new services &#45; Neustar needed to update their brand vision to reflect their position as leaders of the connected world.",
+      ],
+      "topcontent": [
+        {
+          "type": "image",
+          "image": true,
+          "imageUrl": require("assets/images/neustar/PeoplePlacesThings.gif"),
+          "imageAlt": "neustar",
+          "mainDescription": [
+            'The first step was translating Neustar&#39;s business offerings into something B2B audiences could understand. Since the term &quot;data&quot; is overused and extremely impersonal, we developed a positioning strategy that humanized the brand. Focusing on making Neustar more relatable and their solutions less abstract. The phrase &quot;Connection Science&quot; was born. From there, we created a design language that was inspired by leading academic journals infused with more authentic photography to hit home the idea of "Connection Science."'
+          ]
+        },
+        {
+          "carousel": true,
+          "images": [
+            {
+              "url": require("assets/images/neustar/NeustarGuidelines_08.jpg"),
+              "alt": "Neustar Image"
+            },
+            {
+              "url": require("assets/images/neustar/NeustarGuidelines_16.jpg"),
+              "alt": "Neustar Image"
+            },
+            {
+              "url": require("assets/images/neustar/NeustarGuidelines_04.jpg"),
+              "alt": "Neustar Image"
+            },
+            {
+              "url": require("assets/images/neustar/NeustarGuidelines_17.jpg"),
+              "alt": "Neustar Image"
+            },
+            {
+              "url": require("assets/images/neustar/NeustarGuidelines_15.jpg"),
+              "alt": "Neustar Image"
+            },
+            {
+              "url": require("assets/images/neustar/Infographic (1).jpg"),
+              "alt": "Neustar Image"
+            },
+            {
+              "url": require("assets/images/neustar/Bag.jpg"),
+              "alt": "Neustar Image"
+            },
+            {
+              "url": require("assets/images/neustar/Badge_2.jpg"),
+              "alt": "Neustar Image"
+            }
+          ]
+        },
+        {
+        "type": "image",
+        "image": false,
+        "imageUrl": require("assets/images/neustar/Billboard_ABC_v25.jpg"),
+        "imageAlt": "Federer",
+        "mainDescription": [
+        "Visually we modernized the color palette to better fit a tech company in 2016. We moved their traditional Kelly green to a more vibrant neon green. An idea inspired by the notion that Neustar can illuminate or guide businesses through the often dense world of data. Bright accent colors helped round out the spectrum. To give the brand a sense of order in all of their communications, we designed a unique (and trademarked) Neustar grid which provides underlying structure for everything from internal emails to external sales decks.",
+        ]
+        },
+        {
+          "type": "image",
+          "image": true,
+          "imageUrl": require("assets/images/neustar/Billboard_ABC_v25.jpg"),
+          "imageAlt": "Federer",
+          "mainDescription": [
+            "With a new brand identity and strategic position in place, we launched at Cannes through a series of targeted emails, event signage, and digital display ads, all with the intent of piquing the interest of decision makers eager to evolve in the connected world."
+            //  "After a full audit of their website and competitive search patterns, we developed a content strategy structured around real problems their clients were looking to solve&#45;not necessarily just what Neustar had in their repertoire to sell. Headlines shifted to client pain points, like: Is your site currently under DDoS attack? Are your outgoing calls being ignored? Allowing us to craft the user experience around verified customer needs. We took this approach to collateral materials such as sales decks, white papers, and newsletters. Helping clients&#45;both current and potential&#45;really understand the value of Connection Science in a more tangible way.",
+            //  "<span class='red'>We developed a content strategy structured around real problems their clients were looking to solve&#45;not necessarily just what Neustar had in their repertoire to sell.</span>",
+            //  "Since relaunching the Neustar brand, the tech company has gone on to win new business from numerous Fortune 500 companies and in December were acquired by a private investment firm in a multi-billion-dollar deal."
+          ]
+        },
+      ],
+      "detailcontent": [
+        {
+          "carousel": true,
+          "images": [
+            {
+              "url": require("assets/images/neustar/WhitePaper/Booklet.jpg"),
+              "alt": "Neustar Image"
+            },
+            {
+              "url": require("assets/images/neustar/Applications_01.jpg"),
+              "alt": "Neustar Image"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": false,
+          "imageUrl": require("assets/images/neustar/NeustarDC2.jpg"),
+          "mainDescription": [
+            "Next we took their existing (and occasionally heady) content and provided a strategic framework for their website, sales decks, case studies, and white papers. With language, we injected a more personal tone, focusing as much as possible on the real world outcomes of their offerings, rather than staying in the &quot;weeds&quot; and focusing on the &quot;how.&quot;"
+          ]
+        },
+        {
+          "type": "scrollingSiteTwo",
+          "scrollingSiteTwo": true,
+          "imageUrl": require("assets/images/neustar/neustar-homepage (2).jpg"),
+          "imageAlt": "neustar website",
+          "mainDescriptionTwo": [
+                "After a full audit of their website and competitive search patterns, we developed a content strategy structured around real problems their clients were looking to solve&#45;not necessarily just what Neustar had in their repertoire to sell. Headlines shifted to client pain points, like, &quot;Is your site currently under DDoS attack?&quot;, &quot;Are your outgoing calls being ignored?&quot;, Allowing us to craft the user experience around verified customer needs. We took this approach to collateral materials such as sales decks, white papers, and newsletters. Helping clients&#45;both current and potential&#45;really understand the value of Connection Science in a more tangible way.",
+                "Since relaunching the Neustar brand, the tech company has gone on to win new business from numerous Fortune 500 companies and in December were acquired by a private investment firm in a multi-billion-dollar deal."
+          ]
+        },
+        // {
+        //   "video": true,
+        //   "thumb": require('assets/images/neustar/neustar-homepage (1).jpg'),
+        //   "thumbAlt": "Neustar Makes Data Shine.",
+        //   "thumbTitle": "Neustar Website",
+        //   "vimeo": "207850988",
+        //   "mainDescription": [
+        //     "After a full audit of their website and competitive search patterns, we developed a content strategy structured around real problems their clients were looking to solve&#45;not necessarily just what Neustar had in their repertoire to sell. Headlines shifted to client pain points, like, &quot;Is your site currently under DDoS attack?&quot;, &quot;Are your outgoing calls being ignored?&quot;, Allowing us to craft the user experience around verified customer needs. We took this approach to collateral materials such as sales decks, white papers, and newsletters. Helping clients&#45;both current and potential&#45;really understand the value of Connection Science in a more tangible way.",
+        //     "Since relaunching the Neustar brand, the tech company has gone on to win new business from numerous Fortune 500 companies and in December were acquired by a private investment firm in a multi-billion-dollar deal."
+        //   ]
+        // }
+        // {
+        //   "type": "scrollingSite",
+        //   "scrollingSite": true,
+        //   "imageUrl": require("assets/images/neustar/neustar-website.jpg"),
+        //   "imageAlt": "neustar website",
+        //   "mainDescription": [
+        //     'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        //   ]
+        // }
+        // {
+        //   "carousel": true,
+        //   "images": [
+        //     {
+        //       "url": require("assets/images/neustar/neustar-macbook.png"),
+        //       "alt": "Neustar Image"
+        //     },
+        //     {
+        //       "url": require("assets/images/neustar/neustar-ipad.png"),
+        //       "alt": "Neustar Image"
+        //     }
+        //   ]
+        // }
+      ]
+    },
     "federer": {
       "title": "From Federer by Federer.",
       "className": "federer",
@@ -348,7 +508,6 @@ var copy =
         "The new Wilson RF97 autograph racket is the first racket co-designed by Roger Federer and Wilson. It looks and plays like nothing else. In a world where loud colors are the norm for racket design, Federer preferred an approach that speaks to his love of minimalist design: A predominantly black racket with strategically placed highlights like a tiny Swiss flag. The result is a racket with the pure feel, power and precision to give players a technological edge, and the understated elegance to give them a mental edge whenever they step on the court.",
         'To announce the arrival of the new RF97 Phenomenon developed an integrated campaign led by a black-an-white film called "From Federer". The film features top junior players, Federer himself, and a handwritten note from Roger that plays a central role in the rest of the campaign. In the letter, Fed writes about the type of players he designed the racket for: the ones who push harder, play faster, and are obsessed with the game. Players who look at him not as someone to emulate, but someone to one day eclipse.',
         "<span class='red'>The film features top junior players, Federer himself, and a handwritten note from Roger that plays a central role in the rest of the campaign.</span>"
-
       ],
       "topcontent": [
         {
@@ -1014,7 +1173,7 @@ var copy =
       "title": "Aetna Brings Out Medicare's Potential",
       "className": "aetna",
       "client": "Aetna",
-      "clientLogo": require('assets/images/aetna-logo-180x50.png'),
+      "clientLogo": require('assets/aetna-logo-180x50 (1).png'),
       "clientLogoWidth": "100px",
       "project": "Potential",
       "media": "B2B, Digital, Social",
@@ -1179,30 +1338,32 @@ var copy =
     },
     "moreCases": [
       {
+        "projectName": "From Federer <br> By Federer.",
+        "projectUrl": "/work/federer/",
+        "projectThumbSrc": require("assets/images/morecases/7.jpg")
+      },
+      {
+        "projectName": "Aetna Brings out Medicare's Potential.",
+        "projectUrl": "/work/aetna/",
+        "projectThumbSrc": require("assets/images/morecases/8.jpg")
+      },
+      {
         "projectName": "Wilson Equips Itself With Global Campaign.",
-        "writerName": "By Amy Weisenback",
-        "writerTitle": "VP Marketing, Wilson",
         "projectUrl": "/work/wilson-anthem/",
         "projectThumbSrc": require("assets/images/morecases/1.jpg")
       },
       {
         "projectName": "Men&#8217s Wearhouse <br>Updates Its Closet.",
-        "writerName": "By Matt Stringer",
-        "writerTitle": "EVP Marketing, Tailored Brands",
         "projectUrl": "/work/mens-wearhouse/",
         "projectThumbSrc": require("assets/images/morecases/2.png")
       },
       {
         "projectName": "thinkThin Helps<br>Women Shed the Guilt.",
-        "writerName": "By Megan Crossland",
-        "writerTitle": "Sr. Director of Marketing, thinkThin",
         "projectUrl": "/work/think-thin/",
         "projectThumbSrc": require("assets/images/morecases/3.png")
       },
       {
         "projectName": "Wilson Launches<br>Futuristic Ball.",
-        "writerName": "By Amy Weisenbach",
-        "writerTitle": "VP Marketing, Wilson",
         "projectUrl": "/work/wilson-x/",
         "projectThumbSrc": require("assets/images/morecases/4.png")
       }

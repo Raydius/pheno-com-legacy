@@ -4,7 +4,8 @@
    a(href='{{postUrl}}')
      span.blog-title(ng-bind-html="title | toTrusted")
    p.blog-preview(ng-bind-html="preview | toTrusted")
-   a(href='{{postUrl}}').read-moreUrl.full-article-link Read more >
+   a(href='{{postUrl}}').read-moreUrl.full-article-link
+    p.readmore(href='{{postUrl}}') Read more >
      .page-divide.end-post.col-md-12
      .col-md-12.author-container
        img.pheno-p(src=require('assets/images/blog/pheno-p.png'))

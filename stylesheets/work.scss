@@ -1,4 +1,5 @@
 .work {
+
 	&.work-landing {
 		h1 {
 			position: absolute;
@@ -165,8 +166,11 @@
 			font-size: 16px;
 		}
 		.project-detail {
+			@media screen and (max-width:640px) {
+	    margin-left: 8px;
+			}
 			float: right;
-			margin-top: 40px;
+			margin-top: 10px;
     	margin-bottom: 20px;
 			> .col-md-4 {
 				float: right;
@@ -232,44 +236,6 @@
 					&.icon-dot {
 						&:before {
 							top: 2px;
-						}
-					}
-				}
-			}
-			ul.social-icons {
-				display: none;
-				padding-left: 15px;
-				@media screen and (max-width: 640px) {
-					width: 100%;
-					margin: 10px 0 30px 0;
-				}
-				.bubble-wrapper {
-					width: 184px;
-					margin: 0 auto;
-					height: 100%;
-				}
-				li {
-					float: left;
-					margin-right: 5px;
-					@media screen and (max-width: 640px) {
-						margin-right: 11px;
-					}
-					a {
-						//border: 1px solid #ccc;
-						border-radius: 50%;
-						padding: 10px;
-						color: #333;
-						&.original-color {
-							&:hover {
-								color: #333;
-							}
-						}
-
-						&:hover {
-							color: $primary_color;
-						}
-						&:active {
-							color: #333;
 						}
 					}
 				}
@@ -456,55 +422,8 @@
 		}
 	}
 }
-.bubble
-{
-position: relative;
-width: 185px;
-height: 58px;
-padding: 20px 10px;
-background: #FFFFFF;
-border-radius: 3px;
-border: rgba(0,0,0,0.25) solid 1px;
-	@media screen and (max-width: 640px) {
-		margin-top: 30px;
-		width: 90%;
-		margin: 0 auto;
-	}
-}
 
-.bubble:after
-{
-content: '';
-position: absolute;
-border-style: solid;
-border-width: 0 10px 10px;
-border-color: #FFFFFF transparent;
-display: block;
-width: 0;
-z-index: 1;
-top: -10px;
-left: 36px;
-	@media screen and (max-width: 640px) {
-		left: 110px;
-	}
-}
 
-.bubble:before
-{
-content: '';
-position: absolute;
-border-style: solid;
-border-width: 0 10px 10px;
-border-color: rgba(0,0,0,0.25) transparent;
-display: block;
-width: 0;
-z-index: 0;
-top: -11px;
-left: 36px;
-	@media screen and (max-width: 640px) {
-		left: 110px;
-	}
-}
 .tet .col-xs-12 {
 	float: none;
 }
@@ -532,6 +451,146 @@ span.share-text {
     margin-left: 6px;
 }
 
+
+.spacer {
+	margin-top: 70%;
+	color: white;
+	opacity: 0 !important;
+}
+
+
+
+@media all and (min-width:1430px) {
+    .custom-webscroll {
+        height: 3530px !important;
+	}
+}
+@media all and (min-width:1330px) and (max-width:1430px) {
+    .custom-webscroll {
+    height: 3470px !important;
+	}
+}
+
+@media all and (min-width:1200px) and (max-width:1330px) {
+    .custom-webscroll {
+    height: 3100px !important;
+    }
+}
+
+@media all and (min-width:991px) and (max-width:1024px) {
+    .custom-webscroll {
+    height: 2530px !important;
+    }
+}
+@media (max-width: 991px) and (min-width: 880px){
+.custom-webscroll {
+    height: 2430px !important;
+    }
+}
+
+@media (max-width: 880px) and (min-width: 840px){
+.custom-webscroll {
+    height: 2140px !important;
+    }
+}
+
+@media (max-width: 840px) and (min-width: 800px){
+.custom-webscroll {
+    height: 1940px !important;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 768px){
+.custom-webscroll {
+    height: 1920px !important;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 730px){
+.custom-webscroll {
+    height: 2140px !important;
+    }
+}
+
+@media (max-width: 730px) and (min-width: 700px){
+.custom-webscroll {
+    height: 2030px !important;
+    }
+}
+
+@media (max-width: 700px) and (min-width: 668px){
+.custom-webscroll {
+    height: 1980px !important;
+    }
+}
+
+@media (max-width: 668px) and (min-width: 600px){
+.custom-webscroll {
+    height: 1960px !important;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 540px){
+.custom-webscroll {
+    height: 1790px !important;
+    }
+}
+
+@media (max-width: 540px) and (min-width: 500px){
+.custom-webscroll {
+    height: 1630px !important;
+    }
+}
+
+
+@media (max-width: 500px) and (min-width: 475px){
+.custom-webscroll {
+    height: 1480px !important;
+    }
+}
+
+@media (max-width: 475px) and (min-width: 430px){
+.custom-webscroll {
+    height: 1400px !important;
+    }
+}
+
+@media (max-width: 430px) and (min-width: 400px){
+.custom-webscroll {
+    height: 1250px !important;
+    }
+}
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
 
 
 // WEBPACK FOOTER //
