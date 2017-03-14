@@ -401,10 +401,6 @@ var copy =
             {
               "url": require("assets/images/neustar/Badge_2.jpg"),
               "alt": "Neustar Image"
-            },
-            {
-              "url": require("assets/images/neustar/Badge_1.jpg"),
-              "alt": "Neustar Image"
             }
           ]
         },
