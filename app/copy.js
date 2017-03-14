@@ -414,7 +414,7 @@ var copy =
         "imageUrl": require("assets/images/neustar/Billboard_ABC_v25.jpg"),
         "imageAlt": "Federer",
         "mainDescription": [
-        "Visually we modernized the color palette to better fit a tech company in 2016. We moved their traditional Kelly green to a more vibrant neon green. An idea inspired by the notion that Neustar can illuminate or guide businesses through the often dense world of data. Bright, accent colors helped round out the spectrum. To give the brand a sense of order in all of their communications, we designed a unique (and trademarked) Neustar grid which provides underlying structure for everything from internal emails to external sales decks.",
+        "Visually we modernized the color palette to better fit a tech company in 2016. We moved their traditional Kelly green to a more vibrant neon green. An idea inspired by the notion that Neustar can illuminate or guide businesses through the often dense world of data. Bright accent colors helped round out the spectrum. To give the brand a sense of order in all of their communications, we designed a unique (and trademarked) Neustar grid which provides underlying structure for everything from internal emails to external sales decks.",
         ]
         },
         {
@@ -423,7 +423,7 @@ var copy =
           "imageUrl": require("assets/images/neustar/Billboard_ABC_v25.jpg"),
           "imageAlt": "Federer",
           "mainDescription": [
-            "With a new brand identity and strategic position in place, we launched at Cannes through a series of targeted emails, event signage and digital display ads, all with the intent of piquing the interest of decision makers eager to evolve in the connected world."
+            "With a new brand identity and strategic position in place, we launched at Cannes through a series of targeted emails, event signage, and digital display ads, all with the intent of piquing the interest of decision makers eager to evolve in the connected world."
             //  "After a full audit of their website and competitive search patterns, we developed a content strategy structured around real problems their clients were looking to solve&#45;not necessarily just what Neustar had in their repertoire to sell. Headlines shifted to client pain points, like: Is your site currently under DDoS attack? Are your outgoing calls being ignored? Allowing us to craft the user experience around verified customer needs. We took this approach to collateral materials such as sales decks, white papers, and newsletters. Helping clients&#45;both current and potential&#45;really understand the value of Connection Science in a more tangible way.",
             //  "<span class='red'>We developed a content strategy structured around real problems their clients were looking to solve&#45;not necessarily just what Neustar had in their repertoire to sell.</span>",
             //  "Since relaunching the Neustar brand, the tech company has gone on to win new business from numerous Fortune 500 companies and in December were acquired by a private investment firm in a multi-billion-dollar deal."
