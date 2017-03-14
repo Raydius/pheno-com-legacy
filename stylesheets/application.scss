@@ -16,6 +16,9 @@ input:-moz-placeholder { /* Firefox 18- */
 
 .jFiler-item-title {
     font-weight: lighter;
+    font-weight: lighter;
+    width: 270px;
+    margin-left: -50px;
 }
 
 input::-moz-placeholder {  /* Firefox 19+ */
@@ -190,6 +193,10 @@ li.jFiler-item {
 // .jFiler-item-trash-action {
 //   background-image: url(../assets/images/delete-file.png);
 // }
+img.jFiler-item-trash-action {
+  margin-left: 10px;
+}
+
 li.trash-icon {
     position: relative;
     top: -37px;
