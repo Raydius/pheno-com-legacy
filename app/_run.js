@@ -15,10 +15,14 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
     $(document).ready(function() {
 
       // rotate job department dropdown caret when menu is open
-      $('.dropdown-toggle, .dept-caret').click(function(){
+      $('.dropdown-toggle, .ui-select-toggle, .dept-caret').click(function(){
+        $('.ui-select-search').attr('type','select')
+        $('.ui-select-search').removeClass('search')
         $('.dept-caret').toggleClass('rotate');
         $('.dropdown-menu').toggleClass('opaque');
       })
+
+      $('i.caret.pull-right').replaceWith("<img src='assets/images/uparrow.png' class='dept-caret' data-toggle='dropdown'/>")
 
         // bootstrap-enhanced alternative to a select/option menu
         $(".dropdown-menu li a").click(function(){
