@@ -152,15 +152,6 @@ angular.module('phenoCom').directive('showmore', function() {
                     $(name).toggle();
                 }, 1);
             })
-            $("body").on("tap",function(){
-                $('.bubble').css('display','none');
-            });
-            $(".share-text").on('tap',function(){
-              $('.bubble').css('display','block');
-            })
-            $(".icon-share").on('tap',function(){
-              $('.bubble').css('display','block');
-            })
         }
     };
 });

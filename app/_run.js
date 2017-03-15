@@ -29,20 +29,21 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
             var selText = $(this).text();
             $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
         });
-        // support touch for mobile when user tries to close share or detail drawer
-      $("body").on("tap",function(){
-          $('.bubble').css('display','none');
-      });
-      $(".share-text").on('tap',function(){
-        $('.bubble').css('display','block');
-      })
-      $(".icon-share").on('tap',function(){
-        $('.bubble').css('display','block');
-      })
+
 
         // check if mobile or desktop
         if ($.browser.mobile) {
             $('body').addClass('mobile');
+            // support touch for mobile when user tries to close share or detail drawer
+          $('.topcontent').on("scroll",function(){
+              $('.bubble').css('display','none');
+          });
+          // $(".share-text").on('tap',function(){
+          //   $('.bubble').css('display','block');
+          // })
+          // $(".icon-share").on('tap',function(){
+          //   $('.bubble').css('display','block');
+          // })
         }
         else {
             $('body').addClass('desktop');
