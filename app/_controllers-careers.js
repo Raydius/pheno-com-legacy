@@ -17,7 +17,10 @@ angular.module('phenoCom').controller('jobsController', function($scope, $state,
 	// use appropriate API based on current environment
 	$scope.apiUrl = envService.read('apiUrl');
 
-	$scope.genericUrl = '/careers/' + genericJobId + '/apply/';
+	// temporarily disabling generic job application page
+	//$scope.genericUrl = '/careers/' + genericJobId + '/apply/';
+
+	$scope.genericUrl = 'mailto:recruiting@phenomenon.com';
 
 	$scope.jobs = {
 		departments: []
@@ -28,6 +31,7 @@ angular.module('phenoCom').controller('jobsController', function($scope, $state,
 		url: $scope.apiUrl + '/jobs/'
 	}).then(function (response) {
 		$scope.jobs.departments = response.data;
+		console.log($scope.jobs.departments);
 	});
 
 });
@@ -113,23 +117,16 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 
 		$scope.data.title = 'General Application';
 
-		// store currently selected department ID
-		$scope.selectedDepartment = 'Select Department';
-
 		// initial loading state of 'Select Department' dropdown while waiting for Greenhouse API results
-		$scope.data.departments = [{id: 0, name: 'Loading departments...'}];
-
-		// set selected department ID when dropdown option is chosen
-		$scope.selectNewDepartment = function(departmentName) {
-			$scope.selectedDepartment = departmentName;
-		};
+		$scope.allDepartments = [{id: 0, name: 'Loading departments...'}];
 
 		// get list of departments from Greenhouse
 		$http({
 			method: 'GET',
 			url: $scope.apiUrl + '/jobs/departments/'
 		}).then(function (response) {
-			$scope.data.departments = response.data;
+			$scope.allDepartments = response.data;
+			console.log('depts', $scope.allDepartments);
 		});
 
 	}
@@ -162,7 +159,7 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 					'email': $scope.user.email,
 					'phone': $scope.user.phone,
 					'website': $scope.user.website,
-					'department': $scope.selectedDepartment,
+					//'department': $scope.selectedDepartment,
 					'linkedin': $scope.user.linkedin
 
 				});
