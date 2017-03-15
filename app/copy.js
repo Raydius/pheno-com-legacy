@@ -356,6 +356,7 @@ var copy =
       "ogDescription": "The leader in communications, security and connectivity reimagines their vision for a connected future.",
       "topDescription": [
         "For more than 20 years, Neustar has been paving the way for connectivity through real-time information, analytics and telecommunications platforms. In fact, Neustar was the pioneer of Caller ID services. However, with a fully connected future not far away &#45; and with the acquisition of numerous new services &#45; Neustar needed to update their brand vision to reflect their position as leaders of the connected world.",
+        "The first step was translating Neustar&#39;s business offerings into something B2B audiences could understand. Since the term &quot;data&quot; is overused and extremely impersonal, we developed a positioning strategy that humanized the brand."
       ],
       "topcontent": [
         {
@@ -364,7 +365,7 @@ var copy =
           "imageUrl": require("assets/images/neustar/PeoplePlacesThings.gif"),
           "imageAlt": "neustar",
           "mainDescription": [
-            'The first step was translating Neustar&#39;s business offerings into something B2B audiences could understand. Since the term &quot;data&quot; is overused and extremely impersonal, we developed a positioning strategy that humanized the brand. Focusing on making Neustar more relatable and their solutions less abstract. The phrase &quot;Connection Science&quot; was born. From there, we created a design language that was inspired by leading academic journals infused with more authentic photography to hit home the idea of "Connection Science."'
+            'Focusing on making Neustar more relatable and their solutions less abstract. The phrase &quot;Connection Science&quot; was born. From there, we created a design language that was inspired by leading academic journals infused with more authentic photography to hit home the idea of "Connection Science."'
           ]
         },
         {
