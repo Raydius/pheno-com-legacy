@@ -35,7 +35,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
         if ($.browser.mobile) {
             $('body').addClass('mobile');
             // support touch for mobile when user tries to close share or detail drawer
-          $('.topcontent').on("scroll",function(){
+          $('.topcontent').scroll(function(){
               $('.bubble').css('display','none');
           });
           // $(".share-text").on('tap',function(){

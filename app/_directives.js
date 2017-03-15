@@ -136,6 +136,19 @@ angular.module('phenoCom').directive('close', function() {
                 }
 
             })
+            $('.topcontent').click(function(event){
+
+                if($(event.target).hasClass('icon')) {
+
+                    return;
+
+                } else {
+
+                    $(name).hide();
+
+                }
+
+            })
         }
     };
 });
