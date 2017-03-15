@@ -24,15 +24,11 @@ form(name="userForm" ng-submit="submitForm()" novalidate, enctype="multipart/for
   .form-group
     input(type='text' name='etc' placeholder='Is there anything else you would like us to know?' ng-model='user.etc')
   .col-md-10.action-buttons
-    .form-group(ng-show="genericApplication")
-      .btn-group(uib-dropdown, is-open="status.isopen")
-        button.btn#dept-dropdown(uib-dropdown-toggle)
-          | {{selectedDepartment}}
-          img.dept-caret(src=require("assets/images/uparrow.png"), data-toggle='dropdown', alt="alt")
-
-        ul.dropdown-menu(uib-dropdown-menu, role="menu", aria-labelledby="dept-dropdown")
-          li(ng-repeat="department in allDepartments")
-            a(href='#' ng-bind="department.name" ng-click="selectNewDepartment(department.name)")
+    ui-select(ng-model='selected.value')
+      ui-select-match
+        span(ng-bind="$select.selected.name")
+      ui-select-choices(repeat="department in allDepartments")
+        span(ng-bind="department.name")
     .submit-attach
       .form-group
         //button.btn.btn-default.attach-res(ng-click="uploadFile()") Attach Resume

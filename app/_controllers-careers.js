@@ -117,29 +117,8 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 
 		$scope.data.title = 'General Application';
 
-		// store currently selected department ID
-		$scope.selectedDepartment = 'Select Department';
-
 		// initial loading state of 'Select Department' dropdown while waiting for Greenhouse API results
 		$scope.allDepartments = [{id: 0, name: 'Loading departments...'}];
-
-		$scope.status = { isopen: false };
-		$scope.toggled = function(open) {
-			console.log('dropdown is now: ', open);
-		};
-
-		$scope.toggleDropdown = function($event) {
-			$event.preventDefault();
-			$event.stopPropagation();
-			$scope.status.isopen = !$scope.status.isopen;
-		};
-
-		// set selected department ID when dropdown option is chosen
-		$scope.selectNewDepartment = function(departmentName) {
-			$scope.selectedDepartment = departmentName;
-			console.log('dept-select', departmentName);
-			console.log('depts', $scope.allDepartments);
-		};
 
 		// get list of departments from Greenhouse
 		$http({
@@ -180,7 +159,7 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 					'email': $scope.user.email,
 					'phone': $scope.user.phone,
 					'website': $scope.user.website,
-					'department': $scope.selectedDepartment,
+					//'department': $scope.selectedDepartment,
 					'linkedin': $scope.user.linkedin
 
 				});
