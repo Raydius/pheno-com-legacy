@@ -415,6 +415,18 @@ span.ui-select-placeholder.text-muted:hover {
 }
 
 @media (max-width:768px) {
+
+  span.btn.btn-default.form-control.ui-select-toggle {
+    border: 2px solid gainsboro;
+    border-radius: 0px;
+    height: 60px;
+    margin-left: 0px;
+    width: 270px;
+    padding: 17px;
+    box-shadow: none;
+    margin-bottom: 40px;
+}
+
   button.btn.dropdown-toggle {
     height: 60px;
   }
@@ -432,6 +444,10 @@ span.ui-select-placeholder.text-muted:hover {
 // WEBPACK FOOTER //
 // webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
 
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
 
 
 // WEBPACK FOOTER //
