@@ -111,7 +111,7 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 
 	// functionality that only applies to the generic (non-job-specific) form
 	if($scope.genericApplication) {
-		
+
 		// since we dont have a department dropdown on generic apps, we need to move the attach resume button over to the left to fill the empty space
 		$('.submit-attach').css('margin-left','50px');
 
@@ -129,6 +129,12 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 			console.log('depts', $scope.allDepartments);
 		});
 
+	}
+	if($scope.data.title != 'General Application') {
+		console.log('true')
+		// since we dont have a department dropdown on generic apps, we need to move the attach resume button over to the left to fill the empty space
+		$('.submit-attach').css('margin-left','50px');
+		$('span.btn.btn-default.form-control.ui-select-toggle').addClass('hidden')
 	}
 
 	// LinkedIn integration

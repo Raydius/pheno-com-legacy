@@ -19,6 +19,7 @@ input:-moz-placeholder { /* Firefox 18- */
     font-weight: lighter;
     width: 270px;
     margin-left: -50px;
+    color: #333333;
 }
 
 input::-moz-placeholder {  /* Firefox 19+ */
@@ -414,6 +415,53 @@ span.ui-select-placeholder.text-muted:hover {
     color: #373737;
 }
 
+@media screen and (max-width:376px) {
+
+  li.trash-icon {
+    position: relative;
+    top: 66px;
+    width: 25px;
+    left: -24px;
+    z-index: 2;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.jFiler-item-title {
+    font-weight: lighter;
+    font-weight: lighter;
+    width: 270px;
+    margin-left: -50px;
+    position: absolute;
+    top: 100px;
+    left: -47px;
+    padding-left: 30px !important;
+    padding-right: 20px;
+    color: #333333;
+}
+
+  .submit-app {
+    font-size: 16px !important;
+    width: 200px !important;
+    height: 60px !important;
+    display: flex;
+    justify-content: center;
+    padding: 2px !important;
+    margin-left: 15px;
+    }
+
+  .job-title {
+	    font-family: "Tiempose-Semibold";
+	    font-size: 50px !important;
+	    margin-bottom: 40px;
+	    color: black;
+	    display: flex;
+	    text-align: left;
+	    padding-right: 30px;
+	    padding-left: 10px;
+	}
+}
+
 @media (max-width:768px) {
 
   span.btn.btn-default.form-control.ui-select-toggle {
@@ -444,6 +492,18 @@ span.ui-select-placeholder.text-muted:hover {
 // WEBPACK FOOTER //
 // webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
 
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
 
 
 // WEBPACK FOOTER //

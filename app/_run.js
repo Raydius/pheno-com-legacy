@@ -38,12 +38,10 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
           $('.topcontent').scroll(function(){
               $('.bubble').css('display','none');
           });
-          // $(".share-text").on('tap',function(){
-          //   $('.bubble').css('display','block');
-          // })
-          // $(".icon-share").on('tap',function(){
-          //   $('.bubble').css('display','block');
-          // })
+          // on iphone 5 the form placeholder is too long, so we change it by a couple words to make it fit
+          $('.anything').attr('placeholder','Anything else you would like us to know?')
+          // hide the jobs quote from Amy Weisenbach
+          $('.jobs-blockquote, .quoter-holder').css('display','none')
         }
         else {
             $('body').addClass('desktop');
