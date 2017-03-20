@@ -92,6 +92,8 @@ angular.module('phenoCom').controller('jobController', function($scope, $statePa
  */
 angular.module('phenoCom').controller('jobApplicationController', function($scope, $state, $stateParams, $location, $http) {
 
+
+
 	/**
 	 * We use $scope.disableSubmit as a flag variable instead of HTML button disable to indicate whether the form
 	 * can be submit or not because it plays better with the validation functions we use that override normal
@@ -130,12 +132,8 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 		});
 
 	}
-	if($scope.data.title != 'General Application') {
-		console.log('true')
-		// since we dont have a department dropdown on generic apps, we need to move the attach resume button over to the left to fill the empty space
-		$('.submit-attach').css('margin-left','50px');
-		$('span.btn.btn-default.form-control.ui-select-toggle').addClass('hidden')
-	}
+
+
 
 	// LinkedIn integration
 	/*
