@@ -22,7 +22,7 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
           $('.dropdown-menu').toggleClass('opaque');
       })
       // replace default ui-select carat
-      $('i.caret.pull-right').replaceWith("<img src='assets/images/uparrow.png' class='dept-caret' data-toggle='dropdown'/>")
+      $('i.caret.pull-right').replaceWith("<img src='https://s3.amazonaws.com/stream.phenomenon.com/pheno-com/icons/uparrow.png' class='dept-caret' data-toggle='dropdown'/>")
 
         // bootstrap-enhanced alternative to a select/option menu
         $(".dropdown-menu li a").click(function(){
