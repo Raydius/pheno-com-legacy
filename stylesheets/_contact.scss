@@ -1,10 +1,11 @@
 // Contact Page custom styles
 
-  h1 {
+h1 {
     position: absolute;
     text-indent: -9999em;
-  }
-  .contact-wrppaer {
+}
+
+.contact-wrppaer {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -12,194 +13,208 @@
       width: 100%;
       margin: $fix_header_height auto;
     } */
-  }
-  .top-main {
+}
+
+.top-main {
     border-bottom: 0;
+
     h2 blockquote {
-      font-size: 52px;
+        font-size: 52px;
     }
-  }
-  .col-md-6 {
+}
+
+.col-md-6 {
     margin-top: $base_spacing - 20;
+
     &:first-of-type {
-      @media screen and (max-width: 640px) {
-        margin-top: 0;
-      }
+        @media screen and (max-width: 640px) {
+            margin-top: 0;
+        }
     }
     @media screen and (max-width: 1024px) and (min-width: 640px) {
-      padding-left: 0;
-      &:last-of-type {
-        padding-left: 15px;
-      }
+        padding-left: 0;
+
+        &:last-of-type {
+            padding-left: 15px;
+        }
     }
     @media screen and (max-width: 640px) {
-      padding: 0;
+        padding: 0;
     }
+}
 
-  }
-  .col-md-4 {
+.col-md-4 {
     @media screen and (max-width: 769px) and (min-width: 640px) {
-      padding-right: 10px!important;
-      padding-left: 10px!important;
+        padding-right: 10px !important;
+        padding-left: 10px !important;
     }
-  }
-  figure {
+}
+
+figure {
     background: #f2f2f2;
     text-align: center;
     padding-bottom: $base_spacing - 36;
-    h3 {
-      font-size: 26px;
-      font-family: $secondary_font;
-      margin: ($base_spacing - 36) 0 ($base_spacing - 40);
-      color: $gray_font;
-    }
-  }
-  ul {
-    padding: 0;
-    li {
-      font-size: 14px;
-      display: block;
-      line-height: 20px;
-      font-family: $primary_font;
-      a {
-        color: #333;
-        &:hover {
-          color: $primary_color;
-        }
-      }
-    }
-  }
-  .contactbiz {
 
+    h3 {
+        font-size: 26px;
+        font-family: $secondary_font;
+        margin: ($base_spacing - 36) 0 ($base_spacing - 40);
+        color: $gray_font;
+    }
+}
+
+ul {
+    padding: 0;
+
+    li {
+        font-size: 14px;
+        display: block;
+        line-height: 20px;
+        font-family: $primary_font;
+
+        a {
+            color: #333;
+
+            &:hover {
+                color: $primary_color;
+            }
+        }
+    }
+}
+
+.contactbiz {
     text-align: center;
     margin-top: $base_spacing + 40;
     padding-bottom: $base_spacing*3;
-
     /* @media (max-width: 768px) {
       .col-sm-4 {
         width: calc(33.33333% - 10px);
       }
     } */
-
     h4 {
-      color: $gray_font;
-      font-family: $secondary_font;
-      font-size: 24px;
-      margin-bottom: $base_spacing - 40;
+        color: $gray_font;
+        font-family: $secondary_font;
+        font-size: 24px;
+        margin-bottom: $base_spacing - 40;
     }
+
     hr {
-      width: 15%;
-      height: 5px;
-      border-top: 1px solid #ccc;
-      margin: 24px auto;
+        width: 15%;
+        height: 5px;
+        border-top: 1px solid #ccc;
+        margin: 24px auto;
     }
+
     span {
-      display: block;
-      font-family: $primary_font;
-      font-size: 14px;
-      max-width: 220px;
-      margin: 0 auto;
+        display: block;
+        font-family: $primary_font;
+        font-size: 14px;
+        max-width: 220px;
+        margin: 0 auto;
     }
+
     a {
-      color: $primary_color;
+        color: $primary_color;
     }
+}
 
-  }
-
-  &.thank-you{
+&.thank-you {
     padding: 0 ($base_spacing/4);
-  }
+}
 
-  h2{
+h2 {
     margin: ($base_spacing/2) 0;
-  }
+}
 
-  input[type="text"], input[type="email"], .input-file{
-    margin: ($base_spacing/2) 0 ;
-  }
+.input-file,
+input[type="email"],
+input[type="text"] {
+    margin: ($base_spacing/2) 0;
+}
 
-  .button-wrapper{
+.button-wrapper {
     text-align: center;
-  }
+}
 
-  h4{
+h4 {
     color: $primary_color;
-  }
+}
 
-  .form-group .help-block.with-errors {
+.form-group .help-block.with-errors {
     font-size: 12px;
     text-transform: capitalize;
     color: #e1523d;
-  }
+}
 
-  .form-group .help-block {
+.form-group .help-block {
     margin-bottom: 0;
-  }
+}
 
-  .has-error input.form-control, .contact .has-error textarea.form-control, .contact .has-error select.form-control, .contact .has-error .btn-default.form-control {
+.contact .has-error .btn-default.form-control,
+.contact .has-error select.form-control,
+.contact .has-error textarea.form-control,
+.has-error input.form-control {
     border: 1px solid #eb8d7f;
     outline: 1px solid #eb8d7f;
-  }
-
-  /* .btn-default.focus, .contact .btn-default:focus {
+}
+/* .btn-default.focus, .contact .btn-default:focus {
     background: white;*/
-
-  input[type="file"]{
-    + label{
-      margin-bottom: ($base_spacing/2);
+input[type="file"] {
+    + label {
+        margin-bottom: ($base_spacing/2);
     }
-  }
+}
 
-  .input-file{
-    label{
-      padding-top: 30px;
-      min-width: 214px;
+.input-file {
+    label {
+        padding-top: 30px;
+        min-width: 214px;
     }
-    h4{
-      margin-bottom: -20px;
-    }
-  }
 
-  form{
+    h4 {
+        margin-bottom: -20px;
+    }
+}
+
+form {
     padding-bottom: ($base_spacing/2);
-  }
-
-
-.help-block{
-  position: absolute;
-  top: 100%;
-  left: 15px;
-  right: 15px;
-  margin-top: -5px;
-  padding: 0;
-  line-height: 1;
-  color: transparent;
-  @include transition(color .15s ease-in-out);
-
-  @extend .extend-icon;
-  @extend .icon-error;
-  &:before{
-    display: inline;
-    float: left;
-    padding-right: 5px;
-  }
 }
 
-.has-error .help-block, .ng-invalid .button-wrapper .help-block{
-  color: $primary_color;
-}
+.help-block {
+    position: absolute;
+    top: 100%;
+    left: 15px;
+    right: 15px;
+    margin-top: -5px;
+    padding: 0;
+    line-height: 1;
+    color: transparent;
+    @include transition(color .15s ease-in-out);
+    @extend .extend-icon;
+    @extend .icon-error;
 
-
-.form-group{
-  position: relative;
-
-  &.button-wrapper{
-    .help-block{
-      margin: 0;
-      left: 0;
-      right: 0;
-      padding: 10px 0;
-      text-align: left;
+    &:before {
+        display: inline;
+        float: left;
+        padding-right: 5px;
     }
-  }
+}
+
+.has-error .help-block,
+.ng-invalid .button-wrapper .help-block {
+    color: $primary_color;
+}
+
+.form-group {
+    position: relative;
+
+    &.button-wrapper {
+        .help-block {
+            margin: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 0;
+            text-align: left;
+        }
+    }
 }
