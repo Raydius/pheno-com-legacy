@@ -16,8 +16,8 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
 
       // rotate job department dropdown caret when menu is open
       $('.dropdown-toggle, .ui-select-toggle, .dept-caret').click(function(){
-          $('.ui-select-search').attr('type','select')
-          $('.ui-select-search').removeClass('search')
+          $('.ui-select-search').attr('type','select');
+          $('.ui-select-search').removeClass('search');
           $('.dept-caret').toggleClass('rotate');
           $('.dropdown-menu').toggleClass('opaque');
       })
