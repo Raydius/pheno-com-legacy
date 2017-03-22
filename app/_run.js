@@ -14,40 +14,31 @@ angular.module('phenoCom').run(function($rootScope, $window, $location, $anchorS
     // events that occur after the page has completely loaded
     $(document).ready(function() {
 
-      // rotate job department dropdown caret when menu is open
-      $('.dropdown-toggle, .ui-select-toggle, .dept-caret').click(function(){
-          $('.ui-select-search').attr('type','select');
-          $('.ui-select-search').removeClass('search');
-          $('.dept-caret').toggleClass('rotate');
-          $('.dropdown-menu').toggleClass('opaque');
-      })
-      // replace default ui-select carat
-      $('i.caret.pull-right').replaceWith("<img src='https://s3.amazonaws.com/stream.phenomenon.com/pheno-com/icons/uparrow.png' class='dept-caret' data-toggle='dropdown'/>")
 
-        // bootstrap-enhanced alternative to a select/option menu
-        $(".dropdown-menu li a").click(function(){
-            var selText = $(this).text();
-            $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
-        });
+		// bootstrap-enhanced alternative to a select/option menu
+		$(".dropdown-menu li a").click(function(){
+			var selText = $(this).text();
+			$(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+		});
 
 
-        // check if mobile or desktop
-        if ($.browser.mobile) {
-            $('body').addClass('mobile');
-            // support touch for mobile when user tries to close share or detail drawer
-          $('.topcontent').scroll(function(){
-              $('.bubble').css('display','none');
-          });
-          // on iphone 5 the form placeholder is too long, so we change it by a couple words to make it fit
-          $('.anything').attr('placeholder','Anything else you would like us to know?')
-          // hide the jobs quote from Amy Weisenbach
-          $('.jobs-blockquote, .quoter-holder').css('display','none')
-        }
-        else {
-            $('body').addClass('desktop');
-        }
+		// check if mobile or desktop
+		if ($.browser.mobile) {
+			$('body').addClass('mobile');
+			// support touch for mobile when user tries to close share or detail drawer
+			$('.topcontent').scroll(function(){
+				$('.bubble').css('display','none');
+			});
+			// on iphone 5 the form placeholder is too long, so we change it by a couple words to make it fit
+			$('.anything').attr('placeholder','Anything else you would like us to know?')
+			// hide the jobs quote from Amy Weisenbach
+			$('.jobs-blockquote, .quoter-holder').css('display','none')
+		}
+		else {
+			$('body').addClass('desktop');
+		}
 
-    });
+	});
 
     // events that occur if the browser is resized
     $(window).resize(function(){
