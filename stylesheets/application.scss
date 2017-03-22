@@ -421,6 +421,23 @@ span.ui-select-placeholder.text-muted:hover {
 
 @media screen and (max-width:376px) {
 
+  .open > .dropdown-menu {
+    display: block;
+    width: 270px;
+    border-radius: 0px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-left: 0px;
+    margin-top: -40px;
+    border-left: 2px solid #dcdada;
+    border-right: 2px solid #dcdada;
+    box-shadow: none;
+    border-bottom: 2px solid #dcdada;
+    border-top: none;
+    transition: all .5s;
+    opacity: 0;
+}
+
   li.trash-icon {
     position: relative;
     top: 66px;
@@ -560,6 +577,11 @@ span.ui-select-placeholder.text-muted:hover {
 
 // WEBPACK FOOTER //
 // webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
 
 
 // WEBPACK FOOTER //
