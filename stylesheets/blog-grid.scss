@@ -32,7 +32,7 @@ span.full-image-block.ssNonEditable {
 
 p.now {
   margin-top  : -6px!important;
-  margin-left : 92px!important;
+  margin-left : 90px!important;
   font-size   : 14px;
 }
 
@@ -175,18 +175,27 @@ p.now {
        and (min-device-width : 320px)
        and (max-device-width : 375px) {
   p.now {
-    margin-top  : -2.85em !important;
+    margin-top  : -2.80em !important;
     margin-left : 108px !important;
     padding-top : 13px;
   }
 }
-
-@media (min-width:320px)
-       and (max-width : 400px) {
-  .container.blog-container {
-    margin-left   : -9px;
+@media (min-width:400px) and (max-width:401px) {
+    .container.blog-container {
+/*     margin-left   : -9px; */
     padding-right : 0;
     padding-left  : 0;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width:320px)
+       and (max-width : 399px) {
+  .container.blog-container {
+/*     margin-left   : -9px; */
+    padding-right : 0;
+    padding-left  : 0;
+    margin-top: 15px;
   }
 
   .row-blog {
@@ -343,3 +352,20 @@ input.subscribe-input {
     padding : 0.25rem;
   }
 }
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss

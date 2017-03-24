@@ -63,9 +63,6 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
 		background: $pheno-p;
 		background-color: transparent;
 		background-repeat: no-repeat;
-		&.blog-post-p {
-			margin-left: 10px !important;
-		}
 	}
 	label.icon-share.blog-share {
 		margin-top: 40px !important;
@@ -582,6 +579,33 @@ a {
 		margin-bottom: 80px;
 	}
 }
+
+@media (min-width:320px) and (max-width:375px){
+
+.pageDivide.col-md-12 {
+    width: 102.5% !important;
+    color: black;
+    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-top: 244px !important;
+    margin-bottom: -30px !important;
+	}
+}
+
+
+@media (min-width:401) and (max-width: 664px) {
+
+
+.pageDivide.col-md-12 {
+	width: 102.5% !important;
+	color: $black;
+	border-bottom: 1px solid $color_celeste_approx;
+	border-bottom: 1px solid $color_celeste_approx;
+	margin-top: 244px !important;
+    margin-bottom: -30px !important;
+	}
+}
+
 @media(max-width: 664px) {
 	.date {
 		display: flex;
@@ -596,14 +620,7 @@ h2.phno-now {
 	font-size: 65px;
 	font-weight: 800;
 }
-.pageDivide.col-md-12 {
-	width: 102.5% !important;
-	color: $black;
-	border-bottom: 1px solid $color_celeste_approx;
-	border-bottom: 1px solid $color_celeste_approx;
-	margin-top: 224px !important;
-    margin-bottom: -30px !important;
-}
+
 .share-text:hover {
 	cursor: pointer;
 }
@@ -722,8 +739,6 @@ article {
 	}
 	&.col-md-4.blog-column {
 		> img {
-
-			box-shadow: 3px 3px 7px $color_pink_swan_approx;
 		}
 		> a > img {
 			width: 95%;
@@ -754,10 +769,15 @@ img {
 				animation-name: spin;
 				animation-timing-function: linear;
 			}
+			
+		 @media (min-width:320px) and (max-width:376px) {
+			  margin-left: 20px !important;
+		 }
+  
 		}
 	}
 	&.blog-image {
-		box-shadow: 1px 3px 9px;
+/* 		box-shadow: 1px 3px 9px; */
 	}
 }
 .contact-section {
@@ -823,9 +843,6 @@ img {
 		background: $pheno-p;
 		background-color: transparent;
 		background-repeat: no-repeat;
-		&.blog-post-p {
-			margin-left: 10px !important;
-		}
 	}
 	label.icon-share.blog-share {
 		margin-top: 40px !important;
@@ -849,7 +866,7 @@ img {
  .post-title {
     color: black;
     font-family: "Tiempose-Semibold";
-    font-size: 45px;
+    font-size: 45px !important;
     margin-top: 10px;
     padding-right: 20px;
 }
@@ -859,7 +876,7 @@ img {
 		padding-left: 15px;
 	}
 	img.pheno-p.blog-post-p {
-		margin-left: 15px !important;
+		margin-left: -5px !important;
 	}
 }
 p {
@@ -924,7 +941,7 @@ a {
 	}
 }
 .blog-author {
-	margin-top: 10px;
+	margin-top: 20px;
 	color: $black;
 	font-family: $bold_font;
 	font-size: 18px;
@@ -1039,18 +1056,29 @@ a {
 	}
 	.col-md-12.author-container {
 		display: flex;
-		width: 80%;
+		width: 80% !important;
 		height: 95px;
 		margin-top: 20px;
-		margin-left: 10px;
-		border-bottom: 5px solid $black;
+		margin-left: 10px !important;
+		border-bottom: 5px solid black;
 	}
 	.page-divide.end-post.col-md-12 {
-		width: 80%;
-		margin-top: 40px;
-		margin-left: 10px;
-		border-bottom: 1px solid $color_celeste_approx;
+			width: 80% !important;
+			margin-top: 40px;
+			margin-left: 10px !important;
+			border-bottom: 1px solid #ccc;
+		
 	}
+
+	.pageDivide.col-md-12 {
+    width: 102.5% !important;
+    color: black;
+    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-top: 174px !important;
+    margin-bottom: -30px !important;
+}
+
 	a.read-moreUrl.full-article-link {
 		display: block;
 		margin-top: 30px;
@@ -1162,18 +1190,18 @@ a {
 		}
 	}
 	.page-divide.end-post.col-md-12 {
-		width: 110%;
-		margin-top: 40px;
-		margin-left: -43px;
+	width: 80% !important;
+    margin-top: 40px;
+    margin-left: 10px !important;
+    border-bottom: 1px solid #ccc;
 	}
 	.col-md-12.author-container {
-		display: flex;
-		width: 120%;
-		height: 90px;
-		margin-top: 20px;
-		margin-left: -42px;
-		padding-left: 41px;
-		border-bottom: 5px solid $black;
+	display: flex;
+    width: 80% !important;
+    height: 95px;
+    margin-top: 20px;
+    margin-left: 10px !important;
+    border-bottom: 5px solid black;
 	}
 	article.col-md-4.blog-column {
 		height: 100%;
@@ -1428,6 +1456,54 @@ ul.blog-action-list {
 // WEBPACK FOOTER //
 // webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
 
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
 
 
 // WEBPACK FOOTER //
