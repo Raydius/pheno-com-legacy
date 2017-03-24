@@ -409,6 +409,9 @@ h3.perks {
 blockquote.jobs-blockquote {
 		display   : inline-block;
 		font-size : 30px;
+		@media (max-width: 400px) {
+			display   : none;
+		}
 }
 
 figure.job-figure {
@@ -421,6 +424,9 @@ figure.job-figure {
 
 .quoter-holder {
 		margin-top : -10px;
+		@media (max-width: 400px) {
+			display   : none;
+		}
 }
 
 article.col-xs-7.col-sm-7.col-md-17.col-sm-offset-0.no-padding.jobs-container {
