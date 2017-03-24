@@ -303,6 +303,10 @@ $url_1: url("../assets/images/uparrow.png");
             margin-left: 15px;
         }
 
+        @media(max-width:375px) {
+            margin-left:20px;
+        }
+
         &:hover {}
     }
 
