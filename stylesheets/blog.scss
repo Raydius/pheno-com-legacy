@@ -75,6 +75,8 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
 		padding: 0;
 	}
 }
+
+
 @media all and(max-width : 400px) {
 	.date {
 		display: flex;
@@ -95,7 +97,7 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
 		padding-left: 15px;
 	}
 	img.pheno-p.blog-post-p {
-		margin-left: 15px !important;
+/* 		margin-left: 15px !important; */
 	}
 }
 p {
@@ -801,7 +803,7 @@ img {
 			}
 			
 		 @media (min-width:320px) and (max-width:376px) {
-			  margin-left: 20px !important;
+			  margin-left: -30px !important;
 		 }
   
 		}
@@ -885,7 +887,14 @@ img {
 		padding: 0;
 	}
 }
-@media all and(max-width : 400px) {
+
+@media (min-width:376px) and (max-width:400px){
+		img.pheno-p.blog-post-p {
+		margin-left: -35px !important;
+	}
+}
+
+@media all and (max-width : 400px) {
 	.date {
 		display: flex;
 		margin-top: 25px;
@@ -904,9 +913,6 @@ img {
 		margin-top: 40px;
 		padding-right: 15px;
 		padding-left: 15px;
-	}
-	img.pheno-p.blog-post-p {
-		margin-left: -5px;
 	}
 }
 p {
@@ -1486,6 +1492,30 @@ ul.blog-action-list {
 // WEBPACK FOOTER //
 // webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
 
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
 
 
 // WEBPACK FOOTER //
