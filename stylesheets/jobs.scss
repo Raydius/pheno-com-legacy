@@ -410,7 +410,7 @@ blockquote.jobs-blockquote {
 		display   : inline-block;
 		font-size : 30px;
 		@media (max-width: 400px) {
-			display   : none;
+			display   : none !important;
 		}
 }
 
@@ -425,7 +425,7 @@ figure.job-figure {
 .quoter-holder {
 		margin-top : -10px;
 		@media (max-width: 400px) {
-			display   : none;
+			display   : none !important;
 		}
 }
 
@@ -551,3 +551,8 @@ article.col-xs-7.col-sm-7.col-md-17.col-sm-offset-0.no-padding.jobs-container {
 		margin-bottom : 30px;
 		font-family   : 'circular-book';
 }
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/jobs.scss
