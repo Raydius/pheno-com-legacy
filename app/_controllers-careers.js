@@ -162,7 +162,8 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 					'phone': $scope.user.phone,
 					'website': $scope.user.website,
 					//'department': $scope.selectedDepartment,
-					'linkedin': $scope.user.linkedin
+					'linkedin': $scope.user.linkedin,
+					'etc': $scope.user.etc
 
 				});
 
