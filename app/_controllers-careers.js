@@ -17,10 +17,8 @@ angular.module('phenoCom').controller('jobsController', function($scope, $state,
 	// use appropriate API based on current environment
 	$scope.apiUrl = envService.read('apiUrl');
 
-	// temporarily disabling generic job application page
-	//$scope.genericUrl = '/careers/' + genericJobId + '/apply/';
-
-	$scope.genericUrl = 'mailto:recruiting@phenomenon.com';
+	// generate URL from generic job application
+	$scope.genericUrl = '/careers/' + genericJobId + '/apply/';
 
 	$scope.jobs = {
 		departments: []
