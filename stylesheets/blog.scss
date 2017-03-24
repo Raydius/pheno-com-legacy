@@ -220,13 +220,13 @@ a {
 		justify-content: space-around;
 	}
 }
-@media screen and(max-width : 376px) {
+@media screen and (max-width : 376px) {
 	.phno-logo {
 		width: 90px;
 		margin-left: 15px;
 	}
 	h2.phno-now {
-		margin-top: 6px;
+		margin-top: 29px !important;
 		margin-left: 5px;
 		padding-right: 20px;
 		font-family: $primary_font;
@@ -254,7 +254,7 @@ a {
 	p {
 		&.tagline {
 			display: flex;
-			width: 180px;
+			width: 180px !important;
 			margin-top: 10%;
 			margin-left: 5%;
 			padding-right: 10px;
@@ -267,7 +267,7 @@ a {
 		&.tip {
 			display: block;
 			margin-top: 20px !important;
-			margin-bottom: -26px !important;
+			margin-bottom: 0px !important;
 			margin-left: 5% !important;
 			font-size: 13px;
 		}
@@ -601,6 +601,8 @@ h2.phno-now {
 	color: $black;
 	border-bottom: 1px solid $color_celeste_approx;
 	border-bottom: 1px solid $color_celeste_approx;
+	margin-top: 224px !important;
+    margin-bottom: -30px !important;
 }
 .share-text:hover {
 	cursor: pointer;
@@ -745,7 +747,7 @@ img {
 		background-color: transparent;
 		background-repeat: no-repeat;
 		&.blog-post-p {
-			margin-left: -10px;
+			margin-left: 0px;
 			&:hover {
 				animation-duration: 4000ms;
 				animation-iteration-count: infinite;
@@ -763,11 +765,11 @@ img {
 	float: right;
 }
 .date {
-	margin-left: 10px;
-	margin-top: -15px;
-	display: flex;
-	margin-bottom: 15px;
-	color: $color_suva_gray_approx;
+    margin-left: 10px;
+    margin-top: 150px;
+    display: flex;
+    margin-bottom: 15px;
+    color: #868484;
 }
 @media all and(min-width : 1200px) {
 	.col-md-12.author-container {
@@ -782,6 +784,8 @@ img {
 .blog-share-text {
 	position: absolute;
 	margin-top: 1.7px;
+	margin-left: 5px;
+
 }
 @media all and (max-width : 640px) {
 	.blog-share-text {
@@ -811,7 +815,7 @@ img {
 		width: 60px;
 		height: 60px;
 		margin-right: 20px;
-		margin-left: -10px;
+		margin-left: 20px;
 		border: none;
 		border-color: $white;
 		border-width: 0;
@@ -842,12 +846,13 @@ img {
 		padding-left: 10px;
 		color: $color_suva_gray_approx;
 	}
-	.post-title {
-		padding-left: 15px;
-		color: $black;
-		font-family: $secondary_font;
-		font-size: 50px;
-	}
+ .post-title {
+    color: black;
+    font-family: "Tiempose-Semibold";
+    font-size: 45px;
+    margin-top: 10px;
+    padding-right: 20px;
+}
 	.blog-content {
 		margin-top: 40px;
 		padding-right: 15px;
@@ -880,6 +885,10 @@ p {
 	&.readmore {
 		color: $color_cardinal_approx;
 		font-size: inherit;
+
+    @media (min-width:500px) and (max-width:768px) {
+            margin: 0px 0 20px 15px;
+        }
 	}
 	&.blog-preview {
 		display: table-cell;
@@ -1414,6 +1423,31 @@ ul.blog-action-list {
 }
 }
 
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
 
 
 // WEBPACK FOOTER //
