@@ -21,6 +21,8 @@ $font_4: "circular-bold";
 $url_0: url("../assets/images/delete-file.png");
 $url_1: url("../assets/images/uparrow.png");
 .application-form {
+
+
     img {
         &.linkedIn-link {
             width: 30%;
@@ -113,6 +115,10 @@ $url_1: url("../assets/images/uparrow.png");
     .ui-select-search {
         display: none;
     }
+
+    .ui-select-focusser {
+    display: none;
+}
 
     span {
         &.fill-it {
@@ -1080,6 +1086,10 @@ $url_1: url("../assets/images/uparrow.png");
 //     }
 // }
 
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
 
 
 // WEBPACK FOOTER //
