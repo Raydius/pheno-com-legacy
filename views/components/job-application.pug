@@ -22,7 +22,7 @@
     .form-group
       input(type='text' name='linkedin' placeholder='LinkedIn Profile' ng-model='user.linkedin')
     .form-group
-      input.anything(type='text' name='etc' placeholder='Is there anything else you would like us to know?' ng-model='user.etc')
+      input.anything(type='text' name='etc' placeholder='Anything else you would like us to know?' ng-model='user.etc')
     .col-md-10.action-buttons
       ui-select(ng-model='selected.value',  search-enabled='false', ng-show="{{genericApplication}}")
         ui-select-match#dept-dropdown(placeholder="Select Department") {{$select.selected.name}}
