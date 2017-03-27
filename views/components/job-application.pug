@@ -31,7 +31,6 @@
       .submit-attach
         .form-group
           //button.btn.btn-default.attach-res(ng-click="uploadFile()") Attach Resume
-          input(name="resume", type="file", file-upload="resume", multiple, accept=".txt,application/zip,application/msword,application/pdf")
-          .max-file-size Max 10mb.
+          input(name="resume", type="file", file-upload="resume", accept="text/plain,application/zip,application/msword,application/pdf,image/jpeg,image/png")
     hr.job-hr
     input.apply-now.submit-app( type='submit', ng-value="submitText", ng-disabled="disableSubmit")
