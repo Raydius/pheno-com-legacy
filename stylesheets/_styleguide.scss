@@ -105,20 +105,22 @@ input[type="text"], input[type="email"]{
 }
 
 button, input[type="submit"], input[type="reset"]{
-	height: 92px;
-	font-size: 26px;
-	line-height: 1;
-	text-align: center;
-	background-color: $light_gray_color;
-	padding: ($base_spacing/2) 0;
-	color: $gray_font;
-	max-width: 339px;
-	width: 100%;
-/*     border: 2px solid #dcdada; */
+	    height: 92px;
+    font-size: 26px;
+    line-height: 1;
+    background-color: #F2F2F2;
+    padding: 20px 20px;
+    color: #333;
+    text-align: center;
+    max-width: 339px;
+    width: 100%;
+    /* border: 2px solid #dcdada; */
     outline: none;
-	font-weight: bold;
-	@include transition(background-color .15s ease-in-out, color .15s ease-in-out);
-
+    font-weight: bold;
+    -moz-transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    -o-transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    -webkit-transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 	&:hover{
 		background-color: #f2f2f2;;
 		color: inherit;
@@ -171,6 +173,10 @@ ul li {
    color: $gray_font;  
    font-weight: bold;
 }
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_styleguide.scss
 
 
 // WEBPACK FOOTER //

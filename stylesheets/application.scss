@@ -1,16 +1,16 @@
 //colors
-$color_bon_jour_approx: #e2e2e2;
+$color_bon_jour: #e2e2e2;
 $black: black;
-$color_alto_approx: #dcdada;
-$color_mine_shaft_approx: #333333;
-$color_mountain_mist_approx: #979797;
-$color_cardinal_approx: #cc2128;
+$color_alto: #dcdada;
+$color_mine_shaft: #333333;
+$color_mountain_mist: #979797;
+$color_cardinal: #cc2128;
 $white: white;
 $black_12_5: rgba(0, 0, 0, 0.125);
 $concrete: #f2f2f2;
-$color_gallery_approx: #eee;
+$color_gallery: #eee;
 $black_0: hsla(0, 0%, 0%, 0.00);
-$color_tuatara_approx: #373737;
+$color_tuatara: #373737;
 //fonts
 $font_0: "Tiempose-Semibold";
 $font_1: "circular-book";
@@ -21,7 +21,6 @@ $font_4: "circular-bold";
 $url_0: url("../assets/images/delete-file.png");
 $url_1: url("../assets/images/uparrow.png");
 .application-form {
-
 
     img {
         &.linkedIn-link {
@@ -39,18 +38,18 @@ $url_1: url("../assets/images/uparrow.png");
     }
 
     input::-webkit-input-placeholder {
-        color: $color_mountain_mist_approx;
+        color: $color_mountain_mist;
         font-size: 14px;
     }
 
     input {
         &:-moz-placeholder {
-            color: $color_mountain_mist_approx;
+            color: $color_mountain_mist;
             font-size: 14px;
         }
 
         &:-ms-input-placeholder {
-            color: $color_mountain_mist_approx;
+            color: $color_mountain_mist;
             font-size: 14px;
         }
 
@@ -59,7 +58,7 @@ $url_1: url("../assets/images/uparrow.png");
         }
 
         &.form-control.ui-select-search {
-            border: 2px solid $color_alto_approx;
+            border: 2px solid $color_alto;
             border-radius: 0;
             height: 60px;
             margin-left: -15px;
@@ -83,11 +82,11 @@ $url_1: url("../assets/images/uparrow.png");
         font-weight: lighter;
         width: 270px;
         margin-left: -50px;
-        color: $color_mine_shaft_approx;
+        color: $color_mine_shaft;
     }
 
     input::-moz-placeholder {
-        color: $color_mountain_mist_approx;
+        color: $color_mountain_mist;
         font-size: 14px;
     }
 
@@ -98,12 +97,12 @@ $url_1: url("../assets/images/uparrow.png");
 
     a {
         &.jFiler-input-choose-btn {
-            color: $color_mine_shaft_approx;
+            color: $color_mine_shaft;
             font-family: $font_2;
             font-weight: lighter;
 
             &:hover {
-                color: $color_mine_shaft_approx !important;
+                color: $color_mine_shaft !important;
             }
         }
 
@@ -118,7 +117,17 @@ $url_1: url("../assets/images/uparrow.png");
 
     .ui-select-focusser {
     display: none;
-}
+    }
+
+    .max-file-size {
+    padding: 10px 0px 0px 20px;
+    color: #979797;
+
+    @media (max-width:414px) {
+    padding: 10px 0px 0px 20px;
+    color: #979797;
+      }
+    }
 
     span {
         &.fill-it {
@@ -133,14 +142,14 @@ $url_1: url("../assets/images/uparrow.png");
 
         &.text-muted {
             font-size: 16px;
-            color: $color_mine_shaft_approx;
+            color: $color_mine_shaft;
             margin-left: -48px;
             font-family: $bold_font;
         }
 
         &.ng-binding {
             &:hover {
-                color: $color_cardinal_approx;
+                color: $color_cardinal;
                 cursor: pointer;
             }
 
@@ -150,7 +159,7 @@ $url_1: url("../assets/images/uparrow.png");
         }
 
         &.btn.btn-default.form-control.ui-select-toggle {
-            border: 2px solid $color_alto_approx;
+            border: 2px solid $color_alto;
             border-radius: 0;
             height: 60px;
             margin-left: -15px;
@@ -164,7 +173,7 @@ $url_1: url("../assets/images/uparrow.png");
         }
 
         &.ui-select-placeholder.text-muted:hover {
-            color: $color_tuatara_approx;
+            color: $color_tuatara;
         }
     }
 
@@ -181,7 +190,7 @@ $url_1: url("../assets/images/uparrow.png");
 
     // jfiler styles
     .jFiler-item:hover {
-        color: $color_mine_shaft_approx;
+        color: $color_mine_shaft;
     }
 
     li {
@@ -252,7 +261,7 @@ $url_1: url("../assets/images/uparrow.png");
             text-align: left;
             padding-left: 35px;
             margin: 0 auto;
-            border: 2px solid $color_alto_approx;
+            border: 2px solid $color_alto;
             max-width: 390px;
             width: 270px;
             margin-right: 40px;
@@ -260,22 +269,22 @@ $url_1: url("../assets/images/uparrow.png");
 
             &:hover {
                 background: $concrete !important;
-                color: $color_mine_shaft_approx !important;
+                color: $color_mine_shaft !important;
             }
         }
 
         &.btn-default.attach-res {
             margin-top: 50px;
-            border: 2px solid $color_bon_jour_approx;
+            border: 2px solid $color_bon_jour;
             border-radius: 0;
             font-weight: 900;
             font-size: 16px;
 
             &:hover {
-                color: $color_cardinal_approx;
+                color: $color_cardinal;
                 background: $white;
                 transition: 0.4s;
-                border: 2px solid $color_cardinal_approx;
+                border: 2px solid $color_cardinal;
             }
         }
     }
@@ -295,25 +304,23 @@ $url_1: url("../assets/images/uparrow.png");
         text-align: center;
         padding: 16px;
         border-radius: 0;
-        border: 2px solid $color_alto_approx;
+        border: 2px solid $color_alto;
         display: inline-block;
         font-size: 16px;
         font-weight: bold;
         margin-left: 20px;
 
         @media(max-width:768px) {
-            margin-left: -65px;
+            margin-left: 15px;
         }
 
         @media(max-width:414px) {
-            margin-left: 15px;
+            margin-left: 20px;
         }
 
         @media(max-width:375px) {
             margin-left:20px;
         }
-
-        &:hover {}
     }
 
     .col-md-6.submit-attach {
@@ -324,13 +331,13 @@ $url_1: url("../assets/images/uparrow.png");
     .dropdown-menu > li > a {
         &:focus {
             text-decoration: none;
-            color: $color_cardinal_approx;
+            color: $color_cardinal;
             background-color: transparent !important;
         }
 
         &:hover {
             text-decoration: none;
-            color: $color_cardinal_approx;
+            color: $color_cardinal;
             background-color: transparent !important;
         }
     }
@@ -342,11 +349,11 @@ $url_1: url("../assets/images/uparrow.png");
         padding-bottom: 10px;
         padding-left: 20px;
         margin-left: -15px;
-        margin-top: -15px;
-        border-left: 2px solid $color_alto_approx;
-        border-right: 2px solid $color_alto_approx;
+        margin-top: -44px;
+        border-left: 2px solid $color_alto;
+        border-right: 2px solid $color_alto;
         box-shadow: none;
-        border-bottom: 2px solid $color_alto_approx;
+        border-bottom: 2px solid $color_alto;
         border-top: none;
         transition: all 0.5s;
         opacity: 0;
@@ -354,7 +361,7 @@ $url_1: url("../assets/images/uparrow.png");
 
     hr.job-hr {
         margin-bottom: 80px;
-        border-bottom: 1px solid $color_gallery_approx;
+        border-bottom: 1px solid $color_gallery;
         height: 90px;
         width: 100%;
         color: transparent;
@@ -375,9 +382,10 @@ $url_1: url("../assets/images/uparrow.png");
             width: 19px;
             border: none;
             position: relative;
-            top: 6px;
+            top: 8px;
             background-image: url("../assets/images/uparrow.png");
             transition: 0.4s;
+            margin-right: 10px;
         }
 
         .ui-select-search {
@@ -394,44 +402,44 @@ $url_1: url("../assets/images/uparrow.png");
         }
     }
 }
+// end children of .application-form
 
-@media only screen and(min-device-width : 374px) and(max-device-width : 470px) and(-webkit-min-device-pixel-ratio : 2) {
 
-    .submit-app {
-        font-size: 16px !important;
-        width: 200px !important;
-        height: 60px !important;
-        display: flex;
-        justify-content: center;
-        padding: 2px !important;
-        margin-left: 15px;
-        padding-left: 20px !important;
-    }
+// outside of form
+.submit-app {
+
+  @media only screen and(min-device-width : 374px) and(max-device-width : 470px) and(-webkit-min-device-pixel-ratio : 2) {
+    font-size: 16px !important;
+    width: 200px !important;
+    height: 60px !important;
+    display: flex;
+    justify-content: center;
+    padding: 2px !important;
+    margin-left: 15px;
+    padding-left: 20px !important;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 16px !important;
+    width: 200px !important;
+    height: 60px !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width:414px) {
+    font-size: 16px !important;
+    width: 200px !important;
+    height: 60px !important;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    margin-left: 15px;
+    padding-left: 20px !important;
+  }
 }
 
 @media(max-width:768px) {
-    .application-form {
-
-
-        span.btn.btn-default.form-control.ui-select-toggle {
-            margin-left:auto;
-        }
-    }
-    .submit-app {
-        font-size: 16px !important;
-        width: 200px !important;
-        height: 60px !important;
-        display: flex;
-        justify-content: center;
-/*         padding: 2px !important; */
-    }
-
-    .resume-attached-hidden {
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        padding-top: 10px;
-    }
 
     .form-group {
         margin-bottom: 15px;
@@ -441,7 +449,7 @@ $url_1: url("../assets/images/uparrow.png");
 
     button.btn.btn-default.attach-res {
         margin-top: 50px;
-        border: 2px solid $color_bon_jour_approx;
+        border: 2px solid $color_bon_jour;
         border-radius: 0;
         font-weight: 900;
         font-size: 16px;
@@ -482,10 +490,10 @@ $url_1: url("../assets/images/uparrow.png");
         justify-content: center;
     }
     span.btn.btn-default.form-control.ui-select-toggle {
-        border: 2px solid $color_alto_approx;
+        border: 2px solid $color_alto;
         border-radius: 0;
         height: 60px;
-        margin-left: 0;
+        margin-left: 0px !important;
         width: 270px;
         padding: 17px;
         box-shadow: none;
@@ -505,7 +513,7 @@ $url_1: url("../assets/images/uparrow.png");
 @media screen and (max-width:414px) {
 
     .submit-attach {
-        margin-left: -30px !important;
+        margin-left: -35px !important;
     }
     .list-inline {
         padding-left: 0;
@@ -525,22 +533,10 @@ $url_1: url("../assets/images/uparrow.png");
             padding-top: 80px !important;
             padding-left: 0;
             padding-right: 20px !important;
-            color: $color_mine_shaft_approx;
+            color: $color_mine_shaft;
         }
 
     }
-
-    .submit-app {
-        font-size: 16px !important;
-        width: 200px !important;
-        height: 60px !important;
-        display: flex;
-        justify-content: center;
-        padding: 2px;
-        margin-left: 15px;
-        padding-left: 20px !important;
-    }
-
     .job-title {
         font-family: $secondary_font;
         font-size: 50px !important;
@@ -1127,3 +1123,37 @@ $url_1: url("../assets/images/uparrow.png");
 
 // WEBPACK FOOTER //
 // webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scssn.scss
