@@ -1,6 +1,6 @@
 .file-input-container(file-input-button="fileModel")
   a.btn.btn-default.attach-res Attach Resume
 .attached(ng-repeat="inputfile in fileModel", style="margin-top:20px;")
-  .attached-file
+  .attached-file.animated.fadeInUp
     | {{inputfile.name}}
-a(ng-show="fileModel.length > 0" href="#",ng-click="removeFiles(inputfile)") X
+    a.delete-file(ng-show="fileModel.length > 0" href="#",ng-click="removeFiles(inputfile)") x

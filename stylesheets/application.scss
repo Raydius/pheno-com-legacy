@@ -110,6 +110,37 @@ $url_1: url("../assets/images/uparrow.png");
       }
     }
 
+    .attached {
+    width: 300px;
+    margin-left: 180px;
+    margin-top: -44px !important;
+
+      @media (max-width: 800px) {
+        margin-left: 0px;
+        margin-top: 16px !important;
+      }
+      @media (max-width: 768px) {
+          margin-left: 35px;
+          margin-top: 16px !important;
+      }
+    }
+
+    .attached-file {
+    position: relative;
+    }
+
+    .attached-file > a {
+    padding-left: 10px;
+    }
+
+    .delete-file {
+    font-size: 19px;
+    position: relative;
+    font-family: "circular-book";
+    font-weight: lighter;
+    text-rendering: geometricPrecision;
+}
+
     span {
         &.fill-it {
             font-size: 17px;
@@ -319,7 +350,7 @@ $url_1: url("../assets/images/uparrow.png");
         padding-bottom: 10px;
         padding-left: 20px;
         margin-left: -15px;
-        margin-top: -15px;
+        margin-top: 0px;
         border-left: 2px solid $color_alto;
         border-right: 2px solid $color_alto;
         box-shadow: none;
@@ -346,7 +377,14 @@ $url_1: url("../assets/images/uparrow.png");
         box-shadow: none;
     }
 
+
     .ui-select-container {
+
+        .ui-select-match-text.pull-left {
+            font-family: "circular-bold";
+            font-size: 16px;
+            margin-left: 20px;
+        }
         i.caret {
             height: 8px;
             width: 19px;
@@ -1127,6 +1165,29 @@ $url_1: url("../assets/images/uparrow.png");
 
 // WEBPACK FOOTER //
 // webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scssn.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
 
 
 
