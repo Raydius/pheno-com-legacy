@@ -1,5 +1,6 @@
-.form-group(file-input-button="{{model}}")
+.form-group(file-input-button="fileModel")
   a.btn.btn-default.attach-res Attach Resume
-.attached(ng-repeat="inputfile in resume", style="margin-top:20px;")
+.attached(ng-repeat="inputfile in fileModel", style="margin-top:20px;")
   .attached-file
     | {{inputfile.name}}
+a(ng-show="fileModel.length > 0" href="#",ng-click="removeFiles(inputfile)") X

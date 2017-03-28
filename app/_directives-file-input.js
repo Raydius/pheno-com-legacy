@@ -7,20 +7,38 @@
  */
 
 
+// main template for layout
 const fileInputContainerTemplate = require('components/file-input-container.pug');
 
-angular.module('phenoCom').directive('fileInput', function() {
+// container for all file input elements
+angular.module('phenoCom').directive('fileInput', function($filter, $compile) {
 	return {
 		scope: {
-			model: '@'
+			fileModel: '='
 		},
-		template: fileInputContainerTemplate
+		template: fileInputContainerTemplate,
+		link: function(scope, element, attrs) {
+
+			scope.removeFiles = function(inputfile) {
+				scope.fileModel = '';
+			};
+
+			scope.updateButtonText = function() {
+				if(!scope.fileModel) {
+					scope.fileModel = '';
+				}
+				element.find('.attach-res').html(scope.fileModel.length > 0 ? 'Attached' : 'Attach Resume');
+			};
+
+		}
 	}
 });
 
+// visible button to engage file input
 angular.module('phenoCom').directive('fileInputButton', function($compile) {
 	return {
 		restrict: 'A',
+		scope: false,
 		link: function(scope, element, attrs) {
 
 			var el = angular.element(element);
@@ -34,13 +52,14 @@ angular.module('phenoCom').directive('fileInputButton', function($compile) {
 				height: button.offsetHeight
 			});
 
-			// create input element
-			var fileInput = angular.element('<input type="file" multiple />');
+			// create input element to instantiate fileFormInput directive
+			var fileInput = angular.element('<input type="file"  />');
 			fileInput.attr({
 				'ng-model': attrs.fileInputButton,
 				'file-form-input': '',
-				'accept': 'text/plain,application/zip,application/msword,application/pdf,image/jpeg,image/png'
-			})
+				'accept': 'text/plain,application/zip,application/msword,application/pdf,image/jpeg,image/png',
+				'update-button': 'updateButtonText()'
+			});
 
 			// ensure clickable area has the same dimensions as pseudo button
 			fileInput.css({
@@ -61,29 +80,29 @@ angular.module('phenoCom').directive('fileInputButton', function($compile) {
 	}
 });
 
-angular.module('phenoCom').directive('fileFormInput', function($parse) {
+// actual HTML form element that captures files
+angular.module('phenoCom').directive('fileFormInput', function($parse, $compile) {
 	return {
 		require: 'ngModel',
 		scope: {
-			ngModel: '='
+			ngModel: '=',
+			updateButton: '&'
 		},
 		restrict: 'A',
 		link: function(scope, el, attrs, ngModel) {
-			var model = $parse(attrs.ngModel);
-			var modelSetter = model.assign;
 
 			el.on('change', function(e) {
-				var files = el[0].files;
+				let files = el[0].files;
+				scope.updateButton();
+
 				scope.$apply(function() {
-					attrs.multiple ? scope.ngModel = files : scope.ngMomdel = files[0];
+					scope.ngModel = files;
+					//attrs.multiple ? scope.ngModel = files : scope.ngModel = files[0];
 				});
 			});
 
 			scope.$watch('ngModel', function() {
-				if(!scope.ngModel) {
-					el[0].value = '';
-				}
-				el.parent().find('a').html(el[0].value.length > 0 ? 'Attached' : 'Attach Resume');
+				scope.updateButton();
 			});
 		}
 	}
