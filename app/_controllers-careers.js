@@ -109,11 +109,8 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 		}
 	};
 
-	$scope.attachButtonText = function() {
-		return 'Attach Resume';
-	};
-
 	$scope.removeAttachment = function(filename) {
+		console.log('test');
 		$scope.resume = $filter('filter')($scope.resume, { name: filename});
 		console.log($scope.resume.length);
 
@@ -137,7 +134,6 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 			url: $scope.apiUrl + '/jobs/departments/'
 		}).then(function (response) {
 			$scope.allDepartments = response.data;
-			console.log('depts', $scope.allDepartments);
 		});
 
 	}

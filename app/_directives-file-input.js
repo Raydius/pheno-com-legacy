@@ -7,7 +7,18 @@
  */
 
 
-angular.module('phenoCom').directive('fileInputContainer', function($compile) {
+const fileInputContainerTemplate = require('components/file-input-container.pug');
+
+angular.module('phenoCom').directive('fileInput', function() {
+	return {
+		scope: {
+			model: '@'
+		},
+		template: fileInputContainerTemplate
+	}
+});
+
+angular.module('phenoCom').directive('fileInputButton', function($compile) {
 	return {
 		restrict: 'A',
 		link: function(scope, element, attrs) {
@@ -26,9 +37,12 @@ angular.module('phenoCom').directive('fileInputContainer', function($compile) {
 			// create input element
 			var fileInput = angular.element('<input type="file" multiple />');
 			fileInput.attr({
-				'ng-model': attrs.fileInputContainer,
-				'file-input': ''
-			});
+				'ng-model': attrs.fileInputButton,
+				'file-form-input': '',
+				'accept': 'text/plain,application/zip,application/msword,application/pdf,image/jpeg,image/png'
+			})
+
+			// ensure clickable area has the same dimensions as pseudo button
 			fileInput.css({
 				position:'absolute',
 				top:0,
@@ -38,6 +52,7 @@ angular.module('phenoCom').directive('fileInputContainer', function($compile) {
 				height:'100%',
 				opacity:'0',
 				cursor:'pointer'
+
 			});
 
 			// add new input element to DOM
@@ -46,7 +61,7 @@ angular.module('phenoCom').directive('fileInputContainer', function($compile) {
 	}
 });
 
-angular.module('phenoCom').directive('fileInput', function($parse) {
+angular.module('phenoCom').directive('fileFormInput', function($parse) {
 	return {
 		require: 'ngModel',
 		scope: {
@@ -61,10 +76,6 @@ angular.module('phenoCom').directive('fileInput', function($parse) {
 				var files = el[0].files;
 				scope.$apply(function() {
 					attrs.multiple ? scope.ngModel = files : scope.ngMomdel = files[0];
-
-					//modelSetter(scope, files);
-
-					console.log('scope apply', scope.ngModel);
 				});
 			});
 
@@ -73,7 +84,6 @@ angular.module('phenoCom').directive('fileInput', function($parse) {
 					el[0].value = '';
 				}
 				el.parent().find('a').html(el[0].value.length > 0 ? 'Attached' : 'Attach Resume');
-
 			});
 		}
 	}

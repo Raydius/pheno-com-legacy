@@ -3,7 +3,7 @@
  */
 
 var blogPostTemplate = require('components/blog-post.pug');
-var searchPostTemplate = require('components/search-post.pug');
+// var searchPostTemplate = require('components/search-post.pug');
 // var blogPostSingleTemplate = require('components/single-post.pug');
 var blogHeaderTemplate = require('components/blog-header.pug');
 
@@ -205,7 +205,7 @@ angular.module('phenoCom').directive('scrollableComponent', function($window) {
 
 
 // use this directive to bring file data into controller scope
-angular.module('phenoCom').directive('fileModel', ['$parse', function ($parse) {
+/*angular.module('phenoCom').directive('fileModel', ['$parse', function ($parse) {
     return {
         restrict: 'A',
         link: function(scope, element, attr) {
@@ -229,7 +229,7 @@ angular.module('phenoCom').directive('fileModel', ['$parse', function ($parse) {
             });
         }
     };
-}]);
+}]);*/
 
 
 // Individual blog post "preview" card on main blog index page
