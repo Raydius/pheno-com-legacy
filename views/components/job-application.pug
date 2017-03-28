@@ -29,8 +29,8 @@
         ui-select-choices(repeat="department in allDepartments")
           span(ng-bind="department.name")
       .submit-attach
-        .form-group
-          //button.btn.btn-default.attach-res(ng-click="uploadFile()") Attach Resume
-          input(name="resume", type="file", file-upload="resume", accept="text/plain,application/zip,application/msword,application/pdf,image/jpeg,image/png")
+        file-input(ng-model="resume")
+        
+
     hr.job-hr
     input.apply-now.submit-app( type='submit', ng-value="submitText", ng-disabled="disableSubmit")

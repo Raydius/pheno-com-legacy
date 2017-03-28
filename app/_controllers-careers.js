@@ -88,7 +88,7 @@ angular.module('phenoCom').controller('jobController', function($scope, $statePa
  *
  * NOTE: this controller will inherit the scope from jobController
  */
-angular.module('phenoCom').controller('jobApplicationController', function($scope, $state, $stateParams, $location, $http) {
+angular.module('phenoCom').controller('jobApplicationController', function($scope, $state, $stateParams, $location, $http, $filter) {
 
 
 
@@ -108,6 +108,17 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 			$scope.submitText = 'Saving...';
 		}
 	};
+
+	$scope.attachButtonText = function() {
+		return 'Attach Resume';
+	};
+
+	$scope.removeAttachment = function(filename) {
+		$scope.resume = $filter('filter')($scope.resume, { name: filename});
+		console.log($scope.resume.length);
+
+	};
+
 
 	// functionality that only applies to the generic (non-job-specific) form
 	if($scope.genericApplication) {
@@ -167,10 +178,15 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 
 				});
 
+				console.log('ng-scope',$scope.resume);
+
 				// create FormData object from form fields and optional file attachment
 				let fd = new FormData();
 				fd.append('data', JSON.stringify(data));
 				fd.append('resume', $scope.resume);
+
+
+
 
 				$http({
 					method: 'POST',

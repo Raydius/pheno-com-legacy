@@ -1,0 +1,7 @@
+.form-group(file-input-container="resume")
+  a.btn.btn-default.attach-res Attach Resume
+.attached(ng-repeat="inputfile in resume")
+  .attached-file
+    | {{inputfile.name}}
+    span
+      a(href="#" ng-click="removeAttachment('{{inputfile.name}}')") X
