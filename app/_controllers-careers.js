@@ -29,7 +29,6 @@ angular.module('phenoCom').controller('jobsController', function($scope, $state,
 		url: $scope.apiUrl + '/jobs/'
 	}).then(function (response) {
 		$scope.jobs.departments = response.data;
-		console.log($scope.jobs.departments);
 	});
 
 });
@@ -55,6 +54,7 @@ angular.module('phenoCom').controller('jobController', function($scope, $statePa
 	$scope.data = {
 		content: ''
 	};
+
 
 	if($scope.genericApplication) {
 
@@ -88,8 +88,7 @@ angular.module('phenoCom').controller('jobController', function($scope, $statePa
  *
  * NOTE: this controller will inherit the scope from jobController
  */
-angular.module('phenoCom').controller('jobApplicationController', function($scope, $state, $stateParams, $location, $http) {
-
+angular.module('phenoCom').controller('jobApplicationController', function($scope, $state, $stateParams, $location, $http, $filter) {
 
 
 	/**
@@ -109,6 +108,12 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 		}
 	};
 
+	// initial loading state of 'Select Department' dropdown while waiting for Greenhouse API results (if applicable)
+	$scope.allDepartments = [{id: 0, name: 'Loading departments...'}];
+
+	// initialize department model
+	$scope.selectedDept = { item: $scope.allDepartments[0] };
+
 	// functionality that only applies to the generic (non-job-specific) form
 	if($scope.genericApplication) {
 
@@ -117,21 +122,20 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 
 		$scope.data.title = 'General Application';
 
-		// initial loading state of 'Select Department' dropdown while waiting for Greenhouse API results
-		$scope.allDepartments = [{id: 0, name: 'Loading departments...'}];
-
 		// get list of departments from Greenhouse
 		$http({
 			method: 'GET',
 			url: $scope.apiUrl + '/jobs/departments/'
 		}).then(function (response) {
+			$scope.selectedDept.item = {
+				id: 0,
+				name: 'Select Department'
+			};
 			$scope.allDepartments = response.data;
-			console.log('depts', $scope.allDepartments);
+
 		});
 
 	}
-
-
 
 	// LinkedIn integration
 	/*
@@ -161,7 +165,7 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 					'email': $scope.user.email,
 					'phone': $scope.user.phone,
 					'website': $scope.user.website,
-					//'department': $scope.selectedDepartment,
+					'department': $scope.selectedDept.item,
 					'linkedin': $scope.user.linkedin,
 					'etc': $scope.user.etc
 
@@ -170,7 +174,12 @@ angular.module('phenoCom').controller('jobApplicationController', function($scop
 				// create FormData object from form fields and optional file attachment
 				let fd = new FormData();
 				fd.append('data', JSON.stringify(data));
-				fd.append('resume', $scope.resume);
+
+				// Greenhouse only supports a single file upload per field, so we will only use the first entry
+				if($scope.resume.length > 0) {
+					fd.append('resume', $scope.resume[0]);
+				}
+
 
 				$http({
 					method: 'POST',
