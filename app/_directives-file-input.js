@@ -1,7 +1,15 @@
 /**
  * File Input Directive
  *
- * More visually flexible file input that follows AngularJS binding conventions
+ * More visually flexible file input that follows AngularJS binding conventions -- effectively we
+ * maintain 2 "copies" of the element... one for the Angular scope and one for the HTML form.  This
+ * is because as of 3/29/2017, "data binding and event handling via ng-model is
+ * unsupported for input[file]" -- https://docs.angularjs.org/api/ng/directive/input
+ *
+ * The HTML form input for files has the proper security clearance to allow for file
+ * uploads, whereas the Angular scope has the advantage of being customizable in appearance/behavior
+ * as well as being accessed by methods within the scope.
+ *
  *
  * Created by Ray Dollete on 3/28/2017
  */
@@ -10,8 +18,8 @@
 // main template for layout
 const fileInputContainerTemplate = require('components/file-input-container.pug');
 
-// container for all file input elements
-angular.module('phenoCom').directive('fileInput', function($filter, $compile) {
+// container for all file input elements -- creates the scope used by the uploader and provides functional methods
+angular.module('phenoCom').directive('fileInput', function() {
 	return {
 		scope: {
 			fileModel: '='
@@ -21,7 +29,12 @@ angular.module('phenoCom').directive('fileInput', function($filter, $compile) {
 
 			// empty FileList object
 			scope.removeFiles = function(inputfile) {
+
+				// clear the fileModel object in the scope
 				scope.fileModel = '';
+
+				// clear the file from the HTML form
+				element.find('input').val(null);
 			};
 
 			// toggle button label text
@@ -36,8 +49,6 @@ angular.module('phenoCom').directive('fileInput', function($filter, $compile) {
 			scope.checkFileSize = function() {
 
 				if(scope.fileModel) {
-					console.log('filesize', scope.fileModel[0].size);
-
 					if(scope.fileModel[0].size >= 10000000) {
 						alert('ERROR: Maximum file size is 10MB.');
 						scope.removeFiles(scope.fileModel[0]);
@@ -50,7 +61,7 @@ angular.module('phenoCom').directive('fileInput', function($filter, $compile) {
 	}
 });
 
-// visible button to engage file input
+// visible button to engage file input -- having this as a separate directive allows more robust manipulation of this element
 angular.module('phenoCom').directive('fileInputButton', function($compile) {
 	return {
 		restrict: 'A',
@@ -69,7 +80,7 @@ angular.module('phenoCom').directive('fileInputButton', function($compile) {
 			});
 
 			// create input element to instantiate fileFormInput directive
-			var fileInput = angular.element('<input type="file"  />');
+			let fileInput = angular.element('<input type="file"  />');
 			fileInput.attr({
 				'ng-model': attrs.fileInputButton,
 				'file-form-input': '',
@@ -97,7 +108,7 @@ angular.module('phenoCom').directive('fileInputButton', function($compile) {
 	}
 });
 
-// actual HTML form element that captures files
+// actual HTML form input element that captures files -- necessary since this type of element is not capable of binding with Angular scope
 angular.module('phenoCom').directive('fileFormInput', function($parse, $compile) {
 	return {
 		require: 'ngModel',
@@ -109,6 +120,7 @@ angular.module('phenoCom').directive('fileFormInput', function($parse, $compile)
 		restrict: 'A',
 		link: function(scope, el, attrs, ngModel) {
 
+			// detect changes to HTML form element (triggered when new/different files are queued for upload)
 			el.on('change', function(e) {
 				let files = el[0].files;
 				scope.updateButton();
@@ -118,6 +130,7 @@ angular.module('phenoCom').directive('fileFormInput', function($parse, $compile)
 				});
 			});
 
+			// since we don't have direct binding, watch the Angular model for changes, as named by the text field 'ngModel' in this element
 			scope.$watch('ngModel', function() {
 				scope.updateButton();
 				scope.checkFileSize();
