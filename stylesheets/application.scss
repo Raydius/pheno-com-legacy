@@ -315,7 +315,7 @@ $url_1: url("../assets/images/uparrow.png");
             }
 
             @media(max-width: 414px) {
-                //margin-left: 20px;
+                padding-right: 10px !important;  
             }
 
             @media(max-width: 375px) {
@@ -388,7 +388,7 @@ $url_1: url("../assets/images/uparrow.png");
         .ui-select-match-text.pull-left {
             font-family: "circular-bold";
             font-size: 16px;
-            margin-left: 20px;
+            margin-left: 5px;
         }
         i.caret {
             height: 8px;
@@ -1194,6 +1194,10 @@ $url_1: url("../assets/images/uparrow.png");
 // WEBPACK FOOTER //
 // webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
 
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/application.scss
 
 
 // WEBPACK FOOTER //
