@@ -95,7 +95,7 @@ input[type="text"], input[type="email"]{
 	height: 55px;
 	width: 100%;
 	line-height: 60px;
-	border-bottom: 2px solid 2px solid #3a3838;
+	border-bottom: 2px solid #3a3838;
 	padding: 0;
 	@include transition(border-color .15s ease-in-out);
 
@@ -172,6 +172,10 @@ ul li {
    color: $gray_font;  
    font-weight: bold;
 }
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_styleguide.scss
 
 
 // WEBPACK FOOTER //
