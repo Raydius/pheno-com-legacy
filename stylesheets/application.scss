@@ -414,7 +414,7 @@ $url_1: url("../assets/images/uparrow.png");
             display: none;
         }
 
-        &.open {
+        &.open:not(.direction-up) {
             i.caret {
                 -webkit-transform: rotate(180deg);
                 -moz-transform: rotate(180deg);
