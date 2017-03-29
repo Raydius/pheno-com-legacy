@@ -20,12 +20,12 @@ section.row.no-padding.jobs
 				.quoter-holder
 					p.said-by &#8212;Amy Weisenbach&nbsp;
 					p.company / VP Marketing, Wilson
-		article.col-xs-7.col-sm-7.col-md-7.col-sm-offset-0.no-padding.jobs-container
+		article.col-xs-8.col-sm-7.col-md-7.col-sm-offset-0.no-padding.jobs-container
 				.department(ng-repeat="department in jobs.departments")
 					.positions {{department.name}}
 					hr
 					li(ng-repeat="position in department.openPositions")
-						a(ng-href="{{position.linkedin}}", target="_BLANK") {{position.title}}
+						a(ng-href="{{position.url}}") {{position.title}}
 						.location {{position.location}}
 
 	.apply-anyway-container.col-md-12.col-sm-12.col-xs-12

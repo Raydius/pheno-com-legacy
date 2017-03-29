@@ -9,7 +9,6 @@ import ngAnimate from 'angular-animate';
 import 'angular-socialshare';
 import 'sticky-kit/dist/sticky-kit.min.js';
 import 'ui-router-metatags/dist/ui-router-metatags.js';
-import 'jquery.filer/js/jquery.filer.js';
 
 require('angular-cookies');
 require('angular-messages');
@@ -41,3 +40,4 @@ require('./_controllers');
 require('./_controllers-blog');
 require('./_controllers-careers');
 require('./_directives');
+require('./_directives-file-input');

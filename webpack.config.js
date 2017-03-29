@@ -16,7 +16,7 @@ var webpack = require('webpack'),
 // set boolean debug variable based on whether or not this is a prod environment
 var debug = process.env.NODE_ENV !== 'production';
 
-// default host/port configuration
+// default host/port configuration (must override for non-local deployments)
 var host = 'http://127.0.0.1',
     port = 9000,
     output_dir = 'public';
@@ -45,6 +45,71 @@ var express = require('express');
 var app = express();
 
 app.use(require('prerender-node').set('prerenderServiceUrl', 'http://localhost:3000'));
+
+
+// dynamically generate plugins config based on environment needs
+function getPlugins() {
+
+    // base plugin config
+    var plugins = [
+
+		// expose environment key to webpack
+        new webpack.DefinePlugin({
+            'process.env': {
+              'NODE_ENV': process.env.NODE_ENV
+            }
+        }),
+
+		// allow some modules to be accessible globally without 'require'
+		new webpack.ProvidePlugin({
+			$: 'jquery',
+			jQuery: 'jquery',
+			"window.jQuery": 'jquery'
+		}),
+
+		// create vendors.js
+		new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
+
+		// support labeled modules
+		new webpack.dependencies.LabeledModulesPlugin(),
+
+		// build central CSS sheet
+		new ExtractTextPlugin('styles.css'),
+
+		// generate index.html as public entry point based on index.pug template
+		new HtmlWebpackPlugin({
+			template: 'views/index.pug',
+			filename: 'index.html',
+			title: 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation',
+			googleAnalytics: gaConfig
+		})
+
+	];
+
+    // conditional production plugins
+    if(!debug) {
+
+        // minify JS files
+        plugins.push(new webpack.optimize.UglifyJsPlugin());
+
+        // minify CSS files
+		plugins.push(new OptimizeCssAssetsPlugin({
+			assetNameRegExp: debug ? /\.optimize.css$/g : /\.css$/g,
+			cssProcessor: require('cssnano'),
+			cssProcessorOptions: {
+				discardComments: {
+					removeAll: true
+				}
+			},
+			canPrint: true
+		}));
+    }
+
+    return plugins;
+}
+
+
+
 
 // main webpack module
 module.exports = {
@@ -78,44 +143,7 @@ module.exports = {
         publicPath: publicPath,
         libraryTarget: "umd"
     },
-    plugins: [
-
-        // allow jquery to be accessible globally without 'require'
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery',
-            "window.jQuery": 'jquery'
-        }),
-
-        //new webpack.NoErrorsPlugin(),
-
-        // optimize vendors.js
-        new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
-
-        new webpack.dependencies.LabeledModulesPlugin(),
-
-        // build CSS sheet
-        new ExtractTextPlugin('styles.css'),
-        new OptimizeCssAssetsPlugin({
-            assetNameRegExp: debug ? /\.optimize.css$/g : /\.css$/g,
-            cssProcessor: require('cssnano'),
-            cssProcessorOptions: {
-                discardComments: {
-                    removeAll: true
-                }
-            },
-            canPrint: true
-        }),
-
-        // generate index.html as public entry point based on index.pug template
-        new HtmlWebpackPlugin({
-            template: 'views/index.pug',
-            filename: 'index.html',
-            title: 'phenomenon - Innovations Company | Marketing, UX, Digital, Cultural Innovation',
-            googleAnalytics: gaConfig
-        })
-
-    ],
+    plugins: getPlugins(),
     module: {
         noParse: [
             new RegExp('^react$'),

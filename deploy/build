@@ -50,6 +50,7 @@ echo Building directory ./${OUTPUT_DIR} for ${OUTPUT_HOST}:${OUTPUT_PORT}
 
 ./node_modules/.bin/webpack --progress
 
+# create tar ball
 if [ "$compress" = true ] ; then
     echo Compressing build and nginx configuration files into tar file...
     tar czvf pheno-com.tar.gz nginx "$OUTPUT_DIR"
@@ -57,3 +58,10 @@ if [ "$compress" = true ] ; then
     rm -rf $OUTPUT_DIR
 fi
 
+# if dev, automatically upload (since this is not handled by jenkins)
+if [ "$i" = dev ] ; then
+    echo Uploading pheno-com.tar.gz to dev.phenomenon.com...
+    scp pheno-com.tar.gz ec2-user@dev.phenomenon.com:pheno-com.tar.gz
+    echo Decompressing archive on remote server...
+    ssh ec2-user@dev.phenomenon.com "tar zxvf pheno-com.tar.gz"
+fi
