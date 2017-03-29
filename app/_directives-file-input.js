@@ -19,15 +19,31 @@ angular.module('phenoCom').directive('fileInput', function($filter, $compile) {
 		template: fileInputContainerTemplate,
 		link: function(scope, element, attrs) {
 
+			// empty FileList object
 			scope.removeFiles = function(inputfile) {
 				scope.fileModel = '';
 			};
 
+			// toggle button label text
 			scope.updateButtonText = function() {
 				if(!scope.fileModel) {
 					scope.fileModel = '';
 				}
 				element.find('.attach-res').html(scope.fileModel.length > 0 ? 'Attached' : 'Attach Resume');
+			};
+
+			// enforce maximum filesize limit before user can submit
+			scope.checkFileSize = function() {
+
+				if(scope.fileModel) {
+					console.log('filesize', scope.fileModel[0].size);
+
+					if(scope.fileModel[0].size >= 10000000) {
+						alert('ERROR: Maximum file size is 10MB.');
+						scope.removeFiles(scope.fileModel[0]);
+					}
+				}
+
 			};
 
 		}
@@ -58,7 +74,8 @@ angular.module('phenoCom').directive('fileInputButton', function($compile) {
 				'ng-model': attrs.fileInputButton,
 				'file-form-input': '',
 				'accept': 'text/plain,application/zip,application/msword,application/pdf,image/jpeg,image/png',
-				'update-button': 'updateButtonText()'
+				'update-button': 'updateButtonText()',
+				'check-file-size': 'checkFileSize()'
 			});
 
 			// ensure clickable area has the same dimensions as pseudo button
@@ -86,7 +103,8 @@ angular.module('phenoCom').directive('fileFormInput', function($parse, $compile)
 		require: 'ngModel',
 		scope: {
 			ngModel: '=',
-			updateButton: '&'
+			updateButton: '&',
+			checkFileSize: '&'
 		},
 		restrict: 'A',
 		link: function(scope, el, attrs, ngModel) {
@@ -97,12 +115,12 @@ angular.module('phenoCom').directive('fileFormInput', function($parse, $compile)
 
 				scope.$apply(function() {
 					scope.ngModel = files;
-					//attrs.multiple ? scope.ngModel = files : scope.ngModel = files[0];
 				});
 			});
 
 			scope.$watch('ngModel', function() {
 				scope.updateButton();
+				scope.checkFileSize();
 			});
 		}
 	}
