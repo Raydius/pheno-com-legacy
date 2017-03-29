@@ -127,11 +127,11 @@ button, input[type="submit"], input[type="reset"]{
 		border: 2px solid #ffffff;
 	}
 
-	&:focus{
+/* 	&:focus{
 		background-color: transparent;
 		color: #FFF;
 		border: 2px solid #ffffff;
-	}
+	} */
 }
 
 input[type="file"]{
@@ -172,6 +172,10 @@ ul li {
    color: $gray_font;  
    font-weight: bold;
 }
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_styleguide.scss
 
 
 // WEBPACK FOOTER //
