@@ -47,15 +47,17 @@ $url_1: url("../assets/images/uparrow.png");
             font-size: 16px;
             font-weight: 900;
             margin-left: 0px;
-            
+
+            // tablet
             @media(max-width: 768px) {
                 //margin-left:15px;
             }
-            
+
+            // iPhone 6/7 Plus portrait
             @media (max-width: 414px) {
             height: 60px;
             text-align: center;
-            padding-top: 16px;
+            padding-top: 18px;
             border-radius: 0;
             padding-right: 25px !important;
             border: 2px solid #dcdada;
@@ -66,6 +68,7 @@ $url_1: url("../assets/images/uparrow.png");
 
             } 
 
+            // standard mobile portrait
             @media (max-width: 375px) {
                 //margin-left: 20px;
             }
