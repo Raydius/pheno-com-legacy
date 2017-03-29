@@ -74,8 +74,8 @@ angular.module('phenoCom').directive('fileInputButton', function($compile) {
 			// hide original anchor element
 			el.css({
 				position:'relative',
-				overflow:'hidden'
-				//width: button.offsetWidth,
+				overflow:'hidden',
+				width: button.offsetWidth,
 				//width: 160,
 				//height: button.offsetHeight
 			});
