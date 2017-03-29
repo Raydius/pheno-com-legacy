@@ -89,8 +89,8 @@ function getPlugins() {
     // conditional production plugins
     if(!debug) {
 
-        // minify JS files
-        plugins.push(new webpack.optimize.UglifyJsPlugin());
+        // minify JS files -- disabled for now until production bugs are sorted out
+        // plugins.push(new webpack.optimize.UglifyJsPlugin());
 
         // minify CSS files
 		plugins.push(new OptimizeCssAssetsPlugin({
