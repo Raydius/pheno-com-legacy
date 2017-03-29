@@ -74,9 +74,10 @@ angular.module('phenoCom').directive('fileInputButton', function($compile) {
 			// hide original anchor element
 			el.css({
 				position:'relative',
-				overflow:'hidden',
-				width: 160,
-				height: button.offsetHeight
+				overflow:'hidden'
+				//width: button.offsetWidth,
+				//width: 160,
+				//height: button.offsetHeight
 			});
 
 			// create input element to instantiate fileFormInput directive
