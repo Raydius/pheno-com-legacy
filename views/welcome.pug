@@ -10,9 +10,9 @@ section.row.no-padding.home
 		.col-md-6.no-padding
 			//- h1 Phenomenon
 			//- h1 Agency
-			h2.animated.fadeInLeft An Independent Agency
+			h2.animated.fadeIn An Independent Agency
 			h2.indie-minds for Independent Minds.
-			.icon-right-arrow(scrolltop2)
+			.icon-right-arrow.home-arrow(scrolltop2)
 	ul.row.no-padding.featured-contributors
 		h6 Featured Contributors
 		// first 3 contributors
@@ -29,5 +29,5 @@ section.row.no-padding.home
 								span!= contributorItem.jobTitle
 					if contributorItem.project
 						p!= contributorItem.project
-					a.red(href=contributorItem.href) Read full article &gt;
+					a.red.read-full(href=contributorItem.href) Read full article &gt;
 		.clear

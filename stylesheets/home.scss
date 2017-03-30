@@ -46,8 +46,13 @@
 			display: inline-block;
 			font-size: 32px;
 			color: #ccc;
-			margin-top: 20px;
+			margin-top: 50px !important;
 			cursor: pointer;
+
+			&:hover {
+			color: #333;
+			transition: .5s
+			}
 		}
 	}
 	cite {
@@ -201,3 +206,12 @@
 .indie-agency, .indie-minds {
 	opacity: 0;
 }
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/home.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/home.scss

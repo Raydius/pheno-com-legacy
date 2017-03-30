@@ -539,6 +539,7 @@
 
 a.red.read-full {
 		width : 120px;
+		font-family: $primary_font;
 }
 
 @media all
@@ -662,3 +663,8 @@ a.red.read-full {
 				height : 1250px !important;
 		}
 }
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
