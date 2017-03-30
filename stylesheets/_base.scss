@@ -128,7 +128,7 @@ figcaption {
 }
 .top-main {
 	position: relative;
-	// border-bottom: 1px solid $gray_border_color !important;
+	border-bottom: 1px solid $gray_border_color !important;
 	padding: ($base_spacing - 20) 0;
 	margin-top: $fix_header_height;
 	@media screen and (max-width: 640px) {
@@ -578,3 +578,8 @@ ul.social-icons {
 		opacity: 0;
 	}
 }
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_base.scss

@@ -10,7 +10,7 @@ section.row.no-padding.work.work-details
 			blockquote!= pageData.blockquote
 
 		include cite-components
-		hr.hr-content-divider
+		//- hr
 	.topcontent
 		article.col-xs-12.col-sm-12.col-md-7.top-description.no-padding
 			if pageData.topDescription
@@ -40,7 +40,7 @@ section.row.no-padding.work.work-details
 
 
 			label.icon-share(close showmore childContainer=".social-icons")
-				span.share-text Share
+				span.share-text.icon Share
 
 			include share-icons
 

@@ -119,5 +119,3 @@ angular.module('phenoCom').controller('aniDistances', ['$scope',
         };
     }
 ]);
-
-

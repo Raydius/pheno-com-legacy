@@ -26,7 +26,7 @@ angular.module('phenoCom').directive('carouselComponent', function() {
                 loop: true,
                 dots: true,
                 mouseDrag: true,
-                autoplay: true,
+                autoplay: false,
                 autoplaySpeed: 1000,
                 rewind: false,
                 // autoWidth: true,

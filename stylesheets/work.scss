@@ -1,5 +1,11 @@
 .work {
 		&.work-landing {
+				
+				.icon-left-arrow:hover {
+					color: #333;
+					transition: .5s;
+				}
+				
 				h1 {
 						position    : absolute;
 						text-indent : -9999em;
@@ -203,6 +209,7 @@
 						@media screen
 						       and (max-width : 640px) {
 								margin-left : 8px;
+								margin-top  : 20px;
 						}
 
 						> .col-md-4 {
@@ -328,7 +335,7 @@
 		}
 
 		> article {
-				margin-top : $base_spacing;
+				margin-top : 160px;
 
 				&.top-main {
 						margin-top : $fix_header_height;
@@ -475,8 +482,9 @@
 								a:last-of-type {
 										display       : block;
 										margin        : 30px;
-										margin-top    : 20px;
+										margin-top    : 10px;
 										margin-bottom : 60px;
+										font-family: "circular-book";
 								}
 						}
 
@@ -664,6 +672,22 @@ a.red.read-full {
 		}
 }
 
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
 
 
 // WEBPACK FOOTER //
