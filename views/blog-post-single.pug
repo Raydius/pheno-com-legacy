@@ -13,6 +13,6 @@
           img.blog-image(src='{{article.image}}', ng-hide="article.image == null")
           .blog-content(ng-bind-html="article.content | toTrusted")
   label.icon-share.blog-share(close showmore childContainer=".social-icons")
-      span.share-text.blog-share-text Share
+      span.share-text.blog-share-text.icon Share
 
 include components/share-icons
