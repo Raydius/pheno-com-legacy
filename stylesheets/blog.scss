@@ -785,7 +785,7 @@ article {
 img {
 	&.phno-logo {
 		float: left;
-    width : 130px;
+    	width : 130px;
 	}
 	&.pheno-p {
 		width: 60px;
@@ -807,8 +807,14 @@ img {
 				animation-timing-function: linear;
 			}
 			
-		 @media (min-width:320px) and (max-width:376px) {
+		 @media (min-width:320px) and (max-width:375px) {
+			  margin-left: 20px !important;
+		 }
+		 @media (min-width:375px) and (max-width:400px) {
 			  margin-left: -10px !important;
+		 }
+		  @media (min-width:400px) and (max-width:414px) {
+			  margin-left: -30px !important;
 		 }
   
 		}
@@ -873,7 +879,7 @@ img {
 		width: 60px;
 		height: 60px;
 		margin-right: 20px;
-		margin-left: 20px;
+		margin-left: -40px;
 		border: none;
 		border-color: $white;
 		border-width: 0;
@@ -885,7 +891,7 @@ img {
 	label.icon-share.blog-share {
 		margin-top: 40px !important;
 		margin-top: 40px;
-		margin-left: 20px;
+		margin-left: 40px;
 		color: $black;
 		cursor: pointer;
 	}
@@ -911,9 +917,9 @@ img {
  .post-title {
     color: black;
     font-family: "Tiempose-Semibold";
-    font-size: 30px !important;
+    font-size: 50px !important;
     margin-top: 10px;
-    padding-right: 0px;
+    padding-right: 20px;
 }
 	.blog-content {
 		margin-top: 40px;
@@ -1502,6 +1508,22 @@ ul.blog-action-list {
 // WEBPACK FOOTER //
 // webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
 
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
 
 
 // WEBPACK FOOTER //
