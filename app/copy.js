@@ -82,7 +82,7 @@ var copy =
       "chicago": {
         "title": "Chicago",
         "address": {
-          "line1": "118 N. Peoria St, Suite 5N",
+          "line1": "118 N. Peoria St, Suite 5S",
           "line2": "Chicago, IL 60607"
         },
         "phone": {
@@ -332,7 +332,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": require('assets/images/work-4.png'),
+          "imageUrl": require('assets/images/WilsonX-packaging-thumb.jpg'),
           "imageAlt": "Wilson Image 4",
           "legend": "Sport / Lifestyle",
           "headline": "Wilson Launches Futuristic Ball.",
@@ -1420,7 +1420,7 @@ var copy =
           "name": "Chicago",
           "phone": "+1 323 648 4000",
           "href": "tel:13236484000",
-          "address": "118 N Peoria Street, Suite 5N <br>Chicago, IL 60607",
+          "address": "118 N Peoria Street, Suite 5S <br>Chicago, IL 60607",
           "imgSrc": require("assets/images/contact/contact-chicago.jpg")
         }
       ],
