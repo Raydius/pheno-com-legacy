@@ -7,21 +7,19 @@ $color_celeste_approx: #ccc;
 $color_monza_approx: #d0021b;
 $color_mine_shaft_approx: #333333;
 $black_25: rgba(0, 0, 0, 0.25);
- //urls
-$pheno-p: url("/assets/images/blog/pheno-p.png");
-///////////////// DESIGN ELEMENTS NOT IN USE ///////////////////
+//urls
+$pheno-p: url("/assets/images/blog/pheno-p.png"); ///////////////// DESIGN ELEMENTS NOT IN USE ///////////////////
 // @media(max-width: 664px) {ul.blog-action-list {display: flex;margin-top: 50px;margin-left: 100px;padding-right: 20px;align-items: center;justify-content: space-around;}}
 // @media(max-width: 664px) {li.action-text {margin-left: -50px;font-size: 16px;}}
-// @media all and (min-width :400px) and (max-width :668px){not in use .bubble-search{z-index:2;position:absolute;width:185px;height:58px;margin-top:58px!important;margin-left:-3.1pc!important;padding:20px 10px;border:1px solid;border-radius:3px;background:0 0}}@media all and(min-width :400px) and(max-width :668px){.bubble-search{z-index:2;position:absolute;width:185px;height:58px;margin-top:58px!important;margin-left:-3.1pc!important;padding:20px 10px;border:1px solid;border-radius:3px;background:0 0}}ul.blog-action-list{display:flex;margin-top:50px;margin-left:100px;padding-right:20px;align-items:center;justify-content:space-around}@media only screen and (min-device-width :374px) and (max-device-width :470px) and (-webkit-min-device-pixel-ratio :2){ul.blog-action-list{display:flex;margin-top:40px!important;margin-right:-20px;margin-left:-30px!important;align-items:center;justify-content:space-around}}@media only screen and(min-device-width :320px) and(max-device-width :480px) and(-webkit-min-device-pixel-ratio :2){ul.blog-action-list{display:flex;margin-top:40px;margin-right:-20px;margin-left:30px;align-items:center;justify-content:space-around}}.action-text{margin-left:-50px;font-size:16px}@media(min-device-width:412px) and(max-device-width :460px) and(-webkit-min-device-pixel-ratio :2){ul.blog-action-list{display:flex;margin-top:40px;margin-right:-20px;margin-left:30px;align-items:center;justify-content:space-around}}
-// @media all and(min-width : 400px) and(max-width : 668px) {.bubble-search {z-index: 2;position: absolute;width: 185px;height: 58px;margin-top: 58px !important;margin-left: -3.1pc !important;padding: 20px 10px;border: $black_25 solid 1px;border-radius: 3px;background: $white;}}
-// @media all and (min-width : 401px) and(max-width : 640px) {ul.blog-action-list {display: flex;margin-top: 67px !important;margin-left: 100px !important;align-items: center;justify-content: space-around;}}
-// @media all and(min-width : 400px) and(max-width : 668px) {li.action-text {margin-left: -67px;&.search {padding-right: 5px;}}ul.blog-action-list {display: flex;margin-top: 92px !important;margin-right: 15px;margin-left: -39px !important;align-items: center;justify-content: space-around;}}
+// @media all and (min-width :400px) and (max-width :668px){not in use .bubble-search{z-index:2;position:absolute;width:185px;height:58px;margin-top:58px!important;margin-left:-3.1pc!important;padding:20px 10px;border:1px solid;border-radius:3px;background:0 0}}@media all and (min-width :400px) and (max-width :668px){.bubble-search{z-index:2;position:absolute;width:185px;height:58px;margin-top:58px!important;margin-left:-3.1pc!important;padding:20px 10px;border:1px solid;border-radius:3px;background:0 0}}ul.blog-action-list{display:flex;margin-top:50px;margin-left:100px;padding-right:20px;align-items:center;justify-content:space-around}@media only screen and (min-device-width :374px) and (max-device-width :470px) and (-webkit-min-device-pixel-ratio :2){ul.blog-action-list{display:flex;margin-top:40px!important;margin-right:-20px;margin-left:-30px!important;align-items:center;justify-content:space-around}}@media only screen and (min-device-width :320px) and (max-device-width :480px) and (-webkit-min-device-pixel-ratio :2){ul.blog-action-list{display:flex;margin-top:40px;margin-right:-20px;margin-left:30px;align-items:center;justify-content:space-around}}.action-text{margin-left:-50px;font-size:16px}@media(min-device-width:412px) and (max-device-width :460px) and (-webkit-min-device-pixel-ratio :2){ul.blog-action-list{display:flex;margin-top:40px;margin-right:-20px;margin-left:30px;align-items:center;justify-content:space-around}}
+// @media all and (min-width : 400px) and (max-width : 668px) {.bubble-search {z-index: 2;position: absolute;width: 185px;height: 58px;margin-top: 58px !important;margin-left: -3.1pc !important;padding: 20px 10px;border: $black_25 solid 1px;border-radius: 3px;background: $white;}}
+// @media all and (min-width : 401px) and (max-width : 640px) {ul.blog-action-list {display: flex;margin-top: 67px !important;margin-left: 100px !important;align-items: center;justify-content: space-around;}}
+// @media all and (min-width : 400px) and (max-width : 668px) {li.action-text {margin-left: -67px;&.search {padding-right: 5px;}}ul.blog-action-list {display: flex;margin-top: 92px !important;margin-right: 15px;margin-left: -39px !important;align-items: center;justify-content: space-around;}}
 // @media(min-device-width: 412px) and (max-device-width : 460px) and (-webkit-min-device-pixel-ratio : 2) {ul.blog-action-list {display: flex;margin-top: 40px;margin-right: -20px;margin-left: 30px;align-items: center;justify-content: space-around;}}
-// @media only screen and(min-device-width : 320px) and(max-device-width : 480px) and(-webkit-min-device-pixel-ratio : 2) {ul.blog-action-list {display: flex;margin-top: 40px;margin-right: -20px;margin-left: 30px;align-items: center;justify-content: space-around;}}
-// @media only screen and(min-device-width : 374px) and(max-device-width : 470px) and(-webkit-min-device-pixel-ratio : 2) {ul.blog-action-list {display: flex;margin-top: 40px !important;margin-right: -20px;margin-left: -30px !important;align-items: center;justify-content: space-around;}}
-// @media all and(min-width : 400px) and(max-width : 668px) {i.action-text {margin-left: -67px;&.search {padding-right: 5px;}}}
-// @media all and(max-width : 768px) {.see-more {position: relative;width: 32% !important;height: 70px;margin: 0 auto;padding: 20px;color: $black;background: $color_black_haze_approx;text-align: center;align-items: center;font-size: 16px;font-weight: bold;justify-content: center;}
-
+// @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio : 2) {ul.blog-action-list {display: flex;margin-top: 40px;margin-right: -20px;margin-left: 30px;align-items: center;justify-content: space-around;}}
+// @media only screen and (min-device-width : 374px) and (max-device-width : 470px) and (-webkit-min-device-pixel-ratio : 2) {ul.blog-action-list {display: flex;margin-top: 40px !important;margin-right: -20px;margin-left: -30px !important;align-items: center;justify-content: space-around;}}
+// @media all and (min-width : 400px) and (max-width : 668px) {i.action-text {margin-left: -67px;&.search {padding-right: 5px;}}}
+// @media all and (max-width : 768px) {.see-more {position: relative;width: 32% !important;height: 70px;margin: 0 auto;padding: 20px;color: $black;background: $color_black_haze_approx;text-align: center;align-items: center;font-size: 16px;font-weight: bold;justify-content: center;}
 // ======= BLOG HEADER STYLE ======= //
 .blog-header-container {
     margin-top: 170px;
@@ -37,11 +35,11 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
             @media screen and (min-device-width:400px) and (max-device-width:414px) {
                 margin-left: 72px !important;
             }
-            @media only screen and(min-device-width : 400px) and(max-device-width : 470px) and (-webkit-min-device-pixel-ratio : 2) {
+            @media only screen and (min-device-width : 400px) and (max-device-width : 470px) and (-webkit-min-device-pixel-ratio : 2) {
                 margin-top: -39px !important;
                 margin-left: 95px !important;
             }
-                  @media only screen and(min-device-width : 374px) and(max-device-width : 399px) and (-webkit-min-device-pixel-ratio : 2) {
+            @media only screen and (min-device-width : 374px) and (max-device-width : 399px) and (-webkit-min-device-pixel-ratio : 2) {
                 margin-top: -39px !important;
                 margin-left: 109px !important;
             }
@@ -56,7 +54,7 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
         float: left;
         font-weight: 800;
         padding-right: 20px;
-        @media all and(max-width : 768px) {
+        @media all and (max-width : 768px) {
             margin-top: 25px;
             margin-left: -15px;
             padding-right: 30px;
@@ -72,7 +70,6 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
         @media (min-width:400px) and (max-width: 414px) {
             font-size: 40px;
             margin-top: 38px !important;
-
         }
         @media screen and (max-width : 376px) {
             margin-top: 29px !important;
@@ -107,6 +104,7 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
         }
     }
 }
+
 .blog-author {
     margin-top: 15px;
     color: $black;
@@ -116,14 +114,15 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
     width: 100%;
     font-size: 20px;
     padding-bottom: 50px;
-    @media all and(max-width : 414px) and (min-width:400px) {
-        padding-top: 0px;
+    @media all and (max-width : 414px) and (min-width:400px) {
+        padding-top: 0;
         margin-top: 10px;
         color: $black;
         font-family: $bold_font;
         font-size: 18px;
     }
 }
+
 .blog-author.blog-post-author {
     margin-top: 15px;
     color: $black;
@@ -133,7 +132,7 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
     width: 100%;
     font-size: 20px;
     padding-bottom: 50px;
-    @media all and(max-width : 414px) and (min-width:400px) {
+    @media all and (max-width : 414px) and (min-width:400px) {
         padding-top: 10px;
         margin-top: 10px;
         color: $black;
@@ -142,14 +141,13 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
     }
 }
 //====== SINGLE POST STYLE ======= //
+
 .blog-post-container {
-
     .headline-container {
-     @media (max-width: 640px) {
-        margin-left: 15px;
-     }
-
-}
+        @media (max-width: 640px) {
+            margin-left: 15px;
+        }
+    }
 
     .date {
         margin-left: 10px;
@@ -160,7 +158,7 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
         @media all and (max-width : 640px) {
             padding-left: 20px;
         }
-         @media all and (min-width : 376px) and (max-width:414px) {
+        @media all and (min-width : 376px) and (max-width:414px) {
             padding-left: 10px;
         }
         @media(max-width: 664px) {
@@ -168,7 +166,7 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
             margin-top: 25px;
             margin-bottom: 15px;
         }
-        @media all and(max-width : 400px) {
+        @media all and (max-width : 400px) {
             display: flex;
             margin-top: 25px;
             margin-bottom: 15px;
@@ -182,7 +180,7 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
             margin-left: 25px;
             padding-right: 40px;
         }
-        @media all and(max-width : 400px) {
+        @media all and (max-width : 400px) {
             margin-top: 40px;
             padding-right: 15px;
             padding-left: 15px;
@@ -215,12 +213,11 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
     }
 
     .single-post-article {
-        padding-left: 0px;
+        padding-left: 0;
         @media all and (max-width : 640px) {
             padding: 0;
         }
     }
-
 
     .post-title {
         color: $black;
@@ -233,7 +230,7 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
             font-family: $secondary_font;
             font-size: 50px;
         }
-        @media all and(max-width : 400px) {
+        @media all and (max-width : 400px) {
             margin-top: 10px;
             padding-right: 0;
             padding-left: 15px;
@@ -255,28 +252,25 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
                 animation-timing-function: linear;
             }
             @media (min-width:320px) and (max-width:374px) {
-                margin-left: 0px !important;
+                margin-left: 0 !important;
                 width: 60px;
                 margin-top: -15px !important;
             }
             @media (min-width:375px) and (max-width:400px) {
-                margin-left: 0px !important;
+                margin-left: 0 !important;
             }
             @media (min-width:400px) and (max-width:414px) {
-                margin-left: 0px !important;
+                margin-left: 0 !important;
                 width: 60px;
                 margin-top: -15px !important;
-
             }
-               @media (min-width:414px) and (max-width:640px) {
-                margin-left: 0px !important;
+            @media (min-width:414px) and (max-width:640px) {
+                margin-left: 0 !important;
                 width: 60px;
-
             }
         }
     }
 }
-
 //============ * SHARED ELEMENTS BETWEEN BLOG INDEX AND SINGLE POSTS * ============== //
 .position {
     position: relative;
@@ -287,9 +281,11 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
     }
 }
 // share icon components
+
 .share-text:hover {
     cursor: pointer;
 }
+
 .icon-share.blog-share {
     @media all and (max-width : 640px) {
         margin-top: 40px !important;
@@ -299,6 +295,7 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
         cursor: pointer;
     }
 }
+
 .blog-share-text {
     position: absolute;
     margin-top: 1.7px;
@@ -309,12 +306,14 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
         font-family: $bold_font;
     }
 }
+
 .blog-share {
     margin-top: 40px !important;
     margin-left: 5px !important;
     color: $black;
     cursor: pointer;
 }
+
 article {
     &.blog-column {
         @media all and (max-width : 768px) {
@@ -328,7 +327,7 @@ article {
             margin-right: 0;
             padding-left: 0;
         }
-        @media all and(min-width : 400px) and(max-width : 668px) {
+        @media all and (min-width : 400px) and (max-width : 668px) {
             height: 100%;
             margin-top: 20px !important;
             margin-right: 0 !important;
@@ -349,12 +348,10 @@ img {
             width: 90px;
             margin-left: 15px;
         }
-        @media screen and (min-width:400px) and (max-width:414px){
+        @media screen and (min-width:400px) and (max-width:414px) {
             margin-left: 25px;
             margin-top: 20px;
             width: 90px;
-
-
         }
         @media screen and (min-device-width:400px) and (max-device-width: 414px) {
             width: 90px !important;
@@ -429,7 +426,7 @@ p {
             display: flex;
             width: 50% !important;
             margin-top: 10% !important;
-            margin-left: 0;
+            margin-left: 0 !important;
             padding-right: 0 !important;
         }
         @media(min-device-width: 412px) and (max-device-width : 460px) and (-webkit-min-device-pixel-ratio : 2) {
@@ -447,7 +444,7 @@ p {
         margin-top: 0 !important;
         margin-bottom: -26px !important;
         font-size: 13px;
-        @media all and(min-width : 400px) and(max-width : 668px) {
+        @media all and (min-width : 400px) and (max-width : 668px) {
             display: block;
             margin-bottom: -26px !important;
             margin-left: -2px !important;
@@ -465,14 +462,14 @@ p {
             font-size: 13px;
             margin-left: 15px !important;
         }
-        @media only screen and(min-device-width : 375px) and(max-device-width : 470px) and(-webkit-min-device-pixel-ratio : 2) {
+        @media only screen and (min-device-width : 375px) and (max-device-width : 470px) and (-webkit-min-device-pixel-ratio : 2) {
             display: block;
             margin-top: -2px !important;
             margin-bottom: -26px;
             margin-left: 5% !important;
             font-size: 13px;
         }
-        @media only screen and(min-device-width : 400px) and(max-device-width : 414px) {
+        @media only screen and (min-device-width : 400px) and (max-device-width : 414px) {
             margin-left: -20px !important;
         }
     }
@@ -480,7 +477,7 @@ p {
     &.readmore {
         color: $color_cardinal_approx;
         font-size: inherit;
-        @media all and(max-width : 500px) {
+        @media all and (max-width : 500px) {
             padding-left: 15px;
             color: $color_cardinal_approx;
             font-size: inherit;
@@ -488,10 +485,9 @@ p {
         @media (min-width:500px) and (max-width:768px) {
             margin: 0 0 20px 15px;
         }
-         @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 375px) and (min-device-width: 320px) {
+        @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 375px) and (min-device-width: 320px) {
             padding-left: 20px !important;
-         }
-
+        }
     }
 
     &.blog-preview {
@@ -502,7 +498,7 @@ p {
         padding-left: 20px;
         font-size: 13px;
         line-height: 20px;
-        @media all and(min-width : 400px) and(max-width : 668px) {
+        @media all and (min-width : 400px) and (max-width : 668px) {
             padding-right: 65px !important;
             padding-left: 40px !important;
             font-size: 12px;
@@ -525,7 +521,7 @@ a {
         color: $color_monza_approx;
         text-decoration: none;
         font-size: 12px;
-        @media only screen and(min-device-width : 374px) and(max-device-width : 470px) and(-webkit-min-device-pixel-ratio : 2) {
+        @media only screen and (min-device-width : 374px) and (max-device-width : 470px) and (-webkit-min-device-pixel-ratio : 2) {
             display: block;
             margin-top: 30px;
             margin-left: 25px;
@@ -533,7 +529,7 @@ a {
             text-decoration: none;
             font-size: 12px;
         }
-        @media all and(min-width : 668px) and(max-width : 767px) {
+        @media all and (min-width : 668px) and (max-width : 767px) {
             display: block;
             margin-top: 30px;
             margin-left: 25px;
@@ -541,7 +537,7 @@ a {
             text-decoration: none;
             font-size: 12px;
         }
-        @media all and(min-width : 400px) and(max-width : 668px) {
+        @media all and (min-width : 400px) and (max-width : 668px) {
             padding-left: 5px;
         }
     }
@@ -558,7 +554,7 @@ span {
         font-family: $secondary_font;
         font-size: 30px;
         justify-content: flex-start;
-        @media all and(min-width : 400px) and(max-width : 668px) {
+        @media all and (min-width : 400px) and (max-width : 668px) {
             display: flex;
             width: 90%;
             padding-top: 20px;
@@ -570,7 +566,7 @@ span {
             font-size: 30px;
             justify-content: flex-start;
         }
-        @media all and(min-width : 668px) and(max-width : 768px) {
+        @media all and (min-width : 668px) and (max-width : 768px) {
             padding-left: 40px;
         }
         @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 374px) and (min-device-width: 320px) {
@@ -590,7 +586,7 @@ span {
             padding-right: 40px !important;
             padding-left: 40px !important;
         }
-        @media only screen and(min-device-width : 374px) and(max-device-width : 470px) and(-webkit-min-device-pixel-ratio : 2) {
+        @media only screen and (min-device-width : 374px) and (max-device-width : 470px) and (-webkit-min-device-pixel-ratio : 2) {
             padding: 20px 20px 16px 40px;
             align-items: center;
             font-size: 30px;
@@ -610,6 +606,7 @@ section {
     }
 }
 // BLOG INDEX
+
 .blog-container {
     .blog-author {
         margin-top: 15px;
@@ -619,7 +616,7 @@ section {
         position: relative;
         width: 100%;
         font-size: 20px;
-        @media all and(max-width : 400px) {
+        @media all and (max-width : 400px) {
             margin-top: 10px;
             color: $black;
             font-family: $bold_font;
@@ -670,13 +667,13 @@ section {
         margin-top: 40px;
         margin-left: -20px;
         border-bottom: 1px solid $color_celeste_approx;
-        @media only screen and(min-device-width : 374px) and(max-device-width : 470px) and(-webkit-min-device-pixel-ratio : 2) {
+        @media only screen and (min-device-width : 374px) and (max-device-width : 470px) and (-webkit-min-device-pixel-ratio : 2) {
             width: 80% !important;
             margin-top: 40px !important;
             margin-left: 10px !important;
             border-bottom: 1px solid #ccc;
         }
-        @media all and(min-width : 668px) and(max-width : 767px) {
+        @media all and (min-width : 668px) and (max-width : 767px) {
             width: 106%;
             margin-top: 40px;
             margin-left: -20px;
@@ -684,7 +681,7 @@ section {
         }
         @media (min-width:320px) and (max-width:375px) {
             width: 80% !important;
-            margin-top: 40px;
+            margin-top: 40px !important;
             margin-left: 10px !important;
             border-bottom: 1px solid #ccc;
         }
@@ -723,7 +720,7 @@ section {
             margin-bottom: 30px;
             margin-left: -20px;
         }
-        @media all and(min-width : 1200px) {
+        @media all and (min-width : 1200px) {
             display: flex;
             width: 105%;
             height: 95px;
@@ -731,7 +728,7 @@ section {
             margin-left: -20px;
             border-bottom: 5px solid $black;
         }
-        @media only screen and (min-device-width : 374px) and (max-device-width : 470px) and(-webkit-min-device-pixel-ratio : 2) {
+        @media only screen and (min-device-width : 374px) and (max-device-width : 470px) and (-webkit-min-device-pixel-ratio : 2) {
             display: flex;
             width: 80% !important;
             height: 95px;
@@ -739,7 +736,7 @@ section {
             margin-left: 10px !important;
             border-bottom: 5px solid black;
         }
-        @media all and(min-width: 400px) and(max-width: 668px) {
+        @media all and (min-width: 400px) and (max-width: 668px) {
             display: flex;
             width: 120%;
             height: 90px;
@@ -748,7 +745,7 @@ section {
             padding-left: 41px;
             border-bottom: 5px solid $black;
         }
-        @media all and(min-width : 400px) and(max-width : 668px) {
+        @media all and (min-width : 400px) and (max-width : 668px) {
             display: flex;
             width: 80% !important;
             height: 95px;
@@ -756,12 +753,12 @@ section {
             margin-left: 10px !important;
             border-bottom: 5px solid black;
         }
-        @media all and(min-width : 668px) and(max-width : 767px) {
+        @media all and (min-width : 668px) and (max-width : 767px) {
             width: 106%;
             margin-bottom: 30px;
             margin-left: -20px;
         }
-        @media only screen and(min-device-width : 374px) and(max-device-width : 470px) and (-webkit-min-device-pixel-ratio : 2) {
+        @media only screen and (min-device-width : 374px) and (max-device-width : 470px) and (-webkit-min-device-pixel-ratio : 2) {
             display: flex;
             width: 80%;
             height: 95px;
@@ -793,7 +790,7 @@ section {
     }
 
     .top-main {
-        @media all and (min-width : 640px) and(max-width : 991px) {
+        @media all and (min-width : 640px) and (max-width : 991px) {
             position: relative;
             margin-top: 121px;
             padding: 40px 0 70px;
@@ -838,7 +835,7 @@ section {
         margin-left: -30px !important;
         border-bottom: 1px solid #ccc;
     }
-    @media all and(min-width : 668px) and (max-width : 767px) {
+    @media all and (min-width : 668px) and (max-width : 767px) {
         margin-top: 144px !important;
         margin-bottom: 80px !important;
         border-bottom: 1px solid $color_celeste_approx;
