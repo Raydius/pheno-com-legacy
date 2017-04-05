@@ -146,7 +146,7 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
 
     .headline-container {
      @media (max-width: 640px) {
-        margin-left: 15px;    
+        margin-left: 15px;
      }
 
 }
@@ -838,12 +838,12 @@ section {
         margin-left: -30px !important;
         border-bottom: 1px solid #ccc;
     }
-    @media all and(min-width : 668px) and(max-width : 767px) {
+    @media all and (min-width : 668px) and (max-width : 767px) {
         margin-top: 144px !important;
         margin-bottom: 80px !important;
         border-bottom: 1px solid $color_celeste_approx;
     }
-    @media all and(min-width : 400px) and(max-width : 668px) {
+    @media all and (min-width : 400px) and (max-width : 668px) {
         margin-top: 150px !important;
         margin-bottom: 0 !important;
         padding-bottom: 0;
