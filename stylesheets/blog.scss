@@ -32,14 +32,18 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
     p {
         &.now {
             margin-top: -6px;
-            margin-left: 92px !important;
+            margin-left: 92px;
             font-size: 14px;
             @media screen and (min-device-width:400px) and (max-device-width:414px) {
                 margin-left: 72px !important;
             }
-            @media only screen and(min-device-width : 374px) and(max-device-width : 470px) and (-webkit-min-device-pixel-ratio : 2) {
+            @media only screen and(min-device-width : 400px) and(max-device-width : 470px) and (-webkit-min-device-pixel-ratio : 2) {
                 margin-top: -39px !important;
                 margin-left: 95px !important;
+            }
+                  @media only screen and(min-device-width : 374px) and(max-device-width : 399px) and (-webkit-min-device-pixel-ratio : 2) {
+                margin-top: -39px !important;
+                margin-left: 109px !important;
             }
         }
     }
@@ -64,6 +68,11 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
             margin-left: -15px;
             font-family: $primary_font;
             font-weight: 800;
+        }
+        @media (min-width:400px) and (max-width: 414px) {
+            font-size: 40px;
+            margin-top: 38px !important;
+
         }
         @media screen and (max-width : 376px) {
             margin-top: 29px !important;
@@ -135,6 +144,13 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
 //====== SINGLE POST STYLE ======= //
 .blog-post-container {
 
+    .headline-container {
+     @media (max-width: 640px) {
+        margin-left: 15px;    
+     }
+
+}
+
     .date {
         margin-left: 10px;
         margin-top: 150px;
@@ -143,6 +159,9 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
         color: $color_suva_gray_approx;
         @media all and (max-width : 640px) {
             padding-left: 20px;
+        }
+         @media all and (min-width : 376px) and (max-width:414px) {
+            padding-left: 10px;
         }
         @media(max-width: 664px) {
             display: flex;
@@ -196,6 +215,7 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
     }
 
     .single-post-article {
+        padding-left: 0px;
         @media all and (max-width : 640px) {
             padding: 0;
         }
@@ -234,14 +254,24 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
                 animation-name: spin;
                 animation-timing-function: linear;
             }
-            @media (min-width:320px) and (max-width:376px) {
-                margin-left: -10px !important;
+            @media (min-width:320px) and (max-width:374px) {
+                margin-left: 0px !important;
+                width: 60px;
+                margin-top: -15px !important;
             }
-            @media (min-width:376px) and (max-width:400px) {
+            @media (min-width:375px) and (max-width:400px) {
                 margin-left: 0px !important;
             }
             @media (min-width:400px) and (max-width:414px) {
                 margin-left: 0px !important;
+                width: 60px;
+                margin-top: -15px !important;
+
+            }
+               @media (min-width:414px) and (max-width:640px) {
+                margin-left: 0px !important;
+                width: 60px;
+
             }
         }
     }
@@ -281,7 +311,7 @@ $pheno-p: url("/assets/images/blog/pheno-p.png");
 }
 .blog-share {
     margin-top: 40px !important;
-    margin-left: 20px !important;
+    margin-left: 5px !important;
     color: $black;
     cursor: pointer;
 }
@@ -319,7 +349,14 @@ img {
             width: 90px;
             margin-left: 15px;
         }
-        @media screen and (max-width : 414px) {
+        @media screen and (min-width:400px) and (max-width:414px){
+            margin-left: 25px;
+            margin-top: 20px;
+            width: 90px;
+
+
+        }
+        @media screen and (min-device-width:400px) and (max-device-width: 414px) {
             width: 90px !important;
             margin-left: 15px;
             margin-top: 20px;
@@ -341,7 +378,7 @@ img {
             margin-left: -10px !important;
         }
         @media all and (max-width : 640px) {
-            width: 60px;
+            width: 70px;
             height: 60px;
             margin-right: 20px;
             margin-left: -40px;
@@ -372,7 +409,7 @@ p {
         }
         @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 374px) and (min-device-width: 320px) {
             width: 190px !important;
-            margin-top: 10% !important;
+            margin-top: 6% !important;
             margin-left: 5% !important;
             padding-bottom: 20px;
             padding-right: 10px;
@@ -515,7 +552,7 @@ span {
         display: flex;
         padding-top: 20px;
         padding-bottom: 16px;
-        padding-left: 30px;
+        padding-left: 20px;
         color: $color_mine_shaft_approx;
         align-items: center;
         font-family: $secondary_font;
@@ -532,6 +569,9 @@ span {
             font-family: $secondary_font;
             font-size: 30px;
             justify-content: flex-start;
+        }
+        @media all and(min-width : 668px) and(max-width : 768px) {
+            padding-left: 40px;
         }
         @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 374px) and (min-device-width: 320px) {
             padding-right: 40px !important;
@@ -839,3 +879,77 @@ section {
         transform: rotate(360deg);
     }
 }
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
