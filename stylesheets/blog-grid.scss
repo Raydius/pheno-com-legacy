@@ -34,6 +34,9 @@ p.now {
   margin-top  : -6px!important;
   margin-left : 90px!important;
   font-size   : 14px;
+  @media (min-device-width:400px) and (max-device-width:414px){
+    margin-left: 72px !important;
+  }
 }
 
 @media (min-width: 768px) {
@@ -353,6 +356,10 @@ input.subscribe-input {
   }
 }
 
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog-grid.scss
 
 
 // WEBPACK FOOTER //

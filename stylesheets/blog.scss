@@ -288,6 +288,16 @@ p.tagline {
 		justify-content: space-around;
 	}
 }
+@media only screen and (min-device-width:320px) and (max-device-width:375px){
+		.col-md-12.author-container {
+		display: flex;
+		width: 80% !important;
+		height: 95px;
+		margin-top: 20px;
+		margin-left: 10px !important;
+		border-bottom: 5px solid $black;
+	}
+}
 @media only screen and(min-device-width : 374px) and(max-device-width : 470px) and(-webkit-min-device-pixel-ratio : 2) {
 	p {
 		&.tagline {
@@ -731,7 +741,7 @@ ul.blog-action-list {
     width: 344px;
     float: right;
     @media (min-width: 1200px){
-    padding-left: 70px; 
+    padding-left: 70px;
     }
 }
 
@@ -749,6 +759,9 @@ p.tagline {
     margin-top: 35px !important;
     margin-bottom: -20px !important;
     font-size: 13px;
+    @media (min-device-width:400px) and (max-device-width:414px){
+    	    margin-left: -20px !important;
+    }
 }
 
 p.tip {
@@ -756,6 +769,9 @@ p.tip {
     margin-top: 0px;
     margin-bottom: -26px !important;
     font-size: 13px;
+    @media (min-device-width:400px) and (max-device-width:414px){
+    	    margin-left: -20px !important;
+    }
 }
 
 p.now {
@@ -801,6 +817,9 @@ img {
 		background: $pheno-p;
 		background-color: transparent;
 		background-repeat: no-repeat;
+		@media (min-width:320px) and (max-width:375px){
+			  margin-left: 20px !important;
+		}
 		&.blog-post-p {
 			margin-left: 0px;
 			&:hover {
@@ -1083,6 +1102,16 @@ a {
 		justify-content: space-around;
 	}
 }
+@media only screen and(min-device-width : 320px) and(max-device-width : 375px) and(-webkit-min-device-pixel-ratio : 2) {
+	.page-divide.end-post.col-md-12 {
+			width: 80% !important;
+			margin-top: 40px;
+			margin-left: 10px !important;
+			border-bottom: 1px solid #ccc;
+
+
+	}
+}
 @media only screen and(min-device-width : 374px) and(max-device-width : 470px) and(-webkit-min-device-pixel-ratio : 2) {
 	p {
 		&.tagline {
@@ -1118,6 +1147,7 @@ a {
 			margin-top: 40px;
 			margin-left: 10px !important;
 			border-bottom: 1px solid #ccc;
+
 
 	}
 
@@ -1696,6 +1726,22 @@ ul.blog-action-list {
 // WEBPACK FOOTER //
 // webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
 
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
 
 
 // WEBPACK FOOTER //
