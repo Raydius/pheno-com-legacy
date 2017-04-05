@@ -251,7 +251,7 @@ $pheno-p: url("/assets/images/blog/pheno-p.png"); ///////////////// DESIGN ELEME
                 animation-name: spin;
                 animation-timing-function: linear;
             }
-            @media (min-width:320px) and (max-width:374px) {
+            @media (min-width:320px) and (max-width:375px) {
                 margin-left: 0 !important;
                 width: 60px;
                 margin-top: -15px !important;
@@ -876,3 +876,8 @@ section {
         transform: rotate(360deg);
     }
 }
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/blog.scss
