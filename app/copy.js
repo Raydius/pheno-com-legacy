@@ -352,7 +352,7 @@ var copy =
       "project": "Visual Brand Design",
       "media": "Collateral, Digital, OOH",
       "blockquote":"Neustar Helps Make Data Shine.",
-      "shareImg": require('assets/images/neustar/neustar.jpg'),
+      "shareImg": require('assets/images/neustar/NeustarLanding.jpg'),
       "ogDescription": "The leader in communications, security and connectivity reimagines their vision for a connected future.",
       "topDescription": [
         "For more than 20 years, Neustar has been paving the way for connectivity through real-time information, analytics and telecommunications platforms. In fact, Neustar was the pioneer of Caller ID services. However, with a fully connected future not far away &#45; and with the acquisition of numerous new services &#45; Neustar needed to update their brand vision to reflect their position as leaders of the connected world.",
@@ -444,7 +444,7 @@ var copy =
         {
           "type": "image",
           "image": false,
-          "imageUrl": require("assets/images/neustar/NeustarDC2.jpg"),
+          "imageUrl": require("assets/images/neustar/Neustar-macbook.png"),
           "mainDescription": [
             "Next we took their existing (and occasionally heady) content and provided a strategic framework for their website, sales decks, case studies, and white papers. With language, we injected a more personal tone, focusing as much as possible on the real world outcomes of their offerings, rather than staying in the &quot;weeds&quot; and focusing on the &quot;how.&quot;"
           ]
@@ -1237,7 +1237,7 @@ var copy =
         }
       ]
 
-  },
+    },
     "cooper": {
       "title": "Cooper",
       "className": "cooper",
@@ -1339,13 +1339,18 @@ var copy =
     },
     "moreCases": [
       {
+        "projectName": "Neustar Helps Make Data Shine.",
+        "projectUrl": "/work/neustar/",
+        "projectThumbSrc": require("assets/images/neustar/NeustarLanding.jpg")
+      },
+      {
         "projectName": "From Federer <br> By Federer.",
         "projectUrl": "/work/federer/",
         "projectThumbSrc": require("assets/images/morecases/7.jpg")
       },
       {
         "projectName": "Aetna Brings out Medicare's Potential.",
-        "projectUrl": "/work/aetna/",
+        "projectUrl": "/work/aetna-potential/",
         "projectThumbSrc": require("assets/images/morecases/8.jpg")
       },
       {
