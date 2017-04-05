@@ -206,7 +206,7 @@
     bottom: 10px;
     position: absolute;
     @media screen and (max-width: 640px) {
-      bottom: 0;
+      bottom: 10px;
     }
     &.icon-left-arrow {
       left: 30%;
@@ -354,6 +354,10 @@
 .work .more-case-wrapper .owl-item .col-md-4 {
 	padding: 0 10px;
 }
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_owl_custom.scss
 
 
 // WEBPACK FOOTER //
