@@ -246,7 +246,6 @@
 	  text-align: center;
 	  -webkit-tap-highlight-color: transparent; 
 	  margin: 30px 0 60px 0;
-	  margin-left: 85px !important;
 	}
 	
 	.owl-dots .owl-dot {
@@ -296,9 +295,9 @@
 	  float: right;
     margin-right: 10%;
 	}
-/*   .mobile .owl-dots {
-    margin-top: 39px;
-  } */
+  .mobile .owl-dots {
+	margin-left: 85px !important;
+  }
   .desktop .owl-nav .owl-prev {
     position: absolute;
     left: 0%;
@@ -355,6 +354,10 @@
 .work .more-case-wrapper .owl-item .col-md-4 {
 	padding: 0 10px;
 }
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_owl_custom.scss
 
 
 // WEBPACK FOOTER //
