@@ -9,18 +9,18 @@ $color_mine_shaft_approx: #333333;
 $black_25: rgba(0, 0, 0, 0.25);
 //urls
 $pheno-p: url("/assets/images/blog/pheno-p.png"); ///////////////// DESIGN ELEMENTS NOT IN USE ///////////////////
-// @media(max-width: 664px) {ul.blog-action-list {display: flex;margin-top: 50px;margin-left: 100px;padding-right: 20px;align-items: center;justify-content: space-around;}}
-// @media(max-width: 664px) {li.action-text {margin-left: -50px;font-size: 16px;}}
-// @media all and (min-width :400px) and (max-width :668px){not in use .bubble-search{z-index:2;position:absolute;width:185px;height:58px;margin-top:58px!important;margin-left:-3.1pc!important;padding:20px 10px;border:1px solid;border-radius:3px;background:0 0}}@media all and (min-width :400px) and (max-width :668px){.bubble-search{z-index:2;position:absolute;width:185px;height:58px;margin-top:58px!important;margin-left:-3.1pc!important;padding:20px 10px;border:1px solid;border-radius:3px;background:0 0}}ul.blog-action-list{display:flex;margin-top:50px;margin-left:100px;padding-right:20px;align-items:center;justify-content:space-around}@media only screen and (min-device-width :374px) and (max-device-width :470px) and (-webkit-min-device-pixel-ratio :2){ul.blog-action-list{display:flex;margin-top:40px!important;margin-right:-20px;margin-left:-30px!important;align-items:center;justify-content:space-around}}@media only screen and (min-device-width :320px) and (max-device-width :480px) and (-webkit-min-device-pixel-ratio :2){ul.blog-action-list{display:flex;margin-top:40px;margin-right:-20px;margin-left:30px;align-items:center;justify-content:space-around}}.action-text{margin-left:-50px;font-size:16px}@media(min-device-width:412px) and (max-device-width :460px) and (-webkit-min-device-pixel-ratio :2){ul.blog-action-list{display:flex;margin-top:40px;margin-right:-20px;margin-left:30px;align-items:center;justify-content:space-around}}
-// @media all and (min-width : 400px) and (max-width : 668px) {.bubble-search {z-index: 2;position: absolute;width: 185px;height: 58px;margin-top: 58px !important;margin-left: -3.1pc !important;padding: 20px 10px;border: $black_25 solid 1px;border-radius: 3px;background: $white;}}
-// @media all and (min-width : 401px) and (max-width : 640px) {ul.blog-action-list {display: flex;margin-top: 67px !important;margin-left: 100px !important;align-items: center;justify-content: space-around;}}
-// @media all and (min-width : 400px) and (max-width : 668px) {li.action-text {margin-left: -67px;&.search {padding-right: 5px;}}ul.blog-action-list {display: flex;margin-top: 92px !important;margin-right: 15px;margin-left: -39px !important;align-items: center;justify-content: space-around;}}
-// @media(min-device-width: 412px) and (max-device-width : 460px) and (-webkit-min-device-pixel-ratio : 2) {ul.blog-action-list {display: flex;margin-top: 40px;margin-right: -20px;margin-left: 30px;align-items: center;justify-content: space-around;}}
-// @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio : 2) {ul.blog-action-list {display: flex;margin-top: 40px;margin-right: -20px;margin-left: 30px;align-items: center;justify-content: space-around;}}
-// @media only screen and (min-device-width : 374px) and (max-device-width : 470px) and (-webkit-min-device-pixel-ratio : 2) {ul.blog-action-list {display: flex;margin-top: 40px !important;margin-right: -20px;margin-left: -30px !important;align-items: center;justify-content: space-around;}}
-// @media all and (min-width : 400px) and (max-width : 668px) {i.action-text {margin-left: -67px;&.search {padding-right: 5px;}}}
-// @media all and (max-width : 768px) {.see-more {position: relative;width: 32% !important;height: 70px;margin: 0 auto;padding: 20px;color: $black;background: $color_black_haze_approx;text-align: center;align-items: center;font-size: 16px;font-weight: bold;justify-content: center;}
-// ======= BLOG HEADER STYLE ======= //
+ // @media(max-width: 664px) {ul.blog-action-list {display: flex;margin-top: 50px;margin-left: 100px;padding-right: 20px;align-items: center;justify-content: space-around;}}
+ // @media(max-width: 664px) {li.action-text {margin-left: -50px;font-size: 16px;}}
+ // @media all and (min-width :400px) and (max-width :668px){.bubble-search{z-index:2;position:absolute;width:185px;height:58px;margin-top:58px!important;margin-left:-3.1pc!important;padding:20px 10px;border:1px solid;border-radius:3px;background:0 0}}@media all and (min-width :400px) and (max-width :668px){.bubble-search{z-index:2;position:absolute;width:185px;height:58px;margin-top:58px!important;margin-left:-3.1pc!important;padding:20px; 10px;border:1px;solid;border-radius:3px;background:0 0}}ul.blog-action-list{display:flex;margin-top:50px;margin-left:100px;padding-right:20px;align-items:center;justify-content:space-around}@media only screen and (min-device-width :374px) and (max-device-width :470px) and (-webkit-min-device-pixel-ratio :2){ul.blog-action-list{display:flex;margin-top:40px!important;margin-right:-20px;margin-left:-30px!important;align-items:center;justify-content:space-around}}@media only screen and (min-device-width :320px) and (max-device-width :480px) and   (-webkit-min-device-pixel-ratio :2){ul.blog-action-list{display:flex;margin-top:40px;margin-right:-20px;margin-left:30px;align-items:center;justify-content:space-around}}.action-text{margin-left:-50px;font-size:16px}@media(min-device-width:412px)and(max-device-width :460px)and(-webkit-min-device-pixel-ratio:2){ul.blog-action-list{display:flex;margin-top:40px;margin-right:-20px;margin-left:30px;align-items:center;justify-content:space-around}}
+ // @media all and (min-width : 400px) and (max-width : 668px) {.bubble-search {z-index: 2;position: absolute;width: 185px;height: 58px;margin-top: 58px !important;margin-left: -3.1pc !important;padding: 20px 10px;border: $black_25 solid 1px;border-radius: 3px;background: $white;}}
+ // @media all and (min-width : 401px) and (max-width : 640px) {ul.blog-action-list {display: flex;margin-top: 67px !important;margin-left: 100px !important;align-items: center;justify-content: space-around;}}
+ // @media all and (min-width : 400px) and (max-width : 668px) {li.action-text {margin-left: -67px;&.search {padding-right: 5px;}}ul.blog-action-list {display: flex;margin-top: 92px !important;margin-right: 15px;margin-left: -39px !important;align-items: center;justify-content: space-around;}}
+ // @media(min-device-width: 412px) and (max-device-width : 460px) and (-webkit-min-device-pixel-ratio : 2) {ul.blog-action-list {display: flex;margin-top: 40px;margin-right: -20px;margin-left: 30px;align-items: center;justify-content: space-around;}}
+ // @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio : 2) {ul.blog-action-list {display: flex;margin-top: 40px;margin-right: -20px;margin-left: 30px;align-items: center;justify-content: space-around;}}
+ // @media only screen and (min-device-width : 374px) and (max-device-width : 470px) and (-webkit-min-device-pixel-ratio : 2) {ul.blog-action-list {display: flex;margin-top: 40px !important;margin-right: -20px;margin-left: -30px !important;align-items: center;justify-content: space-around;}}
+ // @media all and (min-width : 400px) and (max-width : 668px) {i.action-text {margin-left: -67px;&.search {padding-right: 5px;}}}
+ // @media all and (max-width : 768px) {.see-more {position: relative;width: 32% !important;height: 70px;margin: 0 auto;padding: 20px;color: $black;background: $color_black_haze_approx;text-align: center;align-items: center;font-size: 16px;font-weight: bold;justify-content: center;}
+ // ======= BLOG HEADER STYLE =======
 .blog-header-container {
     margin-top: 170px;
     @media (max-width:640px) {
@@ -71,8 +71,8 @@ $pheno-p: url("/assets/images/blog/pheno-p.png"); ///////////////// DESIGN ELEME
             font-size: 40px;
             margin-top: 38px !important;
         }
-        @media screen and (max-width : 376px) {
-            margin-top: 29px !important;
+        @media screen and (max-width : 375px) {
+            margin-top: 10px !important;
             margin-left: -15px !important;
             padding-right: 5px;
             font-family: $primary_font;
@@ -222,13 +222,23 @@ $pheno-p: url("/assets/images/blog/pheno-p.png"); ///////////////// DESIGN ELEME
     .post-title {
         color: $black;
         font-family: $secondary_font;
-        font-size: 50px !important;
+        font-size: 72px;
+        line-height: 82px;
         padding-bottom: 20px;
         @media all and (max-width : 640px) {
             padding-left: 15px;
             color: $black;
             font-family: $secondary_font;
-            font-size: 50px;
+            font-size: 30px !important;
+        }
+        @media all and (max-width : 414px) {
+            margin-top: 10px;
+            padding-bottom: 30px;
+            padding-right: 0;
+            padding-left: 15px;
+            color: $black;
+            font-family: $secondary_font;
+            font-size: 30px;
         }
         @media all and (max-width : 400px) {
             margin-top: 10px;
@@ -236,7 +246,7 @@ $pheno-p: url("/assets/images/blog/pheno-p.png"); ///////////////// DESIGN ELEME
             padding-left: 15px;
             color: $black;
             font-family: $secondary_font;
-            font-size: 50px;
+            font-size: 30px;
         }
     }
 
@@ -426,7 +436,7 @@ p {
             display: flex;
             width: 50% !important;
             margin-top: 10% !important;
-            margin-left: 0 !important;
+            margin-left: 0;
             padding-right: 0 !important;
         }
         @media(min-device-width: 412px) and (max-device-width : 460px) and (-webkit-min-device-pixel-ratio : 2) {
