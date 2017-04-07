@@ -568,7 +568,7 @@ var copy =
 
     },
     "wilson-anthem": {
-      "title": "My Wilson",
+      "title": "Wilson Equips Itself With Global Campaign.",
       "className": "wilson-anthem",
       "client": "Wilson",
       "clientLogo": require('assets/images/works/clients_logo/wilson_logo.svg'),
@@ -1033,7 +1033,7 @@ var copy =
       ]
     },
     "mens-wearhouse": {
-      "title": "Rebrand",
+      "title": "Men's Wearhouse Updates Its Wardrobe.",
       "className": "mens-wearhouse",
       "client": "Men's Wearhouse",
       "clientLogo": require('assets/images/works/clients_logo/mens-wearhouse.svg'),
@@ -1127,7 +1127,7 @@ var copy =
       ]
     },
     "think-thin": {
-      "title": "Think Thin",
+      "title": "thinkThin Helps Women Shed the Guilt.",
       "className": "think-thin",
       "client": "thinkThin",
       "clientLogo": require('assets/images/client_icons/icon-thinkthin.svg'),
