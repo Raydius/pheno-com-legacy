@@ -254,7 +254,7 @@
   }
   .top-main h2 blockquote,  {
     font-size: 30px;
-    padding-right: 330px;
+/*     padding-right: 330px; */
     line-height: 34px;
     &:before {
       left: -16px;
@@ -262,6 +262,7 @@
   }
   .home .top-main h2, .about .top-main h2, .culture .top-main h2 {
     font-size: 28px;
+    padding-right: 150px;
     line-height: 34px;
   }
   .work.work-details {
@@ -276,7 +277,7 @@
     line-height: 26px;
   }
   .work h2 blockquote {
-    width: 100%;
+    width: 100% !important;
   }
   .work .more-case-wrapper.desktop, .work .more-cases > a {
     display: none;
@@ -365,6 +366,7 @@
   .work.work-details h2 blockquote {
     font-size: 36px;
     line-height: 44px;
+    width: 640px;
   }
   #toggle-project-detail:checked {
     ~ label {
@@ -444,18 +446,3 @@
     padding: 0 30px;
   }
 }
-
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_responsive.scss
-
-
-
-
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_responsive.scss
-
-
-// WEBPACK FOOTER //
-// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_responsive.scss

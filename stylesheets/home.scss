@@ -36,6 +36,10 @@
 		}
 		h2 {
 			font-size: 52px;
+				@media screen and (max-width: 640px) {
+				width: 510px;
+			}
+
 		}
 		input {
 			opacity: 0;

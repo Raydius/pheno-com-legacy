@@ -674,7 +674,7 @@ var copy =
       ]
     },
     "wilson-x": {
-      "title": "Wilson X",
+      "title": "Wilson Launches Futuristic Ball.",
       "className": "wilson-x",
       "client": "Wilson",
       "clientLogo": require('assets/images/works/clients_logo/wilson_logo.svg'),
