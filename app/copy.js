@@ -189,6 +189,7 @@ var copy =
       "paragraph3": [
 
         "I&#8217;ve worked with Phenomenon for seven years across two companies. When I was hired to transform and re-brand the country&#8217;s largest non-bank mortgage servicer, one of my first calls was to Phenomenon.",
+        "<hr>",
         "KD: Why did you start this company? What are you all about?",
         "<span>PHNO: We all know that the agency model is badly broken. Client interests don&#8217;t line up with agency interests and that's a recipe for disaster.</span>",
         "<span>So we founded Phenomenon as a reaction to that.</span>",
