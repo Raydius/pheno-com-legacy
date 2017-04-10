@@ -82,7 +82,7 @@ var copy =
       "chicago": {
         "title": "Chicago",
         "address": {
-          "line1": "118 N. Peoria St, Suite 5S",
+          "line1": "118 N Peoria St, Suite 5S",
           "line2": "Chicago, IL 60607"
         },
         "phone": {
