@@ -35,9 +35,12 @@
 			position: absolute;
 		}
 		h2 {
-			font-size: 52px;
+			font-size: 62px;
+	    line-height: 82px;
 				@media screen and (max-width: 640px) {
 				width: 510px;
+				font-size: 52px;
+
 			}
 
 		}
