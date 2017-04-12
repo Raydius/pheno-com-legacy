@@ -490,10 +490,15 @@
 
 								a:last-of-type {
 										display       : block;
-										margin        : 90px;
+										margin        : 20px;
 										margin-top    : 10px;
 										margin-bottom : 60px;
 										font-family: "circular-book";
+										@media (max-width:640px) {
+										    max-width: 250px;
+											margin: 10px auto 0;
+											margin-bottom: 40px;	
+										}
 								}
 						}
 
