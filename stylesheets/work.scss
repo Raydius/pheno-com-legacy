@@ -1,5 +1,19 @@
 .work {
+
+	button.icon-left-arrow:hover {
+	    color: #333 !important;
+	}
+	button.icon-right-arrow:hover {
+	    color: #333 !important;
+	}
+
 		&.work-landing {
+
+				.icon-left-arrow:hover {
+					color: #333;
+					transition: .5s;
+				}
+
 				h1 {
 						position    : absolute;
 						text-indent : -9999em;
@@ -170,8 +184,8 @@
 				}
 
 				h2 blockquote {
-						font-size   : 60px;
-						line-height : 70px;
+					    font-size: 72px;
+    					line-height: 82px;
 				}
 
 				h2 blockquote,
@@ -203,6 +217,7 @@
 						@media screen
 						       and (max-width : 640px) {
 								margin-left : 8px;
+								margin-top  : 20px;
 						}
 
 						> .col-md-4 {
@@ -328,7 +343,7 @@
 		}
 
 		> article {
-				margin-top : $base_spacing;
+				margin-top : 90px;
 
 				&.top-main {
 						margin-top : $fix_header_height;
@@ -365,10 +380,11 @@
 				}
 		}
 
-		h2 blockquote {
-				width       : 80%;
-				font-size   : 46px;
-				line-height : 56px;
+		.work h2 blockquote {
+		width: 80%;
+		font-size: 52px;
+		line-height: 56px;
+		padding-left: 20px;
 		}
 
 		img.clientlogo {
@@ -474,9 +490,15 @@
 
 								a:last-of-type {
 										display       : block;
-										margin        : 30px;
-										margin-top    : 20px;
+										margin        : 20px;
+										margin-top    : 10px;
 										margin-bottom : 60px;
+										font-family: "circular-book";
+										@media (max-width:640px) {
+										    max-width: 250px;
+											margin: 10px auto 0;
+											margin-bottom: 40px;	
+										}
 								}
 						}
 
@@ -539,6 +561,7 @@
 
 a.red.read-full {
 		width : 120px;
+		font-family: $primary_font;
 }
 
 @media all
@@ -662,3 +685,37 @@ a.red.read-full {
 				height : 1250px !important;
 		}
 }
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/work.scss

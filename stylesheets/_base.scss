@@ -128,7 +128,7 @@ figcaption {
 }
 .top-main {
 	position: relative;
-	// border-bottom: 1px solid $gray_border_color !important;
+	border-bottom: 1px solid $gray_border_color !important;
 	padding: ($base_spacing - 20) 0;
 	margin-top: $fix_header_height;
 	@media screen and (max-width: 640px) {
@@ -480,7 +480,7 @@ ul.social-icons {
 		margin: 10px 0 30px 0;
 	}
 	.bubble-wrapper {
-		width: 184px;
+		width: 300px;
 		margin: 0 auto;
 		height: 100%;
 	}
@@ -488,7 +488,11 @@ ul.social-icons {
 		float: left;
 		margin-right: 5px;
 		@media screen and (max-width: 640px) {
-			margin-right: 11px;
+			font-size: 20px;
+			float: left;
+			margin-right: 4px;
+			padding: 13px;
+			margin-top: -14px;
 		}
 		a {
 			//border: 1px solid #ccc;
@@ -578,3 +582,8 @@ ul.social-icons {
 		opacity: 0;
 	}
 }
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/_base.scss

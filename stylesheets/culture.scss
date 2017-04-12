@@ -1,4 +1,11 @@
 .culture {
+
+	.culture-block {
+    @media (max-width:640px) {
+    width: 315px;
+    }
+
+	}
 	h1 {
 		position: absolute;
 		text-indent: -9999em;
@@ -49,6 +56,7 @@
 			img {
 				max-width: 320px;
 				margin: 0 auto;
+				margin-top: $base_spacing !important;
 				@media screen and (max-width: 640px) {
 					max-width: 300px;
 				}
@@ -327,3 +335,12 @@
  #culture-animate-2, #culture-animate-2-quote, #culture-animate-3, #culture-animate-3-quote, #culture-animate-4, #culture-animate-4-quote, #culture-animate-5, #culture-animate-5-quote, #culture-animate-6, #culture-animate-7, #culture-animate-8, #culture-animate-9, #culture-animate-last {
 	opacity: 0;
 }
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/culture.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/culture.scss

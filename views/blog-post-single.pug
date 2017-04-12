@@ -1,8 +1,9 @@
 
 //- blog-header
 
-.blog-container
+.blog-post-container
   section.row.no-padding.culture
+    .headline-container
       article.col-md-10.col-lg-8.col-sm-12.single-post-article
           .date(ng-bind="article.date | date: 'MMMM dd, yyyy'")
           .post-title(ng-bind-html="article.title | toTrusted")
@@ -10,9 +11,9 @@
               img.pheno-p.blog-post-p(src=require('assets/images/blog/pheno-p.png'))
               .blog-author {{article.author}}
                   .position {{article.positionTitle}}
-          img.blog-image(src='{{article.image}}', ng-hide="article.image == null")
-          .blog-content(ng-bind-html="article.content | toTrusted")
+    img.blog-image(src='{{article.image}}', ng-hide="article.image == null")
+    .blog-content(ng-bind-html="article.content | toTrusted")
   label.icon-share.blog-share(close showmore childContainer=".social-icons")
-      span.share-text.blog-share-text Share
+      span.share-text.blog-share-text.icon Share
 
 include components/share-icons

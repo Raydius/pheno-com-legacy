@@ -82,7 +82,7 @@ var copy =
       "chicago": {
         "title": "Chicago",
         "address": {
-          "line1": "118 N. Peoria St, Suite 5N",
+          "line1": "118 N Peoria St, Suite 5S",
           "line2": "Chicago, IL 60607"
         },
         "phone": {
@@ -189,6 +189,7 @@ var copy =
       "paragraph3": [
 
         "I&#8217;ve worked with Phenomenon for seven years across two companies. When I was hired to transform and re-brand the country&#8217;s largest non-bank mortgage servicer, one of my first calls was to Phenomenon.",
+        "<hr>",
         "KD: Why did you start this company? What are you all about?",
         "<span>PHNO: We all know that the agency model is badly broken. Client interests don&#8217;t line up with agency interests and that's a recipe for disaster.</span>",
         "<span>So we founded Phenomenon as a reaction to that.</span>",
@@ -332,7 +333,7 @@ var copy =
         {
           "type": "image",
           "image": true,
-          "imageUrl": require('assets/images/work-4.png'),
+          "imageUrl": require('assets/images/WilsonX-packaging-thumb.jpg'),
           "imageAlt": "Wilson Image 4",
           "legend": "Sport / Lifestyle",
           "headline": "Wilson Launches Futuristic Ball.",
@@ -352,7 +353,7 @@ var copy =
       "project": "Visual Brand Design",
       "media": "Collateral, Digital, OOH",
       "blockquote":"Neustar Helps Make Data Shine.",
-      "shareImg": require('assets/images/neustar/neustar.jpg'),
+      "shareImg": require('assets/images/neustar/NeustarLanding.jpg'),
       "ogDescription": "The leader in communications, security and connectivity reimagines their vision for a connected future.",
       "topDescription": [
         "For more than 20 years, Neustar has been paving the way for connectivity through real-time information, analytics and telecommunications platforms. In fact, Neustar was the pioneer of Caller ID services. However, with a fully connected future not far away &#45; and with the acquisition of numerous new services &#45; Neustar needed to update their brand vision to reflect their position as leaders of the connected world.",
@@ -444,7 +445,7 @@ var copy =
         {
           "type": "image",
           "image": false,
-          "imageUrl": require("assets/images/neustar/NeustarDC2.jpg"),
+          "imageUrl": require("assets/images/neustar/neustar-macbook.png"),
           "mainDescription": [
             "Next we took their existing (and occasionally heady) content and provided a strategic framework for their website, sales decks, case studies, and white papers. With language, we injected a more personal tone, focusing as much as possible on the real world outcomes of their offerings, rather than staying in the &quot;weeds&quot; and focusing on the &quot;how.&quot;"
           ]
@@ -568,7 +569,7 @@ var copy =
 
     },
     "wilson-anthem": {
-      "title": "My Wilson",
+      "title": "Wilson Equips Itself With Global Campaign.",
       "className": "wilson-anthem",
       "client": "Wilson",
       "clientLogo": require('assets/images/works/clients_logo/wilson_logo.svg'),
@@ -674,7 +675,7 @@ var copy =
       ]
     },
     "wilson-x": {
-      "title": "Wilson X",
+      "title": "Wilson Launches Futuristic Ball.",
       "className": "wilson-x",
       "client": "Wilson",
       "clientLogo": require('assets/images/works/clients_logo/wilson_logo.svg'),
@@ -1033,7 +1034,7 @@ var copy =
       ]
     },
     "mens-wearhouse": {
-      "title": "Rebrand",
+      "title": "Men's Wearhouse Updates Its Wardrobe.",
       "className": "mens-wearhouse",
       "client": "Men's Wearhouse",
       "clientLogo": require('assets/images/works/clients_logo/mens-wearhouse.svg'),
@@ -1127,7 +1128,7 @@ var copy =
       ]
     },
     "think-thin": {
-      "title": "Think Thin",
+      "title": "thinkThin Helps Women Shed the Guilt.",
       "className": "think-thin",
       "client": "thinkThin",
       "clientLogo": require('assets/images/client_icons/icon-thinkthin.svg'),
@@ -1237,7 +1238,7 @@ var copy =
         }
       ]
 
-  },
+    },
     "cooper": {
       "title": "Cooper",
       "className": "cooper",
@@ -1339,13 +1340,18 @@ var copy =
     },
     "moreCases": [
       {
+        "projectName": "Neustar Helps Make Data Shine.",
+        "projectUrl": "/work/neustar/",
+        "projectThumbSrc": require("assets/images/neustar/NeustarLanding.jpg")
+      },
+      {
         "projectName": "From Federer <br> By Federer.",
         "projectUrl": "/work/federer/",
         "projectThumbSrc": require("assets/images/morecases/7.jpg")
       },
       {
         "projectName": "Aetna Brings out Medicare's Potential.",
-        "projectUrl": "/work/aetna/",
+        "projectUrl": "/work/aetna-potential/",
         "projectThumbSrc": require("assets/images/morecases/8.jpg")
       },
       {
@@ -1420,7 +1426,7 @@ var copy =
           "name": "Chicago",
           "phone": "+1 323 648 4000",
           "href": "tel:13236484000",
-          "address": "118 N Peoria Street, Suite 5N <br>Chicago, IL 60607",
+          "address": "118 N Peoria Street, Suite 5S <br>Chicago, IL 60607",
           "imgSrc": require("assets/images/contact/contact-chicago.jpg")
         }
       ],

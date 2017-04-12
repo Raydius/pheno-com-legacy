@@ -26,7 +26,7 @@ angular.module('phenoCom').directive('carouselComponent', function() {
                 loop: true,
                 dots: true,
                 mouseDrag: true,
-                autoplay: true,
+                autoplay: false,
                 autoplaySpeed: 1000,
                 rewind: false,
                 // autoWidth: true,
@@ -46,9 +46,9 @@ angular.module('phenoCom').directive('carouselComponentCenter', function() {
             var animationSpeed = 150;
 
             $(element).owlCarousel({
-                items: 2,
+                items: 1.2,
+                // itemElement: ''
                 center: true,
-                nav:false,
                 navText: [
                     "<button class='icon-left-arrow'></button>",
                     "<button class='icon-right-arrow'></button>"

@@ -1,23 +1,25 @@
 .about {
 	.top-main {
 		h2 {
-			font-size: 46px;
-			//letter-spacing: -1px;
-			//word-spacing: -2px;
-			line-height: 56px;
+			font-size: 72px;
+			line-height: 82px;
+			width: 550px;
+
 		}
 		p {
 			color: $primary_color;
 			font-size: 22px;
 			font-family: $secondary_font;
 			width: 40%;
+			margin-top: 20px;
+			padding-bottom: 10px;
 			min-width: 430px;
 			@media screen and (max-width: 640px) {
 				font-size: 18px;
 			}
 		}
 		cite {
-			
+
 		}
 	}
 	.border-bottom {
@@ -55,7 +57,7 @@
 			span {
 				margin-top: $base-spacing - 40;
 				font-family: "Circular-Book";
-			} 
+			}
 		}
 
 	}
@@ -97,7 +99,7 @@
 			float: left;
 			padding-bottom: 20px;
 		}
-	} 
+	}
 
 		/*Acco*/
 	.ac-container {
@@ -110,7 +112,7 @@
 		}
 	    input:checked {
 	    	+ label {
-	    		
+
 	    		&:after {
 	    			transform: rotate(90deg);
 	    		}
@@ -175,11 +177,11 @@
 	    max-height: 0;
 	    position: relative;
 	    z-index: 10;
-	    -webkit-transition: max-height 0.5s ease-out; 
+	    -webkit-transition: max-height 0.5s ease-out;
 	    -moz-transition: max-height 0.5s ease-out;
 	    -o-transition: max-height 0.5s ease-out;
 	    -ms-transition: max-height 0.5s ease-out;
-	    transition: max-height 0.5s ease-out; 
+	    transition: max-height 0.5s ease-out;
 	}
 
 	.ac-container article p {

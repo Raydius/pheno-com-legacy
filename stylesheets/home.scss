@@ -35,7 +35,14 @@
 			position: absolute;
 		}
 		h2 {
-			font-size: 52px;
+			font-size: 62px;
+	    line-height: 82px;
+				@media screen and (max-width: 640px) {
+				width: 510px;
+				font-size: 52px;
+
+			}
+
 		}
 		input {
 			opacity: 0;
@@ -46,8 +53,13 @@
 			display: inline-block;
 			font-size: 32px;
 			color: #ccc;
-			margin-top: 20px;
+			margin-top: 50px !important;
 			cursor: pointer;
+
+			&:hover {
+			color: #333;
+			transition: .5s
+			}
 		}
 	}
 	cite {
@@ -201,3 +213,12 @@
 .indie-agency, .indie-minds {
 	opacity: 0;
 }
+
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/home.scss
+
+
+// WEBPACK FOOTER //
+// webpack:///stylesheets/Users/jpimenta/pheno-com/stylesheets/home.scss
