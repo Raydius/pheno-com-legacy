@@ -184,8 +184,8 @@
 				}
 
 				h2 blockquote {
-						font-size   : 60px;
-						line-height : 82px !important;
+					    font-size: 72px;
+    					line-height: 82px;
 				}
 
 				h2 blockquote,
@@ -380,12 +380,11 @@
 				}
 		}
 
-		h2 blockquote {
-				
-			width: 80%;
-		    font-size: 52px !important;
-    		line-height: 56px;
-			padding-left: 20px;
+		.work h2 blockquote {
+		width: 80%;
+		font-size: 52px;
+		line-height: 56px;
+		padding-left: 20px;
 		}
 
 		img.clientlogo {
