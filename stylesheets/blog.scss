@@ -241,6 +241,15 @@ $pheno-p: url("/assets/images/blog/pheno-p.png"); ///////////////// DESIGN ELEME
             font-family: $secondary_font;
             font-size: 30px;
         }
+        @media all and (min-device-width:400px) and (max-device-width : 414px) {
+            margin-top: 10px;
+            padding-bottom: 30px;
+            padding-right: 15px;
+            padding-left: 15px;
+            color: $black;
+            font-family: $secondary_font;
+            font-size: 30px;
+        }
         @media all and (max-width : 400px) {
             margin-top: 10px;
             padding-right: 0;
