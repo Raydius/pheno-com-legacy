@@ -241,6 +241,12 @@
     width: 23px;
   }
 }
+.top-main h2 {
+@media (min-width:640px) and (max-width:1120px){
+  font-size: 50px !important;
+  line-height: 62px !important;
+  }
+}
 
 @media (min-width: 640px) and (max-width: 1024px) {
     .topnav img.logo {
