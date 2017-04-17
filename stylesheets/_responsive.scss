@@ -25,11 +25,8 @@
 }
 
   .topnav .tabs {
-    margin-left: 0;
+    margin-left: -20px;
     padding: 0;
-    @media (max-width: 768px) {
-
-    }
   }
 
 @media (max-width: 768px) {
