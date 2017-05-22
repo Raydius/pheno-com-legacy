@@ -211,9 +211,12 @@
 	.folders {
 		margin-top: $base-spacing;
 		img {
-			width: 85%;
+    width: 140%;
+    margin-left: -125px;
 			@media screen and (max-width: 993px) {
+				width: 100%;
 				margin: 0 auto;
+				margin-left: 0px;
 			}
 		}
 		@media screen and (max-width: 640px) {
