@@ -241,6 +241,15 @@ $pheno-p: url("/assets/images/blog/pheno-p.png"); ///////////////// DESIGN ELEME
             font-family: $secondary_font;
             font-size: 30px;
         }
+        @media all and (min-device-width:400px) and (max-device-width : 414px) {
+            margin-top: 10px;
+            padding-bottom: 30px;
+            padding-right: 15px;
+            padding-left: 15px;
+            color: $black;
+            font-family: $secondary_font;
+            font-size: 30px;
+        }
         @media all and (max-width : 400px) {
             margin-top: 10px;
             padding-right: 0;
@@ -378,15 +387,15 @@ img {
         border: none;
         border-color: $white;
         border-width: 0;
-        border-radius: 50%;
-        background: $pheno-p;
+        // border-radius: 0%;
+        // background: $pheno-p;
         background-color: transparent;
         background-repeat: no-repeat;
         @media (min-width:320px) and (max-width:375px) {
             margin-left: -10px !important;
         }
         @media all and (max-width : 640px) {
-            width: 70px;
+            width: 60px;
             height: 60px;
             margin-right: 20px;
             margin-left: -40px;
@@ -394,7 +403,7 @@ img {
             border-color: $white;
             border-width: 0;
             border-radius: 50%;
-            background: $pheno-p;
+            // background: $pheno-p;
             background-color: transparent;
             background-repeat: no-repeat;
         }

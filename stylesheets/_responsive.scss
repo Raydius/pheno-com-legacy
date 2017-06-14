@@ -23,6 +23,12 @@
     margin: 0 0 60px 0;
   }
 }
+
+  .topnav .tabs {
+    margin-left: -20px;
+    padding: 0;
+  }
+
 @media (max-width: 768px) {
   main, .maincontent {
     padding: 0 $base_spacing - 30;
@@ -73,7 +79,7 @@
     }
     .topnav {
       .nav-wrapper {
-        padding: 30px $base_spacing+30 0 $base_spacing+30;
+      padding: 30px 10px 0 90px;
       }
     }
     .home .featured-contributors {
@@ -233,6 +239,12 @@
   footer .social li, .footer .social li {
     margin: 0 5px;
     width: 23px;
+  }
+}
+.top-main h2 {
+@media (min-width:640px) and (max-width:1120px){
+  font-size: 50px !important;
+  line-height: 62px !important;
   }
 }
 
