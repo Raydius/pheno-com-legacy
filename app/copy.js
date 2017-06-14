@@ -283,15 +283,15 @@ var copy =
           "description": "Tennis legend includes a personal touch with launch of his first co-designed racket.",
           "readmoreUrl": "/work/federer/"
         },
-        {
-          "type": "image",
-          "image": true,
-          "imageUrl": require('assets/images/aetna/aetna-thumb.jpg'),
-          "legend": "Healthcare / B2B",
-          "headline": "Aetna Brings Out Medicare&#8217;s Potential.",
-          "description": "Healthcare giant takes a more human approach with B2B initiative.",
-          "readmoreUrl": "/work/aetna-potential/"
-        },
+        // {
+        //   "type": "image",
+        //   "image": true,
+        //   "imageUrl": require('assets/images/aetna/aetna-thumb.jpg'),
+        //   "legend": "Healthcare / B2B",
+        //   "headline": "Aetna Brings Out Medicare&#8217;s Potential.",
+        //   "description": "Healthcare giant takes a more human approach with B2B initiative.",
+        //   "readmoreUrl": "/work/aetna-potential/"
+        // },
         {
           "type": "image",
           "image": true,
@@ -1171,74 +1171,74 @@ var copy =
 
       ]
     },
-    "aetna-potential": {
-      "title": "Aetna Brings Out Medicare's Potential",
-      "className": "aetna",
-      "client": "Aetna",
-      "clientLogo": require('assets/aetna-logo-180x50 (1).png'),
-      "clientLogoWidth": "100px",
-      "project": "Potential",
-      "media": "B2B, Digital, Social",
-      "blockquote": "Aetna Brings Out Medicare's Potential",
-      "ogDescription": "Aetna Brings Out Medicare's Potential",
-      "shareImg": require("assets/images/aetna/aetna-thumb.jpg"),
-
-      "description": "[desc]",
-      "topDescription": [
-        "Big health care insurers face two overwhelming obstacles in this country; intense regulation " +
-        "and widespread public distrust. Because of this, many have a tough time both communicating to the public and " +
-        "distinguishing any sort of difference between each other. Early in 2015, Aetna took its first steps in improving " +
-        "their positioning by taking a more holistic and zen approach to health care. They started internally by " +
-        "building 24-hour gyms at many of their offices. They then raised the minimum wage for employees to $16 an hour. " +
-        "Decisions that alluded to a bigger belief in broadening how this industry can actually improve people's lives, " +
-        "not just get them better when they're sick.",
-        "Later in 2015, Aetna came to Phenomenon looking for help within " +
-        "their Group Medicare sector. Specifically, improving new business figures with large companies. The team quickly " +
-        "noticed that they lacked a distinctive value proposition when it came to the millions of retirees that they " +
-        "served. Knowing this is an incredibly commoditized category and knowing the direction the company was headed, " +
-        "the team netted out with a simple idea.",
-        "<span class='red'>Aetna believes that when it comes to retirement, there's a ton of potential.</span>",
-        "Phenomenon built a strategic deck that didn't just focus on costs or helping members when they were sick. " +
-        "Instead they honed in on a more emotional idea that Aetna sees the potential in seniors. Rather than " +
-        "clich&eacute;s of walking on sunset beaches, Aetna helps retirees stay connected and maintain a sense of " +
-        "purpose. Instead of just living longer, it was about living better. A 60 second film was created to emotionally " +
-        "reiterate this simple thought."
-      ],
-      /*"caseWriter": {
-        "name": "Amy Weisenbach",
-        "title": "VP Marketing, Wilson",
-        "description": "Amy is the VP of Marketing for Wilson Sporting Goods. Prior to joining Wilson she was the first VP of Marketing for Trunk Club and has also worked at both Beam and Unilever on the AXE brand team. In 2012, Amy was named a Woman to Watch by Advertising Age. She is a graduate of Harvard Business School."
-      },*/
-      "topcontent": [
-        {
-          "type": "video",
-          "video": true,
-          "vimeo": "182635703",
-          "mainDescription": [
-            "<br />With a more honest and inspiring strategic direction, Aetna needed to adjust the way they communicated " +
-            "to current and potential members, not just plan sponsors. So, Phenomenon lead the charge in overhauling " +
-            "all of the company's Medicare photography from pitch decks to posters to the images on AetnaMedicare.com. " +
-            "This more broad definition of health allowed us to expand what a Medicare member looked like. Instead of " +
-            "exclusively seeing photos of exercise classes and retirees holding pills and seniors searching online, we " +
-            "suddenly saw them enjoying hobbies, spending time with their families and living life to its fullest. In " +
-            "just six months Aetna won two out of their next three corporate pitches and continues to incorporate this " +
-            "new approach in all Medicare communication."
-          ]
-        }
-
-      ],
-      "fromTopContentDescription": [
-
-      ],
-      "detailcontent": [
-        {
-          "image": true,
-          "imageUrl": require("assets/images/aetna/Aetna_1200x668_Posters_093016.jpg"),
-          "imageAlt": "Aetna Posters"
-        }
-      ]
-
-    },
+    // "aetna-potential": {
+    //   "title": "Aetna Brings Out Medicare's Potential",
+    //   "className": "aetna",
+    //   "client": "Aetna",
+    //   "clientLogo": require('assets/aetna-logo-180x50 (1).png'),
+    //   "clientLogoWidth": "100px",
+    //   "project": "Potential",
+    //   "media": "B2B, Digital, Social",
+    //   "blockquote": "Aetna Brings Out Medicare's Potential",
+    //   "ogDescription": "Aetna Brings Out Medicare's Potential",
+    //   "shareImg": require("assets/images/aetna/aetna-thumb.jpg"),
+    //
+    //   "description": "[desc]",
+    //   "topDescription": [
+    //     "Big health care insurers face two overwhelming obstacles in this country; intense regulation " +
+    //     "and widespread public distrust. Because of this, many have a tough time both communicating to the public and " +
+    //     "distinguishing any sort of difference between each other. Early in 2015, Aetna took its first steps in improving " +
+    //     "their positioning by taking a more holistic and zen approach to health care. They started internally by " +
+    //     "building 24-hour gyms at many of their offices. They then raised the minimum wage for employees to $16 an hour. " +
+    //     "Decisions that alluded to a bigger belief in broadening how this industry can actually improve people's lives, " +
+    //     "not just get them better when they're sick.",
+    //     "Later in 2015, Aetna came to Phenomenon looking for help within " +
+    //     "their Group Medicare sector. Specifically, improving new business figures with large companies. The team quickly " +
+    //     "noticed that they lacked a distinctive value proposition when it came to the millions of retirees that they " +
+    //     "served. Knowing this is an incredibly commoditized category and knowing the direction the company was headed, " +
+    //     "the team netted out with a simple idea.",
+    //     "<span class='red'>Aetna believes that when it comes to retirement, there's a ton of potential.</span>",
+    //     "Phenomenon built a strategic deck that didn't just focus on costs or helping members when they were sick. " +
+    //     "Instead they honed in on a more emotional idea that Aetna sees the potential in seniors. Rather than " +
+    //     "clich&eacute;s of walking on sunset beaches, Aetna helps retirees stay connected and maintain a sense of " +
+    //     "purpose. Instead of just living longer, it was about living better. A 60 second film was created to emotionally " +
+    //     "reiterate this simple thought."
+    //   ],
+    //   /*"caseWriter": {
+    //     "name": "Amy Weisenbach",
+    //     "title": "VP Marketing, Wilson",
+    //     "description": "Amy is the VP of Marketing for Wilson Sporting Goods. Prior to joining Wilson she was the first VP of Marketing for Trunk Club and has also worked at both Beam and Unilever on the AXE brand team. In 2012, Amy was named a Woman to Watch by Advertising Age. She is a graduate of Harvard Business School."
+    //   },*/
+    //   "topcontent": [
+    //     {
+    //       "type": "video",
+    //       "video": true,
+    //       "vimeo": "182635703",
+    //       "mainDescription": [
+    //         "<br />With a more honest and inspiring strategic direction, Aetna needed to adjust the way they communicated " +
+    //         "to current and potential members, not just plan sponsors. So, Phenomenon lead the charge in overhauling " +
+    //         "all of the company's Medicare photography from pitch decks to posters to the images on AetnaMedicare.com. " +
+    //         "This more broad definition of health allowed us to expand what a Medicare member looked like. Instead of " +
+    //         "exclusively seeing photos of exercise classes and retirees holding pills and seniors searching online, we " +
+    //         "suddenly saw them enjoying hobbies, spending time with their families and living life to its fullest. In " +
+    //         "just six months Aetna won two out of their next three corporate pitches and continues to incorporate this " +
+    //         "new approach in all Medicare communication."
+    //       ]
+    //     }
+    //
+    //   ],
+    //   "fromTopContentDescription": [
+    //
+    //   ],
+    //   "detailcontent": [
+    //     {
+    //       "image": true,
+    //       "imageUrl": require("assets/images/aetna/Aetna_1200x668_Posters_093016.jpg"),
+    //       "imageAlt": "Aetna Posters"
+    //     }
+    //   ]
+    //
+    // },
     "cooper": {
       "title": "Cooper",
       "className": "cooper",
