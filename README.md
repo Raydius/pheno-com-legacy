@@ -12,8 +12,6 @@ This codebase is a legacy version of the marketing site phenomenon.com to be use
 
 ### How do I get set up? ###
 
-* Summary of set up
-
 When running 'npm start' a static site will be created using webpack.  The component files are located as follows:
 
 /app - core javascript files written for AngularJS as well as copy.js which contains most site copy
@@ -21,8 +19,6 @@ When running 'npm start' a static site will be created using webpack.  The compo
 /nginx - nginx configuration files in order to support HTML5 mode routing and prerender.io cacheing
 /stylesheets - stylesheets, written in SASS
 /views - view templates, written using PugJS
-
-* Configuration
 
 This site requires NodeJS and NPM in order to install all of the package dependencies.  While this site was
 configured to run on nginx web server, it can be easily configured to run on any web server that allows "HTML 5 Mode"
@@ -38,15 +34,10 @@ development installations and systems that host multiple web servers.  Note that
 webpack requires absolute URLs to be specified (including ports) in order to avoid issues with fonts and other CSS
 elements.  In order to make changes to this, see webpack.config.js
 
-* How to run tests
-* Deployment instructions
-
 ### Contribution guidelines ###
 
 This site is shown for educational purposes and is no longer maintained or updated.
 
 ### Who do I talk to? ###
-
-* Repo owner or admin
 
 Ray Dollete <rjdollete@gmail.com>
