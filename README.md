@@ -28,6 +28,10 @@ This site requires NodeJS and NPM in order to install all of the package depende
 configured to run on nginx web server, it can be easily configured to run on any web server that allows "HTML 5 Mode"
 Angular routing.
 
+The "Blog" and "Careers" section of the site require API connections to WordPress and Greenhouse, respectively, whose
+credentials are abstracted using a custom middleware.  This would have to be reconstructed in order to restore
+this functionality.
+
 A docker-compose.yml is included in order to easily provision a container with the latest stable version of nginx that
 can be mapped to any port other than the default port 80 (shown as port 2070 for example).  This can be useful for
 development installations and systems that host multiple web servers.  Note that the static build that comes out of
