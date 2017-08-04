@@ -8,29 +8,41 @@ Front-end Core Framework: AngularJS (v1)
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+This codebase is a legacy version of the marketing site phenomenon.com to be used for educational purposes.
 
 ### How do I get set up? ###
 
 * Summary of set up
 
+When running 'npm start' a static site will be created using webpack.  The component files are located as follows:
 
+/app - core javascript files written for AngularJS as well as copy.js which contains most site copy
+/assets - static graphics used throughout the site
+/nginx - nginx configuration files in order to support HTML5 mode routing and prerender.io cacheing
+/stylesheets - stylesheets, written in SASS
+/views - view templates, written using PugJS
 
 * Configuration
-* Dependencies
-* Database configuration
+
+This site requires NodeJS and NPM in order to install all of the package dependencies.  While this site was
+configured to run on nginx web server, it can be easily configured to run on any web server that allows "HTML 5 Mode"
+Angular routing.
+
+A docker-compose.yml is included in order to easily provision a container with the latest stable version of nginx that
+can be mapped to any port other than the default port 80 (shown as port 2070 for example).  This can be useful for
+development installations and systems that host multiple web servers.  Note that the static build that comes out of
+webpack requires absolute URLs to be specified (including ports) in order to avoid issues with fonts and other CSS
+elements.  In order to make changes to this, see webpack.config.js
+
 * How to run tests
 * Deployment instructions
 
 ### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
+This site is shown for educational purposes and is no longer maintained or updated.
 
 ### Who do I talk to? ###
 
 * Repo owner or admin
-* Other community or team contact
+
+Ray Dollete <rjdollete@gmail.com>
