@@ -40,4 +40,4 @@ This site is shown for educational purposes and is no longer maintained or updat
 
 ### Who do I talk to? ###
 
-Ray Dollete <rjdollete@gmail.com>
+Ray Dollete <ray@raytalkstech.com>

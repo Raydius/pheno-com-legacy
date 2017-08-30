@@ -172,7 +172,7 @@ module.exports = {
             // jade/pug template loader
             {
                 test: /\.(jade|pug)$/,
-                loader: 'pug'
+                loader: 'pug-loader'
             },
 
             // SASS loader
